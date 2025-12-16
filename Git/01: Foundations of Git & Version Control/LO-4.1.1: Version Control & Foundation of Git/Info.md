@@ -1,10 +1,13 @@
-## **Pre-Read & Lecture Notes Duration Table**
-| Item     | Duration |
-| -------- | -------- |
-| Pre Read | 5 mins   |
-| Notes    | 15 mins  |
+## **Pre-Read & Lecture Duration Table**
+
+| Item           | Duration |
+| -------------- | -------- |
+| Pre Read       | 5 mins   |
+| Lecture Notes  | 15 mins  |
+| Lecture Script | 34 mins  |
 
 ---
+
 ## **Assignment Problems Duration Table**
 
 | Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       |
@@ -16,5 +19,3 @@
 | Q5           | 3 minutes         | Low        | LO-1.3           | Implementation |
 | Q6           | 4 minutes         | Medium     | LO-1.4           | Application    |
 | Q7           | 7 minutes         | Medium     | LO-1.4           | Application    |
-
----

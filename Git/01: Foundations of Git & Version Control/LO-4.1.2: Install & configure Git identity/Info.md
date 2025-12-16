@@ -1,9 +1,10 @@
-## **Pre-Read & Lecture Notes Duration Table**
+## **Pre-Read & Lecture Duration Table**
 
-| Item     | Duration |
-| -------- | -------- |
-| Pre Read | 5 mins   |
-| Notes    | 10 mins  |
+| Item           | Duration |
+| -------------- | -------- |
+| Pre Read       | 5 mins   |
+| Lecture Notes  | 10 mins  |
+| Lecture Script | 37 mins  |
 
 ---
 
