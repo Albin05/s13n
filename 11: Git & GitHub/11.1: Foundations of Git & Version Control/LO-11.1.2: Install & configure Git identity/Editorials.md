@@ -1,258 +1,256 @@
-# Q2. Define what Git is in the context of version control.
+## **Q1. Purpose of the Staging Area in Git**
 
-## 1. Title
+### **Problem Description**
 
-Definition of Git in Version Control
+When files are modified, not all changes may be ready to be saved permanently.
 
-## 2. Problem Description
+### **Objective**
 
-Students must provide a clear definition of Git and its role within version control systems.
+Explain why Git uses a staging area between working directory and commit history.
 
-## 3. Objective
+### **Hint**
 
-To assess understanding of Git as a distributed version control tool.
+Think of selective commits and review before saving history.
 
-## 4. Hint
+### **Short Explanation**
 
-Focus on Git as software that tracks and manages changes.
+The staging area allows developers to choose which changes should be included in the next commit.
 
-## 5. Short Explanation
+### **Detailed Explanation**
 
-Git is a distributed version control system that tracks file changes and supports collaboration.
+The **staging area** in **Git** acts as an intermediate step between the working directory and the repository history. It enables developers to review, organize, and selectively add changes before committing. This prevents accidental commits and allows precise control over what gets recorded in the project history.
 
-## 6. Detailed Explanation
+### **Constraints / Edge Cases (Optional)**
 
-Git is an open-source distributed version control system designed to track changes in source code during software development.
-Key characteristics:
-
-- Stores full repository copies on every machine
-- Tracks history of changes through commits
-- Allows multiple developers to work in parallel
-- Supports branching, merging, and reverting changes
-
-Git ensures safe collaboration and maintains complete version history.
-
-## 7. Constraints / Edge Cases
-
-Definition should address _what Git is_ and _its purpose_, not GitHub.
+- Files not staged will not be committed
+- Overusing `git add .` may stage unintended changes
 
 ---
 
-# Q3. Describe the main difference between Git and GitHub.
+## **Q2. Difference between `git diff` and `git diff --staged`**
 
-## 1. Title
+### **Problem Description**
 
-Difference Between Git and GitHub
+Developers often need to compare changes at different stages of the Git workflow.
 
-## 2. Problem Description
+### **Objective**
 
-Students must explain how Git and GitHub differ in purpose.
+Differentiate between working directory changes and staged changes.
 
-## 3. Objective
+### **Hint**
 
-To ensure understanding of tool vs. platform distinctions.
+One compares unstaged changes, the other staged changes.
 
-## 4. Hint
+### **Short Explanation**
 
-One is a local version control tool; one is an online hosting platform.
+`git diff` shows unstaged changes, while `git diff --staged` shows staged changes.
 
-## 5. Short Explanation
+### **Detailed Explanation**
 
-Git is a version control system; GitHub is a cloud platform for hosting Git repositories.
+`git diff` displays differences between the **working directory** and the **staging area**, helping developers see what is modified but not yet staged.
+`git diff --staged` (or `git diff --cached`) shows differences between the **staging area** and the **last commit**, allowing developers to review exactly what will be committed.
 
-## 6. Detailed Explanation
+### **Constraints / Edge Cases (Optional)**
 
-Git is software installed on a computer that manages version history, commits, branches, and merges locally.
-GitHub is a web-based service that stores Git repositories online, enabling features like:
-
-- Remote backup
-- Pull requests
-- Issue tracking
-- Team collaboration
-
-Thus, Git handles version control, while GitHub provides cloud-based repository hosting and collaboration tools.
-
-## 7. Constraints / Edge Cases
-
-Students must differentiate purpose, not just functionality.
+- If nothing is staged, `git diff --staged` shows no output
+- Committed changes are not shown by either command
 
 ---
 
-# Q4. Summarise why having the same name and email in Git and GitHub matters.
+## **Q3. Committing Changes from Only One File**
 
-## 1. Title
+### **Problem Description**
 
-Importance of Matching Git and GitHub Identity
+Sometimes only specific file changes should be committed.
 
-## 2. Problem Description
+### **Objective**
 
-Students must explain why Git’s local identity should match GitHub’s profile.
+Demonstrate selective staging and committing.
 
-## 3. Objective
+### **Hint**
 
-To understand identity mapping between local commits and GitHub contributions.
+Stage only the required file.
 
-## 4. Hint
+### **Short Explanation**
 
-Think about commit authorship and contribution tracking.
+Git allows committing changes from individual files selectively.
 
-## 5. Short Explanation
+### **Detailed Explanation**
 
-Matching identity ensures commits appear under the correct GitHub user.
+**Commands:**
 
-## 6. Detailed Explanation
-
-Git uses the local username and email configured through:
-
-```
-git config --global user.name
-git config --global user.email
+```bash
+git status
+git add index.html
+git diff --staged
+git commit -m "Update homepage layout"
 ```
 
-GitHub identifies commit authors based on email.
-If Git’s email does not match GitHub’s verified email:
+This workflow ensures that only `index.html` is staged and committed, while changes in `style.css` remain uncommitted.
 
-- Commits show as “Unknown Author”
-- Contributions do not appear in activity graphs
-- Ownership of commits becomes unclear
+### **Constraints / Edge Cases (Optional)**
 
-Matching identity ensures proper attribution and transparency.
-
-## 7. Constraints / Edge Cases
-
-GitHub requires the email to be verified on the account.
+- Forgetting to stage the file will result in no changes committed
+- `git add .` would stage both files unintentionally
 
 ---
 
-# Q5. Differentiate between centralized and distributed version control systems with one real-world advantage of each.
+## **Q4. Checking Difference Between Two Commits**
 
-## 1. Title
+### **Problem Description**
 
-Comparison of Centralized vs Distributed VCS
+Developers may need to compare changes across different points in history.
 
-## 2. Problem Description
+### **Objective**
 
-Students must explain differences and advantages of each model.
+Show how to compare two commits directly.
 
-## 3. Objective
+### **Hint**
 
-To analyse VCS architectures.
+Use commit hashes with `git diff`.
 
-## 4. Hint
+### **Short Explanation**
 
-Think about where history is stored and how teams work.
+Git allows comparison between any two commits using their IDs.
 
-## 5. Short Explanation
+### **Detailed Explanation**
 
-Centralized VCS has one main server; Distributed VCS stores full copies on every machine.
+**Command:**
 
-## 6. Detailed Explanation
+```bash
+git diff a1b2c3d f4e5d6a
+```
 
-Centralized VCS (e.g., SVN):
+This command shows all differences between the two specified commits, regardless of their order in history.
 
-- All version history is stored on a central server
-- Developers must stay connected to commit or update
-- Advantage: Simple and easy to manage in small teams
+### **Constraints / Edge Cases (Optional)**
 
-Distributed VCS (e.g., Git):
-
-- Every developer has a full copy of the repository
-- Supports offline work and faster operations
-- Advantage: No single point of failure; safer and more flexible
-
-This architectural difference affects speed, reliability, and workflow.
-
-## 7. Constraints / Edge Cases
-
-Comparison must include _one advantage for each_.
+- Large diffs may be difficult to read
+- Short commit hashes must still be unique
 
 ---
 
-# Q6. GitHub requires internet while Git does not. Evaluate whether it is still necessary to use GitHub in a software team and justify your answer.
+## **Q5. Viewing Compact One-Line Commit History**
 
-## 1. Title
+### **Problem Description**
 
-Importance of GitHub in Team Collaboration
+Full commit logs can be lengthy and hard to scan quickly.
 
-## 2. Problem Description
+### **Objective**
 
-Students must evaluate GitHub’s role despite Git's offline capability.
+Show how to view a concise commit history.
 
-## 3. Objective
+### **Hint**
 
-To judge the necessity of GitHub in modern team workflows.
+Use a log option for compact output.
 
-## 4. Hint
+### **Short Explanation**
 
-Think collaboration, backup, and workflow management.
+Git provides a one-line summary view of commits.
 
-## 5. Short Explanation
+### **Detailed Explanation**
 
-Yes, GitHub is still necessary because it enables cloud-based collaboration and centralized repository access.
+**Command:**
 
-## 6. Detailed Explanation
+```bash
+git log --oneline
+```
 
-While Git works offline and manages code locally, GitHub adds essential teamwork features:
+**Expected Output Style:**
 
-- Central repository accessible by the entire team
-- Pull requests for code review
-- Issue tracking and project management tools
-- Cloud backups preventing data loss
-- Seamless CI/CD integrations (Actions, Pipelines)
+```
+f4e5d6a Add utils.js and update app.js
+a1b2c3d Add initial app.js file
+```
 
-Teams benefit from transparency, shared access, and coordinated development workflows.
-Thus, GitHub remains essential even though Git does not require internet.
+Each line shows a short commit hash and commit message.
 
-## 7. Constraints / Edge Cases
+### **Constraints / Edge Cases (Optional)**
 
-Students may argue optionality for solo developers, but must still justify.
+- Does not show author or timestamp
+- Best used for quick overview
 
 ---
 
-# Q7. You installed Git but commits show “Unknown Author” in GitHub. Apply your knowledge to solve the issue.
+## **Q6. Complete Git Workflow: Folder, Files, Changes, and Commits**
 
-## 1. Title
+### **Problem Description**
 
-Fixing Unknown Author Issue in Git Commits
+Understanding Git requires practicing the complete workflow from project creation to multiple commits.
 
-## 2. Problem Description
+### **Objective**
 
-Students must apply Git configuration knowledge to fix author identity problems.
+Demonstrate end-to-end Git usage.
 
-## 3. Objective
+### **Hint**
 
-To test practical usage of Git identity configuration.
+Follow the standard Git lifecycle.
 
-## 4. Hint
+### **Short Explanation**
 
-Think about `git config` commands.
+This workflow covers initialization, staging, and committing multiple changes.
 
-## 5. Short Explanation
+### **Detailed Explanation**
 
-Configure name and email using global Git config commands.
+```bash
+mkdir project-demo
+cd project-demo
 
-## 6. Detailed Explanation
+echo "console.log('Hello from app');" > app.js
 
-The “Unknown Author” issue occurs when Git lacks valid user identity settings or when the email doesn't match a verified GitHub email.
+git init
+git add app.js
+git commit -m "Add initial app.js file"
 
-To fix:
+echo "console.log('Utility file');" > utils.js
+echo "console.log('Another log');" >> app.js
 
-```
-git config --global user.name "Your Name"
-git config --global user.email "youremail@example.com"
-```
-
-Then verify:
-
-```
-git config --global --list
+git add app.js utils.js
+git commit -m "Add utils.js and update app.js"
 ```
 
-Ensure the email matches one added and verified in GitHub.
-After this, future commits correctly map to the GitHub user.
+### **Constraints / Edge Cases (Optional)**
 
-## 7. Constraints / Edge Cases
+- Git must be initialized before staging
+- Untracked files must be added explicitly
 
-Past commits will not update automatically—students should understand identity affects only future commits.
+---
+
+## **Q7. Comparing Changes Across the Git Workflow**
+
+### **Problem Description**
+
+Developers need to compare changes at different stages of Git history.
+
+### **Objective**
+
+Use appropriate diff and log commands for comparison.
+
+### **Hint**
+
+Each comparison uses a different Git command.
+
+### **Short Explanation**
+
+Git provides different diff commands for each workflow stage.
+
+### **Detailed Explanation**
+
+```bash
+git diff
+git diff --staged
+git diff <initial_commit_hash> <second_commit_hash>
+git log --oneline
+```
+
+- `git diff` → working directory vs staging
+- `git diff --staged` → staging vs last commit
+- `git diff commit1 commit2` → history comparison
+- `git log --oneline` → compact history
+
+### **Constraints / Edge Cases (Optional)**
+
+- Commit hashes must be correct
+- Large diffs may need paging tools
 
 ---

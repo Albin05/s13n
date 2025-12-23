@@ -1,197 +1,115 @@
-# **Q4. Why is merging considered a “decision point” rather than a development activity?**
+## **Q1. Why is merging considered a “decision point” rather than a development activity?**
 
-### **1. Title**
+### **Problem Description**
 
-Merge as a Decision Point in Collaboration
+In collaborative development, code written in branches must eventually be integrated into a shared codebase.
 
-### **2. Problem Description**
+### **Objective**
 
-Explain why merging is treated as a confirmation step rather than a coding activity.
+Explain why merging represents a formal decision rather than ongoing development.
 
-### **3. Objective**
+### **Hint**
 
-Understand the conceptual role of merging in professional Git workflows.
+Think about review, approval, and responsibility.
 
-### **4. Hint**
+### **Short Explanation**
 
-Think about what happens _before_ a merge is allowed.
+Merging is a decision to accept changes into the shared codebase, not to create them.
 
-### **5. Short Explanation**
+### **Detailed Explanation**
 
-Merging confirms that reviewed and approved work is ready to become part of the shared codebase.
+Merging is considered a **decision point** because it happens after development is complete and reviews are done. At this stage, the team decides whether the changes meet quality standards and are ready to be included in the shared branch. Once merged, the code affects all contributors, making the action accountable and deliberate rather than exploratory development.
 
-### **6. Detailed Explanation**
+### **Constraints / Edge Cases (Optional)**
 
-In modern workflows, development is completed **before** a merge happens.
-By the time a Pull Request reaches the merge stage:
-
-- The code has already been written
-- Reviews and discussions are complete
-- Quality and intent are validated
-
-Merging records a **team decision** that the changes are acceptable and stable.
-It integrates histories, preserves collaboration context, and marks a stable checkpoint in the project’s evolution.
-
-### **7. Constraints / Edge Cases (optional)**
-
-Direct merges without review bypass this decision-making process and are discouraged in team environments.
+- Emergency merges may skip full review
+- Admin overrides can bypass normal approvals
 
 ---
 
-# **Q5. Why is testing important after resolving a merge conflict?**
+## **Q2. Why testing is important after resolving a merge conflict**
 
-### **1. Title**
+### **Problem Description**
 
-Importance of Testing After Conflict Resolution
+Merge conflicts require manual edits, which can unintentionally introduce errors.
 
-### **2. Problem Description**
+### **Objective**
 
-Explain why testing must be performed after resolving merge conflicts.
+Explain why testing is required after conflict resolution.
 
-### **3. Objective**
+### **Hint**
 
-Understand the risks involved in manual conflict resolution.
+Think about human error during manual edits.
 
-### **4. Hint**
+### **Short Explanation**
 
-Conflict resolution involves human decisions, not automated merges.
+Testing ensures that conflict resolution did not introduce hidden bugs.
 
-### **5. Short Explanation**
+### **Detailed Explanation**
 
-Conflict resolution can introduce subtle bugs, so testing ensures correctness before final integration.
+When resolving merge conflicts, developers manually combine code from different branches. This process can accidentally break logic, remove required code, or introduce syntax errors. Testing the application after resolving conflicts validates that the final merged code works as expected and that no regressions were introduced during manual resolution.
 
-### **6. Detailed Explanation**
+### **Constraints / Edge Cases (Optional)**
 
-When a merge conflict occurs, Git cannot decide which code is correct.
-A developer manually edits files, removes conflict markers, and chooses the final logic.
-
-This process may:
-
-- Accidentally remove required functionality
-- Introduce syntax or logical errors
-- Break integrations between features
-
-Testing after resolution ensures that:
-
-- The application still runs
-- Features behave as expected
-- No regressions were introduced
-
-Only after validation should the merge be finalized.
-
-### **7. Constraints / Edge Cases (optional)**
-
-Skipping tests may allow broken code to enter the main branch.
+- Small changes may still cause major issues
+- Automated tests may not cover all edge cases
 
 ---
 
-# **Q6. Merge Without Conflict (Basic Workflow)**
+## **Q3. Merge Without Conflict (Basic Workflow) – Editorial**
 
-### **1. Title**
+### **Problem Description**
 
-Clean Merge Using a Pull Request
+Not all merges result in conflicts; understanding clean merges is essential for beginners.
 
-### **2. Problem Description**
+### **Objective**
 
-Perform a standard merge workflow where no conflicts occur.
+Demonstrate a clean feature-branch merge using Pull Requests.
 
-### **3. Objective**
+### **Hint**
 
-Practice integrating approved changes into `main` using a Pull Request.
+Ensure changes do not overlap with main branch edits.
 
-### **4. Hint**
+### **Short Explanation**
 
-Ensure feature branch changes do not overlap with main branch changes.
+Non-overlapping changes allow Git to merge branches automatically.
 
-### **5. Short Explanation**
+### **Detailed Explanation**
 
-Changes are developed in a feature branch, reviewed via a PR, and merged cleanly into `main`.
+In this workflow, a repository is created and a base commit is pushed to `main`. A feature branch (`feature-a`) is created where additional lines are added to `app.txt` without modifying the same lines changed in `main`. When a Pull Request is raised from `feature-a` to `main`, Git automatically merges the changes without conflict. After merging, the feature branch is deleted to keep the repository clean. This demonstrates the ideal and most common merge scenario in team workflows using **GitHub**.
 
-### **6. Detailed Explanation**
+### **Constraints / Edge Cases (Optional)**
 
-**Local steps:**
-
-```bash
-git clone <repo-url>
-cd <repo-name>
-
-echo "Initial content" > app.txt
-git add app.txt
-git commit -m "Add initial app file"
-git push origin main
-
-git checkout -b feature-a
-echo "Feature A content" >> app.txt
-git add app.txt
-git commit -m "Add feature A content"
-git push origin feature-a
-```
-
-**Remote (GitHub) steps:**
-
-1. Open Pull Request from `feature-a → main`
-2. Review changes
-3. Merge Pull Request
-4. Delete feature branch
-
-This represents the ideal merge flow with no conflicts.
-
-### **7. Constraints / Edge Cases (optional)**
-
-If main changes before merging, conflicts may still arise.
+- Even small overlapping edits can cause conflicts
+- Branch deletion should happen only after merge confirmation
 
 ---
 
-# **Q7. Merge With Conflict (Conflict Resolution Workflow)**
+## **Q4. Merge With Conflict (Conflict Resolution Workflow) – Editorial**
 
-### **1. Title**
+### **Problem Description**
 
-Handling and Resolving Merge Conflicts
+Conflicts occur when multiple branches modify the same lines of a file.
 
-### **2. Problem Description**
+### **Objective**
 
-Create a merge conflict, resolve it correctly, and finalize the merge.
+Demonstrate how to identify, resolve, and safely complete a conflicting merge.
 
-### **3. Objective**
+### **Hint**
 
-Develop confidence in detecting, resolving, and completing conflict merges.
+Focus on conflict markers and manual resolution.
 
-### **4. Hint**
+### **Short Explanation**
 
-Conflicts occur when the same lines are modified in parallel branches.
+Merge conflicts require manual intervention to decide which changes to keep.
 
-### **5. Short Explanation**
+### **Detailed Explanation**
 
-Git pauses the merge, marks conflicting files, and requires manual resolution.
+In this workflow, a branch (`feature-b`) modifies the same lines in `app.txt` that were also changed in `main`. When a Pull Request is raised, Git detects conflicting changes and blocks automatic merging. The developer must resolve the conflict either using the command line or GitHub’s UI by choosing or combining changes and removing conflict markers. After resolving the conflict and verifying the final content, the merge is completed. This process ensures correctness and intentional integration of competing changes.
 
-### **6. Detailed Explanation**
+### **Constraints / Edge Cases (Optional)**
 
-**Local steps (example):**
-
-```bash
-git checkout -b feature-b
-echo "Conflicting change" > app.txt
-git add app.txt
-git commit -m "Conflicting update"
-git push origin feature-b
-```
-
-**Remote steps:**
-
-1. Raise Pull Request from `feature-b → main`
-2. GitHub reports a merge conflict
-3. Open conflict resolution (CLI or GitHub UI)
-4. Review both versions
-5. Decide final correct content
-6. Remove conflict markers
-7. Mark file as resolved and complete merge
-8. Verify final content
-
-Conflict markers like `<<<<<<<`, `=======`, `>>>>>>>` must **never remain** in the final code.
-
-### **7. Constraints / Edge Cases (optional)**
-
-- Multiple conflicted files increase complexity
-- Poor understanding of code can lead to incorrect resolutions
+- Incorrect conflict resolution can break functionality
+- Conflict markers must be completely removed before merge
 
 ---

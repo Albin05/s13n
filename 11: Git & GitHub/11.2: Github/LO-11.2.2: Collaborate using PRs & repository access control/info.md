@@ -1,22 +1,22 @@
-## **Pre-Read & Lecture Duration Table**
+## **LO - Duration Summary Table**
 
-| Item           | Duration |
+| Component      | Duration |
 | -------------- | -------- |
-| Pre Read       | 10 mins  |
-| Lecture Notes  | 20 mins  |
-| Lecture Script | 78 mins  |
+| Editorials     | 15       |
+| In-Class Quiz  | 5        |
+| Lecture Notes  | 20       |
+| Lecture Script | 78       |
+| Pre-Read       | 10       |
+| Question Bank  | 44       |
 
 ---
 
-## **Assignment Problems Duration Table**
+## **Question Bank Metadata**
 
-| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category                |
-| ------------ | ----------------- | ---------- | ---------------- | ----------------------- |
-| Q1           | 2 minutes         | Low        | 11.2.2           | Knowledge               |
-| Q2           | 2 minutes         | Low        | 11.2.2           | Knowledge               |
-| Q3           | 2 minutes         | Low        | 11.2.2           | Knowledge               |
-| Q4           | 3 minutes         | Low        | 11.2.2           | Knowledge / Application |
-| Q5           | 4 minutes         | Medium     | 11.2.2           | Knowledge / Application |
-| Q6           | 10 minutes        | Medium     | 11.2.2           | Implementation          |
-| Q7           | 15 minutes        | Medium     | 11.2.2           | Implementation          |
-| Q8           | 20 minutes        | Medium     | 11.2.2           | Implementation          |
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 11.2.2           | Knowledge      | Short Answer   |
+| Q2           | 4                 | Medium     | 11.2.2           | Knowledge      | Short Answer   |
+| Q3           | 10                | Medium     | 11.2.2           | Implementation | Implementation |
+| Q4           | 12                | Medium     | 11.2.2           | Application    | Implementation |
+| Q5           | 15                | Medium     | 11.2.2           | Application    | Implementation |

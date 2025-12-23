@@ -1,43 +1,11 @@
-### **Q1. What is the primary purpose of creating a remote repository on GitHub?**
 
-A) To replace the local Git repository
-B) To act as a centralized source of truth for collaboration
-C) To automatically merge all code changes
-D) To run Git commands online
-
-**Correct Answer:** B
-
----
-
-### **Q2. What happens automatically when you clone a remote repository?**
-
-A) A new branch named `main` is created
-B) All files are downloaded but history is skipped
-C) A remote named `origin` is configured
-D) The repository is pushed back to GitHub
-
-**Correct Answer:** C
-
----
-
-### **Q3. Which statement correctly describes `git pull`?**
-
-A) It only downloads changes without modifying local branches
-B) It deletes local commits and replaces them with remote commits
-C) It fetches changes and immediately merges them
-D) It pushes local commits to the remote repository
-
-**Correct Answer:** C
-
----
-
-### **Q4. What is the purpose of setting an upstream branch using `git push -u`?**
+### **Q1. What is the purpose of setting an upstream branch using `git push -u`?**
 
 (Answer in 2–3 lines.)
 
 ---
 
-### **Q5. Explain the difference between `git fetch` and `git pull`. Why is `fetch` considered safer?**
+### **Q2. Explain the difference between `git fetch` and `git pull`. Why is `fetch` considered safer?**
 
 (Answer briefly.)
 
@@ -50,7 +18,7 @@ D) It pushes local commits to the remote repository
 
 ---
 
-### **Q6. Local to Remote Workflow (First Push)**
+### **Q3. Local to Remote Workflow (First Push)**
 
 **Task:**
 Perform the following steps and submit the repository link:
@@ -69,7 +37,7 @@ Perform the following steps and submit the repository link:
 
 ---
 
-### **Q7. Feature Branch → Push → Pull Request → Merge**
+### **Q4. Feature Branch → Push → Pull Request → Merge**
 
 **Task:**
 Using the repository from Q6, perform the following:
@@ -90,7 +58,7 @@ Using the repository from Q6, perform the following:
 
 ---
 
-### **Q8. Collaboration Workflow with Pull Requests**
+### **Q5. Collaboration Workflow with Pull Requests**
 
 **Task:**
 Perform **one of the following two approaches** (based on availability):
