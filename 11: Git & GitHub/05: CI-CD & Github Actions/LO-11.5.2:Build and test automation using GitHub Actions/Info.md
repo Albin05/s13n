@@ -15,10 +15,10 @@
 
 | Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       |
 | ------------ | ----------------- | ---------- | ---------------- | -------------- |
-| Q1           | 2 minutes         | Low        | LO-3.1           | Knowledge      |
-| Q2           | 2 minutes         | Low        | LO-3.2           | Knowledge      |
-| Q3           | 2 minutes         | Low        | LO-3.2           | Knowledge      |
-| Q4           | 5 minutes         | Medium     | LO-3.3           | Understanding  |
-| Q5           | 7 minutes         | Medium     | LO-3.4           | Application    |
-| Q6           | 30 minutes        | High       | LO-3.5           | Implementation |
-| Q7           | 40 minutes        | High       | LO-3.6           | Implementation |
+| Q1           | 2 minutes         | Low        | 11.5.2           | Knowledge      |
+| Q2           | 2 minutes         | Low        | 11.5.2           | Knowledge      |
+| Q3           | 2 minutes         | Low        | 11.5.2           | Knowledge      |
+| Q4           | 5 minutes         | Medium     | 11.5.2           | Understanding  |
+| Q5           | 7 minutes         | Medium     | 11.5.2           | Application    |
+| Q6           | 30 minutes        | High       | 11.5.2           | Implementation |
+| Q7           | 40 minutes        | High       | 11.5.2           | Implementation |

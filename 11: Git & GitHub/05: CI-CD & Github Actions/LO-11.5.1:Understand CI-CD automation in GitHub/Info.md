@@ -12,9 +12,9 @@
 
 | Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category      |
 | ------------ | ----------------- | ---------- | ---------------- | ------------- |
-| Q1           | 2 minutes         | Low        | LO-2.1           | Knowledge     |
-| Q2           | 2 minutes         | Low        | LO-2.2           | Knowledge     |
-| Q3           | 2 minutes         | Low        | LO-2.2           | Knowledge     |
-| Q4           | 5 minutes         | Medium     | LO-2.3           | Understanding |
-| Q5           | 5 minutes         | Medium     | LO-2.4           | Understanding |
-| Q6           | 7 minutes         | Medium     | LO-2.5           | Application   |
+| Q1           | 2 minutes         | Low        | 11.5.1           | Knowledge     |
+| Q2           | 2 minutes         | Low        | 11.5.1           | Knowledge     |
+| Q3           | 2 minutes         | Low        | 11.5.1           | Knowledge     |
+| Q4           | 5 minutes         | Medium     | 11.5.1           | Understanding |
+| Q5           | 5 minutes         | Medium     | 11.5.1           | Understanding |
+| Q6           | 7 minutes         | Medium     | 11.5.1           | Application   |
