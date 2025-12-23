@@ -1,25 +1,22 @@
-# LO-13: Use Comparison Operators
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Students will be able to use comparison operators to compare values and create boolean expressions.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 10              |
+| In-Class Quiz  | 5               |
+| Lecture Notes  | 15              |
+| Lecture Script | 20              |
+| Pre-Read       | 5               |
+| Question Bank  | 21              |
 
-## Duration
-15-20 minutes
+---
 
-## Key Concepts Covered
-1. **Comparison Operators**: ==, !=, <, >, <=, >=
-2. **Boolean Results**: All comparisons return True or False
-3. **Type Compatibility**: Comparing values of compatible types
-4. **Practical Applications**: Validating input, checking conditions
+## **Question Bank Metadata**
 
-## Prerequisites
-- LO-1: Define Variables
-- LO-3: Implement Integer Data Types
-- LO-6: Implement Boolean Data Types
-
-## Learning Outcomes
-By the end of this lesson, students will be able to:
-- Use all six comparison operators correctly
-- Understand that comparisons return boolean values
-- Compare numbers and strings
-- Apply comparisons in real-world scenarios
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.1.13           | Implementation | Coding         |
+| Q2           | 3                 | Low        | 9.1.13           | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.13           | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.13           | Application    | Coding         |
+| Q5           | 5                 | Medium     | 9.1.13           | Application    | Coding         |

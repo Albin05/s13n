@@ -1,18 +1,22 @@
-# LO-6: Implement Boolean Data Types
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Understand and use boolean (bool) data types for True/False logic.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 10              |
+| In-Class Quiz  | 5               |
+| Lecture Notes  | 15              |
+| Lecture Script | 15              |
+| Pre-Read       | 5               |
+| Question Bank  | 21              |
 
-## Duration
-10 minutes
+---
 
-## Key Concepts
-- Boolean values: True/False
-- Boolean in conditions
-- Boolean operators (preview)
-- Truthiness concept
+## **Question Bank Metadata**
 
-## Success Criteria
-- Create boolean variables
-- Use booleans in logic
-- Name booleans appropriately
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.1.6            | Implementation | Coding         |
+| Q2           | 3                 | Low        | 9.1.6            | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.6            | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.6            | Application    | Coding         |
+| Q5           | 5                 | Medium     | 9.1.6            | Application    | Coding         |

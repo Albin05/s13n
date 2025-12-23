@@ -1,7 +1,5 @@
-# Question Bank: Write Else Statements
+### **1. Write a program that checks if a number is even or odd:**
 
-## Problem 1 (Easy)
-Write a program that checks if a number is even or odd:
 - If divisible by 2: "Even"
 - Else: "Odd"
 
@@ -11,8 +9,10 @@ Enter a number: 7
 Odd
 ```
 
-## Problem 2 (Easy)
-Write a program that checks voting eligibility:
+---
+
+### **2. Write a program that checks voting eligibility:**
+
 - If age >= 18: "You can vote"
 - Else: "You cannot vote yet. Wait X years" (calculate X)
 
@@ -22,8 +22,10 @@ Enter your age: 16
 You cannot vote yet. Wait 2 years
 ```
 
-## Problem 3 (Medium)
-Write a complete grade calculator with if-elif-else:
+---
+
+### **3. Write a complete grade calculator with if-elif-else:**
+
 - >= 90: A
 - >= 80: B
 - >= 70: C
@@ -39,8 +41,10 @@ Grade: F
 Result: Failed
 ```
 
-## Problem 4 (Medium)
-Write a shipping cost calculator:
+---
+
+### **4. Write a shipping cost calculator:**
+
 - If weight <= 1kg: $5
 - Elif weight <= 5kg: $10
 - Elif weight <= 10kg: $15
@@ -52,8 +56,10 @@ Enter package weight (kg): 12
 Shipping cost: $25
 ```
 
-## Problem 5 (Hard)
-Write a comprehensive ATM withdrawal validator:
+---
+
+### **5. Write a comprehensive ATM withdrawal validator:**
+
 - Check if amount > 0 (else: "Invalid amount")
 - Check if amount <= balance (else: "Insufficient funds")
 - Check if amount % 10 == 0 (else: "Amount must be multiple of 10")
@@ -68,3 +74,6 @@ Enter amount: $50
 Withdrawal successful
 New balance: $450
 ```
+
+---
+

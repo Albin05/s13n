@@ -1,23 +1,23 @@
-# LO-7: Check Variable Types
+## **LO - Duration Summary Table**
 
-`type()` function identifies variable data types in Python.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 14              |
+| In-Class Quiz  | 5               |
+| Lecture Notes  | 20              |
+| Lecture Script | 10              |
+| Pre-Read       | 5               |
+| Question Bank  | 28              |
 
-```python
-age = 25
-print(type(age))  # <class 'int'>
+---
 
-name = "Alice"
-print(type(name))  # <class 'str'>
-```
+## **Question Bank Metadata**
 
-## Use Cases
-- Debugging
-- Validation
-- Understanding code
-- Type checking
-
-## Key Points
-- `type(variable)` returns the type
-- Returns class object
-- Helps identify type errors
-- Essential for debugging
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.1.7            | Implementation | Coding         |
+| Q2           | 3                 | Low        | 9.1.7            | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.7            | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.7            | Application    | Coding         |
+| Q5           | 5                 | Medium     | 9.1.7            | Application    | Coding         |
+| Q6           | 7                 | High       | 9.1.7            | Application    | Coding         |

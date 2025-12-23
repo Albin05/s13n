@@ -1,6 +1,4 @@
-# Question Bank: Writing Nested Loops for Multi-Level Iteration
-
-## Problem 1: Simple Multiplication Table (Easy)
+### **1. Simple Multiplication Table**
 
 Print a 5x5 multiplication table.
 
@@ -17,7 +15,9 @@ Print a 5x5 multiplication table.
 
 ---
 
-## Problem 2: Rectangle Pattern (Easy)
+---
+
+### **2. Rectangle Pattern**
 
 Print a rectangle of stars with 4 rows and 6 columns.
 
@@ -33,7 +33,9 @@ Print a rectangle of stars with 4 rows and 6 columns.
 
 ---
 
-## Problem 3: Right Triangle Pattern (Easy)
+---
+
+### **3. Right Triangle Pattern**
 
 Print a right-angled triangle pattern with 5 rows.
 
@@ -50,7 +52,9 @@ Print a right-angled triangle pattern with 5 rows.
 
 ---
 
-## Problem 4: Number Triangle (Easy)
+---
+
+### **4. Number Triangle**
 
 Print a triangle where each row contains row number repeated.
 
@@ -67,7 +71,9 @@ Print a triangle where each row contains row number repeated.
 
 ---
 
-## Problem 5: Nested Lists (Medium)
+---
+
+### **5. Nested Lists**
 
 Create a 3x3 matrix (2D list) filled with zeros using nested loops.
 
@@ -82,7 +88,9 @@ Create a 3x3 matrix (2D list) filled with zeros using nested loops.
 
 ---
 
-## Problem 6: Print All Pairs (Medium)
+---
+
+### **6. Print All Pairs**
 
 Print all possible pairs from two lists.
 
@@ -105,7 +113,9 @@ Given lists: `[1, 2, 3]` and `['a', 'b', 'c']`
 
 ---
 
-## Problem 7: Sum of 2D List (Medium)
+---
+
+### **7. Sum of 2D List**
 
 Calculate the sum of all elements in a 2D list.
 
@@ -125,7 +135,9 @@ Sum: 45
 
 ---
 
-## Problem 8: Inverted Triangle (Medium)
+---
+
+### **8. Inverted Triangle**
 
 Print an inverted right-angled triangle.
 
@@ -142,7 +154,9 @@ Print an inverted right-angled triangle.
 
 ---
 
-## Problem 9: Number Pyramid (Medium)
+---
+
+### **9. Number Pyramid**
 
 Print a number pyramid.
 
@@ -159,7 +173,9 @@ Print a number pyramid.
 
 ---
 
-## Problem 10: Coordinates Grid (Medium)
+---
+
+### **10. Coordinates Grid**
 
 Print all coordinates for a 4x4 grid in (row, col) format.
 
@@ -175,7 +191,9 @@ Print all coordinates for a 4x4 grid in (row, col) format.
 
 ---
 
-## Problem 11: Find Element in 2D List (Hard)
+---
+
+### **11. Find Element in 2D List**
 
 Find if a target element exists in a 2D list and print its position.
 
@@ -191,7 +209,9 @@ Found at row 1, col 1
 
 ---
 
-## Problem 12: Matrix Transpose (Hard)
+---
+
+### **12. Matrix Transpose**
 
 Transpose a 3x2 matrix (swap rows and columns).
 
@@ -212,7 +232,9 @@ Given matrix:
 
 ---
 
-## Problem 13: Diagonal Pattern (Hard)
+---
+
+### **13. Diagonal Pattern**
 
 Print a diagonal pattern for a 5x5 grid.
 
@@ -229,7 +251,9 @@ Print a diagonal pattern for a 5x5 grid.
 
 ---
 
-## Problem 14: Checkerboard Pattern (Hard)
+---
+
+### **14. Checkerboard Pattern**
 
 Print a checkerboard pattern (alternating * and .).
 
@@ -246,7 +270,9 @@ Print a checkerboard pattern (alternating * and .).
 
 ---
 
-## Problem 15: All Combinations (Hard)
+---
+
+### **15. All Combinations**
 
 Print all possible 3-digit combinations from digits 0-2.
 
@@ -261,7 +287,9 @@ Print all possible 3-digit combinations from digits 0-2.
 
 ---
 
-## Problem 16: Prime Number Grid (Hard)
+---
+
+### **16. Prime Number Grid**
 
 Check which positions in a 2D list contain prime numbers.
 
@@ -280,7 +308,9 @@ Prime at (2, 2): 13
 
 ---
 
-## Problem 17: Row and Column Sums (Very Hard)
+---
+
+### **17. Row and Column Sums**
 
 Calculate sum of each row and each column in a matrix.
 
@@ -305,7 +335,9 @@ Col 2 sum: 18
 
 ---
 
-## Problem 18: Pascal's Triangle (Very Hard)
+---
+
+### **18. Pascal's Triangle**
 
 Print first 5 rows of Pascal's Triangle.
 
@@ -322,7 +354,9 @@ Print first 5 rows of Pascal's Triangle.
 
 ---
 
-## Problem 19: Spiral Matrix (Very Hard)
+---
+
+### **19. Spiral Matrix**
 
 Create a 3x3 spiral matrix.
 
@@ -337,7 +371,9 @@ Create a 3x3 spiral matrix.
 
 ---
 
-## Problem 20: Diamond Pattern (Very Hard)
+---
+
+### **20. Diamond Pattern**
 
 Print a diamond pattern.
 
@@ -358,7 +394,9 @@ Print a diamond pattern.
 
 ---
 
-## Problem 21: Flatten 2D List (Medium)
+---
+
+### **21. Flatten 2D List**
 
 Convert a 2D list to a 1D list.
 
@@ -373,7 +411,9 @@ Given matrix: `[[1, 2, 3], [4, 5, 6], [7, 8, 9]]`
 
 ---
 
-## Problem 22: Common Elements in Lists (Hard)
+---
+
+### **22. Common Elements in Lists**
 
 Find common elements between multiple lists using nested loops.
 
@@ -388,7 +428,9 @@ Common element: 4
 
 ---
 
-## Problem 23: Nested Counters (Medium)
+---
+
+### **23. Nested Counters**
 
 Count total iterations in nested loops.
 
@@ -403,7 +445,9 @@ Total iterations: 24
 
 ---
 
-## Problem 24: Matrix Multiplication (Very Hard)
+---
+
+### **24. Matrix Multiplication**
 
 Multiply two 2x2 matrices.
 
@@ -423,7 +467,9 @@ B = [[5, 6], [7, 8]]
 
 ---
 
-## Problem 25: Border Pattern (Hard)
+---
+
+### **25. Border Pattern**
 
 Print a bordered rectangle.
 
@@ -440,7 +486,9 @@ Print a bordered rectangle.
 
 ---
 
-## Problem 26: Times Table (Easy)
+---
+
+### **26. Times Table**
 
 Print multiplication table for numbers 1-3 (1 to 5 for each).
 
@@ -455,7 +503,9 @@ Print multiplication table for numbers 1-3 (1 to 5 for each).
 
 ---
 
-## Problem 27: Sum Diagonal Elements (Medium)
+---
+
+### **27. Sum Diagonal Elements**
 
 Calculate sum of diagonal elements in a square matrix.
 
@@ -475,7 +525,9 @@ Main diagonal sum: 15
 
 ---
 
-## Problem 28: Identity Matrix (Medium)
+---
+
+### **28. Identity Matrix**
 
 Create a 4x4 identity matrix (1s on diagonal, 0s elsewhere).
 
@@ -491,7 +543,9 @@ Create a 4x4 identity matrix (1s on diagonal, 0s elsewhere).
 
 ---
 
-## Problem 29: All Substrings (Very Hard)
+---
+
+### **29. All Substrings**
 
 Generate all substrings of a string using nested loops.
 
@@ -508,7 +562,9 @@ c
 
 ---
 
-## Problem 30: Nested List Comprehension Alternative (Hard)
+---
+
+### **30. Nested List Comprehension Alternative**
 
 Create same 3x3 matrix using nested loops (not comprehension).
 
@@ -679,3 +735,6 @@ Master nested loops by:
 5. Considering performance implications
 
 Remember: The outer loop runs completely before inner loop, and inner loop completes fully for each outer loop iteration!
+
+---
+

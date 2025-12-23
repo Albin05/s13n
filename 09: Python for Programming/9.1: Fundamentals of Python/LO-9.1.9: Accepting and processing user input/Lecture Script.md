@@ -1,25 +1,63 @@
-# Lecture Script: LO-9 Accept User Input
+### LO-9 Accept User Input (16 minutes)
 
-## [0:00-0:02] Hook
-**Say**: "Want to make programs that talk to users? That's input()!"
+### Hook (3 minutes)
 
-## [0:02-0:07] Input Basics (5 min)
+**Say**: "Want to make programs that talk to users? The input() function makes programs interactive!"
+
 ```python
-name = input("Name: ")
-print("Hello, " + name)
+name = input("What's your name? ")
+print(f"Hello, {name}!")
 ```
 
-## [0:07-0:12] Type Conversion (5 min)
-**Show the problem**:
+### Input Basics (5 minutes)
+
+**Say**: "Input() displays a prompt, waits for user to type, then returns what they typed as a string."
+
 ```python
-age = input("Age: ")
-# age + 1  # Error!
+name = input("Enter your name: ")
+print(f"Welcome, {name}!")
+
+city = input("Where do you live? ")
+print(f"{name} lives in {city}")
 ```
 
-**Show the solution**:
+**Key Points**:
+- `input()` always returns a string
+- The prompt message is optional but helpful
+- Program pauses until user presses Enter
+- Works in terminal/console programs
+
+### Input with Type Conversion (5 minutes)
+
+**Say**: "Remember: input() gives strings! Convert for math."
+
 ```python
-age = int(input("Age: "))
+# Wrong way
+age = input("Enter age: ")
+# age + 1  # Error! Can't add string and number
+
+# Right way
+age = int(input("Enter age: "))
+next_year = age + 1
+print(f"Next year you'll be {next_year}")
 ```
 
-## [0:12-0:15] Practice (3 min)
-Create a calculator that asks for two numbers and adds them.
+**Common Pattern**:
+```python
+price = float(input("Enter price: $"))
+quantity = int(input("Enter quantity: "))
+total = price * quantity
+print(f"Total: ${total:.2f}")
+```
+
+**Real-World**: Calculators, games, forms - all use input() to interact with users!
+
+### Practice (3 minutes)
+
+Build an interactive calculator:
+```python
+num1 = int(input("First number: "))
+num2 = int(input("Second number: "))
+sum_result = num1 + num2
+print(f"{num1} + {num2} = {sum_result}")
+```

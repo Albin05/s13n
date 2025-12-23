@@ -1,6 +1,4 @@
-# Question Bank: Applying Default Parameters in Function Definitions
-
-## Problem 1: Simple Default Parameter (Easy)
+### **1. Simple Default Parameter**
 
 Write a function `greet` that takes a `name` parameter and an optional `greeting` parameter with default value "Hello". Return a greeting message.
 
@@ -14,7 +12,9 @@ print(greet("Bob", "Hi"))  # Hi, Bob!
 
 ---
 
-## Problem 2: Power Function with Default Exponent (Easy)
+---
+
+### **2. Power Function with Default Exponent**
 
 Create a function `power` that takes a base number and an exponent with a default value of 2. Return the result.
 
@@ -29,7 +29,9 @@ print(power(10))  # 100 (10²)
 
 ---
 
-## Problem 3: Calculate Discount with Default Rate (Easy)
+---
+
+### **3. Calculate Discount with Default Rate**
 
 Define a function `calculate_discount` that takes a price and a discount percentage with a default of 10%. Return the discounted price.
 
@@ -44,7 +46,9 @@ print(calculate_discount(250))  # 225.0 (10% off)
 
 ---
 
-## Problem 4: Create Username with Default Domain (Easy)
+---
+
+### **4. Create Username with Default Domain**
 
 Write a function `create_email` that takes a username and an optional domain with default value "example.com". Return the full email address.
 
@@ -58,7 +62,9 @@ print(create_email("bob", "gmail.com"))  # bob@gmail.com
 
 ---
 
-## Problem 5: Repeat String with Default Count (Easy)
+---
+
+### **5. Repeat String with Default Count**
 
 Create a function `repeat_text` that takes text and a count parameter with default value 3. Return the repeated text.
 
@@ -73,7 +79,9 @@ print(repeat_text("*"))  # ***
 
 ---
 
-## Problem 6: Temperature Converter with Default Unit (Medium)
+---
+
+### **6. Temperature Converter with Default Unit**
 
 Define a function `convert_temperature` that takes a temperature value and an optional unit parameter (default "C" for Celsius). If unit is "C", convert to Fahrenheit; if "F", convert to Celsius. Return the converted value.
 
@@ -90,7 +98,9 @@ print(convert_temperature(100))  # 212.0 (100°C to °F)
 
 ---
 
-## Problem 7: Format Name with Default Title (Medium)
+---
+
+### **7. Format Name with Default Title**
 
 Write a function `format_name` that takes first_name, last_name, and an optional title with default value "Mr./Ms.". Return the formatted name.
 
@@ -104,7 +114,9 @@ print(format_name("Jane", "Smith", "Dr."))  # Dr. Jane Smith
 
 ---
 
-## Problem 8: Calculate Tax with Default Rate (Medium)
+---
+
+### **8. Calculate Tax with Default Rate**
 
 Create a function `calculate_tax` that takes income and an optional tax_rate with default 15%. Return the tax amount.
 
@@ -119,7 +131,9 @@ print(calculate_tax(100000))  # 15000.0 (15%)
 
 ---
 
-## Problem 9: Send Message with Default Priority (Medium)
+---
+
+### **9. Send Message with Default Priority**
 
 Define a function `send_message` that takes a message text and an optional priority with default "Normal". Print the message with its priority level.
 
@@ -136,7 +150,9 @@ send_message("URGENT: Server down", "High")
 
 ---
 
-## Problem 10: Multiple Defaults - Rectangle Area (Medium)
+---
+
+### **10. Multiple Defaults - Rectangle Area**
 
 Write a function `calculate_rectangle_area` that takes length and width, both with default value 1. Return the area.
 
@@ -151,7 +167,9 @@ print(calculate_rectangle_area(5, 3))  # 15 (5 × 3)
 
 ---
 
-## Problem 11: Create URL with Default Protocol (Medium)
+---
+
+### **11. Create URL with Default Protocol**
 
 Create a function `create_url` that takes a domain and an optional protocol with default "https". Return the complete URL.
 
@@ -165,7 +183,9 @@ print(create_url("example.com", "http"))  # http://example.com
 
 ---
 
-## Problem 12: Print Message with Default Separator (Medium)
+---
+
+### **12. Print Message with Default Separator**
 
 Define a function `print_message` that takes multiple words as parameters and a separator with default " ". Print the words joined by the separator.
 
@@ -180,7 +200,9 @@ print_message("2024", "12", "19", separator="/")  # 2024/12/19
 
 ---
 
-## Problem 13: Calculate BMI with Default Units (Hard)
+---
+
+### **13. Calculate BMI with Default Units**
 
 Write a function `calculate_bmi` that takes weight and height, and an optional unit system with default "metric".
 - If metric: weight in kg, height in m
@@ -200,7 +222,9 @@ print(calculate_bmi(154, 69, "imperial"))  # 22.75 (imperial)
 
 ---
 
-## Problem 14: Login Function with Default Attempts (Hard)
+---
+
+### **14. Login Function with Default Attempts**
 
 Create a function `attempt_login` that takes username, password, and an optional max_attempts with default 3. Simulate login attempts and return success/failure message.
 
@@ -217,7 +241,9 @@ attempt_login("user", "pass", 5)
 
 ---
 
-## Problem 15: Format Currency with Default Symbol (Medium)
+---
+
+### **15. Format Currency with Default Symbol**
 
 Define a function `format_currency` that takes an amount and an optional currency symbol with default "$". Return formatted string.
 
@@ -232,7 +258,9 @@ print(format_currency(5000, "£"))  # £5,000.00
 
 ---
 
-## Problem 16: Create List with Default Size (Medium)
+---
+
+### **16. Create List with Default Size**
 
 Write a function `create_list` that takes an optional size parameter with default 5, and an optional value with default 0. Return a list of that size filled with the value.
 
@@ -247,7 +275,9 @@ print(create_list(4, 1))  # [1, 1, 1, 1]
 
 ---
 
-## Problem 17: Calculate Shipping Cost with Default Method (Hard)
+---
+
+### **17. Calculate Shipping Cost with Default Method**
 
 Create a function `calculate_shipping` that takes weight and an optional method with default "standard".
 - Standard: $5 per kg
@@ -267,7 +297,9 @@ print(calculate_shipping(3, "overnight"))  # 45.0 (overnight)
 
 ---
 
-## Problem 18: Draw Shape with Default Character (Medium)
+---
+
+### **18. Draw Shape with Default Character**
 
 Define a function `draw_line` that takes length and an optional character with default "*". Print a line of that character.
 
@@ -282,7 +314,9 @@ draw_line(10, "-")  # ----------
 
 ---
 
-## Problem 19: Calculate Grade with Default Scale (Hard)
+---
+
+### **19. Calculate Grade with Default Scale**
 
 Write a function `calculate_grade` that takes a score and an optional scale with default "letter" (returns A/B/C/D/F). If scale is "gpa", return GPA value (4.0/3.0/2.0/1.0/0.0).
 
@@ -297,7 +331,9 @@ print(calculate_grade(75))  # C
 
 ---
 
-## Problem 20: Timer Function with Default Unit (Hard)
+---
+
+### **20. Timer Function with Default Unit**
 
 Create a function `format_time` that takes seconds and an optional unit with default "seconds". Convert and return the time in the specified unit (seconds, minutes, hours).
 
@@ -315,7 +351,9 @@ print(format_time(7200, "hours"))  # 2.0 hours
 
 ---
 
-## Problem 21: Search List with Default Start Index (Medium)
+---
+
+### **21. Search List with Default Start Index**
 
 Define a function `find_index` that takes a list, a target value, and an optional start index with default 0. Return the index where target is found, searching from start index.
 
@@ -330,7 +368,9 @@ print(find_index(nums, 2, 2))  # 3 (occurrence from index 2)
 
 ---
 
-## Problem 22: Validate Password with Default Requirements (Hard)
+---
+
+### **22. Validate Password with Default Requirements**
 
 Write a function `validate_password` that takes a password and optional min_length with default 8. Return True if password meets length requirement, False otherwise.
 
@@ -345,7 +385,9 @@ print(validate_password("pass", 4))  # True (length 4 >= 4)
 
 ---
 
-## Problem 23: Create Range with Default Step (Medium)
+---
+
+### **23. Create Range with Default Step**
 
 Create a function `custom_range` that takes start, end, and an optional step with default 1. Return a list of numbers in that range.
 
@@ -360,7 +402,9 @@ print(custom_range(5, 0, -1))  # [5, 4, 3, 2, 1]
 
 ---
 
-## Problem 24: Format Phone Number with Default Country Code (Medium)
+---
+
+### **24. Format Phone Number with Default Country Code**
 
 Define a function `format_phone` that takes a phone number and an optional country_code with default "+1". Return formatted phone with country code.
 
@@ -374,7 +418,9 @@ print(format_phone("9876543210", "+91"))  # +91-9876543210
 
 ---
 
-## Problem 25: Calculate Compound Interest with Default Period (Hard)
+---
+
+### **25. Calculate Compound Interest with Default Period**
 
 Write a function `compound_interest` that takes principal, rate, time, and an optional n (compounds per year) with default 1. Return the final amount.
 
@@ -388,7 +434,9 @@ print(compound_interest(1000, 5, 2, 4))  # 1104.49 (compounded quarterly)
 
 ---
 
-## Problem 26: Pad String with Default Character (Medium)
+---
+
+### **26. Pad String with Default Character**
 
 Create a function `pad_string` that takes text, target length, and an optional pad_char with default space " ". Return text padded to target length.
 
@@ -402,7 +450,9 @@ print(pad_string("Hi", 5, "*"))  # "Hi***"
 
 ---
 
-## Problem 27: Generate Password with Default Length (Hard)
+---
+
+### **27. Generate Password with Default Length**
 
 Define a function `generate_password` that takes an optional length with default 8, and an optional include_numbers with default True. Return a randomly generated password.
 
@@ -417,7 +467,9 @@ print(generate_password(6, False))  # e.g., "aBcdEf" (6 chars, no numbers)
 
 ---
 
-## Problem 28: Calculate Tip with Default Percentage (Easy)
+---
+
+### **28. Calculate Tip with Default Percentage**
 
 Write a function `calculate_tip` that takes a bill amount and an optional tip_percent with default 15%. Return the tip amount.
 
@@ -432,7 +484,9 @@ print(calculate_tip(200))  # 30.0 (15%)
 
 ---
 
-## Problem 29: Filter List with Default Condition (Hard)
+---
+
+### **29. Filter List with Default Condition**
 
 Create a function `filter_numbers` that takes a list and an optional condition with default "positive".
 - "positive": return positive numbers
@@ -452,7 +506,9 @@ print(filter_numbers([1, 2, 3, 4, 5], "even"))  # [2, 4]
 
 ---
 
-## Problem 30: Create Report Header with Defaults (Hard)
+---
+
+### **30. Create Report Header with Defaults**
 
 Define a function `create_header` that takes title, an optional width with default 50, and an optional border_char with default "=". Return a formatted header.
 
@@ -644,3 +700,6 @@ def log_message(message, timestamp=None):
 4. **Database Queries**: Default limit, offset
 5. **UI Functions**: Default colors, sizes, positions
 6. **Math Functions**: Default precision, rounding mode
+
+---
+

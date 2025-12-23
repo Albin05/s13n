@@ -1,7 +1,5 @@
-# Question Bank: Write Elif Statements
+### **1. Write a program that determines the size of a shirt based on chest measurement:**
 
-## Problem 1 (Easy)
-Write a program that determines the size of a shirt based on chest measurement:
 - If chest >= 42: "XL"
 - Elif chest >= 38: "L"
 - Elif chest >= 34: "M"
@@ -14,8 +12,10 @@ Enter chest measurement (inches): 36
 Size: M
 ```
 
-## Problem 2 (Easy)
-Write a program that categorizes a number:
+---
+
+### **2. Write a program that categorizes a number:**
+
 - If number > 0: "Positive"
 - Elif number < 0: "Negative"
 - Else: "Zero"
@@ -26,8 +26,10 @@ Enter a number: -5
 Negative
 ```
 
-## Problem 3 (Medium)
-Write a traffic fine calculator:
+---
+
+### **3. Write a traffic fine calculator:**
+
 - If speed <= speed_limit: "No fine"
 - Elif speed <= speed_limit + 10: "Warning"
 - Elif speed <= speed_limit + 20: "Fine: $50"
@@ -43,8 +45,10 @@ Enter your speed: 75
 Fine: $50
 ```
 
-## Problem 4 (Medium)
-Write a grade calculator with letter grades and +/- modifiers:
+---
+
+### **4. Write a grade calculator with letter grades and +/- modifiers:**
+
 - If score >= 97: "A+"
 - Elif score >= 93: "A"
 - Elif score >= 90: "A-"
@@ -57,8 +61,10 @@ Write a grade calculator with letter grades and +/- modifiers:
 - Elif score >= 60: "D"
 - Else: "F"
 
-## Problem 5 (Hard)
-Write a tax calculator based on income brackets:
+---
+
+### **5. Write a tax calculator based on income brackets:**
+
 - $0 - $10,000: 0% tax
 - $10,001 - $40,000: 10% tax
 - $40,001 - $85,000: 20% tax
@@ -75,3 +81,6 @@ Tax amount: $10000.00
 ```
 
 Hint: Use elif to determine the bracket, then calculate tax!
+
+---
+

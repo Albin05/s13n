@@ -1,7 +1,5 @@
-# Question Bank: Write If Statements
+### **1. Write a program that:**
 
-## Problem 1 (Easy)
-Write a program that:
 1. Takes a number as input
 2. If the number is positive (> 0), print "Positive number"
 3. If the number is negative (< 0), print "Negative number"
@@ -13,8 +11,10 @@ Enter a number: 5
 Positive number
 ```
 
-## Problem 2 (Easy)
-Write a program that:
+---
+
+### **2. Write a program that:**
+
 1. Takes user's age as input
 2. If age is 18 or above, print "You can vote"
 3. If age is 21 or above, print "You can drink alcohol (in US)"
@@ -28,8 +28,10 @@ You can drink alcohol (in US)
 Thank you
 ```
 
-## Problem 3 (Medium)
-Write a password strength checker:
+---
+
+### **3. Write a password strength checker:**
+
 1. Take a password as input
 2. Check and print messages for:
    - Length >= 8: "Good length"
@@ -42,8 +44,10 @@ Enter password: mypass123
 Good length
 ```
 
-## Problem 4 (Medium)
-Write a program that checks exam eligibility:
+---
+
+### **4. Write a program that checks exam eligibility:**
+
 1. Take attendance percentage and fee status (paid/unpaid)
 2. If attendance >= 75 AND fee is paid, print "Eligible for exam"
 3. If attendance < 75, print "Low attendance"
@@ -56,8 +60,10 @@ Fee paid? (paid/unpaid): paid
 Eligible for exam
 ```
 
-## Problem 5 (Hard)
-Write a comprehensive grade calculator:
+---
+
+### **5. Write a comprehensive grade calculator:**
+
 1. Take a score (0-100) as input
 2. Use multiple if statements to:
    - Check if score >= 90: print "Grade: A" and "Excellent work!"
@@ -77,3 +83,6 @@ Excellent work!
 ```
 
 Hint: You'll need multiple if statements with different conditions!
+
+---
+

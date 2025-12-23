@@ -1,38 +1,22 @@
-# LO-3: Implement Integer Data Types
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Students will understand and work with integer (int) data types in Python.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 10       |
+| In-Class Quiz  | 5        |
+| Lecture Notes  | 12       |
+| Lecture Script | 16       |
+| Pre-Read       | 5        |
+| Question Bank  | 22       |
 
-## Duration
-10-15 minutes
+---
 
-## Key Concepts
-1. **Integers**: Whole numbers (positive, negative, zero)
-2. **Integer Operations**: Arithmetic with whole numbers
-3. **Integer Division**: `//` vs `/`
-4. **Use Cases**: Counting, indexing, whole quantities
+## **Question Bank Metadata**
 
-## Learning Outcomes
-- [ ] Create integer variables
-- [ ] Perform integer arithmetic
-- [ ] Understand integer vs float division
-- [ ] Know when to use integers
-
-## Real-World Applications
-- **Counting**: Number of students, items in stock
-- **Ages**: Person's age in years
-- **Years**: Calendar years, durations
-- **IDs**: User IDs, product codes
-
-## Common Misconceptions
-1. Division always returns integer → No, `/` returns float
-2. Integers have size limits → Not in Python 3!
-3. Can't mix int and float → You can, result is float
-
-## Success Criteria
-- Create and manipulate integer variables
-- Choose appropriate operations
-- Explain difference between `/` and `//`
-
-## Next Steps
-**LO-4**: Implement Float Data Types
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.1.3            | Knowledge      | MCQ            |
+| Q2           | 3                 | Low        | 9.1.3            | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.3            | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.3            | Application    | Coding         |
+| Q5           | 6                 | High       | 9.1.3            | Application    | Coding         |

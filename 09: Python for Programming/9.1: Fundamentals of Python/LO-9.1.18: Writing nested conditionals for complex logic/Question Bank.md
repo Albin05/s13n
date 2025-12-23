@@ -1,6 +1,4 @@
-# Question Bank: Writing Nested Conditionals for Complex Logic
-
-## Problem 1: Age Group Classifier (Easy)
+### **1. Age Group Classifier**
 
 Write a program that classifies a person's age into categories. If age is valid (>= 0), classify as:
 - Child: 0-12
@@ -21,7 +19,9 @@ Adult
 
 ---
 
-## Problem 2: Grade Calculator with Pass/Fail (Easy)
+---
+
+### **2. Grade Calculator with Pass/Fail**
 
 Write a program that assigns letter grades and pass/fail status. If score is valid (0-100):
 - A: 90-100 (Pass)
@@ -43,7 +43,9 @@ Grade: B (Pass)
 
 ---
 
-## Problem 3: Movie Ticket Pricing (Easy)
+---
+
+### **3. Movie Ticket Pricing**
 
 Calculate movie ticket price based on age and student status:
 - Child (under 18) student: $5
@@ -62,7 +64,9 @@ Ticket price: $5
 
 ---
 
-## Problem 4: Login Validation (Medium)
+---
+
+### **4. Login Validation**
 
 Write a login system that checks:
 1. Is username provided?
@@ -83,7 +87,9 @@ Login successful
 
 ---
 
-## Problem 5: Restaurant Bill Calculator (Medium)
+---
+
+### **5. Restaurant Bill Calculator**
 
 Calculate tip and total for a restaurant bill:
 - Validate num_people > 0
@@ -106,7 +112,9 @@ Per person: $34.50
 
 ---
 
-## Problem 6: Student Scholarship Eligibility (Medium)
+---
+
+### **6. Student Scholarship Eligibility**
 
 Determine scholarship based on criteria:
 - If GPA >= 3.0:
@@ -129,7 +137,9 @@ Full scholarship
 
 ---
 
-## Problem 7: Temperature and Weather Advisory (Medium)
+---
+
+### **7. Temperature and Weather Advisory**
 
 Issue weather advisories based on temperature and humidity:
 - If temp > 90:
@@ -152,7 +162,9 @@ Stay indoors and drink water
 
 ---
 
-## Problem 8: Access Control System (Hard)
+---
+
+### **8. Access Control System**
 
 Implement a 4-level security system:
 - Has keycard?
@@ -178,7 +190,9 @@ Access granted (after-hours)
 
 ---
 
-## Problem 9: Parking Fee Calculator (Hard)
+---
+
+### **9. Parking Fee Calculator**
 
 Calculate parking fee based on:
 - Vehicle type: motorcycle ($2/hr), car ($5/hr), truck ($10/hr)
@@ -198,7 +212,9 @@ Parking fee: $17.50
 
 ---
 
-## Problem 10: Student Performance Report (Hard)
+---
+
+### **10. Student Performance Report**
 
 Generate performance status and recommendation:
 - If attendance >= 75%:
@@ -221,7 +237,9 @@ Recommendation: Keep up the great work!
 
 ---
 
-## Problem 11: Online Shopping Discount (Hard)
+---
+
+### **11. Online Shopping Discount**
 
 Calculate discount based on membership and cart:
 - If member:
@@ -249,7 +267,9 @@ Final price: $112.50
 
 ---
 
-## Problem 12: Loan Approval System (Very Hard)
+---
+
+### **12. Loan Approval System**
 
 Approve loan based on multiple criteria:
 - If credit_score >= 700:
@@ -275,7 +295,9 @@ Interest rate: 3.5%
 
 ---
 
-## Problem 13: Game Difficulty Selector (Very Hard)
+---
+
+### **13. Game Difficulty Selector**
 
 Recommend game difficulty based on player stats:
 - If player_level >= 10:
@@ -301,7 +323,9 @@ XP bonus multiplier: 1.2x
 
 ---
 
-## Problem 14: Insurance Premium Calculator (Very Hard)
+---
+
+### **14. Insurance Premium Calculator**
 
 Calculate annual insurance premium with multiple factors:
 - Age multiplier:
@@ -335,7 +359,9 @@ Annual premium: $950.40
 
 ---
 
-## Problem 15: University Admission Decision (Very Hard)
+---
+
+### **15. University Admission Decision**
 
 Calculate admission points and make decision:
 
@@ -379,7 +405,9 @@ Decision: Waitlisted
 
 ---
 
-## Problem 16: Shipping Cost Calculator (Hard)
+---
+
+### **16. Shipping Cost Calculator**
 
 Calculate shipping cost based on:
 - Weight tiers with base costs
@@ -420,7 +448,9 @@ Shipping cost: $8
 
 ---
 
-## Problem 17: Job Application Screener (Hard)
+---
+
+### **17. Job Application Screener**
 
 Screen job applicants based on qualifications:
 - If has_degree:
@@ -450,7 +480,9 @@ Interview: Senior Position
 
 ---
 
-## Problem 18: Tax Bracket Calculator (Hard)
+---
+
+### **18. Tax Bracket Calculator**
 
 Calculate income tax based on complex brackets:
 - If income <= $10,000 → 0% tax
@@ -483,7 +515,9 @@ Tax: $7500.00 (15%)
 
 ---
 
-## Problem 19: Loyalty Rewards Calculator (Medium)
+---
+
+### **19. Loyalty Rewards Calculator**
 
 Calculate loyalty points earned:
 - If member_years >= 5:
@@ -512,7 +546,9 @@ Points earned: 500
 
 ---
 
-## Problem 20: Workout Intensity Recommender (Medium)
+---
+
+### **20. Workout Intensity Recommender**
 
 Recommend workout intensity based on fitness level and health:
 - If fitness_level == "beginner":
@@ -539,3 +575,6 @@ Recommendation: Moderate intensity, 45 minutes
 ```
 
 **Hint:** First check fitness level, then health status, then age for modifications.
+
+---
+

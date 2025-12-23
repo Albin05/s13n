@@ -1,6 +1,4 @@
-# Question Bank: Controlling While Loops Using Break Statement
-
-## Problem 1: Find First Even Number (Easy)
+### **1. Find First Even Number**
 
 Write a program that finds and prints the first even number from a list, then stops.
 
@@ -15,7 +13,9 @@ First even number: 8
 
 ---
 
-## Problem 2: Search for Target Word (Easy)
+---
+
+### **2. Search for Target Word**
 
 Search for the word "python" in a list of words. Print "Found!" and stop when you find it.
 
@@ -30,7 +30,9 @@ Found python!
 
 ---
 
-## Problem 3: Stop at Negative (Easy)
+---
+
+### **3. Stop at Negative**
 
 Print numbers from a list until you encounter a negative number. Stop immediately when you find one.
 
@@ -48,7 +50,9 @@ Negative number found, stopping
 
 ---
 
-## Problem 4: Count Until Threshold (Easy)
+---
+
+### **4. Count Until Threshold**
 
 Count from 1 upward. Stop when you reach 5.
 
@@ -65,7 +69,9 @@ Count from 1 upward. Stop when you reach 5.
 
 ---
 
-## Problem 5: Exit on Command (Medium)
+---
+
+### **5. Exit on Command**
 
 Create a simple command loop that keeps asking for input until user types "exit".
 
@@ -83,7 +89,9 @@ Goodbye!
 
 ---
 
-## Problem 6: Find First Divisor (Medium)
+---
+
+### **6. Find First Divisor**
 
 Find and print the first number (greater than 1) that divides 100 evenly.
 
@@ -96,7 +104,9 @@ First divisor of 100: 2
 
 ---
 
-## Problem 7: Sum Until Zero (Medium)
+---
+
+### **7. Sum Until Zero**
 
 Keep asking for numbers and summing them. When user enters 0, stop and show the total.
 
@@ -113,7 +123,9 @@ Total sum: 50
 
 ---
 
-## Problem 8: Password System (Medium)
+---
+
+### **8. Password System**
 
 Create a login system with exactly 3 attempts. Correct password is "secret123". If user gets it right, grant access and stop. If all attempts fail, deny access.
 
@@ -132,7 +144,9 @@ Access granted!
 
 ---
 
-## Problem 9: Find Vowel (Medium)
+---
+
+### **9. Find Vowel**
 
 Find and print the first vowel in the word "python". Stop searching after finding it.
 
@@ -145,7 +159,9 @@ First vowel: o
 
 ---
 
-## Problem 10: Stop on Condition (Hard)
+---
+
+### **10. Stop on Condition**
 
 Given a list of numbers, calculate their running sum. Stop when the sum exceeds 50 and print the final sum.
 
@@ -164,7 +180,9 @@ Sum exceeded 50: 65
 
 ---
 
-## Problem 11: Prime Number Checker with Break (Hard)
+---
+
+### **11. Prime Number Checker with Break**
 
 Check if a number is prime by searching for divisors. Use break to stop as soon as a divisor is found. Use the loop-else pattern.
 
@@ -186,7 +204,9 @@ Test with number: 15
 
 ---
 
-## Problem 12: Menu System (Hard)
+---
+
+### **12. Menu System**
 
 Create a menu with 4 options. Loop until user chooses to quit (option 4).
 
@@ -219,7 +239,9 @@ Exiting program
 
 ---
 
-## Problem 13: Nested Loop with Break (Hard)
+---
+
+### **13. Nested Loop with Break**
 
 Find the first pair of numbers whose product equals 24 from two ranges (1-6). Stop searching when found.
 
@@ -232,7 +254,9 @@ Found: 4 x 6 = 24
 
 ---
 
-## Problem 14: Search Until Found or Exhausted (Hard)
+---
+
+### **14. Search Until Found or Exhausted**
 
 Search for number 7 in a list. If found, print position and stop. If not found after checking all, print "not found".
 
@@ -254,7 +278,9 @@ Given list: `[3, 5, 1, 9, 2]`
 
 ---
 
-## Problem 15: Validate Age Input (Hard)
+---
+
+### **15. Validate Age Input**
 
 Keep asking for age until user enters a valid age (0-120). Use break to exit when valid.
 
@@ -272,7 +298,9 @@ Valid age: 25
 
 ---
 
-## Problem 16: Find First Palindrome (Very Hard)
+---
+
+### **16. Find First Palindrome**
 
 Given a list of words, find and print the first palindrome (word that reads same forwards and backwards).
 
@@ -287,7 +315,9 @@ First palindrome: level
 
 ---
 
-## Problem 17: Two Sum Problem (Very Hard)
+---
+
+### **17. Two Sum Problem**
 
 Find two numbers in a list that add up to a target sum. Stop when first pair is found.
 
@@ -303,7 +333,9 @@ Found: 2 + 7 = 9
 
 ---
 
-## Problem 18: Guessing Game with Hints (Very Hard)
+---
+
+### **18. Guessing Game with Hints**
 
 Create a number guessing game. Secret number is 42. Give "too high" or "too low" hints. Allow maximum 5 attempts.
 
@@ -326,7 +358,9 @@ Correct! You won in 3 attempts!
 
 ---
 
-## Problem 19: Process Commands Until Stop (Very Hard)
+---
+
+### **19. Process Commands Until Stop**
 
 Process a list of commands. Stop when you encounter "STOP". Count how many commands were processed.
 
@@ -345,7 +379,9 @@ Commands processed: 3
 
 ---
 
-## Problem 20: Search Matrix (Very Hard)
+---
+
+### **20. Search Matrix**
 
 Search for a target value in a 2D matrix (list of lists). Stop searching as soon as you find it.
 
@@ -368,7 +404,9 @@ Found 5 at row 1, column 1
 
 ---
 
-## Problem 21: ATM Simulation (Very Hard)
+---
+
+### **21. ATM Simulation**
 
 Simulate an ATM with initial balance $500. Provide options to deposit, withdraw, check balance, or exit. Validate transactions.
 
@@ -414,7 +452,9 @@ Thank you! Final balance: $600
 
 ---
 
-## Problem 22: Username Validator (Very Hard)
+---
+
+### **22. Username Validator**
 
 Keep asking for username until it meets all criteria:
 - Length between 3 and 15 characters
@@ -440,7 +480,9 @@ Username accepted: john123
 
 ---
 
-## Problem 23: Find Longest Word (Very Hard)
+---
+
+### **23. Find Longest Word**
 
 Find the first word longer than 6 characters in a list. Stop searching when found.
 
@@ -455,7 +497,9 @@ First long word: elephant (8 letters)
 
 ---
 
-## Problem 24: Calculator with Exit (Very Hard)
+---
+
+### **24. Calculator with Exit**
 
 Create a simple calculator that loops until user chooses to quit. Support add, subtract, multiply, divide.
 
@@ -488,7 +532,9 @@ Goodbye!
 
 ---
 
-## Problem 25: Collect Until Sentinel (Very Hard)
+---
+
+### **25. Collect Until Sentinel**
 
 Collect numbers into a list until user enters -1 (sentinel value). Then print statistics: count, sum, and average.
 
@@ -512,7 +558,11 @@ Average: 25.0
 
 ## Additional Practice Problems
 
-### Problem 26: Find First Uppercase (Medium)
+#
+
+---
+
+### **26. Find First Uppercase**
 
 Find the first uppercase letter in a string and print its position.
 
@@ -527,7 +577,11 @@ First uppercase 'W' at position 6
 
 ---
 
-### Problem 27: Shopping Cart (Very Hard)
+#
+
+---
+
+### **27. Shopping Cart**
 
 Create a shopping system where users can:
 1. Add item (with price)
@@ -565,7 +619,11 @@ Thank you for shopping!
 
 ---
 
-### Problem 28: Password Strength Checker (Hard)
+#
+
+---
+
+### **28. Password Strength Checker**
 
 Keep asking for password until it meets requirements:
 - At least 8 characters
@@ -609,3 +667,6 @@ Password accepted!
 3. Assuming break exits all nested loops (only exits innermost)
 4. Not handling loop-else correctly (runs when NO break)
 5. Breaking without providing feedback to user
+
+---
+

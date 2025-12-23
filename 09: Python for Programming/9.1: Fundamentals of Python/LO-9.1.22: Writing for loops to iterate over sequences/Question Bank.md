@@ -1,6 +1,4 @@
-# Question Bank: Writing For Loops to Iterate Over Sequences
-
-## Problem 1: Print List Items (Easy)
+### **1. Print List Items**
 
 Write a for loop to print each item from a list of colors.
 
@@ -18,7 +16,9 @@ yellow
 
 ---
 
-## Problem 2: Sum Numbers (Easy)
+---
+
+### **2. Sum Numbers**
 
 Calculate the sum of all numbers in a list using a for loop.
 
@@ -33,7 +33,9 @@ Sum: 150
 
 ---
 
-## Problem 3: Count Characters (Easy)
+---
+
+### **3. Count Characters**
 
 Count how many characters are in the word "programming" using a for loop.
 
@@ -46,7 +48,9 @@ Character count: 11
 
 ---
 
-## Problem 4: Print Each Letter (Easy)
+---
+
+### **4. Print Each Letter**
 
 Print each letter of the word "Python" on a separate line.
 
@@ -64,7 +68,9 @@ n
 
 ---
 
-## Problem 5: Double Each Number (Medium)
+---
+
+### **5. Double Each Number**
 
 Create a new list where each number from the original list is doubled.
 
@@ -79,7 +85,9 @@ Doubled: [2, 4, 6, 8, 10]
 
 ---
 
-## Problem 6: Count Vowels (Medium)
+---
+
+### **6. Count Vowels**
 
 Count the number of vowels in the sentence "hello world".
 
@@ -92,7 +100,9 @@ Vowels: 3
 
 ---
 
-## Problem 7: Print with Index (Medium)
+---
+
+### **7. Print with Index**
 
 Print each fruit with its position number (starting from 1).
 
@@ -110,7 +120,9 @@ Given list: `["apple", "banana", "orange", "grape"]`
 
 ---
 
-## Problem 8: Combine Two Lists (Medium)
+---
+
+### **8. Combine Two Lists**
 
 Print names and ages together from two separate lists.
 
@@ -129,7 +141,9 @@ Charlie is 35 years old
 
 ---
 
-## Problem 9: Find Maximum (Hard)
+---
+
+### **9. Find Maximum**
 
 Find the largest number in a list without using the max() function.
 
@@ -144,7 +158,9 @@ Maximum: 90
 
 ---
 
-## Problem 10: Build Uppercase List (Hard)
+---
+
+### **10. Build Uppercase List**
 
 Create a new list with all strings converted to uppercase.
 
@@ -159,7 +175,9 @@ Uppercase: ['HELLO', 'WORLD', 'PYTHON']
 
 ---
 
-## Problem 11: Display Dictionary (Hard)
+---
+
+### **11. Display Dictionary**
 
 Print all key-value pairs from a dictionary in a formatted way.
 
@@ -176,7 +194,9 @@ city: NYC
 
 ---
 
-## Problem 12: Nested List Iteration (Hard)
+---
+
+### **12. Nested List Iteration**
 
 Print all numbers from a 2D list (list of lists).
 
@@ -200,7 +220,9 @@ matrix = [
 
 ---
 
-## Problem 13: Count Even Numbers (Hard)
+---
+
+### **13. Count Even Numbers**
 
 Count how many even numbers are in a list.
 
@@ -215,7 +237,9 @@ Even numbers: 5
 
 ---
 
-## Problem 14: Filter Positive Numbers (Very Hard)
+---
+
+### **14. Filter Positive Numbers**
 
 Create a new list containing only positive numbers from the original list.
 
@@ -230,7 +254,9 @@ Positive numbers: [10, 20, 15, 5]
 
 ---
 
-## Problem 15: Average Calculator (Very Hard)
+---
+
+### **15. Average Calculator**
 
 Calculate the average of numbers in a list.
 
@@ -245,7 +271,9 @@ Average: 86.6
 
 ---
 
-## Problem 16: Reverse String (Very Hard)
+---
+
+### **16. Reverse String**
 
 Build a reversed version of a string using a for loop.
 
@@ -260,7 +288,9 @@ Reversed: nohtyp
 
 ---
 
-## Problem 17: Count Word Occurrences (Very Hard)
+---
+
+### **17. Count Word Occurrences**
 
 Count how many times each word appears in a list.
 
@@ -277,7 +307,9 @@ orange: 1
 
 ---
 
-## Problem 18: Flatten Nested List (Very Hard)
+---
+
+### **18. Flatten Nested List**
 
 Convert a nested list into a single flat list.
 
@@ -292,7 +324,9 @@ Flattened: [1, 2, 3, 4, 5, 6, 7, 8]
 
 ---
 
-## Problem 19: Multiplication Table (Very Hard)
+---
+
+### **19. Multiplication Table**
 
 Generate a 5x5 multiplication table.
 
@@ -309,7 +343,9 @@ Generate a 5x5 multiplication table.
 
 ---
 
-## Problem 20: Student Grades Average (Very Hard)
+---
+
+### **20. Student Grades Average**
 
 Calculate average grade for each student from a dictionary of lists.
 
@@ -333,7 +369,9 @@ Charlie: 80.0
 
 ---
 
-## Problem 21: Find Common Elements (Very Hard)
+---
+
+### **21. Find Common Elements**
 
 Find elements that appear in both lists.
 
@@ -350,7 +388,9 @@ Common elements: [4, 5]
 
 ---
 
-## Problem 22: Sum Each Row (Very Hard)
+---
+
+### **22. Sum Each Row**
 
 Calculate the sum of each row in a 2D matrix.
 
@@ -374,7 +414,9 @@ Row 3 sum: 24
 
 ---
 
-## Problem 23: Create Index Dictionary (Very Hard)
+---
+
+### **23. Create Index Dictionary**
 
 Create a dictionary mapping each item to its index.
 
@@ -389,7 +431,9 @@ Given list: `["apple", "banana", "orange"]`
 
 ---
 
-## Problem 24: Print Pyramid Pattern (Very Hard)
+---
+
+### **24. Print Pyramid Pattern**
 
 Print a number pyramid using nested loops.
 
@@ -406,7 +450,9 @@ Print a number pyramid using nested loops.
 
 ---
 
-## Problem 25: Calculate Product (Very Hard)
+---
+
+### **25. Calculate Product**
 
 Calculate the product of all numbers in a list (multiply them all together).
 
@@ -423,7 +469,11 @@ Product: 120
 
 ## Additional Practice Problems
 
-### Problem 26: Enumerate from 1 (Medium)
+#
+
+---
+
+### **26. Enumerate from 1**
 
 Print each color with its position starting from 1 (not 0).
 
@@ -440,7 +490,11 @@ Given list: `["red", "green", "blue"]`
 
 ---
 
-### Problem 27: Zip Three Lists (Hard)
+#
+
+---
+
+### **27. Zip Three Lists**
 
 Combine three lists and print them together.
 
@@ -459,7 +513,11 @@ Bob, 30, LA
 
 ---
 
-### Problem 28: Dictionary Keys Only (Easy)
+#
+
+---
+
+### **28. Dictionary Keys Only**
 
 Print only the keys from a dictionary.
 
@@ -476,7 +534,11 @@ c
 
 ---
 
-### Problem 29: Dictionary Values Only (Easy)
+#
+
+---
+
+### **29. Dictionary Values Only**
 
 Print only the values from a dictionary.
 
@@ -493,7 +555,11 @@ Given dict: `{"a": 10, "b": 20, "c": 30}`
 
 ---
 
-### Problem 30: Reversed List Iteration (Medium)
+#
+
+---
+
+### **30. Reversed List Iteration**
 
 Print a list in reverse order without modifying it.
 
@@ -534,3 +600,6 @@ Given list: `[1, 2, 3, 4, 5]`
 5. Not initializing accumulator before loop
 6. Using while when for is more appropriate
 7. Confusing `.items()`, `.keys()`, and `.values()`
+
+---
+

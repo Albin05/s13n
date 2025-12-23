@@ -1,32 +1,22 @@
-# LO-2: Apply Variable Naming Conventions
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Students will be able to create valid variable names following Python naming rules and conventions.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 10       |
+| In-Class Quiz  | 5        |
+| Lecture Notes  | 10       |
+| Lecture Script | 15       |
+| Pre-Read       | 5        |
+| Question Bank  | 20       |
 
-## Duration
-10-15 minutes
+---
 
-## Key Concepts
-1. **Naming Rules**: Must follow to avoid syntax errors
-2. **Naming Conventions**: Best practices (PEP 8)
-3. **Reserved Keywords**: Words Python uses internally
-4. **snake_case**: Python's standard naming style
+## **Question Bank Metadata**
 
-## Learning Outcomes
-- [ ] Identify valid vs invalid variable names
-- [ ] Follow snake_case convention
-- [ ] Avoid reserved keywords
-- [ ] Write descriptive variable names
-
-## Real-World Applications
-- **Code Readability**: Clear names make code self-documenting
-- **Team Collaboration**: Consistent naming helps teams work together
-- **Debugging**: Good names make finding errors easier
-
-## Success Criteria
-- Create variables with valid, Pythonic names
-- Explain why certain names are invalid
-- Follow snake_case consistently
-
-## Next Steps
-**LO-3**: Implement Integer Data Types
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 2                 | Low        | 9.1.2            | Knowledge      | MCQ            |
+| Q2           | 3                 | Low        | 9.1.2            | Implementation | Coding         |
+| Q3           | 4                 | Medium     | 9.1.2            | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.2            | Application    | Coding         |
+| Q5           | 6                 | Medium     | 9.1.2            | Application    | Coding         |

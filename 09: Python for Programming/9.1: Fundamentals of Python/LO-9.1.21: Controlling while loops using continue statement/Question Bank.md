@@ -1,6 +1,4 @@
-# Question Bank: Controlling While Loops Using Continue Statement
-
-## Problem 1: Skip Even Numbers (Easy)
+### **1. Skip Even Numbers**
 
 Write a program that prints odd numbers from 1 to 10 using a while loop and continue.
 
@@ -17,7 +15,9 @@ Write a program that prints odd numbers from 1 to 10 using a while loop and cont
 
 ---
 
-## Problem 2: Print Positive Numbers Only (Easy)
+---
+
+### **2. Print Positive Numbers Only**
 
 Given a list of numbers, print only the positive ones using continue to skip negatives.
 
@@ -35,7 +35,9 @@ Given list: `[5, -3, 8, -1, 12, -7, 4]`
 
 ---
 
-## Problem 3: Skip Vowels (Easy)
+---
+
+### **3. Skip Vowels**
 
 Print all consonants from the word "python" by skipping vowels.
 
@@ -52,7 +54,9 @@ n
 
 ---
 
-## Problem 4: Sum Non-Zero Numbers (Easy)
+---
+
+### **4. Sum Non-Zero Numbers**
 
 Calculate the sum of all non-zero numbers from a list using continue to skip zeros.
 
@@ -67,7 +71,9 @@ Sum: 26
 
 ---
 
-## Problem 5: Skip Multiples of 5 (Medium)
+---
+
+### **5. Skip Multiples of 5**
 
 Print numbers from 1 to 20, but skip all multiples of 5.
 
@@ -80,7 +86,9 @@ Print numbers from 1 to 20, but skip all multiples of 5.
 
 ---
 
-## Problem 6: Filter Empty Strings (Medium)
+---
+
+### **6. Filter Empty Strings**
 
 Given a list of strings, print only non-empty ones.
 
@@ -97,7 +105,9 @@ python
 
 ---
 
-## Problem 7: Count Consonants (Medium)
+---
+
+### **7. Count Consonants**
 
 Count the number of consonants in "hello world" by skipping vowels and spaces.
 
@@ -110,7 +120,9 @@ Consonants: 7
 
 ---
 
-## Problem 8: Skip Range (Medium)
+---
+
+### **8. Skip Range**
 
 Print numbers 1-20 except numbers from 8 to 12 (inclusive).
 
@@ -123,7 +135,9 @@ Print numbers 1-20 except numbers from 8 to 12 (inclusive).
 
 ---
 
-## Problem 9: Process Valid Commands (Hard)
+---
+
+### **9. Process Valid Commands**
 
 Keep asking for 5 commands. If user enters "skip", don't count it and ask again.
 
@@ -143,7 +157,9 @@ All commands collected!
 
 ---
 
-## Problem 10: Sum Positive Numbers (Hard)
+---
+
+### **10. Sum Positive Numbers**
 
 Calculate sum and average of positive numbers only from a list.
 
@@ -160,7 +176,9 @@ Average: 12.5
 
 ---
 
-## Problem 11: Skip Invalid Grades (Hard)
+---
+
+### **11. Skip Invalid Grades**
 
 Given grades including invalid entries (negative or > 100), calculate valid grade statistics.
 
@@ -177,7 +195,9 @@ Highest: 95
 
 ---
 
-## Problem 12: Data Cleaning (Hard)
+---
+
+### **12. Data Cleaning**
 
 Filter sensor readings, removing error values (-999) and calculate average.
 
@@ -193,7 +213,9 @@ Average: 22.9°C
 
 ---
 
-## Problem 13: Username Validation (Hard)
+---
+
+### **13. Username Validation**
 
 From a list of usernames, print only those that are alphanumeric (no special characters or digits).
 
@@ -211,7 +233,9 @@ frank
 
 ---
 
-## Problem 14: Skip Based on Multiple Conditions (Very Hard)
+---
+
+### **14. Skip Based on Multiple Conditions**
 
 Print numbers 1-20, but skip:
 - Even numbers less than 10
@@ -226,7 +250,9 @@ Print numbers 1-20, but skip:
 
 ---
 
-## Problem 15: Process User Input with Validation (Very Hard)
+---
+
+### **15. Process User Input with Validation**
 
 Keep asking for numbers until user enters "done". Skip invalid (non-numeric) input without counting it.
 
@@ -249,7 +275,9 @@ Count: 2
 
 ---
 
-## Problem 16: Filter Word Lengths (Very Hard)
+---
+
+### **16. Filter Word Lengths**
 
 From a sentence, collect words that are between 4 and 7 characters long (inclusive).
 
@@ -265,7 +293,9 @@ Count: 5
 
 ---
 
-## Problem 17: Matrix Non-Zero Sum (Very Hard)
+---
+
+### **17. Matrix Non-Zero Sum**
 
 Calculate sum and average of all non-zero values in a 2D matrix.
 
@@ -289,7 +319,9 @@ Average: 5.0
 
 ---
 
-## Problem 18: Skip Digits in String (Very Hard)
+---
+
+### **18. Skip Digits in String**
 
 Remove all digits from a string and print the cleaned version.
 
@@ -304,7 +336,9 @@ Cleaned: hll wrld !
 
 ---
 
-## Problem 19: Temperature Range Filter (Very Hard)
+---
+
+### **19. Temperature Range Filter**
 
 Process temperature readings. Skip:
 - Error readings (-999)
@@ -323,7 +357,9 @@ Average: 18.3°C
 
 ---
 
-## Problem 20: Complex Number Filter (Very Hard)
+---
+
+### **20. Complex Number Filter**
 
 From a list, process only numbers that are:
 - Positive
@@ -342,7 +378,9 @@ Sum: 48
 
 ---
 
-## Problem 21: Nested Loop Filtering (Very Hard)
+---
+
+### **21. Nested Loop Filtering**
 
 Print multiplication table for 1-5, but skip any product that is a multiple of 6.
 
@@ -365,7 +403,9 @@ Print multiplication table for 1-5, but skip any product that is a multiple of 6
 
 ---
 
-## Problem 22: Skip File Extensions (Hard)
+---
+
+### **22. Skip File Extensions**
 
 From a list of filenames, print only those that don't end with ".tmp" or ".log".
 
@@ -382,7 +422,9 @@ notes.txt
 
 ---
 
-## Problem 23: Collect Valid Ages (Very Hard)
+---
+
+### **23. Collect Valid Ages**
 
 Keep asking for ages until user enters "done". Skip invalid ages (< 0 or > 120) without counting them.
 
@@ -407,7 +449,9 @@ Average age: 27.5
 
 ---
 
-## Problem 24: Skip Pattern in Grid (Very Hard)
+---
+
+### **24. Skip Pattern in Grid**
 
 Print a coordinate grid (0,0 to 4,4) but skip coordinates where x equals y (diagonal).
 
@@ -424,7 +468,9 @@ Print a coordinate grid (0,0 to 4,4) but skip coordinates where x equals y (diag
 
 ---
 
-## Problem 25: Grade Letter Calculator (Very Hard)
+---
+
+### **25. Grade Letter Calculator**
 
 From a list of numeric grades, calculate statistics skipping invalid entries (< 0 or > 100), and convert valid ones to letter grades.
 
@@ -444,7 +490,11 @@ Average: 87.6
 
 ## Additional Practice Problems
 
-### Problem 26: Remove Duplicates (Medium)
+#
+
+---
+
+### **26. Remove Duplicates**
 
 Print each number only once from a list, skipping duplicates.
 
@@ -463,7 +513,11 @@ Given: `[1, 2, 2, 3, 1, 4, 3, 5]`
 
 ---
 
-### Problem 27: Process Menu with Validation (Hard)
+#
+
+---
+
+### **27. Process Menu with Validation**
 
 Create a calculator menu. Skip invalid choices without counting them.
 
@@ -489,7 +543,11 @@ Goodbye!
 
 ---
 
-### Problem 28: Two-Stage Filter (Very Hard)
+#
+
+---
+
+### **28. Two-Stage Filter**
 
 From a list of strings, print only those that:
 - Are longer than 3 characters
@@ -526,3 +584,6 @@ python
 3. Not understanding continue only affects current iteration
 4. Placing increment after continue in while loop
 5. Confusing which loop continue affects in nested loops
+
+---
+

@@ -1,6 +1,4 @@
-# Question Bank: Using Range() Function for Numeric Iteration
-
-## Problem 1: Count to 10 (Easy)
+### **1. Count to 10**
 
 Write a program that prints numbers from 1 to 10 using range().
 
@@ -22,7 +20,9 @@ Write a program that prints numbers from 1 to 10 using range().
 
 ---
 
-## Problem 2: Count to 5 (Easy)
+---
+
+### **2. Count to 5**
 
 Write a program that prints numbers from 0 to 4 using range() with a single argument.
 
@@ -39,7 +39,9 @@ Write a program that prints numbers from 0 to 4 using range() with a single argu
 
 ---
 
-## Problem 3: Sum Numbers 1 to 100 (Easy)
+---
+
+### **3. Sum Numbers 1 to 100**
 
 Calculate the sum of all numbers from 1 to 100 using range() and a for loop.
 
@@ -52,7 +54,9 @@ Sum: 5050
 
 ---
 
-## Problem 4: Even Numbers (Medium)
+---
+
+### **4. Even Numbers**
 
 Print all even numbers from 0 to 10 using range() with a step parameter.
 
@@ -70,7 +74,9 @@ Print all even numbers from 0 to 10 using range() with a step parameter.
 
 ---
 
-## Problem 5: Countdown from 10 (Medium)
+---
+
+### **5. Countdown from 10**
 
 Create a countdown from 10 to 1 using range() with a negative step.
 
@@ -93,7 +99,9 @@ Blast off!
 
 ---
 
-## Problem 6: Multiples of 5 (Medium)
+---
+
+### **6. Multiples of 5**
 
 Print all multiples of 5 from 5 to 50 using range().
 
@@ -115,7 +123,9 @@ Print all multiples of 5 from 5 to 50 using range().
 
 ---
 
-## Problem 7: Create List of Squares (Medium)
+---
+
+### **7. Create List of Squares**
 
 Create a list containing squares of numbers from 1 to 5 using range().
 
@@ -128,7 +138,9 @@ Squares: [1, 4, 9, 16, 25]
 
 ---
 
-## Problem 8: Index with Range (Hard)
+---
+
+### **8. Index with Range**
 
 Given a list of fruits, print each fruit with its index using range().
 
@@ -145,7 +157,9 @@ Index 2: orange
 
 ---
 
-## Problem 9: Nested Range Loops (Hard)
+---
+
+### **9. Nested Range Loops**
 
 Print all coordinate pairs for a 3×3 grid using nested range loops.
 
@@ -160,7 +174,9 @@ Print all coordinate pairs for a 3×3 grid using nested range loops.
 
 ---
 
-## Problem 10: Skip Numbers (Hard)
+---
+
+### **10. Skip Numbers**
 
 Print every 3rd number from 0 to 20 using range().
 
@@ -179,7 +195,9 @@ Print every 3rd number from 0 to 20 using range().
 
 ---
 
-## Problem 11: Reverse Range (Hard)
+---
+
+### **11. Reverse Range**
 
 Print numbers from 5 down to 1 using range().
 
@@ -196,7 +214,9 @@ Print numbers from 5 down to 1 using range().
 
 ---
 
-## Problem 12: Multiplication Table (Very Hard)
+---
+
+### **12. Multiplication Table**
 
 Generate a multiplication table for the number 7 (from 7×1 to 7×10) using range().
 
@@ -218,7 +238,9 @@ Generate a multiplication table for the number 7 (from 7×1 to 7×10) using rang
 
 ---
 
-## Problem 13: Generate Fibonacci (Very Hard)
+---
+
+### **13. Generate Fibonacci**
 
 Generate the first 10 Fibonacci numbers using range().
 
@@ -231,7 +253,9 @@ Generate the first 10 Fibonacci numbers using range().
 
 ---
 
-## Problem 14: Factorial with Range (Very Hard)
+---
+
+### **14. Factorial with Range**
 
 Calculate the factorial of 5 using range().
 
@@ -244,7 +268,9 @@ Calculate the factorial of 5 using range().
 
 ---
 
-## Problem 15: Pattern Printing (Very Hard)
+---
+
+### **15. Pattern Printing**
 
 Print a triangle pattern of stars using nested range loops.
 
@@ -261,7 +287,9 @@ Print a triangle pattern of stars using nested range loops.
 
 ---
 
-## Problem 16: Sum Odd Numbers (Very Hard)
+---
+
+### **16. Sum Odd Numbers**
 
 Calculate the sum of all odd numbers from 1 to 20 using range().
 
@@ -274,7 +302,9 @@ Sum of odds 1-20: 100
 
 ---
 
-## Problem 17: Power Table (Very Hard)
+---
+
+### **17. Power Table**
 
 Create a table showing powers of 2 from 2^0 to 2^10 using range().
 
@@ -297,7 +327,9 @@ Create a table showing powers of 2 from 2^0 to 2^10 using range().
 
 ---
 
-## Problem 18: List Reversal with Range (Very Hard)
+---
+
+### **18. List Reversal with Range**
 
 Reverse a list by accessing elements in reverse order using range().
 
@@ -312,7 +344,9 @@ Reversed: [50, 40, 30, 20, 10]
 
 ---
 
-## Problem 19: Skip Pattern (Very Hard)
+---
+
+### **19. Skip Pattern**
 
 Print every 7th number from 0 to 50 using range().
 
@@ -325,7 +359,9 @@ Print every 7th number from 0 to 50 using range().
 
 ---
 
-## Problem 20: Grid Coordinates (Very Hard)
+---
+
+### **20. Grid Coordinates**
 
 Print coordinates for a 3×4 grid (3 rows, 4 columns) using nested range loops.
 
@@ -340,7 +376,9 @@ Print coordinates for a 3×4 grid (3 rows, 4 columns) using nested range loops.
 
 ---
 
-## Problem 21: Count Down Timer (Easy)
+---
+
+### **21. Count Down Timer**
 
 Create a countdown timer from 5 to 0 using range().
 
@@ -359,7 +397,9 @@ Time's up!
 
 ---
 
-## Problem 22: Odd Numbers Only (Medium)
+---
+
+### **22. Odd Numbers Only**
 
 Print all odd numbers from 1 to 19 using range().
 
@@ -372,7 +412,9 @@ Print all odd numbers from 1 to 19 using range().
 
 ---
 
-## Problem 23: Sum First n Numbers (Medium)
+---
+
+### **23. Sum First n Numbers**
 
 Calculate the sum of the first n numbers where n=50.
 
@@ -385,7 +427,9 @@ Sum of first 50 numbers: 1275
 
 ---
 
-## Problem 24: Multiples of 3 (Medium)
+---
+
+### **24. Multiples of 3**
 
 Print all multiples of 3 from 3 to 30 using range().
 
@@ -398,7 +442,9 @@ Print all multiples of 3 from 3 to 30 using range().
 
 ---
 
-## Problem 25: Reverse Alphabet Positions (Hard)
+---
+
+### **25. Reverse Alphabet Positions**
 
 Print numbers from 26 down to 1 (like reverse alphabet positions) using range().
 
@@ -411,7 +457,9 @@ Print numbers from 26 down to 1 (like reverse alphabet positions) using range().
 
 ---
 
-## Problem 26: Squares Pattern (Hard)
+---
+
+### **26. Squares Pattern**
 
 Print the squares of numbers from 1 to 10 on one line.
 
@@ -424,7 +472,9 @@ Print the squares of numbers from 1 to 10 on one line.
 
 ---
 
-## Problem 27: Every 5th Number (Medium)
+---
+
+### **27. Every 5th Number**
 
 Print every 5th number from 0 to 100 using range().
 
@@ -437,7 +487,9 @@ Print every 5th number from 0 to 100 using range().
 
 ---
 
-## Problem 28: Countdown from 100 by 10s (Medium)
+---
+
+### **28. Countdown from 100 by 10s**
 
 Count down from 100 to 0 by tens using range().
 
@@ -450,7 +502,9 @@ Count down from 100 to 0 by tens using range().
 
 ---
 
-## Problem 29: Nested Multiplication (Very Hard)
+---
+
+### **29. Nested Multiplication**
 
 Create a simple multiplication grid (1-5) using nested range loops.
 
@@ -467,7 +521,9 @@ Create a simple multiplication grid (1-5) using nested range loops.
 
 ---
 
-## Problem 30: Sum Even Numbers (Hard)
+---
+
+### **30. Sum Even Numbers**
 
 Calculate the sum of all even numbers from 2 to 100 using range().
 
@@ -482,7 +538,11 @@ Sum of evens 2-100: 2550
 
 ## Additional Practice Problems
 
-### Problem 31: Range Length (Easy)
+#
+
+---
+
+### **31. Range Length**
 
 How many numbers are generated by `range(10, 20)`?
 
@@ -492,7 +552,11 @@ How many numbers are generated by `range(10, 20)`?
 
 ---
 
-### Problem 32: Empty Range (Medium)
+#
+
+---
+
+### **32. Empty Range**
 
 What does `range(5, 5)` generate?
 
@@ -502,7 +566,11 @@ What does `range(5, 5)` generate?
 
 ---
 
-### Problem 33: Negative Numbers (Hard)
+#
+
+---
+
+### **33. Negative Numbers**
 
 Print numbers from -5 to 5 using range().
 
@@ -515,7 +583,11 @@ Print numbers from -5 to 5 using range().
 
 ---
 
-### Problem 34: Every Other Number (Medium)
+#
+
+---
+
+### **34. Every Other Number**
 
 Print every other number from 1 to 20 using range().
 
@@ -528,7 +600,11 @@ Print every other number from 1 to 20 using range().
 
 ---
 
-### Problem 35: Backward Evens (Very Hard)
+#
+
+---
+
+### **35. Backward Evens**
 
 Print even numbers from 20 down to 0 using range().
 
@@ -607,3 +683,6 @@ range(len(my_list)-1, -1, -1)
 8. **Use step creatively**: For patterns (evens, odds, multiples)
 9. **Nested ranges**: Useful for grids and tables
 10. **Practice**: The more you use range(), the more intuitive it becomes
+
+---
+

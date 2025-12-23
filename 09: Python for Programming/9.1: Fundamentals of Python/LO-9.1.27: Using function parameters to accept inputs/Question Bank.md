@@ -1,6 +1,4 @@
-# Question Bank: Using Function Parameters to Accept Inputs
-
-## Problem 1: Single Parameter Greeting (Easy)
+### **1. Single Parameter Greeting**
 
 Write a function `greet_person` that takes one parameter `name` and prints "Hello, {name}!".
 
@@ -14,7 +12,9 @@ greet_person("Bob")    # Hello, Bob!
 
 ---
 
-## Problem 2: Two Number Addition (Easy)
+---
+
+### **2. Two Number Addition**
 
 Define a function `add_two` that takes two parameters `num1` and `num2`, and prints their sum.
 
@@ -28,7 +28,9 @@ add_two(10, 20)  # Sum: 30
 
 ---
 
-## Problem 3: Rectangle Area Calculator (Easy)
+---
+
+### **3. Rectangle Area Calculator**
 
 Create a function `calculate_area` that accepts `length` and `width` parameters and prints the area.
 
@@ -42,7 +44,9 @@ calculate_area(10, 4)  # Area: 40
 
 ---
 
-## Problem 4: Three Number Multiplier (Easy)
+---
+
+### **4. Three Number Multiplier**
 
 Write a function `multiply_three` that takes three parameters and prints their product.
 
@@ -56,7 +60,9 @@ multiply_three(5, 5, 2)  # Product: 50
 
 ---
 
-## Problem 5: Person Introduction (Medium)
+---
+
+### **5. Person Introduction**
 
 Define a function `introduce` that takes `name`, `age`, and `city` parameters and prints a full introduction.
 
@@ -72,7 +78,9 @@ introduce("Alice", 25, "New York")
 
 ---
 
-## Problem 6: Temperature Converter (Medium)
+---
+
+### **6. Temperature Converter**
 
 Create a function `celsius_to_fahrenheit` that takes a temperature in Celsius and prints the Fahrenheit equivalent.
 
@@ -87,7 +95,9 @@ celsius_to_fahrenheit(25)  # 25°C = 77.0°F
 
 ---
 
-## Problem 7: Circle Calculations (Medium)
+---
+
+### **7. Circle Calculations**
 
 Write a function `circle_info` that takes `radius` as a parameter and prints both circumference and area.
 
@@ -103,7 +113,9 @@ circle_info(5)
 
 ---
 
-## Problem 8: Power Calculator (Medium)
+---
+
+### **8. Power Calculator**
 
 Define a function `power` that takes `base` and `exponent` parameters and prints the result.
 
@@ -118,7 +130,9 @@ power(10, 0)  # 10^0 = 1
 
 ---
 
-## Problem 9: Age Validator (Medium)
+---
+
+### **9. Age Validator**
 
 Create a function `check_age` that takes `age` as a parameter and prints whether the person is a minor, adult, or senior.
 
@@ -133,7 +147,9 @@ check_age(70)  # Senior (65+)
 
 ---
 
-## Problem 10: Grade Calculator (Medium)
+---
+
+### **10. Grade Calculator**
 
 Write a function `calculate_grade` that takes a `score` parameter and prints the letter grade.
 
@@ -150,7 +166,9 @@ calculate_grade(55)  # Grade: F
 
 ---
 
-## Problem 11: String Repeater (Easy)
+---
+
+### **11. String Repeater**
 
 Define a function `repeat_string` that takes a `text` and `count` parameter, and prints the text repeated count times.
 
@@ -164,7 +182,9 @@ repeat_string("*", 5)      # *****
 
 ---
 
-## Problem 12: Triangle Type Checker (Hard)
+---
+
+### **12. Triangle Type Checker**
 
 Create a function `triangle_type` that takes three side lengths and prints the triangle type (equilateral, isosceles, or scalene).
 
@@ -179,7 +199,9 @@ triangle_type(3, 4, 5)    # Scalene triangle
 
 ---
 
-## Problem 13: Discount Calculator (Medium)
+---
+
+### **13. Discount Calculator**
 
 Write a function `apply_discount` that takes `price` and `discount_percent` and prints the final price.
 
@@ -194,7 +216,9 @@ apply_discount(80, 15)    # Final price: $68.0
 
 ---
 
-## Problem 14: Even or Odd Checker (Easy)
+---
+
+### **14. Even or Odd Checker**
 
 Define a function `check_even_odd` that takes a `number` parameter and prints whether it's even or odd.
 
@@ -209,7 +233,9 @@ check_even_odd(10)  # 10 is even
 
 ---
 
-## Problem 15: BMI Calculator (Medium)
+---
+
+### **15. BMI Calculator**
 
 Create a function `calculate_bmi` that takes `weight` (kg) and `height` (m) and prints the BMI with category.
 
@@ -224,7 +250,9 @@ calculate_bmi(70, 1.75)
 
 ---
 
-## Problem 16: Count Down Timer (Medium)
+---
+
+### **16. Count Down Timer**
 
 Write a function `countdown` that takes a `start` parameter and counts down to 1.
 
@@ -238,7 +266,9 @@ countdown(5)
 
 ---
 
-## Problem 17: Name Formatter (Easy)
+---
+
+### **17. Name Formatter**
 
 Define a function `format_name` that takes `first_name` and `last_name` and prints the full name in different formats.
 
@@ -254,7 +284,9 @@ format_name("John", "Doe")
 
 ---
 
-## Problem 18: Simple Interest Calculator (Medium)
+---
+
+### **18. Simple Interest Calculator**
 
 Create a function `simple_interest` that takes `principal`, `rate`, and `time` parameters.
 
@@ -270,7 +302,9 @@ simple_interest(1000, 5, 2)
 
 ---
 
-## Problem 19: Password Strength Checker (Hard)
+---
+
+### **19. Password Strength Checker**
 
 Write a function `check_password_strength` that takes a `password` parameter and checks various criteria.
 
@@ -288,7 +322,9 @@ check_password_strength("Abc123")
 
 ---
 
-## Problem 20: Fizz Buzz Function (Medium)
+---
+
+### **20. Fizz Buzz Function**
 
 Define a function `fizz_buzz_single` that takes a `number` and prints Fizz, Buzz, FizzBuzz, or the number.
 
@@ -304,7 +340,9 @@ fizz_buzz_single(7)   # 7
 
 ---
 
-## Problem 21: Time Converter (Medium)
+---
+
+### **21. Time Converter**
 
 Create a function `convert_seconds` that takes total seconds and prints hours, minutes, and seconds.
 
@@ -318,7 +356,9 @@ convert_seconds(3665)
 
 ---
 
-## Problem 22: Range Checker (Easy)
+---
+
+### **22. Range Checker**
 
 Write a function `in_range` that takes `number`, `min_val`, and `max_val` and checks if number is in range.
 
@@ -332,7 +372,9 @@ in_range(150, 1, 100)  # 150 is out of range [1, 100]
 
 ---
 
-## Problem 23: String Length Categories (Easy)
+---
+
+### **23. String Length Categories**
 
 Define a function `categorize_length` that takes a `text` parameter and categorizes its length.
 
@@ -347,7 +389,9 @@ categorize_length("This is a very long sentence") # Long (16+ chars)
 
 ---
 
-## Problem 24: Multiplication Table Row (Medium)
+---
+
+### **24. Multiplication Table Row**
 
 Create a function `times_table_row` that takes a `number` and prints one row of its multiplication table.
 
@@ -364,7 +408,9 @@ times_table_row(5)
 
 ---
 
-## Problem 25: Vowel Counter (Medium)
+---
+
+### **25. Vowel Counter**
 
 Write a function `count_vowels` that takes a `text` parameter and counts the vowels.
 
@@ -378,7 +424,9 @@ count_vowels("Python")       # Vowels: 1
 
 ---
 
-## Problem 26: List Average (Medium)
+---
+
+### **26. List Average**
 
 Define a function `calculate_average` that takes three numbers and prints their average.
 
@@ -392,7 +440,9 @@ calculate_average(5, 10, 15)   # Average: 10.0
 
 ---
 
-## Problem 27: Maximum of Three (Easy)
+---
+
+### **27. Maximum of Three**
 
 Create a function `find_max` that takes three numbers and prints the largest.
 
@@ -406,7 +456,9 @@ find_max(50, 20, 40)  # Maximum: 50
 
 ---
 
-## Problem 28: Palindrome Checker (Hard)
+---
+
+### **28. Palindrome Checker**
 
 Write a function `is_palindrome` that takes a `word` parameter and checks if it's a palindrome.
 
@@ -420,7 +472,9 @@ is_palindrome("python")  # "python" is not a palindrome
 
 ---
 
-## Problem 29: Leap Year Checker (Medium)
+---
+
+### **29. Leap Year Checker**
 
 Define a function `check_leap_year` that takes a `year` parameter.
 
@@ -434,7 +488,9 @@ check_leap_year(2023)  # 2023 is not a leap year
 
 ---
 
-## Problem 30: Prime Number Checker (Hard)
+---
+
+### **30. Prime Number Checker**
 
 Create a function `check_prime` that takes a `number` parameter and determines if it's prime.
 
@@ -576,3 +632,6 @@ greet("Charlie")
 4. **Experiment**: Try different data types as arguments
 5. **Read Errors**: Error messages tell you what's wrong
 6. **Document**: Add comments explaining what each parameter is for
+
+---
+

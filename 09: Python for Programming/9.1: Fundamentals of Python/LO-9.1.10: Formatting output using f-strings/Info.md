@@ -1,19 +1,22 @@
-# LO-10: Format Output with F-strings
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Master f-strings for elegant string formatting and output.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 10              |
+| In-Class Quiz  | 5               |
+| Lecture Notes  | 15              |
+| Lecture Script | 16              |
+| Pre-Read       | 5               |
+| Question Bank  | 21              |
 
-## Duration
-15 minutes
+---
 
-## Key Concepts
-- F-string syntax
-- Embedding variables
-- Expression evaluation
-- Formatting numbers
+## **Question Bank Metadata**
 
-## Success Criteria
-- Use f-strings for output
-- Embed variables in strings
-- Format numbers (decimals)
-- Create readable output
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.1.10           | Implementation | Coding         |
+| Q2           | 3                 | Low        | 9.1.10           | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.10           | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.10           | Application    | Coding         |
+| Q5           | 5                 | Medium     | 9.1.10           | Application    | Coding         |

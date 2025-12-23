@@ -1,28 +1,37 @@
-# Lecture Script: LO-3 Implement Integer Data Types
+### LO-3 Implement Integer Data Types (16 minutes)
 
-## Duration: 10-15 minutes
+### Hook (3 minutes)
 
-## [0:00-0:02] Hook
 **Say**: "What's 10 divided by 3? In math, it's 3.333... But what if you're splitting 10 cookies among 3 people? You can't split a cookie! That's where integer division comes in."
 
-## [0:02-0:07] What are Integers (5 min)
+```python
+cookies = 10
+people = 3
+each_gets = 10 // 3  # 3 cookies each
+```
 
-**Explain**: Whole numbers - no decimals
+### What are Integers (5 minutes)
 
-**Live Code**:
+**Say**: "Integers are whole numbers - no decimals. They can be positive, negative, or zero."
+
 ```python
 age = 25
 year = 2024
 count = 0
+temperature = -5
 
 print(type(age))  # <class 'int'>
 ```
 
-**Emphasize**: Positive, negative, or zero - all integers!
+**Key Points**:
+- Integers have no decimal point
+- Can be any size (Python handles big numbers!)
+- Used for counting, indexing, IDs
 
-## [0:07-0:12] Integer Operations (5 min)
+### Integer Operations (5 minutes)
 
-**Demonstrate**:
+**Say**: "Python has two types of division - regular (/) gives decimals, floor (//) gives integers."
+
 ```python
 a = 10
 b = 3
@@ -32,21 +41,25 @@ print(a - b)   # 7
 print(a * b)   # 30
 print(a / b)   # 3.333... (float!)
 print(a // b)  # 3 (integer division)
-print(a % b)   # 1 (remainder)
+print(a % b)   # 1 (remainder - modulo)
 ```
 
-**Key Point**: `/` gives float, `//` gives integer
+**Real-World**: Modulo (%) checks if number is even/odd!
+```python
+if num % 2 == 0:
+    print("Even")
+```
 
-## [0:12-0:15] Practice & Wrap (3 min)
-
-**Exercise**: "You have 25 candies and 4 friends. How many does each get? How many left over?"
+### Practice (3 minutes)
 
 ```python
 candies = 25
 friends = 4
 
-each_gets = candies // friends
-leftover = candies % friends
+each_gets = candies // friends  # 6
+leftover = candies % friends    # 1
+
+print(f"Each friend gets {each_gets} candies")
+print(f"{leftover} candy left over")
 ```
 
-**Answer**: 6 each, 1 leftover

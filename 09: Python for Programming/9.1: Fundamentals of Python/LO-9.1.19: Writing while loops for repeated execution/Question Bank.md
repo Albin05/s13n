@@ -1,6 +1,4 @@
-# Question Bank: Writing While Loops for Repeated Execution
-
-## Problem 1: Count to 10 (Easy)
+### **1. Count to 10**
 
 Write a while loop that prints numbers from 1 to 10.
 
@@ -22,7 +20,9 @@ Write a while loop that prints numbers from 1 to 10.
 
 ---
 
-## Problem 2: Countdown from 5 (Easy)
+---
+
+### **2. Countdown from 5**
 
 Write a program that counts down from 5 to 1, then prints "Blast off!"
 
@@ -40,7 +40,9 @@ Blast off!
 
 ---
 
-## Problem 3: Sum Numbers Until 0 (Easy)
+---
+
+### **3. Sum Numbers Until 0**
 
 Write a program that keeps asking for numbers and sums them. Stop when user enters 0.
 
@@ -57,7 +59,9 @@ Total: 45
 
 ---
 
-## Problem 4: Password Validator (Medium)
+---
+
+### **4. Password Validator**
 
 Create a login system with maximum 3 attempts. Password is "python123". After 3 failed attempts, deny access.
 
@@ -73,7 +77,9 @@ Access granted
 
 ---
 
-## Problem 5: Find First Multiple of 7 (Medium)
+---
+
+### **5. Find First Multiple of 7**
 
 Write a program that finds and prints the first positive integer that is a multiple of 7.
 
@@ -86,7 +92,9 @@ First multiple of 7: 7
 
 ---
 
-## Problem 6: Guess the Number (Medium)
+---
+
+### **6. Guess the Number**
 
 Create a number guessing game. Secret number is 42. Keep asking until user guesses correctly, providing "Too high" or "Too low" hints.
 
@@ -104,7 +112,9 @@ Correct! You guessed it!
 
 ---
 
-## Problem 7: Double Until Exceeds 1000 (Medium)
+---
+
+### **7. Double Until Exceeds 1000**
 
 Start with value = 1. Keep doubling it until it exceeds 1000. Print each value and count iterations.
 
@@ -128,7 +138,9 @@ Total iterations: 10
 
 ---
 
-## Problem 8: Factorial Calculator (Hard)
+---
+
+### **8. Factorial Calculator**
 
 Calculate factorial of 5 (5! = 5 × 4 × 3 × 2 × 1) using a while loop.
 
@@ -141,7 +153,9 @@ Calculate factorial of 5 (5! = 5 × 4 × 3 × 2 × 1) using a while loop.
 
 ---
 
-## Problem 9: Fibonacci Sequence (Hard)
+---
+
+### **9. Fibonacci Sequence**
 
 Generate and print the first 10 Fibonacci numbers (0, 1, 1, 2, 3, 5, 8, 13, 21, 34).
 
@@ -155,7 +169,9 @@ First 10 Fibonacci numbers:
 
 ---
 
-## Problem 10: Input Validation (Hard)
+---
+
+### **10. Input Validation**
 
 Ask user for age. Keep asking until they enter a valid age (0-120).
 
@@ -173,7 +189,9 @@ Valid age entered: 25
 
 ---
 
-## Problem 11: Menu System (Hard)
+---
+
+### **11. Menu System**
 
 Create an interactive menu that loops until user chooses to exit.
 
@@ -207,7 +225,9 @@ Program ended
 
 ---
 
-## Problem 12: Find Digits Sum (Hard)
+---
+
+### **12. Find Digits Sum**
 
 Given number 12345, find the sum of all its digits (1+2+3+4+5 = 15).
 
@@ -220,7 +240,9 @@ Sum of digits: 15
 
 ---
 
-## Problem 13: Reverse a Number (Very Hard)
+---
+
+### **13. Reverse a Number**
 
 Reverse the digits of 12345 to get 54321.
 
@@ -233,7 +255,9 @@ Reversed: 54321
 
 ---
 
-## Problem 14: GCD Calculator (Very Hard)
+---
+
+### **14. GCD Calculator**
 
 Calculate the Greatest Common Divisor (GCD) of 48 and 18 using the Euclidean algorithm.
 
@@ -246,7 +270,9 @@ GCD: 6
 
 ---
 
-## Problem 15: Prime Number Checker (Very Hard)
+---
+
+### **15. Prime Number Checker**
 
 Check if 29 is a prime number. A prime has no divisors except 1 and itself.
 
@@ -259,7 +285,9 @@ Check if 29 is a prime number. A prime has no divisors except 1 and itself.
 
 ---
 
-## Problem 16: Collatz Sequence (Very Hard)
+---
+
+### **16. Collatz Sequence**
 
 Starting with 10, apply Collatz rules until reaching 1:
 - If even: divide by 2
@@ -278,7 +306,9 @@ Reached 1 in 6 steps
 
 ---
 
-## Problem 17: Bank Account Simulator (Very Hard)
+---
+
+### **17. Bank Account Simulator**
 
 Simulate a bank account with initial balance $1000. Options:
 1. Deposit
@@ -318,7 +348,9 @@ Final balance: $1300
 
 ---
 
-## Problem 18: Power Calculator Without ** (Very Hard)
+---
+
+### **18. Power Calculator Without ****
 
 Calculate 2^5 without using the ** operator. Use repeated multiplication.
 
@@ -331,7 +363,9 @@ Calculate 2^5 without using the ** operator. Use repeated multiplication.
 
 ---
 
-## Problem 19: String Character Counter (Hard)
+---
+
+### **19. String Character Counter**
 
 Count how many times the letter 'l' appears in "hello world" using a while loop and indexing.
 
@@ -344,7 +378,9 @@ Count how many times the letter 'l' appears in "hello world" using a while loop 
 
 ---
 
-## Problem 20: Find Maximum in User Input (Very Hard)
+---
+
+### **20. Find Maximum in User Input**
 
 Keep asking user for numbers until they enter "done". Find and print the maximum value entered.
 
@@ -364,7 +400,11 @@ Maximum value: 78
 
 ## Additional Practice Problems
 
-### Problem 21: Sum Even Numbers (Medium)
+#
+
+---
+
+### **21. Sum Even Numbers**
 
 Sum all even numbers from 2 to 20 using a while loop.
 
@@ -375,7 +415,11 @@ Sum: 110
 
 ---
 
-### Problem 22: Multiplication Table (Medium)
+#
+
+---
+
+### **22. Multiplication Table**
 
 Print the multiplication table for 7 (7×1 through 7×10).
 
@@ -390,7 +434,11 @@ Print the multiplication table for 7 (7×1 through 7×10).
 
 ---
 
-### Problem 23: Count Vowels (Hard)
+#
+
+---
+
+### **23. Count Vowels**
 
 Count vowels in a given string using a while loop.
 
@@ -405,7 +453,11 @@ Vowel count: 3
 
 ---
 
-### Problem 24: Digital Root (Very Hard)
+#
+
+---
+
+### **24. Digital Root**
 
 Find the digital root of a number (keep summing digits until single digit remains).
 
@@ -420,7 +472,11 @@ Digital root of 38: 2
 
 ---
 
-### Problem 25: Binary Conversion (Very Hard)
+#
+
+---
+
+### **25. Binary Conversion**
 
 Convert decimal number 13 to binary using a while loop.
 
@@ -430,3 +486,6 @@ Convert decimal number 13 to binary using a while loop.
 ```
 
 **Hint:** Repeatedly divide by 2, collect remainders, reverse at end.
+
+---
+

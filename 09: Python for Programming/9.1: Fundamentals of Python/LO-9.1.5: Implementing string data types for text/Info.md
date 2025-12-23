@@ -1,19 +1,22 @@
-# LO-5: Implement String Data Types
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Master string (str) data types for working with text in Python.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 12       |
+| In-Class Quiz  | 5        |
+| Lecture Notes  | 15       |
+| Lecture Script | 21       |
+| Pre-Read       | 5        |
+| Question Bank  | 24       |
 
-## Duration
-15-20 minutes
+---
 
-## Key Concepts
-- String creation (quotes)
-- String operations (concatenation, repetition)
-- String methods
-- String indexing (preview)
+## **Question Bank Metadata**
 
-## Success Criteria
-- Create string variables
-- Concatenate strings
-- Use basic string methods
-- Format output with strings
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.1.5            | Knowledge      | MCQ            |
+| Q2           | 4                 | Low        | 9.1.5            | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.5            | Implementation | Coding         |
+| Q4           | 6                 | Medium     | 9.1.5            | Application    | Coding         |
+| Q5           | 6                 | High       | 9.1.5            | Application    | Coding         |

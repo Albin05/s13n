@@ -1,18 +1,22 @@
-# LO-8: Convert Between Data Types
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Master type conversion (type casting) between int, float, str, and bool.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 10              |
+| In-Class Quiz  | 5               |
+| Lecture Notes  | 20              |
+| Lecture Script | 16              |
+| Pre-Read       | 5               |
+| Question Bank  | 21              |
 
-## Duration
-15 minutes
+---
 
-## Key Concepts
-- Type conversion functions
-- When conversion is needed
-- Handling conversion errors
-- Implicit vs explicit conversion
+## **Question Bank Metadata**
 
-## Success Criteria
-- Convert between all basic types
-- Handle user input conversion
-- Understand conversion rules
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.1.8            | Implementation | Coding         |
+| Q2           | 3                 | Low        | 9.1.8            | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.8            | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.8            | Application    | Coding         |
+| Q5           | 5                 | Medium     | 9.1.8            | Application    | Coding         |

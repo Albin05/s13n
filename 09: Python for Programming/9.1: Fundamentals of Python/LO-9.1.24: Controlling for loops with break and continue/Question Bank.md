@@ -1,6 +1,4 @@
-# Question Bank: Controlling For Loops with Break and Continue
-
-## Problem 1: Find First Even (Easy)
+### **1. Find First Even**
 
 Write a program that finds and prints the first even number from a list, then stops.
 
@@ -15,7 +13,9 @@ Found: 8
 
 ---
 
-## Problem 2: Skip Odd Numbers (Easy)
+---
+
+### **2. Skip Odd Numbers**
 
 Print only even numbers from 1 to 10 using continue to skip odd numbers.
 
@@ -32,7 +32,9 @@ Print only even numbers from 1 to 10 using continue to skip odd numbers.
 
 ---
 
-## Problem 3: Search for Name (Easy)
+---
+
+### **3. Search for Name**
 
 Search for "Alice" in a list of names and print "Found!" when you find it.
 
@@ -50,7 +52,9 @@ Found!
 
 ---
 
-## Problem 4: Skip Negative Numbers (Easy)
+---
+
+### **4. Skip Negative Numbers**
 
 Print only positive numbers from a list, skipping negative ones.
 
@@ -68,7 +72,9 @@ Given list: `[5, -2, 8, -7, 3, -1, 9]`
 
 ---
 
-## Problem 5: First Vowel (Medium)
+---
+
+### **5. First Vowel**
 
 Find the first vowel in a string and print its position.
 
@@ -83,7 +89,9 @@ First vowel: o at position 4
 
 ---
 
-## Problem 6: Sum Until Negative (Medium)
+---
+
+### **6. Sum Until Negative**
 
 Calculate sum of numbers until you encounter a negative number.
 
@@ -98,7 +106,9 @@ Sum: 30
 
 ---
 
-## Problem 7: Skip Multiples of 3 (Medium)
+---
+
+### **7. Skip Multiples of 3**
 
 Print numbers 1 to 20, but skip multiples of 3.
 
@@ -111,7 +121,9 @@ Print numbers 1 to 20, but skip multiples of 3.
 
 ---
 
-## Problem 8: Find Target in Range (Medium)
+---
+
+### **8. Find Target in Range**
 
 Search for the number 7 in range 1 to 10. Print all numbers until you find 7.
 
@@ -125,7 +137,9 @@ Found target!
 
 ---
 
-## Problem 9: Password Validator (Medium)
+---
+
+### **9. Password Validator**
 
 Check if a password has at least 8 characters. If it does, print "Valid". Stop checking after finding the first valid password.
 
@@ -143,7 +157,9 @@ Valid password found!
 
 ---
 
-## Problem 10: Skip Spaces (Medium)
+---
+
+### **10. Skip Spaces**
 
 Print each character in a string except spaces.
 
@@ -158,7 +174,9 @@ H e l l o W o r l d
 
 ---
 
-## Problem 11: First Duplicate (Hard)
+---
+
+### **11. First Duplicate**
 
 Find the first number that appears more than once in a list.
 
@@ -173,7 +191,9 @@ First duplicate: 2
 
 ---
 
-## Problem 12: Loop with Else (Hard)
+---
+
+### **12. Loop with Else**
 
 Search for a number greater than 10 in a list. If found, print it. If not found (loop completes), print "No large number found".
 
@@ -194,7 +214,9 @@ Found large number: 15
 
 ---
 
-## Problem 13: Count Until Condition (Hard)
+---
+
+### **13. Count Until Condition**
 
 Count how many numbers you can process before encountering a number divisible by 7.
 
@@ -209,7 +231,9 @@ Processed 5 numbers before stopping
 
 ---
 
-## Problem 14: Skip Short Words (Hard)
+---
+
+### **14. Skip Short Words**
 
 Print words with 5 or more letters, skip shorter words.
 
@@ -226,7 +250,9 @@ coding
 
 ---
 
-## Problem 15: Nested Loop Break (Hard)
+---
+
+### **15. Nested Loop Break**
 
 Find a number in a 2D list and print its position (row, col).
 
@@ -242,7 +268,9 @@ Found 5 at row 1, col 1
 
 ---
 
-## Problem 16: Remove Consecutive Duplicates (Hard)
+---
+
+### **16. Remove Consecutive Duplicates**
 
 Print a list without consecutive duplicates.
 
@@ -257,7 +285,9 @@ Given list: `[1, 1, 2, 2, 2, 3, 4, 4, 5]`
 
 ---
 
-## Problem 17: Validate All Even (Very Hard)
+---
+
+### **17. Validate All Even**
 
 Check if all numbers in a list are even. If you find an odd number, stop and print "Not all even".
 
@@ -278,7 +308,9 @@ Not all even (found 5)
 
 ---
 
-## Problem 18: Interactive Search (Very Hard)
+---
+
+### **18. Interactive Search**
 
 Search for multiple targets in a list. For each target, find and print its index. Stop searching if target is not found.
 
@@ -296,7 +328,9 @@ Targets: `[20, 50, 60]`
 
 ---
 
-## Problem 19: Skip Range (Very Hard)
+---
+
+### **19. Skip Range**
 
 Print numbers from 1 to 20, but skip numbers 8 through 12 (inclusive).
 
@@ -309,7 +343,9 @@ Print numbers from 1 to 20, but skip numbers 8 through 12 (inclusive).
 
 ---
 
-## Problem 20: First Prime Number (Very Hard)
+---
+
+### **20. First Prime Number**
 
 Find the first prime number in a list of numbers.
 
@@ -324,7 +360,9 @@ First prime: 11
 
 ---
 
-## Problem 21: Matrix Row Sum (Very Hard)
+---
+
+### **21. Matrix Row Sum**
 
 Calculate sum of each row in a 2D list, but stop if any row sum exceeds 20.
 
@@ -346,7 +384,9 @@ Row 2 sum: 24 - exceeds limit, stopping
 
 ---
 
-## Problem 22: Skip Vowels in String (Medium)
+---
+
+### **22. Skip Vowels in String**
 
 Print each character in a string except vowels.
 
@@ -361,7 +401,9 @@ d c t n
 
 ---
 
-## Problem 23: First N Evens (Hard)
+---
+
+### **23. First N Evens**
 
 Print the first 5 even numbers from a range of 1 to 50.
 
@@ -374,7 +416,9 @@ Print the first 5 even numbers from a range of 1 to 50.
 
 ---
 
-## Problem 24: Dictionary Search (Hard)
+---
+
+### **24. Dictionary Search**
 
 Search for a key in a dictionary. If found, print its value and stop.
 
@@ -390,7 +434,9 @@ Found age: 25
 
 ---
 
-## Problem 25: Skip Empty Strings (Easy)
+---
+
+### **25. Skip Empty Strings**
 
 Print non-empty strings from a list.
 
@@ -407,7 +453,9 @@ Python
 
 ---
 
-## Problem 26: Break on Condition Sum (Very Hard)
+---
+
+### **26. Break on Condition Sum**
 
 Add numbers from 1 to N, but stop when sum exceeds 100. Print the last number added.
 
@@ -421,7 +469,9 @@ Total sum: 105
 
 ---
 
-## Problem 27: Continue Pattern (Medium)
+---
+
+### **27. Continue Pattern**
 
 Print numbers 1 to 15, but skip numbers that are divisible by 2 OR 3.
 
@@ -434,7 +484,9 @@ Print numbers 1 to 15, but skip numbers that are divisible by 2 OR 3.
 
 ---
 
-## Problem 28: Nested Continue (Very Hard)
+---
+
+### **28. Nested Continue**
 
 Print a multiplication table for 1-5, but skip results that are multiples of 5.
 
@@ -450,7 +502,9 @@ Print a multiplication table for 1-5, but skip results that are multiples of 5.
 
 ---
 
-## Problem 29: String Pattern Break (Hard)
+---
+
+### **29. String Pattern Break**
 
 Find the first word in a sentence that starts with a capital letter.
 
@@ -466,7 +520,9 @@ First capitalized word: Python
 
 ---
 
-## Problem 30: Combined Break and Continue (Very Hard)
+---
+
+### **30. Combined Break and Continue**
 
 Print numbers 1 to 30 with these rules:
 - Skip multiples of 3
@@ -481,7 +537,9 @@ Print numbers 1 to 30 with these rules:
 
 ---
 
-## Problem 31: Validate List (Medium)
+---
+
+### **31. Validate List**
 
 Check if a list contains only positive numbers. Print "Invalid" and stop if you find a non-positive number.
 
@@ -502,7 +560,9 @@ Invalid: -5
 
 ---
 
-## Problem 32: Character Counter (Hard)
+---
+
+### **32. Character Counter**
 
 Count consonants in a string (skip vowels and spaces).
 
@@ -517,7 +577,9 @@ Consonants: 7
 
 ---
 
-## Problem 33: Early Exit Search (Medium)
+---
+
+### **33. Early Exit Search**
 
 Search for "exit" command in a list. Stop processing when found.
 
@@ -534,7 +596,9 @@ Exit command found!
 
 ---
 
-## Problem 34: Range with Both (Very Hard)
+---
+
+### **34. Range with Both**
 
 Print squares of numbers 1 to 20, but:
 - Skip perfect cubes (1, 8, 27...)
@@ -550,7 +614,9 @@ Stopped at 15 (square = 225)
 
 ---
 
-## Problem 35: Nested Break with Flag (Very Hard)
+---
+
+### **35. Nested Break with Flag**
 
 Search for a target value in a 2D list. Print "Found" or "Not found" for entire matrix.
 
@@ -688,3 +754,6 @@ for i in range(10):
 6. **Nested loops**: Use flags or functions for clarity
 7. **Comment intent**: Explain why breaking/continuing
 8. **Combine wisely**: Can use both in same loop
+
+---
+

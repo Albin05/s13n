@@ -1,41 +1,62 @@
-# Lecture Script: LO-2 Apply Variable Naming Conventions
+### LO-2 Apply Variable Naming Conventions (15 minutes)
 
-## Duration: 10-15 minutes
+### Hook (2 minutes)
 
-## [0:00-0:02] Hook
 **Say**: "You can name variables almost anything... but should you? Let's learn the rules and best practices!"
 
-**Show**: 
 ```python
 x = 10      # Valid but unclear
 age = 10    # Valid and clear!
 ```
 
-## [0:02-0:07] Naming Rules (5 min)
+### Naming Rules (5 minutes)
 
-**Demonstrate each rule with live coding:**
+**Key Rules**:
+- Must start with letter or underscore
+- Can contain letters, numbers, underscores
+- Cannot use Python keywords (if, for, while, etc.)
+- Case-sensitive (Age ≠ age)
 
-1. Start with letter/underscore
-2. Only letters/numbers/underscores
-3. Case sensitive
-4. No reserved keywords
-
-**Live Code Examples** of errors, explain each
-
-## [0:07-0:12] Conventions (5 min)
-
-**Teach snake_case**:
 ```python
-student_name = "Alice"  # Pythonic!
+# Valid
+student_name = "Alice"
+_private = 42
+age2 = 25
+
+# Invalid
+2students = 10      # Error!
+student-name = "Bob" # Error!
+for = 5              # Error! (keyword)
 ```
 
-**Show bad examples** and improve them together
+### PEP 8 Conventions (6 minutes)
 
-## [0:12-0:15] Practice & Wrap-up (3 min)
+**Say**: "Python has style guidelines called PEP 8. Follow them to write professional code!"
 
-**Exercise**: Fix these names:
-- `2name` → `name` or `name_2`
-- `user-email` → `user_email`
-- `for` → `loop_count`
+**Best Practices**:
+- Use `snake_case` for variables (all lowercase, underscores)
+- Make names descriptive
+- Avoid single letters except in loops
 
-**Preview**: "Next: We'll learn about integer data types!"
+```python
+# Good - follows PEP 8
+student_name = "Alice"
+total_score = 95
+is_active = True
+
+# Bad - works but not Pythonic
+studentName = "Bob"   # camelCase (not Python style)
+TotalScore = 85       # PascalCase (for classes)
+x = True              # too vague
+```
+
+**Real-World**: Professional Python projects follow PEP 8. Learn it now!
+
+### Practice (2 minutes)
+
+Fix these names to follow PEP 8:
+```python
+StudentName = "Alice"  # Change to: student_name
+totalPrice = 99.99     # Change to: total_price
+2ndPlace = "Bob"       # Change to: second_place
+```

@@ -1,6 +1,4 @@
-# Question Bank: Define Variables
-
-## Problem 1: Create and Print Variables (Easy)
+### **1. Create and Print Variables**
 
 Create three variables:
 - `student_name` with your name
@@ -18,7 +16,9 @@ A
 
 ---
 
-## Problem 2: Variable Reassignment (Easy)
+---
+
+### **2. Variable Reassignment**
 
 Create a variable `temperature` with value 72. Change it to 68. Then change it to 75. Print after each change.
 
@@ -31,7 +31,9 @@ Create a variable `temperature` with value 72. Change it to 68. Then change it t
 
 ---
 
-## Problem 3: Score Tracker (Medium)
+---
+
+### **3. Score Tracker**
 
 Create a variable `game_score` starting at 0. Add 100 points (level 1 complete), then add 150 points (level 2 complete), then subtract 50 points (penalty). Print the score after each change.
 
@@ -45,12 +47,14 @@ Create a variable `game_score` starting at 0. Add 100 points (level 1 complete),
 
 ---
 
-## Problem 4: Shopping Calculator (Medium)
+---
+
+### **4. Shopping Calculator**
 
 Create variables for:
 - `item_price = 25`
 - `quantity = 3`
-- `total` (calculated as price × quantity)
+- `total` (calculated as price Ã— quantity)
 
 Print the total. Then change quantity to 5 and recalculate total.
 
@@ -62,7 +66,9 @@ Print the total. Then change quantity to 5 and recalculate total.
 
 ---
 
-## Problem 5: Variable Swap Challenge (Hard)
+---
+
+### **5. Variable Swap Challenge**
 
 You have two variables:
 ```python
@@ -77,3 +83,6 @@ Swap their values so `a` becomes 20 and `b` becomes 10. You'll need a third temp
 a = 20
 b = 10
 ```
+
+---
+

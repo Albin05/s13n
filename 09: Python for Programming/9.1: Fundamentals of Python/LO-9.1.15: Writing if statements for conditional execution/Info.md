@@ -1,27 +1,22 @@
-# LO-15: Write If Statements
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Students will be able to write if statements to execute code conditionally based on boolean expressions.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 10              |
+| In-Class Quiz  | 5               |
+| Lecture Notes  | 15              |
+| Lecture Script | 20              |
+| Pre-Read       | 5               |
+| Question Bank  | 21              |
 
-## Duration
-20-25 minutes
+---
 
-## Key Concepts Covered
-1. **If Statement Syntax**: Writing basic if statements
-2. **Indentation**: Understanding Python's indentation rules
-3. **Code Blocks**: Grouping statements under conditions
-4. **Boolean Conditions**: Using comparison and logical operators
-5. **Flow Control**: How programs make decisions
+## **Question Bank Metadata**
 
-## Prerequisites
-- LO-6: Implement Boolean Data Types
-- LO-13: Use Comparison Operators
-- LO-14: Apply Logical Operators
-
-## Learning Outcomes
-By the end of this lesson, students will be able to:
-- Write syntactically correct if statements
-- Use proper indentation
-- Execute code conditionally
-- Combine if statements with comparison and logical operators
-- Debug common if statement errors
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.1.15           | Implementation | Coding         |
+| Q2           | 3                 | Low        | 9.1.15           | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.15           | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.15           | Application    | Coding         |
+| Q5           | 5                 | Medium     | 9.1.15           | Application    | Coding         |

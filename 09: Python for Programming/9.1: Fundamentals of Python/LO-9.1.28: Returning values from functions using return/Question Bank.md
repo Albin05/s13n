@@ -1,6 +1,4 @@
-# Question Bank: Returning Values from Functions Using Return
-
-## Problem 1: Simple Return (Easy)
+### **1. Simple Return**
 
 Write a function `double` that takes a number and returns double its value.
 
@@ -17,7 +15,9 @@ print(result)  # 24
 
 ---
 
-## Problem 2: Add Two Numbers with Return (Easy)
+---
+
+### **2. Add Two Numbers with Return**
 
 Create a function `add_numbers` that takes two parameters and returns their sum.
 
@@ -34,7 +34,9 @@ print(sum2)  # 30
 
 ---
 
-## Problem 3: Return String (Easy)
+---
+
+### **3. Return String**
 
 Define a function `make_greeting` that takes a `name` parameter and returns a greeting string.
 
@@ -51,7 +53,9 @@ print(msg)  # "Hello, Bob!"
 
 ---
 
-## Problem 4: Return Boolean (Easy)
+---
+
+### **4. Return Boolean**
 
 Write a function `is_even` that takes a number and returns True if even, False if odd.
 
@@ -66,7 +70,9 @@ print(is_even(10))  # True
 
 ---
 
-## Problem 5: Calculate Area with Return (Medium)
+---
+
+### **5. Calculate Area with Return**
 
 Create a function `calculate_rectangle_area` that takes length and width, and returns the area.
 
@@ -83,7 +89,9 @@ print(f"Area: {area2}")  # Area: 80
 
 ---
 
-## Problem 6: Return Maximum of Two (Medium)
+---
+
+### **6. Return Maximum of Two**
 
 Write a function `get_max` that takes two numbers and returns the larger one.
 
@@ -98,7 +106,9 @@ print(get_max(15, 15))  # 15
 
 ---
 
-## Problem 7: Return Grade (Medium)
+---
+
+### **7. Return Grade**
 
 Define a function `calculate_grade` that takes a score and returns the letter grade.
 
@@ -115,7 +125,9 @@ print(calculate_grade(55))  # "F"
 
 ---
 
-## Problem 8: Multiple Return Paths (Medium)
+---
+
+### **8. Multiple Return Paths**
 
 Create a function `classify_number` that takes a number and returns "Positive", "Negative", or "Zero".
 
@@ -130,7 +142,9 @@ print(classify_number(0))    # "Zero"
 
 ---
 
-## Problem 9: Return Multiple Values (Medium)
+---
+
+### **9. Return Multiple Values**
 
 Write a function `get_circle_info` that takes radius and returns both circumference and area.
 
@@ -145,7 +159,9 @@ print(f"Circumference: {circ}, Area: {area}")
 
 ---
 
-## Problem 10: Temperature Converter with Return (Medium)
+---
+
+### **10. Temperature Converter with Return**
 
 Define a function `celsius_to_fahrenheit` that converts Celsius to Fahrenheit and returns the result.
 
@@ -162,7 +178,9 @@ print(f"{f2}°F")  # 212.0°F
 
 ---
 
-## Problem 11: Return from Loop (Medium)
+---
+
+### **11. Return from Loop**
 
 Create a function `find_first_even` that takes a list and returns the first even number found.
 
@@ -177,7 +195,9 @@ print(result)  # 8
 
 ---
 
-## Problem 12: Return None Explicitly (Easy)
+---
+
+### **12. Return None Explicitly**
 
 Write a function `check_positive` that returns the number if positive, otherwise returns None.
 
@@ -192,7 +212,9 @@ print(check_positive(0))   # None
 
 ---
 
-## Problem 13: Calculate Discount with Return (Medium)
+---
+
+### **13. Calculate Discount with Return**
 
 Define a function `apply_discount` that takes price and discount percentage, returns final price.
 
@@ -209,7 +231,9 @@ print(f"${final}")  # $225.0
 
 ---
 
-## Problem 14: Return Early (Medium)
+---
+
+### **14. Return Early**
 
 Create a function `validate_age` that returns "Valid" for ages 18-100, otherwise returns an error message.
 
@@ -224,7 +248,9 @@ print(validate_age(120))  # "Invalid age"
 
 ---
 
-## Problem 15: Power Function with Return (Medium)
+---
+
+### **15. Power Function with Return**
 
 Write a function `power` that takes base and exponent, returns the result.
 
@@ -239,7 +265,9 @@ print(power(10, 0))  # 1
 
 ---
 
-## Problem 16: Return String Length (Easy)
+---
+
+### **16. Return String Length**
 
 Define a function `get_length` that takes a string and returns its length.
 
@@ -253,7 +281,9 @@ print(get_length("Python"))  # 6
 
 ---
 
-## Problem 17: Return List Element (Medium)
+---
+
+### **17. Return List Element**
 
 Create a function `get_first_element` that takes a list and returns the first element, or None if empty.
 
@@ -267,7 +297,9 @@ print(get_first_element([]))         # None
 
 ---
 
-## Problem 18: Calculate BMI with Return (Hard)
+---
+
+### **18. Calculate BMI with Return**
 
 Write a function `calculate_bmi` that takes weight (kg) and height (m), returns BMI and category.
 
@@ -282,7 +314,9 @@ print(f"BMI: {bmi:.2f}, Category: {category}")
 
 ---
 
-## Problem 19: Return Vowel Count (Medium)
+---
+
+### **19. Return Vowel Count**
 
 Define a function `count_vowels` that takes a string and returns the number of vowels.
 
@@ -299,7 +333,9 @@ print(f"Vowels: {count}")  # Vowels: 1
 
 ---
 
-## Problem 20: Return Factorial (Hard)
+---
+
+### **20. Return Factorial**
 
 Create a function `factorial` that takes a number and returns its factorial.
 
@@ -314,7 +350,9 @@ print(factorial(0))  # 1
 
 ---
 
-## Problem 21: Return List of Squares (Medium)
+---
+
+### **21. Return List of Squares**
 
 Write a function `get_squares` that takes a number n and returns a list of squares from 1 to n.
 
@@ -328,7 +366,9 @@ print(result)  # [1, 4, 9, 16, 25]
 
 ---
 
-## Problem 22: Return Middle Element (Medium)
+---
+
+### **22. Return Middle Element**
 
 Define a function `get_middle` that takes a list and returns the middle element.
 
@@ -342,7 +382,9 @@ print(get_middle([10, 20, 30]))     # 20
 
 ---
 
-## Problem 23: Return Absolute Value (Easy)
+---
+
+### **23. Return Absolute Value**
 
 Create a function `absolute_value` that takes a number and returns its absolute value.
 
@@ -357,7 +399,9 @@ print(absolute_value(-15))  # 15
 
 ---
 
-## Problem 24: Return Prime Check (Hard)
+---
+
+### **24. Return Prime Check**
 
 Write a function `is_prime` that takes a number and returns True if prime, False otherwise.
 
@@ -372,7 +416,9 @@ print(is_prime(2))   # True
 
 ---
 
-## Problem 25: Return Min and Max (Medium)
+---
+
+### **25. Return Min and Max**
 
 Define a function `get_min_max` that takes three numbers and returns the smallest and largest.
 
@@ -386,7 +432,9 @@ print(f"Min: {minimum}, Max: {maximum}")  # Min: 3, Max: 10
 
 ---
 
-## Problem 26: Return Reversed String (Easy)
+---
+
+### **26. Return Reversed String**
 
 Create a function `reverse_string` that takes a string and returns it reversed.
 
@@ -400,7 +448,9 @@ print(reverse_string("Python"))  # "nohtyP"
 
 ---
 
-## Problem 27: Return Sum of List (Medium)
+---
+
+### **27. Return Sum of List**
 
 Write a function `sum_list` that takes a list of numbers and returns their sum.
 
@@ -417,7 +467,9 @@ print(total)  # 60
 
 ---
 
-## Problem 28: Return Leap Year Check (Medium)
+---
+
+### **28. Return Leap Year Check**
 
 Define a function `is_leap_year` that takes a year and returns True if leap year, False otherwise.
 
@@ -432,7 +484,9 @@ print(is_leap_year(2000))  # True
 
 ---
 
-## Problem 29: Return Fibonacci Number (Hard)
+---
+
+### **29. Return Fibonacci Number**
 
 Create a function `fibonacci` that takes n and returns the nth Fibonacci number.
 
@@ -448,7 +502,9 @@ print(fibonacci(10)) # 55
 
 ---
 
-## Problem 30: Return Filtered List (Hard)
+---
+
+### **30. Return Filtered List**
 
 Write a function `get_evens` that takes a list and returns a new list with only even numbers.
 
@@ -714,3 +770,6 @@ def calculate_and_display(a, b):
 4. **API Functions**: Return results from operations
 5. **Helper Functions**: Return intermediate values
 6. **Utilities**: Return formatted/processed data
+
+---
+

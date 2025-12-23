@@ -1,24 +1,22 @@
-# LO-39: Apply Default Parameters
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Students will be able to use default parameter values effectively in Python programming.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 10              |
+| In-Class Quiz  | 5               |
+| Lecture Notes  | 20              |
+| Lecture Script | 30              |
+| Pre-Read       | 5               |
+| Question Bank  | 21              |
 
-## Duration
-20-30 minutes
+---
 
-## Key Concepts Covered
-1. Understanding default parameter values
-2. Syntax and usage
-3. Common patterns
-4. Best practices and pitfalls
+## **Question Bank Metadata**
 
-## Prerequisites
-- Basic Python syntax
-- Control flow structures
-
-## Learning Outcomes
-By the end of this lesson, students will be able to:
-- Understand default parameter values
-- Write correct code using default parameter values
-- Apply default parameter values to solve real problems
-- Debug common issues
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.1.29           | Implementation | Coding         |
+| Q2           | 3                 | Low        | 9.1.29           | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.29           | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.29           | Application    | Coding         |
+| Q5           | 5                 | Medium     | 9.1.29           | Application    | Coding         |

@@ -1,25 +1,22 @@
-# LO-16: Write Elif Statements
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Students will be able to write elif (else if) statements to handle multiple mutually exclusive conditions.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 10              |
+| In-Class Quiz  | 5               |
+| Lecture Notes  | 15              |
+| Lecture Script | 20              |
+| Pre-Read       | 5               |
+| Question Bank  | 21              |
 
-## Duration
-20-25 minutes
+---
 
-## Key Concepts Covered
-1. **Elif Syntax**: Writing elif statements
-2. **Mutually Exclusive Conditions**: Only one branch executes
-3. **Order Matters**: Conditions checked from top to bottom
-4. **Multiple Conditions**: Handling many scenarios
+## **Question Bank Metadata**
 
-## Prerequisites
-- LO-15: Write If Statements
-- LO-13: Use Comparison Operators
-- LO-14: Apply Logical Operators
-
-## Learning Outcomes
-By the end of this lesson, students will be able to:
-- Write syntactically correct elif statements
-- Chain multiple conditions together
-- Understand the execution flow of if-elif chains
-- Choose between multiple if statements vs if-elif chains
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.1.16           | Implementation | Coding         |
+| Q2           | 3                 | Low        | 9.1.16           | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.16           | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.16           | Application    | Coding         |
+| Q5           | 5                 | Medium     | 9.1.16           | Application    | Coding         |

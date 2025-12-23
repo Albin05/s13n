@@ -1,24 +1,22 @@
-# LO-17: Write Else Statements
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Students will be able to write else statements to handle cases when no prior conditions are True.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 10              |
+| In-Class Quiz  | 5               |
+| Lecture Notes  | 15              |
+| Lecture Script | 20              |
+| Pre-Read       | 5               |
+| Question Bank  | 21              |
 
-## Duration
-15-20 minutes
+---
 
-## Key Concepts Covered
-1. **Else Syntax**: Writing else blocks
-2. **Default Case**: Handling all other scenarios  
-3. **If-Elif-Else Chain**: Complete conditional structure
-4. **No Condition Needed**: Else has no condition to check
+## **Question Bank Metadata**
 
-## Prerequisites
-- LO-15: Write If Statements
-- LO-16: Write Elif Statements
-
-## Learning Outcomes
-By the end of this lesson, students will be able to:
-- Write syntactically correct else statements
-- Understand when else blocks execute
-- Build complete if-elif-else chains
-- Provide default behavior in conditionals
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.1.17           | Implementation | Coding         |
+| Q2           | 3                 | Low        | 9.1.17           | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.17           | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.17           | Application    | Coding         |
+| Q5           | 5                 | Medium     | 9.1.17           | Application    | Coding         |

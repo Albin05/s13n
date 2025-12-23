@@ -1,6 +1,4 @@
-# Question Bank: Defining Reusable Functions in Python
-
-## Problem 1: Simple Greeting Function (Easy)
+### **1. Simple Greeting Function**
 
 Define a function named `greet` that prints "Hello, World!" when called.
 
@@ -13,7 +11,9 @@ Hello, World!
 
 ---
 
-## Problem 2: Print Separator (Easy)
+---
+
+### **2. Print Separator**
 
 Create a function `print_separator` that prints a line of 30 dashes.
 
@@ -26,7 +26,9 @@ Create a function `print_separator` that prints a line of 30 dashes.
 
 ---
 
-## Problem 3: Welcome Message (Easy)
+---
+
+### **3. Welcome Message**
 
 Write a function `welcome` that prints a welcome message with your name.
 
@@ -40,7 +42,9 @@ Let's learn functions together!
 
 ---
 
-## Problem 4: Display Menu (Easy)
+---
+
+### **4. Display Menu**
 
 Create a function `show_menu` that displays a simple menu with 3 options.
 
@@ -56,7 +60,9 @@ Create a function `show_menu` that displays a simple menu with 3 options.
 
 ---
 
-## Problem 5: Calculate Circle Area (Medium)
+---
+
+### **5. Calculate Circle Area**
 
 Define a function `circle_area` that calculates and prints the area of a circle with radius 5. Use π = 3.14159.
 
@@ -69,7 +75,9 @@ Area: 78.53975
 
 ---
 
-## Problem 6: Print Countdown (Medium)
+---
+
+### **6. Print Countdown**
 
 Create a function `countdown` that prints numbers from 10 down to 1, then prints "Go!".
 
@@ -83,7 +91,9 @@ Go!
 
 ---
 
-## Problem 7: Temperature Converter (Medium)
+---
+
+### **7. Temperature Converter**
 
 Write a function `celsius_to_fahrenheit` that converts 25°C to Fahrenheit and prints the result.
 
@@ -96,7 +106,9 @@ Write a function `celsius_to_fahrenheit` that converts 25°C to Fahrenheit and p
 
 ---
 
-## Problem 8: Prime Checker (Medium)
+---
+
+### **8. Prime Checker**
 
 Define a function `is_prime_number` that checks if 17 is prime and prints the result.
 
@@ -109,7 +121,9 @@ Define a function `is_prime_number` that checks if 17 is prime and prints the re
 
 ---
 
-## Problem 9: Fibonacci Sequence (Hard)
+---
+
+### **9. Fibonacci Sequence**
 
 Create a function `print_fibonacci` that prints the first 10 Fibonacci numbers.
 
@@ -122,7 +136,9 @@ Create a function `print_fibonacci` that prints the first 10 Fibonacci numbers.
 
 ---
 
-## Problem 10: Pattern Printer (Medium)
+---
+
+### **10. Pattern Printer**
 
 Write a function `print_triangle` that prints a right triangle with 5 rows.
 
@@ -139,7 +155,9 @@ Write a function `print_triangle` that prints a right triangle with 5 rows.
 
 ---
 
-## Problem 11: Even Number Counter (Medium)
+---
+
+### **11. Even Number Counter**
 
 Define a function `count_evens` that counts and prints how many even numbers are in the range 1 to 20.
 
@@ -152,7 +170,9 @@ Count of even numbers: 10
 
 ---
 
-## Problem 12: List Statistics (Hard)
+---
+
+### **12. List Statistics**
 
 Create a function `list_stats` that prints the sum, average, min, and max of the list `[10, 20, 30, 40, 50]`.
 
@@ -168,7 +188,9 @@ Max: 50
 
 ---
 
-## Problem 13: Multiplication Table (Medium)
+---
+
+### **13. Multiplication Table**
 
 Write a function `times_table` that prints the multiplication table for number 7 (from 7×1 to 7×10).
 
@@ -184,7 +206,9 @@ Write a function `times_table` that prints the multiplication table for number 7
 
 ---
 
-## Problem 14: Password Validator (Hard)
+---
+
+### **14. Password Validator**
 
 Define a function `validate_password` that checks if "Secure123" meets these criteria:
 - At least 8 characters
@@ -201,7 +225,9 @@ Password is valid
 
 ---
 
-## Problem 15: Grade Calculator (Hard)
+---
+
+### **15. Grade Calculator**
 
 Create a function `calculate_grade` that determines the letter grade for a score of 85.
 
@@ -221,7 +247,9 @@ Score 85 is grade: B
 
 ---
 
-## Problem 16: Array Reverser (Medium)
+---
+
+### **16. Array Reverser**
 
 Write a function `reverse_list` that reverses and prints the list `[1, 2, 3, 4, 5]`.
 
@@ -235,7 +263,9 @@ Reversed: [5, 4, 3, 2, 1]
 
 ---
 
-## Problem 17: Factorial Calculator (Hard)
+---
+
+### **17. Factorial Calculator**
 
 Define a function `factorial` that calculates and prints the factorial of 5.
 
@@ -248,7 +278,9 @@ Define a function `factorial` that calculates and prints the factorial of 5.
 
 ---
 
-## Problem 18: Common Elements Finder (Hard)
+---
+
+### **18. Common Elements Finder**
 
 Create a function `find_common` that finds and prints common elements between two lists:
 - List 1: `[1, 2, 3, 4, 5]`
@@ -263,7 +295,9 @@ Common elements: [4, 5]
 
 ---
 
-## Problem 19: String Reverser (Easy)
+---
+
+### **19. String Reverser**
 
 Write a function `reverse_string` that reverses and prints the string "Python".
 
@@ -277,7 +311,9 @@ Reversed: nohtyP
 
 ---
 
-## Problem 20: Leap Year Checker (Medium)
+---
+
+### **20. Leap Year Checker**
 
 Define a function `is_leap_year` that checks if 2024 is a leap year.
 
@@ -293,7 +329,9 @@ Rules:
 
 ---
 
-## Problem 21: Vowel Counter (Medium)
+---
+
+### **21. Vowel Counter**
 
 Create a function `count_vowels` that counts vowels in "Education".
 
@@ -306,7 +344,9 @@ Number of vowels: 5
 
 ---
 
-## Problem 22: List Duplicates (Hard)
+---
+
+### **22. List Duplicates**
 
 Write a function `find_duplicates` that finds and prints duplicate elements in `[1, 2, 3, 2, 4, 5, 1]`.
 
@@ -319,7 +359,9 @@ Duplicates: [1, 2]
 
 ---
 
-## Problem 23: Perfect Number (Very Hard)
+---
+
+### **23. Perfect Number**
 
 Define a function `is_perfect` that checks if 28 is a perfect number (number equals sum of its proper divisors).
 
@@ -334,7 +376,9 @@ Sum: 28
 
 ---
 
-## Problem 24: Matrix Sum (Medium)
+---
+
+### **24. Matrix Sum**
 
 Create a function `matrix_sum` that calculates the sum of all elements in:
 ```python
@@ -352,7 +396,9 @@ Matrix sum: 45
 
 ---
 
-## Problem 25: GCD Calculator (Hard)
+---
+
+### **25. GCD Calculator**
 
 Write a function `gcd` that finds the greatest common divisor of 48 and 18.
 
@@ -365,7 +411,9 @@ GCD of 48 and 18 is: 6
 
 ---
 
-## Problem 26: Palindrome Checker (Medium)
+---
+
+### **26. Palindrome Checker**
 
 Define a function `is_palindrome` that checks if "madam" is a palindrome.
 
@@ -378,7 +426,9 @@ Define a function `is_palindrome` that checks if "madam" is a palindrome.
 
 ---
 
-## Problem 27: Sum of Squares (Easy)
+---
+
+### **27. Sum of Squares**
 
 Create a function `sum_of_squares` that calculates sum of squares from 1 to 10.
 
@@ -391,7 +441,9 @@ Sum of squares from 1 to 10: 385
 
 ---
 
-## Problem 28: Binary Converter (Hard)
+---
+
+### **28. Binary Converter**
 
 Write a function `to_binary` that converts decimal 42 to binary and prints it.
 
@@ -404,7 +456,9 @@ Write a function `to_binary` that converts decimal 42 to binary and prints it.
 
 ---
 
-## Problem 29: Armstrong Number (Very Hard)
+---
+
+### **29. Armstrong Number**
 
 Define a function `is_armstrong` that checks if 153 is an Armstrong number (sum of cubes of digits equals the number).
 
@@ -418,7 +472,9 @@ Define a function `is_armstrong` that checks if 153 is an Armstrong number (sum 
 
 ---
 
-## Problem 30: Sort Three Numbers (Medium)
+---
+
+### **30. Sort Three Numbers**
 
 Create a function `sort_three` that sorts and prints three numbers: 45, 12, 67.
 
@@ -591,3 +647,6 @@ def validate_age():
 6. **Refactor Code**: Convert repetitive code to functions
 7. **Write Docstrings**: Document as you code
 8. **Follow Conventions**: Consistent naming and style
+
+---
+

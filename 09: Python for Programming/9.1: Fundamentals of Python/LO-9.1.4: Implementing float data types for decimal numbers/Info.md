@@ -1,22 +1,22 @@
-# LO-4: Implement Float Data Types
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Master floating-point (float) numbers in Python for decimal precision.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 10       |
+| In-Class Quiz  | 5        |
+| Lecture Notes  | 10       |
+| Lecture Script | 15       |
+| Pre-Read       | 5        |
+| Question Bank  | 20       |
 
-## Duration
-10-15 minutes
+---
 
-## Key Concepts
-- Float definition and syntax
-- Decimal arithmetic
-- Precision limitations
-- When to use floats
+## **Question Bank Metadata**
 
-## Success Criteria
-- Create float variables
-- Perform float arithmetic
-- Understand precision limits
-- Choose between int and float
-
-## Next Steps
-**LO-5**: Implement String Data Types
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 2                 | Low        | 9.1.4            | Knowledge      | MCQ            |
+| Q2           | 3                 | Low        | 9.1.4            | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.4            | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.4            | Application    | Coding         |
+| Q5           | 5                 | High       | 9.1.4            | Application    | Coding         |

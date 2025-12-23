@@ -1,18 +1,22 @@
-# LO-12: Apply Operator Precedence
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Understand and apply operator precedence (order of operations) in Python.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 10              |
+| In-Class Quiz  | 5               |
+| Lecture Notes  | 15              |
+| Lecture Script | 16              |
+| Pre-Read       | 5               |
+| Question Bank  | 21              |
 
-## Duration
-10-15 minutes
+---
 
-## Key Concepts
-- PEMDAS/BODMAS order
-- Operator precedence rules
-- Using parentheses
-- Common precedence mistakes
+## **Question Bank Metadata**
 
-## Success Criteria
-- Predict expression results
-- Use parentheses correctly
-- Understand evaluation order
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.1.12           | Implementation | Coding         |
+| Q2           | 3                 | Low        | 9.1.12           | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.12           | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.12           | Application    | Coding         |
+| Q5           | 5                 | Medium     | 9.1.12           | Application    | Coding         |

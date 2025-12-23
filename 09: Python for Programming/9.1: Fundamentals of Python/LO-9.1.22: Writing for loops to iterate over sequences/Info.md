@@ -1,23 +1,22 @@
-# LO-22: Write For Loops
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Students will be able to use for loops effectively in Python programs.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 10              |
+| In-Class Quiz  | 5               |
+| Lecture Notes  | 15              |
+| Lecture Script | 20              |
+| Pre-Read       | 5               |
+| Question Bank  | 21              |
 
-## Duration
-20-25 minutes
+---
 
-## Key Concepts Covered
-1. Syntax and structure
-2. Practical applications
-3. Common patterns
-4. Best practices
+## **Question Bank Metadata**
 
-## Prerequisites
-- Previous LOs on control flow
-
-## Learning Outcomes
-By the end of this lesson, students will be able to:
-- Write correct for loops
-- Apply them to solve problems
-- Debug common issues
-- Understand when to use for loops
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.1.22           | Implementation | Coding         |
+| Q2           | 3                 | Low        | 9.1.22           | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.22           | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.22           | Application    | Coding         |
+| Q5           | 5                 | Medium     | 9.1.22           | Application    | Coding         |

@@ -1,24 +1,23 @@
-# LO-38: Return Values from Functions
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Students will be able to use return statement and values effectively in Python programming.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 12              |
+| In-Class Quiz  | 5               |
+| Lecture Notes  | 20              |
+| Lecture Script | 30              |
+| Pre-Read       | 5               |
+| Question Bank  | 25              |
 
-## Duration
-20-30 minutes
+---
 
-## Key Concepts Covered
-1. Understanding return statement and values
-2. Syntax and usage
-3. Common patterns
-4. Best practices and pitfalls
+## **Question Bank Metadata**
 
-## Prerequisites
-- Basic Python syntax
-- Control flow structures
-
-## Learning Outcomes
-By the end of this lesson, students will be able to:
-- Understand return statement and values
-- Write correct code using return statement and values
-- Apply return statement and values to solve real problems
-- Debug common issues
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.1.28           | Implementation | Coding         |
+| Q2           | 3                 | Low        | 9.1.28           | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.1.28           | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.1.28           | Application    | Coding         |
+| Q5           | 5                 | High       | 9.1.28           | Application    | Coding         |
+| Q6           | 4                 | Medium     | 9.1.28           | Application    | Coding         |

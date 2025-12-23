@@ -1,23 +1,18 @@
-# LO-7: Check Variable Types
+### **1. Problem 1**
 
-`type()` function identifies variable data types in Python.
-
-```python
-age = 25
-print(type(age))  # <class 'int'>
-
-name = "Alice"
-print(type(name))  # <class 'str'>
-```
-
-## Use Cases
 - Debugging
 - Validation
 - Understanding code
 - Type checking
 
-## Key Points
+---
+
+### **2. Problem 2**
+
 - `type(variable)` returns the type
 - Returns class object
 - Helps identify type errors
 - Essential for debugging
+
+---
+
