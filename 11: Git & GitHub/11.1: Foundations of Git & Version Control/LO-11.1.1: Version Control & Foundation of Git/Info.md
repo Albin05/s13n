@@ -1,6 +1,6 @@
-## **Pre-Read & Lecture Duration Table**
+## **LO - Duration Summary Table**
 
-| Item           | Duration |
+| Component       | Duration |
 | -------------- | -------- |
 | Editorials     | 10       |
 | In-Class Quiz  | 5        |
@@ -11,7 +11,7 @@
 
 ---
 
-## **Assignment Problems Duration Table**
+## **Question Bank Metadata**
 
 | Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
 | ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
