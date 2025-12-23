@@ -1,5 +1,3 @@
-## **MCQs**
-
 ### **Q1. Which Git area contains permanent snapshots of your project?**
 
 A) Working Directory
@@ -36,8 +34,6 @@ E) Topic Not Covered
 
 ---
 
-## **Short Answer**
-
 ### **Q4. What is the purpose of the Staging Area in Git?**
 
 ---
@@ -45,8 +41,6 @@ E) Topic Not Covered
 ### **Q5. Explain the difference between `git diff` and `git diff --staged`.**
 
 ---
-
-## **Implementation-Based Questions (Implementation)**
 
 ### Q6. You modified two files: `index.html` and `style.css`. You want to commit only the changes in `index.html`.
 
