@@ -1,6 +1,3 @@
-
-# **MCQ Questions**
-
 ### **1. Which of the following is a Distributed Version Control System?**
 
 A. SVN
@@ -41,24 +38,20 @@ D. Prevent backups
 
 ---
 
-# **Short Answer Questions**
-
 ### **5. Define Version Control System (VCS).**
 
-*Short Answer*
+_Short Answer_
 
 ---
 
-### **6. Explain why manually copying project folders is not a reliable version-management method._**
+### **6. Explain why manually copying project folders is not a reliable version-management method.\_**
 
-*Short Answer*
-
----
-
-### **7. Evaluate why Git has become the industry standard. Provide two strong reasons._**
-
-*Short Answer*
+_Short Answer_
 
 ---
 
+### **7. Evaluate why Git has become the industry standard. Provide two strong reasons.\_**
 
+_Short Answer_
+
+---
