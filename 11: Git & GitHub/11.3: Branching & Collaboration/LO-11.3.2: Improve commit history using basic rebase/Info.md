@@ -1,21 +1,21 @@
-## **Pre-Read & Lecture Duration Table**
+## **LO - Duration Summary Table**
 
-| Item           | Duration |
+| Component      | Duration |
 | -------------- | -------- |
-| Pre Read       | 5 mins   |
-| Lecture Notes  | 10 mins  |
-| Lecture Script | 40 mins  |
+| Editorials     | 20       |
+| In-Class Quiz  | 5        |
+| Lecture Notes  | 10       |
+| Lecture Script | 40       |
+| Pre-Read       | 5        |
+| Question Bank  | 37       |
 
 ---
 
-## **Assignment Problems Duration Table**
+## **Question Bank Metadata**
 
-| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category                |
-| ------------ | ----------------- | ---------- | ---------------- | ----------------------- |
-| Q1           | 2 minutes         | Low        | 11.3.2         | Knowledge               |
-| Q2           | 2 minutes         | Low        | 11.3.2         | Knowledge               |
-| Q3           | 2 minutes         | Low        | 11.3.2         | Knowledge               |
-| Q4           | 4 minutes         | Medium     | 11.3.2         | Knowledge / Application |
-| Q5           | 4 minutes         | Medium     | 11.3.2         | Knowledge / Application |
-| Q6           | 12 minutes        | Medium     | 11.3.2         | Implementation          |
-| Q7           | 15 minutes        | Medium     | 11.3.2         | Implementation          |
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 4                 | Medium     | 11.3.2           | Knowledge      | Short Answer   |
+| Q2           | 3                 | Medium     | 11.3.2           | Knowledge      | Short Answer   |
+| Q3           | 12                | Medium     | 11.3.2           | Implementation | Implementation |
+| Q4           | 18                | High       | 11.3.2           | Application    | Implementation |

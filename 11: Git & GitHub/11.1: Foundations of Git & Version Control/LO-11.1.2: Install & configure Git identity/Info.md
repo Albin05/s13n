@@ -1,21 +1,23 @@
-## **Pre-Read & Lecture Duration Table**
+## **LO - Duration Summary Table**
 
-| Item           | Duration |
+| Component      | Duration |
 | -------------- | -------- |
-| Pre Read       | 5 mins   |
-| Lecture Notes  | 10 mins  |
-| Lecture Script | 37 mins  |
+| Editorials     | 10       |
+| In-Class Quiz  | 5        |
+| Lecture Notes  | 10       |
+| Lecture Script | 37       |
+| Pre-Read       | 5        |
+| Question Bank  | 24       |
 
 ---
 
-## **Assignment Problems Duration Table**
+## **Question Bank Metadata**
 
-| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       |
-| ------------ | ----------------- | ---------- | ---------------- | -------------- |
-| Q1           | 2 minutes         | Low        | 11.1.2           | MCQ            |
-| Q2           | 3 minutes         | Low        | 11.1.2           | Short Answer   |
-| Q3           | 4 minutes         | Low        | 11.1.2           | Short Answer   |
-| Q4           | 4 minutes         | Low        | 11.1.2           | Short Answer   |
-| Q5           | 5 minutes         | Medium     | 11.1.2           | Implementation |
-| Q6           | 6 minutes         | Medium     | 11.1.2           | Short Answer   |
-| Q7           | 6 minutes         | High       | 11.1.2           | Short Answer   |
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 2                 | Low        | 11.1.2           | Knowledge      | Short Answer   |
+| Q2           | 3                 | Low        | 11.1.2           | Knowledge      | Short Answer   |
+| Q3           | 4                 | Medium     | 11.1.2           | Knowledge      | Short Answer   |
+| Q4           | 5                 | Medium     | 11.1.2           | Application    | Short Answer   |
+| Q5           | 6                 | Medium     | 11.1.2           | Application    | Short Answer   |
+| Q6           | 4                 | Medium     | 11.1.2           | Implementation | Implementation |

@@ -1,56 +1,22 @@
-### **Q1. What is the primary goal of using `git rebase` instead of `git merge`?**
-
-A) To delete old commits
-B) To preserve branch structure exactly as it happened
-C) To create a cleaner, linear commit history
-D) To avoid committing changes
-
-**Correct Answer:** C
-
----
-
-### **Q2. Which statement best describes what rebase does?**
-
-A) It combines two histories by creating a merge commit
-B) It rearranges commits by replaying them on top of another branch
-C) It deletes commits from the feature branch
-D) It synchronizes local and remote repositories
-
-**Correct Answer:** B
-
----
-
-### **Q3. On which branch should rebase typically be performed?**
-
-A) `main` branch
-B) Any shared branch
-C) Feature branch owned by the developer
-D) Remote-tracking branch
-
-**Correct Answer:** C
-
----
-
-### **Q4. Why does rebase generate new commit IDs, and why does this matter?**
+### **Q1. Why does rebase generate new commit IDs, and why does this matter?**
 
 (Answer in 3–4 lines.)
 
-*Expected focus:*
+_Expected focus:_
 History rewriting, commit hash change, impact on shared branches.
 
 ---
 
-### **Q5. In what real-world scenario is rebase safer and more appropriate than merge?**
+### **Q2. In what real-world scenario is rebase safer and more appropriate than merge?**
 
 (Explain briefly.)
 
-*Expected focus:*
+_Expected focus:_
 Updating feature branch with latest main before merge.
 
 ---
 
-
-### **Q6. Rebase a Feature Branch onto Main (No Conflicts)**
+### **Q3. Rebase a Feature Branch onto Main (No Conflicts)**
 
 **Task:**
 Perform the following steps and write the Git commands used:
@@ -70,7 +36,7 @@ Perform the following steps and write the Git commands used:
 
 ---
 
-### **Q7. Handle a Rebase Conflict**
+### **Q4. Handle a Rebase Conflict**
 
 **Task:**
 Using the same repository or a new one:
@@ -90,4 +56,3 @@ Write the Git commands used at each step.
 > Submit the **terminal commands used** or a **repository link** if required by your course.
 
 ---
-
