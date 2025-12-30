@@ -1,16 +1,33 @@
-# Question Bank: Iterate Through Dictionaries
+## Question Bank: Iterating Through Dictionary Keys, Values, And Items
 
-## Problem 1 (Easy)
-Basic problem involving dict iteration methods.
+---
 
-## Problem 2 (Easy)
-Another straightforward problem.
+### Q1: Basic Usage (3 minutes, Low Difficulty)
 
-## Problem 3 (Medium)
-Intermediate challenge.
+Practice fundamental keys(), values(), items() methods.
 
-## Problem 4 (Medium)
-More complex scenario.
+**Key Concepts:** dict iteration, unpacking items, loop patterns
 
-## Problem 5 (Hard)
-Advanced problem combining multiple concepts.
+---
+
+### Q2: Multiple Operations (3 minutes, Low Difficulty)
+
+Combine multiple operations with keys(), values(), items() methods.
+
+---
+
+### Q3: Data Processing (5 minutes, Medium Difficulty)
+
+Apply keys(), values(), items() methods to process data.
+
+---
+
+### Q4: Application Problem (5 minutes, Medium Difficulty)
+
+Solve practical problem using keys(), values(), items() methods.
+
+---
+
+### Q5: Complex Scenario (5 minutes, Medium Difficulty)
+
+Advanced application demonstrating dict iteration, unpacking items, loop patterns.

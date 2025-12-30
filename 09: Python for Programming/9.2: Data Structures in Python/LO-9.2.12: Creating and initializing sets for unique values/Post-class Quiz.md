@@ -1,46 +1,16 @@
-# Post-Class Quiz: Create and Use Sets
+## Post-class Quiz: Creating and Initializing Sets
 
-## Q1: Question about sets and uniqueness
-A) Option A
-B) Option B
-C) Option C
+### Q1: What creates an empty set?
+**Answer: B) `set()`**
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+### Q2: What does `{1, 2, 2, 3}` output?
+**Answer: A) `{1, 2, 3}`**
 
-## Q2: Another question
-A) Option A
-B) Option B
-C) Option C
+### Q3: What can't be in a set?
+**Answer: C) Lists**
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+### Q4: `len(set([1, 2, 2, 3]))`?
+**Answer: B) 3**
 
-## Q3: Third question
-A) Option A
-B) Option B  
-C) Option C
-
-<details><summary>Answer</summary>
-C - Explanation
-</details>
-
-## Q4: Fourth question
-A) Option A
-B) Option B
-C) Option C
-
-<details><summary>Answer</summary>
-B - Explanation
-</details>
-
-## Q5: Fifth question
-A) Option A
-B) Option B
-C) Option C
-
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+### Q5: Sets are ordered?
+**Answer: B) False**

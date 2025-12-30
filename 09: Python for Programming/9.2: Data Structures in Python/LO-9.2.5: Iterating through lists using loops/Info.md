@@ -1,44 +1,41 @@
-# LO-2.5: Iterating Through Lists Using Loops
+## LO-9.2.5: Iterating through lists using loops
 
-## Learning Objective
-Students will be able to iterate through lists using various loop techniques (for loops, enumerate, range, zip) to process, transform, and analyze list data in Python.
+### Question Bank
 
-## Duration
-25-30 minutes
+| Question Number | Duration (minutes) | Difficulty |
+|----------------|-------------------|------------|
+| Q1             | 3                 | Low        |
+| Q2             | 3                 | Low        |
+| Q3             | 5                 | Medium     |
+| Q4             | 5                 | Medium     |
+| Q5             | 5                 | Medium     |
 
-## Key Concepts Covered
-1. Basic for loop syntax for list iteration
-2. Using enumerate() to access index and value
-3. Using range() for index-based iteration
-4. Using zip() to iterate multiple lists together
-5. Loop control with break and continue
-6. Common iteration patterns (accumulation, filtering, transformation, search)
-7. Best practices and common pitfalls
+**Total Duration:** 21 minutes
 
-## Prerequisites
-- Understanding of lists and list basics (LO-2.1)
-- Knowledge of list indexing (LO-2.2)
-- Familiarity with basic loop concepts (while and for loops)
-- Understanding of conditionals (if/elif/else)
+---
 
-## Learning Outcomes
+### Class Content
+
+| Content Type    | Duration (minutes) |
+|----------------|-------------------|
+| Lecture Script | 18                |
+| Lecture Notes  | 12                |
+| Pre Read       | 5                 |
+
+---
+
+### Prerequisites
+
+- LO-9.2.1: Creating and initializing lists in Python
+- LO-9.2.2: Accessing list elements using indexing
+- LO-9.2.3: Extracting list portions using slicing
+- LO-9.2.4: Modifying lists using built-in methods
+
+### Learning Objectives
+
 By the end of this lesson, students will be able to:
-- Write for loops to iterate through lists and process each element
-- Use enumerate() to access both index and value during iteration
-- Apply range(len(list)) pattern for index-based modifications
-- Combine multiple lists using zip() for parallel processing
-- Implement break and continue for loop control
-- Recognize and apply common iteration patterns (sum, filter, transform, search)
-- Choose the appropriate iteration method for different scenarios
-- Avoid common mistakes like modifying lists during iteration
-- Write clean, efficient, and Pythonic iteration code
-
-## Real-World Applications
-- Processing student grades to calculate class statistics
-- Analyzing sensor data from IoT devices
-- Validating and filtering user input data
-- Transforming data formats (e.g., temperature conversion)
-- Building shopping cart functionality with price calculations
-- Searching for specific items in large datasets
-- Generating reports from multi-column data
-- Processing log files and extracting information
+1. Iterate through lists using for loops
+2. Use enumerate() to get index and value
+3. Iterate with while loops and indices
+4. Loop through multiple lists simultaneously with zip()
+5. Modify lists while iterating safely

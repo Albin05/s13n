@@ -1,46 +1,30 @@
-# Post-Class Quiz: Create and Use Dictionaries
+## Post-class Quiz: Creating And Initializing Dictionaries For Key-Value Pairs
 
-## Q1: Question about dictionaries and key-value pairs
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+### Question 1
+Basic syntax and usage of dictionary creation and initialization.
 
-## Q2: Another question
-A) Option A
-B) Option B
-C) Option C
+**Correct Answer:** [Option]
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+*Explanation:* Testing understanding of key-value pairs, dict literals, dict() constructor.
 
-## Q3: Third question
-A) Option A
-B) Option B  
-C) Option C
+---
 
-<details><summary>Answer</summary>
-C - Explanation
-</details>
+### Question 2
+Output prediction question.
 
-## Q4: Fourth question
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+### Question 3
+Method behavior and edge cases.
 
-## Q5: Fifth question
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+### Question 4
+Error handling and best practices.
+
+---
+
+### Question 5
+Comparison and practical application.

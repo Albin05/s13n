@@ -1,46 +1,30 @@
-# Post-Class Quiz: Iterate Through Dictionaries
+## Post-class Quiz: Iterating Through Dictionary Keys, Values, And Items
 
-## Q1: Question about dict iteration methods
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+### Question 1
+Basic syntax and usage of keys(), values(), items() methods.
 
-## Q2: Another question
-A) Option A
-B) Option B
-C) Option C
+**Correct Answer:** [Option]
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+*Explanation:* Testing understanding of dict iteration, unpacking items, loop patterns.
 
-## Q3: Third question
-A) Option A
-B) Option B  
-C) Option C
+---
 
-<details><summary>Answer</summary>
-C - Explanation
-</details>
+### Question 2
+Output prediction question.
 
-## Q4: Fourth question
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+### Question 3
+Method behavior and edge cases.
 
-## Q5: Fifth question
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+### Question 4
+Error handling and best practices.
+
+---
+
+### Question 5
+Comparison and practical application.

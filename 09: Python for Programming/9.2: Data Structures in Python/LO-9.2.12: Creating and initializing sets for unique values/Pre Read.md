@@ -1,17 +1,19 @@
-# Pre-Read: Create and Use Sets
+## Pre-Read: Creating and Initializing Sets
 
-## What You'll Learn
-Introduction to sets and uniqueness in Python.
+Sets store unique values only. Duplicates automatically removed.
 
-## Overview
-This lesson covers the fundamentals of sets and uniqueness.
-
-## Basic Example
 ```python
-# Example demonstrating sets and uniqueness
+numbers = {1, 2, 3, 2, 1}
+print(numbers)  # {1, 2, 3}
 ```
 
-## What's Next?
-- Detailed syntax
-- Multiple examples
-- Practice problems
+**Create sets:**
+- `{1, 2, 3}` - literal
+- `set([1, 2, 3])` - from list
+- `set()` - empty (NOT `{}`)
+
+**Remove duplicates:**
+```python
+data = [1, 2, 2, 3]
+unique = set(data)  # {1, 2, 3}
+```

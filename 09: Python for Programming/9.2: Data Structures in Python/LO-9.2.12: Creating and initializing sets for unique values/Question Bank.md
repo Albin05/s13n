@@ -1,16 +1,16 @@
-# Question Bank: Create and Use Sets
+## Question Bank: Creating and Initializing Sets for Unique Values
 
-## Problem 1 (Easy)
-Basic problem involving sets and uniqueness.
+### Q1: Basic Set Creation (3 minutes, Low)
+Create sets using different methods and print results.
 
-## Problem 2 (Easy)
-Another straightforward problem.
+### Q2: Remove Duplicates (3 minutes, Low)
+Remove duplicates from list: `[1, 2, 2, 3, 4, 4, 5]`
 
-## Problem 3 (Medium)
-Intermediate challenge.
+### Q3: Unique Word Counter (5 minutes, Medium)
+Count unique words in text, ignoring case.
 
-## Problem 4 (Medium)
-More complex scenario.
+### Q4: Visitor Tracking (5 minutes, Medium)
+Track unique visitors from multiple data sources.
 
-## Problem 5 (Hard)
-Advanced problem combining multiple concepts.
+### Q5: Email Validator (5 minutes, Medium)
+Find duplicate emails and unique subscribers.

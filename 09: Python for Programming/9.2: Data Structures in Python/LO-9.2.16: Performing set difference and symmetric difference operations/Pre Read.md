@@ -1,3 +1,35 @@
-# Perform set difference and symmetric difference operations
+## Pre-Read: Performing Set Difference And Symmetric Difference Operations
 
-*This is a template for Pre Read*
+**Duration:** 5 minutes
+
+---
+
+### Overview
+
+Introduction to difference (-) and symmetric_difference (^).
+
+---
+
+### Basic Concept
+
+set difference, symmetric difference, exclusive elements
+
+---
+
+### Simple Example
+
+Quick code demonstration.
+
+---
+
+### Why It Matters
+
+Importance and practical applications.
+
+---
+
+### Key Takeaways
+
+- Understand difference (-) and symmetric_difference (^)
+- Apply set difference, symmetric difference, exclusive elements
+- Use in practical scenarios

@@ -1,46 +1,64 @@
-# Post-Class Quiz: Access List Elements with Indexing
+## Post-class Quiz: Accessing List Elements Using Indexing
 
-## Q1: Question about list indexing and access
-A) Option A
-B) Option B
-C) Option C
+### Question 1
+Given `items = ['a', 'b', 'c', 'd', 'e']`, what is `items[-2]`?
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+A) 'c'
+B) 'd'
+C) 'e'
+D) Error
 
-## Q2: Another question
-A) Option A
-B) Option B
-C) Option C
+**Correct Answer: B**
+*Explanation: items[-2] accesses the second element from the end, which is 'd'. Negative indices count backward from the end*
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+---
 
-## Q3: Third question
-A) Option A
-B) Option B  
-C) Option C
+### Question 2
+What happens when you try `lst[10]` on a list with only 5 elements?
 
-<details><summary>Answer</summary>
-C - Explanation
-</details>
+A) Returns None
+B) Returns the last element
+C) Raises IndexError
+D) Returns 0
 
-## Q4: Fourth question
-A) Option A
-B) Option B
-C) Option C
+**Correct Answer: C**
+*Explanation: Accessing an index beyond the list bounds raises an IndexError. Valid indices for 5 elements are 0-4 or -5 to -1*
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+---
 
-## Q5: Fifth question
-A) Option A
-B) Option B
-C) Option C
+### Question 3
+Given `matrix = [[1,2], [3,4]]`, what is `matrix[0][1]`?
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+A) 1
+B) 2
+C) 3
+D) [1, 2]
+
+**Correct Answer: B**
+*Explanation: matrix[0] gets [1,2], then [1] gets the second element, which is 2*
+
+---
+
+### Question 4
+How do you access the last element of a list without knowing its length?
+
+A) `lst[len(lst)]`
+B) `lst[-0]`
+C) `lst[-1]`
+D) `lst[last]`
+
+**Correct Answer: C**
+*Explanation: lst[-1] always accesses the last element regardless of list length. lst[len(lst)] would cause an error (out of bounds)*
+
+---
+
+### Question 5
+What does `lst.index(value)` return?
+
+A) The value at that index
+B) The first index where value is found
+C) All indices where value appears
+D) True if value exists
+
+**Correct Answer: B**
+*Explanation: .index(value) returns the first index position where the value is found. Raises ValueError if not found*

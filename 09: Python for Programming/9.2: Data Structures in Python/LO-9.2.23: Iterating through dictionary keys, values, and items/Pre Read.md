@@ -1,17 +1,35 @@
-# Pre-Read: Iterate Through Dictionaries
+## Pre-Read: Iterating Through Dictionary Keys, Values, And Items
 
-## What You'll Learn
-Introduction to dict iteration methods in Python.
+**Duration:** 5 minutes
 
-## Overview
-This lesson covers the fundamentals of dict iteration methods.
+---
 
-## Basic Example
-```python
-# Example demonstrating dict iteration methods
-```
+### Overview
 
-## What's Next?
-- Detailed syntax
-- Multiple examples
-- Practice problems
+Introduction to keys(), values(), items() methods.
+
+---
+
+### Basic Concept
+
+dict iteration, unpacking items, loop patterns
+
+---
+
+### Simple Example
+
+Quick code demonstration.
+
+---
+
+### Why It Matters
+
+Importance and practical applications.
+
+---
+
+### Key Takeaways
+
+- Understand keys(), values(), items() methods
+- Apply dict iteration, unpacking items, loop patterns
+- Use in practical scenarios

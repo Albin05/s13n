@@ -1,292 +1,223 @@
-# Question Bank: Iterating Through Lists Using Loops
+## Question Bank: Iterating Through Lists Using Loops
 
-## Problem 1: Calculate Average (Easy)
-Write a program that calculates the average of numbers in a list.
+### Q1: Basic List Iteration (3 minutes, Low Difficulty)
 
-**Input:**
-```python
-scores = [85, 92, 78, 95, 88]
-```
+**Problem:**
+Given `numbers = [5, 10, 15, 20, 25, 30, 35, 40]`:
+
+1. Print all numbers
+2. Print only numbers greater than 20
+3. Calculate and print the sum of all numbers
+4. Count how many numbers are divisible by 10
+5. Find and print the maximum number
 
 **Expected Output:**
 ```
-Average score: 87.60
+All numbers: 5 10 15 20 25 30 35 40
+Numbers > 20: 25 30 35 40
+Sum: 180
+Count divisible by 10: 4
+Maximum: 40
 ```
 
-**Hint:** Sum all scores and divide by the count.
+**Category:** Implementation
+**Prerequisite LOs:** 9.2.1, 9.2.2, 9.2.3, 9.2.4
 
 ---
 
-## Problem 2: Count Vowels in Names (Easy)
-Given a list of names, count how many names start with a vowel (A, E, I, O, U).
+### Q2: Using enumerate() (3 minutes, Low Difficulty)
 
-**Input:**
-```python
-names = ["Alice", "Bob", "Emily", "David", "Oliver", "Sarah"]
-```
+**Problem:**
+Given `fruits = ['apple', 'banana', 'orange', 'mango', 'grape']`:
+
+1. Print each fruit with its index (0-based)
+2. Print each fruit with position number (1-based)
+3. Find and print indices of all fruits with more than 5 letters
+4. Print fruits at even indices only
+5. Create a dictionary mapping index to fruit name
 
 **Expected Output:**
 ```
-Names starting with vowels: 3
+With index:
+0: apple
+1: banana
+2: orange
+3: mango
+4: grape
+
+With position:
+1. apple
+2. banana
+3. orange
+4. mango
+5. grape
+
+Long fruits (>5 letters):
+Index 1: banana (6 letters)
+Index 2: orange (6 letters)
+
+Fruits at even indices:
+0: apple
+2: orange
+4: grape
+
+Dictionary: {0: 'apple', 1: 'banana', 2: 'orange', 3: 'mango', 4: 'grape'}
 ```
 
-**Hint:** Use `.startswith()` or check the first character.
+**Category:** Implementation
+**Prerequisite LOs:** 9.2.1, 9.2.2, 9.2.3, 9.2.4
 
 ---
 
-## Problem 3: Find Maximum and Its Position (Easy)
-Find both the maximum value in a list and its index position.
+### Q3: Parallel List Processing with zip() (5 minutes, Medium Difficulty)
 
-**Input:**
+**Problem:**
+You have three parallel lists:
 ```python
-numbers = [45, 23, 67, 89, 12, 56]
+products = ['Laptop', 'Mouse', 'Keyboard', 'Monitor', 'USB Cable']
+prices = [999.99, 29.99, 79.99, 299.99, 9.99]
+quantities = [5, 50, 30, 10, 100]
 ```
+
+Using zip(), create a program that:
+1. Prints each product with its price and quantity
+2. Calculates total value for each product (price × quantity)
+3. Finds the product with highest total value
+4. Calculates total inventory value (sum of all product values)
+5. Creates a list of tuples: (product, price, quantity, total_value)
 
 **Expected Output:**
 ```
-Maximum value: 89
-Position: 3
+Inventory:
+Laptop: $999.99 × 5 = $4999.95
+Mouse: $29.99 × 50 = $1499.50
+Keyboard: $79.99 × 30 = $2399.70
+Monitor: $299.99 × 10 = $2999.90
+USB Cable: $9.99 × 100 = $999.00
+
+Highest value product: Laptop ($4999.95)
+Total inventory value: $12898.05
+
+Product details:
+[('Laptop', 999.99, 5, 4999.95),
+ ('Mouse', 29.99, 50, 1499.50),
+ ('Keyboard', 79.99, 30, 2399.70),
+ ('Monitor', 299.99, 10, 2999.90),
+ ('USB Cable', 9.99, 100, 999.00)]
 ```
 
-**Hint:** Use enumerate() to track both index and value.
+**Category:** Application
+**Prerequisite LOs:** 9.2.1, 9.2.2, 9.2.3, 9.2.4
 
 ---
 
-## Problem 4: Temperature Converter (Medium)
-Convert a list of temperatures from Celsius to Fahrenheit. Formula: F = (C × 9/5) + 32
+### Q4: Temperature Analysis (5 minutes, Medium Difficulty)
 
-**Input:**
+**Problem:**
+You have daily high temperatures for a week:
 ```python
-celsius = [0, 10, 20, 30, 40]
+days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+temps = [72, 68, 75, 80, 78, 82, 79]
 ```
+
+Write a program that:
+1. Prints each day with its temperature
+2. Finds the hottest and coldest days
+3. Calculates the average temperature
+4. Counts how many days were above average
+5. Creates a "comfort rating" for each day:
+   - "Cold" if temp < 70
+   - "Comfortable" if 70 ≤ temp ≤ 78
+   - "Hot" if temp > 78
+
+Print a formatted report.
 
 **Expected Output:**
 ```
-0°C = 32.0°F
-10°C = 50.0°F
-20°C = 68.0°F
-30°C = 86.0°F
-40°C = 104.0°F
+Weekly Temperatures:
+Monday: 72°F
+Tuesday: 68°F
+Wednesday: 75°F
+Thursday: 80°F
+Friday: 78°F
+Saturday: 82°F
+Sunday: 79°F
+
+Analysis:
+Hottest: Saturday (82°F)
+Coldest: Tuesday (68°F)
+Average: 76.3°F
+Days above average: 4
+
+Comfort Ratings:
+Monday: 72°F - Comfortable
+Tuesday: 68°F - Cold
+Wednesday: 75°F - Comfortable
+Thursday: 80°F - Hot
+Friday: 78°F - Comfortable
+Saturday: 82°F - Hot
+Sunday: 79°F - Hot
 ```
 
-**Hint:** Create a new list for Fahrenheit values, then use zip() to print pairs.
+**Category:** Application
+**Prerequisite LOs:** 9.2.1, 9.2.2, 9.2.3, 9.2.4
 
 ---
 
-## Problem 5: Filter by Length (Medium)
-Create a new list containing only words that are longer than a given length.
+### Q5: Grade Book Manager (5 minutes, Medium Difficulty)
 
-**Input:**
+**Problem:**
+You have a grade book with students and their scores in three subjects:
 ```python
-words = ["apple", "pie", "banana", "cat", "strawberry", "dog"]
-min_length = 5
+students = ['Alice', 'Bob', 'Charlie', 'Diana', 'Eve']
+math_scores = [85, 92, 78, 88, 95]
+science_scores = [90, 88, 82, 91, 89]
+english_scores = [88, 85, 90, 87, 92]
 ```
+
+Create a program that:
+1. Calculates each student's average score
+2. Determines letter grade (A: ≥90, B: ≥80, C: ≥70, D: ≥60, F: <60)
+3. Finds the student with highest overall average
+4. Finds which subject has the highest class average
+5. Creates a report card for each student
+
+Print a comprehensive report.
 
 **Expected Output:**
 ```
-Long words: ['apple', 'banana', 'strawberry']
+Student Averages:
+Alice: 87.7 (B)
+Bob: 88.3 (B)
+Charlie: 83.3 (B)
+Diana: 88.7 (B)
+Eve: 92.0 (A)
+
+Top student: Eve (92.0)
+
+Subject Averages:
+Math: 87.6
+Science: 88.0
+English: 88.4
+Highest class average: English (88.4)
+
+Report Cards:
+===== Alice =====
+Math: 85
+Science: 90
+English: 88
+Average: 87.7
+Grade: B
+
+===== Bob =====
+Math: 92
+Science: 88
+English: 85
+Average: 88.3
+Grade: B
+
+[... and so on for each student]
 ```
 
-**Hint:** Use a conditional inside the loop to filter.
-
----
-
-## Problem 6: Parallel List Processing (Medium)
-Given three lists (product names, prices, and quantities), calculate the total cost for each product and the grand total.
-
-**Input:**
-```python
-products = ["Laptop", "Mouse", "Keyboard"]
-prices = [999.99, 25.50, 79.99]
-quantities = [1, 2, 1]
-```
-
-**Expected Output:**
-```
-Laptop: $999.99 x 1 = $999.99
-Mouse: $25.50 x 2 = $51.00
-Keyboard: $79.99 x 1 = $79.99
-Grand Total: $1130.98
-```
-
-**Hint:** Use zip() to iterate through all three lists together.
-
----
-
-## Problem 7: Find All Occurrences (Medium)
-Find all index positions where a specific value appears in a list.
-
-**Input:**
-```python
-numbers = [5, 2, 8, 2, 9, 2, 1, 2]
-target = 2
-```
-
-**Expected Output:**
-```
-Value 2 found at positions: [1, 3, 5, 7]
-```
-
-**Hint:** Use enumerate() and append indices when the value matches.
-
----
-
-## Problem 8: Running Total (Medium)
-Create a list where each element is the running sum up to that point.
-
-**Input:**
-```python
-numbers = [1, 2, 3, 4, 5]
-```
-
-**Expected Output:**
-```
-Running totals: [1, 3, 6, 10, 15]
-```
-
-**Explanation:** [1, 1+2, 1+2+3, 1+2+3+4, 1+2+3+4+5]
-
-**Hint:** Keep a running total and append it to a new list at each step.
-
----
-
-## Problem 9: Pair Adjacent Elements (Hard)
-Create a list of tuples where each tuple contains adjacent elements.
-
-**Input:**
-```python
-numbers = [1, 2, 3, 4, 5]
-```
-
-**Expected Output:**
-```
-Pairs: [(1, 2), (2, 3), (3, 4), (4, 5)]
-```
-
-**Hint:** Use range(len(list)-1) and access list[i] and list[i+1].
-
----
-
-## Problem 10: Student Grade Statistics (Hard)
-Given a list of student records (name and scores), calculate each student's average and identify the top performer.
-
-**Input:**
-```python
-students = [
-    ["Alice", 85, 90, 88],
-    ["Bob", 92, 88, 95],
-    ["Charlie", 78, 85, 80],
-    ["David", 95, 98, 97]
-]
-```
-
-**Expected Output:**
-```
-Alice: Average = 87.67
-Bob: Average = 91.67
-Charlie: Average = 81.00
-David: Average = 96.67
-
-Top performer: David with 96.67
-```
-
-**Hint:** Use nested data access: first element is name, rest are scores.
-
----
-
-## Problem 11: Remove Duplicates (Hard)
-Create a new list with duplicates removed, preserving the original order.
-
-**Input:**
-```python
-numbers = [1, 2, 3, 2, 4, 1, 5, 3, 6]
-```
-
-**Expected Output:**
-```
-Unique numbers: [1, 2, 3, 4, 5, 6]
-```
-
-**Hint:** Create an empty list and only append items not already in it.
-
----
-
-## Problem 12: Merge and Sort Parallel Lists (Hard)
-Given separate lists for names and ages, create a combined list sorted by age.
-
-**Input:**
-```python
-names = ["Alice", "Bob", "Charlie", "David"]
-ages = [25, 30, 22, 28]
-```
-
-**Expected Output:**
-```
-Sorted by age:
-Charlie (22)
-Alice (25)
-David (28)
-Bob (30)
-```
-
-**Hint:** Combine using zip(), convert to list, sort by age, then iterate to display.
-
----
-
-## Problem 13: Matrix Row Sums (Hard)
-Calculate the sum of each row in a 2D list (matrix).
-
-**Input:**
-```python
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-```
-
-**Expected Output:**
-```
-Row 0 sum: 6
-Row 1 sum: 15
-Row 2 sum: 24
-```
-
-**Hint:** Outer loop for rows, inner loop to sum elements in each row.
-
----
-
-## Problem 14: Word Frequency Counter (Hard)
-Count how many times each word appears in a list.
-
-**Input:**
-```python
-words = ["apple", "banana", "apple", "cherry", "banana", "apple"]
-```
-
-**Expected Output:**
-```
-apple: 3
-banana: 2
-cherry: 1
-```
-
-**Hint:** Use nested loops or a dictionary (if learned). For each unique word, count occurrences.
-
----
-
-## Problem 15: Longest Increasing Sequence (Very Hard)
-Find the length of the longest consecutive increasing sequence in a list.
-
-**Input:**
-```python
-numbers = [1, 3, 2, 4, 5, 6, 3, 7, 8]
-```
-
-**Expected Output:**
-```
-Longest increasing sequence length: 4
-Sequence: [2, 4, 5, 6]
-```
-
-**Hint:** Track current sequence length and maximum length as you iterate. Reset when a number doesn't increase.
+**Category:** Application
+**Prerequisite LOs:** 9.2.1, 9.2.2, 9.2.3, 9.2.4

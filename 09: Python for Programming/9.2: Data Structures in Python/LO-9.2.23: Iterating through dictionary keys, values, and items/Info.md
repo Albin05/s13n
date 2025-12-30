@@ -1,23 +1,22 @@
-# LO-35: Iterate Through Dictionaries
+## **LO - Duration Summary Table**
 
-## Learning Objective
-Students will be able to work with dict iteration methods effectively in Python.
+| Component      | Duration (mins) |
+| -------------- | --------------- |
+| Editorials     | 10              |
+| In-Class Quiz  | 5               |
+| Lecture Notes  | 12              |
+| Lecture Script | 18              |
+| Pre-Read       | 5               |
+| Question Bank  | 21              |
 
-## Duration
-20-25 minutes
+---
 
-## Key Concepts Covered
-1. Syntax and usage
-2. Common patterns
-3. Best practices
-4. Real-world applications
+## **Question Bank Metadata**
 
-## Prerequisites
-- Basic Python syntax
-- Variables and data types
-
-## Learning Outcomes
-By the end of this lesson, students will be able to:
-- Understand dict iteration methods
-- Apply them to solve problems
-- Write clean, efficient code
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category       | Type           |
+| ------------ | ----------------- | ---------- | ---------------- | -------------- | -------------- |
+| Q1           | 3                 | Low        | 9.2.18, 9.2.22     | Implementation | Coding         |
+| Q2           | 3                 | Low        | 9.2.18, 9.2.22     | Implementation | Coding         |
+| Q3           | 5                 | Medium     | 9.2.18, 9.2.22     | Implementation | Coding         |
+| Q4           | 5                 | Medium     | 9.2.18, 9.2.22     | Application    | Coding         |
+| Q5           | 5                 | Medium     | 9.2.18, 9.2.22     | Application    | Coding         |

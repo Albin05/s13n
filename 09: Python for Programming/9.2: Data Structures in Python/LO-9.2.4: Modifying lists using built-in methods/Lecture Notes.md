@@ -1,68 +1,217 @@
-# Lecture Notes: Modify Lists with Methods
+## Modifying Lists Using Built-in Methods
 
-## Modify Lists with Methods
+### Adding Elements
 
-This lesson covers list methods (append, remove, etc.).
+```python
+# append() - Add single element
+fruits = ['apple']
+fruits.append('banana')  # ['apple', 'banana']
 
+# extend() - Add multiple elements
+fruits.extend(['orange', 'mango'])
+# ['apple', 'banana', 'orange', 'mango']
+
+# insert() - Add at specific position
+fruits.insert(1, 'grape')
+# ['apple', 'grape', 'banana', 'orange', 'mango']
+```
+
+**Key Differences:**
+```python
+lst = [1, 2]
+lst.append([3, 4])   # [1, 2, [3, 4]] - nested
+lst.extend([3, 4])   # [1, 2, 3, 4] - flat
+```
 
 ---
 
-<div align="center">
+### Removing Elements
 
-![Flowchart showing decision making](https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=80)
+```python
+numbers = [1, 2, 3, 2, 4]
 
-*Control flow determines the execution path of your program*
+# remove() - Remove by value (first occurrence)
+numbers.remove(2)  # [1, 3, 2, 4]
 
-</div>
+# pop() - Remove and return by index
+last = numbers.pop()     # Returns 4, list is [1, 3, 2]
+second = numbers.pop(1)  # Returns 3, list is [1, 2]
+
+# clear() - Remove all
+numbers.clear()  # []
+```
+
+**Error Handling:**
+```python
+# remove raises ValueError if not found
+if value in lst:
+    lst.remove(value)
+
+# pop raises IndexError if index invalid
+if 0 <= index < len(lst):
+    lst.pop(index)
+```
 
 ---
-### Key Concepts
 
-1. **Definition**: Understanding list methods (append, remove, etc.)
-2. **Syntax**: How to use it correctly
-3. **Examples**: Practical demonstrations
-4. **Applications**: Real-world use cases
-
-## Basic Syntax
+### Sorting and Reversing
 
 ```python
-# Syntax examples for list methods (append, remove, etc.)
+numbers = [3, 1, 4, 1, 5, 9, 2, 6]
+
+# sort() - Sort in-place
+numbers.sort()              # [1, 1, 2, 3, 4, 5, 6, 9]
+numbers.sort(reverse=True)  # [9, 6, 5, 4, 3, 2, 1, 1]
+
+# reverse() - Reverse in-place
+numbers.reverse()  # [1, 1, 2, 3, 4, 5, 6, 9]
 ```
 
-## Examples
+**Custom Sorting:**
+```python
+# By length
+words = ['apple', 'pie', 'banana']
+words.sort(key=len)  # ['pie', 'apple', 'banana']
 
-### Example 1: Basic Usage
+# Case-insensitive
+words.sort(key=str.lower)
+
+# By second element
+pairs = [('a', 2), ('b', 1)]
+pairs.sort(key=lambda x: x[1])  # [('b', 1), ('a', 2)]
+```
+
+---
+
+### Searching and Counting
 
 ```python
-# Demonstrate list methods (append, remove, etc.)
+items = ['a', 'b', 'c', 'b', 'd']
+
+# index() - Find position
+pos = items.index('b')  # 1 (first occurrence)
+pos = items.index('b', 2)  # 3 (start search at index 2)
+
+# count() - Count occurrences
+count = items.count('b')  # 2
 ```
 
-### Example 2: Practical Application
+**Safe Finding:**
+```python
+# Avoid ValueError
+if 'x' in items:
+    pos = items.index('x')
+else:
+    pos = -1
+
+# Or use try-except
+try:
+    pos = items.index('x')
+except ValueError:
+    pos = -1
+```
+
+---
+
+### Copying Lists
 
 ```python
-# Real-world example
+original = [1, 2, 3]
+
+# Create independent copy
+copy = original.copy()
+copy.append(4)
+# original: [1, 2, 3]
+# copy: [1, 2, 3, 4]
+
+# Alternative methods
+copy1 = original[:]
+copy2 = list(original)
 ```
 
-## Common Patterns
+**Shallow vs Deep:**
+```python
+# Shallow - nested objects shared
+original = [[1, 2], [3, 4]]
+shallow = original.copy()
+shallow[0][0] = 999
+# original: [[999, 2], [3, 4]] - affected!
 
-Standard ways to use list methods (append, remove, etc.) effectively.
+# Deep - fully independent
+import copy
+deep = copy.deepcopy(original)
+deep[0][0] = 999
+# original: [[1, 2], [3, 4]] - unchanged
+```
 
-## Best Practices
+---
 
-1. Write clear code
-2. Handle edge cases
-3. Use appropriate methods
-4. Follow Python conventions
+### Return Values
 
-## Common Mistakes
+**Important: Most methods return None**
 
-1. **Mistake 1**: Common error
-2. **Mistake 2**: Another pitfall
+```python
+# These modify in-place, return None
+numbers = [3, 1, 2]
+result = numbers.sort()
+# result is None
+# numbers is [1, 2, 3]
 
-## Key Takeaways
+# DON'T DO THIS
+numbers = numbers.sort()  # numbers becomes None!
 
-1. Main concept 1
-2. Main concept 2
-3. Main concept 3
-4. Best practices
-5. When to use
+# pop() is exception - returns removed value
+numbers = [1, 2, 3]
+last = numbers.pop()  # last is 3, numbers is [1, 2]
+```
+
+**Built-in Functions Return New Lists:**
+```python
+# sorted() - returns new sorted list
+original = [3, 1, 2]
+sorted_list = sorted(original)
+# original: [3, 1, 2] - unchanged
+# sorted_list: [1, 2, 3]
+
+# reversed() - returns iterator
+original = [1, 2, 3]
+rev_iter = reversed(original)
+rev_list = list(rev_iter)  # [3, 2, 1]
+```
+
+---
+
+### Quick Reference
+
+```python
+lst = [1, 2, 3]
+
+# Add
+lst.append(4)        # Add to end
+lst.extend([5, 6])   # Add multiple
+lst.insert(0, 0)     # Insert at position
+
+# Remove
+lst.remove(2)        # Remove by value
+val = lst.pop()      # Remove and return last
+val = lst.pop(0)     # Remove and return at index
+lst.clear()          # Remove all
+
+# Organize
+lst.sort()           # Sort ascending
+lst.sort(reverse=True)  # Sort descending
+lst.reverse()        # Reverse order
+
+# Search
+idx = lst.index(3)   # Find position
+cnt = lst.count(2)   # Count occurrences
+
+# Copy
+cp = lst.copy()      # Shallow copy
+```
+
+**Remember:**
+- Methods modify in-place
+- Most return None (except pop)
+- Check existence before remove/index
+- Use copy() to preserve original

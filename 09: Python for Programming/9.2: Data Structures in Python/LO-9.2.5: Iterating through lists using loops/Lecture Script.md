@@ -1,326 +1,523 @@
-# Lecture Script: LO-2.5 Iterating Through Lists Using Loops
+## Lecture Script: Iterating Through Lists Using Loops
 
-## [0:00-0:03] Hook (3 min)
-
-"Imagine you're a teacher with 100 students, and you need to calculate the class average. Would you manually add each score one by one? Of course not! You'd use a loop to process all the scores automatically."
-
-**Live Demo - The Problem:**
-```python
-# Without loops - tedious and doesn't scale!
-score1 = 85
-score2 = 92
-score3 = 78
-total = score1 + score2 + score3
-# Now imagine doing this for 100 students...
-```
-
-**With loops - elegant solution:**
-```python
-scores = [85, 92, 78, 95, 88, 76, 90, 84]
-total = 0
-for score in scores:
-    total += score
-average = total / len(scores)
-print(f"Class average: {average:.2f}")
-```
-
-"Today, we're learning list iteration - one of the most essential skills in programming. You'll use this every single day as a developer."
+**Duration:** 18 minutes
 
 ---
 
-## [0:03-0:12] Main Concept 1: Basic for Loop (9 min)
+### Hook (2 minutes)
 
-### The for Loop Syntax (2 min)
+"You have a list of 100 student names and need to print each one with a greeting. Or maybe you have a list of prices and need to calculate which ones are above $50. Or perhaps you need to process temperature readings from the last 30 days. What do all these tasks have in common? Iteration - the ability to process each element in a list.
 
-"The for loop is Python's primary way to process lists. Here's the syntax:"
+Iteration is how you bring lists to life. A list sitting there is just data. But when you loop through it, applying logic to each element, you turn static data into dynamic processing. You can filter, transform, analyze, or take action on every item.
+
+Today, we'll master list iteration in Python. You'll learn multiple ways to loop through lists - from basic for loops to advanced techniques with enumerate() and zip(). By the end, you'll be processing lists efficiently and elegantly, whether you're handling 10 items or 10,000."
+
+---
+
+### Section 1: Basic For Loop Iteration (3 minutes)
+
+**Iterating Directly Over Elements:**
 
 ```python
-for item in list_name:
-    # Do something with item
-```
+# Simple iteration
+fruits = ['apple', 'banana', 'orange', 'mango']
 
-**Live Coding:**
-```python
-fruits = ["apple", "banana", "cherry", "date"]
-
-for fruit in fruits:
-    print(f"I like {fruit}")
-# Output:
-# I like apple
-# I like banana
-# I like cherry
-# I like date
-```
-
-"Notice: Python automatically goes through each item, one by one. The variable `fruit` takes on each value in the list."
-
-### How It Works (2 min)
-
-**Draw on board/screen:**
-```
-fruits = ["apple", "banana", "cherry", "date"]
-         ↑
 for fruit in fruits:
     print(fruit)
+# apple
+# banana
+# orange
+# mango
 
-Step 1: fruit = "apple"  → print "apple"
-Step 2: fruit = "banana" → print "banana"
-Step 3: fruit = "cherry" → print "cherry"
-Step 4: fruit = "date"   → print "date"
-Step 5: No more items → loop ends
+# Processing each element
+prices = [10.99, 25.50, 5.75, 100.00]
+
+for price in prices:
+    print(f"${price:.2f}")
+# $10.99
+# $25.50
+# $5.75
+# $100.00
+
+# Conditional processing
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for num in numbers:
+    if num % 2 == 0:
+        print(f"{num} is even")
+# 2 is even
+# 4 is even
+# 6 is even
+# 8 is even
+# 10 is even
 ```
 
-### Practical Example: Calculate Sum (3 min)
+**Accumulating Results:**
 
 ```python
+# Sum all elements
 numbers = [10, 20, 30, 40, 50]
-
-# Pattern: Start with accumulator at 0
 total = 0
 
 for num in numbers:
-    total += num  # Add each number to total
-    print(f"Current total: {total}")
+    total += num
 
-print(f"Final sum: {total}")
+print(total)  # 150
+
+# Build new list
+numbers = [1, 2, 3, 4, 5]
+squares = []
+
+for num in numbers:
+    squares.append(num ** 2)
+
+print(squares)  # [1, 4, 9, 16, 25]
+
+# Count matching elements
+grades = [85, 92, 78, 90, 88, 76, 95, 82]
+passing = 0
+
+for grade in grades:
+    if grade >= 80:
+        passing += 1
+
+print(f"Passing students: {passing}")  # 6
 ```
 
-**Key point:** "Always initialize your accumulator BEFORE the loop!"
+**Finding Elements:**
 
-### Practice Together (2 min)
-
-"Let's find the maximum score:"
 ```python
-scores = [78, 92, 85, 95, 88]
-highest = scores[0]  # Start with first score
+# Find first match
+numbers = [12, 45, 23, 78, 34, 89, 56]
+target = 78
+found = False
 
-for score in scores:
-    if score > highest:
-        highest = score
+for num in numbers:
+    if num == target:
+        found = True
+        break
 
-print(f"Highest score: {highest}")  # 95
+print(f"Found: {found}")  # True
+
+# Find maximum
+numbers = [12, 45, 23, 78, 34, 89, 56]
+maximum = numbers[0]
+
+for num in numbers:
+    if num > maximum:
+        maximum = num
+
+print(f"Maximum: {maximum}")  # 89
 ```
 
 ---
 
-## [0:12-0:20] Main Concept 2: enumerate(), range(), and zip() (8 min)
+### Section 2: Using enumerate() (3 minutes)
 
-### Using enumerate() (3 min)
-
-"Sometimes you need both the index AND the value. That's where enumerate() comes in:"
+**Getting Index and Value:**
 
 ```python
-tasks = ["Buy groceries", "Finish homework", "Call dentist"]
+# Basic enumerate
+fruits = ['apple', 'banana', 'orange']
 
-# With enumerate - get index and value
-for i, task in enumerate(tasks):
-    print(f"{i}: {task}")
-# Output:
-# 0: Buy groceries
-# 1: Finish homework
-# 2: Call dentist
+for index, fruit in enumerate(fruits):
+    print(f"{index}: {fruit}")
+# 0: apple
+# 1: banana
+# 2: orange
+
+# Start counting from 1
+fruits = ['apple', 'banana', 'orange']
+
+for num, fruit in enumerate(fruits, start=1):
+    print(f"{num}. {fruit}")
+# 1. apple
+# 2. banana
+# 3. orange
 ```
 
-"Want to start counting from 1 instead of 0?"
+**Practical Applications:**
+
 ```python
-for i, task in enumerate(tasks, start=1):
-    print(f"{i}. {task}")
-# Output:
-# 1. Buy groceries
-# 2. Finish homework
-# 3. Call dentist
+# Modify specific indices
+grades = [78, 85, 92, 88, 76]
+
+for i, grade in enumerate(grades):
+    if grade < 80:
+        grades[i] = 80  # Curve to minimum 80
+        print(f"Curved grade at position {i}: {grade} → {grades[i]}")
+
+print(grades)  # [80, 85, 92, 88, 80]
+
+# Find positions of matching elements
+items = ['apple', 'banana', 'apple', 'orange', 'apple']
+apple_positions = []
+
+for index, item in enumerate(items):
+    if item == 'apple':
+        apple_positions.append(index)
+
+print(apple_positions)  # [0, 2, 4]
+
+# Create index-value mapping
+words = ['hello', 'world', 'python']
+word_map = {}
+
+for i, word in enumerate(words):
+    word_map[i] = word
+
+print(word_map)  # {0: 'hello', 1: 'world', 2: 'python'}
 ```
 
-### Using range() for Indices (2 min)
-
-"When you need to modify list items, use range():"
+**Parallel Processing:**
 
 ```python
-prices = [10.00, 20.00, 15.00, 30.00]
-print("Original:", prices)
+# Process with both index and value
+students = ['Alice', 'Bob', 'Charlie', 'Diana']
+scores = [85, 92, 78, 88]
 
-# Apply 10% discount
+for i, student in enumerate(students):
+    print(f"{i+1}. {student}: {scores[i]}")
+# 1. Alice: 85
+# 2. Bob: 92
+# 3. Charlie: 78
+# 4. Diana: 88
+```
+
+---
+
+### Section 3: While Loop Iteration (2 minutes)
+
+**Index-Based Iteration:**
+
+```python
+# Basic while loop
+fruits = ['apple', 'banana', 'orange', 'mango']
+i = 0
+
+while i < len(fruits):
+    print(fruits[i])
+    i += 1
+# apple
+# banana
+# orange
+# mango
+
+# Skip elements
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+i = 0
+
+while i < len(numbers):
+    print(numbers[i])
+    i += 2  # Skip every other element
+# 1
+# 3
+# 5
+# 7
+```
+
+**Conditional Termination:**
+
+```python
+# Stop when condition met
+numbers = [10, 20, 30, 40, 50, 60, 70]
+i = 0
+
+while i < len(numbers) and numbers[i] < 50:
+    print(numbers[i])
+    i += 1
+# 10
+# 20
+# 30
+# 40
+
+# Search with early exit
+items = ['apple', 'banana', 'orange', 'mango']
+target = 'orange'
+i = 0
+
+while i < len(items):
+    if items[i] == target:
+        print(f"Found {target} at index {i}")
+        break
+    i += 1
+# Found orange at index 2
+```
+
+---
+
+### Section 4: Iterating with zip() (3 minutes)
+
+**Parallel Iteration:**
+
+```python
+# Combine two lists
+names = ['Alice', 'Bob', 'Charlie']
+scores = [85, 92, 78]
+
+for name, score in zip(names, scores):
+    print(f"{name}: {score}")
+# Alice: 85
+# Bob: 92
+# Charlie: 78
+
+# Three or more lists
+first_names = ['Alice', 'Bob', 'Charlie']
+last_names = ['Smith', 'Jones', 'Brown']
+ages = [25, 30, 22]
+
+for first, last, age in zip(first_names, last_names, ages):
+    print(f"{first} {last}, age {age}")
+# Alice Smith, age 25
+# Bob Jones, age 30
+# Charlie Brown, age 22
+```
+
+**Creating Pairs and Dictionaries:**
+
+```python
+# Create dictionary from two lists
+keys = ['name', 'age', 'city']
+values = ['Alice', 25, 'NYC']
+
+person = {}
+for key, value in zip(keys, values):
+    person[key] = value
+
+print(person)  # {'name': 'Alice', 'age': 25, 'city': 'NYC'}
+
+# Or use dict() constructor
+person = dict(zip(keys, values))
+
+# Create list of tuples
+products = ['laptop', 'mouse', 'keyboard']
+prices = [999, 29, 79]
+
+cart = list(zip(products, prices))
+print(cart)  # [('laptop', 999), ('mouse', 29), ('keyboard', 79)]
+```
+
+**Handling Different Lengths:**
+
+```python
+# zip stops at shortest list
+names = ['Alice', 'Bob', 'Charlie', 'Diana']
+scores = [85, 92, 78]
+
+for name, score in zip(names, scores):
+    print(f"{name}: {score}")
+# Alice: 85
+# Bob: 92
+# Charlie: 78
+# Diana is skipped
+
+# Use itertools.zip_longest for longest
+from itertools import zip_longest
+
+names = ['Alice', 'Bob', 'Charlie', 'Diana']
+scores = [85, 92, 78]
+
+for name, score in zip_longest(names, scores, fillvalue=0):
+    print(f"{name}: {score}")
+# Alice: 85
+# Bob: 92
+# Charlie: 78
+# Diana: 0
+```
+
+---
+
+### Section 5: Modifying Lists While Iterating (3 minutes)
+
+**Safe Modification Patterns:**
+
+```python
+# WRONG - Don't modify while iterating
+numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+    if num % 2 == 0:
+        numbers.remove(num)  # BAD - can skip elements
+# Result may be unpredictable
+
+# RIGHT - Iterate over copy
+numbers = [1, 2, 3, 4, 5]
+for num in numbers[:]:  # Create copy with [:]
+    if num % 2 == 0:
+        numbers.remove(num)
+
+print(numbers)  # [1, 3, 5]
+
+# RIGHT - Use list comprehension instead
+numbers = [1, 2, 3, 4, 5]
+numbers = [num for num in numbers if num % 2 != 0]
+print(numbers)  # [1, 3, 5]
+```
+
+**Modifying Elements (Safe):**
+
+```python
+# Modify elements by index - SAFE
+prices = [10.00, 20.00, 30.00, 40.00]
+
 for i in range(len(prices)):
-    prices[i] = prices[i] * 0.9
+    prices[i] = prices[i] * 1.1  # 10% increase
 
-print("After discount:", prices)
+print(prices)  # [11.0, 22.0, 33.0, 44.0]
+
+# Using enumerate - SAFE
+grades = [75, 82, 68, 91, 79]
+
+for i, grade in enumerate(grades):
+    if grade < 80:
+        grades[i] = 80  # Curve to minimum
+
+print(grades)  # [80, 82, 80, 91, 80]
 ```
 
-**Important:** "We use range(len(list)) when we need to change the actual list items."
-
-### Using zip() for Multiple Lists (3 min)
-
-"What if you have related data in separate lists? Use zip():"
+**Building New Lists:**
 
 ```python
-students = ["Alice", "Bob", "Charlie"]
-math_scores = [85, 92, 78]
-english_scores = [88, 84, 90]
+# Filter and transform - create new list
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_squares = []
 
-print("Student Report Cards:")
-for student, math, english in zip(students, math_scores, english_scores):
-    average = (math + english) / 2
-    print(f"{student}: Math={math}, English={english}, Avg={average:.1f}")
-```
+for num in numbers:
+    if num % 2 == 0:
+        even_squares.append(num ** 2)
 
-**Output:**
-```
-Student Report Cards:
-Alice: Math=85, English=88, Avg=86.5
-Bob: Math=92, English=84, Avg=88.0
-Charlie: Math=78, English=90, Avg=84.0
+print(even_squares)  # [4, 16, 36, 64, 100]
+
+# Or use list comprehension
+even_squares = [num ** 2 for num in numbers if num % 2 == 0]
 ```
 
 ---
 
-## [0:20-0:25] Main Concept 3: Common Patterns & Loop Control (5 min)
+### Section 6: Nested Lists and 2D Iteration (2 minutes)
 
-### Pattern 1: Filtering (2 min)
-
-"Build a new list with only items that match a condition:"
+**Iterating Through 2D Lists:**
 
 ```python
-ages = [15, 22, 17, 30, 19, 14, 25, 18]
-adults = []
+# Matrix iteration
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
 
-for age in ages:
-    if age >= 18:
-        adults.append(age)
+# Iterate rows
+for row in matrix:
+    print(row)
+# [1, 2, 3]
+# [4, 5, 6]
+# [7, 8, 9]
 
-print(f"Adults: {adults}")  # [22, 30, 19, 25, 18]
+# Iterate all elements
+for row in matrix:
+    for element in matrix:
+        print(element, end=' ')
+    print()  # New line after each row
+# 1 2 3
+# 4 5 6
+# 7 8 9
+
+# With indices
+for i, row in enumerate(matrix):
+    for j, element in enumerate(row):
+        print(f"matrix[{i}][{j}] = {element}")
+# matrix[0][0] = 1
+# matrix[0][1] = 2
+# ...
 ```
 
-### Pattern 2: Transformation (1 min)
-
-"Convert each item to a new form:"
+**Practical 2D Examples:**
 
 ```python
-names = ["alice", "bob", "charlie"]
-capitalized = []
+# Student grades by subject
+grades = [
+    [85, 90, 78],  # Alice
+    [92, 88, 95],  # Bob
+    [78, 82, 80]   # Charlie
+]
 
-for name in names:
-    capitalized.append(name.capitalize())
+students = ['Alice', 'Bob', 'Charlie']
 
-print(capitalized)  # ['Alice', 'Bob', 'Charlie']
+# Calculate averages
+for i, student_grades in enumerate(grades):
+    avg = sum(student_grades) / len(student_grades)
+    print(f"{students[i]}: {avg:.1f}")
+# Alice: 84.3
+# Bob: 91.7
+# Charlie: 80.0
 ```
 
-### break and continue (2 min)
+---
 
-**break - Exit early:**
+### Section 7: Loop Control (1 minute)
+
+**break and continue:**
+
 ```python
+# break - exit loop early
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-# Find first number > 5
 for num in numbers:
     if num > 5:
-        print(f"Found: {num}")
-        break  # Stop searching!
-# Output: Found: 6
-```
+        break
+    print(num)
+# 1 2 3 4 5
 
-**continue - Skip to next:**
-```python
-# Print only odd numbers
+# continue - skip to next iteration
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
 for num in numbers:
     if num % 2 == 0:
         continue  # Skip even numbers
     print(num)
-# Output: 1, 3, 5, 7, 9
-```
+# 1 3 5 7 9
 
----
-
-## [0:25-0:28] Common Mistakes (3 min)
-
-### Mistake 1: Modifying List While Iterating
-
-"This is dangerous and can cause bugs:"
-```python
-# WRONG - Don't do this!
+# else clause - executes if loop completes normally
 numbers = [1, 2, 3, 4, 5]
-for num in numbers:
-    numbers.remove(num)  # Bad!
-```
 
-"Instead, create a new list:"
-```python
-# CORRECT
-numbers = [1, 2, 3, 4, 5]
-filtered = []
 for num in numbers:
-    if num % 2 != 0:  # Keep odd numbers
-        filtered.append(num)
-```
-
-### Mistake 2: Forgetting to Initialize
-
-```python
-# WRONG
-for num in numbers:
-    total += num  # Error! total doesn't exist
-
-# CORRECT
-total = 0  # Initialize first!
-for num in numbers:
-    total += num
+    if num > 10:
+        print("Found large number")
+        break
+else:
+    print("No large numbers found")
+# No large numbers found
 ```
 
 ---
 
-## [0:28-0:30] Practice Exercise & Wrap-up (2 min)
+### Summary (1 minute)
 
-### Quick Exercise
+Today we mastered list iteration in Python:
 
-"Here's a challenge: Calculate the average temperature and find the hottest day:"
+**Basic Iteration:**
+- `for item in list:` - Direct iteration over elements
+- `for i in range(len(list)):` - Index-based iteration
+- `while i < len(list):` - While loop with index
 
-```python
-temperatures = [72, 75, 68, 70, 73, 69, 71]
-days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+**Advanced Techniques:**
+- `enumerate(list)` - Get index and value together
+- `enumerate(list, start=1)` - Custom starting index
+- `zip(list1, list2)` - Iterate multiple lists in parallel
 
-# Your turn! Calculate:
-# 1. Average temperature
-# 2. Find hottest day
+**Safe Modification:**
+- Iterate over copy: `for item in list[:]:`
+- Use indices: `for i in range(len(list)):`
+- Build new list instead of modifying
 
-# Solution (reveal after students try):
-total = sum(temperatures)
-average = total / len(temperatures)
+**Control Flow:**
+- `break` - Exit loop early
+- `continue` - Skip to next iteration
+- `for...else` - Execute if loop completes
 
-hottest_temp = temperatures[0]
-hottest_day = days[0]
+**Remember:**
+- Don't modify list while iterating directly over it
+- Use enumerate() when you need indices
+- Use zip() for parallel lists
+- List comprehensions often cleaner than loops
 
-for i in range(len(temperatures)):
-    if temperatures[i] > hottest_temp:
-        hottest_temp = temperatures[i]
-        hottest_day = days[i]
-
-print(f"Average: {average:.1f}°F")
-print(f"Hottest: {hottest_day} ({hottest_temp}°F)")
-```
-
----
-
-## Key Points to Reinforce
-
-1. **for loop is the primary iteration tool** - `for item in list:`
-2. **enumerate()** when you need index + value
-3. **range(len(list))** when modifying elements
-4. **zip()** for parallel lists
-5. **Always initialize accumulators** before loops
-6. **Never modify list structure** while iterating
-7. **break** exits early, **continue** skips iteration
-8. **Common patterns**: accumulation, filtering, transformation, search
-
-## Student Questions to Anticipate
-
-**Q: "When should I use enumerate vs range?"**
-A: "Use enumerate when you need both index and value. Use range when you only need indices or are modifying the list."
-
-**Q: "Why can't I modify the list while iterating?"**
-A: "Because Python is iterating through the list by position. If you remove items, the positions change, causing unpredictable behavior."
-
-**Q: "Is there a faster way than loops?"**
-A: "Yes! List comprehensions, which we'll learn next. But understanding loops is essential first."
-
-## Transition to Next Topic
-
-"Excellent work! You now know how to process lists with loops. Next, we'll learn list comprehensions - a more elegant way to create lists in a single line. But everything you learned today is the foundation!"
+Iteration is fundamental to working with lists. Master these patterns and you'll process data efficiently!
