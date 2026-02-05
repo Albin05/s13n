@@ -1,24 +1,69 @@
-# Lecture Script: LO-59 Import Custom Modules
+## Lecture Script: Import And Use Custom Modules
 
-## [0:00-0:02] Hook (2 min)
-Engaging introduction to Creating and importing your own modules.
+**Duration:** 12 minutes
 
-## [0:02-0:10] Core Concepts (8 min)
-Teaching Creating and importing your own modules with clear examples.
+---
 
-### Live Coding
-Demonstrate Creating and importing your own modules step by step.
+### Hook (2 minutes)
 
-## [0:10-0:16] Practical Examples (6 min)
-Multiple examples showing different use cases.
+Your main.py is 2000 lines long. Finding anything is a nightmare. Solution: split into modules — separate files for separate concerns.
 
-## [0:16-0:20] Real-World Application (4 min)
-Practical example students can relate to.
+---
 
-## [0:20-0:22] Wrap-up (2 min)
-Summary of key points.
+### Section 1: Basics (3 minutes)
 
-## Key Points to Reinforce
-- Understanding Creating and importing your own modules
-- Practical applications
-- Best practices
+```python
+# mymodule.py
+def greet(name):
+    return f"Hello, {{name}}!"
+
+PI = 3.14159
+
+# main.py
+import mymodule
+print(mymodule.greet("Alice"))
+print(mymodule.PI)
+```
+
+---
+
+### Section 2: Key Concepts (3 minutes)
+
+**Package structure:**
+```
+mypackage/
+    __init__.py    # Makes it a package
+    utils.py
+    models.py
+    helpers.py
+```
+
+```python
+from mypackage import utils
+from mypackage.models import User
+```
+
+---
+
+### Section 3: Practical Usage (3 minutes)
+
+**The __name__ guard:**
+```python
+# utils.py
+def helper():
+    return "helping!"
+
+if __name__ == "__main__":
+    # Only runs when executed directly
+    print(helper())
+    # NOT when imported
+```
+
+---
+
+### Summary (1 minute)
+
+1. Any .py file is a module
+2. Directories with __init__.py are packages
+3. Use `if __name__ == "__main__"` for test code
+4. Organize code into logical modules

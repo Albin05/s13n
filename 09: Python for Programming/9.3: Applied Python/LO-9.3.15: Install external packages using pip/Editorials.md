@@ -1,41 +1,21 @@
-# Editorials: Install External Packages
+## Editorials: Install External Packages Using Pip
 
-## Problem 1
-```python
-# Solution code
+---
+
+### Q1 Solution
+
+```bash
+pip install requests           # Latest
+pip install requests==2.28.0   # Exact
+pip uninstall requests         # Remove
+pip list                       # List all
+pip show requests              # Show info
 ```
 
-### Explanation
-Detailed explanation of the solution.
+---
 
-## Problem 2
-```python
-# Solution code
-```
+### Q2-Q5: See Question Bank for problems. Key patterns:
 
-### Explanation
-Step-by-step walkthrough.
-
-## Problem 3
-```python
-# Solution code
-```
-
-### Explanation
-How the solution works.
-
-## Problem 4
-```python
-# Solution code
-```
-
-### Explanation
-Breaking down the approach.
-
-## Problem 5
-```python
-# Solution code
-```
-
-### Explanation
-Advanced solution explained.
+- Always use virtual environments with pip
+- Pin versions for reproducibility
+- Use `pip freeze > requirements.txt`

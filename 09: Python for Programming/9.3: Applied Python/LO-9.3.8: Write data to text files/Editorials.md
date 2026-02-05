@@ -1,41 +1,128 @@
-# Editorials: Write Text Files
+## Editorials: Write Data to Text Files
 
-## Problem 1
+---
+
+### Q1 Solution: Basic File Writing
+
 ```python
-# Solution code
+# 1. Using write()
+with open("greeting.txt", "w") as f:
+    f.write("Hello!\n")
+    f.write("Welcome to Python.\n")
+    f.write("Enjoy coding!\n")
+
+# 2. Using print(file=)
+with open("numbers.txt", "w") as f:
+    for i in range(1, 11):
+        print(i, file=f)
+
+# 3. Using writelines()
+items = ["Apple\n", "Banana\n", "Cherry\n"]
+with open("list.txt", "w") as f:
+    f.writelines(items)
+
+# Verify
+for fname in ["greeting.txt", "numbers.txt", "list.txt"]:
+    with open(fname) as f:
+        print(f"--- {fname} ---")
+        print(f.read())
 ```
 
-### Explanation
-Step-by-step explanation of the solution.
+---
 
-## Problem 2
+### Q2 Solution: Student Record Writer
+
 ```python
-# Solution code
+students = [
+    {"name": "Alice", "age": 22, "grade": "A"},
+    {"name": "Bob", "age": 24, "grade": "B"},
+    {"name": "Charlie", "age": 21, "grade": "A+"}
+]
+
+with open("students.txt", "w") as f:
+    f.write(f"{'Name':<10s} {'Age':<4s} {'Grade':<5s}\n")
+    f.write(f"{'-'*10} {'-'*4} {'-'*5}\n")
+    for s in students:
+        f.write(f"{s['name']:<10s} {s['age']:<4d} {s['grade']:<5s}\n")
 ```
 
-### Explanation
-Detailed walkthrough.
+---
 
-## Problem 3
+### Q3 Solution: Log Writer
+
 ```python
-# Solution code
+from datetime import datetime
+
+class Logger:
+    def __init__(self, filename):
+        self.filename = filename
+        self.file = None
+    
+    def __enter__(self):
+        self.file = open(self.filename, "a")
+        return self
+    
+    def __exit__(self, *args):
+        if self.file:
+            self.file.close()
+    
+    def log(self, level, message):
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        self.file.write(f"{timestamp} {level} {message}\n")
+
+with Logger("app.log") as log:
+    log.log("INFO", "Application started")
+    log.log("ERROR", "Connection failed")
 ```
 
-### Explanation
-How the solution works.
+---
 
-## Problem 4
+### Q4 Solution: Data Exporter
+
 ```python
-# Solution code
+def export_data(data, filename, fmt):
+    keys = data[0].keys()
+    with open(filename, "w") as f:
+        if fmt == "csv":
+            f.write(",".join(keys) + "\n")
+            for row in data:
+                f.write(",".join(str(row[k]) for k in keys) + "\n")
+        elif fmt == "txt":
+            widths = {k: max(len(k), max(len(str(r[k])) for r in data)) for k in keys}
+            header = "  ".join(k.ljust(widths[k]) for k in keys)
+            f.write(header + "\n")
+            f.write("  ".join("-" * widths[k] for k in keys) + "\n")
+            for row in data:
+                f.write("  ".join(str(row[k]).ljust(widths[k]) for k in keys) + "\n")
+        elif fmt == "md":
+            f.write("| " + " | ".join(keys) + " |\n")
+            f.write("| " + " | ".join("---" for _ in keys) + " |\n")
+            for row in data:
+                f.write("| " + " | ".join(str(row[k]) for k in keys) + " |\n")
+
+data = [{"name": "Alice", "score": 92}, {"name": "Bob", "score": 85}]
+export_data(data, "out.csv", "csv")
+export_data(data, "out.txt", "txt")
+export_data(data, "out.md", "md")
 ```
 
-### Explanation
-Breaking down the approach.
+---
 
-## Problem 5
+### Q5 Solution: Safe File Writer
+
 ```python
-# Solution code
-```
+import shutil
 
-### Explanation
-Advanced solution explained.
+def safe_write(filename, content):
+    try:
+        with open(filename, "x") as f:
+            f.write(content)
+        return True
+    except FileExistsError:
+        backup = filename + ".bak"
+        shutil.copy2(filename, backup)
+        print(f"Backup created: {backup}")
+        with open(filename, "w") as f:
+            f.write(content)
+        return True
+```

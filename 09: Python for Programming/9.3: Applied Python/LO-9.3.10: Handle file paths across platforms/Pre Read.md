@@ -1,43 +1,51 @@
-# Pre-Read: Handle File Paths
+## Pre-Read: Handle File Paths Across Platforms
 
-## Working with File Paths
+**Duration:** 5 minutes
 
-Different operating systems use different path separators:
-- Windows: `C:\\Users\\name\\file.txt`
-- Mac/Linux: `/Users/name/file.txt`
+---
 
-## The os.path Module
-
-Python's `os.path` handles paths correctly across platforms:
+### The Problem
 
 ```python
-import os
+# This breaks on Windows:
+path = "/home/user/data.txt"
 
-# Join paths (works on any OS)
-path = os.path.join("folder", "subfolder", "file.txt")
-print(path)
-# Windows: folder\subfolder\file.txt
-# Mac/Linux: folder/subfolder/file.txt
+# This breaks on Mac/Linux:
+path = "C:\\Users\\user\\data.txt"
 ```
 
-## Common Operations
+---
+
+### The Solution: pathlib
 
 ```python
-import os
+from pathlib import Path
 
-# Check if file exists
-if os.path.exists("data.txt"):
-    print("File found!")
-
-# Get absolute path
-abs_path = os.path.abspath("file.txt")
-
-# Get file name from path
-filename = os.path.basename("/path/to/file.txt")  # "file.txt"
+# Works on ALL platforms
+data = Path("documents") / "data.txt"
+print(data)  # documents/data.txt (or documents\data.txt on Windows)
 ```
 
-## Why Use os.path?
+---
 
-1. **Cross-platform**: Works on Windows, Mac, Linux
-2. **Safer**: Handles special characters
-3. **Convenient**: Many helpful functions
+### Key Operations
+
+```python
+p = Path("folder/file.txt")
+p.name      # "file.txt"
+p.stem      # "file"
+p.suffix    # ".txt"
+p.parent    # Path("folder")
+p.exists()  # True/False
+```
+
+---
+
+### Try This
+
+```python
+from pathlib import Path
+home = Path.home()
+print(f"Home: {home}")
+print(f"CWD: {Path.cwd()}")
+```

@@ -1,35 +1,41 @@
-## Pre-Read: Removing Entries Using Pop(), Popitem(), And Del
+## Pre-Read: Removing Dictionary Entries
 
 **Duration:** 5 minutes
 
 ---
 
-### Overview
+### Four Ways to Remove
 
-Introduction to pop(), popitem(), del keyword.
+```python
+d = {'a': 1, 'b': 2, 'c': 3}
 
----
+# 1. del — remove by key
+del d['a']       # d = {'b': 2, 'c': 3}
 
-### Basic Concept
+# 2. pop() — remove and return
+val = d.pop('b') # val = 2, d = {'c': 3}
 
-safe removal, arbitrary removal, del statement
+# 3. popitem() — remove last pair
+pair = d.popitem()  # pair = ('c', 3), d = {}
 
----
-
-### Simple Example
-
-Quick code demonstration.
-
----
-
-### Why It Matters
-
-Importance and practical applications.
+# 4. clear() — remove everything
+d = {'x': 1, 'y': 2}
+d.clear()  # d = {}
+```
 
 ---
 
-### Key Takeaways
+### Safe Removal
 
-- Understand pop(), popitem(), del keyword
-- Apply safe removal, arbitrary removal, del statement
-- Use in practical scenarios
+```python
+d = {'a': 1}
+
+# pop() with default — no error
+val = d.pop('z', None)  # val = None, no crash
+```
+
+---
+
+### Key Point
+
+`del` and `pop()` without default raise `KeyError` if the key is missing. Use `pop(key, default)` for safe removal.

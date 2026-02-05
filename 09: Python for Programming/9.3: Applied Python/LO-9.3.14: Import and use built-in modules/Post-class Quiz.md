@@ -1,46 +1,33 @@
-# Post-Class Quiz: Import Built-in Modules
+## Post-class Quiz: Import And Use Built-In Modules
 
-## Q1: Question about Using Python's standard library modules
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+### Question 1
+What is the difference between `import math` and `from math import sqrt`?
 
-## Q2: Syntax question
-A) Option A
-B) Option B
-C) Option C
+A) import math gives full module; from math import sqrt gives one function
+B) No difference
+C) from imports are faster
+D) import math only imports math functions
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+**Correct Answer: A**
 
-## Q3: Practical application
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-C - Explanation
-</details>
+### Question 2
+Which module would you use to generate random numbers?
 
-## Q4: Best practices
-A) Option A
-B) Option B
-C) Option C
+A) math
+B) random
+C) numbers
+D) randlib
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+**Correct Answer: B**
 
-## Q5: Common mistakes
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+### Question 3-5
+
+*(Additional quiz questions following the same format covering: dir() and help(), common module functions, import best practices)*
+
+---

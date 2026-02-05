@@ -1,35 +1,70 @@
-## Pre-Read: Performing Set Difference And Symmetric Difference Operations
+## Pre-Read: Set Difference and Symmetric Difference
 
 **Duration:** 5 minutes
 
 ---
 
-### Overview
+### What You'll Learn
 
-Introduction to difference (-) and symmetric_difference (^).
-
----
-
-### Basic Concept
-
-set difference, symmetric difference, exclusive elements
+Two powerful set operations that answer:
+- **Difference** (`-`): "What's in set A that isn't in set B?"
+- **Symmetric Difference** (`^`): "What's NOT shared between A and B?"
 
 ---
 
-### Simple Example
+### Quick Preview
 
-Quick code demonstration.
+```python
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+
+# Difference: in a but not b
+print(a - b)  # {1, 2}
+
+# Symmetric difference: in either but not both
+print(a ^ b)  # {1, 2, 5, 6}
+```
 
 ---
 
-### Why It Matters
+### Real-World Analogy
 
-Importance and practical applications.
+Imagine two shopping lists:
+- **Your list:** milk, bread, eggs, butter
+- **Partner's list:** bread, eggs, cheese, fruit
+
+**Difference** (yours - theirs): milk, butter → items only you need
+**Symmetric difference**: milk, butter, cheese, fruit → items not on both lists
 
 ---
 
-### Key Takeaways
+### Key Distinction
 
-- Understand difference (-) and symmetric_difference (^)
-- Apply set difference, symmetric difference, exclusive elements
-- Use in practical scenarios
+```python
+a = {1, 2, 3}
+b = {2, 3, 4}
+
+# Difference — order matters!
+print(a - b)  # {1}
+print(b - a)  # {4}
+
+# Symmetric difference — order doesn't matter
+print(a ^ b)  # {1, 4}
+print(b ^ a)  # {1, 4}
+```
+
+---
+
+### Try This
+
+```python
+required = {'Python', 'SQL', 'Git'}
+have = {'Python', 'JavaScript', 'Git'}
+
+missing = required - have
+extra = have - required
+print(f"Need: {missing}")   # ?
+print(f"Bonus: {extra}")    # ?
+```
+
+**Answers:** `{'SQL'}` and `{'JavaScript'}`

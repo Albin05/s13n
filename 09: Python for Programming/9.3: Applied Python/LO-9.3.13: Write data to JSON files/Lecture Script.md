@@ -1,24 +1,67 @@
-# Lecture Script: LO-55 Write JSON Files
+## Lecture Script: Write Data to JSON Files
 
-## [0:00-0:02] Hook (2 min)
-Engaging introduction to Saving Python data as JSON.
+**Duration:** 12 minutes
 
-## [0:02-0:10] Core Concepts (8 min)
-Teaching Saving Python data as JSON with clear examples.
+---
 
-### Live Coding
-Demonstrate Saving Python data as JSON step by step.
+### Hook (2 minutes)
 
-## [0:10-0:16] Practical Examples (6 min)
-Multiple examples showing different use cases.
+You've processed data and need to save results in a format any program can read:
 
-## [0:16-0:20] Real-World Application (4 min)
-Practical example students can relate to.
+```python
+import json
+with open("results.json", "w") as f:
+    json.dump({"status": "complete", "score": 95}, f, indent=2)
+```
 
-## [0:20-0:22] Wrap-up (2 min)
-Summary of key points.
+---
 
-## Key Points to Reinforce
-- Understanding Saving Python data as JSON
-- Practical applications
-- Best practices
+### Section 1: Writing JSON (3 minutes)
+
+```python
+import json
+data = {"name": "Alice", "scores": [85, 92, 78]}
+
+# To file
+with open("data.json", "w") as f:
+    json.dump(data, f, indent=2)
+
+# To string
+json_string = json.dumps(data, indent=2)
+```
+
+---
+
+### Section 2: Formatting Options (3 minutes)
+
+```python
+json.dump(data, f, indent=2)             # Pretty print
+json.dump(data, f, sort_keys=True)       # Alphabetical keys
+json.dump(data, f, ensure_ascii=False)   # Allow Unicode
+```
+
+---
+
+### Section 3: Read-Modify-Write (3 minutes)
+
+```python
+try:
+    with open("data.json") as f:
+        data = json.load(f)
+except FileNotFoundError:
+    data = []
+
+data.append({"name": "New Entry"})
+
+with open("data.json", "w") as f:
+    json.dump(data, f, indent=2)
+```
+
+---
+
+### Summary (1 minute)
+
+1. `json.dump(data, file)` writes to file
+2. `json.dumps(data)` returns string
+3. `indent=2` for readability
+4. Read-modify-write for updates

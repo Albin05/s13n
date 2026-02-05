@@ -1,24 +1,68 @@
-# Lecture Script: LO-60 Use the requests Library
+## Lecture Script: Use The Requests Library For Http Operations
 
-## [0:00-0:02] Hook (2 min)
-Engaging introduction to Making HTTP requests in Python.
+**Duration:** 12 minutes
 
-## [0:02-0:10] Core Concepts (8 min)
-Teaching Making HTTP requests in Python with clear examples.
+---
 
-### Live Coding
-Demonstrate Making HTTP requests in Python step by step.
+### Hook (2 minutes)
 
-## [0:10-0:16] Practical Examples (6 min)
-Multiple examples showing different use cases.
+Your app needs data from a weather API, a payment gateway, and a user database — all over HTTP. The requests library makes this simple.
 
-## [0:16-0:20] Real-World Application (4 min)
-Practical example students can relate to.
+---
 
-## [0:20-0:22] Wrap-up (2 min)
-Summary of key points.
+### Section 1: Basics (3 minutes)
 
-## Key Points to Reinforce
-- Understanding Making HTTP requests in Python
-- Practical applications
-- Best practices
+```python
+import requests
+
+response = requests.get("https://api.example.com/data")
+print(response.status_code)  # 200
+print(response.json())       # Parsed JSON
+```
+
+---
+
+### Section 2: Key Concepts (3 minutes)
+
+**HTTP methods:**
+```python
+requests.get(url)      # Read data
+requests.post(url)     # Create data
+requests.put(url)      # Update data
+requests.delete(url)   # Delete data
+```
+
+**Response object:**
+```python
+r.status_code  # 200, 404, 500...
+r.json()       # Parse JSON body
+r.text         # Raw text body
+r.headers      # Response headers
+```
+
+---
+
+### Section 3: Practical Usage (3 minutes)
+
+```python
+# Error handling
+try:
+    r = requests.get(url, timeout=5)
+    r.raise_for_status()  # Raise for 4xx/5xx
+    data = r.json()
+except requests.ConnectionError:
+    print("Network error")
+except requests.Timeout:
+    print("Request timed out")
+except requests.HTTPError as e:
+    print(f"HTTP error: {{e}}")
+```
+
+---
+
+### Summary (1 minute)
+
+1. `requests.get()` for fetching data
+2. `response.json()` for JSON parsing
+3. Always handle errors and set timeouts
+4. Use `raise_for_status()` for error checking

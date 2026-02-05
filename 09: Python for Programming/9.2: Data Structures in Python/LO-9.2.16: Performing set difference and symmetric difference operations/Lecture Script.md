@@ -1,6 +1,6 @@
-## Lecture Script: Performing Set Difference and Symmetric Difference Operations
+## Lecture Script: Set Difference and Symmetric Difference Operations
 
-**Duration:** 18 minutes
+**Duration:** 15 minutes
 
 ---
 
@@ -8,264 +8,165 @@
 
 **Scenario:**
 
-Finding exclusive content between platforms:
+You're a hiring manager comparing job requirements against a candidate's resume:
 
 ```python
-netflix_shows = {'Stranger Things', 'The Crown', 'Bridgerton', 'Wednesday'}
-hulu_shows = {'The Handmaid\'s Tale', 'The Crown', 'Only Murders', 'Wednesday'}
-
-# Shows ONLY on Netflix (difference)
-netflix_exclusive = netflix_shows - hulu_shows
-print(f"Netflix only: {netflix_exclusive}")
-# {'Stranger Things', 'Bridgerton'}
-
-# Shows on EITHER but not BOTH (symmetric difference)
-exclusive_to_one = netflix_shows ^ hulu_shows
-print(f"Exclusive to one platform: {exclusive_to_one}")
-# {'Stranger Things', 'Bridgerton', "The Handmaid's Tale", 'Only Murders'}
+required = {'Python', 'SQL', 'Docker', 'AWS', 'Git'}
+candidate = {'Python', 'JavaScript', 'Git', 'React', 'Node.js'}
 ```
 
-**Today's Focus:** Master `-` (difference) and `^` (symmetric difference) for finding exclusive elements.
+How do you quickly find what skills are missing? What extra skills do they bring?
+
+```python
+missing = required - candidate
+print(f"Missing: {missing}")   # {'SQL', 'Docker', 'AWS'}
+
+bonus = candidate - required
+print(f"Bonus: {bonus}")       # {'JavaScript', 'React', 'Node.js'}
+```
+
+Two lines of code. No loops, no conditionals. That's the power of set difference.
+
+**Today:** We'll master two operations — **difference** and **symmetric difference** — that answer "what's unique to each side?"
 
 ---
 
-### Section 1: Difference Operation (5 minutes)
+### Section 1: Set Difference (3 minutes)
 
-**What is Difference?**
-Elements in first set but NOT in second.
+The difference operation returns elements in the first set that are NOT in the second.
 
-**Syntax:**
 ```python
-result = set1 - set2
-result = set1.difference(set2)
+a = {1, 2, 3, 4, 5}
+b = {3, 4, 5, 6, 7}
+
+# Elements in a but not in b
+result = a - b
+print(result)  # {1, 2}
+
+# Same using method
+result = a.difference(b)
+print(result)  # {1, 2}
 ```
 
-**Examples:**
-
+**Order matters:**
 ```python
-A = {1, 2, 3, 4, 5}
-B = {4, 5, 6, 7, 8}
-
-# A - B: in A but not in B
-diff = A - B
-print(diff)  # {1, 2, 3}
-
-# B - A: in B but not in A (different!)
-diff = B - A
-print(diff)  # {6, 7, 8}
+print(a - b)  # {1, 2} — in a, not b
+print(b - a)  # {6, 7} — in b, not a
 ```
 
-**Key Point:** Order matters! `A - B ≠ B - A`
-
-**Real-World Examples:**
-
-**1. Feature Comparison:**
+**Multiple sets:**
 ```python
-product_v1 = {'feature_a', 'feature_b', 'feature_c'}
-product_v2 = {'feature_b', 'feature_c', 'feature_d', 'feature_e'}
-
-# Removed features
-removed = product_v1 - product_v2
-print(f"Removed: {removed}")  # {'feature_a'}
-
-# New features
-added = product_v2 - product_v1
-print(f"Added: {added}")  # {'feature_d', 'feature_e'}
-```
-
-**2. User Churn Analysis:**
-```python
-last_month_users = {'alice', 'bob', 'charlie', 'diana'}
-this_month_users = {'bob', 'charlie', 'eve', 'frank'}
-
-# Users who left
-churned = last_month_users - this_month_users
-print(f"Churned: {churned}")  # {'alice', 'diana'}
-
-# New users
-new = this_month_users - last_month_users
-print(f"New: {new}")  # {'eve', 'frank'}
-```
-
-**3. Todo List Management:**
-```python
-all_tasks = {'task1', 'task2', 'task3', 'task4', 'task5'}
-completed_tasks = {'task2', 'task4'}
-
-# Remaining tasks
-remaining = all_tasks - completed_tasks
-print(f"TODO: {remaining}")  # {'task1', 'task3', 'task5'}
+a = {1, 2, 3, 4, 5, 6}
+b = {2, 3}
+c = {5, 6}
+print(a - b - c)  # {1, 4}
 ```
 
 ---
 
-### Section 2: Symmetric Difference (5 minutes)
+### Section 2: Difference Update (2 minutes)
 
-**What is Symmetric Difference?**
-Elements in EITHER set but NOT in BOTH.
+If you want to modify a set in place rather than creating a new one:
 
-**Syntax:**
 ```python
-result = set1 ^ set2
-result = set1.symmetric_difference(set2)
+cart = {'apple', 'banana', 'milk', 'bread', 'eggs'}
+out_of_stock = {'milk', 'eggs'}
+
+# Remove out of stock items
+cart -= out_of_stock
+print(cart)  # {'apple', 'banana', 'bread'}
+
+# Same as:
+# cart.difference_update(out_of_stock)
 ```
 
-**Examples:**
+The original set is modified. No new set is created.
+
+---
+
+### Section 3: Symmetric Difference (3 minutes)
+
+Symmetric difference returns elements in **either** set but **not in both**:
 
 ```python
-A = {1, 2, 3, 4, 5}
-B = {4, 5, 6, 7, 8}
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
 
-# Elements in either but not both
-sym_diff = A ^ B
-print(sym_diff)  # {1, 2, 3, 6, 7, 8}
-# Excludes 4 and 5 (in both)
+result = a ^ b
+print(result)  # {1, 2, 5, 6}
+# 3, 4 are in BOTH sets — excluded
 ```
 
-**Key Point:** Symmetric! `A ^ B = B ^ A`
+**Think of it as:** everything that's NOT shared.
 
-**Visualize:**
+**Order doesn't matter:**
 ```python
-# Equivalent to:
-sym_diff = (A - B) | (B - A)
-# (in A only) OR (in B only)
+print(a ^ b)  # {1, 2, 5, 6}
+print(b ^ a)  # {1, 2, 5, 6} — same!
 ```
 
-**Real-World Examples:**
-
-**1. Find Disagreements:**
+**Equivalence:**
 ```python
-alice_votes = {'proposal_a', 'proposal_b', 'proposal_c'}
-bob_votes = {'proposal_b', 'proposal_c', 'proposal_d'}
-
-# They disagree on
-disagreements = alice_votes ^ bob_votes
-print(f"Disagree on: {disagreements}")
-# {'proposal_a', 'proposal_d'}
-```
-
-**2. Unique Purchases:**
-```python
-store_a_customers = {'cust1', 'cust2', 'cust3', 'cust4'}
-store_b_customers = {'cust3', 'cust4', 'cust5', 'cust6'}
-
-# Customers exclusive to one store
-exclusive = store_a_customers ^ store_b_customers
-print(f"Shop at only one: {exclusive}")
-# {'cust1', 'cust2', 'cust5', 'cust6'}
-```
-
-**3. Data Sync Detection:**
-```python
-server_a_files = {'file1.txt', 'file2.txt', 'file3.txt'}
-server_b_files = {'file2.txt', 'file3.txt', 'file4.txt'}
-
-# Files that need syncing
-needs_sync = server_a_files ^ server_b_files
-print(f"Need sync: {needs_sync}")
-# {'file1.txt', 'file4.txt'}
+# Symmetric difference equals union minus intersection
+print(a ^ b)              # {1, 2, 5, 6}
+print((a | b) - (a & b))  # {1, 2, 5, 6}
 ```
 
 ---
 
-### Section 3: Combining Operations (3 minutes)
+### Section 4: Practical Applications (3 minutes)
 
-**All Four Operations:**
-
+**Application 1: Finding Non-Respondents**
 ```python
-A = {1, 2, 3, 4}
-B = {3, 4, 5, 6}
+all_students = {'Alice', 'Bob', 'Charlie', 'Diana', 'Eve'}
+submitted = {'Alice', 'Diana', 'Eve'}
 
-print(f"Union (|):     {A | B}")        # {1,2,3,4,5,6}
-print(f"Intersection (&): {A & B}")     # {3,4}
-print(f"Difference (-):   {A - B}")     # {1,2}
-print(f"Sym Diff (^):     {A ^ B}")     # {1,2,5,6}
+pending = all_students - submitted
+print(f"Haven't submitted: {pending}")  # {'Bob', 'Charlie'}
 ```
 
-**Complex Analysis:**
+**Application 2: Comparing Inventories**
 ```python
-current_users = {'alice', 'bob', 'charlie', 'diana'}
-premium_users = {'bob', 'diana'}
-trial_users = {'eve', 'frank'}
+store_a = {'laptop', 'phone', 'tablet', 'charger'}
+store_b = {'phone', 'tablet', 'headphones', 'case'}
 
-# Current non-premium
-free_users = current_users - premium_users
-# {'alice', 'charlie'}
+only_a = store_a - store_b  # {'laptop', 'charger'}
+only_b = store_b - store_a  # {'headphones', 'case'}
+not_shared = store_a ^ store_b  # all four above
+```
 
-# All users (current + trial)
-all_users = current_users | trial_users
-# {'alice', 'bob', 'charlie', 'diana', 'eve', 'frank'}
+**Application 3: Config Changes**
+```python
+old_settings = {'dark_mode', 'notifications', 'auto_save'}
+new_settings = {'dark_mode', 'auto_save', 'cloud_sync'}
 
-# Users not on trial
-non_trial = all_users - trial_users
-# {'alice', 'bob', 'charlie', 'diana'}
+added = new_settings - old_settings    # {'cloud_sync'}
+removed = old_settings - new_settings  # {'notifications'}
+changed = old_settings ^ new_settings  # {'notifications', 'cloud_sync'}
+print(f"Changed settings: {changed}")
 ```
 
 ---
 
-### Section 4: Practical Applications (2 minutes)
+### Section 5: Key Comparisons (1 minute)
 
-**Access Control:**
 ```python
-def check_access(user_permissions, required_permissions):
-    # Missing permissions
-    missing = required_permissions - user_permissions
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
 
-    if missing:
-        return False, f"Missing: {missing}"
-    return True, "Access granted"
-
-user_perms = {'read', 'write'}
-required = {'read', 'write', 'delete'}
-
-allowed, msg = check_access(user_perms, required)
-print(msg)  # Missing: {'delete'}
-```
-
-**Inventory Management:**
-```python
-def find_discrepancies(expected_items, actual_items):
-    missing = expected_items - actual_items
-    extra = actual_items - expected_items
-
-    return {
-        'missing': missing,
-        'extra': extra,
-        'discrepancy_count': len(missing) + len(extra)
-    }
-
-expected = {'item1', 'item2', 'item3', 'item4'}
-actual = {'item2', 'item3', 'item5'}
-
-report = find_discrepancies(expected, actual)
-print(f"Missing: {report['missing']}")  # {'item1', 'item4'}
-print(f"Extra: {report['extra']}")      # {'item5'}
+# All four operations side by side:
+print(a | b)   # {1, 2, 3, 4, 5, 6}  Union — everything
+print(a & b)   # {3, 4}              Intersection — shared
+print(a - b)   # {1, 2}              Difference — only in a
+print(a ^ b)   # {1, 2, 5, 6}        Symmetric diff — not shared
 ```
 
 ---
 
 ### Summary (1 minute)
 
-**Two Operations:**
-
-**Difference (-):**
-- `A - B`: Elements in A but NOT in B
-- Order matters: `A - B ≠ B - A`
-- Use: Finding what's missing, exclusive elements
-
-**Symmetric Difference (^):**
-- `A ^ B`: Elements in EITHER but NOT BOTH
-- Symmetric: `A ^ B = B ^ A`
-- Equivalent to: `(A - B) | (B - A)`
-- Use: Finding disagreements, unique elements
-
-**Quick Reference:**
-```python
-A = {1, 2, 3}
-B = {2, 3, 4}
-
-A | B   # {1,2,3,4} - union
-A & B   # {2,3} - intersection
-A - B   # {1} - difference
-A ^ B   # {1,4} - symmetric difference
-```
+1. **Difference** (`-`): "What do I have that they don't?"
+2. **Symmetric difference** (`^`): "What's different between us?"
+3. Order matters for `-` but not for `^`
+4. Use `_update` variants for in-place modification
+5. These operations make comparison tasks clean and readable

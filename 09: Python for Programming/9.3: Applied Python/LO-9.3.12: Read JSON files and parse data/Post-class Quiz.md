@@ -1,46 +1,71 @@
-# Post-Class Quiz: Read JSON Files
+## Post-class Quiz: Read JSON Files
 
-## Q1: Question about Loading JSON data from files
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+### Question 1
+What does `json.load()` accept?
 
-## Q2: Syntax question
-A) Option A
-B) Option B
-C) Option C
+A) A JSON string
+B) A file object
+C) A dictionary
+D) A URL
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+**Correct Answer: B**
 
-## Q3: Practical application
-A) Option A
-B) Option B
-C) Option C
+*Explanation: `json.load()` reads from a file object. Use `json.loads()` to parse a JSON string.*
 
-<details><summary>Answer</summary>
-C - Explanation
-</details>
+---
 
-## Q4: Best practices
-A) Option A
-B) Option B
-C) Option C
+### Question 2
+What Python type does a JSON object become?
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+A) list
+B) tuple
+C) dict
+D) set
 
-## Q5: Common mistakes
-A) Option A
-B) Option B
-C) Option C
+**Correct Answer: C**
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+*Explanation: JSON objects (key-value pairs in curly braces) become Python dicts.*
+
+---
+
+### Question 3
+What is the difference between `json.load()` and `json.loads()`?
+
+A) No difference
+B) `load` reads from file; `loads` parses a string
+C) `loads` is faster
+D) `loads` handles nested data
+
+**Correct Answer: B**
+
+---
+
+### Question 4
+What exception does invalid JSON raise?
+
+A) ValueError
+B) json.JSONDecodeError
+C) SyntaxError
+D) TypeError
+
+**Correct Answer: B**
+
+*Explanation: Malformed JSON raises `json.JSONDecodeError`, which is a subclass of `ValueError`.*
+
+---
+
+### Question 5
+What JSON value becomes Python `None`?
+
+A) `null`
+B) `undefined`
+C) `""`
+D) `0`
+
+**Correct Answer: A**
+
+*Explanation: JSON `null` maps to Python `None`. `undefined` doesn't exist in JSON.*
+
+---

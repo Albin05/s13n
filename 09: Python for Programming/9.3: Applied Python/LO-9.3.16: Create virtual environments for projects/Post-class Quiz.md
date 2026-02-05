@@ -1,46 +1,33 @@
-# Post-Class Quiz: Create Virtual Environments
+## Post-class Quiz: Create Virtual Environments For Projects
 
-## Q1: Question about Isolating project dependencies
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+### Question 1
+What is the main purpose of virtual environments?
 
-## Q2: Syntax question
-A) Option A
-B) Option B
-C) Option C
+A) Make Python run faster
+B) Isolate project dependencies from each other
+C) Encrypt your code
+D) Run Python in a container
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+**Correct Answer: B**
 
-## Q3: Practical application
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-C - Explanation
-</details>
+### Question 2
+How do you create a virtual environment?
 
-## Q4: Best practices
-A) Option A
-B) Option B
-C) Option C
+A) python venv create
+B) python3 -m venv name
+C) virtualenv --create name
+D) pip create-env name
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+**Correct Answer: B**
 
-## Q5: Common mistakes
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+### Question 3-5
+
+*(Additional quiz questions following the same format covering: activation commands, deactivation, .gitignore)*
+
+---

@@ -1,19 +1,47 @@
-# Pre-Read: Create Custom Exceptions
+## Pre-Read: Create Custom Exception Classes
 
-## Overview
-This lesson covers custom exception classes in Python.
+**Duration:** 5 minutes
 
-## Why It Matters
-Understanding custom exception classes is essential for writing effective Python code.
+---
 
-## Basic Concept
+### Why Custom Exceptions?
+
+Built-in exceptions like `ValueError` are generic. Custom exceptions describe your specific errors:
 
 ```python
-# Basic example of custom exception classes
+# Generic — what went wrong?
+raise ValueError("bad value")
+
+# Specific — clear!
+raise InsufficientFundsError(balance=100, amount=500)
 ```
 
-## What You'll Learn
-- Fundamentals of custom exception classes
-- Practical applications
-- Common patterns
-- Best practices
+---
+
+### How to Create One
+
+```python
+class NegativeAgeError(ValueError):
+    def __init__(self, age):
+        self.age = age
+        super().__init__(f"Age cannot be negative: {age}")
+```
+
+1. Create a class inheriting from `Exception` (or a built-in exception)
+2. Add custom attributes
+3. Call `super().__init__()` with a message
+
+---
+
+### Using It
+
+```python
+def set_age(age):
+    if age < 0:
+        raise NegativeAgeError(age)
+
+try:
+    set_age(-5)
+except NegativeAgeError as e:
+    print(f"Bad age: {e.age}")
+```

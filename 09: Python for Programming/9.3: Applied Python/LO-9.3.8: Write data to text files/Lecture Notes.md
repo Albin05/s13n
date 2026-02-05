@@ -1,91 +1,140 @@
-# Lecture Notes: Write Text Files
+## Lecture Notes: Write Data to Text Files
 
-## Writing Files
-
-Save data to text files.
-
+**Duration:** 10 minutes
 
 ---
 
-<div align="center">
+### Writing to Files
 
-![File folders and documents](https://images.unsplash.com/photo-1544396821-4dd40b938ad3?w=800&q=80)
-
-*Python can read from and write to files on your system*
-
-</div>
-
----
-### Basic Syntax
+Use `open()` with mode `"w"` (write) or `"a"` (append):
 
 ```python
-with open("filename.txt", "w") as file:
-    file.write("content")
+# Write mode — creates new or OVERWRITES existing
+with open("output.txt", "w") as f:
+    f.write("Hello, World!\n")
+    f.write("Second line\n")
 ```
 
-## Writing Modes
+**Warning:** `"w"` mode erases the file if it exists!
 
-- **"w"**: Write (overwrites existing)
-- **"a"**: Append (adds to end)
-- **"x"**: Exclusive create (fails if exists)
+---
 
-## Examples
+### Write Modes
 
-### Example 1: Write Text
+| Mode | Description |
+|------|-------------|
+| `"w"` | Write — creates new or overwrites |
+| `"a"` | Append — adds to end of existing file |
+| `"x"` | Exclusive create — fails if file exists |
+
+---
+
+### Writing Methods
+
+**`write()` — write a string:**
+```python
+with open("output.txt", "w") as f:
+    f.write("Line 1\n")
+    f.write("Line 2\n")
+```
+
+**`writelines()` — write a list of strings:**
+```python
+lines = ["Line 1\n", "Line 2\n", "Line 3\n"]
+with open("output.txt", "w") as f:
+    f.writelines(lines)
+```
+
+Note: `writelines()` does NOT add newlines — include `\n` in your strings.
+
+---
+
+### Using print() to Write
 
 ```python
 with open("output.txt", "w") as f:
-    f.write("Hello, World!\n")
-    f.write("This is line 2\n")
+    print("Hello, World!", file=f)
+    print("Line 2", file=f)
+    print(f"Result: {42}", file=f)
 ```
 
-### Example 2: Append Text
+`print()` automatically adds newlines.
+
+---
+
+### Writing Numbers and Other Types
+
+`write()` only accepts strings — convert first:
 
 ```python
-with open("log.txt", "a") as f:
-    f.write("New log entry\n")
+with open("numbers.txt", "w") as f:
+    numbers = [10, 20, 30, 40, 50]
+    for num in numbers:
+        f.write(f"{num}\n")
 ```
 
-### Example 3: Write List
+Or use `print()`:
+```python
+with open("numbers.txt", "w") as f:
+    for num in [10, 20, 30]:
+        print(num, file=f)
+```
+
+---
+
+### Exclusive Create Mode (`"x"`)
+
+Fails if file already exists (prevents accidental overwrite):
 
 ```python
-fruits = ["apple", "banana", "cherry"]
-
-with open("fruits.txt", "w") as f:
-    for fruit in fruits:
-        f.write(fruit + "\n")
+try:
+    with open("output.txt", "x") as f:
+        f.write("New file content")
+except FileExistsError:
+    print("File already exists!")
 ```
 
-### Example 4: Save User Data
+---
 
+### Practical Examples
+
+**1. Save a Report:**
 ```python
-name = input("Name: ")
-age = input("Age: ")
+def save_report(filename, title, data):
+    with open(filename, "w") as f:
+        f.write(f"{'='*40}\n")
+        f.write(f"{title}\n")
+        f.write(f"{'='*40}\n\n")
+        for key, value in data.items():
+            f.write(f"{key}: {value}\n")
 
-with open("user.txt", "w") as f:
-    f.write(f"Name: {name}\n")
-    f.write(f"Age: {age}\n")
+save_report("report.txt", "Sales Report", {"Q1": 1000, "Q2": 1500, "Q3": 1200})
 ```
 
-## Read and Write
-
+**2. Write CSV-style Data:**
 ```python
-# Read existing
-with open("data.txt", "r") as f:
-    data = f.read()
+students = [("Alice", 22, "A"), ("Bob", 24, "B"), ("Charlie", 21, "A")]
 
-# Process
-data = data.upper()
-
-# Write back
-with open("data.txt", "w") as f:
-    f.write(data)
+with open("students.txt", "w") as f:
+    f.write("Name,Age,Grade\n")
+    for name, age, grade in students:
+        f.write(f"{name},{age},{grade}\n")
 ```
 
-## Key Takeaways
+**3. Copy and Transform:**
+```python
+with open("input.txt") as fin, open("output.txt", "w") as fout:
+    for line in fin:
+        fout.write(line.upper())
+```
 
-1. **"w" mode**: Write (overwrites)
-2. **"a" mode**: Append (adds to end)
-3. **write()**: Writes string
-4. **with statement**: Auto closes
-5. **\n**: Add newlines manually
+---
+
+### Key Takeaways
+
+1. `"w"` mode creates or **overwrites** — be careful!
+2. `"a"` mode appends to existing content
+3. `"x"` mode prevents accidental overwrites
+4. `write()` needs strings — convert numbers first
+5. `print(data, file=f)` is convenient and adds newlines
+6. Always use `with` for automatic file closing

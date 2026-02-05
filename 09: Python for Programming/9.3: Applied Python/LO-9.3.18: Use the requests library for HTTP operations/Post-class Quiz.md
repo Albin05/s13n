@@ -1,46 +1,33 @@
-# Post-Class Quiz: Use the requests Library
+## Post-class Quiz: Use The Requests Library For Http Operations
 
-## Q1: Question about Making HTTP requests in Python
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+### Question 1
+What does `response.json()` do?
 
-## Q2: Syntax question
-A) Option A
-B) Option B
-C) Option C
+A) Returns the raw text
+B) Parses JSON response body into Python dict/list
+C) Sends JSON to the server
+D) Checks if response is JSON
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+**Correct Answer: B**
 
-## Q3: Practical application
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-C - Explanation
-</details>
+### Question 2
+Which method makes a POST request?
 
-## Q4: Best practices
-A) Option A
-B) Option B
-C) Option C
+A) requests.get()
+B) requests.post()
+C) requests.send()
+D) requests.submit()
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+**Correct Answer: B**
 
-## Q5: Common mistakes
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+### Question 3-5
+
+*(Additional quiz questions following the same format covering: status codes, error handling, headers)*
+
+---

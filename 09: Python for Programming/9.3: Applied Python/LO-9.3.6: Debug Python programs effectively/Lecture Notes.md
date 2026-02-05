@@ -1,96 +1,172 @@
-# Lecture Notes: Debug Python Programs
+## Lecture Notes: Debug Python Programs Effectively
 
-## Debug Python Programs
-
-Using debugging techniques to find and fix bugs
-
+**Duration:** 12 minutes
 
 ---
 
-<div align="center">
+### What Is Debugging?
 
-![Variables concept - labeled storage containers](https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80)
+Debugging is finding and fixing errors (bugs) in your code. Three types of errors:
 
-*Think of variables as labeled containers storing different types of data*
-
-</div>
+1. **Syntax errors** — code won't run (`SyntaxError`)
+2. **Runtime errors** — code crashes during execution (`TypeError`, `ValueError`, etc.)
+3. **Logic errors** — code runs but gives wrong results (hardest to find)
 
 ---
-### Key Concepts
 
-**Core principle**: print(), pdb, logging, try-except
-
-### Syntax and Usage
+### Reading Error Messages (Tracebacks)
 
 ```python
-# Basic example will be shown in practical examples below
+def calculate(x, y):
+    return x / y
+
+def process(data):
+    return calculate(data[0], data[1])
+
+process([10, 0])
 ```
 
-### Practical Examples
-
-#### Example 1: Print Debugging
-
-```python
-def calculate_total(prices):
-    print(f"DEBUG: prices = {prices}")
-    total = sum(prices)
-    print(f"DEBUG: total = {total}")
-    return total
-
-calculate_total([10, 20, 30])
+```
+Traceback (most recent call last):
+  File "app.py", line 7, in <module>
+    process([10, 0])
+  File "app.py", line 5, in process
+    return calculate(data[0], data[1])
+  File "app.py", line 2, in calculate
+    return x / y
+ZeroDivisionError: division by zero
 ```
 
-#### Example 2: Using pdb Debugger
+**Read bottom to top:**
+1. Last line: the error type and message
+2. Lines above: the call chain (most recent call last)
+3. Each entry: file, line number, function name, and the code
+
+---
+
+### Print Debugging
+
+The simplest technique — add `print()` to see values:
 
 ```python
-import pdb
+def find_average(numbers):
+    print(f"DEBUG: numbers = {numbers}")  # See input
+    total = sum(numbers)
+    print(f"DEBUG: total = {total}")       # See intermediate
+    count = len(numbers)
+    print(f"DEBUG: count = {count}")
+    average = total / count
+    print(f"DEBUG: average = {average}")   # See output
+    return average
+```
 
-def complex_function(x, y):
-    pdb.set_trace()  # Debugger stops here
-    result = x * 2
-    result = result + y
+**Tips:**
+- Use a prefix like `DEBUG:` so you can find and remove them later
+- Print variable types too: `print(f"DEBUG: type={type(x)}, val={x}")`
+- Use f-strings for readable output
+
+---
+
+### Using assert for Quick Checks
+
+```python
+def calculate_discount(price, percent):
+    assert price >= 0, f"Price must be non-negative, got {price}"
+    assert 0 <= percent <= 100, f"Percent must be 0-100, got {percent}"
+    return price * (1 - percent / 100)
+```
+
+`assert` raises `AssertionError` if the condition is False. Great for catching invalid states during development.
+
+---
+
+### The breakpoint() Function (Python 3.7+)
+
+Drops into an interactive debugger:
+
+```python
+def process(data):
+    result = []
+    for item in data:
+        breakpoint()  # Pauses here — you can inspect variables
+        result.append(item * 2)
     return result
-
-# Commands in pdb:
-# n - next line
-# s - step into
-# c - continue
-# p variable - print variable
-# q - quit
 ```
 
-#### Example 3: Logging
+In the debugger (`pdb`):
+- `n` — next line
+- `p variable` — print variable
+- `c` — continue execution
+- `q` — quit debugger
+- `l` — list code around current line
 
+---
+
+### Common Debugging Strategies
+
+**1. Binary Search (Divide and Conquer):**
+If your function is long, add a print in the middle. If the output is correct there, the bug is in the second half. Repeat.
+
+**2. Rubber Duck Debugging:**
+Explain your code line by line (to a rubber duck, colleague, or yourself). Often you'll spot the error while explaining.
+
+**3. Simplify the Input:**
+If a complex input causes a bug, find the simplest input that still triggers it.
+
+**4. Check Your Assumptions:**
 ```python
-import logging
-
-logging.basicConfig(level=logging.DEBUG)
-
-def process_order(order_id):
-    logging.debug(f"Processing order {order_id}")
-    logging.info(f"Order {order_id} validated")
-    logging.warning(f"Low stock for order {order_id}")
-    logging.error(f"Payment failed for order {order_id}")
+# You assume data is a list of ints
+print(type(data), type(data[0]))
+# Surprise! data[0] is a string
 ```
 
-### Best Practices
+---
 
-1. Write clear, readable code
-2. Handle errors appropriately
-3. Follow Python conventions
-4. Document your code
-5. Test thoroughly
+### Common Bug Patterns
 
-### Common Mistakes
+**Off-by-one errors:**
+```python
+# BUG: range(5) is 0,1,2,3,4 — not 1,2,3,4,5
+for i in range(5):
+    print(i + 1)  # Fix: or use range(1, 6)
+```
 
-1. Not handling edge cases
-2. Overcomplicating simple tasks
-3. Not following naming conventions
+**Mutable default arguments:**
+```python
+# BUG: default list is shared across calls!
+def add_item(item, lst=[]):
+    lst.append(item)
+    return lst
+
+# Fix:
+def add_item(item, lst=None):
+    if lst is None:
+        lst = []
+    lst.append(item)
+    return lst
+```
+
+**Variable shadowing:**
+```python
+list = [1, 2, 3]  # BUG: shadows built-in list()
+# Later: list("hello") → TypeError!
+```
+
+**String vs integer comparison:**
+```python
+age = input("Age: ")  # Returns string!
+if age > 18:  # BUG: comparing string to int
+    print("Adult")
+# Fix: age = int(input("Age: "))
+```
+
+---
 
 ### Key Takeaways
 
-1. Understanding the core concept is essential
-2. Practice with real examples
-3. Apply best practices
-4. Avoid common pitfalls
-5. Write clean, maintainable code
+1. Read tracebacks **bottom to top** — error type first, then trace the calls
+2. `print()` debugging is simple and effective for quick checks
+3. `assert` catches invalid states during development
+4. `breakpoint()` drops into interactive debugger for complex issues
+5. Common bugs: off-by-one, mutable defaults, type confusion, shadowing
+6. Strategy: simplify input, check assumptions, binary search

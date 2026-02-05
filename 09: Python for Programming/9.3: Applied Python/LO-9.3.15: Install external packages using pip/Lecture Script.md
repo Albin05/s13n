@@ -1,24 +1,53 @@
-# Lecture Script: LO-57 Install External Packages
+## Lecture Script: Install External Packages Using Pip
 
-## [0:00-0:02] Hook (2 min)
-Engaging introduction to Using pip to install packages.
+**Duration:** 12 minutes
 
-## [0:02-0:10] Core Concepts (8 min)
-Teaching Using pip to install packages with clear examples.
+---
 
-### Live Coding
-Demonstrate Using pip to install packages step by step.
+### Hook (2 minutes)
 
-## [0:10-0:16] Practical Examples (6 min)
-Multiple examples showing different use cases.
+Someone shares their Python project. You run it and get ImportError for 10 packages. You need pip — Python's package installer.
 
-## [0:16-0:20] Real-World Application (4 min)
-Practical example students can relate to.
+---
 
-## [0:20-0:22] Wrap-up (2 min)
-Summary of key points.
+### Section 1: Basics (3 minutes)
 
-## Key Points to Reinforce
-- Understanding Using pip to install packages
-- Practical applications
-- Best practices
+```bash
+pip install requests          # Install package
+pip install requests==2.28.0  # Specific version
+pip uninstall requests        # Remove
+pip list                      # Show installed
+pip freeze > requirements.txt # Save deps
+pip install -r requirements.txt # Install from file
+```
+
+---
+
+### Section 2: Key Concepts (3 minutes)
+
+**Version specifiers:**
+```
+requests==2.28.0   # Exact version
+requests>=2.28.0   # Minimum version
+requests~=2.28.0   # Compatible (2.28.x)
+requests!=2.27.0   # Exclude version
+```
+
+---
+
+### Section 3: Practical Usage (3 minutes)
+
+**Best practices:**
+1. Always use virtual environments
+2. Pin versions in requirements.txt
+3. Use `pip install --upgrade pip` regularly
+4. Check for vulnerabilities: `pip audit`
+
+---
+
+### Summary (1 minute)
+
+1. `pip install` to add packages
+2. `pip freeze > requirements.txt` to save dependencies
+3. `pip install -r requirements.txt` to reproduce environment
+4. Always use virtual environments with pip

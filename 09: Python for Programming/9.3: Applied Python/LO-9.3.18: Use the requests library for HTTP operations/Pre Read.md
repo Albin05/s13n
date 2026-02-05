@@ -1,16 +1,25 @@
-# Pre-Read: Use the requests Library
+## Pre-Read: Use The Requests Library For Http Operations
 
-## Overview
-This lesson covers Making HTTP requests in Python.
+**Duration:** 5 minutes
 
-## Basic Concepts
-GET, POST, response handling, APIs
+---
 
-## Why It Matters
-Understanding Making HTTP requests in Python is essential for Python development.
+### The Requests Library
 
-## What You'll Learn
-- Core concepts
-- Practical applications
-- Best practices
-- Common patterns
+The most popular Python library for HTTP requests:
+
+```python
+import requests
+response = requests.get("https://api.example.com/users")
+data = response.json()
+```
+
+Install with: `pip install requests`
+
+---
+
+### Key Points
+
+- `requests.get(url)` fetches data
+- `response.json()` parses JSON
+- Always handle errors and timeouts

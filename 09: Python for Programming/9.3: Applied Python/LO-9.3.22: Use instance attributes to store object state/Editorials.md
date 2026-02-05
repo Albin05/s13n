@@ -1,41 +1,124 @@
-# Editorials: Use Instance Attributes
+## Editorials: Use Instance Attributes
 
-## Problem 1
+---
+
+### Q1 Solution
+
 ```python
-# OOP solution code
+class Profile:
+    def __init__(self, username, email, bio):
+        self.username = username
+        self.email = email
+        self.bio = bio
+
+    def summary(self):
+        return f"{self.username} ({self.email}): {self.bio}"
+
+p = Profile("alice", "alice@mail.com", "Python developer")
+print(p.summary())  # alice (alice@mail.com): Python developer
 ```
 
-### Explanation
-Detailed explanation of the object-oriented solution.
+---
 
-## Problem 2
+### Q2 Solution
+
 ```python
-# Solution with classes
+class ShoppingCart:
+    def __init__(self):
+        self.items = []  # Each instance gets its own list
+
+    def add(self, item):
+        self.items.append(item)
+
+cart1 = ShoppingCart()
+cart2 = ShoppingCart()
+cart1.add("Apple")
+print(cart1.items)  # ['Apple']
+print(cart2.items)  # [] — independent
+
+# Using items=[] as default parameter would make ALL instances
+# share the same list object, which is a common Python bug.
 ```
 
-### Explanation
-Step-by-step walkthrough of OOP implementation.
+---
 
-## Problem 3
+### Q3 Solution
+
 ```python
-# Intermediate solution
+class Counter:
+    def __init__(self):
+        self._count = 0
+        self._total_increments = 0
+
+    def increment(self):
+        self._count += 1
+        self._total_increments += 1
+
+    def decrement(self):
+        if self._count > 0:
+            self._count -= 1
+
+    def reset(self):
+        self._count = 0
+
+    def value(self):
+        return self._count
+
+c = Counter()
+c.increment()
+c.increment()
+c.increment()
+c.decrement()
+print(c.value())              # 2
+print(c._total_increments)    # 3
 ```
 
-### Explanation
-How the object-oriented approach works.
+---
 
-## Problem 4
+### Q4 Solution
+
 ```python
-# Complex solution
+class Record:
+    def __init__(self, **kwargs):
+        for key, value in kwargs.items():
+            setattr(self, key, value)
+
+    def fields(self):
+        return list(vars(self).keys())
+
+r = Record(name="Alice", age=25, city="NYC")
+print(r.name)      # Alice
+print(r.fields())  # ['name', 'age', 'city']
 ```
 
-### Explanation
-Breaking down the OOP design.
+---
 
-## Problem 5
+### Q5 Solution
+
 ```python
-# Advanced OOP solution
+class TrackedObject:
+    def __init__(self, **kwargs):
+        super().__setattr__("_history", [])
+        for k, v in kwargs.items():
+            setattr(self, k, v)
+
+    def __setattr__(self, name, value):
+        if name != "_history":
+            old = getattr(self, name, "<unset>")
+            self._history.append({
+                "attr": name,
+                "old": old,
+                "new": value,
+            })
+        super().__setattr__(name, value)
+
+    def get_history(self):
+        return self._history
+
+t = TrackedObject(x=1, y=2)
+t.x = 10
+t.y = 20
+for change in t.get_history():
+    print(change)
 ```
 
-### Explanation
-Advanced concepts and design patterns explained.

@@ -1,41 +1,26 @@
-# Editorials: Use the requests Library
+## Editorials: Use The Requests Library For Http Operations
 
-## Problem 1
+---
+
+### Q1 Solution
+
 ```python
-# Solution code
+import requests
+
+try:
+    r = requests.get("https://jsonplaceholder.typicode.com/users")
+    r.raise_for_status()
+    users = r.json()
+    for user in users[:3]:
+        print(f"{{user['name']}}: {{user['email']}}")
+except requests.RequestException as e:
+    print(f"Error: {{e}}")
 ```
 
-### Explanation
-Detailed explanation of the solution.
+---
 
-## Problem 2
-```python
-# Solution code
-```
+### Q2-Q5: See Question Bank for problems. Key patterns:
 
-### Explanation
-Step-by-step walkthrough.
-
-## Problem 3
-```python
-# Solution code
-```
-
-### Explanation
-How the solution works.
-
-## Problem 4
-```python
-# Solution code
-```
-
-### Explanation
-Breaking down the approach.
-
-## Problem 5
-```python
-# Solution code
-```
-
-### Explanation
-Advanced solution explained.
+- Always set timeouts: `requests.get(url, timeout=5)`
+- Use `raise_for_status()` for error detection
+- Handle `ConnectionError`, `Timeout`, `HTTPError`

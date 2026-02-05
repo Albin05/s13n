@@ -1,25 +1,98 @@
-# Lecture Script: LO-47 Handle Multiple Exception Types
+## Lecture Script: Handle Multiple Exception Types
 
-## [0:00-0:02] Hook (2 min)
-Engaging introduction to multiple except blocks.
+**Duration:** 12 minutes
 
-## [0:02-0:10] Core Concept (8 min)
-Teaching multiple except blocks with clear examples.
+---
 
-### Live Coding
-Demonstrate multiple except blocks step by step.
+### Hook (2 minutes)
 
-## [0:10-0:16] Practice Examples (6 min)
-Multiple examples showing different use cases.
+Real code fails in many ways. A single function might face:
 
-## [0:16-0:20] Real-World Application (4 min)
-Practical example students can relate to.
+```python
+def get_user_score(data, user_id):
+    user = data[user_id]          # KeyError if user missing
+    score = float(user['score'])  # ValueError if not a number
+    return 100 / score            # ZeroDivisionError if score is 0
+```
 
-## [0:20-0:22] Wrap-up (2 min)
-Summary of key points and best practices.
+Three different exceptions, three different fixes. You need to handle each appropriately.
 
-## Key Points to Reinforce
-- Core concepts of multiple except blocks
-- Syntax and usage
-- Common patterns
-- When to use multiple except blocks
+---
+
+### Section 1: Multiple except Blocks (3 minutes)
+
+```python
+try:
+    user = data[user_id]
+    score = float(user['score'])
+    result = 100 / score
+except KeyError:
+    print(f"User {user_id} not found")
+except ValueError:
+    print("Score is not a number")
+except ZeroDivisionError:
+    print("Score is zero")
+```
+
+**Order matters:** specific first, general last.
+
+---
+
+### Section 2: Grouping Exceptions (2 minutes)
+
+```python
+# Same handler for related errors
+try:
+    process(data)
+except (ValueError, TypeError):
+    print("Bad input data")
+except (FileNotFoundError, PermissionError):
+    print("File access problem")
+```
+
+---
+
+### Section 3: The Complete Structure (3 minutes)
+
+```python
+try:
+    result = compute(x, y)
+except ValueError:
+    result = default_value
+except ZeroDivisionError:
+    result = float('inf')
+else:
+    print(f"Success: {result}")
+finally:
+    log("computation attempted")
+```
+
+- `try` — risky code
+- `except` — error handlers (checked in order)
+- `else` — success path (no error)
+- `finally` — always runs (cleanup)
+
+---
+
+### Section 4: Catching the Base Class (1 minute)
+
+```python
+try:
+    operation()
+except ValueError:
+    handle_specific()
+except Exception as e:
+    print(f"Unexpected: {type(e).__name__}: {e}")
+```
+
+`Exception` is the catch-all — use it last, as a safety net.
+
+---
+
+### Summary (1 minute)
+
+1. Multiple `except` blocks for different error types
+2. Group with `(ExcA, ExcB)` for shared handlers
+3. Order: specific → general
+4. `else` for success, `finally` for cleanup
+5. `Exception` as last resort catch-all

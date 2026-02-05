@@ -1,35 +1,64 @@
-## Pre-Read: Applying Set Membership Testing For Efficiency
+## Pre-Read: Set Membership Testing for Efficiency
 
 **Duration:** 5 minutes
 
 ---
 
-### Overview
+### What You'll Learn
 
-Introduction to in operator for fast lookups.
-
----
-
-### Basic Concept
-
-membership testing, O(1) lookup, performance benefits
+How to use sets for **blazing fast** lookups. The `in` operator works with both lists and sets, but sets are dramatically faster.
 
 ---
 
-### Simple Example
+### The Speed Difference
 
-Quick code demonstration.
+```python
+# List: checks each element one by one → O(n)
+my_list = [1, 2, 3, 4, 5]
+3 in my_list  # checks 1, 2, 3 → found!
+
+# Set: hash table lookup → O(1)
+my_set = {1, 2, 3, 4, 5}
+3 in my_set  # instant lookup → found!
+```
+
+For 5 elements, both are fast. For 1 million elements, the set is thousands of times faster.
 
 ---
 
-### Why It Matters
+### Real-World Example
 
-Importance and practical applications.
+```python
+# Checking if a username is taken
+taken_usernames = {'alice', 'bob', 'charlie'}
+
+new_user = 'dave'
+if new_user not in taken_usernames:
+    print("Username available!")
+```
 
 ---
 
-### Key Takeaways
+### Also: Subset Checking
 
-- Understand in operator for fast lookups
-- Apply membership testing, O(1) lookup, performance benefits
-- Use in practical scenarios
+```python
+required = {'Python', 'SQL'}
+skills = {'Python', 'SQL', 'Git'}
+
+if required.issubset(skills):
+    print("You qualify!")  # True — has all required
+```
+
+---
+
+### Try This
+
+```python
+vowels = set('aeiou')
+word = 'hello'
+for char in word:
+    if char in vowels:
+        print(f"{char} is a vowel")
+```
+
+What will print?

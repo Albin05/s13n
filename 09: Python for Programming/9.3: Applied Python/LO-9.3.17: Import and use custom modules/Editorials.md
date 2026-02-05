@@ -1,41 +1,28 @@
-# Editorials: Import Custom Modules
+## Editorials: Import And Use Custom Modules
 
-## Problem 1
+---
+
+### Q1 Solution
+
 ```python
-# Solution code
+# mathutils.py
+def add(a, b): return a + b
+def subtract(a, b): return a - b
+def multiply(a, b): return a * b
+def divide(a, b):
+    if b == 0: raise ZeroDivisionError
+    return a / b
+
+# main.py
+from mathutils import add, multiply
+print(add(5, 3))       # 8
+print(multiply(4, 7))  # 28
 ```
 
-### Explanation
-Detailed explanation of the solution.
+---
 
-## Problem 2
-```python
-# Solution code
-```
+### Q2-Q5: See Question Bank for problems. Key patterns:
 
-### Explanation
-Step-by-step walkthrough.
-
-## Problem 3
-```python
-# Solution code
-```
-
-### Explanation
-How the solution works.
-
-## Problem 4
-```python
-# Solution code
-```
-
-### Explanation
-Breaking down the approach.
-
-## Problem 5
-```python
-# Solution code
-```
-
-### Explanation
-Advanced solution explained.
+- Keep modules focused on one responsibility
+- Use __init__.py to expose clean APIs
+- Always use __name__ guard for test code

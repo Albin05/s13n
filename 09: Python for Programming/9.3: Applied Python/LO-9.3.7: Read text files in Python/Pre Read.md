@@ -1,35 +1,46 @@
-# Pre-Read: Read Text Files
+## Pre-Read: Read Text Files in Python
 
-## Reading Files
+**Duration:** 5 minutes
 
-Access data stored in text files.
+---
 
-```python
-file = open("data.txt", "r")
-content = file.read()
-print(content)
-file.close()
-```
-
-## Better Way: Using `with`
+### Reading a File
 
 ```python
-with open("data.txt", "r") as file:
-    content = file.read()
+with open("data.txt") as f:
+    content = f.read()
     print(content)
-# File closes automatically!
 ```
 
-## Why Read Files?
+`with` ensures the file is closed automatically.
 
-1. **Persistent data**: Data survives program restart
-2. **Large datasets**: Process data from files
-3. **Configuration**: Read settings from files
+---
 
-## Basic Example
+### Three Ways to Read
 
 ```python
-with open("names.txt", "r") as f:
+f.read()       # Entire file as one string
+f.readline()   # One line at a time
+f.readlines()  # All lines as a list
+```
+
+---
+
+### Line by Line (Best for Large Files)
+
+```python
+with open("data.txt") as f:
     for line in f:
-        print(line.strip())
+        print(line.strip())  # strip() removes newline
+```
+
+---
+
+### Try This
+
+Create a file called `test.txt` with a few lines of text. Then:
+```python
+with open("test.txt") as f:
+    for i, line in enumerate(f, 1):
+        print(f"Line {i}: {line.strip()}")
 ```

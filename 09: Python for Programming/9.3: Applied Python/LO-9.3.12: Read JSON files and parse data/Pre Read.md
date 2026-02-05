@@ -1,41 +1,46 @@
-# Pre-Read: Read JSON Files
+## Pre-Read: Read JSON Files
 
-## What is JSON?
+**Duration:** 5 minutes
 
-JSON (JavaScript Object Notation) stores structured data:
+---
+
+### What Is JSON?
+
+JSON (JavaScript Object Notation) is a text format for structured data:
 
 ```json
-{
-    "name": "Alice",
-    "age": 25,
-    "skills": ["Python", "JavaScript"]
-}
+{"name": "Alice", "age": 25, "scores": [85, 92]}
 ```
 
-## Reading JSON Files
+---
+
+### Reading JSON in Python
 
 ```python
 import json
-
-with open("data.json", "r") as file:
-    data = json.load(file)
-    print(data["name"])  # Alice
-    print(data["skills"])  # ['Python', 'JavaScript']
+with open("data.json") as f:
+    data = json.load(f)
+print(data["name"])  # Alice
 ```
 
-## JSON to Python
+---
 
-| JSON | Python |
-|------|--------|
-| object {} | dict |
-| array [] | list |
-| string | str |
-| number | int/float |
-| true/false | True/False |
-| null | None |
+### JSON Types Map to Python
 
-## Why Use JSON?
+- JSON object → Python dict
+- JSON array → Python list
+- JSON string → Python str
+- JSON number → Python int/float
+- JSON true/false → Python True/False
+- JSON null → Python None
 
-1. **Structured**: Nested data
-2. **Popular**: Used in APIs
-3. **Readable**: Easy to understand
+---
+
+### Try This
+
+```python
+import json
+text = '{"city": "Mumbai", "population": 20000000}'
+data = json.loads(text)
+print(data["city"])
+```

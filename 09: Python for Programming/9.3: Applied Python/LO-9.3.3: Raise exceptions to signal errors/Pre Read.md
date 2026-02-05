@@ -1,19 +1,55 @@
-# Pre-Read: Raise Exceptions
+## Pre-Read: Raise Exceptions to Signal Errors
 
-## Overview
-This lesson covers raising exceptions manually in Python.
+**Duration:** 5 minutes
 
-## Why It Matters
-Understanding raising exceptions manually is essential for writing effective Python code.
+---
 
-## Basic Concept
+### What Is raise?
+
+`raise` lets you intentionally trigger an exception:
 
 ```python
-# Basic example of raising exceptions manually
+if age < 0:
+    raise ValueError("Age cannot be negative")
 ```
 
-## What You'll Learn
-- Fundamentals of raising exceptions manually
-- Practical applications
-- Common patterns
-- Best practices
+---
+
+### Why Not Just Return None?
+
+```python
+# Problem: caller forgets to check
+def divide(a, b):
+    if b == 0: return None
+result = divide(10, 0)
+print(result + 1)  # TypeError: None + 1 — bug far from cause
+
+# Better: exception at the source
+def divide(a, b):
+    if b == 0: raise ZeroDivisionError("b cannot be zero")
+    return a / b
+```
+
+---
+
+### Common Exception Types
+
+| Exception | When to Use |
+|-----------|-------------|
+| `ValueError` | Right type, wrong value |
+| `TypeError` | Wrong type |
+| `RuntimeError` | Logic or state error |
+
+---
+
+### Try This
+
+```python
+def positive_only(n):
+    if n <= 0:
+        raise ValueError(f"Must be positive, got {n}")
+    return n
+
+positive_only(5)   # Works
+positive_only(-3)  # What happens?
+```

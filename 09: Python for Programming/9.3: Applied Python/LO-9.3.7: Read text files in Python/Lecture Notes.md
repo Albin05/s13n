@@ -1,101 +1,168 @@
-# Lecture Notes: Read Text Files
+## Lecture Notes: Read Text Files in Python
 
-## Reading Files
-
-Access and process data from text files.
-
+**Duration:** 12 minutes
 
 ---
 
-<div align="center">
+### Opening and Reading Files
 
-![File folders and documents](https://images.unsplash.com/photo-1544396821-4dd40b938ad3?w=800&q=80)
-
-*Python can read from and write to files on your system*
-
-</div>
-
----
-### Basic Syntax
+The `open()` function opens a file. Always close it when done.
 
 ```python
-with open("filename.txt", "r") as file:
+# Basic pattern
+file = open("data.txt", "r")  # "r" = read mode (default)
+content = file.read()
+print(content)
+file.close()
+```
+
+---
+
+### The `with` Statement (Recommended)
+
+Automatically closes the file when done:
+
+```python
+with open("data.txt") as file:
     content = file.read()
-```
-
-## Reading Methods
-
-### read() - Entire File
-
-```python
-with open("data.txt", "r") as f:
-    content = f.read()
     print(content)
+# File is automatically closed here
 ```
 
-### readline() - One Line
+Always prefer `with` — it handles cleanup even if an error occurs.
 
+---
+
+### Three Ways to Read
+
+**1. `read()` — entire file as one string:**
 ```python
-with open("data.txt", "r") as f:
-    line = f.readline()
-    print(line)
-```
-
-### readlines() - List of Lines
-
-```python
-with open("data.txt", "r") as f:
-    lines = f.readlines()
-    for line in lines:
-        print(line.strip())
-```
-
-### Iterate Lines
-
-```python
-with open("data.txt", "r") as f:
-    for line in f:
-        print(line.strip())
-```
-
-## Why Use `with`?
-
-```python
-# Without with (manual close)
-f = open("data.txt", "r")
-content = f.read()
-f.close()  # Must remember!
-
-# With with (auto close)
-with open("data.txt", "r") as f:
+with open("data.txt") as f:
     content = f.read()
-# Closes automatically!
+    print(content)  # Entire file content
 ```
 
-## Real-World Examples
+**2. `readline()` — one line at a time:**
+```python
+with open("data.txt") as f:
+    line1 = f.readline()  # First line
+    line2 = f.readline()  # Second line
+    print(line1.strip())
+    print(line2.strip())
+```
 
-### Read Configuration
+**3. `readlines()` — all lines as a list:**
+```python
+with open("data.txt") as f:
+    lines = f.readlines()
+    print(lines)  # ['line1\n', 'line2\n', 'line3\n']
+```
+
+---
+
+### Iterating Line by Line (Most Common)
 
 ```python
-with open("config.txt", "r") as f:
+with open("data.txt") as f:
     for line in f:
-        key, value = line.strip().split("=")
-        print(f"{key}: {value}")
+        print(line.strip())  # .strip() removes \n
 ```
 
-### Process CSV Data
+This is memory-efficient — reads one line at a time instead of loading everything.
+
+---
+
+### Handling Newlines
+
+Each line from a file includes `\n` at the end:
 
 ```python
-with open("scores.txt", "r") as f:
-    for line in f:
-        name, score = line.strip().split(",")
-        print(f"{name}: {score}")
+with open("data.txt") as f:
+    lines = f.readlines()
+    print(lines)  # ['Hello\n', 'World\n']
+
+# Clean them up:
+clean_lines = [line.strip() for line in lines]
+print(clean_lines)  # ['Hello', 'World']
 ```
 
-## Key Takeaways
+---
 
-1. **open()**: Opens file
-2. **"r" mode**: Read mode
-3. **with statement**: Auto closes file
-4. **read()**: Entire content
-5. **Iterate**: Process line by line
+### Reading with Encoding
+
+```python
+# UTF-8 (handles special characters)
+with open("data.txt", encoding="utf-8") as f:
+    content = f.read()
+
+# For other encodings:
+with open("legacy.txt", encoding="latin-1") as f:
+    content = f.read()
+```
+
+---
+
+### File Not Found Handling
+
+```python
+try:
+    with open("missing.txt") as f:
+        content = f.read()
+except FileNotFoundError:
+    print("File does not exist!")
+```
+
+---
+
+### Practical Examples
+
+**1. Count Lines and Words:**
+```python
+with open("document.txt") as f:
+    lines = f.readlines()
+
+line_count = len(lines)
+word_count = sum(len(line.split()) for line in lines)
+char_count = sum(len(line) for line in lines)
+
+print(f"Lines: {line_count}")
+print(f"Words: {word_count}")
+print(f"Characters: {char_count}")
+```
+
+**2. Search for a Pattern:**
+```python
+with open("log.txt") as f:
+    for i, line in enumerate(f, 1):
+        if "ERROR" in line:
+            print(f"Line {i}: {line.strip()}")
+```
+
+**3. Read Numbers from File:**
+```python
+with open("numbers.txt") as f:
+    numbers = [float(line.strip()) for line in f if line.strip()]
+
+print(f"Sum: {sum(numbers)}")
+print(f"Average: {sum(numbers)/len(numbers):.2f}")
+```
+
+**4. Read CSV-like Data:**
+```python
+with open("students.txt") as f:
+    for line in f:
+        parts = line.strip().split(",")
+        name, age, grade = parts[0], int(parts[1]), parts[2]
+        print(f"{name} (age {age}): {grade}")
+```
+
+---
+
+### Key Takeaways
+
+1. Always use `with open()` — auto-closes the file
+2. `read()` gets everything, `readline()` one line, `readlines()` all as list
+3. Iterate with `for line in file` for memory efficiency
+4. Use `.strip()` to remove newline characters
+5. Handle `FileNotFoundError` for missing files
+6. Specify `encoding="utf-8"` for special characters

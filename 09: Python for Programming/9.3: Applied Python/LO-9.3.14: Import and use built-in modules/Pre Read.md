@@ -1,41 +1,30 @@
-# Pre-Read: Import Built-in Modules
+## Pre-Read: Import And Use Built-In Modules
 
-## Python's Standard Library
+**Duration:** 5 minutes
 
-Python comes with many built-in modules:
+---
+
+### Built-in Modules
+
+Python comes with hundreds of pre-built modules:
 
 ```python
 import math
 print(math.sqrt(16))  # 4.0
 
 import random
-print(random.randint(1, 10))  # Random number 1-10
+print(random.randint(1, 10))
 
 import datetime
-print(datetime.datetime.now())  # Current date/time
+print(datetime.date.today())
 ```
 
-## Common Modules
+No installation needed — just `import` and use.
 
-- **math**: Mathematical functions
-- **random**: Random numbers
-- **datetime**: Dates and times
-- **os**: Operating system interface
-- **json**: JSON data
-- **csv**: CSV files
+---
 
-## How to Import
+### Key Points
 
-```python
-# Import entire module
-import math
-math.sqrt(16)
-
-# Import specific function
-from math import sqrt
-sqrt(16)
-
-# Import with alias
-import datetime as dt
-dt.datetime.now()
-```
+- `import module` — use any built-in module
+- Popular: math, random, datetime, os, json
+- Explore: `dir(module)` lists everything available

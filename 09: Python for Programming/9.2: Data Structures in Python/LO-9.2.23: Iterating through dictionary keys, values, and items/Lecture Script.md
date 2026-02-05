@@ -1,49 +1,131 @@
-## Lecture Script: Iterating Through Dictionary Keys, Values, And Items
+## Lecture Script: Iterating Through Dictionaries
 
-**Duration:** 18 minutes
+**Duration:** 15 minutes
 
 ---
 
 ### Hook (2 minutes)
 
-Introduction to keys(), values(), items() methods with practical scenario.
+You have student grades and need to:
+- Print a report card
+- Calculate averages
+- Find the top student
 
-**Key Learning:** dict iteration, unpacking items, loop patterns
+All of this requires **iterating** through the dictionary:
 
----
+```python
+grades = {'Alice': 92, 'Bob': 78, 'Charlie': 85}
 
-### Section 1: Concept Overview (4 minutes)
+for name, score in grades.items():
+    status = 'Pass' if score >= 80 else 'Needs work'
+    print(f"{name}: {score} - {status}")
+```
 
-Understanding keys(), values(), items() methods.
-
-**Core Concepts:**
-- dict iteration, unpacking items, loop patterns
-
----
-
-### Section 2: Syntax and Usage (5 minutes)
-
-Detailed syntax and practical examples.
-
-**Method/Operator:** keys(), values(), items() methods
+Three lines, full report. Let's learn every way to loop through dictionaries.
 
 ---
 
-### Section 3: Common Patterns (4 minutes)
+### Section 1: Iterating Keys (2 minutes)
 
-Best practices and common use cases.
+```python
+data = {'a': 1, 'b': 2, 'c': 3}
+
+# Default — iterates keys
+for key in data:
+    print(key, data[key])
+
+# Explicit — same result
+for key in data.keys():
+    print(key, data[key])
+```
 
 ---
 
-### Section 4: Applications (2 minutes)
+### Section 2: Iterating Values (2 minutes)
 
-Real-world applications and scenarios.
+```python
+prices = {'apple': 1.50, 'banana': 0.75, 'cherry': 3.00}
+
+# Sum all prices
+total = sum(prices.values())
+print(f"Total: ${total}")
+
+# Find average
+avg = sum(prices.values()) / len(prices)
+```
+
+---
+
+### Section 3: Iterating Items (3 minutes)
+
+```python
+user = {'name': 'Alice', 'age': 25, 'city': 'Mumbai'}
+
+for key, val in user.items():
+    print(f"{key}: {val}")
+```
+
+**Nested dicts:**
+```python
+grades = {
+    'Alice': {'Math': 92, 'Science': 88},
+    'Bob': {'Math': 78, 'Science': 85}
+}
+
+for student, subjects in grades.items():
+    avg = sum(subjects.values()) / len(subjects)
+    print(f"{student}: avg = {avg}")
+```
+
+---
+
+### Section 4: Sorting and Filtering (3 minutes)
+
+**Sorted by key:**
+```python
+for k in sorted(data):
+    print(k, data[k])
+```
+
+**Sorted by value:**
+```python
+scores = {'Alice': 92, 'Bob': 78, 'Charlie': 85}
+for name in sorted(scores, key=scores.get, reverse=True):
+    print(f"{name}: {scores[name]}")
+```
+
+**Filtering with comprehension:**
+```python
+passing = {n: s for n, s in scores.items() if s >= 80}
+```
+
+---
+
+### Section 5: Common Patterns (2 minutes)
+
+**Find max/min:**
+```python
+top = max(scores, key=scores.get)
+```
+
+**Group by value:**
+```python
+groups = {}
+for name, grade in students.items():
+    groups.setdefault(grade, []).append(name)
+```
+
+**Invert dict:**
+```python
+inverted = {v: k for k, v in original.items()}
+```
 
 ---
 
 ### Summary (1 minute)
 
-**Key Takeaways:**
-- Master keys(), values(), items() methods
-- Apply dict iteration, unpacking items, loop patterns
-- Use in practical scenarios
+1. `for key in dict` — keys
+2. `for val in dict.values()` — values
+3. `for k, v in dict.items()` — pairs (most useful)
+4. Use `sorted()` for ordered iteration
+5. Comprehensions for filtering and transforming

@@ -1,46 +1,33 @@
-# Post-Class Quiz: Install External Packages
+## Post-class Quiz: Install External Packages Using Pip
 
-## Q1: Question about Using pip to install packages
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+### Question 1
+What does `pip freeze` do?
 
-## Q2: Syntax question
-A) Option A
-B) Option B
-C) Option C
+A) Stops pip from running
+B) Lists all installed packages with versions
+C) Installs frozen packages
+D) Shows pip version
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+**Correct Answer: B**
 
-## Q3: Practical application
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-C - Explanation
-</details>
+### Question 2
+How do you install packages from requirements.txt?
 
-## Q4: Best practices
-A) Option A
-B) Option B
-C) Option C
+A) pip install requirements.txt
+B) pip install -r requirements.txt
+C) pip requirements install
+D) pip get requirements.txt
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+**Correct Answer: B**
 
-## Q5: Common mistakes
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+### Question 3-5
+
+*(Additional quiz questions following the same format covering: version pinning, pip uninstall, PyPI)*
+
+---

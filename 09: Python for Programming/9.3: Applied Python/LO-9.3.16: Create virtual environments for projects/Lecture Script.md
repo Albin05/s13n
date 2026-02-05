@@ -1,24 +1,64 @@
-# Lecture Script: LO-58 Create Virtual Environments
+## Lecture Script: Create Virtual Environments For Projects
 
-## [0:00-0:02] Hook (2 min)
-Engaging introduction to Isolating project dependencies.
+**Duration:** 12 minutes
 
-## [0:02-0:10] Core Concepts (8 min)
-Teaching Isolating project dependencies with clear examples.
+---
 
-### Live Coding
-Demonstrate Isolating project dependencies step by step.
+### Hook (2 minutes)
 
-## [0:10-0:16] Practical Examples (6 min)
-Multiple examples showing different use cases.
+You install package X for Project A. Project B needs a different version of X. Both break. Virtual environments solve this — isolated Python per project.
 
-## [0:16-0:20] Real-World Application (4 min)
-Practical example students can relate to.
+---
 
-## [0:20-0:22] Wrap-up (2 min)
-Summary of key points.
+### Section 1: Basics (3 minutes)
 
-## Key Points to Reinforce
-- Understanding Isolating project dependencies
-- Practical applications
-- Best practices
+```bash
+# Create
+python3 -m venv myenv
+
+# Activate (Mac/Linux)
+source myenv/bin/activate
+
+# Activate (Windows)
+myenv\\Scripts\\activate
+
+# Deactivate
+deactivate
+```
+
+---
+
+### Section 2: Key Concepts (3 minutes)
+
+**Why virtual environments?**
+- Project A needs Django 3.2, Project B needs Django 4.0
+- Without venv: one overwrites the other
+- With venv: each project has its own isolated packages
+
+**What's inside a venv?**
+- Its own Python binary
+- Its own pip
+- Its own site-packages directory
+
+---
+
+### Section 3: Practical Usage (3 minutes)
+
+**Workflow:**
+```bash
+mkdir myproject && cd myproject
+python3 -m venv venv
+source venv/bin/activate
+pip install requests flask
+pip freeze > requirements.txt
+echo "venv/" >> .gitignore
+```
+
+---
+
+### Summary (1 minute)
+
+1. `python -m venv name` to create
+2. `source name/bin/activate` to activate
+3. `deactivate` to leave
+4. One venv per project — always

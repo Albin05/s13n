@@ -1,41 +1,22 @@
-# Editorials: Import Built-in Modules
+## Editorials: Import And Use Built-In Modules
 
-## Problem 1
+---
+
+### Q1 Solution
+
 ```python
-# Solution code
+import math
+print(math.sqrt(144))    # 12.0
+print(math.ceil(4.3))    # 5
+print(math.floor(4.7))   # 4
+print(math.pi)           # 3.14159...
+print(math.factorial(5)) # 120
 ```
 
-### Explanation
-Detailed explanation of the solution.
+---
 
-## Problem 2
-```python
-# Solution code
-```
+### Q2-Q5: See Question Bank for problems. Key patterns:
 
-### Explanation
-Step-by-step walkthrough.
-
-## Problem 3
-```python
-# Solution code
-```
-
-### Explanation
-How the solution works.
-
-## Problem 4
-```python
-# Solution code
-```
-
-### Explanation
-Breaking down the approach.
-
-## Problem 5
-```python
-# Solution code
-```
-
-### Explanation
-Advanced solution explained.
+- Use `dir(module)` to explore available functions
+- Use `help(function)` for documentation
+- Combine modules for complex tasks

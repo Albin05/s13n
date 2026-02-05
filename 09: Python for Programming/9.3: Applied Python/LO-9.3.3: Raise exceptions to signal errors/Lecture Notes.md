@@ -1,96 +1,146 @@
-# Lecture Notes: Raise Exceptions
+## Lecture Notes: Raise Exceptions to Signal Errors
 
-## Raise Exceptions
-
-Manually triggering exceptions in your code
-
+**Duration:** 10 minutes
 
 ---
 
-<div align="center">
+### The `raise` Statement
 
-![Error handling and debugging](https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800&q=80)
-
-*Exception handling prevents your program from crashing on errors*
-
-</div>
-
----
-### Key Concepts
-
-**Core principle**: raise ExceptionType('message')
-
-### Syntax and Usage
-
-```python
-# Basic example will be shown in practical examples below
-```
-
-### Practical Examples
-
-#### Example 1: Basic Exception Raising
-
-```python
-def divide(a, b):
-    if b == 0:
-        raise ValueError("Cannot divide by zero")
-    return a / b
-
-try:
-    result = divide(10, 0)
-except ValueError as e:
-    print(f"Error: {e}")
-# Output: Error: Cannot divide by zero
-```
-
-#### Example 2: Input Validation
+Use `raise` to intentionally trigger an exception:
 
 ```python
 def set_age(age):
-    if not isinstance(age, int):
-        raise TypeError("Age must be an integer")
     if age < 0:
         raise ValueError("Age cannot be negative")
     if age > 150:
         raise ValueError("Age seems unrealistic")
     return age
 
-try:
-    age = set_age(-5)
-except ValueError as e:
-    print(f"Invalid age: {e}")
+set_age(-5)  # ValueError: Age cannot be negative
 ```
 
-#### Example 3: Re-raising Exceptions
+---
+
+### Why Raise Exceptions?
+
+Raising exceptions lets you **signal errors early** instead of letting bad data propagate:
+
+```python
+# BAD: silent failure
+def divide(a, b):
+    if b == 0:
+        return None  # Caller might forget to check!
+
+# GOOD: loud failure
+def divide(a, b):
+    if b == 0:
+        raise ZeroDivisionError("Cannot divide by zero")
+    return a / b
+```
+
+---
+
+### Raising Different Exception Types
+
+```python
+# ValueError — bad value
+def set_score(score):
+    if not 0 <= score <= 100:
+        raise ValueError(f"Score must be 0-100, got {score}")
+
+# TypeError — wrong type
+def greet(name):
+    if not isinstance(name, str):
+        raise TypeError(f"Expected string, got {type(name).__name__}")
+    return f"Hello, {name}!"
+
+# RuntimeError — general runtime issue
+def connect():
+    if not network_available:
+        raise RuntimeError("No network connection")
+```
+
+---
+
+### Re-raising Exceptions
+
+Catch an exception, do something, then re-raise it:
 
 ```python
 def process_data(data):
     try:
-        result = int(data)
-        return result
-    except ValueError:
-        print("Logging error...")
-        raise  # Re-raise the same exception
+        result = transform(data)
+    except ValueError as e:
+        print(f"Logging error: {e}")
+        raise  # Re-raises the same exception
 ```
 
-### Best Practices
+`raise` without arguments re-raises the current exception.
 
-1. Write clear, readable code
-2. Handle errors appropriately
-3. Follow Python conventions
-4. Document your code
-5. Test thoroughly
+---
 
-### Common Mistakes
+### Raising with Custom Messages
 
-1. Not handling edge cases
-2. Overcomplicating simple tasks
-3. Not following naming conventions
+```python
+def withdraw(balance, amount):
+    if amount <= 0:
+        raise ValueError(f"Amount must be positive, got {amount}")
+    if amount > balance:
+        raise ValueError(f"Insufficient funds: balance={balance}, requested={amount}")
+    return balance - amount
+```
+
+Good error messages include:
+- What went wrong
+- What was expected
+- What was received
+
+---
+
+### Practical Examples
+
+**1. Input Validation:**
+```python
+def create_user(name, email):
+    if not name or not name.strip():
+        raise ValueError("Name cannot be empty")
+    if '@' not in email:
+        raise ValueError(f"Invalid email: {email}")
+    return {'name': name.strip(), 'email': email.lower()}
+```
+
+**2. Precondition Checking:**
+```python
+def calculate_average(numbers):
+    if not numbers:
+        raise ValueError("Cannot average empty list")
+    if not all(isinstance(n, (int, float)) for n in numbers):
+        raise TypeError("All elements must be numbers")
+    return sum(numbers) / len(numbers)
+```
+
+**3. State Validation:**
+```python
+class Oven:
+    def __init__(self):
+        self.temperature = 0
+        self.is_on = False
+    
+    def bake(self, item):
+        if not self.is_on:
+            raise RuntimeError("Oven is not turned on")
+        if self.temperature < 100:
+            raise RuntimeError(f"Temperature too low: {self.temperature}°C")
+        return f"Baking {item} at {self.temperature}°C"
+```
+
+---
 
 ### Key Takeaways
 
-1. Understanding the core concept is essential
-2. Practice with real examples
-3. Apply best practices
-4. Avoid common pitfalls
-5. Write clean, maintainable code
+1. `raise ExceptionType("message")` triggers an exception
+2. Use specific exception types (`ValueError`, `TypeError`, etc.)
+3. Include helpful error messages with context
+4. `raise` alone re-raises the current exception
+5. Raise exceptions early to catch bugs before they propagate
+6. Prefer raising exceptions over returning error codes or None

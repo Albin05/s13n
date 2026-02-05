@@ -1,46 +1,33 @@
-# Post-Class Quiz: Import Custom Modules
+## Post-class Quiz: Import And Use Custom Modules
 
-## Q1: Question about Creating and importing your own modules
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+### Question 1
+What makes a Python file a module?
 
-## Q2: Syntax question
-A) Option A
-B) Option B
-C) Option C
+A) It must contain a class
+B) Any .py file is automatically a module
+C) Only files with __init__ are modules
+D) Files must be registered as modules
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+**Correct Answer: B**
 
-## Q3: Practical application
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-C - Explanation
-</details>
+### Question 2
+What does `if __name__ == "__main__":` do?
 
-## Q4: Best practices
-A) Option A
-B) Option B
-C) Option C
+A) Imports the module
+B) Runs code only when file is executed directly, not imported
+C) Makes the file executable
+D) Defines the main function
 
-<details><summary>Answer</summary>
-B - Explanation
-</details>
+**Correct Answer: B**
 
-## Q5: Common mistakes
-A) Option A
-B) Option B
-C) Option C
+---
 
-<details><summary>Answer</summary>
-A - Explanation
-</details>
+### Question 3-5
+
+*(Additional quiz questions following the same format covering: package structure, __init__.py, circular imports)*
+
+---

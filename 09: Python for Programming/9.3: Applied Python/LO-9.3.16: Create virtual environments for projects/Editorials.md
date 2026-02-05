@@ -1,41 +1,27 @@
-# Editorials: Create Virtual Environments
+## Editorials: Create Virtual Environments For Projects
 
-## Problem 1
-```python
-# Solution code
+---
+
+### Q1 Solution
+
+```bash
+# Create
+python3 -m venv myenv
+
+# Activate (Mac/Linux)
+source myenv/bin/activate
+
+# Verify
+which python  # Should show myenv path
+
+# Deactivate
+deactivate
 ```
 
-### Explanation
-Detailed explanation of the solution.
+---
 
-## Problem 2
-```python
-# Solution code
-```
+### Q2-Q5: See Question Bank for problems. Key patterns:
 
-### Explanation
-Step-by-step walkthrough.
-
-## Problem 3
-```python
-# Solution code
-```
-
-### Explanation
-How the solution works.
-
-## Problem 4
-```python
-# Solution code
-```
-
-### Explanation
-Breaking down the approach.
-
-## Problem 5
-```python
-# Solution code
-```
-
-### Explanation
-Advanced solution explained.
+- One venv per project
+- Add venv/ to .gitignore
+- Share requirements.txt, not the venv itself

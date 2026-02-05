@@ -1,93 +1,170 @@
-# Lecture Notes: Handle Multiple Exception Types
+## Lecture Notes: Handle Multiple Exception Types Gracefully
 
-## Handle Multiple Exception Types
-
-Catching and handling different exception types
-
+**Duration:** 10 minutes
 
 ---
 
-<div align="center">
+### Multiple except Blocks
 
-![Different data types representation](https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80)
-
-*Python supports multiple data types: integers, floats, strings, and booleans*
-
-</div>
-
----
-### Key Concepts
-
-**Core principle**: except (TypeError, ValueError): ...
-
-### Syntax and Usage
+Handle each exception type differently:
 
 ```python
-# Basic example will be shown in practical examples below
+def process_input(data, index):
+    try:
+        value = int(data[index])
+        result = 100 / value
+        return result
+    except IndexError:
+        print(f"Index {index} out of range")
+    except ValueError:
+        print(f"Cannot convert '{data[index]}' to integer")
+    except ZeroDivisionError:
+        print("Cannot divide by zero")
 ```
 
-### Practical Examples
+Python checks each `except` in order. The first matching one runs.
 
-#### Example 1: Multiple Except Blocks
+---
+
+### Catching Multiple Types Together
+
+When you want the same handler for several exceptions:
 
 ```python
 try:
-    value = int(input("Enter number: "))
-    result = 10 / value
+    result = process(data)
+except (ValueError, TypeError, KeyError) as e:
+    print(f"Input error: {e}")
+except (IOError, OSError) as e:
+    print(f"System error: {e}")
+```
+
+---
+
+### Exception Hierarchy Matters
+
+Python exceptions form a hierarchy. Catching a parent catches all children:
+
+```python
+# OSError is parent of FileNotFoundError, PermissionError, etc.
+try:
+    f = open("secret.txt")
+except FileNotFoundError:
+    print("File doesn't exist")
+except PermissionError:
+    print("No permission")
+except OSError:
+    print("Other OS error")  # catches remaining OSError subtypes
+```
+
+**Order matters:** specific exceptions first, general ones last.
+
+```python
+# WRONG — OSError catches everything, others never run
+try:
+    f = open("file.txt")
+except OSError:
+    print("OS error")        # Catches FileNotFoundError too!
+except FileNotFoundError:
+    print("Not found")       # NEVER reached
+```
+
+---
+
+### The Exception Base Class
+
+`Exception` catches almost everything:
+
+```python
+try:
+    risky_operation()
 except ValueError:
-    print("Please enter a valid number")
-except ZeroDivisionError:
-    print("Cannot divide by zero")
+    handle_value_error()
+except TypeError:
+    handle_type_error()
 except Exception as e:
-    print(f"Unexpected error: {e}")
+    # Catches any remaining exception
+    print(f"Unexpected error: {type(e).__name__}: {e}")
 ```
 
-#### Example 2: Tuple of Exceptions
+---
+
+### try-except-else-finally
+
+The complete structure:
 
 ```python
 try:
-    # Code that might raise multiple exceptions
-    data = {"key": "value"}
-    result = int(data["missing_key"])
-except (KeyError, ValueError, TypeError) as e:
-    print(f"Data processing error: {e}")
+    result = operation()      # Might fail
+except SpecificError:
+    handle_error()            # Runs if that error occurs
+else:
+    use_result(result)        # Runs only if NO error
+finally:
+    cleanup()                 # ALWAYS runs
 ```
 
-#### Example 3: Exception Hierarchy
-
+Example:
 ```python
 def read_config(filename):
     try:
-        with open(filename) as f:
-            config = json.load(f)
-        return config
+        f = open(filename)
     except FileNotFoundError:
-        print("Config file not found")
-    except json.JSONDecodeError:
-        print("Invalid JSON in config")
-    except Exception as e:
-        print(f"Unexpected error: {e}")
-    return {}
+        print(f"Config not found, using defaults")
+        return {}
+    else:
+        import json
+        config = json.load(f)
+        return config
+    finally:
+        print("Config loading complete")
 ```
 
-### Best Practices
+---
 
-1. Write clear, readable code
-2. Handle errors appropriately
-3. Follow Python conventions
-4. Document your code
-5. Test thoroughly
+### Practical Examples
 
-### Common Mistakes
+**1. Robust Data Processor:**
+```python
+def safe_process(records):
+    results = []
+    errors = []
+    for i, record in enumerate(records):
+        try:
+            name = record['name']
+            score = float(record['score'])
+            results.append((name, score))
+        except KeyError as e:
+            errors.append(f"Record {i}: missing key {e}")
+        except (ValueError, TypeError) as e:
+            errors.append(f"Record {i}: {e}")
+    return results, errors
+```
 
-1. Not handling edge cases
-2. Overcomplicating simple tasks
-3. Not following naming conventions
+**2. Multi-Source Data Loader:**
+```python
+def load_data(sources):
+    for source in sources:
+        try:
+            if source.endswith('.json'):
+                return load_json(source)
+            elif source.endswith('.csv'):
+                return load_csv(source)
+        except FileNotFoundError:
+            continue
+        except (json.JSONDecodeError, csv.Error) as e:
+            print(f"Error in {source}: {e}")
+            continue
+    raise FileNotFoundError("No valid data source found")
+```
+
+---
 
 ### Key Takeaways
 
-1. Understanding the core concept is essential
-2. Practice with real examples
-3. Apply best practices
-4. Avoid common pitfalls
-5. Write clean, maintainable code
+1. List specific exceptions before general ones
+2. Group related exceptions with `(ExcA, ExcB)`
+3. Use `as e` to access error details
+4. `else` runs when no exception occurs
+5. `finally` always runs — for cleanup
+6. Catch `Exception` as a last resort, not as a first choice

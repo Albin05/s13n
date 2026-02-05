@@ -1,41 +1,92 @@
-# Editorials: Handle File Paths
+## Editorials: Handle File Paths Across Platforms
 
-## Problem 1
+---
+
+### Q1 Solution: Basic Path Operations
+
 ```python
-# Solution code
+from pathlib import Path
+
+p = Path("documents/reports/annual.txt")
+print(f"Name: {p.name}")       # annual.txt
+print(f"Stem: {p.stem}")       # annual
+print(f"Suffix: {p.suffix}")   # .txt
+print(f"Parent: {p.parent}")   # documents/reports
+print(f"Absolute: {p.is_absolute()}")  # False
 ```
 
-### Explanation
-Detailed explanation of the solution.
+---
 
-## Problem 2
+### Q2 Solution: Build Paths Dynamically
+
 ```python
-# Solution code
+from pathlib import Path
+
+def build_output_path(base_dir, project, filename):
+    return Path(base_dir) / project / "output" / filename
+
+path = build_output_path("/home/user", "myproject", "data.csv")
+print(path)  # /home/user/myproject/output/data.csv
 ```
 
-### Explanation
-Step-by-step walkthrough.
+---
 
-## Problem 3
+### Q3 Solution: Directory Explorer
+
 ```python
-# Solution code
+from pathlib import Path
+
+def list_files(directory, extension=None):
+    d = Path(directory)
+    if not d.exists():
+        print(f"Directory not found: {d}")
+        return []
+    if extension:
+        files = sorted(d.glob(f"*{extension}"))
+    else:
+        files = sorted(f for f in d.iterdir() if f.is_file())
+    return files
 ```
 
-### Explanation
-How the solution works.
+---
 
-## Problem 4
+### Q4 Solution: Path Resolver
+
 ```python
-# Solution code
+from pathlib import Path
+
+def resolve_path(path_string):
+    p = Path(path_string).expanduser().resolve()
+    return {
+        "original": path_string,
+        "resolved": str(p),
+        "exists": p.exists(),
+        "type": "file" if p.is_file() else "dir" if p.is_dir() else "neither",
+        "parent": str(p.parent)
+    }
+
+print(resolve_path("~/Documents"))
+print(resolve_path("./nonexistent.txt"))
 ```
 
-### Explanation
-Breaking down the approach.
+---
 
-## Problem 5
+### Q5 Solution: File Organizer
+
 ```python
-# Solution code
-```
+from pathlib import Path
+from collections import defaultdict
 
-### Explanation
-Advanced solution explained.
+def organize_files(source_dir):
+    d = Path(source_dir)
+    groups = defaultdict(list)
+    for f in d.iterdir():
+        if f.is_file():
+            ext = f.suffix if f.suffix else "(no extension)"
+            groups[ext].append(f.name)
+    
+    for ext in sorted(groups):
+        print(f"\n{ext} ({len(groups[ext])} files):")
+        for name in sorted(groups[ext]):
+            print(f"  {name}")
+```

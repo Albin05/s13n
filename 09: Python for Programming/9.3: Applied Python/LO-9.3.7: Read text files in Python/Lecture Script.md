@@ -1,25 +1,91 @@
-# Lecture Script: LO-49 Read Text Files
+## Lecture Script: Read Text Files in Python
 
-## [0:00-0:02] Hook (2 min)
-Engaging introduction to file reading with open().
+**Duration:** 12 minutes
 
-## [0:02-0:10] Core Concept (8 min)
-Teaching file reading with open() with clear examples.
+---
 
-### Live Coding
-Demonstrate file reading with open() step by step.
+### Hook (2 minutes)
 
-## [0:10-0:16] Practice Examples (6 min)
-Multiple examples showing different use cases.
+Every application reads files — config files, log files, data files, user documents. Python makes it simple:
 
-## [0:16-0:20] Real-World Application (4 min)
-Practical example students can relate to.
+```python
+with open("data.txt") as f:
+    content = f.read()
+```
 
-## [0:20-0:22] Wrap-up (2 min)
-Summary of key points and best practices.
+Three lines to read any text file. Today we master every way to read files.
 
-## Key Points to Reinforce
-- Core concepts of file reading with open()
-- Syntax and usage
-- Common patterns
-- When to use file reading with open()
+---
+
+### Section 1: Opening Files (2 minutes)
+
+```python
+# Always use 'with' — auto-closes the file
+with open("data.txt") as f:
+    content = f.read()
+
+# Without 'with' (don't do this)
+f = open("data.txt")
+content = f.read()
+f.close()  # Easy to forget!
+```
+
+---
+
+### Section 2: Three Reading Methods (3 minutes)
+
+```python
+# read() — entire file as string
+with open("data.txt") as f:
+    everything = f.read()
+
+# readline() — one line at a time
+with open("data.txt") as f:
+    first = f.readline()
+    second = f.readline()
+
+# readlines() — all lines as a list
+with open("data.txt") as f:
+    all_lines = f.readlines()  # ['line1\n', 'line2\n']
+```
+
+---
+
+### Section 3: Line-by-Line Iteration (3 minutes)
+
+```python
+# Best approach — memory efficient
+with open("big_file.txt") as f:
+    for line in f:
+        print(line.strip())
+```
+
+Always use `.strip()` to remove the trailing newline.
+
+With line numbers:
+```python
+with open("data.txt") as f:
+    for i, line in enumerate(f, 1):
+        print(f"{i}: {line.strip()}")
+```
+
+---
+
+### Section 4: Error Handling (1 minute)
+
+```python
+try:
+    with open("data.txt") as f:
+        content = f.read()
+except FileNotFoundError:
+    print("File not found!")
+```
+
+---
+
+### Summary (1 minute)
+
+1. Use `with open()` — always
+2. `read()` for small files, iteration for large files
+3. `.strip()` to clean newlines
+4. Handle `FileNotFoundError`

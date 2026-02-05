@@ -1,48 +1,53 @@
-# Pre-Read: Create Objects
+## Pre-Read: Create Objects from Class Definitions
 
-## Creating Objects
+**Duration:** 5 minutes
 
-An object is an instance of a class:
+---
 
-```python
-class Book:
-    pass
-
-# Create objects (instances)
-book1 = Book()
-book2 = Book()
-book3 = Book()
-```
-
-## Each Object is Unique
+### Creating Objects
 
 ```python
-class Student:
-    pass
+class Dog:
+    def __init__(self, name, breed):
+        self.name = name
+        self.breed = breed
 
-alice = Student()
-bob = Student()
-
-print(alice == bob)  # False - different objects
+# Each call creates a new, independent object
+d1 = Dog("Rex", "Lab")
+d2 = Dog("Max", "Poodle")
 ```
 
-## Why Create Objects?
+---
 
-- Represent individual items (each student, each book)
-- Store different data for each instance
-- Perform actions on specific instances
-
-## Example: Multiple Cars
+### Objects Are Independent
 
 ```python
-class Car:
-    def honk(self):
-        print("Beep beep!")
-
-car1 = Car()
-car2 = Car()
-
-car1.honk()  # Beep beep!
-car2.honk()  # Beep beep!
-# Same behavior, different objects
+d1.name = "Buddy"
+print(d1.name)  # Buddy
+print(d2.name)  # Max (unchanged)
 ```
+
+---
+
+### Type Checking
+
+```python
+print(type(d1))              # <class '__main__.Dog'>
+print(isinstance(d1, Dog))   # True
+```
+
+---
+
+### Try This
+
+```python
+class Item:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+items = [Item("Pen", 1.5), Item("Book", 12.0), Item("Bag", 25.0)]
+for item in items:
+    print(f"{item.name}: ${item.price}")
+```
+

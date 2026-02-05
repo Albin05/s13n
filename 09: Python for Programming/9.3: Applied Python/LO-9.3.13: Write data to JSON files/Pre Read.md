@@ -1,42 +1,41 @@
-# Pre-Read: Write JSON Files
+## Pre-Read: Write Data to JSON Files
 
-## Saving Python Data as JSON
+**Duration:** 5 minutes
 
-Convert Python dictionaries and lists to JSON:
+---
+
+### Writing JSON
 
 ```python
 import json
+data = {"name": "Alice", "age": 25}
 
-data = {
-    "name": "Alice",
-    "age": 25,
-    "skills": ["Python", "JavaScript"]
-}
-
-with open("data.json", "w") as file:
-    json.dump(data, file, indent=2)
+with open("output.json", "w") as f:
+    json.dump(data, f, indent=2)
 ```
 
-## Pretty Printing
+---
+
+### Key Functions
+
+- `json.dump(data, file)` — write to file
+- `json.dumps(data)` — convert to string
+
+---
+
+### Pretty Printing
 
 ```python
-# Without indent (compact)
-{"name":"Alice","age":25}
-
-# With indent (readable)
-{
-  "name": "Alice",
-  "age": 25
-}
+json.dump(data, f, indent=2)  # Human-readable
+json.dump(data, f)             # Compact (one line)
 ```
 
-## What Can Be Saved?
+---
 
-✅ Dictionaries, Lists, Strings, Numbers, Booleans, None
-❌ Functions, Classes, File objects
+### Try This
 
-## Why Save as JSON?
-
-1. **Configuration files**: Store settings
-2. **Data exchange**: Send data between programs
-3. **APIs**: Standard format for web services
+```python
+import json
+scores = [{"name": "Alice", "score": 92}, {"name": "Bob", "score": 85}]
+print(json.dumps(scores, indent=2))
+```

@@ -1,37 +1,59 @@
-# Pre-Read: Handle Exceptions with Try-Except
+## Pre-Read: Handle Exceptions Using try-except Blocks
 
-## What are Exceptions?
+**Duration:** 5 minutes
 
-Errors that occur during program execution.
+---
 
-```python
-number = int("abc")  # ValueError!
-```
+### The Problem
 
-## Try-Except Blocks
-
-Handle errors gracefully:
+Programs crash when something unexpected happens:
 
 ```python
-try:
-    number = int("abc")
-except ValueError:
-    print("Invalid number!")
-# Output: Invalid number!
+number = int("hello")  # CRASH! ValueError
+result = 10 / 0        # CRASH! ZeroDivisionError
 ```
 
-## Why Use Try-Except?
+---
 
-1. **Prevent crashes**: Keep program running
-2. **User-friendly**: Show helpful messages
-3. **Robust code**: Handle unexpected input
-
-## Basic Example
+### The Solution: try-except
 
 ```python
 try:
-    age = int(input("Enter age: "))
-    print(f"You are {age} years old")
+    number = int("hello")
 except ValueError:
-    print("Please enter a number!")
+    print("That's not a number!")
+# Program continues normally
 ```
+
+**How it works:**
+1. Python tries the code in `try`
+2. If an error occurs, it jumps to `except`
+3. If no error, `except` is skipped
+4. Either way, the program continues after
+
+---
+
+### Common Errors You'll Handle
+
+| Error | Cause |
+|-------|-------|
+| `ValueError` | Wrong value (e.g., `int("abc")`) |
+| `ZeroDivisionError` | Dividing by zero |
+| `IndexError` | List index out of range |
+| `KeyError` | Dict key not found |
+| `FileNotFoundError` | File doesn't exist |
+| `TypeError` | Wrong type for operation |
+
+---
+
+### Try This
+
+```python
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+print("Program still running!")
+```
+
+What prints? Both lines — the error is caught, and execution continues.

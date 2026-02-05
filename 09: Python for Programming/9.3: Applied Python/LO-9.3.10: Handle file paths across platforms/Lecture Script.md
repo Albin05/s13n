@@ -1,24 +1,83 @@
-# Lecture Script: LO-52 Handle File Paths
+## Lecture Script: Handle File Paths Across Platforms
 
-## [0:00-0:02] Hook (2 min)
-Engaging introduction to Working with file paths using os.path.
+**Duration:** 12 minutes
 
-## [0:02-0:10] Core Concepts (8 min)
-Teaching Working with file paths using os.path with clear examples.
+---
 
-### Live Coding
-Demonstrate Working with file paths using os.path step by step.
+### Hook (2 minutes)
 
-## [0:10-0:16] Practical Examples (6 min)
-Multiple examples showing different use cases.
+Windows paths use backslashes: `C:\\Users\\alice\\data.txt`
+Mac/Linux use forward slashes: `/home/alice/data.txt`
 
-## [0:16-0:20] Real-World Application (4 min)
-Practical example students can relate to.
+Hardcoding either breaks on the other OS. Solution: `pathlib`.
 
-## [0:20-0:22] Wrap-up (2 min)
-Summary of key points.
+```python
+from pathlib import Path
+data_file = Path("home") / "alice" / "data.txt"
+# Works on ALL platforms!
+```
 
-## Key Points to Reinforce
-- Understanding Working with file paths using os.path
-- Practical applications
-- Best practices
+---
+
+### Section 1: Creating Paths (3 minutes)
+
+```python
+from pathlib import Path
+
+p = Path("documents/reports/annual.txt")
+print(p.name)    # annual.txt
+print(p.stem)    # annual
+print(p.suffix)  # .txt
+print(p.parent)  # documents/reports
+```
+
+Join paths with `/`:
+```python
+base = Path("/home/user")
+full = base / "projects" / "app" / "main.py"
+```
+
+---
+
+### Section 2: Checking Paths (3 minutes)
+
+```python
+p = Path("data.txt")
+p.exists()      # Does it exist?
+p.is_file()     # Is it a file?
+p.is_dir()      # Is it a directory?
+p.is_absolute() # Absolute path?
+p.resolve()     # Convert to absolute
+```
+
+---
+
+### Section 3: Working with Directories (3 minutes)
+
+```python
+d = Path("my_project")
+d.mkdir(exist_ok=True)           # Create directory
+d.mkdir(parents=True, exist_ok=True)  # Create nested
+
+# List files
+for f in d.iterdir():
+    print(f.name)
+
+# Find by pattern
+for f in d.glob("*.py"):
+    print(f)
+
+# Recursive search
+for f in d.rglob("*.txt"):
+    print(f)
+```
+
+---
+
+### Summary (1 minute)
+
+1. Use `pathlib.Path` — not string concatenation
+2. `/` operator joins paths safely
+3. `.name`, `.stem`, `.suffix`, `.parent` for components
+4. `.exists()`, `.is_file()`, `.is_dir()` for checks
+5. `.glob()` and `.rglob()` for searching

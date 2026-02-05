@@ -1,35 +1,54 @@
-## Pre-Read: Checking For Key Existence Using The 'In' Keyword
+## Pre-Read: Checking for Key Existence
 
 **Duration:** 5 minutes
 
 ---
 
-### Overview
+### The `in` Keyword
 
-Introduction to key in dict membership testing.
+```python
+data = {'name': 'Alice', 'age': 25}
+
+print('name' in data)   # True — key exists
+print('email' in data)  # False — key doesn't exist
+```
 
 ---
 
-### Basic Concept
+### Keys vs Values
 
-key existence, avoiding KeyError, efficient checking
-
----
-
-### Simple Example
-
-Quick code demonstration.
+```python
+# 'in' checks KEYS, not values
+print('Alice' in data)          # False — Alice is a value
+print('Alice' in data.values()) # True — check values explicitly
+```
 
 ---
 
 ### Why It Matters
 
-Importance and practical applications.
+```python
+data = {'x': 10}
+
+# Without checking:
+# print(data['y'])  # KeyError — crash!
+
+# With checking:
+if 'y' in data:
+    print(data['y'])
+else:
+    print("Not found")
+```
 
 ---
 
-### Key Takeaways
+### Try This
 
-- Understand key in dict membership testing
-- Apply key existence, avoiding KeyError, efficient checking
-- Use in practical scenarios
+```python
+config = {'debug': True, 'port': 8080}
+print('debug' in config)    # ?
+print(True in config)       # ?
+print('host' not in config) # ?
+```
+
+**Answers:** `True`, `False`, `True`

@@ -1,49 +1,138 @@
-## Lecture Script: Merging Dictionaries Using The Update() Method
+## Lecture Script: Merging Dictionaries Using update()
 
-**Duration:** 18 minutes
+**Duration:** 15 minutes
 
 ---
 
 ### Hook (2 minutes)
 
-Introduction to update() method and merge operators with practical scenario.
+Your app has a layered configuration:
 
-**Key Learning:** dict merging, update with dict, combining dictionaries
+```python
+defaults = {'debug': False, 'port': 3000, 'host': 'localhost'}
+# User says: "I want port 8080 and debug on"
+user = {'port': 8080, 'debug': True}
+```
 
----
+How do you combine them, with user preferences overriding defaults?
 
-### Section 1: Concept Overview (4 minutes)
+```python
+config = {**defaults, **user}
+print(config)  # {'debug': True, 'port': 8080, 'host': 'localhost'}
+```
 
-Understanding update() method and merge operators.
-
-**Core Concepts:**
-- dict merging, update with dict, combining dictionaries
-
----
-
-### Section 2: Syntax and Usage (5 minutes)
-
-Detailed syntax and practical examples.
-
-**Method/Operator:** update() method and merge operators
+One line. User preferences win. Defaults fill in the gaps. This is dictionary merging.
 
 ---
 
-### Section 3: Common Patterns (4 minutes)
+### Section 1: update() Basics (3 minutes)
 
-Best practices and common use cases.
+```python
+d1 = {'a': 1, 'b': 2}
+d2 = {'b': 20, 'c': 30}
+
+d1.update(d2)
+print(d1)  # {'a': 1, 'b': 20, 'c': 30}
+# d2 values override d1 for shared keys
+# d2 is unchanged
+```
+
+`update()` can also take keyword args:
+```python
+d1.update(x=100, y=200)
+```
+
+Or tuples:
+```python
+d1.update([('m', 10), ('n', 20)])
+```
 
 ---
 
-### Section 4: Applications (2 minutes)
+### Section 2: Creating New Merged Dicts (3 minutes)
 
-Real-world applications and scenarios.
+`update()` modifies in place. To create a new dict:
+
+```python
+d1 = {'a': 1, 'b': 2}
+d2 = {'b': 20, 'c': 30}
+
+# Unpacking
+merged = {**d1, **d2}
+print(merged)  # {'a': 1, 'b': 20, 'c': 30}
+print(d1)      # {'a': 1, 'b': 2} — unchanged!
+
+# | operator (Python 3.9+)
+merged = d1 | d2  # same result
+```
+
+---
+
+### Section 3: Merge Priority (2 minutes)
+
+Later dicts override earlier ones:
+
+```python
+layer1 = {'x': 1, 'y': 2}
+layer2 = {'y': 20, 'z': 30}
+layer3 = {'z': 300}
+
+result = {**layer1, **layer2, **layer3}
+print(result)  # {'x': 1, 'y': 20, 'z': 300}
+```
+
+To reverse priority, reverse the order:
+```python
+result = {**layer3, **layer2, **layer1}
+# layer1 wins for shared keys
+```
+
+---
+
+### Section 4: Practical Applications (3 minutes)
+
+**Config layering:**
+```python
+final = {**defaults, **env_config, **cli_args}
+```
+
+**Template system:**
+```python
+base_style = {'font': 'Arial', 'size': 12, 'color': 'black'}
+heading = {**base_style, 'size': 24, 'bold': True}
+```
+
+**Custom merge logic:**
+```python
+def merge_sum(d1, d2):
+    result = d1.copy()
+    for k, v in d2.items():
+        result[k] = result.get(k, 0) + v
+    return result
+```
+
+---
+
+### Section 5: Pitfalls (1 minute)
+
+**Shallow merge only:**
+```python
+d1 = {'settings': {'theme': 'dark', 'lang': 'en'}}
+d2 = {'settings': {'theme': 'light'}}
+
+merged = {**d1, **d2}
+print(merged)  # {'settings': {'theme': 'light'}}
+# 'lang' is LOST! Nested dicts are replaced, not merged
+```
+
+For deep merging, you need a custom function or a library.
 
 ---
 
 ### Summary (1 minute)
 
-**Key Takeaways:**
-- Master update() method and merge operators
-- Apply dict merging, update with dict, combining dictionaries
-- Use in practical scenarios
+1. `d1.update(d2)` — merge in place, d2 wins for shared keys
+2. `{**d1, **d2}` — new dict, d2 wins
+3. Order determines priority — last one wins
+4. Merging is **shallow** — nested dicts are replaced, not merged
+5. For custom logic (sum, max, lists), write a merge function

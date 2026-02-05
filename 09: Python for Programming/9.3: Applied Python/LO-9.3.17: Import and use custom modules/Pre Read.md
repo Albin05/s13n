@@ -1,16 +1,27 @@
-# Pre-Read: Import Custom Modules
+## Pre-Read: Import And Use Custom Modules
 
-## Overview
-This lesson covers Creating and importing your own modules.
+**Duration:** 5 minutes
 
-## Basic Concepts
-module files, __name__ == '__main__', import statements
+---
 
-## Why It Matters
-Understanding Creating and importing your own modules is essential for Python development.
+### What Is a Module?
 
-## What You'll Learn
-- Core concepts
-- Practical applications
-- Best practices
-- Common patterns
+Any Python file is a module. You can import functions from one file into another:
+
+```python
+# helpers.py
+def greet(name):
+    return f"Hello, {{name}}!"
+
+# main.py
+from helpers import greet
+print(greet("Alice"))
+```
+
+---
+
+### Key Points
+
+- Any .py file = a module
+- Import with `import filename` (without .py)
+- Use `from module import function` for specific items

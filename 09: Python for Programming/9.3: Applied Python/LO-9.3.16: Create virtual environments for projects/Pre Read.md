@@ -1,16 +1,24 @@
-# Pre-Read: Create Virtual Environments
+## Pre-Read: Create Virtual Environments For Projects
 
-## Overview
-This lesson covers Isolating project dependencies.
+**Duration:** 5 minutes
 
-## Basic Concepts
-venv creation, activation, deactivation
+---
 
-## Why It Matters
-Understanding Isolating project dependencies is essential for Python development.
+### What Is a Virtual Environment?
 
-## What You'll Learn
-- Core concepts
-- Practical applications
-- Best practices
-- Common patterns
+An isolated Python environment for each project:
+
+```bash
+python3 -m venv myenv    # Create
+source myenv/bin/activate # Activate
+pip install flask        # Install (only in this env)
+deactivate               # Leave
+```
+
+---
+
+### Key Points
+
+- One environment per project
+- Keeps dependencies isolated
+- Use `requirements.txt` to share setup
