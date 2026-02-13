@@ -1,24 +1,18 @@
-# LO-40.1.1: What is Machine Learning and Why It Matters
+# Info
 
-## Learning Objective
-Students will be able to define machine learning and explain its significance in modern technology.
+## Pre-Read & Lecture Duration Table
+| Item | Duration |
+| :--- | :--- |
+| Pre Read | 10 minutes |
+| Lecture Notes | 15 minutes |
+| Lecture Script | 20 minutes |
 
-## Duration
-20-25 minutes
-
-## Key Concepts Covered
-1. Definition of Machine Learning
-2. How ML differs from traditional programming
-3. Real-world impact and applications
-4. Why ML matters today
-
-## Prerequisites
-- Basic understanding of computers and programs
-- Interest in technology and data
-
-## Learning Outcomes
-By the end of this lesson, students will be able to:
-- Define machine learning in simple terms
-- Explain how ML differs from traditional programming
-- Identify why ML is important in today's world
-- Recognize ML applications in daily life
+## Assignment Problems Duration Table
+| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category | Type |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Q1 | 2 | Low | - | Knowledge | MCQ |
+| Q2 | 3 | Low | - | Implementation | Coding |
+| Q3 | 3 | Low | - | Knowledge | NAT |
+| Q4 | 5 | Medium | - | Application | MSQ |
+| Q5 | 5 | Medium | - | Application | Coding |
+| Q6 | 7 | High | - | Knowledge | Subjective |
