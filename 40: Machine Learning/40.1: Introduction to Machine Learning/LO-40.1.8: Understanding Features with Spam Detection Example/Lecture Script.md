@@ -1,31 +1,46 @@
-### Hook (3 min)
-Show two emails side by side
-Ask: "Which is spam? How did you know?"
-List their answers → These are FEATURES!
+# Lecture Script: Understanding Features with Spam Detection
 
-### Main Content (18 min)
-**What are Features (5 min)**
-- Definition with spam example
-- Show: treating all Bob's emails the same is bad
-- Introduce: features help distinguish
+## Topic Breakdown
 
-**Feature Analysis (8 min)**
-- Demonstrate: Day of week analysis
-- Demonstrate: File size analysis  
-- Build: Multi-feature model
-- Code: Show spam_score calculation
+### 1. Why do we need Features?
+* **Instructor Note:** Write "I am happy" on the board. Ask the computer to multiply that sentence by 5. It can't.
+* **Why:** Computers only understand numbers. We cannot feed raw text, images, or audio directly into a mathematical equation. We must convert "Real World" concepts into "Numbers" (Features).
 
-**Feature Selection (5 min)**
-- Good features vs bad features
-- Relevance matters
-- More ≠ better
-- Real example: house prices
+### 2. What is a Feature?
+* **Definition:** A specific, measurable attribute of the data.
+* **Notation:** usually denoted as $x_1, x_2, ..., x_n$.
+* **The Feature Vector:** The collection of all features for a single example.
+    * Example: Email $\to$ `[Contains_'Free', Length, Num_Exclamations]`.
+* **Feature Engineering:** The art of choosing *which* attributes matter.
+    * *Good Feature:* "Contains 'Prince of Nigeria'" (High correlation with Spam).
+    * *Bad Feature:* "Contains the letter 'e'" (Every email has this; useless).
 
-### Exercise (2 min)
-"List 4 features for predicting if a student will be late to class"
-Discuss answers
+### 3. How do we extract them?
+* **Method:** We write code to parse the raw data and output numbers.
+* **Code Example:**
+    Simple Feature Extraction for Spam.
 
-### Wrap-up (2 min)
-- Features = input properties
-- Choose relevant features
-- Quality > quantity
+    ```python
+    def extract_features(email_text):
+        # Feature 1: Length of email
+        length = len(email_text)
+        
+        # Feature 2: Count of explicit words
+        num_exclamations = email_text.count('!')
+        
+        # Feature 3: Binary check for 'free'
+        has_free = 1 if 'free' in email_text.lower() else 0
+        
+        return [length, num_exclamations, has_free]
+
+    email = "Get FREE money now!!!"
+    features = extract_features(email)
+    print(features) 
+    # Output: [21, 3, 1] -> This is what the model sees.
+    ```
+
+* **Visual Aid:**
+    
+
+* **Demo URL:**
+    [Spam Classifier Playground](https://example.com/spam-demo)
