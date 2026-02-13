@@ -1,4 +1,4 @@
-# Lecture Notes: Data vs Information
+# Data vs Information
 
 ## Key Concepts
 * **Data:** Raw facts and figures without context (e.g., `10110`, `34.5`).
