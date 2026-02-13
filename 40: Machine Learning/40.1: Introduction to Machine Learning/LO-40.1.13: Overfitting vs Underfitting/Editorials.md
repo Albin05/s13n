@@ -1,3 +1,4 @@
+
 # Editorials
 
 ## Q1
@@ -46,93 +47,99 @@ def check_overfitting(train_err, test_err):
         print("Overfitting")
     else:
         print("Normal")
+
 ```
-Q3
-Title
+
+---
+
+## Q3
+
+### Title
 
 Generalization Gap Calculation
 
-Problem Description
+### Problem Description
 
 Calculate the change in the gap between Train and Test accuracy.
 Initial: Train 100, Test 60.
 Final: Train 90, Test 75.
 
-Objective
+### Objective
 
 Quantify the improvement in generalization.
 
-Hint
+### Hint
 
 Gap = Train - Test. Calculate Initial Gap, Final Gap, then the difference.
 
-Short Explanation
+### Short Explanation
 
 Initial Gap: 40. Final Gap: 15. Difference: 25.
 
-Detailed Explanation
+### Detailed Explanation
 
-Initial Gap: 100%−60%=40%
+1. **Initial Gap:** 
+2. **Final Gap:** 
+3. **Decrease:**  percentage points.
 
-Final Gap: 90%−75%=15%
+---
 
-Decrease: 40−15=25 percentage points.
+## Q4
 
-Q4
-Title
+### Title
 
 Prevention Techniques
 
-Problem Description
+### Problem Description
 
 Select methods to stop Overfitting.
 
-Objective
+### Objective
 
 Identify regularization and validation strategies.
 
-Hint
+### Hint
 
 Anything that simplifies the model or checks its performance on unseen data helps.
 
-Short Explanation
+### Short Explanation
 
 A, B, and C are correct. D (adding noise) can sometimes help but is not a standard "technique" in the same way; usually, we want clean data. (Though data augmentation is a valid technique, "adding noise" blindly is risky).
 
-Detailed Explanation
+### Detailed Explanation
 
-A (True): Cross-validation helps assess generalization.
+* **A (True):** Cross-validation helps assess generalization.
+* **B (True):** Regularization penalizes complex models.
+* **C (True):** Pruning simplifies decision trees.
+* **D (False/Debatable):** While noise injection is a technique, in this context, we usually want more *data*, not just noise.
 
-B (True): Regularization penalizes complex models.
+---
 
-C (True): Pruning simplifies decision trees.
+## Q5
 
-D (False/Debatable): While noise injection is a technique, in this context, we usually want more data, not just noise.
-
-Q5
-Title
+### Title
 
 Model Diagnosis Function
 
-Problem Description
+### Problem Description
 
 Classify model state based on accuracy scores.
 
-Objective
+### Objective
 
 Translate definitions into conditional logic.
 
-Hint
+### Hint
 
-Follow the if/else logic exactly as described.
+Follow the `if/else` logic exactly as described.
 
-Short Explanation
+### Short Explanation
 
 Standard conditional checks.
 
-Detailed Explanation
+### Detailed Explanation
 
-Python
+```python
 def diagnose_model(train_score, test_score):
     if train_score < 0.6:
         return "Underfitting"
@@ -140,32 +147,39 @@ def diagnose_model(train_score, test_score):
         return "Overfitting"
     else:
         return "Good Fit"
-Q6
-Title
+
+```
+
+---
+
+## Q6
+
+### Title
 
 Bias-Variance Tradeoff
 
-Problem Description
+### Problem Description
 
 Explain the relationship between Complexity, Bias, and Variance.
 
-Objective
+### Objective
 
 Connect the concepts of Over/Underfitting to statistical theory.
 
-Hint
+### Hint
 
 Simple models assume too much (Bias). Complex models vary too much (Variance).
 
-Short Explanation
+### Short Explanation
 
 Underfitting = High Bias (Too assumptions). Overfitting = High Variance (Too sensitive).
-+1
 
-Detailed Explanation
+### Detailed Explanation
 
-Bias: The error introduced by approximating a real-world problem with a simplified model. High Bias → Underfitting.
+* **Bias:** The error introduced by approximating a real-world problem with a simplified model. High Bias  Underfitting.
+* **Variance:** The error introduced by the model's sensitivity to small fluctuations in the training set. High Variance  Overfitting.
+* **Tradeoff:** As we **increase complexity**, Bias decreases (model fits better) but Variance increases (model becomes unstable). We must find the optimal balance.
 
-Variance: The error introduced by the model's sensitivity to small fluctuations in the training set. High Variance → Overfitting.
+```
 
-Tradeoff: As we increase complexity, Bias decreases (model fits better) but Variance increases (model becomes unstable). We must find the optimal balance.
+```
