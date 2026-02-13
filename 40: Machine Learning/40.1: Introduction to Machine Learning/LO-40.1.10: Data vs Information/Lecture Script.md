@@ -1,35 +1,42 @@
-### Hook (3 min)
-Show: Random numbers "23, 45, 67, 12"
-Ask: "What does this mean?"
-Show: "Test scores - Average: 36.75, Failing grades"
-Say: "Same numbers, now meaningful! That's data vs information."
+# Lecture Script: Data vs Information
 
-### Main Content (18 min)
-**Data Definition (5 min)**
-- Raw materials analogy
-- Computer context
-- Examples: numbers, text, dates
-- Key: No meaning by itself
+## Topic Breakdown
 
-**Information Definition (5 min)**
-- Processed data
-- House building analogy
-- Temperature example
-- Key: Useful and meaningful
+### 1. Why do we distinguish Data from Information?
+* **Instructor Note:** Start by asking students if they think a spreadsheet of 10,000 rows is "useful" on its own.
+* **Why:** Machine Learning is essentially a machine's process of converting **Data** into **Information** (and eventually predictions). If we feed a model raw noise (bad data), we get no information (bad predictions). Understanding the transition from raw input to actionable insight is the foundation of feature engineering and data preprocessing.
 
-**ML Context (8 min)**
-- Raw data trains models
-- Models produce information
-- Information enables decisions
-- Real example: Sales analysis
-- Show transformation flow
+### 2. What is the difference?
+* **Definition:**
+    * **Data:** Raw, unorganized facts (Numbers, characters, images, pixels).
+    * **Information:** Processed data with context, meaning, and purpose.
+* **Key Attributes:**
+    * Data is the input; Information is the output.
+    * Data is often unstructured; Information is structured.
+* **Analogy:**
+    * **Data:** Flour, eggs, sugar, butter.
+    * **Information:** A baked cake.
+    * **Processing:** The baking recipe (The Algorithm).
 
-### Exercise (2 min)
-Given data: "100, 150, 120, 180, 110"
-"Convert this to information about a store's daily sales"
+### 3. How do we transform Data into Information?
+* **Method:** We apply processing steps such as filtering, aggregating, summarizing, or visualizing.
+* **Code Example:**
+    Let's look at a simple Python example using a list of raw test scores.
 
-### Wrap-up (2 min)
-- Data = ingredients
-- Information = meal
-- ML cooks data into information
-- Need both for decision-making
+    ```python
+    # DATA: Raw list of scores. Hard to interpret at a glance.
+    student_scores = [45, 88, 92, 76, 55, 89, 34, 99]
+
+    # PROCESSING: Calculating the average
+    average_score = sum(student_scores) / len(student_scores)
+    
+    # INFORMATION: Contextualized insight
+    print(f"The class average is {average_score:.2f}")
+    # Output: The class average is 72.25
+    ```
+
+* **Visual Aid:**
+    ![S3 Image: Slide showing the flow: Input (Data) -> Processing (Filter/Sort/Calc) -> Output (Information)]
+
+* **Demo URL:**
+    [Interactive Data Processing Pipeline Demo](https://example.com/demo-pipeline)
