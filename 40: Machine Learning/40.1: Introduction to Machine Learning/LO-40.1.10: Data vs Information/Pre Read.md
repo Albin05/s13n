@@ -1,4 +1,4 @@
-# Pre-Read: Data vs Information
+# Data vs Information
 
 ## Concept
 In the realm of Machine Learning and Computer Science, **Data** and **Information** are distinct concepts often used interchangeably in casual conversation.
@@ -17,3 +17,4 @@ Consider a weather station sensor.
 ## External Resources
 * [Blog: The DIKW Pyramid (Data, Information, Knowledge, Wisdom)](https://example.com/dikw-pyramid)
 * [Video: Data vs Information in 2 Minutes](https://example.com/data-vs-info-video)
+
