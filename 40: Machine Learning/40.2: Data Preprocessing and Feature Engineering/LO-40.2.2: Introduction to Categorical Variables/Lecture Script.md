@@ -1,38 +1,47 @@
-### Hook (3 min)
-Show list: "Red, Blue, Green"
-Ask: "What's the average of these colors?"
-Response: "Can't average colors!"
-Say: "Exactly! These are CATEGORICAL variables."
+# Lecture Script: Introduction to Categorical Variables
 
-### Main Content (18 min)
-**What Are Categorical Variables (5 min)**
-- Definition: Categories/labels/groups
-- vs Numerical: Can't do math
-- Examples: color, gender, city
-- Real dataset example
+## Topic Breakdown
 
-**Types of Categorical (5 min)**
-- Nominal: No order (colors, cities)
-- Ordinal: Has order (size, rating)
-- Examples of each
-- When does order matter?
+### 1. Why is this a problem?
+* **Instructor Note:** Ask a student to calculate "Red + Blue". They can't.
+* **Why:** Computers are calculators. They need numbers. If you feed the string "Cat" into a Neural Network, it crashes. We *must* translate these text labels into numerical values.
 
-**The ML Problem (8 min)**
-- ML needs numbers
-- Can't multiply by 'Male'
-- Demo: Why this fails in regression
-- Income prediction example
-- Need to convert (encoding!)
+### 2. What are the types?
+* **Nominal (Names):**
+    * Variables where order doesn't matter.
+    * *Example:* "City". Is London > Paris? No.
+    * *Processing:* We typically use **One-Hot Encoding** (creating new columns like `is_London`, `is_Paris`).
+* **Ordinal (Order):**
+    * Variables where rank matters.
+    * *Example:* "Satisfaction". High > Medium > Low.
+    * *Processing:* We typically use **Label Encoding** (Low=1, Med=2, High=3) to preserve the rank.
 
-### Exercise (2 min)
-"Classify these as categorical or numerical:
-- Movie rating (1-5 stars)
-- Movie genre
-- Movie duration (minutes)
-- Director name"
+### 3. How do we detect them in code?
+* **Method:** In Pandas, these often have the data type `object` (string) or `category`.
+* **Code Example:**
+    Identifying and checking types.
 
-### Wrap-up (2 min)
-- Categorical = categories
-- Two types: nominal, ordinal
-- ML needs numbers
-- Next: How to convert!
+    ```python
+    import pandas as pd
+
+    data = {
+        'City': ['Paris', 'London', 'Paris'],    # Nominal
+        'Size': ['S', 'M', 'L'],                 # Ordinal
+        'Price': [100, 200, 150]                 # Numerical (Not categorical)
+    }
+    df = pd.DataFrame(data)
+
+    print(df.dtypes)
+    # City      object (Categorical)
+    # Size      object (Categorical)
+    # Price     int64  (Numerical)
+
+    print(df['City'].unique()) 
+    # ['Paris' 'London']
+    ```
+
+* **Visual Aid:**
+    !
+
+* **Demo URL:**
+    [Pandas Categorical Data Types](https://pandas.pydata.org/docs/user_guide/categorical.html)
