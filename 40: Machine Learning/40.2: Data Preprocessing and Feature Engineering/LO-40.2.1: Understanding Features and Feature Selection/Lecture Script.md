@@ -1,38 +1,52 @@
-### Hook (3 min)
-Show: Two identical houses, one costs $500k, one costs $300k
-Ask: "Why the difference?"
-Responses: location, size, age
-Say: "These are FEATURES! Today we learn to pick the right ones."
+# Lecture Script: Understanding Features and Feature Selection
 
-### Main Content (18 min)
-**Good vs Bad Features (6 min)**
-- Definition: What makes features good
-- House price example: good features
-- House price example: bad features
-- Key: Relevance to outcome
+## Topic Breakdown
 
-**Feature Selection Process (7 min)**
-- Step 1: Brainstorm all possible
-- Step 2: Evaluate relevance
-- Step 3: Check correlation
-- Step 4: Remove redundancy
-- Email spam example walkthrough
+### 1. Why do we need to select features?
+* **Instructor Note:** Write "Garbage In, Garbage Out" on the board.
+* **Why:** More data is not always better. Adding irrelevant features (noise) confuses the model.
+    * **Curse of Dimensionality:** As features increase, data becomes sparse, and models need exponentially more data to learn.
+    * **Overfitting:** The model learns patterns in the noise (e.g., "People named 'Bob' are more likely to crash cars" - a coincidence).
+    * **Performance:** Fewer features = Faster training and inference.
 
-**Common Mistakes (5 min)**
-- Too many features (overfitting)
-- Irrelevant features (noise)
-- Feature leakage (cheating!)
-- Data availability (can't use it)
-- Real examples of each
+### 2. What are the methods?
+* **Filter Methods:**
+    * *What:* Select features based on statistical scores (e.g., Correlation) *before* training the model.
+    * *Pros:* Fast, model-agnostic.
+    * *Cons:* Ignores interactions between features.
+* **Wrapper Methods:**
+    * *What:* Train the model with a subset of features, check accuracy, add/remove features, and repeat (e.g., RFE).
+    * *Pros:* Finds the best subset for *that specific* model.
+    * *Cons:* Very slow (computationally expensive).
+* **Embedded Methods:**
+    * *What:* The algorithm itself selects features during training (e.g., Lasso Regression).
+    * *Pros:* Good balance of accuracy and speed.
 
-### Exercise (2 min)
-"For predicting if a student will graduate:
-- List 5 good features
-- List 3 bad features"
-Discuss answers
+### 3. How do we implement it?
+* **Method:** We use statistical tests (ANOVA/Chi-Square) or model-based selection.
+* **Code Example:**
+    Removing low-variance features (features that are almost constant).
 
-### Wrap-up (2 min)
-- Quality beats quantity
-- Relevance is key
-- Check correlation
-- Avoid leakage
+    ```python
+    from sklearn.feature_selection import VarianceThreshold
+
+    # Data: 
+    # Col 1: Varied (Useful)
+    # Col 2: Constant (Useless - everyone has value 1)
+    X = [[0, 1, 0], 
+         [0, 1, 1], 
+         [1, 1, 0]]
+
+    # Threshold 0: Remove columns with 0 variance (constants)
+    selector = VarianceThreshold(threshold=0)
+    X_new = selector.fit_transform(X)
+
+    print(X_new)
+    # Output: Column 2 is removed.
+    ```
+
+* **Visual Aid:**
+    !
+
+* **Demo URL:**
+    [Feature Selection Playground](https://example.com/fs-playground)
