@@ -1,4 +1,4 @@
-# Pre-Read: Dimensionality Reduction with PCA
+# Dimensionality Reduction with PCA
 
 ## Concept
 In many Machine Learning problems, datasets have dozens, hundreds, or even thousands of features (columns). This leads to the **Curse of Dimensionality**, where models become slow, prone to overfitting, and hard to visualize.
@@ -17,3 +17,4 @@ Imagine a 3D object, like a teapot. You want to take a 2D photograph (reduce dim
 ## External Resources
 * [Article: PCA Explained Visually](https://setosa.io/ev/principal-component-analysis/)
 * [Video: StatQuest: PCA clearly explained](https://www.youtube.com/watch?v=FgakZw6K1QQ)
+
