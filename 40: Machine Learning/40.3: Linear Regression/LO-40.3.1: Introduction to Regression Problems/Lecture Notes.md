@@ -1,41 +1,22 @@
 # Introduction to Regression Problems
 
-## Learning Objectives
+## Definition
+**Regression** is a supervised learning task where the output variable is a real or continuous value, such as salary, weight, or price.
 
-By the end of this lesson, you will be able to:
-- Understand the key concepts of Introduction to Regression Problems
-- Apply these concepts to practical problems
-- Explain the importance of this topic in machine learning
+## Regression vs Classification
 
-## Introduction
+| Feature | Regression | Classification |
+| :--- | :--- | :--- |
+| **Output Type** | Continuous Quantity (Numbers) | Discrete Label (Categories) |
+| **Question** | "How much?" | "Which one?" |
+| **Examples** | House Price, Temperature, Stock Value | Spam vs Ham, Cat vs Dog, Tumor Types |
+| **Evaluation** | Mean Squared Error (Distance) | Accuracy (%) |
+| **Visualization** | Line of Best Fit | Decision Boundary |
 
-[Introduction to Introduction to Regression Problems]
+## Types of Regression
+1.  **Simple Linear Regression:** One input variable predicting one output.
+2.  **Multiple Linear Regression:** Multiple input variables predicting one output.
+3.  **Polynomial Regression:** Fitting a curved line.
 
-## Key Concepts
-
-### Concept 1
-
-[Explanation of first key concept]
-
-### Concept 2
-
-[Explanation of second key concept]
-
-## Examples
-
-### Example 1
-
-[Practical example demonstrating the concept]
-
-## Summary
-
-Key takeaways:
-1. [Key point 1]
-2. [Key point 2]
-3. [Key point 3]
-
-## Practice
-
-Questions to test your understanding:
-1. [Question 1]
-2. [Question 2]
+## Visual Summary
+!
