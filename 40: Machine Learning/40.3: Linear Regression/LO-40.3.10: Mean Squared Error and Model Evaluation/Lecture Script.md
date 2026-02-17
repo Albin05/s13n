@@ -1,4 +1,4 @@
-# Lecture Script: Mean Squared Error and Model Evaluation
+# Mean Squared Error and Model Evaluation
 
 ## Topic Breakdown
 
