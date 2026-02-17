@@ -1,38 +1,44 @@
-### Hook (3 min)
-Ask: "What's your age?" (Get number like 25)
-Ask: "What's your favorite color?" (Get category like Blue)
-Say: "Age = Regression (any number). Color = Classification (fixed options)."
+# Lecture Script: Regression vs Classification
 
-### Main Content (18 min)
-**The Core Difference (5 min)**
-- Regression: continuous numbers
-- Classification: discrete categories
-- Visual: infinite vs fixed
-- Key question format
+## Topic Breakdown
 
-**Examples Comparison (8 min)**
-- Student score vs pass/fail
-- Temperature vs rain yes/no
-- House price vs house type
-- Side-by-side table
-- Same data, different framing
+### 1. Why do we need to distinguish them?
+* **Instructor Note:** Ask the class, "If I want to predict if a student passes or fails, is that the same math as predicting their exact score out of 100?"
+* **Why:** The math changes completely.
+    * **Regression** minimizes "Distance" (Error).
+    * **Classification** maximizes "Probability" or "Separation" (Accuracy).
+    * You cannot use Mean Squared Error to evaluate a Cat/Dog classifier!
 
-**How to Decide (5 min)**
-- Decision flowchart
-- Questions to ask
-- Common pitfalls
-- Ordinal classification case
-- Practice identification
+### 2. What are the key differences?
+* **Output Type:**
+    * Regression $\to$ Continuous Number ($-\infty$ to $+\infty$).
+    * Classification $\to$ Discrete bucket (Class A, Class B).
+* **Evaluation Metrics:**
+    * Regression $\to$ MSE, MAE, $R^2$.
+    * Classification $\to$ Accuracy, Precision, Recall, F1-Score.
+* **Visual Geometry:**
+    * Regression $\to$ A line fitting *through* the data.
+    * Classification $\to$ A line separating the data *between* classes (Decision Boundary).
 
-### Exercise (2 min)
-"Classify these:
-1. Predict taxi fare
-2. Predict if customer satisfied
-3. Predict number of website visits
-4. Predict customer segment (A/B/C)"
+### 3. How do we code them?
+* **Method:** In libraries like Scikit-Learn, we use different classes (e.g., `LinearRegression` vs `LogisticRegression`).
+* **Code Example:**
+    ```python
+    # 1. REGRESSION (Predicting a number)
+    # Input: Years Experience -> Output: Salary
+    reg_model.fit(X, y_numbers)
+    print(reg_model.predict([[5]])) 
+    # Output: [50000.50] (Continuous)
 
-### Wrap-up (2 min)
-- Output type determines approach
-- Can't mix algorithms
-- Same data, different frames possible
-- Next: How regression actually works!
+    # 2. CLASSIFICATION (Predicting a class)
+    # Input: Hours Studied -> Output: Pass(1)/Fail(0)
+    clf_model.fit(X, y_classes)
+    print(clf_model.predict([[5]])) 
+    # Output: [1] (Discrete)
+    ```
+
+* **Visual Aid:**
+    [Image of side-by-side plots: Regression fit line vs Classification separation line]
+
+* **Demo URL:**
+    [Playground: Classification vs Regression](https://playground.tensorflow.org/) - *Toggle between "Classification" and "Regression" modes to see how the output changes.*
