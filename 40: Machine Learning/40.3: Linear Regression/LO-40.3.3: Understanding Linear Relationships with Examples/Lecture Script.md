@@ -1,37 +1,45 @@
-### Hook (3 min)
-Draw: Two points on board
-Ask: "Connect them" (students draw line)
-Say: "You just made a linear relationship! Today we learn why this matters for ML."
+# Lecture Script: Understanding Linear Relationships
 
-### Main Content (18 min)
-**What is Linear (5 min)**
-- Constant rate of change
-- Straight line
-- Taxi fare example
-- Visual: Plot points
-- Formula preview
+## Topic Breakdown
 
-**Real Examples (7 min)**
-- Taxi fare calculation
-- Temperature conversion
-- Savings account
-- House price vs sqft
-- Show graphs for each
+### 1. Why do we start with "Lines"?
+* **Instructor Note:** Draw a scatter plot that looks like a cloud (no pattern). Draw another that looks like a snake (curve). Draw one that looks like a line.
+* **Why:** The straight line is the simplest possible pattern in the universe. "If I double X, Y doubles." It is the foundation of almost all physics and economics. Before we try complex curves (Neural Networks), we must master the line.
 
-**Linear vs Non-Linear (6 min)**
-- Counter-examples: x², exponential
-- How to identify
-- Equal spacing test
-- Plot test
-- Real data approximation
+### 2. What defines a Linear Relationship?
+* **Constant Rate of Change:**
+    * If I study for 1 hour, my grade goes up by 5 points.
+    * If I study for 2 hours, my grade goes up by 10 points.
+    * The *rate* (5 points/hour) stays the same.
+* **The Equation ($y = mx + c$):**
+    * **$m$ (Slope):** The rate. Positive $m$ means they grow together (Height vs Weight). Negative $m$ means one goes up, the other goes down (Speed vs Time to Destination).
+    * **$c$ (Intercept):** The starting point.
 
-### Exercise (2 min)
-"Is this linear? Why?
-hours: 1, 2, 3, 4
-cost: $15, $20, $25, $30"
+### 3. How do we visualize it?
+* **Method:** We use Scatter Plots.
+* **Code Example:**
+    Generating and plotting linear data.
 
-### Wrap-up (2 min)
-- Linear = constant rate
-- Forms straight line
-- Foundation of linear regression
-- Next: The equation!
+    ```python
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    # Generate X values (0 to 10)
+    X = np.linspace(0, 10, 20)
+    
+    # Generate Y values with a formula: y = 3x + 7
+    # We add some random 'noise' because real life isn't perfect
+    noise = np.random.normal(0, 2, 20) 
+    y = (3 * X + 7) + noise
+
+    plt.scatter(X, y, label='Data')
+    plt.plot(X, 3*X + 7, color='red', label='True Line')
+    plt.legend()
+    plt.show()
+    ```
+
+* **Visual Aid:**
+    
+
+* **Demo URL:**
+    [Desmos Graphing Calculator](https://www.desmos.com/calculator/jwquvmikhr) - *Let students play with $m$ and $c$ sliders.*
