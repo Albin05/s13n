@@ -1,8 +1,17 @@
 ## Lecture Script: Install External Packages Using Pip
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: **pip** (2008) installs from **PyPI** (Python Package Index, 2003) — a repository of 500K+ packages. The name "pip" recursively stands for "pip installs packages."
+>
+> **Analogy**: pip + PyPI is like an **app store for code** — search, install, and update packages with one command.
+>
+> **Why it matters**: The Python ecosystem's strength is its packages — pip is how you access that power.
+
+
 
 ### Hook (2 minutes)
 

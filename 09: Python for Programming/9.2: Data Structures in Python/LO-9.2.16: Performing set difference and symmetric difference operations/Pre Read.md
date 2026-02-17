@@ -4,6 +4,46 @@
 
 ---
 
+## What Are These Operations?
+
+These are Python's **"what's missing?"** and **"what's different?"** operations - like finding gaps in your knowledge or disagreements between two lists!
+
+### Simple Analogies
+
+**Difference (A - B) like comparing checklists**:
+- **Your packing list**: Clothes, Laptop, Charger, Book
+- **Friend's packing list**: Laptop, Charger, Snacks, Camera
+- **Just yours (You - Friend)**: Clothes, Book
+- **Just theirs (Friend - You)**: Snacks, Camera
+- **Key point**: ORDER MATTERS! (A - B) ≠ (B - A)
+
+**Symmetric difference (A ^ B) like "total disagreements"**:
+- **Team A wants**: Pizza, Burgers, Tacos
+- **Team B wants**: Burgers, Tacos, Sushi
+- **Everyone agrees**: Burgers, Tacos (intersection)
+- **Disagreements (A ^ B)**: Pizza, Sushi (symmetric diff!)
+- **Meaning**: Items where teams DON'T agree
+
+### The "Subtraction" vs "XOR" Mental Model
+
+**Difference is like SUBTRACTION**:
+```python
+my_cart = {'shirt', 'pants', 'shoes', 'hat'}
+remove_these = {'shoes', 'hat'}
+final_cart = my_cart - remove_these
+# Result: {'shirt', 'pants'} - subtraction!
+```
+
+**Symmetric difference is like LIGHT SWITCH XOR**:
+```python
+yesterday = {'task_a', 'task_b', 'task_c'}
+today = {'task_b', 'task_c', 'task_d'}
+changed = yesterday ^ today
+# Result: {'task_a', 'task_d'} - what changed!
+```
+
+---
+
 ### What You'll Learn
 
 Two powerful set operations that answer:

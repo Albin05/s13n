@@ -1,6 +1,5 @@
 ## Pre-Read: Use The Requests Library For Http Operations
 
-**Duration:** 5 minutes
 
 ---
 

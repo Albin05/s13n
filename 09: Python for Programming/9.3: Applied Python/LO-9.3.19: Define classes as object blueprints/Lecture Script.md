@@ -1,8 +1,17 @@
 ## Lecture Script: Define Classes as Object Blueprints
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Classes were invented by **Simula 67** (1967) — the first object-oriented language, created for simulation modeling. **Smalltalk** (1972) made "everything is an object" the central philosophy.
+>
+> **Analogy**: A class is like a **cookie cutter** — it defines the shape, and each cookie (object) is a unique instance cut from that template.
+>
+> **Why it matters**: Classes organize code around real-world concepts — making complex systems manageable.
+
+
 
 ### Hook (2 minutes)
 

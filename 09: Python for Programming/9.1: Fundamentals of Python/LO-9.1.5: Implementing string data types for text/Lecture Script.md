@@ -1,5 +1,15 @@
 ### LO-5 Implement String Data Types (21 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Text encoding evolved from **ASCII** (1963, 128 characters) to **Unicode** (1991, 150K+ characters). Python 3 strings are Unicode by default — supporting every human language.
+>
+> **Analogy**: A string is like a **necklace of letter beads** — each character is one bead, and you can slice, count, or rearrange them.
+>
+> **Why it matters**: Strings are everywhere — user input, file content, API responses, database records all flow as text.
+
+
 ### Hook (3 minutes)
 
 **Say**: "Every app you use has text - usernames, messages, posts. In Python, that's all strings!"

@@ -1,5 +1,15 @@
 # Lecture Script: LO-9.3.35 Use Context Managers for Resource Management
 
+
+### CS Theory Bite
+
+> **Origin**: Context managers (Python 2.5, PEP 343) implement **RAII** — automatic resource cleanup. The `with` statement guarantees `__exit__()` runs even if exceptions occur — Java copied this as try-with-resources (2011).
+>
+> **Analogy**: A context manager is like a **hotel checkout** — check in (`__enter__`), use the room, check out (`__exit__`) is guaranteed even if you leave early.
+>
+> **Why it matters**: `with open() as f:` prevents file leaks — the #1 resource management pattern in Python.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "File not closed, database connection leaked, lock never released — these bugs are SILENT KILLERS. Context managers solve this with one word: 'with'. Automatic cleanup, guaranteed. No leaks, no crashes, no stress!"
 

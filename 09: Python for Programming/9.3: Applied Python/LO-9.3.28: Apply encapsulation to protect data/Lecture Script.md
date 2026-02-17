@@ -1,5 +1,15 @@
 # Lecture Script: LO-70 Apply Encapsulation
 
+
+### CS Theory Bite
+
+> **Origin**: Encapsulation from **Simula 67** — hiding internal details behind public interfaces. Python uses **name mangling** (`__attr` → `_Class__attr`) as a "strong suggestion" rather than strict enforcement.
+>
+> **Analogy**: Encapsulation is like an **ATM** — you interact through buttons (public methods), never touching the cash mechanism directly (private attributes).
+>
+> **Why it matters**: Encapsulation protects data integrity — validation in setters prevents invalid state.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "Imagine your bank account. Can strangers directly access your balance and change it? No! The bank protects your data and only lets you access it through approved methods like deposit() and withdraw(). That's encapsulation — hiding data and controlling access to it!"
 

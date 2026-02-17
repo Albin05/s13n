@@ -1,6 +1,29 @@
 ## Lecture Notes: Checking for Key Existence Using the 'in' Keyword
 
-**Duration:** 10 minutes
+
+---
+
+## Introduction
+
+The `in` operator provides **O(1) membership testing** for dictionaries - same hash table magic as sets! This enables **defensive programming**: check before access to prevent crashes. It's the **look before you leap (LBYL)** approach vs. Python's preferred **easier to ask forgiveness (EAFP)** with try-except.
+
+### Why Key Checking Matters
+
+**LBYL** (Look Before You Leap): Check first, act second
+```python
+if key in dict:  # Check
+    value = dict[key]  # Act
+```
+
+**EAFP** (Easier to Ask Forgiveness than Permission): Try, catch errors
+```python
+try:
+    value = dict[key]  # Act
+except KeyError:  # Handle failure
+    value = default
+```
+
+**Python prefers EAFP**, but `in` is cleaner for simple existence checks!
 
 ---
 

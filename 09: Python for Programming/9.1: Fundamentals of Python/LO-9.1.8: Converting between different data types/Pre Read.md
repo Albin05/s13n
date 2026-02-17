@@ -11,6 +11,32 @@ age_int = int(age)    # Convert to int
 next_year = age_int + 1  # Works!
 ```
 
+### The Core Problem
+
+Computers are very literal. To them:
+- The **text** "25" (two characters: '2' and '5')
+- The **number** 25 (a quantity: twenty-five)
+
+...are completely different things stored in completely different ways!
+
+When you type "25" in response to `input()`, the computer sees text characters. To do math, you must convert that text into an actual number.
+
+### Simple Analogy
+
+Think of data types like different **forms of measurement**:
+- "25" (string) is like saying "twenty-five" out loud
+- 25 (int) is like holding 25 physical coins
+- 25.0 (float) is like a measuring cup showing 25 milliliters
+
+All represent the same quantity, but in different "formats". To use them together, you need to convert to a common format.
+
+**Another analogy**: File formats
+- A Word document (.docx)
+- A PDF file (.pdf)
+- A text file (.txt)
+
+They might contain the same text, but they're stored differently. You need conversion tools to change between them. Same with data types!
+
 ## Conversion Functions
 
 ### To Integer

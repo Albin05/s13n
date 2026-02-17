@@ -1,8 +1,17 @@
 ## Lecture Script: Extracting List Portions Using Slicing
 
-**Duration:** 18 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Slicing syntax `[start:stop:step]` was inspired by **MATLAB** and **Fortran 90** array sections. Python creates a **new list** (copy), not a view.
+>
+> **Analogy**: Slicing is like **cutting a deck of cards** — pick any contiguous section, or take every Nth card with step.
+>
+> **Why it matters**: Slicing extracts subsequences in one expression — replacing verbose loop-based copying.
+
+
 
 ### Hook (2 minutes)
 

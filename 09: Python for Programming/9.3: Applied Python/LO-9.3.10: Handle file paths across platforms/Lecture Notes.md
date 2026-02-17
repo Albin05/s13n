@@ -16,6 +16,64 @@ A file path specifies the location of a file in the filesystem.
 </div>
 
 ---
+
+## Introduction
+
+File paths implement **filesystem navigation** - locating files in hierarchical directory structures! The challenge: **platform differences** - Windows uses `\`, Unix/Mac use `/`. Cross-platform path handling solves the **portability problem** - code that works everywhere!
+
+### Why Cross-Platform Paths Matter
+
+**Problem**: Hardcoded paths break on different OSes:
+```python
+# BREAKS on Mac/Linux!
+path = "C:\\Users\\Alice\\data.txt"  # Windows-only!
+
+# BREAKS on Windows!
+path = "/Users/Alice/data.txt"  # Unix-only!
+```
+
+**Solution**: Use `os.path.join()` for portability:
+```python
+# WORKS everywhere!
+import os
+path = os.path.join("Users", "Alice", "data.txt")
+# Windows: Users\Alice\data.txt
+# Unix: Users/Alice/data.txt
+```
+
+**This is platform abstraction** - same code, different platforms!
+
+### Historical Context
+
+**File paths from Unix** (1971): Hierarchical file systems with `/` as separator. **DOS** (1981) chose `\` to avoid conflict with command-line switches (`/help`). **Mistake**: Created decades of compatibility problems!
+
+**`os.path` module** (Python 1.x, 1991): Abstracts platform differences. **`pathlib`** (Python 3.4, 2014): Modern object-oriented path handling - cleaner API than `os.path`!
+
+**Why backslash?** DOS designer Tim Paterson chose `\` because `/` already used for switches. **Windows still pays** for this 1981 decision - most programming languages expect `/`!
+
+### Real-World Analogies
+
+**File paths like postal addresses**:
+- **Absolute path**: Full address from country down to house
+- **Relative path**: Directions from current location
+- **Platform separator**: Different countries, different formats
+**Your code should work in any "country"!**
+
+**Or like GPS navigation**:
+```python
+# Absolute: Full coordinates
+"/Users/Alice/Documents/file.txt"
+
+# Relative: From current position
+"../Documents/file.txt"
+```
+
+**Or like building directories**:
+- **Windows**: Building\Floor\Room (backslash)
+- **Unix**: Building/Floor/Room (forward slash)
+**Same structure, different notation!**
+
+---
 ### Types of Paths
 
 **Absolute Path**: Full path from root

@@ -1,5 +1,15 @@
 ### LO-16 Write Elif Statements (20 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: `elif` is Python's elegant alternative to **switch/case** statements found in C/Java. It implements **decision trees** — sequential condition checking until a match is found.
+>
+> **Analogy**: `elif` is like a **multiple-choice exam** — check option A, if not then B, if not then C, until one matches.
+>
+> **Why it matters**: Real decisions rarely have just two options — `elif` handles multi-branch logic cleanly.
+
+
 ### Hook (2 minutes)
 
 **Say**: "You walk into a coffee shop. Small is $3, Medium is $4, Large is $5. How does the cashier know which price? They check: IF small, ELIF medium, ELIF large. That's elif in action!"

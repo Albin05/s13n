@@ -1,8 +1,17 @@
 ## Lecture Script: Modifying Lists Using Built-in Methods
 
-**Duration:** 18 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: List methods implement standard **data structure operations**. Python's `sort()` uses **Timsort** (Tim Peters, 2002) — a hybrid merge/insertion sort that's O(n log n) and optimized for real-world data.
+>
+> **Analogy**: List methods are like **toolbox actions** — `append` adds to the end, `insert` slides in, `sort` organizes, `reverse` flips everything.
+>
+> **Why it matters**: Knowing method time complexity prevents performance surprises — `append()` is O(1), `insert(0)` is O(n).
+
+
 
 ### Hook (2 minutes)
 

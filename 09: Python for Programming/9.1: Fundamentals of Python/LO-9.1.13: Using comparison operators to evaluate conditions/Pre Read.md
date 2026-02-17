@@ -10,6 +10,25 @@ Think of it like asking questions:
 - "Is 5 greater than 3?" → True
 - "Is my age equal to 18?" → Could be True or False
 
+### Why Programs Need to Compare
+
+Every smart app you use makes comparisons constantly:
+- **Netflix**: Is movie rating >= 4 stars? Show it in "Recommended"
+- **Amazon**: Is price < $50? Show "Under $50" badge
+- **Spotify**: Is play_count > 1000? Add to "Popular" playlist
+- **Phone**: Is battery_level <= 20%? Show low battery warning
+
+Without comparisons, apps couldn't filter, sort, or make decisions!
+
+### Simple Analogy
+
+Comparison operators are like **yes/no questions**:
+- "Is the door locked?" → Yes/No (True/False)
+- "Is the water hot?" → Yes/No (True/False)
+- "Is today Monday?" → Yes/No (True/False)
+
+Computers use these True/False answers to decide what to do next.
+
 ## The Six Comparison Operators
 
 ```python

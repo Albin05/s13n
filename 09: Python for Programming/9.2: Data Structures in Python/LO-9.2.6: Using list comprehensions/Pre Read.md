@@ -1,5 +1,29 @@
 ## Pre-Read: Using List Comprehensions
 
+## What Are List Comprehensions?
+
+List comprehensions are Python's **one-liner magic** for creating lists - like using a formula instead of manual calculation!
+
+### Simple Analogy
+
+Think of list comprehensions like **a factory machine**:
+- **Traditional loop**: Manually take each raw material, process it, put in output box (slow!)
+- **Comprehension**: Feed raw materials into machine, get processed items out (fast!)
+- **Same result**: Processed items, but comprehension is elegant and quick
+
+Or like **Excel formulas**:
+- **Manual**: Type value in each cell one by one (tedious!)
+- **Formula**: Write once, applies to all cells (=A1*2, drag down)
+- **Comprehension**: Same idea for Python lists!
+
+### Why Comprehensions Rock
+
+**Readability**: Clear intent - "create list of squares"
+**Speed**: 2-3x faster than loops (optimized internally)
+**Pythonic**: Professional Python code uses them everywhere
+
+**Before comprehensions existed** (Python 1.x), programmers had to write verbose loops. **After** (Python 2.0+), one clean line does it all!
+
 ### What You'll Learn
 
 List comprehensions are a concise way to create lists in Python - transforming loops into single, elegant lines.

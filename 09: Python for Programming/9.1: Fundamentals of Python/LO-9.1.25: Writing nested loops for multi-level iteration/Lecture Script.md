@@ -1,5 +1,15 @@
 ### LO-25 Write Nested Loops (20 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Nested loops create **O(n²) complexity** — the foundation of algorithms like matrix operations, bubble sort, and grid traversals. Understanding nesting is key to **algorithmic thinking**.
+>
+> **Analogy**: Nested loops are like a **clock** — the minute hand (inner loop) completes a full cycle for every tick of the hour hand (outer loop).
+>
+> **Why it matters**: Matrix operations, pattern printing, and data cross-referencing all require nested iteration.
+
+
 ### Hook (3 minutes)
 
 **Say**: "Imagine seating guests at a wedding with 5 tables, each with 6 chairs. How do you assign seat numbers? Table 1: seats 1-6. Table 2: seats 1-6. That's nested loops - a loop inside a loop!"

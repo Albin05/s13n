@@ -1,5 +1,15 @@
 ### LO-1 Define Variables (20 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Variables trace back to **John von Neumann's stored-program architecture** (1945) — the idea that data and instructions live in the same memory, accessed by named addresses.
+>
+> **Analogy**: A variable is like a **labeled jar in a kitchen** — the label says what's inside, and you can swap the contents anytime without changing the label.
+>
+> **Why it matters**: Every program manipulates data through variables — they're the foundation of all computation.
+
+
 ### Hook (2 minutes)
 
 **Say**: "Imagine playing a video game. The game needs to remember your score, your character's name, your health - all while you're playing. How does it do that? With variables! Today you'll learn how to make Python remember information."

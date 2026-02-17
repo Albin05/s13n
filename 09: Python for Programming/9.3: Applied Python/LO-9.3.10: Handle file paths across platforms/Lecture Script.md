@@ -1,8 +1,17 @@
 ## Lecture Script: Handle File Paths Across Platforms
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Path separators differ because **DOS** (1981) chose backslash `\` while **Unix** (1971) used forward slash `/`. Python's `pathlib` (Python 3.4) provides platform-independent path handling.
+>
+> **Analogy**: Cross-platform paths are like **universal power adapters** — one interface works regardless of which country (OS) you're in.
+>
+> **Why it matters**: Hardcoding `/` or `\` breaks your code on other platforms — use `pathlib.Path` or `os.path.join()`.
+
+
 
 ### Hook (2 minutes)
 

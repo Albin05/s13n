@@ -4,6 +4,29 @@
 
 Python supports all standard math operations plus more!
 
+### Why Programming Needs Arithmetic
+
+Every program you've ever used does math behind the scenes:
+- **Social media**: Counting likes, calculating timestamps, sorting posts
+- **Games**: Health points, damage calculations, scoreboards
+- **Shopping apps**: Prices, discounts, totals, tax
+- **Music players**: Track duration, progress bar position
+- **Maps**: Distance calculations, estimated arrival time
+
+Without arithmetic operators, programs would be useless - they couldn't count, calculate, or keep score!
+
+### Simple Analogy
+
+Think of arithmetic operators as **buttons on a calculator**:
+- **+** button for addition
+- **−** button for subtraction
+- **×** button for multiplication
+- **÷** button for division
+
+Python gives you these same "buttons" (operators) to perform calculations in code.
+
+The difference? A calculator handles one operation at a time. Python can perform millions of calculations per second, automatically, following your instructions!
+
 ### Basic Operations
 
 ```python

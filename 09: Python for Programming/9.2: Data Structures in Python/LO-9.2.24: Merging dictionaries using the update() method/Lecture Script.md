@@ -1,8 +1,17 @@
 ## Lecture Script: Merging Dictionaries Using update()
 
-**Duration:** 15 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: `update()` merges dicts — later values overwrite earlier ones. **Python 3.9+** added the `|` merge operator: `merged = dict1 | dict2` — cleaner syntax inspired by set union.
+>
+> **Analogy**: `update()` is like **merging two address books** — if both have "Alice", the newer entry wins.
+>
+> **Why it matters**: Dict merging is essential for combining configuration, API responses, and default + custom settings.
+
+
 
 ### Hook (2 minutes)
 

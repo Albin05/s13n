@@ -16,6 +16,80 @@ Dictionary comprehensions provide a concise way to create dictionaries based on 
 </div>
 
 ---
+
+## Introduction
+
+Dictionary comprehensions implement **key-value transformation** - building dicts declaratively! This extends list comprehension syntax to **associative arrays** - the foundation of hash tables. Dict comprehensions are **mapping operations** made elegant!
+
+### Why Dictionary Comprehensions Transform Code
+
+**Problem with traditional approach**: Verbose dict building:
+```python
+# TEDIOUS - manual dict construction!
+squares = {}
+for i in range(6):
+    squares[i] = i ** 2
+# Loop machinery obscures intent!
+```
+
+**Solution with comprehensions**: Express mapping directly:
+```python
+# CLEAR - intent obvious!
+squares = {i: i**2 for i in range(6)}
+# "Map i to i² for each i" - declarative!
+```
+
+**This is mapping elegance** - key-value transformation visible!
+
+### Historical Context
+
+**Dictionary comprehensions** added **Python 2.7/3.0** (2010) with **PEP 274**. Later than list comprehensions (2000) - originally **dict()** with generator expressions: `dict((k, v) for...)` was workaround!
+
+**Inspired by set theory**: Mathematical relations map domain to range - `{x → x² | x ∈ ℕ}` becomes `{x: x**2 for x in naturals}`. **Category theory** influenced functional programming - mappings are morphisms!
+
+**Hash table optimization**: CPython's dict implementation uses **open addressing** (since 3.6) preserving insertion order. Comprehensions pre-allocate hash table size when possible - **amortized O(1)** insertions!
+
+### Real-World Analogies
+
+**Dict comprehensions like database indexing**:
+- **Traditional**: Build index manually, entry by entry
+- **Comprehension**: Declare index structure, auto-populate
+- **Result**: Fast lookup table
+**CREATE INDEX automatically builds mapping!**
+
+**Or like phone book creation**:
+```python
+# Traditional: Add each person manually
+phonebook = {}
+for person in contacts:
+    phonebook[person.name] = person.phone
+
+# Comprehension: Declare mapping structure
+phonebook = {p.name: p.phone for p in contacts}
+# Automatic directory construction!
+```
+
+**Or like variable substitution**:
+- **Template**: "Hello {name}, you are {age}"
+- **Mapping**: `{name: "Alice", age: 25}`
+- **Comprehension**: `{k: values[k] for k in template_vars}`
+**Transform keys to values declaratively!**
+
+### Dict vs List Comprehensions
+
+**List comprehension**: Ordered sequence:
+```python
+[x**2 for x in range(5)]  # [0, 1, 4, 9, 16]
+```
+
+**Dict comprehension**: Key-value mapping:
+```python
+{x: x**2 for x in range(5)}  # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+```
+
+**Choose based on access pattern** - dict for lookups, list for iteration!
+
+---
 ### Syntax
 
 ```python

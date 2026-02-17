@@ -1,5 +1,39 @@
 # Pre-Read: Returning Values from Functions Using Return
 
+## Why Return?
+
+Functions without return are like **ovens that cook but never open** - food cooks inside, but you can't get it out to eat! Return lets functions **give back** their results.
+
+### Simple Analogy
+
+Think of return like **an ATM dispensing cash**:
+- **Input**: You insert card, enter PIN, request $100
+- **Processing**: ATM validates, checks balance, prepares money
+- **Return**: Money comes out of slot (this is the return!)
+- **You use it**: Take money, buy things elsewhere
+
+Or like **a microwave**:
+- **Input**: Put food in, set timer
+- **Processing**: Heats food inside
+- **Return**: Beep! Food is ready (you take it out)
+- **vs. No return**: Food cooks but stays locked inside forever!
+
+### Return vs Print: The Big Confusion
+
+**Beginners' biggest mistake**: Thinking `print()` and `return` are the same.
+- **print()**: Shows something to YOU (the human)
+- **return**: Gives something to THE CODE (for further use)
+
+```python
+def bad_calculator(a, b):
+    print(a + b)  # Shows answer, but code can't use it!
+
+# This doesn't work!
+total = bad_calculator(5, 3) + 10  # Error! Can't add None + 10
+```
+
+Return makes functions **useful**, not just pretty displays!
+
 ## What You'll Learn
 In this lesson, you'll learn how to use the `return` statement to send values back from functions, allowing you to use function results in other parts of your code.
 

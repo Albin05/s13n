@@ -1,8 +1,17 @@
 ## Lecture Script: Handle Multiple Exception Types
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Multiple except blocks implement **polymorphic error handling** — different responses for different error types. Follows the **Liskov Substitution Principle** — catch parent exceptions to handle all children.
+>
+> **Analogy**: Multiple except blocks are like a **hospital triage system** — different injuries get routed to different specialists.
+>
+> **Why it matters**: Real code faces multiple error types — handling each appropriately improves user experience and debugging.
+
+
 
 ### Hook (2 minutes)
 

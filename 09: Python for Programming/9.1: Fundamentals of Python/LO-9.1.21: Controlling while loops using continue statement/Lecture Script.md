@@ -1,5 +1,15 @@
 ### LO-21 Control Loops with Continue (25 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: `continue` implements the **filter pattern** — skip items that don't meet criteria and process only those that do. It's the loop equivalent of "next, please!"
+>
+> **Analogy**: `continue` is like a **bouncer checking IDs** — "You don't qualify? Skip. Next person." The line keeps moving.
+>
+> **Why it matters**: `continue` avoids deep nesting — instead of wrapping code in `if`, just skip the unwanted cases.
+
+
 ### Hook (3 minutes)
 
 **Say**: "You're looking through a list of students. You want to print everyone EXCEPT those who are absent. That's continue - skip some, keep going!"

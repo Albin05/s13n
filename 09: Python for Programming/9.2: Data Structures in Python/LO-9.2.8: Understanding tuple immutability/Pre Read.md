@@ -1,5 +1,32 @@
 ## Pre-Read: Understanding Tuple Immutability
 
+## What Is Immutability?
+
+Immutability means **"frozen forever"** - once created, cannot be changed. It's like writing in permanent ink vs. pencil!
+
+### Simple Analogy
+
+Think of immutability like **printed photos vs. digital photos**:
+- **Digital** (list): Edit, crop, filter, delete anytime
+- **Printed** (tuple): Once developed, permanent!
+- **Why permanent**: Some moments should stay exactly as captured
+
+Or like **tattoo vs. temporary tattoo**:
+- **Temporary** (list): Washes off, can change
+- **Permanent** (tuple): There forever!
+- **Choose wisely**: Use permanent for data that shouldn't change
+
+### The Safety Guarantee
+
+Immutability is Python's way of saying **"I promise this won't change unexpectedly"**:
+```python
+config = ('production_server', 5432, 'maindb')
+# Pass to 100 functions - stays safe!
+# No function can accidentally break it
+```
+
+**Like a sealed time capsule** - contents protected from tampering!
+
 ### What You'll Learn
 
 Immutability means "cannot be changed after creation." Tuples are immutable - their greatest strength.

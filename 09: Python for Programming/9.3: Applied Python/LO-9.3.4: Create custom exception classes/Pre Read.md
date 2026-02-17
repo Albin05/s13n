@@ -1,6 +1,39 @@
 ## Pre-Read: Create Custom Exception Classes
 
-**Duration:** 5 minutes
+
+---
+
+## Introduction
+
+**Custom exceptions** give errors specific, meaningful names instead of generic "ValueError" or "RuntimeError". This makes error handling **self-documenting** - the exception name explains what went wrong! Custom exceptions are the **type system for errors**.
+
+### Why Custom Exceptions Matter
+
+**Problem with generic exceptions**: Lack context and specificity:
+```python
+# Generic - hard to understand!
+if balance < amount:
+    raise ValueError("bad transaction")
+# What kind of bad? How to handle?
+```
+
+**Solution with custom exceptions**: Error type tells the story:
+```python
+# Specific - crystal clear!
+if balance < amount:
+    raise InsufficientFundsError(balance, amount)
+# Immediately know what's wrong and how to fix!
+```
+
+**This is semantic error handling** - error types carry meaning!
+
+### Real-World Analogy
+
+**Custom exceptions like car dashboard lights**:
+- **Generic**: "Check engine" (like ValueError - vague!)
+- **Specific**: "Low oil pressure" (like LowOilException - clear!)
+- **Action**: Specific light → specific action
+**Specific error types enable specific responses!**
 
 ---
 

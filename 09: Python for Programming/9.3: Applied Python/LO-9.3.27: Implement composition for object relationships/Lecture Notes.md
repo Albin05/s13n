@@ -16,6 +16,96 @@ Building complex objects from simpler ones
 </div>
 
 ---
+
+## Introduction
+
+Composition implements **object aggregation** - building complex objects from simpler parts! This is **"has-a" relationships** vs inheritance's "is-a". Composition is **flexible assembly** - mix and match components like LEGO blocks. **Gang of Four**: "Favor composition over inheritance"!
+
+### Why Composition Transforms Design
+
+**Problem with deep inheritance**: Rigid, fragile hierarchies:
+```python
+# BRITTLE - inheritance explosion!
+class Vehicle: pass
+class Car(Vehicle): pass
+class ElectricCar(Car): pass
+class ElectricSportsCar(ElectricCar): pass
+# Deep hierarchy - changes at top break everything!
+```
+
+**Solution with composition**: Flexible component assembly:
+```python
+# FLEXIBLE - mix components!
+class Engine: pass
+class Battery: pass
+class GPS: pass
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()    # Has-a engine
+        self.battery = Battery()  # Has-a battery
+        self.gps = GPS()          # Has-a GPS
+# Swap components easily - no deep hierarchy!
+```
+
+**This is modularity** - build complex from simple!
+
+### Historical Context
+
+**Composition** favored by **Gang of Four** (1994 Design Patterns book) - "prefer object composition over class inheritance". **Why?** Inheritance creates **tight coupling** (parent changes break children), composition creates **loose coupling** (components independent)!
+
+**Unix philosophy** (1970s): "Do one thing well, compose programs". **Object composition** applies same principle - small classes with single responsibility, composed into complex systems!
+
+**Aggregation vs composition**: **Composition** = strong ownership (Engine dies with Car). **Aggregation** = weak ownership (Driver exists independently of Car). Most OOP uses composition - simpler lifecycle!
+
+### Real-World Analogies
+
+**Composition like computer assembly**:
+- **Computer**: Has-a CPU, RAM, Storage, Monitor (components)
+- **Not inheritance**: Computer doesn't inherit from CPU!
+- **Mix and match**: Swap CPU without changing whole design
+**Build custom systems from standard parts!**
+
+**Or like human body**:
+```python
+class Heart:
+    def beat(self): return "Beating"
+
+class Brain:
+    def think(self): return "Thinking"
+
+class Human:
+    def __init__(self):
+        self.heart = Heart()  # Has-a heart
+        self.brain = Brain()  # Has-a brain
+    def live(self):
+        print(self.heart.beat())
+        print(self.brain.think())
+# Organs are components, not inheritance!
+```
+
+**Or like restaurant kitchen**:
+- **Restaurant**: Has-a Kitchen, Dining Room, Staff
+- **Kitchen**: Has-a Oven, Refrigerator, Sink
+- **Each component**: Independent, replaceable
+**Complex business from simple parts!**
+
+### Composition vs Inheritance: The Design Choice
+
+**Use inheritance when**:
+- True "is-a" relationship (Dog IS-A Animal)
+- Shared behavior across subtypes
+- Polymorphism needed
+
+**Use composition when**:
+- "Has-a" relationship (Car HAS-A Engine)
+- Need flexibility to change components
+- Want loose coupling
+- Components used by multiple classes
+
+**General rule**: **Prefer composition** - easier to test, modify, extend!
+
+---
 ### Understanding the Concept
 
 Composition is a design principle where a class contains instances of other classes as attributes, creating a "has-a" relationship. Instead of inheriting from a class (is-a), you include it as a component (has-a).

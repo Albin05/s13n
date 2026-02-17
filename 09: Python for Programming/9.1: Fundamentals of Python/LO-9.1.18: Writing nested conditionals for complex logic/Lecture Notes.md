@@ -1,5 +1,25 @@
 # Lecture Notes: Write Nested Conditionals
 
+## Introduction
+
+Nested conditionals create **decision trees** - multi-level logic where each branch can split further. This mirrors how humans make complex decisions with multiple factors.
+
+### Why Nesting is Powerful
+
+Real decisions are hierarchical:
+- **Security system**: IF motion detected → THEN IF after hours → THEN IF not authorized → sound alarm
+- **Email filter**: IF from known sender → THEN IF has attachment → THEN IF attachment type safe → allow
+
+Each decision depends on previous ones - nesting models this perfectly.
+
+### Real-World Analogy
+
+Nested conditionals are like **nested boxes**:
+- Open big box → IF it contains small box → open small box → IF it contains item → retrieve item
+
+Or like **navigation instructions**:
+- "IF you see the gas station, turn right. THEN IF you see the school, turn left. THEN IF you see the blue house, you've arrived."
+
 ## Nested Conditionals
 
 A nested conditional is an if statement inside another if statement.

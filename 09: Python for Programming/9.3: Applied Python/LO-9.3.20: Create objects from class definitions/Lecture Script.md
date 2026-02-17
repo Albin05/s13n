@@ -1,8 +1,17 @@
 ## Lecture Script: Create Objects from Class Definitions
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Object creation (instantiation) allocates memory on the **heap** and initializes attributes. Python's **garbage collector** (reference counting + cycle detection) automatically frees objects when no longer needed.
+>
+> **Analogy**: Creating an object is like **baking a cookie from a cutter** — the class defines the shape, each object is a unique cookie with its own toppings.
+>
+> **Why it matters**: Understanding instantiation explains how `Dog()` creates a new dog in memory every time.
+
+
 
 ### Hook (2 minutes)
 

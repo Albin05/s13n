@@ -1,6 +1,31 @@
 ## Lecture Notes: Iterating Through Dictionary Keys, Values, and Items
 
-**Duration:** 10 minutes
+
+---
+
+## Introduction
+
+Dictionary iteration offers **three views** - keys, values, or items (pairs) - representing different **perspectives on the same data**. This demonstrates **dictionary views**: efficient, dynamic representations that update with the dictionary. They're **not copies** - they're **live views** into the dictionary's current state!
+
+### Why Three Iteration Methods?
+
+**Keys only** (.keys() or default): When you just need identifiers
+**Values only** (.values()): When you need to aggregate/analyze data
+**Key-value pairs** (.items()): When you need context for each value
+
+**All are O(n)** but with different overhead - choose based on what you actually need!
+
+### Dictionary Views Are Live!
+
+**Amazing property**: Views update automatically:
+```python
+d = {'a': 1}
+view = d.items()
+d['b'] = 2  # Add new item
+# view now shows both items - it's LIVE!
+```
+
+**This is lazy evaluation** - no copying, just pointers!
 
 ---
 

@@ -1,8 +1,17 @@
 ## Lecture Script: Create Custom Exception Classes
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Custom exceptions create **domain-specific error hierarchies** — like medical diagnoses vs generic "you're sick." Java (1995) and Python both use class inheritance for exception taxonomies.
+>
+> **Analogy**: Custom exceptions are like **specific warning lights on a car dashboard** — "low oil" is more actionable than a generic "check engine."
+>
+> **Why it matters**: Custom exceptions make error handling precise — catch `InsufficientFundsError` instead of generic `Exception`.
+
+
 
 ### Hook (2 minutes)
 

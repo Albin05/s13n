@@ -1,5 +1,24 @@
 # Pre-Read: Write Elif Statements
 
+## Why Elif?
+
+Real life has more than two options:
+- **Weather**: Sunny, Cloudy, Rainy, Snowy (not just good/bad)
+- **Grades**: A, B, C, D, F (not just pass/fail)
+- **Age groups**: Child, Teen, Adult, Senior
+
+Elif lets you handle multiple possibilities elegantly!
+
+### Simple Analogy
+
+Think of elif like **choosing an outfit based on weather**:
+- IF temperature > 80: wear shorts
+- ELIF temperature > 60: wear jeans
+- ELIF temperature > 40: wear jacket
+- ELSE: wear heavy coat
+
+The program checks from top to bottom and stops at the first match.
+
 ## What You'll Learn
 In this lesson, you'll learn how to handle multiple different conditions using elif (else if) statements.
 

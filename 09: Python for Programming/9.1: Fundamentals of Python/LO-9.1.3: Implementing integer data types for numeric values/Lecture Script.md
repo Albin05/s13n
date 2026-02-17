@@ -1,5 +1,15 @@
 ### LO-3 Implement Integer Data Types (16 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Integers in computers use **binary representation**, dating back to **ENIAC** (1945). Python integers have **unlimited precision** — unlike C/Java's fixed 32/64-bit limits.
+>
+> **Analogy**: An integer is like a **counting abacus** — whole numbers only, no fractions, but Python's abacus has infinite beads.
+>
+> **Why it matters**: Integers are the most fundamental data type — counters, indices, IDs all use them.
+
+
 ### Hook (3 minutes)
 
 **Say**: "What's 10 divided by 3? In math, it's 3.333... But what if you're splitting 10 cookies among 3 people? You can't split a cookie! That's where integer division comes in."

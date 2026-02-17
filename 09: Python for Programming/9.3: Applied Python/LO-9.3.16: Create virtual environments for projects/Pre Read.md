@@ -1,6 +1,5 @@
 ## Pre-Read: Create Virtual Environments For Projects
 
-**Duration:** 5 minutes
 
 ---
 

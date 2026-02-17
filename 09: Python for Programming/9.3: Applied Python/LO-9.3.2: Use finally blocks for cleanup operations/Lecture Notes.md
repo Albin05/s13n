@@ -16,6 +16,88 @@ Executing cleanup code regardless of exceptions
 </div>
 
 ---
+
+## Introduction
+
+The `finally` block implements **guaranteed cleanup** - code that MUST execute regardless of success, failure, or early returns. This solves the **resource leak problem**: files left open, connections not closed, locks not released. `finally` ensures cleanup happens **no matter what**!
+
+### Why Guaranteed Cleanup is Critical
+
+**Before finally** (manual cleanup): Easy to miss cleanup paths:
+```python
+# Fragile - many ways to skip cleanup!
+file = open("data.txt")
+result = process(file.read())  # Exception here?
+return result  # Early return?
+file.close()  # MIGHT NOT RUN!
+```
+
+**With finally** (guaranteed): Cleanup always happens:
+```python
+# Robust - cleanup ALWAYS executes!
+file = open("data.txt")
+try:
+    result = process(file.read())
+    return result  # Even if we return...
+finally:
+    file.close()  # ...this STILL runs!
+```
+
+**This is "deterministic cleanup"** - you know EXACTLY when resources are released!
+
+### Historical Context
+
+**Finally block** introduced in **CLU** (Barbara Liskov, MIT, 1975) as part of exception handling mechanism. Adopted by **C++** (destructors, 1985), **Java** (finally, 1995), and **Python** (1991).
+
+**C++ used RAII** (Resource Acquisition Is Initialization) - cleanup in destructors. **Java/Python use finally** - explicit cleanup blocks. Different approaches, same goal: **prevent resource leaks**!
+
+**Python 2.5 (2006)** introduced `with` statement (context managers) as cleaner alternative to try-finally for common cases. But `finally` still essential for complex cleanup logic!
+
+### Real-World Analogies
+
+**Finally block like closing a gate**:
+- **Try**: Open gate, enter building (acquire resource)
+- **Success**: Complete your task inside
+- **Exception**: Emergency evacuation
+- **Finally**: Close gate on your way out (ALWAYS)
+**Gate must be closed whether you finished work or evacuated!**
+
+**Or like washing hands after cooking**:
+```python
+try:
+    prepare_ingredients()
+    cook_meal()  # Might burn yourself!
+except BurnException:
+    apply_first_aid()
+finally:
+    wash_hands()  # ALWAYS wash, even if burned!
+```
+
+**Or like airplane landing**:
+- **Try**: Fly the route
+- **Exception**: Bad weather forces diversion
+- **Finally**: Landing (one way or another)
+**Plane MUST land - either at destination or alternate airport!**
+
+### The Context Manager Alternative
+
+**Modern Python prefers `with` statement** for common patterns:
+```python
+# Old way - explicit finally
+file = open("data.txt")
+try:
+    data = file.read()
+finally:
+    file.close()
+
+# New way - context manager
+with open("data.txt") as file:
+    data = file.read()  # Automatically closed!
+```
+
+**`with` statement uses `__enter__` and `__exit__` magic methods** - essentially automatic try-finally! But `finally` still needed for custom cleanup logic.
+
+---
 ### Key Concepts
 
 The `finally` block:

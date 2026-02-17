@@ -1,5 +1,15 @@
 # Lecture Script: LO-67 Override Parent Methods
 
+
+### CS Theory Bite
+
+> **Origin**: Method overriding enables **polymorphism** — "many forms" of the same operation. Python uses **dynamic dispatch** to find the correct method at runtime via the **Method Resolution Order (MRO)**.
+>
+> **Analogy**: Overriding is like **regional dialects** — everyone "speaks" (same method name), but each region has its own version.
+>
+> **Why it matters**: Polymorphism lets you write generic code (`for shape in shapes: shape.area()`) that works with any subclass.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "Imagine a phone. All phones can 'make_call()', but a smartphone does it differently than an old landline. It uses the internet, shows the contact's photo, maybe even video calls! That's method overriding — taking a parent's method and customizing it for the child class."
 

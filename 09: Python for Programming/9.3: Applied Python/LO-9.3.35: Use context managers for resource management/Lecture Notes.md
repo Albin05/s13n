@@ -16,6 +16,82 @@ Context managers provide a way to allocate and release resources precisely when 
 </div>
 
 ---
+
+## Introduction
+
+Context managers implement **RAII** (Resource Acquisition Is Initialization) - automatic resource lifecycle management! This is **deterministic cleanup** - guaranteed resource release regardless of exceptions. Context managers are **safety nets** for system resources!
+
+### Why Context Managers are Critical
+
+**Problem without context managers**: Resource leaks:
+```python
+# DANGEROUS - resource leak if exception!
+f = open("data.txt")
+data = f.read()
+process(data)  # If this crashes...
+f.close()      # ...close() never runs! File leaked!
+```
+
+**Solution with context managers**: Guaranteed cleanup:
+```python
+# SAFE - cleanup guaranteed!
+with open("data.txt") as f:
+    data = f.read()
+    process(data)  # Even if this crashes...
+# f.close() runs automatically! Always!
+```
+
+**This is resource safety** - no leaks, no orphaned connections!
+
+### Historical Context
+
+**Context managers** added **Python 2.5** (2006) with **PEP 343**. Inspired by **C++ RAII** (Bjarne Stroustrup, 1984) - resource lifetime tied to object scope. **Java's try-with-resources** (2011) copied Python's approach!
+
+**`__enter__` and `__exit__`** protocol - Python's context management protocol. **`__exit__`** receives exception info - can suppress or propagate exceptions! This **exception-aware cleanup** more powerful than simple `finally`!
+
+**contextlib module** (Python 2.6) added `@contextmanager` decorator - write context managers as generators instead of classes. **Simplified syntax** made custom context managers accessible to all Python programmers!
+
+### Real-World Analogies
+
+**Context managers like hotel checkout**:
+- **`__enter__`**: Check in (acquire room key, access resources)
+- **`with` block**: Stay at hotel (use resources)
+- **`__exit__`**: Check out (return key, clean room) - **always happens!**
+**Hotel guarantees room gets cleaned, even if you leave early!**
+
+**Or like borrowing library books**:
+```python
+with library.borrow("Python Book") as book:
+    book.read()    # Use the resource
+    book.study()   # Take your time
+# Book automatically returned! No overdue fines!
+```
+
+**Or like lab safety protocol**:
+- **Enter lab**: Put on safety equipment (`__enter__`)
+- **Do experiment**: Work with materials (`with` block)
+- **Exit lab**: Remove equipment, clean up (`__exit__`)
+**Safety protocol runs even if experiment fails!**
+
+### Context Manager Protocol
+
+**Two magic methods control the lifecycle**:
+```python
+class ManagedResource:
+    def __enter__(self):
+        # Acquire resource
+        return self  # Value for 'as' variable
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        # Release resource (ALWAYS runs!)
+        # Return True to suppress exception
+        # Return False to propagate exception
+        pass
+```
+
+**This is the contract** - enter acquires, exit releases, always!
+
+---
 ### Basic Syntax
 
 ```python

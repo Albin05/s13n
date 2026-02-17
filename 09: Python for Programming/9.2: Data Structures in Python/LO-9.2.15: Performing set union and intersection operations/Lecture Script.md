@@ -1,8 +1,17 @@
 ## Lecture Script: Performing Set Union and Intersection Operations
 
-**Duration:** 18 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Set operations come directly from **set theory mathematics** (Cantor, 1874). **Union** (∪) combines all elements, **intersection** (∩) finds common elements — same as **SQL JOINs** and **Venn diagrams**.
+>
+> **Analogy**: Union is like **merging two playlists** (all songs). Intersection is like **finding songs on BOTH playlists** (common favorites).
+>
+> **Why it matters**: Set operations solve real problems: finding common users, merging permissions, deduplicating data.
+
+
 
 ### Hook (2 minutes)
 

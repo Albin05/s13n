@@ -1,5 +1,15 @@
 # Lecture Script: LO-9.3.36 Apply Type Hints for Code Clarity
 
+
+### CS Theory Bite
+
+> **Origin**: Type hints (Python 3.5, PEP 484) implement **gradual typing** (Jeremy Siek, 2006) — add types incrementally to dynamic code. **mypy** (2012) checks types statically without running the program.
+>
+> **Analogy**: Type hints are like **ingredient labels** — they don't change the food (runtime), but they help you avoid mixing up sugar and salt (type errors).
+>
+> **Why it matters**: Type hints catch bugs before runtime — IDEs use them for autocomplete, refactoring, and error detection.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "What does this function return? A string? A number? A list? Without looking at the code, you can't tell. Type hints solve this: def greet(name: str) -> str. Crystal clear documentation, better IDE support, catch errors before runtime. No enforcement, just clarity!"
 

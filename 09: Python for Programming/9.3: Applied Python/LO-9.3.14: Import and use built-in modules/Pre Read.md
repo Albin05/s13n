@@ -1,6 +1,5 @@
 ## Pre-Read: Import And Use Built-In Modules
 
-**Duration:** 5 minutes
 
 ---
 

@@ -1,8 +1,17 @@
 ## Lecture Script: Using Tuple Methods count() and index()
 
-**Duration:** 18 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Tuple's `count()` and `index()` perform **linear search** — O(n) time since tuples have no special ordering or hashing. These are the only two "search" methods tuples need.
+>
+> **Analogy**: `count()` is like **tallying votes** — go through every item and count matches. `index()` is like **finding a seat number** — scan until found.
+>
+> **Why it matters**: These methods work on immutable sequences where modification methods don't apply.
+
+
 
 ### Hook (2 minutes)
 

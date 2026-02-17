@@ -24,6 +24,24 @@ score = 100
 
 This creates a box labeled `score` and puts the number `100` inside it.
 
+### A Brief History: Why Variables Matter
+
+In the early days of computing (1940s), programmers had to write numbers directly into machine code. If you wanted to change a value, you'd have to rewrite the entire program!
+
+Variables revolutionized programming by introducing **symbolic names** for data. Now we can write `total = price * quantity` and the computer figures out the actual numbers. This was a game-changer - it made programs:
+- **Reusable** - same code works with different data
+- **Readable** - `age` is clearer than remembering "memory location 1047"
+- **Flexible** - values can change while the program runs
+
+### Another Way to Think About Variables
+
+Consider a spreadsheet cell:
+- Cell **A1** is like a variable name
+- The **value in A1** is like the variable's value
+- You can reference **A1** in formulas, and if A1 changes, all formulas update automatically
+
+Variables work the same way in Python!
+
 ## Creating Variables in Python
 
 Creating a variable in Python is simple - just use the equals sign `=`:

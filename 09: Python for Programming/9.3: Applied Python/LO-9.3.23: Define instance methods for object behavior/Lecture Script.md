@@ -1,5 +1,15 @@
 # Lecture Script: LO-65 Define Instance Methods
 
+
+### CS Theory Bite
+
+> **Origin**: Methods implement **message passing** (Smalltalk, 1972) — objects communicate by sending messages. Alan Kay: "Objects are like biological cells communicating via messages."
+>
+> **Analogy**: Methods are like **skills on a resume** — they define what an object can DO, not just what it IS.
+>
+> **Why it matters**: Methods bundle behavior with data — the core of object-oriented programming.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "A dog can bark, run, and sit. A bank account can deposit, withdraw, and check balance. In OOP, these actions are called methods! Today we learn how to give our objects behavior — not just data, but actions they can perform."
 

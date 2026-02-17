@@ -1,8 +1,17 @@
 ## Lecture Script: Write Data to JSON Files
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: JSON serialization converts Python objects to portable text. **json.dumps()** handles the mapping: `dict` → `{}`, `list` → `[]`, `None` → `null`, `True` → `true`.
+>
+> **Analogy**: Writing JSON is like **translating a letter** — convert Python's dialect into the universal JSON format that any language can read.
+>
+> **Why it matters**: Saving data as JSON enables interoperability — other programs, languages, and services can read your output.
+
+
 
 ### Hook (2 minutes)
 

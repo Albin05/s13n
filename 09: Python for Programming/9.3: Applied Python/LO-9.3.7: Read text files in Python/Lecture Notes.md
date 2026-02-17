@@ -1,6 +1,82 @@
 ## Lecture Notes: Read Text Files in Python
 
-**Duration:** 12 minutes
+
+---
+
+## Introduction
+
+File reading implements **persistent storage access** - retrieving data that outlives program execution! Before file systems, data existed only in RAM (volatile) and disappeared when programs ended. File I/O enables **data persistence** - the foundation of all modern applications, databases, and operating systems!
+
+### Why File I/O is Fundamental
+
+**Before file systems** (punch cards, 1950s): Data manually re-entered each run:
+```
+// No persistence - enter data every time!
+ENTER 10 NUMBERS: 1, 2, 3...
+PROGRAM ENDS → DATA LOST!
+```
+
+**With file systems** (1960s onwards): Data saved and reloaded:
+```python
+# Write once, read forever!
+with open("data.txt") as f:
+    data = f.read()  # Data survives program restarts!
+```
+
+**This is persistent storage** - data outlives the program that created it!
+
+### Historical Context
+
+**File systems invented**: **Multics** (1964, MIT) pioneered hierarchical file systems. **Unix** (1971, Bell Labs) introduced "everything is a file" philosophy - devices, sockets, pipes all accessed like files!
+
+**Context managers** (`with` statement): Introduced in **Python 2.5 (2006)** via **PEP 343**. Based on **RAII** (Resource Acquisition Is Initialization) from **C++** (1985). Solves **resource leak problem** - files left open consuming file descriptors!
+
+**Buffered I/O**: Python's file objects use **buffering** - read/write in chunks (8KB default) rather than byte-by-byte. Invented by **Unix** (1970s) for performance. Reduces syscalls by 1000x+!
+
+### Real-World Analogies
+
+**Reading files like checking out library books**:
+- **Open file**: Request book from library (`open()`)
+- **Read content**: Read the book (`read()`)
+- **Close file**: Return book to library (`close()`)
+- **With statement**: Auto-return when done (context manager)
+**You don't forget to return books - don't forget to close files!**
+
+**Or like reading a recipe**:
+```python
+with open("recipe.txt") as f:
+    for step in f:  # Read step-by-step
+        follow_instruction(step.strip())
+# Recipe book auto-closes when done!
+```
+
+**Or like streaming video**:
+- **Read entire file**: Download entire video first (`read()`)
+- **Line-by-line**: Stream video chunk-by-chunk (`for line in f`)
+- **Memory efficient**: Don't load 2-hour video into RAM at once!
+**Streaming prevents memory overflow - same for large files!**
+
+### The Context Manager Pattern
+
+**Problem with manual close**: Easy to forget, especially with errors:
+```python
+# DANGEROUS - might not close!
+file = open("data.txt")
+data = file.read()
+process(data)  # Exception here?
+file.close()  # Might not execute!
+```
+
+**Solution with context manager**: Guaranteed cleanup:
+```python
+# SAFE - always closes!
+with open("data.txt") as file:
+    data = file.read()
+    process(data)  # Exception OK!
+# File auto-closed here, always!
+```
+
+**This implements RAII** - Resource Acquisition Is Initialization. `__enter__` and `__exit__` magic methods ensure cleanup!
 
 ---
 

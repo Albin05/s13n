@@ -16,6 +16,45 @@ CSV (Comma-Separated Values) stores tabular data in plain text.
 </div>
 
 ---
+
+## Introduction
+
+CSV implements **structured text storage** - tabular data in human-readable format! Invented in 1970s for data exchange between incompatible systems. CSV is the **universal data interchange format** - simple, portable, readable by everything from Excel to databases!
+
+### Why CSV Matters
+
+**Before CSV** (binary formats): Data locked in proprietary formats:
+```
+// Binary spreadsheet - only one program can read!
+01101000 01100101 01101100 01101100 01101111
+```
+
+**With CSV** (text format): Universal, human-readable:
+```csv
+name,age,city
+Alice,25,New York
+Bob,30,Chicago
+```
+
+**This is data portability** - any program can read it!
+
+### Historical Context
+
+**CSV originated in FORTRAN** (1970s) for data exchange. No formal standard until **RFC 4180 (2005)** - decades of ad-hoc implementations!
+
+**Why "comma-separated"?** Inherited from punch cards where fields separated by characters. Comma chosen over space/tab because values might contain those!
+
+**Python's csv module** (Python 2.3, 2003): Handles CSV dialects - different delimiters, quoting, escaping. Solves **format fragmentation** problem!
+
+### Real-World Analogies
+
+**CSV like spreadsheet exported as text**:
+- **Rows**: Lines in file
+- **Columns**: Comma-separated values
+- **Header**: First row with column names
+**Excel/Google Sheets export to CSV for portability!**
+
+---
 ### CSV Format
 
 ```

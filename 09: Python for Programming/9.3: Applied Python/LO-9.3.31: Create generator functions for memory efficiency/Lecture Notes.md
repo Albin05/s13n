@@ -16,6 +16,85 @@ Generator functions use the `yield` keyword to return values lazily, one at a ti
 </div>
 
 ---
+
+## Introduction
+
+Generators implement **lazy evaluation** - compute values on-demand, not upfront! This is **streaming computation** - process infinite sequences with finite memory. Generators are **coroutines** - functions that remember state and resume!
+
+### Why Generators are Transformative
+
+**Problem with lists**: Memory explosion with large data:
+```python
+# MEMORY HOG - entire list in RAM!
+def get_million_squares():
+    return [i**2 for i in range(1000000)]
+# 8MB+ memory - all values stored!
+```
+
+**Solution with generators**: One value at a time:
+```python
+# MEMORY EFFICIENT - one value at a time!
+def generate_squares():
+    for i in range(1000000):
+        yield i**2  # Compute on demand
+# Constant memory - only current value!
+```
+
+**This is lazy evaluation** - work deferred until needed!
+
+### Historical Context
+
+**Generators** added **Python 2.2** (2001) with **PEP 255**. Inspired by **Icon language** (1970s) which had generators, and **CLU's iterators** (1970s). **yield** keyword suspends function execution!
+
+**Coroutines**: Generators are **symmetric coroutines** - functions that can pause/resume. **Scheme's call/cc** (1975), **Lua coroutines** (1993) influenced Python generators. **Cooperative multitasking** without threads!
+
+**send() method** (Python 2.5, PEP 342, 2005) made generators **bidirectional** - not just yield values out, but receive values in! This enabled **generator-based coroutines** - foundation of **asyncio** (Python 3.4)!
+
+### Real-World Analogies
+
+**Generators like streaming video**:
+- **List**: Download entire movie first (memory!)
+- **Generator**: Stream chunks as needed (efficient!)
+- **Pause/resume**: Can stop/start anytime
+**Netflix doesn't load entire catalog into RAM!**
+
+**Or like reading a book**:
+```python
+def read_pages():
+    for page_num in range(1, 1001):
+        yield f"Page {page_num} content..."
+# Read page-by-page, don't memorize whole book!
+```
+
+**Or like conveyor belt**:
+- **Function**: Produces all items, dumps on floor (list)
+- **Generator**: Produces items one-by-one on belt (yield)
+- **Consumer**: Takes items as they arrive
+**Just-in-time manufacturing!**
+
+### yield vs return
+
+**return**: Function terminates, all context lost:
+```python
+def get_values():
+    return [1, 2, 3]  # Returns once, done
+values = get_values()  # All values at once
+```
+
+**yield**: Function pauses, context preserved:
+```python
+def generate_values():
+    yield 1  # Pause here
+    yield 2  # Resume, pause again
+    yield 3  # Resume, pause again
+gen = generate_values()
+next(gen)  # 1 - function pauses after yield
+next(gen)  # 2 - resumes from pause
+```
+
+**This is cooperative scheduling** - generator yields control!
+
+---
 ### Syntax
 
 ```python

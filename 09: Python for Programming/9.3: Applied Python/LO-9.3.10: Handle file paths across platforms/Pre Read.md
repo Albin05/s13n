@@ -1,6 +1,5 @@
 ## Pre-Read: Handle File Paths Across Platforms
 
-**Duration:** 5 minutes
 
 ---
 

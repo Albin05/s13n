@@ -1,5 +1,18 @@
 # Pre-Read: Write Else Statements
 
+## What is Else?
+
+`else` handles "everything else" - what happens when all other conditions are False.
+
+### Simple Analogy
+
+Think of else like **"Plan B"**:
+- IF it's sunny, go to beach; ELSE stay home and watch movies
+- IF have cash, pay with cash; ELSE use credit card
+- IF item in stock, ship it; ELSE send backorder notice
+
+It's your fallback option!
+
 ## What You'll Learn
 In this lesson, you'll learn how to use else statements to handle cases when all previous conditions are False.
 

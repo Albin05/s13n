@@ -1,5 +1,15 @@
 ### LO-17 Write Else Statements (20 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: The `else` clause ensures **exhaustive handling** — every possible path has a response. This relates to the **guard clause** pattern — handling edge cases before the main logic.
+>
+> **Analogy**: `else` is like a **safety net** — if none of the specific conditions match, the default action catches everything else.
+>
+> **Why it matters**: Without `else`, some inputs silently produce no output — `else` guarantees a response.
+
+
 ### Hook (2 minutes)
 
 **Say**: "At a restaurant: IF you want pasta, we make pasta. ELIF you want pizza, we make pizza. ELSE we make our house special! That's else - the default option!"

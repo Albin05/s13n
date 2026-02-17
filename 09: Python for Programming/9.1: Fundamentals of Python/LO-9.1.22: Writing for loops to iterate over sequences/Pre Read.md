@@ -1,5 +1,18 @@
 # Pre-Read: Writing For Loops to Iterate Over Sequences
 
+## What is a For Loop?
+
+For loops let you **process each item** in a collection automatically. Think: "For each item, do this..."
+
+### Simple Analogy
+
+Think of for loops like **going through a checklist**:
+- "For each task on my to-do list, mark it complete"
+- "For each friend, send birthday message"
+- "For each photo, apply filter"
+
+You work through the whole list, one item at a time!
+
 ## What You'll Learn
 In this lesson, you'll learn how to use for loops to iterate over sequences like lists, strings, and other collections. For loops make it easy to process each item in a collection automatically.
 

@@ -1,8 +1,17 @@
 ## Lecture Script: Creating and Initializing Dictionaries
 
-**Duration:** 15 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Dictionaries implement **hash maps** — the most important data structure in computing. Invented for **LISP** (1958) as association lists, evolved into O(1) hash tables. **Python 3.7+** guarantees insertion order.
+>
+> **Analogy**: A dictionary is like a **real dictionary** — look up a word (key) and instantly find its definition (value). No scanning page by page.
+>
+> **Why it matters**: Dicts are Python's Swiss Army knife — used for JSON, caching, counting, configuration, and database records.
+
+
 
 ### Hook (2 minutes)
 

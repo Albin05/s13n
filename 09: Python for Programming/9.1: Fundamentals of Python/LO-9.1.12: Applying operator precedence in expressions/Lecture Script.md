@@ -1,5 +1,15 @@
 ### LO-12 Apply Operator Precedence (16 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Operator precedence follows **mathematical convention** (PEMDAS/BODMAS) established centuries ago in algebra. Python's precedence table has 18 levels — but parentheses always win.
+>
+> **Analogy**: Precedence is like a **VIP list** — multiplication gets served before addition, but parentheses are the ultimate VIP pass.
+>
+> **Why it matters**: Misunderstood precedence causes silent bugs — `2 + 3 * 4` is 14, not 20.
+
+
 ### Hook (3 minutes)
 
 **Say**: "What's 2 + 3 × 4? If you said 20, you forgot PEMDAS! Python follows the same math rules you learned in school."

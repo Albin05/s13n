@@ -1,8 +1,17 @@
 ## Lecture Script: Create Virtual Environments For Projects
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Virtual environments solve **"dependency hell"** — conflicting package versions between projects. **virtualenv** (2007) pioneered this, **venv** (Python 3.3, PEP 405) built it into Python itself.
+>
+> **Analogy**: Virtual environments are like **separate apartments** — each project has its own space with its own furniture (packages), no conflicts with neighbors.
+>
+> **Why it matters**: Without virtual environments, installing a package for one project can break another.
+
+
 
 ### Hook (2 minutes)
 

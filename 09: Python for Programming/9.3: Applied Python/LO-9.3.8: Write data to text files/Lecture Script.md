@@ -1,8 +1,17 @@
 ## Lecture Script: Write Data to Text Files
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: File writing uses **buffered I/O** — data accumulates in memory before flushing to disk in bulk. This **batching** makes writes up to 100x faster than writing byte-by-byte.
+>
+> **Analogy**: Buffered writing is like **filling a truck before delivering** — more efficient than sending one package at a time.
+>
+> **Why it matters**: Understanding write modes (`w` overwrites, `a` appends, `x` creates) prevents accidental data loss.
+
+
 
 ### Hook (2 minutes)
 

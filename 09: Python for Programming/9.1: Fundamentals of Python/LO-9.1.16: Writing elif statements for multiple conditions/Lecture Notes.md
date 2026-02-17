@@ -1,5 +1,28 @@
 # Lecture Notes: Write Elif Statements
 
+## Introduction
+
+The `elif` (else-if) statement allows programs to check **multiple conditions in sequence** and execute different code for each case. This is essential for modeling real-world scenarios with more than two outcomes.
+
+### Why Elif Exists
+
+Real decisions often have multiple outcomes:
+- Grade: A, B, C, D, or F (not just pass/fail)
+- Traffic light: Red, Yellow, or Green
+- Temperature: Too cold, comfortable, or too hot
+
+**The problem with multiple ifs**: All conditions are checked even after finding a match (inefficient)
+**The solution: elif**: Stop checking once a condition is True (efficient, clear logic)
+
+### Real-World Analogy
+
+Elif is like a **customer service menu**:
+- "Press 1 for billing" → IF choice == 1
+- "Press 2 for technical support" → ELIF choice == 2
+- "Press 3 for sales" → ELIF choice == 3
+
+Once you press 2, the system doesn't check options 3, 4, 5... It found its match and proceeds!
+
 ## Elif Statements
 
 The `elif` (else if) statement allows you to check multiple conditions where **only one block of code will execute**.

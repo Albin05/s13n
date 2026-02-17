@@ -1,5 +1,47 @@
 # Lecture Notes: Define Functions
 
+## Introduction
+
+Functions introduce **code reusability** and **abstraction** - two of the most fundamental concepts in programming. They represent the shift from **linear, repetitive code** to **modular, maintainable software**.
+
+### Why Functions Are Revolutionary
+
+**The repetition problem**: Early programs repeated the same code blocks hundreds of times. A bug meant fixing it everywhere. A change meant updating hundreds of locations.
+**Functions solution**: Write code once, call it anywhere. Fix bugs in one place. Update features once.
+
+**Historical note**: Subroutines (early functions) appeared in FORTRAN (1954) and revolutionized programming. Before this, code was a tangled mess. After, programs became organized, maintainable systems.
+
+### Real-World Analogy
+
+Functions are like **recipes in a cookbook**:
+- **Define once**: Write the recipe for "make pasta" once
+- **Use many times**: Cook pasta Monday, Wednesday, Friday without rewriting steps
+- **Share**: Others can use your recipe (code reuse!)
+- **Modify**: Update recipe in one place, everyone gets the improvement
+
+Or like **keyboard shortcuts**:
+- **Ctrl+C (copy)**: A complex series of operations wrapped into one simple action
+- **Function**: Complex code wrapped into one simple name
+- **Result**: Simpler, more readable programs
+
+### The Power of Abstraction
+
+Functions hide **implementation details** behind a simple name:
+```python
+calculate_tax(income)  # Don't need to know HOW tax is calculated!
+send_email(to, subject, body)  # Don't need to know HOW email works!
+```
+
+This **abstraction** lets you work at a higher level - thinking in terms of "what" not "how".
+
+### DRY Principle
+
+Functions embody **DRY: Don't Repeat Yourself**:
+- **Without functions**: Same code copied 50 times (nightmare to maintain!)
+- **With functions**: One function called 50 times (update once, fixed everywhere!)
+
+This is the foundation of professional software engineering.
+
 ## Functions
 
 A function is a reusable block of code that performs a specific task.

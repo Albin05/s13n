@@ -1,5 +1,15 @@
 ### LO-18 Write Nested Conditionals (25 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Nested conditionals increase **cyclomatic complexity** (Thomas McCabe, 1976) — a measure of code complexity. High nesting depth signals code that's hard to test and maintain.
+>
+> **Analogy**: Nested ifs are like **Russian nesting dolls** — decisions inside decisions. Too many layers become hard to follow.
+>
+> **Why it matters**: Sometimes complex logic requires nesting, but prefer flattening with `elif` or early returns when possible.
+
+
 ### Hook (3 minutes)
 
 **Say**: "To drive, you need: age 18+ AND a license AND a car. That's checking conditions INSIDE conditions - nested logic!"

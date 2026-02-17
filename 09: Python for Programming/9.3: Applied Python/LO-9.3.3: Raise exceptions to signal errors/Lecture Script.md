@@ -1,8 +1,17 @@
 ## Lecture Script: Raise Exceptions to Signal Errors
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Raising exceptions implements the **fail-fast principle** — signal errors immediately rather than propagating bad data silently through the system.
+>
+> **Analogy**: `raise` is like **pulling a fire alarm** — don't wait for the fire to spread, alert everyone immediately.
+>
+> **Why it matters**: Functions that detect invalid inputs should raise exceptions, not return magic values like -1 or None.
+
+
 
 ### Hook (2 minutes)
 

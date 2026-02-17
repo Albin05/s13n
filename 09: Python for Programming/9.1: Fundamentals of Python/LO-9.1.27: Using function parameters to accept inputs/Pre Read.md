@@ -1,5 +1,24 @@
 # Pre-Read: Using Function Parameters to Accept Inputs
 
+## Why Parameters?
+
+Imagine having a different calculator for every pair of numbers you want to add - one for "5+3", another for "10+20", etc. Ridiculous, right? **Parameters** solve this - one function, infinite uses!
+
+### Simple Analogy
+
+Think of parameters like **placeholders in a Mad Libs game**:
+- **Template**: "Hello, [NAME]! You are [AGE] years old."
+- **Parameters**: NAME and AGE are slots you fill in
+- **Infinite variations**: Change the values, get different results
+- **Same structure**, different data each time
+
+Or like **a blender**:
+- **Machine**: The function (same every time)
+- **Ingredients**: Parameters (different each time)
+- **Banana smoothie**: blend(banana, milk, ice)
+- **Berry smoothie**: blend(berries, yogurt, ice)
+- **One blender**, many recipes!
+
 ## What You'll Learn
 In this lesson, you'll learn how to define functions that accept parameters (inputs), making your functions flexible and reusable for different data.
 

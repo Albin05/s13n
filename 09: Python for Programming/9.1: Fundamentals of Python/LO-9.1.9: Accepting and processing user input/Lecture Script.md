@@ -1,5 +1,15 @@
 ### LO-9 Accept User Input (16 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Interactive input comes from Unix's **stdin/stdout model** (1971). `input()` reads from **standard input** — the same stream whether it's a keyboard, file, or pipe.
+>
+> **Analogy**: `input()` is like a **waiter taking your order** — the program pauses, listens, and records what you say as a string.
+>
+> **Why it matters**: User input makes programs interactive — from CLI tools to form validation, input handling is essential.
+
+
 ### Hook (3 minutes)
 
 **Say**: "Want to make programs that talk to users? The input() function makes programs interactive!"

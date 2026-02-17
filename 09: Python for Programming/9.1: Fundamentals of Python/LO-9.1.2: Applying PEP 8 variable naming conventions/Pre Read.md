@@ -1,7 +1,46 @@
 # Pre-Read: Apply Variable Naming Conventions
 
 ## Why Naming Matters
-Variable names should be clear and follow Python's rules. Good names make code readable; bad names cause errors or confusion.
+
+Imagine reading a book where every character was named "Person1", "Person2", "Person3". Confusing, right?
+
+Variable names are the same - they tell the story of your code. Good names make code **self-explanatory**. Bad names require constant mental translation and lead to bugs.
+
+### The Cost of Bad Naming
+
+Consider this real example:
+```python
+# Unclear
+d = 86400
+t = d * 7
+```
+
+vs.
+
+```python
+# Clear
+seconds_per_day = 86400
+seconds_per_week = seconds_per_day * 7
+```
+
+The second version needs no comments - the names explain everything. The first version forces you to guess what `d` and `t` mean.
+
+**In professional development:**
+- Poor naming wastes hours of debugging time
+- Good naming prevents bugs before they happen
+- Clear names reduce onboarding time for new team members
+
+### Python's Philosophy: Community Standards
+
+Python has an official style guide called **PEP 8**. It's not just suggestions - it's how the entire Python community writes code.
+
+Following PEP 8 means:
+- Your code looks professional
+- Other Python developers can read it instantly
+- You can read their code easily too
+- Tools can automatically check your style
+
+Think of it like **driving on the right side of the road** - it's a convention that makes everyone safer.
 
 ## Naming Rules (MUST Follow)
 

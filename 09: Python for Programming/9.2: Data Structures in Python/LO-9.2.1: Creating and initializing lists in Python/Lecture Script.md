@@ -31,6 +31,16 @@ But this is tedious, error-prone, and doesn't scale. What if you need to track 3
 
 ---
 
+### CS Theory Bite
+
+> **Origin**: Lists implement **dynamic arrays** — automatically resizing arrays invented for **FORTRAN** (1957). Python lists use **over-allocation** (extra space) to make `append()` amortized O(1).
+>
+> **Analogy**: A list is like a **numbered shelf** — items sit in order, you can add/remove from any position, and the shelf grows as needed.
+>
+> **Why it matters**: Lists are Python's most versatile data structure — used in 90% of programs.
+
+
+
 ### Section 1: Creating Empty Lists (3 minutes)
 
 **Method 1: Square Brackets**

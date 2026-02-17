@@ -1,8 +1,17 @@
 ## Lecture Script: Implement __init__ Constructor
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Constructors were invented by **Simula 67** (1967). Python's `__init__` is technically an **initializer** (not constructor) — `__new__` creates the object, `__init__` sets it up.
+>
+> **Analogy**: `__init__` is like a **birth certificate** — automatically records the essential details (attributes) the moment an object is born.
+>
+> **Why it matters**: Without `__init__`, objects start empty — guaranteed initialization prevents AttributeError bugs.
+
+
 
 ### Hook (2 minutes)
 

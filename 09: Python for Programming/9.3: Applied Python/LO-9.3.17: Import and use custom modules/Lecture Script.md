@@ -1,8 +1,17 @@
 ## Lecture Script: Import And Use Custom Modules
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Custom modules implement **modular programming** (FORTRAN 1957, Modula-3 1980s). Python finds modules via **sys.path** — a search path checked in order: current directory → standard library → installed packages.
+>
+> **Analogy**: A custom module is like a **personal toolbox** — organize your favorite tools (functions) so you can carry them between projects.
+>
+> **Why it matters**: Modules prevent code duplication — write utility functions once, import everywhere.
+
+
 
 ### Hook (2 minutes)
 

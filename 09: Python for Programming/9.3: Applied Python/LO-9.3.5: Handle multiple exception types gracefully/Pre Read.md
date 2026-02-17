@@ -1,6 +1,60 @@
 ## Pre-Read: Handle Multiple Exception Types
 
-**Duration:** 5 minutes
+
+---
+
+## Introduction
+
+**Multiple exception handling** lets you handle different error types differently - like a hospital triage system routing patients to appropriate specialists! One try block can have many except handlers, each catching specific error types. This is **polymorphic error handling**!
+
+### Why Multiple Handlers Matter
+
+**Problem**: Different errors need different responses:
+```python
+try:
+    value = int(data[key][index])
+# KeyError? IndexError? ValueError? Need different fixes!
+```
+
+**Solution**: Multiple except blocks catch different types:
+```python
+except KeyError:
+    use_default_key()  # Fix missing key
+except IndexError:
+    use_default_index()  # Fix bad index
+except ValueError:
+    use_default_value()  # Fix type conversion
+# Each error → appropriate handler!
+```
+
+**This is error polymorphism** - same try, different handlers!
+
+### Critical Rule: Specific Before General
+
+Python checks except blocks **top to bottom**, first match wins:
+```python
+# CORRECT - specific first
+except FileNotFoundError:
+    create_file()
+except OSError:  # Catches other OS errors
+    log_error()
+
+# WRONG - general first
+except OSError:  # Catches FileNotFoundError!
+    log_error()
+except FileNotFoundError:  # Never reached!
+    create_file()
+```
+
+**Always specific → general!**
+
+### Real-World Analogy
+
+**Multiple exception handling like mail sorting**:
+- **Local mail**: Local delivery (FileNotFoundError)
+- **International**: Customs processing (PermissionError)
+- **Undeliverable**: Return to sender (OSError catch-all)
+**Different mail types → different handling!**
 
 ---
 

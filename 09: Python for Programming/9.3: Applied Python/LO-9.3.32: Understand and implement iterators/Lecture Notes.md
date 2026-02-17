@@ -16,6 +16,90 @@ An iterator is an object that can be iterated upon, returning data one element a
 </div>
 
 ---
+
+## Introduction
+
+Iterators implement the **iteration protocol** - standard interface for sequential access! This is **design pattern** from **Gang of Four** (1994) - separate traversal from container. Iterators enable **generic algorithms** - work with any sequence!
+
+### Why Iterators are Fundamental
+
+**Problem without protocol**: Each container needs custom loop:
+```python
+# INCONSISTENT - different access methods!
+list_item = my_list[i]      # Index access
+tree_item = tree.in_order()  # Custom traversal
+# Can't write generic code!
+```
+
+**Solution with iterators**: Uniform interface:
+```python
+# CONSISTENT - same protocol!
+for item in my_list:  # Iterator protocol
+    process(item)
+for item in my_tree:  # Same protocol!
+    process(item)
+# Generic iteration works everywhere!
+```
+
+**This is polymorphic iteration** - one interface, many implementations!
+
+### Historical Context
+
+**Iterator pattern** formalized by **Gang of Four** (1994 Design Patterns book). **CLU** (1970s) had iterators - influenced Python! **Java** adopted Iterator interface (1998), **C++ STL** uses iterator concept (1994).
+
+**Python's protocol**: **Duck typing** - no formal interface requirement! If object has `__iter__()` and `__next__()`, it's an iterator. **Pythonic** - conventions over contracts!
+
+**StopIteration exception** (instead of sentinel values) is **Pythonic error handling** - exceptions are **control flow** in Python! **EAFP** philosophy - "Easier to Ask Forgiveness than Permission".
+
+### Real-World Analogies
+
+**Iterators like playlist**:
+- **Container**: Music library (data structure)
+- **Iterator**: Playlist player (traversal mechanism)
+- **next()**: Skip to next song
+- **StopIteration**: Playlist finished
+**Separate music from playback!**
+
+**Or like museum tour**:
+```python
+class Museum:  # Container
+    def __iter__(self):
+        return TourGuide(self.exhibits)
+
+class TourGuide:  # Iterator
+    def __next__(self):
+        return next_exhibit_or_raise_StopIteration
+# Tour guide knows path through exhibits!
+```
+
+**Or like book reader**:
+- **Book**: Iterable container (has pages)
+- **Bookmark**: Iterator (current position)
+- **Turn page**: next() method
+- **Last page**: StopIteration
+**Reader maintains position, book provides content!**
+
+### Iterator vs Iterable: The Distinction
+
+**Iterable**: Can produce iterator (has `__iter__()`):
+```python
+numbers = [1, 2, 3]  # List is iterable
+iter1 = iter(numbers)  # Get iterator
+iter2 = iter(numbers)  # Get another iterator
+# Can iterate multiple times!
+```
+
+**Iterator**: Produces values (has `__next__()`):
+```python
+iterator = iter([1, 2, 3])
+next(iterator)  # 1
+next(iterator)  # 2
+# Can only iterate once - exhausted!
+```
+
+**Key insight**: Iterables are **reusable**, iterators are **one-shot**!
+
+---
 ### Iterable vs Iterator
 
 ```python

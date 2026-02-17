@@ -1,5 +1,23 @@
 # Pre-Read: Writing Nested Loops for Multi-Level Iteration
 
+## What are Nested Loops?
+
+Nested loops are **loops within loops** - allowing you to work with data that has multiple dimensions or levels. Think of them as tools for handling **grids**, **tables**, and **combinations**.
+
+### Simple Analogy
+
+Think of nested loops like **organizing a deck of cards**:
+- **Outer loop**: Go through each suit (Hearts, Diamonds, Clubs, Spades)
+- **Inner loop**: Go through each card in that suit (Ace, 2, 3... King)
+- **Result**: For each suit, you process ALL 13 cards before moving to the next suit
+
+Or like **filling ice cube trays**:
+- **Outer loop**: Pick up each tray
+- **Inner loop**: Fill each cube in that tray
+- **Pattern**: Fill all cubes in tray 1, then move to tray 2
+
+The inner loop **completely finishes** for each iteration of the outer loop!
+
 ## What You'll Learn
 In this lesson, you'll learn how to write loops inside other loops (nested loops) to work with multi-dimensional data or create patterns. This is essential for working with grids, tables, and complex iterations.
 

@@ -1,8 +1,17 @@
 ## Lecture Script: Iterating Through Dictionaries
 
-**Duration:** 15 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: `.keys()`, `.values()`, `.items()` return **view objects** (Python 3) — live windows into the dict that update automatically. In Python 2, these returned static lists (more memory).
+>
+> **Analogy**: Dict views are like **security camera feeds** — they show the current state of the dict in real-time, not a snapshot.
+>
+> **Why it matters**: `.items()` is the most common — it gives you both key and value in each iteration.
+
+
 
 ### Hook (2 minutes)
 

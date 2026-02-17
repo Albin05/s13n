@@ -8,6 +8,29 @@ Examples: `5`, `-3`, `0`, `1000`, `-999`
 
 Not integers: `5.5`, `3.14`, `0.1` (these are floats)
 
+### Why Do We Need Different Number Types?
+
+You might wonder: "Why not just use one number type for everything?"
+
+Think about real life:
+- When counting apples, you say "5 apples", not "5.0 apples"
+- When measuring height, you say "5.8 feet" (need decimals)
+
+Computers work the same way! Different number types serve different purposes:
+- **Integers**: Counting, indexing, discrete quantities
+- **Floats**: Measurements, prices, scientific calculations
+
+**Bonus**: Integer arithmetic is faster and more precise than float arithmetic. When you don't need decimals, integers are the better choice.
+
+### Simple Analogy
+
+Think of integers like **whole coins**:
+- You can have 1 coin, 5 coins, 100 coins
+- You can't have 2.7 coins (you can't split a coin)
+- Even if you have zero coins, that's still a whole number: 0
+
+Floats are like **liquid in a measuring cup** - you can have 2.5 cups, 3.14 cups, any amount!
+
 ## Creating Integer Variables
 
 ```python

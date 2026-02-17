@@ -1,5 +1,15 @@
 # Lecture Script: LO-9.3.37 Write Unit Tests Using pytest Framework
 
+
+### CS Theory Bite
+
+> **Origin**: Unit testing formalized by **Kent Beck** (SUnit for Smalltalk, 1994; JUnit for Java, 1999). **pytest** (2004) simplified Python testing — just write `assert` statements, no classes needed.
+>
+> **Analogy**: Unit tests are like **quality control on a factory line** — test each component individually before assembly to catch defects early.
+>
+> **Why it matters**: Tests are your safety net — change code confidently knowing tests will catch regressions.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "You deploy your code. It crashes. 'But it worked on my machine!' Sound familiar? Unit tests prevent this. Write tests once, run them forever. Pytest makes testing so simple: def test_add(): assert add(2, 3) == 5. Green means ship it. Red means fix it. Professional developers test EVERYTHING!"
 

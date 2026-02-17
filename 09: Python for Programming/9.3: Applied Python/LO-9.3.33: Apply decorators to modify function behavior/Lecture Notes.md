@@ -16,6 +16,89 @@ Decorators are a powerful feature in Python that allow you to modify or enhance 
 </div>
 
 ---
+
+## Introduction
+
+Decorators implement **aspect-oriented programming** - adding cross-cutting concerns without modifying functions! This is **metaprogramming** - code that modifies code at definition time. Decorators are **higher-order functions** - functions that take functions and return enhanced functions!
+
+### Why Decorators are Powerful
+
+**Problem without decorators**: Cross-cutting concerns pollute code:
+```python
+# MESSY - logging mixed with business logic!
+def calculate_tax(income):
+    print("Starting calculate_tax")  # Logging
+    start = time.time()              # Timing
+    result = income * 0.3            # Actual logic
+    print(f"Took {time.time()-start}s")  # Timing
+    print("Finished calculate_tax")   # Logging
+    return result
+# Business logic buried in infrastructure!
+```
+
+**Solution with decorators**: Separate concerns cleanly:
+```python
+# CLEAN - concerns separated!
+@log_calls
+@timer
+def calculate_tax(income):
+    return income * 0.3  # Pure business logic!
+# Logging and timing added without touching function!
+```
+
+**This is separation of concerns** - each decorator handles one aspect!
+
+### Historical Context
+
+**Decorators** added **Python 2.4** (2004) with **PEP 318**. Before: `func = decorator(func)` syntax - verbose! **@syntax** inspired by **Java annotations** (2004) but more powerful - Python decorators execute code!
+
+**Higher-order functions** from **lambda calculus** (Alonzo Church, 1930s) - functions as first-class values! **LISP** (1958) pioneered functions-as-arguments. Python decorators are **closures** - inner functions remembering outer scope!
+
+**Aspect-Oriented Programming (AOP)** formalized by **Gregor Kiczales** (1997) - cross-cutting concerns (logging, security, caching) separated from business logic. Decorators bring AOP to Python elegantly!
+
+### Real-World Analogies
+
+**Decorators like gift wrapping**:
+- **Function**: The gift (core functionality)
+- **Decorator**: Wrapping paper, ribbon, tag (added behavior)
+- **Result**: Enhanced presentation without changing gift!
+**Wrap functions with extra features!**
+
+**Or like building security layers**:
+```python
+@require_admin        # Check admin status
+@require_login        # Check authentication
+@rate_limit(100)      # Limit requests
+def delete_database():
+    pass  # Dangerous operation!
+# Three security layers, function untouched!
+```
+
+**Or like restaurant food preparation**:
+- **Function**: Raw ingredients → cooked dish
+- **@plate_decorator**: Add plating, garnish
+- **@quality_check**: Verify taste, temperature
+- **@serve_decorator**: Add service presentation
+**Each step enhances without changing the core dish!**
+
+### Decorator = Higher-Order Function
+
+**What `@decorator` actually does**:
+```python
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+# Equivalent to:
+def say_hello():
+    print("Hello!")
+say_hello = my_decorator(say_hello)  # Replace!
+# say_hello now points to wrapper function!
+```
+
+**This is function replacement** - old function wrapped in new behavior!
+
+---
 ### Basic Decorator Syntax
 
 ```python

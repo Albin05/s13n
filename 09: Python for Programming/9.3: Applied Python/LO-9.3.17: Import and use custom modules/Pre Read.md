@@ -1,6 +1,5 @@
 ## Pre-Read: Import And Use Custom Modules
 
-**Duration:** 5 minutes
 
 ---
 

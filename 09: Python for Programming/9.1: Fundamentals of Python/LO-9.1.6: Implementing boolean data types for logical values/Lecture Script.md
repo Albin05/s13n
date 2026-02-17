@@ -1,5 +1,15 @@
 ### LO-6 Implement Boolean Data Types (15 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Named after mathematician **George Boole** (1854), who formalized logic into algebra. Every `if` statement, every `while` loop ultimately depends on Boolean values.
+>
+> **Analogy**: Booleans are like a **light switch** — only two states: ON (True) or OFF (False). No dimmer, no maybe.
+>
+> **Why it matters**: All program decisions reduce to True/False — booleans are the atoms of control flow.
+
+
 ### Hook (3 minutes)
 
 **Say**: "Is the light on or off? Is the door open or closed? Life is full of yes/no questions - that's what booleans are for!"

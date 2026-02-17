@@ -1,5 +1,40 @@
 # Lecture Notes: Write Nested Loops
 
+## Introduction
+
+Nested loops introduce **multi-dimensional iteration** - the ability to process data with multiple levels or dimensions. They represent a fundamental pattern in computing for handling **combinations**, **grids**, and **hierarchical data**.
+
+### Why Nested Loops Exist
+
+**The multi-level problem**: Real-world data isn't linear - think spreadsheets (rows AND columns), chess boards (8x8 grid), class schedules (students AND subjects).
+**Nested loops solution**: One loop handles outer level (rows), inner loop handles inner level (columns).
+
+**Computer graphics**: Every pixel on your screen was drawn using nested loops - one loop for rows, one for columns. Video games render millions of pixels per second using this pattern!
+
+### Real-World Analogy
+
+Nested loops are like **reading a book**:
+- **Outer loop**: Iterate through each chapter (chapter 1, 2, 3...)
+- **Inner loop**: Read each page in that chapter (page 1, 2, 3...)
+- **Pattern**: For each chapter, you read ALL its pages before moving to next chapter
+
+Or like **a teacher taking attendance**:
+- **Outer loop**: Go through each row of seats
+- **Inner loop**: Check each student in that row
+- **Complete inner before advancing outer**: Check all students in row 1 before moving to row 2
+
+### The Power of Combinations
+
+Nested loops let you explore **all possible combinations**:
+```python
+# 3 outer × 4 inner = 12 total combinations
+for i in [1, 2, 3]:
+    for j in ['A', 'B', 'C', 'D']:
+        print(f"{i}{j}")  # 1A, 1B, 1C, 1D, 2A, 2B...
+```
+
+This **Cartesian product** is fundamental in mathematics, databases (SQL joins), and algorithms.
+
 ## Nested Loops
 
 A nested loop is a loop inside another loop.

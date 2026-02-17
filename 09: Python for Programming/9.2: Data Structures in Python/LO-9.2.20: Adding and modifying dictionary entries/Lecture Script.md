@@ -1,8 +1,17 @@
 ## Lecture Script: Adding and Modifying Dictionary Entries
 
-**Duration:** 15 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Dict insertion and update are both O(1) average. Python dicts use **dynamic resizing** — when the **load factor** exceeds ~2/3, the hash table doubles in size and rehashes all entries.
+>
+> **Analogy**: Adding to a dict is like **filing a document** — place it in the right folder (hash bucket). Updating is like **replacing the document** in the same folder.
+>
+> **Why it matters**: Dicts are mutable by design — build them incrementally as data arrives.
+
+
 
 ### Hook (2 minutes)
 

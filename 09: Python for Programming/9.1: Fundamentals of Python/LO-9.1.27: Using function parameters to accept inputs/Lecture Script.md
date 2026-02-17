@@ -1,5 +1,15 @@
 ### Using Function Parameters to Accept Inputs
 
+
+### CS Theory Bite
+
+> **Origin**: Parameters implement **parameterized abstraction** — functions that adapt to different inputs. Python uses **pass-by-object-reference** (neither pure pass-by-value nor pass-by-reference).
+>
+> **Analogy**: Parameters are like **power outlets** — the function is an appliance, and parameters are the sockets where you plug in different data.
+>
+> **Why it matters**: Parameters make functions flexible — one function, many uses with different inputs.
+
+
 ### Hook (3 minutes)
 
 "Yesterday we learned functions, but they always did the SAME thing. Imagine if your calculator's 'add' button could only add 2+3 every time - not very useful!"

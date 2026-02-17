@@ -1,8 +1,17 @@
 ## Lecture Script: Creating and Initializing Sets for Unique Values
 
-**Duration:** 18 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Sets use **hash tables** internally — each element is hashed to a bucket for O(1) lookup. Elements must be **hashable** (immutable) — that's why lists can't be set members but tuples can.
+>
+> **Analogy**: A set is like a **fingerprint database** — each entry has a unique hash, and lookup is instant by checking the hash.
+>
+> **Why it matters**: Understanding hashability explains why `{[1,2]}` fails but `{(1,2)}` works.
+
+
 
 ### Hook (2 minutes)
 

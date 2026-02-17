@@ -1,8 +1,17 @@
 ## Lecture Script: Accessing Dictionary Values
 
-**Duration:** 15 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Key access uses **hash functions** for O(1) lookup. `get()` was added for **safe access** — returns a default instead of raising `KeyError`. This is the **LBYL** (Look Before You Leap) approach.
+>
+> **Analogy**: Direct access `d[key]` is like **demanding a file** — crashes if it doesn't exist. `d.get(key)` is like **politely asking** — returns None if unavailable.
+>
+> **Why it matters**: `get()` with a default value eliminates entire categories of KeyError bugs.
+
+
 
 ### Hook (2 minutes)
 

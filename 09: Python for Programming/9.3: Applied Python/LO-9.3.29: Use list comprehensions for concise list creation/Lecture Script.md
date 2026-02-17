@@ -1,5 +1,15 @@
 # Lecture Script: LO-71 Use List Comprehensions
 
+
+### CS Theory Bite
+
+> **Origin**: List comprehensions were inspired by **Haskell** (1990) and **set builder notation** in mathematics. Added in **Python 2.0** (PEP 202) — they compile to optimized C bytecode, running faster than equivalent loops.
+>
+> **Analogy**: A list comprehension is like an **assembly line** — define the transformation, and the factory produces all items automatically.
+>
+> **Why it matters**: Comprehensions replace 4-line loop patterns with 1 readable line — more Pythonic and faster.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "Want to create a list of squares from 0 to 9? Traditional way: 4 lines of code. Python way: 1 line! That's the power of list comprehensions — concise, readable, and Pythonic. Let me show you the magic!"
 

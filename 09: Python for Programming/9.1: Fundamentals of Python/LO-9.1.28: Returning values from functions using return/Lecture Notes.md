@@ -1,5 +1,55 @@
 # Lecture Notes: Return Values from Functions
 
+## Introduction
+
+The `return` statement introduces **output** from functions - the ability to send computed values back to the caller. This completes the **input-process-output** cycle that makes functions powerful building blocks.
+
+### Why Return Exists
+
+**The usability problem**: Functions that only print are limited - you can't use their results in calculations, store them, or pass them to other functions.
+**Return solution**: Functions compute values AND send them back for further use. This enables **function composition** - using outputs of one function as inputs to another.
+
+**Mathematical parallel**: Functions in math return values: f(x) = x² returns a value you can use. Programming functions work the same way!
+
+### Real-World Analogy
+
+Return is like **a calculator**:
+- **Input**: You press 5 + 3
+- **Processing**: Calculator computes internally
+- **Return**: Shows "8" on display (returns value you can copy/use)
+- **vs Display only**: If calculator just showed "8" but you couldn't copy it, useless!
+
+Or like **a vending machine**:
+- **Input**: You insert money, press button
+- **Processing**: Machine finds item
+- **Return**: Item drops into slot (returns physical product)
+- **You get output**: Can now eat/use the item elsewhere!
+
+### Return vs Print: The Critical Difference
+
+This is one of the most confusing concepts for beginners:
+- **print()**: Shows something to the user (side effect, no value returned)
+- **return**: Sends value back to the code (for further computation)
+
+```python
+def bad_add(a, b):
+    print(a + b)  # Just displays, returns None
+
+result = bad_add(5, 3)  # Displays 8
+# result is None! Can't use it!
+```
+
+**Professional code uses return** - printing is only for final user output.
+
+### The Power of Composition
+
+Return enables **chaining functions** - outputs become inputs:
+```python
+result = function3(function2(function1(data)))
+```
+
+This **functional composition** is fundamental to modern programming - building complex operations from simple, reusable pieces.
+
 ## Return Statement
 
 Functions can send values back using `return`.

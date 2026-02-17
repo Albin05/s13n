@@ -1,5 +1,15 @@
 ### Defining Reusable Functions in Python
 
+
+### CS Theory Bite
+
+> **Origin**: Functions (called **subroutines** in the 1950s) were formalized to enable **code reuse**. The **DRY principle** (Don't Repeat Yourself) — Andy Hunt & Dave Thomas, 1999 — is built on functions.
+>
+> **Analogy**: A function is like a **recipe** — define it once, cook it anytime you want. Change the recipe, and every dish improves.
+>
+> **Why it matters**: Functions are the primary unit of code organization — every large program is built from small functions.
+
+
 ### Hook (3 minutes)
 
 "Imagine you're making breakfast. Every morning, you follow the same routine to make coffee - you don't relearn the steps each time. Functions in Python work the same way: define once, use many times!"

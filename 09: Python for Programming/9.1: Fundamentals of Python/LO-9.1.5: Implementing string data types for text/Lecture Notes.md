@@ -5,6 +5,55 @@ Strings represent text data in Python. They're one of the most commonly used dat
 
 ---
 
+## Understanding Strings
+
+### Why "String"?
+
+The term "string" comes from "string of characters" - imagine beads on a string, where each bead is a character. A string is a **sequence** of characters strung together:
+
+```
+"Hello" = ['H', 'e', 'l', 'l', 'o']
+```
+
+### From Numbers to Text
+
+Remember: computers only understand numbers (binary). So how do they store text?
+
+Each character is assigned a number:
+- 'A' = 65
+- 'B' = 66
+- 'a' = 97
+- '!' = 33
+
+This mapping is called **character encoding**:
+- **ASCII** (1960s): 128 characters - English letters, digits, symbols
+- **Unicode** (1991): 1 million+ characters - emoji, Chinese, Arabic, math symbols 😊
+
+Python 3 uses Unicode by default - that's why you can write: `message = "Hello 世界 🌍"`
+
+### Strings Are Immutable
+
+**Important concept**: Once created, strings cannot be changed. Every "modification" creates a **new** string:
+
+```python
+name = "Alice"
+name = name.upper()  # Creates new string "ALICE"
+# The original "Alice" is discarded
+```
+
+Think of strings like **printed words on paper** - you can't erase and change them, you must print a new paper.
+
+**Why immutable?**
+- **Safety**: No accidental changes
+- **Efficiency**: Same string can be reused in memory
+- **Hashable**: Can be used as dictionary keys (you'll learn later)
+
+### Real-World Analogy
+
+A string is like a **text message**:
+- Made up of individual characters (letters, numbers, spaces, emojis)
+- Has a specific order (sequence matters!)
+- Once sent, you can't edit it - only send a new message
 
 ## Creating Strings
 

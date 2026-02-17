@@ -30,6 +30,16 @@ students = ['Alice', 'Bob', 'Charlie', 'Diana', 'Eve']
 
 ---
 
+### CS Theory Bite
+
+> **Origin**: **Zero-based indexing** comes from **C** (1972) — the index represents memory offset from the start. Negative indexing (`-1` for last) is Python's elegant addition.
+>
+> **Analogy**: Indexing is like **apartment numbers** — each element has a unique address. Negative indices count from the back entrance.
+>
+> **Why it matters**: O(1) random access by index is what makes lists powerful — instant access to any element.
+
+
+
 ### Section 1: Positive Indexing (4 minutes)
 
 **Basic Indexing (Zero-Based):**

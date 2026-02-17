@@ -1,8 +1,17 @@
 ## Lecture Script: Debug Python Programs Effectively
 
-**Duration:** 15 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: The term "bug" dates to **Grace Hopper** (1947) who found an actual moth in the Harvard Mark II computer. Debuggers evolved from **LISP** (1960s) to **GDB** (1986) to Python's **pdb** (1992).
+>
+> **Analogy**: Debugging is like **detective work** — gather evidence (error messages), form hypotheses, test them systematically.
+>
+> **Why it matters**: You'll spend more time debugging than writing code — systematic debugging skills are essential.
+
+
 
 ### Hook (2 minutes)
 

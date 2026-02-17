@@ -1,6 +1,37 @@
 ## Lecture Notes: Merging Dictionaries Using the update() Method
 
-**Duration:** 10 minutes
+
+---
+
+## Introduction
+
+Dictionary merging implements **configuration layering** - a fundamental pattern in software engineering. Defaults → environment → user preferences → command-line arguments - each layer **overrides** the previous. This is how **all modern applications** handle configuration: Docker, Kubernetes, web frameworks, CLI tools!
+
+### Why Merging is Fundamental
+
+**The configuration problem**: Apps need settings from multiple sources with precedence:
+1. **Hardcoded defaults** (lowest priority)
+2. **Config files** (medium priority)
+3. **Environment variables** (higher priority)
+4. **Command-line args** (highest priority)
+
+**Python's solution**: Layer dictionaries with later ones overriding earlier ones!
+```python
+final = {**defaults, **config_file, **env_vars, **cli_args}
+# Last value wins - perfect precedence!
+```
+
+**This pattern** powers every major Python framework: Django settings, Flask config, pytest configuration!
+
+### The Evolution of Dict Merging
+
+**Python 3.5**: `{**d1, **d2}` unpacking syntax - clean and Pythonic
+**Python 3.9**: `|` operator - even cleaner, matches set union semantics!
+```python
+merged = d1 | d2  # Beautiful!
+```
+
+**This shows Python's design evolution** - continually improving ergonomics!
 
 ---
 

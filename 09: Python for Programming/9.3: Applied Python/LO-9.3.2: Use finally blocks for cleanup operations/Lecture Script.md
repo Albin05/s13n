@@ -1,8 +1,17 @@
 ## Lecture Script: Use finally Blocks for Cleanup
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: `finally` implements the **RAII pattern** (C++, 1985) — Resource Acquisition Is Initialization. The guarantee: cleanup code ALWAYS runs, whether an exception occurs or not.
+>
+> **Analogy**: `finally` is like **washing your hands after cooking** — whether the recipe succeeded or burned, you still clean up.
+>
+> **Why it matters**: Resource leaks (unclosed files, unreleased connections) are prevented by `finally` blocks.
+
+
 
 ### Hook (2 minutes)
 

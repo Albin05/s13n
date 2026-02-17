@@ -1,8 +1,17 @@
 ## Lecture Script: Creating and Using Tuples
 
-**Duration:** 18 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Tuples are **immutable sequences** — once created, they cannot change. This immutability enables **hashability**, so tuples can be dictionary keys (lists cannot).
+>
+> **Analogy**: A tuple is like a **sealed envelope** — you can look at the contents, but you can't change them after sealing.
+>
+> **Why it matters**: Tuples signal intent ("this data shouldn't change") and enable dict keys and set membership.
+
+
 
 ### Hook (2 minutes)
 

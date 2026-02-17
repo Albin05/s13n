@@ -1,6 +1,27 @@
 ## Lecture Notes: Removing Entries Using pop(), popitem(), and del
 
-**Duration:** 10 minutes
+
+---
+
+## Introduction
+
+Multiple removal methods reflect **different use cases**: `del` for simple removal, `pop()` for removal + retrieval, `popitem()` for stack-like (LIFO) behavior. This represents **API granularity** - providing specific tools for specific patterns rather than one generic method.
+
+### Why Multiple Removal Methods?
+
+**del** = **Statement** (not a method): Low-level, like variable deletion
+**pop()** = **Retrieval + removal**: Get value before deleting (common pattern!)
+**popitem()** = **LIFO stack**: Process items in reverse insertion order
+**clear()** = **Bulk operation**: Empty everything at once
+
+**Each serves a distinct purpose** - Python optimizes for common patterns!
+
+### Real-World Analogies
+
+**del like permanent deletion**: "Delete this file" → Gone forever, no undo
+**pop() like withdrawal**: "Withdraw $50 from account" → Get money AND remove from balance
+**popitem() like todo list**: "Take last item added" → LIFO (Last In, First Out) - like undoing recent changes
+**clear() like factory reset**: "Erase all data" → Start fresh
 
 ---
 

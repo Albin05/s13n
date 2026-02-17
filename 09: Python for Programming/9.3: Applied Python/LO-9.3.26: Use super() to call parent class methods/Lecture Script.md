@@ -1,5 +1,15 @@
 # Lecture Script: LO-68 Use the super() Function
 
+
+### CS Theory Bite
+
+> **Origin**: `super()` was added in **Python 2.2** (2001) for cooperative inheritance. It follows the **C3 linearization** algorithm (Python 2.3) to determine which parent method to call — solving the diamond problem.
+>
+> **Analogy**: `super()` is like **calling your manager** — delegate upward to the parent class, which handles its own responsibilities.
+>
+> **Why it matters**: `super().__init__()` ensures parent initialization runs — without it, inherited attributes are missing.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "Imagine building a robot. You have a basic Robot class that can walk and talk. Now you want to build a DancingRobot that can do everything a Robot can do PLUS dance. You don't want to copy-paste all the Robot code! That's where super() comes in — it lets you use the parent's code while adding your own."
 

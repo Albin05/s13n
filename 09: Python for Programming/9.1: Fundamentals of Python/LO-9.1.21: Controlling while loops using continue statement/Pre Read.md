@@ -1,5 +1,19 @@
 # Pre-Read: Controlling While Loops Using Continue Statement
 
+## What is Continue?
+
+`continue` skips the **rest of the current loop iteration** and jumps to the next one. Unlike `break` (which exits the loop), continue just skips this round.
+
+### Simple Analogy
+
+Think of continue like **skipping a song**:
+- Playing playlist → Don't like this song → Skip to next (continue) → Keep playing
+- vs. Don't like playlist → Stop playback (break)
+
+Or like **skipping questions on a test**:
+- Question too hard? Skip it (continue), answer next question
+- vs. Give up on test entirely (break)
+
 ## What You'll Learn
 In this lesson, you'll learn how to use the `continue` statement to skip the rest of the current loop iteration and jump to the next one. This is useful when you want to skip certain cases but keep the loop running.
 

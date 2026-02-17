@@ -3,6 +3,17 @@
 ## What You'll Learn
 In this lesson, you'll learn how to use the `break` statement to exit a loop early, before the loop condition becomes False. This gives you more control over when your loops stop.
 
+## What is Break?
+
+`break` lets you **exit a loop immediately**, even if the loop condition is still True. It's like an emergency stop button!
+
+### Simple Analogy
+
+Think of break like **"found what I'm looking for, stop searching!"**:
+- Looking through a playlist for a song. **Found it? BREAK - stop scrolling!**
+- Testing passwords. **Correct one found? BREAK - stop trying!**
+- Checking inventory items. **Found defect? BREAK - inspection failed!**
+
 ## Why This Matters
 Sometimes you need to stop a loop immediately when something specific happens:
 - A user types "quit" in a menu system

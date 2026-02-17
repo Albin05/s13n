@@ -1,5 +1,15 @@
 ### LO-10 Format Output with F-strings (16 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: String formatting evolved from C's `printf()` (1970s) → Python's `%` operator → `.format()` → **f-strings** (Python 3.6, PEP 498). Each generation got more readable.
+>
+> **Analogy**: F-strings are like **Mad Libs** — the template has blanks `{name}` that get filled in with actual values at runtime.
+>
+> **Why it matters**: f-strings are the fastest and most readable way to build dynamic strings in Python.
+
+
 ### Hook (3 minutes)
 
 **Say**: "Tired of writing `'text' + str(variable) + 'more text'`? F-strings are cleaner and faster!"

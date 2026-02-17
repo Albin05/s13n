@@ -1,5 +1,15 @@
 # Lecture Script: LO-53 Work with CSV Files
 
+
+### CS Theory Bite
+
+> **Origin**: CSV (Comma-Separated Values) dates to **FORTRAN** in the 1970s and was standardized in **RFC 4180** (2005). It remains the most universal data exchange format — every spreadsheet app supports it.
+>
+> **Analogy**: A CSV file is like a **spreadsheet saved as plain text** — rows are lines, columns are separated by commas.
+>
+> **Why it matters**: CSVs bridge the gap between human-readable data and programmatic processing.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "Imagine you have a spreadsheet with thousands of rows of data — sales records, student grades, weather data. How do you process it with Python? CSV files are the answer! They're the universal language of data exchange."
 

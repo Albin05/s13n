@@ -16,6 +16,73 @@ pytest is a popular testing framework that makes it easy to write and run tests 
 </div>
 
 ---
+
+## Introduction
+
+Unit testing implements **automated verification** - proving code works correctly with repeatable tests! This is **test-driven confidence** - change code fearlessly because tests catch regressions. Testing is **professional software engineering** - the safety net beneath every change!
+
+### Why Unit Testing is Non-Negotiable
+
+**Problem without tests**: Fear of change:
+```python
+# SCARY - does this refactor break anything?
+def calculate_total(items):
+    return sum(i.price * i.qty for i in items)  # Changed!
+# Hope it works... deploy and pray!
+```
+
+**Solution with tests**: Confidence in changes:
+```python
+# CONFIDENT - tests verify correctness!
+def test_calculate_total():
+    items = [Item(10, 2), Item(5, 3)]
+    assert calculate_total(items) == 35  # Verified!
+# Refactor freely - tests catch mistakes!
+```
+
+**This is regression prevention** - tests guard against breaking changes!
+
+### Historical Context
+
+**Unit testing** formalized by **Kent Beck** (1999) with **JUnit** for Java. Inspired by **SUnit** (Smalltalk, 1994) - first unit testing framework! **Test-Driven Development (TDD)** (Beck, 2003): write tests FIRST, then code to pass them!
+
+**pytest** created by **Holger Krekel** (2004) - simpler than Python's built-in `unittest` (which copied Java's JUnit). **pytest philosophy**: minimal boilerplate - just use `assert`! No classes needed, no `self.assertEqual()` verbosity!
+
+**Testing pyramid** (Mike Cohn, 2009): Many unit tests (fast, cheap), fewer integration tests, fewest end-to-end tests. **Unit tests** are the foundation - test individual functions in isolation!
+
+### Real-World Analogies
+
+**Unit tests like quality control**:
+- **Factory**: Each component tested before assembly
+- **Unit test**: Each function tested before deployment
+- **Regression**: Re-test after changes (didn't break anything?)
+**Quality control prevents defective products!**
+
+**Or like spell-checking**:
+```python
+# Like spell-check for code logic:
+# - Write document (code)
+# - Run spell-check (tests)
+# - Fix errors before publishing (deploy)
+# Automated checking catches human mistakes!
+```
+
+**Or like medical checkups**:
+- **Regular checkup**: Run tests periodically (CI/CD)
+- **Specific test**: Check one organ/function (unit test)
+- **Test results**: Pass/fail with details (test report)
+**Early detection prevents catastrophic failures!**
+
+### Test-Driven Development (TDD) Cycle
+
+**Red-Green-Refactor**:
+1. **Red**: Write failing test (test doesn't pass yet)
+2. **Green**: Write minimum code to pass test
+3. **Refactor**: Clean up code, tests still pass
+
+**This is disciplined development** - tests guide design!
+
+---
 ### Installation
 
 ```bash

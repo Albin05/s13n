@@ -1,8 +1,17 @@
 ## Lecture Script: Use Instance Attributes
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Instance attributes give each object **independent state** stored in `__dict__`. Unlike class attributes (shared), instance attributes are unique per object — the foundation of **object identity**.
+>
+> **Analogy**: Instance attributes are like **personal possessions** — your wallet is yours, not shared with every human on Earth.
+>
+> **Why it matters**: Instance attributes are what make each object unique — `dog1.name` differs from `dog2.name`.
+
+
 
 ### Hook (2 minutes)
 

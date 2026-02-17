@@ -1,5 +1,15 @@
 ### LO-24 Control For Loops with Break and Continue (20 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: `break` and `continue` in for loops enable **early termination optimization** — stop searching once found. This turns O(n) worst-case into O(1) best-case.
+>
+> **Analogy**: Like **searching a phone book** — once you find the name (break), you stop flipping pages. Or skip entries that aren't relevant (continue).
+>
+> **Why it matters**: Efficient loops don't do unnecessary work — `break` and `continue` are optimization tools.
+
+
 ### Hook (3 minutes)
 
 **Say**: "Imagine you're looking for your keys in a messy room. You check drawer after drawer. What happens when you find them? You BREAK - stop searching. What if a drawer is locked? You CONTINUE - skip it and check the next one!"

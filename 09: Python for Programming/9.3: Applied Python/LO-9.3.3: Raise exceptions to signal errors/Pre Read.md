@@ -1,6 +1,42 @@
 ## Pre-Read: Raise Exceptions to Signal Errors
 
-**Duration:** 5 minutes
+
+---
+
+## Introduction
+
+The `raise` statement makes errors **loud and explicit** instead of silent and hidden! Before exceptions, functions returned error codes (None, -1, false) which callers often forgot to check. `raise` forces error handling - bugs crash immediately at their source instead of propagating downstream!
+
+### Why Explicit Errors Matter
+
+**Problem with error codes**: Easy to ignore, bugs propagate:
+```python
+# Returning None - silent failure!
+def divide(a, b):
+    if b == 0: return None
+result = divide(10, 0)  # None
+print(result + 5)  # Bug shows up HERE, not at source!
+```
+
+**Solution with raise**: Impossible to ignore:
+```python
+# Raising exception - loud failure!
+def divide(a, b):
+    if b == 0: raise ZeroDivisionError("b cannot be zero")
+    return a / b
+divide(10, 0)  # Crashes IMMEDIATELY!
+```
+
+**This is "fail-fast"** - detect errors at the source, don't let them spread!
+
+### Real-World Analogy
+
+**Raising exceptions like smoke alarm**:
+- **Detect problem** (invalid input)
+- **Sound alarm** (raise exception)
+- **Cannot ignore** (program stops)
+- **Handle emergency** (exception handler)
+**You don't silently note smoke - you SOUND THE ALARM!**
 
 ---
 

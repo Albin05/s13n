@@ -1,5 +1,15 @@
 ### LO-4 Implement Float Data Types (15 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Floating-point numbers follow the **IEEE 754 standard** (1985), which standardized how computers represent decimals. The name "floating point" means the decimal point can "float" to different positions.
+>
+> **Analogy**: Floats are like **scientific notation** (6.02 × 10²³) — they trade perfect precision for enormous range.
+>
+> **Why it matters**: Understanding float imprecision (`0.1 + 0.2 != 0.3`) prevents subtle bugs in financial and scientific code.
+
+
 ### Hook (2 minutes)
 
 **Say**: "Can you buy something for exactly $19.99? Not $19 or $20 - you need decimals! That's why we have floats."

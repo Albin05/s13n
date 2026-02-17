@@ -1,5 +1,15 @@
 # Lecture Script: LO-9.3.31 Create Generator Functions
 
+
+### CS Theory Bite
+
+> **Origin**: Generators (Python 2.2, PEP 255) implement **lazy evaluation** — computing values on-demand instead of all at once. Inspired by **CLU iterators** (1970s) and **Icon language** generators.
+>
+> **Analogy**: A generator is like **streaming video** — data arrives as needed instead of downloading the entire movie first.
+>
+> **Why it matters**: Generators process infinite sequences and huge files with constant memory — essential for data pipelines.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "Imagine you need to process a billion numbers. With a normal function, you'd create a list of a billion items in memory — instant crash! But with generators, you create numbers one at a time, as needed. Memory efficient, lightning fast, and incredibly powerful."
 

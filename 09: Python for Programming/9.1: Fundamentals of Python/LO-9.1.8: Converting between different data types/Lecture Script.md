@@ -1,5 +1,15 @@
 ### LO-8 Convert Between Data Types (16 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Type conversion exists because computers store numbers and text differently in memory. **Explicit casting** (Python) vs **implicit coercion** (JavaScript) — Python chose safety over convenience.
+>
+> **Analogy**: Type conversion is like **currency exchange** — you can convert dollars to euros, but you need an explicit exchange (you can't just spend dollars in Europe).
+>
+> **Why it matters**: User input is always a string — conversion to int/float is required for any calculation.
+
+
 ### Hook (3 minutes)
 
 **Say**: "What if I ask your age and you type '25'? Python sees text, not a number! We need type conversion."

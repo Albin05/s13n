@@ -1,8 +1,17 @@
 ## Lecture Script: Import And Use Built-In Modules
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Python's standard library follows the **"batteries included"** philosophy — 200+ built-in modules covering math, dates, files, networking, and more. No installation needed.
+>
+> **Analogy**: Built-in modules are like **pre-installed apps on your phone** — ready to use out of the box, covering common needs.
+>
+> **Why it matters**: Before writing code from scratch, check if a built-in module already solves your problem.
+
+
 
 ### Hook (2 minutes)
 

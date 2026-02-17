@@ -1,8 +1,17 @@
 ## Lecture Script: Iterating Through Lists Using Loops
 
-**Duration:** 18 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: List iteration uses Python's **iterator protocol** (`__iter__` + `__next__`). For loops call `iter()` on the list, then `next()` until `StopIteration` — the same protocol for ALL iterables.
+>
+> **Analogy**: Iterating a list is like **reading a book** — start at page 1, process each page, stop at the end. The bookmark (`iterator`) tracks your position.
+>
+> **Why it matters**: Iteration is the most common list operation — mastering it unlocks data processing.
+
+
 
 ### Hook (2 minutes)
 

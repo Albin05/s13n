@@ -1,8 +1,17 @@
 ## Lecture Script: Use The Requests Library For Http Operations
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: The **requests** library (Kenneth Reitz, 2011) replaced Python's verbose `urllib` with a human-friendly API. It's been downloaded over **1 billion times** — the most popular Python package for HTTP.
+>
+> **Analogy**: `requests.get()` is like **ordering food delivery** — specify what you want (URL), and the response arrives at your door.
+>
+> **Why it matters**: Modern software communicates over HTTP — requests is how Python talks to web APIs.
+
+
 
 ### Hook (2 minutes)
 

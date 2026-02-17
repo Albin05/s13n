@@ -1,5 +1,15 @@
 ### LO-23 Use Range() Function (15 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: `range()` uses **lazy evaluation** — it doesn't create a list in memory but generates numbers on demand. `range(1000000)` uses almost no memory!
+>
+> **Analogy**: `range()` is like a **number dispenser at a deli counter** — it gives you the next number when asked, not all numbers at once.
+>
+> **Why it matters**: `range()` is the bridge between counting loops (C-style) and Python's for-each — efficient numeric iteration.
+
+
 ### Hook (2 minutes)
 
 **Say**: "Need to count 1 to 100? You could type [1, 2, 3, ... 100]. Or use range() and do it automatically!"

@@ -1,5 +1,15 @@
 # Lecture Script: LO-69 Implement Composition
 
+
+### CS Theory Bite
+
+> **Origin**: The **Gang of Four** (1994): "Favor composition over inheritance." Composition creates **loose coupling** — components can be swapped independently. Inheritance creates **tight coupling** — parent changes break all children.
+>
+> **Analogy**: Composition is like **LEGO blocks** — build complex structures from simple, interchangeable pieces. No rigid hierarchy required.
+>
+> **Why it matters**: Composition is more flexible than inheritance — use "has-a" relationships for component-based design.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "A car HAS-A engine, HAS-A steering wheel, HAS-A GPS. You don't say a car IS-A engine! That's the difference between composition and inheritance. Composition is about building complex objects by combining simpler ones. Think of it like LEGO blocks — you create amazing structures by putting pieces together!"
 

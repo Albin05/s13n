@@ -1,5 +1,15 @@
 ### Applying Default Parameters in Function Definitions
 
+
+### CS Theory Bite
+
+> **Origin**: Default parameters are Python's alternative to **function overloading** (C++/Java). They enable **progressive disclosure** — simple calls for common cases, detailed calls for edge cases.
+>
+> **Analogy**: Default parameters are like **restaurant menu defaults** — "How do you want your steak?" "Medium" is the default, but you can specify rare or well-done.
+>
+> **Why it matters**: Defaults simplify function calls — users only specify what differs from the common case.
+
+
 ### Hook (3 minutes)
 
 "Ever use a copy machine? The settings are pre-configured: single-sided, one copy, black and white. But you CAN change them! This is how default parameters work - sensible defaults with customization when needed."

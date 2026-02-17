@@ -1,5 +1,15 @@
 ### LO-14 Apply Logical Operators (20 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Logical operators (`and`, `or`, `not`) implement **Boolean algebra** (George Boole, 1854) and **De Morgan's Laws**: `not (A and B)` = `not A or not B`. These same operations are hardwired into CPU logic gates.
+>
+> **Analogy**: Logical operators are like **bouncers at a club** — `and` means BOTH conditions pass, `or` means EITHER passes, `not` reverses the decision.
+>
+> **Why it matters**: Complex conditions require combining simple comparisons — logical operators are the glue.
+
+
 ### Hook (2 minutes)
 
 **Say**: "You're at a restaurant. You can order dessert if you finished your meal AND you're still hungry. OR if it's your birthday. That's logical operators in real life!"

@@ -1,6 +1,95 @@
 ## Lecture Notes: Raise Exceptions to Signal Errors
 
-**Duration:** 10 minutes
+
+---
+
+## Introduction
+
+The `raise` statement implements **explicit error signaling** - making errors loud and impossible to ignore! Before exceptions, functions returned error codes (NULL, -1, false) which callers often forgot to check, causing **silent failures** where bugs propagate far from their source. Raising exceptions enforces **fail-fast**: errors crash immediately at the source!
+
+### Why Explicit Error Signaling is Essential
+
+**Before raise** (error codes): Silent failures, bugs propagate:
+```python
+# BAD - error codes easy to ignore!
+def divide(a, b):
+    if b == 0:
+        return None  # Silently fail
+    return a / b
+
+result = divide(10, 0)  # None
+print(result + 5)  # TypeError LATER! Bug far from source!
+```
+
+**With raise** (explicit): Errors loud and immediate:
+```python
+# GOOD - errors impossible to ignore!
+def divide(a, b):
+    if b == 0:
+        raise ZeroDivisionError("b cannot be zero")
+    return a / b
+
+result = divide(10, 0)  # CRASHES HERE!
+# Bug detected at source, not downstream!
+```
+
+**This is "fail-fast"** - better to crash immediately than produce wrong results later!
+
+### Historical Context
+
+**Exception raising** from **PL/I** (IBM, 1964) which had SIGNAL/ON statements. Refined by **CLU** (Barbara Liskov, 1975) with `signal` keyword. Python's `raise` follows **Modula-3** (1980s) and **Java** (1995) syntax.
+
+**Python 3 changed raise syntax**: Python 2 allowed `raise ValueError, "message"` (tuple-like). Python 3 requires `raise ValueError("message")` (function call syntax) - cleaner and more explicit!
+
+**Design philosophy**: **Guido van Rossum** advocated "errors should never pass silently" - core Python principle! Raising exceptions embodies this philosophy.
+
+### Real-World Analogies
+
+**Raising exceptions like fire alarm**:
+- **Detect smoke** (invalid input/state)
+- **Pull alarm** (raise exception)
+- **Loud siren** (cannot ignore)
+- **Evacuation** (program stops)
+**You don't whisper about fires - you SOUND THE ALARM!**
+
+**Or like referee's whistle in sports**:
+```python
+def score_goal(player, ball_position):
+    if ball_position == "offside":
+        raise OffsideException("Goal invalid!")
+    # Whistle blows - play stops immediately!
+```
+
+**Or like medical alert system**:
+- **Monitor patient** (check function inputs)
+- **Detect abnormality** (invalid state)
+- **Trigger alarm** (raise exception)
+- **Emergency response** (exception handler)
+**Errors in medicine cannot be silent - same for code!**
+
+### The Exception Taxonomy
+
+**Python provides semantic exception types**:
+```python
+ValueError   # Right type, wrong value
+TypeError    # Wrong type entirely
+RuntimeError # Generic runtime problem
+KeyError     # Missing dictionary key
+IndexError   # List index out of bounds
+# Each type signals SPECIFIC error category!
+```
+
+**Why specific types?** Allows catching errors at different granularity:
+```python
+try:
+    operation()
+except ValueError:
+    # Handle value problems
+except TypeError:
+    # Handle type problems
+except Exception:
+    # Catch all others
+```
 
 ---
 

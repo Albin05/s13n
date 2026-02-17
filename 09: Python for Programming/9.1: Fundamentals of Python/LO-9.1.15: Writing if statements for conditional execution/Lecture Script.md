@@ -1,5 +1,15 @@
 ### LO-15 Write If Statements (20 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Conditional branching is fundamental to **Turing completeness** — without `if`, programs can't make decisions. CPUs use **branch prediction** to guess which path code will take for speed.
+>
+> **Analogy**: An `if` statement is like a **fork in the road** — based on a condition, the program takes one path or the other.
+>
+> **Why it matters**: Programs without conditionals are just calculators — `if` makes programs intelligent.
+
+
 ### Hook (2 minutes)
 
 **Say**: "Imagine a security guard at a concert. They check: 'IF you have a ticket, you can enter.' That's exactly what an if statement does in Python - it guards a block of code!"

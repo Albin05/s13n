@@ -1,8 +1,17 @@
 ## Lecture Script: Read Text Files in Python
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: File I/O connects programs to **persistent storage** — data that survives program termination. The Unix file model (1971) treats everything as files: disks, keyboards, even networks.
+>
+> **Analogy**: Reading a file is like **opening a book** — you can read front-to-back, jump to a page, or skim for keywords.
+>
+> **Why it matters**: Files are how programs load configuration, process data, and read user-generated content.
+
+
 
 ### Hook (2 minutes)
 

@@ -1,5 +1,15 @@
 ### LO-19 Write While Loops (25 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: While loops implement **iteration**, one of the two fundamental control structures (alongside selection) that make languages **Turing complete**. Alan Turing's machine (1936) was essentially an infinite while loop.
+>
+> **Analogy**: A `while` loop is like a **treadmill** — you keep running as long as the condition (your energy) holds True.
+>
+> **Why it matters**: While loops handle situations where you don't know how many iterations are needed — user input validation, searching, etc.
+
+
 ### Hook (3 minutes)
 
 **Say**: "You're trying to guess a password. You keep trying WHILE you haven't guessed it. That's a while loop - repeating code until a condition becomes False!"

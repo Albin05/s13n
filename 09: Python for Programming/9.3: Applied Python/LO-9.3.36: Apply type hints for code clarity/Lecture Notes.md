@@ -16,6 +16,80 @@ Type hints (type annotations) document the expected types of variables, function
 </div>
 
 ---
+
+## Introduction
+
+Type hints implement **gradual typing** - adding type information to dynamically-typed Python! This is **documentation that tools can verify** - IDEs catch bugs before runtime. Type hints bridge **dynamic flexibility** and **static safety**!
+
+### Why Type Hints Transform Development
+
+**Problem without types**: Bugs found at runtime:
+```python
+# MYSTERY - what types does this accept?
+def process(data, config):
+    return data.transform(config["key"])
+# What is data? What shape is config?
+# Bugs discovered only when code runs!
+```
+
+**Solution with type hints**: Self-documenting, tool-verified:
+```python
+# CLEAR - types documented and checked!
+def process(data: DataFrame, config: dict[str, Any]) -> DataFrame:
+    return data.transform(config["key"])
+# IDE warns about type mismatches immediately!
+```
+
+**This is shift-left testing** - catch errors earlier in development!
+
+### Historical Context
+
+**Type hints** added **Python 3.5** (2015) with **PEP 484** (Guido van Rossum & Jukka Lehtosalo). Inspired by **mypy** project (2012) - optional static type checker for Python!
+
+**Gradual typing** theory by **Jeremy Siek** (2006) - add types incrementally, mix typed and untyped code. Python's approach: **types are optional** - don't break existing code, adopt gradually!
+
+**typing module** provides advanced types: `List[int]`, `Dict[str, Any]`, `Optional[str]`, `Union[int, str]`. **Python 3.9+** simplified: `list[int]` instead of `List[int]` - built-in generics! **Python 3.10** added `X | Y` union syntax replacing `Union[X, Y]`!
+
+### Real-World Analogies
+
+**Type hints like ingredient labels**:
+- **Without labels**: Mystery can - could be beans or paint!
+- **With labels**: "Black Beans, 15oz, No Salt Added"
+- **Type hints**: `def cook(ingredient: str, temp: int) -> Dish`
+**Labels prevent mistakes before you open the can!**
+
+**Or like electrical outlets**:
+```python
+# Like outlet standards:
+# US outlet accepts US plug (type compatibility)
+# European plug won't fit US outlet (type mismatch!)
+
+def charge_device(plug: USPlug) -> None:
+    # Only US plugs accepted!
+    pass
+# Type system prevents wrong connections!
+```
+
+**Or like postal addressing**:
+- **No types**: Send package to "somewhere" (might arrive?)
+- **With types**: Send to `address: Address` (verified format!)
+- **Type checker**: Post office verifies address format before shipping
+**Verify before sending, not after delivery fails!**
+
+### Type Hints Don't Enforce at Runtime!
+
+**Critical understanding** - Python ignores type hints at runtime:
+```python
+def add(a: int, b: int) -> int:
+    return a + b
+
+add("hello", "world")  # Works! Python doesn't check!
+# Type hints are for TOOLS (mypy, IDE), not Python itself!
+```
+
+**Use mypy** for static checking: `mypy your_file.py` catches errors!
+
+---
 ### Basic Syntax
 
 ```python

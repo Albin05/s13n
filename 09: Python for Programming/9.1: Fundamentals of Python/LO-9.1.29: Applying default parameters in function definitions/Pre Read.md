@@ -1,5 +1,24 @@
 # Pre-Read: Applying Default Parameters in Function Definitions
 
+## Why Default Parameters?
+
+Functions with lots of required parameters are annoying to use. Default parameters make functions **easy to use** for common cases while staying **powerful** for complex cases!
+
+### Simple Analogy
+
+Think of default parameters like **ordering coffee**:
+- **Required**: "I want a coffee" (must specify)
+- **Defaults**: Medium size, regular milk, normal temperature (most people want this)
+- **Override when needed**: "Make it large, almond milk, extra hot" (customize!)
+- **Result**: Quick ordering for most, detailed control when needed
+
+Or like **phone settings**:
+- **Auto-brightness**: ON by default (works for 90% of users)
+- **Override**: Turn off and set manually if you want
+- **Smart design**: Common case is easy, customization available
+
+Default parameters = **convenience with flexibility**!
+
 ## What You'll Learn
 In this lesson, you'll learn how to provide default values for function parameters, making some arguments optional when calling the function.
 

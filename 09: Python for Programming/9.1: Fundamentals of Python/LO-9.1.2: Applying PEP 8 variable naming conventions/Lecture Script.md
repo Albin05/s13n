@@ -1,5 +1,15 @@
 ### LO-2 Apply Variable Naming Conventions (15 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: **PEP 8** was written by Guido van Rossum in 2001, codifying Python's philosophy: **"Readability counts"** (Zen of Python).
+>
+> **Analogy**: Naming conventions are like **road signs** — consistent formatting means everyone navigates the code without confusion.
+>
+> **Why it matters**: You read code 10x more than you write it — good names save hours of debugging.
+
+
 ### Hook (2 minutes)
 
 **Say**: "You can name variables almost anything... but should you? Let's learn the rules and best practices!"

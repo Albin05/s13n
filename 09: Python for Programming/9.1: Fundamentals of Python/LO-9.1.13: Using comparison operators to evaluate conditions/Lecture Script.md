@@ -1,5 +1,15 @@
 ### LO-13 Use Comparison Operators (20 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Comparison operators implement **relational algebra** from predicate logic. Python uniquely allows **chaining**: `1 < x < 10` — most languages require `1 < x and x < 10`.
+>
+> **Analogy**: Comparisons are like a **judge's verdict** — they examine two values and declare True or False, nothing in between.
+>
+> **Why it matters**: Every `if` statement and `while` loop relies on comparisons to make decisions.
+
+
 ### Hook (2 minutes)
 
 **Say**: "Raise your hand if you're 18 or older. How did your brain just make that decision? You compared your age to 18! That's exactly what comparison operators do in Python."

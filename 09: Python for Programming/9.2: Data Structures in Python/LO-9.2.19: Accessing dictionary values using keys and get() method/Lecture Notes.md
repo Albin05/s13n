@@ -1,6 +1,110 @@
 ## Lecture Notes: Accessing Dictionary Values Using Keys and get() Method
 
-**Duration:** 10 minutes
+
+---
+
+## Introduction
+
+The `[]` vs `.get()` choice revisits **fail-fast vs. fail-safe** design - same philosophy as `remove()` vs `discard()` for sets! This represents different **error handling strategies**: crash loudly to catch bugs, or continue gracefully for robustness.
+
+### Why Two Access Methods? Design Philosophy
+
+**Why not just one?** Python provides both because **different contexts need different behaviors**:
+
+**`dict[key]` = Fail-Fast:**
+- "This key MUST exist!"
+- Missing key → **crash with KeyError**
+- **Use during development**: Catch bugs immediately
+- **Database analogy**: Foreign key constraint - enforces data integrity
+
+**`dict.get(key, default)` = Fail-Safe:**
+- "This key might not exist, have a fallback"
+- Missing key → **return default value**
+- **Use in production**: Graceful degradation
+- **Web server analogy**: Return 404 page instead of crashing
+
+**Design wisdom**: One language, two philosophies - use the right tool for the context!
+
+### Real-World Analogies
+
+**`[]` like strict vending machine**:
+- **Press A5**: "A5 exists? Dispense!"
+- **Press Z9**: "Z9 doesn't exist? ERROR! Shut down!" 💥
+- **Strict**: Forces you to know what buttons exist
+- **Good for**: Catching configuration errors in development
+
+**`.get()` like friendly assistant**:
+- **Ask for A5**: "Here's your snack!"
+- **Ask for Z9**: "Sorry, don't have that. Want the default instead?"
+- **Graceful**: Provides fallback automatically
+- **Good for**: User-facing features in production
+
+**Or `[]` like password check**:
+- **Correct password**: Access granted
+- **Wrong password**: "Access denied!" (error)
+- **No fallback**: Security requires exactness
+
+**`.get()` like settings with defaults**:
+- **Setting exists**: Use that value
+- **Setting missing**: Use default value
+- **Fallback**: System works either way
+
+### The Graceful Degradation Pattern
+
+**Problem without `.get()`** (fragile code):
+```python
+config = {'theme': 'dark'}
+
+# Attempt 1: Crashes!
+font_size = config['font_size']  # KeyError!
+
+# Attempt 2: Verbose!
+if 'font_size' in config:
+    font_size = config['font_size']
+else:
+    font_size = 14  # default
+# Too much code for simple fallback!
+```
+
+**Solution with `.get()`** (elegant code):
+```python
+config = {'theme': 'dark'}
+
+font_size = config.get('font_size', 14)
+# One line! Missing key? Use 14. Beautiful!
+```
+
+**This is "graceful degradation"** - system works even with missing data!
+
+### The Word Counting Pattern
+
+**Why `.get()` is perfect for counting**:
+
+**Traditional approach** (complicated):
+```python
+word_count = {}
+for word in words:
+    if word in word_count:
+        word_count[word] += 1
+    else:
+        word_count[word] = 1
+# 5 lines just to count!
+```
+
+**With `.get()`** (elegant):
+```python
+word_count = {}
+for word in words:
+    word_count[word] = word_count.get(word, 0) + 1
+# 2 lines! .get(word, 0) returns 0 if new word
+```
+
+**Even better** (Counter):
+```python
+from collections import Counter
+word_count = Counter(words)
+# But understanding .get() helps you understand Counter!
+```
 
 ---
 

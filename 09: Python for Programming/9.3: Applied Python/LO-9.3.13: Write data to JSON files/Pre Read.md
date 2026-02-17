@@ -1,6 +1,5 @@
 ## Pre-Read: Write Data to JSON Files
 
-**Duration:** 5 minutes
 
 ---
 

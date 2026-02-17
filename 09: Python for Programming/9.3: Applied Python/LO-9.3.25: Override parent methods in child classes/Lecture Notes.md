@@ -16,6 +16,112 @@ Redefining parent class methods in child classes
 </div>
 
 ---
+
+## Introduction
+
+Method overriding implements **polymorphism** - "many forms" of the same operation! This is **behavioral specialization** - child classes customize inherited behavior for their specific needs. Overriding is **customization inheritance** - take what parent gives, make it yours!
+
+### Why Method Overriding is Essential
+
+**Problem without overriding**: All objects act identically:
+```python
+# BORING - all animals sound the same!
+class Animal:
+    def speak(self):
+        return "Some sound"
+
+class Dog(Animal): pass
+class Cat(Animal): pass
+
+dog = Dog()
+cat = Cat()
+print(dog.speak())  # "Some sound" - wrong!
+print(cat.speak())  # "Some sound" - wrong!
+```
+
+**Solution with overriding**: Each class customizes behavior:
+```python
+# REALISTIC - each animal unique sound!
+class Animal:
+    def speak(self):
+        return "Some sound"
+
+class Dog(Animal):
+    def speak(self):  # Override!
+        return "Woof!"
+
+class Cat(Animal):
+    def speak(self):  # Override!
+        return "Meow!"
+# Each animal speaks correctly!
+```
+
+**This is polymorphism** - same interface, different implementations!
+
+### Historical Context
+
+**Polymorphism** from **Simula 67** (1967) - virtual methods enable runtime dispatch. **Smalltalk** (1972) made all methods **virtual by default** - Python followed this design! **C++** requires `virtual` keyword - Python methods always overridable!
+
+**Dynamic dispatch**: At runtime, Python looks up method in **object's class first**, then parent classes. This **method resolution order (MRO)** - Python 2.3 introduced **C3 linearization** (2003) to solve diamond problem in multiple inheritance!
+
+**Liskov Substitution Principle** (Barbara Liskov, 1987): "Overridden methods must honor parent's contract". If parent's `speak()` returns string, child's override must too! **Contract preservation** - critical to polymorphism working correctly!
+
+### Real-World Analogies
+
+**Overriding like specialized employees**:
+- **Employee.work()**: Generic "is working"
+- **Developer.work()**: Override → "is coding"
+- **Designer.work()**: Override → "is designing"
+- **Manager.work()**: Override → "is managing"
+**Same method name, different actions!**
+
+**Or like payment methods**:
+```python
+class Payment:
+    def process(self):
+        return "Processing payment..."
+
+class CreditCard(Payment):
+    def process(self):  # Override
+        return "Processing credit card..."
+
+class PayPal(Payment):
+    def process(self):  # Override
+        return "Processing PayPal..."
+
+class Crypto(Payment):
+    def process(self):  # Override
+        return "Processing crypto..."
+# Same interface, different backends!
+```
+
+**Or like vehicle starting procedures**:
+- **Vehicle.start()**: Generic "vehicle started"
+- **Car.start()**: Override → "turn key, engine ignition"
+- **ElectricCar.start()**: Override → "press power button, silent start"
+- **Motorcycle.start()**: Override → "kickstand up, ignition, roar!"
+**Each vehicle starts differently, but all START!**
+
+### Overriding vs Overloading
+
+**Overriding**: Same name, **different classes** (parent/child):
+```python
+class Parent:
+    def method(self): pass
+class Child(Parent):
+    def method(self): pass  # Overrides parent!
+```
+
+**Overloading**: Same name, **different parameters** (Python doesn't support!):
+```python
+# Not possible in Python!
+def add(a, b): pass
+def add(a, b, c): pass  # Replaces first, doesn't overload!
+```
+
+**Python uses default parameters** instead of overloading!
+
+---
 ### Understanding the Concept
 
 Method overriding allows a child class to provide a specific implementation of a method that is already defined in its parent class. This is a key aspect of polymorphism in object-oriented programming.

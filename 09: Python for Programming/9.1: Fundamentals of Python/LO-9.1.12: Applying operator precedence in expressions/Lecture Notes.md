@@ -1,5 +1,38 @@
 # Lecture Notes: Apply Operator Precedence
 
+## Introduction
+
+Operator precedence determines **which operations happen first** in complex expressions. Without these rules, `2 + 3 * 4` could mean either 20 or 14 - ambiguous and chaos!
+
+### Why Precedence Rules Exist
+
+**The problem**: Expressions can be read multiple ways
+- `2 + 3 * 4` could be `(2 + 3) * 4 = 20` or `2 + (3 * 4) = 14`
+
+**The solution**: Universal rules everyone follows
+
+**Historical note**: These rules come from mathematics, standardized over centuries. When programming languages were invented in the 1950s, they adopted mathematical conventions so formulas would work the same way in code as on paper.
+
+### Real-World Analogy
+
+Think of precedence like **grammar rules** in language:
+- "I saw a man with a telescope" - Who has the telescope? Grammar rules help clarify.
+- Similarly, operator precedence clarifies: "2 + 3 × 4" - Math rules say multiply first
+
+Or think of it like **traffic rules**:
+- At an intersection, who goes first? Traffic rules provide the answer (stop signs, right-of-way)
+- In expressions, what happens first? Precedence rules provide the answer
+
+### The Origin of PEMDAS
+
+**PEMDAS** is a mnemonic (memory aid) taught in schools:
+- **P**arentheses
+- **E**xponents
+- **M**ultiplication/**D**ivision
+- **A**ddition/**S**ubtraction
+
+This order reflects mathematical convention developed over 400+ years to avoid ambiguity.
+
 ## Operator Precedence
 
 Python follows standard mathematical order of operations (PEMDAS):

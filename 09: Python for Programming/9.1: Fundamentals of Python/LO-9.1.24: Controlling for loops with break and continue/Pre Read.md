@@ -1,5 +1,22 @@
 # Pre-Read: Controlling For Loops with Break and Continue
 
+## Why Control Flow in For Loops?
+
+For loops normally process every single item in a sequence. But real-world programs need **intelligent iteration**:
+- **Search**: Stop once you find what you're looking for (don't waste time!)
+- **Filtering**: Skip invalid/unwanted items but keep processing others
+- **Validation**: Exit immediately when you detect an error
+
+Break and continue give you this power - making loops smart, not just repetitive!
+
+### Simple Analogy
+
+Think of break and continue like **instructions to a mail carrier**:
+- **Break**: "Stop delivering mail on this street" (emergency, road closed)
+- **Continue**: "Skip this house but keep delivering to others" (no mailbox, dog loose)
+
+The mail carrier doesn't blindly follow the route - they adapt based on conditions!
+
 ## What You'll Learn
 In this lesson, you'll learn how to use `break` and `continue` statements with for loops to control loop execution. These work the same way as with while loops but are commonly used with for loops in Python.
 

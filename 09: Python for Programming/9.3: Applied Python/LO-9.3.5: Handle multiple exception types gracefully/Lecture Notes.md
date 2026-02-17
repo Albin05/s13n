@@ -1,6 +1,98 @@
 ## Lecture Notes: Handle Multiple Exception Types Gracefully
 
-**Duration:** 10 minutes
+
+---
+
+## Introduction
+
+Handling multiple exceptions implements **exception polymorphism** - different error types handled differently based on inheritance hierarchies. This solves the **error granularity problem**: catch specific errors for specific handling, or catch broad categories for generic handling. **Exception hierarchies** enable this flexibility!
+
+### Why Multiple Exception Handling Matters
+
+**Before exception hierarchies** (single catch): All errors handled the same:
+```c
+// C-style - all errors treated equally!
+if (error_occurred) {
+    handle_error();  // Same handler for everything!
+}
+```
+
+**With exception hierarchies** (polymorphic): Each error type handled appropriately:
+```python
+# Python - specific handlers for specific errors!
+try:
+    operation()
+except ValueError:
+    fix_value_error()  # Specific handler
+except TypeError:
+    fix_type_error()  # Different handler
+except Exception:
+    log_unexpected()  # Catch-all
+```
+
+**This is "polymorphic error handling"** - one try block, many handlers!
+
+### Historical Context
+
+**Multiple exception handlers** from **CLU** (Barbara Liskov, 1975) which allowed multiple `except` clauses. Refined by **Modula-3** (1980s) and **Java** (1995) which formalized exception hierarchies.
+
+**Python's exception hierarchy** inherited from **object-oriented design**: exceptions are classes, catching uses isinstance() checks, inheritance enables catching parent classes. **Liskov Substitution Principle** applies to exceptions!
+
+**Design evolution**: Python 2 allowed `except ValueError, TypeError:` (ambiguous). Python 3 requires `except (ValueError, TypeError):` (explicit tuple) - prevents bugs from comma confusion!
+
+### Real-World Analogies
+
+**Multiple exception handling like hospital triage**:
+- **Minor injury**: First aid (ValueError handler)
+- **Major injury**: Surgery (TypeError handler)
+- **Unknown condition**: General care (Exception handler)
+- **Triage**: Route patients to appropriate care!
+**Different problems → different specialists!**
+
+**Or like emergency services dispatcher**:
+```python
+try:
+    emergency_call()
+except FireEmergency:
+    dispatch_fire_truck()
+except MedicalEmergency:
+    dispatch_ambulance()
+except PoliceEmergency:
+    dispatch_police()
+except Emergency:
+    dispatch_general_response()
+# Route each emergency to right service!
+```
+
+**Or like mail sorting facility**:
+- **Local mail**: Local delivery (specific exception)
+- **Express mail**: Express service (specific exception)
+- **International**: International processing (specific exception)
+- **Unknown**: Dead letter office (catch-all)
+**Sort by specificity, handle appropriately!**
+
+### The Specificity-to-Generality Gradient
+
+**Critical rule**: Specific exceptions BEFORE general ones!
+```python
+# CORRECT - specific to general
+try:
+    file = open("data.txt")
+except FileNotFoundError:
+    # Most specific
+    create_default_file()
+except PermissionError:
+    # Still specific
+    request_permission()
+except OSError:
+    # General (catches all OS errors)
+    log_os_error()
+except Exception:
+    # Most general
+    log_unexpected()
+```
+
+**Why?** Python checks top-to-bottom, first match wins! If general exception first, specific ones never reached - **unreachable code**!
 
 ---
 

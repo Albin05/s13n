@@ -1,8 +1,17 @@
 ## Lecture Script: Adding Elements to Sets using add() and update()
 
-**Duration:** 18 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: `add()` inserts a single element (O(1) average), `update()` merges multiple elements from any iterable. Both maintain the **uniqueness invariant** — no duplicates ever.
+>
+> **Analogy**: `add()` is like **inviting one person** to a party. `update()` is like **merging two guest lists** — duplicates automatically removed.
+>
+> **Why it matters**: Building sets incrementally is common — `add()` for single items, `update()` for bulk operations.
+
+
 
 ### Hook (2 minutes)
 

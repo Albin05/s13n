@@ -16,6 +16,44 @@ Loading JSON data from files into Python data structures
 </div>
 
 ---
+
+## Introduction
+
+JSON implements **structured data serialization** - converting complex data structures to text and back! Created for **web APIs** (AJAX, 2000s), JSON became the **internet's data format** - replacing XML. JSON is **human-readable structured data**!
+
+### Why JSON Revolutionized the Web
+
+**Before JSON** (XML): Verbose, hard to parse:
+```xml
+<person>
+  <name>Alice</name>
+  <age>25</age>
+</person>
+```
+
+**With JSON**: Concise, JavaScript-native:
+```json
+{"name": "Alice", "age": 25}
+```
+
+**This is data minimalism** - only essential syntax!
+
+### Historical Context
+
+**JSON invented by Douglas Crockford** (2001) for web applications. Derived from **JavaScript object literals**. **RFC 4627 (2006)** formalized the standard.
+
+**Why JSON won**: JavaScript engines parse it natively (using `eval()` originally, `JSON.parse()` later). **XML required complex parsers** - JSON is just JavaScript syntax!
+
+**Python's json module** (Python 2.6, 2008): Maps JSON to Python dicts/lists perfectly. **Perfect impedance match** - JSON objects → dicts, arrays → lists!
+
+### Real-World Analogies
+
+**JSON like structured message format**:
+- **Letter (XML)**: Formal, verbose
+- **Text message (JSON)**: Concise, gets point across
+**Web APIs prefer text messages over letters!**
+
+---
 ### Key Concepts
 
 JSON (JavaScript Object Notation) is a lightweight data format commonly used for:

@@ -1,5 +1,15 @@
 # Lecture Script: LO-9.3.34 Work with Regular Expressions for Pattern Matching
 
+
+### CS Theory Bite
+
+> **Origin**: Regular expressions were invented by mathematician **Stephen Kleene** (1956). **Ken Thompson** built regex into Unix's **ed** editor (1968). **grep** (1973) = "Globally search Regular Expression and Print."
+>
+> **Analogy**: Regex is like a **metal detector** — describe the pattern you're looking for, sweep across the text, and it finds all matches.
+>
+> **Why it matters**: Regex handles text validation (emails, phones), extraction, and replacement — essential for data processing.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "You need to extract all email addresses from 10,000 log files. Manual searching? Hours. Regular expression? One line: re.findall(r'\w+@\w+\.\w+', text). Regex is pattern matching on steroids — find, validate, extract, and replace text with surgical precision!"
 

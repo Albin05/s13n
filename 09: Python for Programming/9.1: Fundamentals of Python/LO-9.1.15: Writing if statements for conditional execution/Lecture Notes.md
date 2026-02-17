@@ -1,5 +1,40 @@
 # Lecture Notes: Write If Statements
 
+## Introduction
+
+The `if` statement is the most fundamental **control flow** structure in programming. It allows programs to make decisions and respond differently to different situations - the essence of intelligence.
+
+### Why If Statements Are Revolutionary
+
+**Before if statements** (early computers, 1940s):
+- Programs executed every instruction in sequence
+- No decisions, no branches
+- Same output every time for same input
+
+**After if statements** (FORTRAN, 1957):
+- Programs could choose different paths
+- Respond to varying conditions
+- Adaptive, intelligent behavior
+
+This single feature transformed computers from calculators into decision-making machines!
+
+### Real-World Analogy
+
+If statements are like **forks in a road**:
+- You're driving: IF road is blocked, take detour
+- Otherwise, continue straight
+
+Or like **automated doors**:
+- IF person approaches, open door
+- IF no one nearby, stay closed
+
+Or like **your brain's decisions**:
+- IF hungry, eat
+- IF tired, sleep
+- IF danger, run
+
+Programs use if statements the same way - constant decision-making based on conditions.
+
 ## If Statements
 
 An `if` statement allows your program to execute code **only when a condition is True**.

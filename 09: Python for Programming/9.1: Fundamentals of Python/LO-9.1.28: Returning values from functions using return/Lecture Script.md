@@ -1,5 +1,15 @@
 ### Returning Values from Functions Using Return
 
+
+### CS Theory Bite
+
+> **Origin**: Return values connect to **functional programming** (lambda calculus, 1930s) — functions as mathematical mappings: input → output. **Pure functions** (same input → same output) are the gold standard.
+>
+> **Analogy**: `return` is like a **vending machine** — you insert input (money + selection), and the machine gives back a specific output (snack).
+>
+> **Why it matters**: Functions without return values are limited to side effects — return values enable composition and data flow.
+
+
 ### Hook (3 minutes)
 
 "Our functions print results, but imagine if your calculator showed the answer but didn't let you USE it in another calculation. Frustrating, right?"

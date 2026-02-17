@@ -1,5 +1,15 @@
 ### LO-20 Control Loops with Break (25 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: `break` implements **early termination** — exiting a loop before its natural end. This pattern uses **sentinel values** in algorithms — stop when you find what you're looking for.
+>
+> **Analogy**: `break` is like pulling the **emergency brake** — the loop stops immediately, no questions asked.
+>
+> **Why it matters**: Without `break`, you'd need complex boolean flags to exit loops — `break` keeps code clean.
+
+
 ### Hook (3 minutes)
 
 **Say**: "You're searching for your keys. You check rooms one by one. BREAK means you found them - stop searching!"

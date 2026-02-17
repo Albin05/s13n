@@ -16,6 +16,49 @@ Using Python's standard library modules in your programs
 </div>
 
 ---
+
+## Introduction
+
+The import system implements **modular programming** - organizing code into reusable components! Python's **standard library** (200+ modules) is the **"batteries included"** philosophy - everything you need ships with Python. Modules solve the **code organization problem**!
+
+### Why Modules Matter
+
+**Before modules** (single file): Code becomes unmaintainable:
+```python
+# All 10,000 lines in one file!
+def math_sqrt(x): ...
+def file_read(path): ...
+def json_parse(data): ...
+# Impossible to navigate!
+```
+
+**With modules** (organized): Code split logically:
+```python
+import math  # Math functions
+import os    # File operations
+import json  # JSON parsing
+# Clean, organized!
+```
+
+**This is separation of concerns** - each module handles one domain!
+
+### Historical Context
+
+**Modules from FORTRAN** (1957) which had SUBROUTINE libraries. **Python's import** (1991) based on **Modula-3** (1980s) module system.
+
+**"Batteries included"** philosophy: **Guido van Rossum** (Python creator) wanted stdlib to handle common tasks without external dependencies. Contrast with **JavaScript** (minimal stdlib) or **Go** (comprehensive stdlib like Python).
+
+**The import statement** uses **sys.path** to find modules - pioneered by **Unix dynamic linker** (1970s). Python's import is essentially dynamic code loading!
+
+### Real-World Analogies
+
+**Modules like tool chest**:
+- **Toolbox**: Module (collection of related tools)
+- **Tools**: Functions/classes (specific functionality)
+- **Import**: Open toolbox, grab tools needed
+**Don't carry all tools - import what you need!**
+
+---
 ### Key Concepts
 
 Python comes with a rich standard library of built-in modules for:

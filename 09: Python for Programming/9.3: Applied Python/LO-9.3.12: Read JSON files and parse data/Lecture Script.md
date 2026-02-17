@@ -1,8 +1,17 @@
 ## Lecture Script: Read JSON Files and Parse Data
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: JSON was formalized by **Douglas Crockford** (2001) as a lightweight alternative to XML. Based on **JavaScript object syntax**, it became the standard for web APIs (**RFC 4627**, 2006).
+>
+> **Analogy**: JSON is like a **structured text message** — human-readable, machine-parseable, and universally understood by APIs.
+>
+> **Why it matters**: JSON is the language of web APIs — every REST endpoint speaks JSON.
+
+
 
 ### Hook (2 minutes)
 

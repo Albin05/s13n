@@ -1,8 +1,17 @@
 ## Lecture Script: Applying Set Membership Testing for Efficiency
 
-**Duration:** 15 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Set membership (`in`) is **O(1)** via hash lookup — vs list membership which is **O(n)** linear scan. For 1 million items, set lookup is ~1000x faster.
+>
+> **Analogy**: Checking set membership is like **scanning a barcode** (instant) vs **reading every label on a shelf** (slow).
+>
+> **Why it matters**: Converting a list to a set before repeated `in` checks is one of the easiest Python optimizations.
+
+
 
 ### Hook (2 minutes)
 

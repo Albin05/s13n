@@ -1,5 +1,45 @@
 # Lecture Notes: Control For Loops with Break and Continue
 
+## Introduction
+
+Break and continue introduce **flow interruption** to for loops - the ability to alter the normal sequential iteration based on conditions. These control statements make loops flexible and efficient by allowing **early exit** and **selective processing**.
+
+### Why Flow Control Matters
+
+**The efficiency problem**: Without break/continue, loops must run to completion even after finding what you need or encountering invalid data.
+**Flow control solution**: Exit early (break) or skip items (continue), saving time and making logic cleaner.
+
+**Real-world impact**: Google's search doesn't check all 50 billion web pages when you search - it uses break to stop once it finds enough good results. Your loop can do the same!
+
+### Break vs Continue: Core Concepts
+
+**Break**: "I found what I needed, stop the entire loop now"
+- **Analogy**: Searching for keys in your house - once found, stop searching other rooms
+- **Use case**: First match, error detection, early termination
+
+**Continue**: "Skip this one item, but keep going through the rest"
+- **Analogy**: Assembly line inspector - defective item? Skip it, inspect next one
+- **Use case**: Filtering, ignoring special cases, validation
+
+### The Power of Selective Iteration
+
+Traditional approach requires processing everything:
+```python
+# Must check ALL items
+for item in large_dataset:
+    # Process even after finding what you need
+```
+
+With break/continue, you control flow intelligently:
+```python
+# Stop when done
+for item in large_dataset:
+    if found_target:
+        break  # Save time!
+```
+
+This is **algorithmic efficiency** - doing less work to achieve the same goal.
+
 ## Break and Continue in For Loops
 
 Both `break` and `continue` work in for loops just like while loops.

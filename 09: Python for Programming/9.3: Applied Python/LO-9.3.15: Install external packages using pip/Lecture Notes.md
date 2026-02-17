@@ -16,6 +16,47 @@ Using pip to install third-party Python packages
 </div>
 
 ---
+
+## Introduction
+
+`pip` implements **package management** - installing, updating, removing third-party code! **PyPI** (Python Package Index) has 500,000+ packages - the world's largest software repository. `pip` is Python's **app store**!
+
+### Why Package Managers Matter
+
+**Before pip** (manual installation): Download, extract, install manually:
+```bash
+# The bad old days!
+wget package.tar.gz
+tar -xzf package.tar.gz
+cd package
+python setup.py install  # Often failed!
+```
+
+**With pip** (automatic): One command, handles everything:
+```bash
+pip install requests  # Done!
+# Dependencies, versions, paths - all automatic!
+```
+
+**This is dependency management** - pip handles the complexity!
+
+### Historical Context
+
+**pip created 2008** by Ian Bicking. Replaced **easy_install** (2004) which was problematic. **PyPI** (Python Package Index, 2003) centralized package distribution - inspired by **CPAN** (Perl, 1995).
+
+**Why "pip"?** Originally "Pip Installs Packages" (recursive acronym) or "Pip Installs Python". Follows Unix tradition of recursive names (GNU = "GNU's Not Unix").
+
+**Virtual environments** (venv, 2012) solved **dependency conflicts** - different projects need different package versions. pip + venv = **isolated environments**!
+
+### Real-World Analogies
+
+**pip like app store**:
+- **PyPI**: App repository (500K+ packages)
+- **pip install**: Download and install app
+- **requirements.txt**: App bundle (install multiple)
+**Python has an app store for code!**
+
+---
 ### Key Concepts
 
 External packages extend Python's capabilities:

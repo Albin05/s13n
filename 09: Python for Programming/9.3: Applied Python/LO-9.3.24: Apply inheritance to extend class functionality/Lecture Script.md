@@ -1,5 +1,15 @@
 # Lecture Script: LO-66 Apply Inheritance
 
+
+### CS Theory Bite
+
+> **Origin**: Inheritance models **taxonomic hierarchies** (Simula 67) — like biological classification. The **Liskov Substitution Principle** (1987): anywhere a parent works, a child should work too.
+>
+> **Analogy**: Inheritance is like **genetic traits** — children inherit features from parents but can develop their own unique characteristics.
+>
+> **Why it matters**: Inheritance enables code reuse — write common behavior once, specialize in subclasses.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "Think about vehicles. All vehicles move, but a car drives, a plane flies, and a boat sails. They share common features but have unique behaviors. That's inheritance! We create a parent class with shared features, then child classes with specialized features."
 

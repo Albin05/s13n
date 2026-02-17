@@ -1,8 +1,17 @@
 ## Lecture Script: Set Difference and Symmetric Difference Operations
 
-**Duration:** 15 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: **Difference** (A - B) finds elements only in A. **Symmetric difference** (A △ B) finds elements in either but not both — the mathematical XOR operation.
+>
+> **Analogy**: Difference is like **"What do I have that you don't?"** Symmetric difference is **"What's unique to each of us?"**
+>
+> **Why it matters**: These operations compare datasets — finding new users, changed records, or exclusive items.
+
+
 
 ### Hook (2 minutes)
 

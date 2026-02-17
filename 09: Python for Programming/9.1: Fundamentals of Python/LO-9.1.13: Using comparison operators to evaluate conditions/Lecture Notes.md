@@ -1,5 +1,37 @@
 # Lecture Notes: Use Comparison Operators
 
+## Introduction
+
+Comparison operators are the foundation of **decision-making** in programs. They allow code to ask questions and respond differently based on the answers.
+
+### Why Comparison Operators Exist
+
+Every useful program makes decisions:
+- **ATM**: Is PIN correct? Is balance sufficient?
+- **Game**: Is health > 0? Did score >= high score?
+- **Login**: Does password match? Is account active?
+
+Without comparisons, programs would just execute the same instructions every time - no intelligence, no adaptation.
+
+### The Foundation of Logic
+
+Comparison operators implement **Boolean logic**, invented by George Boole in the 1800s. This mathematical system deals with truth values (True/False) and forms the basis of:
+- All computer logic gates
+- Database queries (SQL WHERE clauses)
+- Conditional statements in every programming language
+- Search engine filters
+
+### Real-World Analogy
+
+Comparison operators are like **quality control inspectors**:
+- Inspector checks: "Is this item > 5 inches?" → True or False
+- Inspector checks: "Does weight == specification?" → True or False
+- Based on answer, item passes or fails
+
+Or think of them like **bouncers at a club**:
+- "Is age >= 21?" → True: enter, False: denied
+- "Is name on list?" → True: VIP entrance, False: regular line
+
 ## Comparison Operators
 
 Comparison operators compare two values and return a **boolean** result: `True` or `False`.

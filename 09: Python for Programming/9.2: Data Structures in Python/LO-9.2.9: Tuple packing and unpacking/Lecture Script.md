@@ -1,8 +1,17 @@
 ## Lecture Script: Tuple Packing and Unpacking
 
-**Duration:** 18 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Tuple packing/unpacking implements **destructuring** — extracting multiple values in one statement. Python 3 added **starred unpacking** (`a, *rest = tuple`) for flexible extraction.
+>
+> **Analogy**: Unpacking is like **opening a gift box with multiple items** — one action, multiple things extracted and assigned to variables.
+>
+> **Why it matters**: Tuple unpacking enables elegant patterns: multiple return values, variable swapping (`a, b = b, a`), and loop destructuring.
+
+
 
 ### Hook (2 minutes)
 

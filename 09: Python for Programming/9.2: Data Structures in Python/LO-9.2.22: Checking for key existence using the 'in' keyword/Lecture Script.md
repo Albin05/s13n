@@ -1,8 +1,17 @@
 ## Lecture Script: Checking for Key Existence
 
-**Duration:** 12 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: The `in` operator checks dict **keys** (not values) using O(1) hash lookup. Before Python 3, you'd use `dict.has_key()` — now deprecated in favor of the cleaner `in` syntax.
+>
+> **Analogy**: Checking `key in dict` is like **checking if a word exists in the dictionary index** — instant, without reading every definition.
+>
+> **Why it matters**: Always check before accessing to avoid KeyError — or use `get()` for the same safety.
+
+
 
 ### Hook (2 minutes)
 

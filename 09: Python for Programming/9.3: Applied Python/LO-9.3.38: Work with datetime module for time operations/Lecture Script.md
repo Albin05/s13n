@@ -1,5 +1,15 @@
 # Lecture Script: LO-9.3.38 Work with Datetime Module for Time Operations
 
+
+### CS Theory Bite
+
+> **Origin**: Time computation is notoriously complex — **leap years**, **time zones**, **daylight saving**, and the **Unix epoch** (Jan 1, 1970). The **Y2K bug** and upcoming **Year 2038 problem** show the consequences of simplistic time handling.
+>
+> **Analogy**: The datetime module is like a **world clock** — it handles the complexity of calendars, time zones, and durations so you don't have to.
+>
+> **Why it matters**: Never implement date math manually — use datetime to avoid off-by-one errors, leap year bugs, and timezone disasters.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "How old are you in days? When's your next birthday? How many working hours this week? Time calculations are EVERYWHERE in software. Python's datetime module makes it simple: datetime.now(), timedelta(days=7), done! From age calculators to event countdowns to work hour tracking — master datetime, master time!"
 

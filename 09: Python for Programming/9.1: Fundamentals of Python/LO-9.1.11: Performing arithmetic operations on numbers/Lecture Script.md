@@ -1,5 +1,15 @@
 ### LO-11 Perform Arithmetic Operations (21 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Arithmetic operations are performed by the **ALU** (Arithmetic Logic Unit) inside your CPU — the same circuitry since the **Intel 4004** (1971). Python adds `//` (floor division) and `**` (power) beyond basic math.
+>
+> **Analogy**: Python operators are like a **calculator's buttons** — each symbol triggers a specific mathematical operation in the CPU.
+>
+> **Why it matters**: Arithmetic is the building block of algorithms — from simple totals to complex simulations.
+
+
 ### Hook (3 minutes)
 
 **Say**: "Python is a powerful calculator! But it has special operators you might not know about. Let's explore them all!"

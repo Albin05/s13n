@@ -1,6 +1,5 @@
 ## Pre-Read: Read JSON Files
 
-**Duration:** 5 minutes
 
 ---
 

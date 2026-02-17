@@ -1,8 +1,17 @@
 ## Lecture Script: Handle Exceptions Using try-except Blocks
 
-**Duration:** 15 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Exception handling originated in **PL/I** (1964) and was refined in **CLU** (1975). Python follows the **EAFP** philosophy — "Easier to Ask Forgiveness than Permission" — try first, handle errors after.
+>
+> **Analogy**: try-except is like a **safety net under a trapeze** — perform the risky act, and the net catches you if you fall.
+>
+> **Why it matters**: Without exception handling, any unexpected input crashes your entire program.
+
+
 
 ### Hook (2 minutes)
 

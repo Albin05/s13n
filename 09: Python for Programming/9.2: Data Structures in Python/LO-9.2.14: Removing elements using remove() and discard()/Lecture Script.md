@@ -1,8 +1,17 @@
 ## Lecture Script: Removing Elements using remove() and discard()
 
-**Duration:** 18 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: `remove()` raises `KeyError` if element missing (fail-fast philosophy), while `discard()` silently does nothing (fault-tolerant). This mirrors **EAFP vs LBYL** Python patterns.
+>
+> **Analogy**: `remove()` is like a **strict teacher** — "That student isn't in my class!" `discard()` is like a **laid-back teacher** — "Not here? No problem."
+>
+> **Why it matters**: Choose `remove()` when absence is a bug, `discard()` when absence is expected.
+
+
 
 ### Hook (2 minutes)
 

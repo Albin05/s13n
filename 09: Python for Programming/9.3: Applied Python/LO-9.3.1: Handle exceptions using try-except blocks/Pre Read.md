@@ -1,6 +1,57 @@
 ## Pre-Read: Handle Exceptions Using try-except Blocks
 
-**Duration:** 5 minutes
+
+---
+
+## Introduction
+
+**Exception handling** is how programs recover from errors gracefully instead of crashing. Before exceptions, programmers used **error codes** (return values like -1, NULL, false) which were easy to ignore. Exceptions are **impossible to ignore** - they force you to handle errors explicitly!
+
+### Why Exceptions Matter
+
+**Problem with error codes**: Easy to forget checking:
+```python
+# Old way (error codes) - dangerous!
+result = divide(10, 0)  # Returns None on error
+print(result + 5)  # TypeError far from source!
+```
+
+**Solution with exceptions**: Errors crash immediately:
+```python
+# Modern way (exceptions) - safe!
+result = 10 / 0  # ZeroDivisionError RIGHT HERE
+# Cannot proceed with bad data!
+```
+
+**This is "fail-fast"** - catch errors at the source, not downstream!
+
+### Python's EAFP Philosophy
+
+**EAFP**: "Easier to Ask Forgiveness than Permission"
+```python
+try:
+    value = dict[key]  # Just try it!
+except KeyError:
+    value = default  # Handle failure
+```
+
+**LBYL**: "Look Before You Leap" (other languages)
+```python
+if key in dict:  # Check first
+    value = dict[key]  # Then act
+else:
+    value = default
+```
+
+**Python prefers EAFP** - try first, handle errors later. More concise and often faster!
+
+### Real-World Analogy
+
+**Exception handling like safety net**:
+- **Try**: Walk tightrope (risky code)
+- **Except**: Safety net catches you (error handler)
+- **No net**: Fall to ground (program crash)
+**Exceptions are your safety net!**
 
 ---
 

@@ -1,5 +1,15 @@
 # Lecture Script: LO-51 Append to Files
 
+
+### CS Theory Bite
+
+> **Origin**: Append mode implements **append-only semantics** — new data added to the end, existing data untouched. This is the basis of **write-ahead logs (WAL)** used in databases for crash recovery.
+>
+> **Analogy**: Appending is like **writing in a diary** — you add new entries at the end, never erase previous pages.
+>
+> **Why it matters**: Log files, chat histories, and transaction records all require append, not overwrite.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "Imagine a diary. When you write a new entry, you don't tear out the old pages! You add to the end. That's what append mode does with files!"
 

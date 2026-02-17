@@ -1,5 +1,25 @@
 # Lecture Notes: Write While Loops
 
+## Introduction
+
+While loops introduce **iteration** - the ability to repeat code automatically. This is one of the most powerful concepts in programming, transforming static instructions into dynamic, adaptive behavior.
+
+### The Power of Repetition
+
+**Without loops**: To print "Hello" 100 times, you'd write `print("Hello")` 100 times!
+**With loops**: Write it once, loop 100 times.
+
+This concept revolutionized programming in the 1950s. Before loops, programmers had to manually duplicate code or use complex jump statements. Loops made programs exponentially more powerful.
+
+### Real-World Analogy
+
+While loops are like **"while" instructions in real life**:
+- "While the laundry is wet, keep drying"
+- "While there are dirty dishes, keep washing"
+- "While the light is red, wait"
+
+The action repeats until the condition changes. Programs work the same way!
+
 ## While Loops
 
 A while loop repeats code **as long as** a condition is True.

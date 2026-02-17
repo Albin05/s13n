@@ -1,8 +1,17 @@
 ## Lecture Script: Removing Dictionary Entries
 
-**Duration:** 15 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: `pop()` returns the removed value (useful for processing), `del` just removes (faster). `popitem()` removes the last inserted pair — useful for **stack-like** dict processing (LIFO since Python 3.7).
+>
+> **Analogy**: `pop()` is like **taking a book off the shelf and reading the title**. `del` is like **throwing it away without looking**.
+>
+> **Why it matters**: Choose the right removal method based on whether you need the removed value.
+
+
 
 ### Hook (2 minutes)
 

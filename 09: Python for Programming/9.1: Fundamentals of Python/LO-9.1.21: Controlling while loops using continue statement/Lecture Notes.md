@@ -1,5 +1,27 @@
 # Lecture Notes: Control While Loops with Continue
 
+## Introduction
+
+The `continue` statement provides a way to **skip the rest of the current iteration** and jump to the next one. Unlike `break` which exits entirely, `continue` says "skip this one, move to the next."
+
+### Why Continue Exists
+
+Sometimes you want to process most items but skip certain ones:
+- **Filter while processing**: Skip invalid entries but continue with others
+- **Conditional skipping**: Ignore specific cases without stopping entirely
+- **Cleaner logic**: Avoid deeply nested if statements
+
+**Without continue**: Complex nested ifs. **With continue**: Clear, linear flow.
+
+### Real-World Analogy
+
+Continue is like **"skip this, next!"**:
+- **Assembly line**: Defective item detected? Skip it, continue with next item (don't stop the whole line!)
+- **Reading list**: Boring chapter? Skip it, continue reading
+- **Playlist**: Don't like this song? Skip to next (don't stop playback)
+
+It's selective skipping, not stopping.
+
 ## The Continue Statement
 
 `continue` skips the rest of the current iteration and goes to the next one.

@@ -1,5 +1,15 @@
 # Lecture Script: LO-72 Use Dictionary Comprehensions
 
+
+### CS Theory Bite
+
+> **Origin**: Dict comprehensions were added in **Python 2.7/3.0** (PEP 274) — extending comprehension syntax to key-value mappings. Before this, `dict((k, v) for ...)` was the verbose workaround.
+>
+> **Analogy**: A dict comprehension is like building a **phone directory** — map each name (key) to its number (value) in one declaration.
+>
+> **Why it matters**: Dict comprehensions create lookup tables in one line — from data transformation to indexing.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "You love list comprehensions? Wait till you see dictionary comprehensions! Create dictionaries in one line with the same elegant syntax. Traditional way: 5 lines. Python way: 1 line! Let me blow your mind!"
 

@@ -1,8 +1,17 @@
 ## Lecture Script: Using List Comprehensions
 
-**Duration:** 18 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: List comprehensions came from **Haskell** (1990) and **mathematical set notation**: `{x² | x ∈ ℕ, x < 10}` → `[x**2 for x in range(10)]`. Added in **Python 2.0** (PEP 202, 2000).
+>
+> **Analogy**: A comprehension is like an **assembly line blueprint** — describe the transformation once, and it produces the entire output automatically.
+>
+> **Why it matters**: Comprehensions are faster than loops (C-level optimization) and more readable for simple transformations.
+
+
 
 ### Hook (2 minutes)
 

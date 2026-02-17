@@ -1,6 +1,5 @@
 ## Pre-Read: Install External Packages Using Pip
 
-**Duration:** 5 minutes
 
 ---
 

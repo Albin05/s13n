@@ -16,6 +16,72 @@ Making HTTP requests to interact with web APIs
 </div>
 
 ---
+
+## Introduction
+
+The `requests` library implements **HTTP client functionality** - talking to web servers using the internet's protocol! HTTP is how browsers fetch web pages, but `requests` lets Python programs interact with **web APIs** programmatically. This is **HTTP for humans** - the tagline emphasizes simplicity!
+
+### Why requests is Revolutionary
+
+**Before requests** (urllib): Complex, verbose, frustrating:
+```python
+# urllib - painful!
+import urllib.request
+req = urllib.request.Request('http://api.com/data')
+response = urllib.request.urlopen(req)
+data = response.read().decode('utf-8')
+# So much boilerplate!
+```
+
+**With requests**: Simple, elegant, Pythonic:
+```python
+# requests - beautiful!
+import requests
+response = requests.get('http://api.com/data')
+data = response.json()
+# Two lines!
+```
+
+**This is API ergonomics** - making common tasks trivially easy!
+
+### Historical Context
+
+**requests created by Kenneth Reitz** (2011) to simplify HTTP in Python. Became **most downloaded Python package** - over 1 billion downloads! Motto: "**HTTP for Humans**" - emphasizing usability.
+
+**Why needed?** Python's built-in `urllib` is powerful but complex. `requests` provides **beautiful API** - simple methods, automatic JSON handling, session management. **Developer happiness matters!**
+
+**REST APIs**: `requests` designed for **RESTful** APIs (Roy Fielding, 2000). REST uses HTTP methods (GET/POST/PUT/DELETE) to manipulate resources. JSON became standard format - `requests` handles it natively!
+
+### Real-World Analogies
+
+**HTTP like postal service**:
+- **GET**: Request information ("send me catalog")
+- **POST**: Send new data ("here's my order")
+- **PUT**: Update existing ("change my address")
+- **DELETE**: Remove data ("cancel subscription")
+**requests is your postal worker!**
+
+**Or like restaurant ordering**:
+```python
+# GET menu
+menu = requests.get('https://restaurant.api/menu')
+
+# POST order
+order = {'item': 'pizza', 'size': 'large'}
+receipt = requests.post('https://restaurant.api/orders', json=order)
+
+# Check order status
+status = requests.get(f'https://restaurant.api/orders/{receipt.json()["id"]}')
+```
+
+**Or like library requests**:
+- **GET**: Borrow book (retrieve data)
+- **POST**: Suggest new book (create data)
+- **PUT**: Update book review (modify data)
+- **DELETE**: Remove hold (delete data)
+**Web APIs work like library systems!**
+
+---
 ### Key Concepts
 
 The requests library allows you to:

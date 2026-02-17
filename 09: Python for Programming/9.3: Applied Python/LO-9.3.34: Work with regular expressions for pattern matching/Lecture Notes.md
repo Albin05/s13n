@@ -16,6 +16,81 @@ Regular expressions are powerful patterns used for matching and manipulating tex
 </div>
 
 ---
+
+## Introduction
+
+Regular expressions implement **pattern matching** - describing text patterns with a mini-language! This is **formal language theory** in practice - regular expressions define **regular languages** (simplest class in Chomsky hierarchy). Regex is **text surgery** - find, extract, replace with surgical precision!
+
+### Why Regular Expressions are Essential
+
+**Problem without regex**: Manual string parsing is painful:
+```python
+# TEDIOUS - checking email manually!
+def is_email(text):
+    has_at = "@" in text
+    has_dot = "." in text[text.index("@"):]
+    no_spaces = " " not in text
+    return has_at and has_dot and no_spaces
+# Fragile, incomplete, verbose!
+```
+
+**Solution with regex**: Pattern describes format:
+```python
+# POWERFUL - pattern expresses format!
+import re
+def is_email(text):
+    return bool(re.match(r'^[\w.+-]+@[\w-]+\.[\w.]+$', text))
+# One line, comprehensive!
+```
+
+**This is pattern-based matching** - describe what to find, not how!
+
+### Historical Context
+
+**Regular expressions** invented by **Stephen Kleene** (1956) - mathematical notation for regular languages! **Ken Thompson** (1968) built regex into **ed** text editor (Unix) - first practical implementation!
+
+**grep** (1973) = "**G**lobally search **R**egular **E**xpression and **P**rint" - Unix command that made regex mainstream. **Perl** (1987) extended regex enormously - "Perl-compatible regex" (PCRE) became industry standard!
+
+**Python's `re` module** implements PCRE-style patterns. **Finite automata** theory underpins regex - patterns compile to **state machines** for efficient matching. `re.compile()` creates optimized state machine!
+
+### Real-World Analogies
+
+**Regex like metal detector**:
+- **Pattern**: What to scan for (ring, coin, nail)
+- **Text**: The beach (data to search)
+- **Match**: Beep! Found something matching pattern
+**Define what to find, sweep across data!**
+
+**Or like search filters**:
+```python
+# Like advanced search in email:
+# From: *@company.com  →  r'From:.*@company\.com'
+# Subject: Invoice #*  →  r'Subject: Invoice #\d+'
+# Structured searching!
+```
+
+**Or like DNA pattern matching**:
+- **Gene sequence**: ATCGGATCG... (text)
+- **Pattern**: ATCG{2,4}AT (regex)
+- **Match**: Find all matching gene segments
+**Biology uses regex-like pattern matching!**
+
+### Regex Performance
+
+**Compile for reuse** - avoid recompiling same pattern:
+```python
+# SLOW - recompiles every call!
+for line in million_lines:
+    re.search(r'\d{3}-\d{4}', line)
+
+# FAST - compile once, reuse!
+phone_pattern = re.compile(r'\d{3}-\d{4}')
+for line in million_lines:
+    phone_pattern.search(line)
+# 10-50x faster for repeated use!
+```
+
+---
 ### Basic Syntax
 
 ```python

@@ -1,5 +1,15 @@
 # Lecture Script: LO-9.3.33 Apply Decorators to Modify Function Behavior
 
+
+### CS Theory Bite
+
+> **Origin**: Decorators (Python 2.4, PEP 318) implement **Aspect-Oriented Programming** — adding cross-cutting concerns (logging, auth, caching) without modifying function code. Built on **closures** and **higher-order functions**.
+>
+> **Analogy**: A decorator is like **gift wrapping** — the function (gift) stays the same, but the wrapper adds presentation (logging, timing, validation).
+>
+> **Why it matters**: Decorators eliminate code duplication for cross-cutting concerns — write `@login_required` once, apply everywhere.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "Imagine you need to time every function in your application. Copy-paste timing code 50 times? NO! Write it once, slap @timer on each function. That's decorators — code that wraps other code, adding behavior without changing the original function. Magic!"
 

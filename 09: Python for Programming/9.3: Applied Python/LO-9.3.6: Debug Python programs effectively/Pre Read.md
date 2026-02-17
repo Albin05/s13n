@@ -1,6 +1,45 @@
 ## Pre-Read: Debug Python Programs Effectively
 
-**Duration:** 5 minutes
+
+---
+
+## Introduction
+
+**Debugging** is the systematic process of finding and fixing errors (bugs) in code. Named after Grace Hopper's 1947 discovery of a literal moth causing computer errors! Modern debugging uses **scientific method**: observe symptoms, form hypotheses, test, fix. No random changes - systematic investigation!
+
+### Why Systematic Debugging Matters
+
+**Problem with random debugging**: Trial and error wastes time:
+```python
+# Desperate - random changes!
+# result = calculate(x, y)  # Comment this?
+result = calculate(y, x)  # Swap?
+# Hope something works!
+```
+
+**Solution with systematic debugging**: Scientific method:
+```python
+# Systematic - test hypothesis!
+print(f"Input: x={x}, y={y}")
+result = calculate(x, y)
+print(f"Output: {result}")
+# Observe, hypothesize, test!
+```
+
+**This is the scientific method** - observe, experiment, conclude!
+
+### Real-World Analogy
+
+**Debugging like medical diagnosis**:
+- **Symptoms**: Program misbehaves (patient feels sick)
+- **Tests**: Print statements, debugger (blood tests, scans)
+- **Diagnosis**: Find bug (identify disease)
+- **Treatment**: Fix code (prescribe medicine)
+**Doctors diagnose systematically - so should programmers!**
+
+### The Origin of "Bug"
+
+**First computer bug**: Literal moth found in Harvard Mark II computer (1947) by Grace Hopper! Coined term "debugging" - removing bugs from hardware. Now means fixing software errors!
 
 ---
 

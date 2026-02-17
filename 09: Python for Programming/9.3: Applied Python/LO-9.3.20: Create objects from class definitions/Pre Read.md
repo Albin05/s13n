@@ -1,6 +1,5 @@
 ## Pre-Read: Create Objects from Class Definitions
 
-**Duration:** 5 minutes
 
 ---
 

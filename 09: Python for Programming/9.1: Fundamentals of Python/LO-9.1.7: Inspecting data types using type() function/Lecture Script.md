@@ -1,5 +1,15 @@
 ### LO-7 Inspect Data Types (10 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: Runtime type inspection powers **dynamic typing** — Python's design choice (vs static typing in C/Java). **Duck typing**: "If it walks like a duck and quacks like a duck, it's a duck."
+>
+> **Analogy**: `type()` is like an **ID scanner** — it tells you exactly what kind of data you're dealing with at any moment.
+>
+> **Why it matters**: Debugging type errors is the #1 beginner challenge — `type()` is your diagnostic tool.
+
+
 ### Hook (3 minutes)
 
 **Say**: "Python needs to know what type of data it's working with. The `type()` function lets us inspect any variable's data type."

@@ -1,5 +1,15 @@
 # Lecture Script: LO-9.3.32 Understand and Implement Iterators
 
+
+### CS Theory Bite
+
+> **Origin**: The **iterator protocol** (`__iter__` + `__next__`) is a **Gang of Four design pattern** (1994) — separating traversal logic from the data container. Every `for` loop in Python uses this protocol.
+>
+> **Analogy**: An iterator is like a **bookmark** — it tracks your current position in a sequence without holding the entire book in memory.
+>
+> **Why it matters**: Understanding iterators explains how `for` loops, generators, and comprehensions all work under the hood.
+
+
 ## [0:00-0:02] Hook (2 min)
 **Say**: "Every for loop you've ever written uses iterators under the hood. When you write 'for item in my_list', Python calls iter() to get an iterator, then repeatedly calls next(). Today we'll pull back the curtain and build our own iterators from scratch!"
 

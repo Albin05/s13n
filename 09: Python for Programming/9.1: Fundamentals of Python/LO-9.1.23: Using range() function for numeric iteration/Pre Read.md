@@ -1,5 +1,19 @@
 # Pre-Read: Using Range() Function for Numeric Iteration
 
+## What is range()?
+
+Range is Python's **smart number generator**. Instead of creating all numbers at once, it generates them one-by-one as needed - like a vending machine dispensing one item at a time!
+
+### Simple Analogy
+
+Think of range like a **number counter at a deli**:
+- Set it to count 1 to 100
+- Numbers appear one at a time (not all at once!)
+- Takes up almost no space (doesn't print 100 tickets upfront)
+- You can start anywhere, stop anywhere, skip numbers
+
+This makes counting billions of numbers possible without running out of memory!
+
 ## What You'll Learn
 In this lesson, you'll learn how to use Python's `range()` function to generate sequences of numbers for use in for loops. This is essential for when you need to repeat code a specific number of times or iterate over numbers.
 

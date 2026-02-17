@@ -1,8 +1,17 @@
 ## Lecture Script: Understanding Tuple Immutability
 
-**Duration:** 18 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: **Immutability** is a cornerstone of **functional programming** — if data can't change, there are no bugs from unexpected mutations. This also ensures **thread safety** in concurrent programs.
+>
+> **Analogy**: Tuple immutability is like **carving in stone** vs **writing on a whiteboard** — stone is permanent and reliable, whiteboards get accidentally erased.
+>
+> **Why it matters**: Immutability prevents entire categories of bugs — accidental modifications, race conditions, and state corruption.
+
+
 
 ### Hook (2 minutes)
 

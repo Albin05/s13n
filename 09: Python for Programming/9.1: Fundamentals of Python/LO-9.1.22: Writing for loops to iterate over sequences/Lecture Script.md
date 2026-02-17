@@ -1,5 +1,15 @@
 ### LO-22 Write For Loops (20 minutes)
 
+
+### CS Theory Bite
+
+> **Origin**: For loops implement the **iterator pattern** (Gang of Four, 1994) — Python's `for` is actually a **for-each** loop, iterating over any iterable object, not just counting numbers.
+>
+> **Analogy**: A `for` loop is like a **conveyor belt** — items come one at a time, you process each, and it automatically stops at the end.
+>
+> **Why it matters**: For loops are the most common loop — 90% of iteration tasks are "do something for each item."
+
+
 ### Hook (2 minutes)
 
 **Say**: "Want to print every student's name? You could copy-paste print() 30 times... or use a for loop and do it in 2 lines!"

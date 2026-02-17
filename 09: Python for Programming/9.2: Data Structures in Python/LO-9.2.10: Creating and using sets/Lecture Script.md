@@ -1,8 +1,17 @@
 ## Lecture Script: Creating and Using Sets
 
-**Duration:** 18 minutes
 
 ---
+
+### CS Theory Bite
+
+> **Origin**: Sets implement **mathematical set theory** (Georg Cantor, 1874). Python sets use **hash tables** for O(1) membership testing — checking `x in my_set` is near-instant regardless of size.
+>
+> **Analogy**: A set is like a **guest list with no duplicates** — each name appears exactly once, and checking if someone's on the list is instant.
+>
+> **Why it matters**: Sets eliminate duplicates automatically and provide the fastest membership testing of any Python collection.
+
+
 
 ### Hook (2 minutes)
 
