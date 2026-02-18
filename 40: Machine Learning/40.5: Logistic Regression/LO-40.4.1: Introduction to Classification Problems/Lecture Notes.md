@@ -1,41 +1,36 @@
-# Introduction to Classification Problems
-
-## Learning Objectives
-
-By the end of this lesson, you will be able to:
-- Understand the key concepts of Introduction to Classification Problems
-- Apply these concepts to practical problems
-- Explain the importance of this topic in machine learning
-
-## Introduction
-
-[Introduction to Introduction to Classification Problems]
+# Introduction to Classification
 
 ## Key Concepts
+* **Supervised Learning:** Classification is a type of supervised learning where the target variable is categorical.
+* **Discrete Output:** The output is a label, not a quantity.
+* **Decision Boundary:** A hypersurface that partitions the underlying vector space into two or more sets, one for each class.
 
-### Concept 1
+## Types of Classification
+1.  **Binary Classification:**
+    * Two possible outcomes.
+    * Examples: Spam/Ham, Fraud/Legit, Pass/Fail.
+    * Usually encoded as 0 (Negative class) and 1 (Positive class).
+2.  **Multi-class Classification:**
+    * More than two classes.
+    * Example: Classifying types of flowers (Setosa, Versicolor, Virginica).
 
-[Explanation of first key concept]
+## Classification vs. Regression
 
-### Concept 2
+| Feature | Regression | Classification |
+| :--- | :--- | :--- |
+| **Output Type** | Continuous (Numbers) | Discrete (Labels) |
+| **Question Asked** | "How much?" or "How many?" | "Which category?" |
+| **Example** | Predicting Temperature | Predicting if it will Rain (Yes/No) |
 
-[Explanation of second key concept]
+## Code Snippet: Loading a Classification Dataset
+```python
+from sklearn.datasets import load_iris
+import pandas as pd
 
-## Examples
+# Load the Iris dataset (Classic classification problem)
+data = load_iris()
+X = data.data
+y = data.target # Target is discrete: 0, 1, or 2
 
-### Example 1
-
-[Practical example demonstrating the concept]
-
-## Summary
-
-Key takeaways:
-1. [Key point 1]
-2. [Key point 2]
-3. [Key point 3]
-
-## Practice
-
-Questions to test your understanding:
-1. [Question 1]
-2. [Question 2]
+print(f"Target Labels: {set(y)}")
+# Output: Target Labels: {0, 1, 2}
