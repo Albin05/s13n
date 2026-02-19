@@ -1,41 +1,29 @@
 # Why Linear Regression Fails for Classification
 
-## Learning Objectives
+## The Two Fatal Flaws
 
-By the end of this lesson, you will be able to:
-- Understand the key concepts of Why Linear Regression Fails for Classification
-- Apply these concepts to practical problems
-- Explain the importance of this topic in machine learning
+### 1. The Outlier Effect (Shifted Decision Boundary)
+* **The Setup:** To use Linear Regression for classification, we set a threshold (usually $0.5$).
+* **The Flaw:** Linear regression uses the Mean Squared Error (MSE) cost function. MSE heavily penalizes large errors.
+* **The Result:** An extreme outlier will pull the regression line towards itself to minimize the squared distance. This flattens the slope of the line, shifting the $y=0.5$ intersection point. This causes the model to suddenly misclassify normal data points that it previously got right.
 
-## Introduction
+### 2. Unbounded Outputs (Nonsensical Probabilities)
+* **The Setup:** In binary classification, we want the model's output to represent the probability $P(y=1|x)$.
+* **The Flaw:** Probabilities are strictly bounded: $0 \le P \le 1$.
+* **The Result:** The hypothesis function for linear regression is a straight line: $h_\theta(x) = \theta_0 + \theta_1 x$. This line extends to infinity in both directions. The model will frequently output values $< 0$ or $> 1$, which are impossible to interpret as probabilities.
 
-[Introduction to Why Linear Regression Fails for Classification]
+## Conceptual Summary
+Linear Regression asks "How much?" (Continuous).
+Classification asks "Which one?" (Discrete).
+Applying a "How much" algorithm to a "Which one" problem results in fragile boundaries and mathematical contradictions. We need an algorithm that inherently outputs values constrained between $0$ and $1$.
 
-## Key Concepts
+## Code Snippet: The Threshold Problem
+```python
+# If Linear Regression outputs 1.8 for a classification task...
+prediction = 1.8
 
-### Concept 1
+# We apply a threshold
+predicted_class = 1 if prediction >= 0.5 else 0
 
-[Explanation of first key concept]
-
-### Concept 2
-
-[Explanation of second key concept]
-
-## Examples
-
-### Example 1
-
-[Practical example demonstrating the concept]
-
-## Summary
-
-Key takeaways:
-1. [Key point 1]
-2. [Key point 2]
-3. [Key point 3]
-
-## Practice
-
-Questions to test your understanding:
-1. [Question 1]
-2. [Question 2]
+# But what does 1.8 mean in probability? Nothing. 
+# The model is conceptually mismatched.
