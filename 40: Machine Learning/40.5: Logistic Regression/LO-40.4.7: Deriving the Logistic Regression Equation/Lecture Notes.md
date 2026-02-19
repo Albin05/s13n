@@ -1,41 +1,30 @@
 # Deriving the Logistic Regression Equation
 
-## Learning Objectives
+## The Composition of Functions
+Logistic Regression is built by composing two mathematical functions:
+1.  **Linear Function:** $z = \theta_0 + \theta_1 x_1 + \dots + \theta_n x_n = \theta^T x$
+2.  **Sigmoid (Logistic) Function:** $g(z) = \frac{1}{1 + e^{-z}}$
 
-By the end of this lesson, you will be able to:
-- Understand the key concepts of Deriving the Logistic Regression Equation
-- Apply these concepts to practical problems
-- Explain the importance of this topic in machine learning
+## The Hypothesis Equation
+By substituting the linear function into the Sigmoid function, we get the fundamental hypothesis for Logistic Regression:
+$$h_\theta(x) = \frac{1}{1 + e^{-\theta^T x}}$$
 
-## Introduction
+## Probabilistic Interpretation
+The output of $h_\theta(x)$ is not a direct class label. It is a conditional probability.
+$$h_\theta(x) = P(y=1 | x ; \theta)$$
+* "The probability that $y=1$, given $x$, parameterized by $\theta$."
+* Since probabilities must sum to 1, the probability of the negative class is:
+    $$P(y=0 | x ; \theta) = 1 - P(y=1 | x ; \theta)$$
 
-[Introduction to Deriving the Logistic Regression Equation]
+## Making a Prediction
+To output a final discrete class ($0$ or $1$), we apply a **Decision Threshold** (commonly $0.5$).
+* Predict $y = 1$ if $h_\theta(x) \ge 0.5$
+* Predict $y = 0$ if $h_\theta(x) < 0.5$
 
-## Key Concepts
+## Code Snippet: The Hypothesis in Python
+```python
+import numpy as np
 
-### Concept 1
-
-[Explanation of first key concept]
-
-### Concept 2
-
-[Explanation of second key concept]
-
-## Examples
-
-### Example 1
-
-[Practical example demonstrating the concept]
-
-## Summary
-
-Key takeaways:
-1. [Key point 1]
-2. [Key point 2]
-3. [Key point 3]
-
-## Practice
-
-Questions to test your understanding:
-1. [Question 1]
-2. [Question 2]
+def predict_proba(X, theta):
+    z = np.dot(X, theta)
+    return 1 / (1 + np.exp(-z))
