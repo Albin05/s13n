@@ -1,41 +1,47 @@
-# Implementing Logistic Regression in Python
+# Implementing Logistic Regression
 
-## Learning Objectives
+## The Scikit-Learn API
+`scikit-learn` uses a unified object-oriented API. All predictive models act as "Estimators" and follow the same basic lifecycle.
 
-By the end of this lesson, you will be able to:
-- Understand the key concepts of Implementing Logistic Regression in Python
-- Apply these concepts to practical problems
-- Explain the importance of this topic in machine learning
+1.  **Import:** `from sklearn.linear_model import LogisticRegression`
+2.  **Instantiate:** Create the estimator object. `model = LogisticRegression()`
+3.  **Fit:** Train the model. `model.fit(X_train, y_train)`
+4.  **Predict:** Generate new predictions. `model.predict(X_test)`
 
-## Introduction
+## Core Methods for Logistic Regression
 
-[Introduction to Implementing Logistic Regression in Python]
+### `.fit(X, y)`
+* Executes the mathematical training process.
+* $X$ must be a 2-dimensional structure (samples $\times$ features).
+* $y$ must be a 1-dimensional structure (labels).
 
-## Key Concepts
+### `.predict(X)`
+* Outputs the discrete class labels based on a default $0.5$ threshold.
+* Returns an array like: `[0, 1, 0, 0, 1]`
 
-### Concept 1
+### `.predict_proba(X)`
+* Outputs the raw probability estimates.
+* Returns a 2D array of shape `(n_samples, n_classes)`. 
+* For binary classification, `column 0` is $P(y=0)$ and `column 1` is $P(y=1)$.
 
-[Explanation of first key concept]
+## Accessing the Learned Weights (Theta)
+After `.fit()` is called, you can inspect the mathematical weights the model learned:
+* `model.coef_`: The weights ($\theta_1, \dots, \theta_n$) associated with the features.
+* `model.intercept_`: The bias term ($\theta_0$).
 
-### Concept 2
+## Standard Implementation Example
+```python
+from sklearn.linear_model import LogisticRegression
+import numpy as np
 
-[Explanation of second key concept]
+# Data Preparation
+X_train = np.array([[2.0, 3.1], [1.1, 0.9], [5.5, 4.2], [6.1, 5.0]])
+y_train = np.array([0, 0, 1, 1])
 
-## Examples
+# Model Pipeline
+clf = LogisticRegression()
+clf.fit(X_train, y_train)
 
-### Example 1
-
-[Practical example demonstrating the concept]
-
-## Summary
-
-Key takeaways:
-1. [Key point 1]
-2. [Key point 2]
-3. [Key point 3]
-
-## Practice
-
-Questions to test your understanding:
-1. [Question 1]
-2. [Question 2]
+# Evaluation
+accuracy = clf.score(X_train, y_train)
+print(f"Training Accuracy: {accuracy * 100}%")
