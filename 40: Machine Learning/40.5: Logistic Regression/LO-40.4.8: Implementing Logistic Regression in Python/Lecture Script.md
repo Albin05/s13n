@@ -52,7 +52,6 @@ print(f"Predicted Classes: {hard_predictions}")
 probabilities = model.predict_proba(X_new)
 print(f"Probabilities:\n{probabilities}")
 Notice predict_proba() returns a 2D array. The first column is the probability of Class 0, and the second column is the probability of Class 1. For the 6-hour student, the Class 1 probability might be 0.85, meaning an 85% chance of passing.
+```
 
-URLs for Demos
 
-Google Colab: Getting Started with Scikit-learn
