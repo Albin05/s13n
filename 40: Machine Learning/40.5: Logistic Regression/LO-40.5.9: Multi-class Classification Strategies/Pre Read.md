@@ -1,17 +1,22 @@
-## Pre-Read & Lecture Duration Table
+# Multi-class Classification Strategies
 
-| Item | Duration |
-| :--- | :--- |
-| Pre Read | 10 minutes |
-| Lecture Notes | 15 minutes |
-| Lecture Script | 45 minutes |
+## Conceptual Explanation
+Standard Logistic Regression is a **binary** classifier. It answers a Yes/No question: "Is this email Spam or Not Spam?" 
 
-## Assignment Problems Duration Table
+But what if we need to categorize an image as a Cat, Dog, or Bird? This is a **multi-class** problem. We cannot use a single standard binary Logistic Regression model to separate three or more distinct groups. 
 
-| Problem Code | Duration to Solve | Difficulty | Prerequisite LOs | Category | Type |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| MCS_01 | 2 | Low | 40.4.7 | Knowledge | MCQ |
-| MCS_02 | 3 | Low | 40.4.7 | Application | MCQ |
-| MCS_03 | 4 | Medium | 40.4.7 | Comprehension| MSQ |
-| MCS_04 | 5 | Medium | 40.4.7 | Analysis | Short-answer |
-| MCS_05 | 4 | Medium | 40.4.8 | Implementation| Coding |
+To solve this, Machine Learning practitioners use two primary strategies:
+1.  **One-vs-Rest (OvR):** Also known as One-vs-All. We break the multi-class problem into multiple binary problems. For 3 classes (Cat, Dog, Bird), we train 3 separate models:
+    * Model 1: Is it a Cat, or is it something else?
+    * Model 2: Is it a Dog, or is it something else?
+    * Model 3: Is it a Bird, or is it something else?
+    To make a prediction, we run the image through all three models and pick the one with the highest confidence.
+2.  **Multinomial (Softmax):** Instead of building separate models, we upgrade the math of Logistic Regression. We replace the Sigmoid function with the **Softmax function**, which evaluates all classes simultaneously and outputs a probability distribution where all probabilities perfectly add up to $1.0$.
+
+## Short Examples
+* **OvR:** An email system wants to tag emails as "Work", "Personal", or "Promotions". It runs three separate binary filters behind the scenes to decide the best tag.
+* **Softmax:** A weather app uses a single multinomial model that outputs: 70% chance of Sun, 20% chance of Clouds, 10% chance of Rain. (Sum = 100%).
+
+## External Links
+* [Scikit-learn: Multiclass Classification](https://scikit-learn.org/stable/modules/multiclass.html)
+
