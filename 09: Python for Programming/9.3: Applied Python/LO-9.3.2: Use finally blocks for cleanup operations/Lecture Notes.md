@@ -9,9 +9,9 @@ Executing cleanup code regardless of exceptions
 
 <div align="center">
 
-![Variables concept - labeled storage containers](https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80)
+![Python try-finally Cleanup Block](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.2.png)
 
-*Think of variables as labeled containers storing different types of data*
+*The finally block guarantees cleanup runs regardless of which branch executes, like a guaranteed exit path in a flowchart*
 
 </div>
 

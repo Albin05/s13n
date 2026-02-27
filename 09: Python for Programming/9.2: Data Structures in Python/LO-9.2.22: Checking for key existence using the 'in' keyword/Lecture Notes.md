@@ -7,6 +7,18 @@
 
 The `in` operator provides **O(1) membership testing** for dictionaries - same hash table magic as sets! This enables **defensive programming**: check before access to prevent crashes. It's the **look before you leap (LBYL)** approach vs. Python's preferred **easier to ask forgiveness (EAFP)** with try-except.
 
+---
+
+<div align="center">
+
+![Python Dictionary Key Existence Check](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.22.jpg)
+
+*The `in` keyword uses hash lookup — O(1) for dicts/sets vs O(n) for lists, making it ideal for membership checks*
+
+</div>
+
+---
+
 ### Why Key Checking Matters
 
 **LBYL** (Look Before You Leap): Check first, act second

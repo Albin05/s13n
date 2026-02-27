@@ -4,6 +4,18 @@
 
 Comparison operators are the foundation of **decision-making** in programs. They allow code to ask questions and respond differently based on the answers.
 
+---
+
+<div align="center">
+
+![Python Comparison Operators Table](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.13.png)
+
+*Comparison operators evaluate to True or False, enabling programs to branch into different execution paths*
+
+</div>
+
+---
+
 ### Why Comparison Operators Exist
 
 Every useful program makes decisions:

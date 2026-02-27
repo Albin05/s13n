@@ -4,6 +4,18 @@
 
 The `break` statement provides an **emergency exit** from loops - a way to stop immediately when a special condition is met, regardless of the loop's normal condition.
 
+---
+
+<div align="center">
+
+![Python break Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.20.png)
+
+*The break statement exits the loop immediately — jumping straight past the loop body to the next statement*
+
+</div>
+
+---
+
 ### Why Break Exists
 
 Sometimes you need to exit a loop for reasons other than the main condition:

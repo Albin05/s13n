@@ -3,6 +3,16 @@
 
 ---
 
+<div align="center">
+
+![Python Read Text File open() readline](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.7.png)
+
+*Reading files follows the Input-Process-Output pattern: open the file, read the data, then process it*
+
+</div>
+
+---
+
 ## Introduction
 
 File reading implements **persistent storage access** - retrieving data that outlives program execution! Before file systems, data existed only in RAM (volatile) and disappeared when programs ended. File I/O enables **data persistence** - the foundation of all modern applications, databases, and operating systems!

@@ -7,6 +7,18 @@
 
 Dictionary iteration offers **three views** - keys, values, or items (pairs) - representing different **perspectives on the same data**. This demonstrates **dictionary views**: efficient, dynamic representations that update with the dictionary. They're **not copies** - they're **live views** into the dictionary's current state!
 
+---
+
+<div align="center">
+
+![Python Dictionary keys() values() items() Iteration](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.23.png)
+
+*.keys() iterates over keys, .values() over values, .items() over (key, value) tuples — three views of the same data*
+
+</div>
+
+---
+
 ### Why Three Iteration Methods?
 
 **Keys only** (.keys() or default): When you just need identifiers

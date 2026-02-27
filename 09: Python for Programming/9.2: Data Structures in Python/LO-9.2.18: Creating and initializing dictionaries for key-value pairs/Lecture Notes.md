@@ -7,6 +7,18 @@
 
 Dictionaries represent **associative arrays** - one of computer science's most powerful abstractions. They solve the fundamental problem: "How do I organize data by **meaning** instead of position?" This is the **hash map** - arguably the **most important data structure** after arrays!
 
+---
+
+<div align="center">
+
+![Python Dictionary Key-Value Pairs](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.18.png)
+
+*Dictionaries are hash tables — keys are hashed to array indices for O(1) access to their associated values*
+
+</div>
+
+---
+
 ### Why Dictionaries Are Revolutionary
 
 **Before dictionaries** (positional thinking): Data organized by **index** - you must remember positions:

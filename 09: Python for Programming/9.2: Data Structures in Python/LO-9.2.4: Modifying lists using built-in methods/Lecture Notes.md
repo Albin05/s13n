@@ -1,5 +1,17 @@
 ## Modifying Lists Using Built-in Methods
 
+---
+
+<div align="center">
+
+![Python List Built-in Methods](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.4.png)
+
+*Illustration of a list modification operation: inserting a new element into a linked data structure*
+
+</div>
+
+---
+
 ## Introduction
 
 List methods introduce **object-oriented programming** (OOP) to data structures - the idea that data (lists) can have their own **behaviors** (methods) attached. This represents a fundamental shift in programming paradigms.

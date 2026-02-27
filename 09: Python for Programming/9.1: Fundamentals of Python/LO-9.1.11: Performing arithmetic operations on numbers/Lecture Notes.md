@@ -3,6 +3,18 @@
 ## Introduction
 Python provides comprehensive arithmetic operators for all types of calculations, from basic math to complex scientific formulas.
 
+---
+
+<div align="center">
+
+![Python Arithmetic Operations Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.11.png)
+
+*Python's arithmetic operators (+, -, *, /, //, %, **) map directly to fundamental mathematical operations*
+
+</div>
+
+---
+
 ### Why Arithmetic Operators Are Fundamental
 
 At its core, a computer is a **mathematical machine**. The word "computer" literally means "one who computes." Before electronic computers, "computers" were people who performed calculations!

@@ -3,6 +3,16 @@
 
 ---
 
+<div align="center">
+
+![Python Tuple Packing and Unpacking](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.9.png)
+
+*Variable swapping in computing: tuple packing and unpacking enables elegant one-line swaps like a, b = b, a*
+
+</div>
+
+---
+
 ## Introduction
 
 Tuple packing and unpacking represent **syntactic sugar** and **destructuring** - concepts that transform how we work with multiple values. This is Python's implementation of **parallel assignment**, making code more elegant and closer to mathematical notation.

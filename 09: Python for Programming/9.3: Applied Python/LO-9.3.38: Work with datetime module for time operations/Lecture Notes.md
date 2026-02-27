@@ -7,11 +7,11 @@ Python's datetime module provides classes for manipulating dates and times in bo
 
 ---
 
-<div align="center">
+<div align="center" height="10px" width="10px">
 
-![Variables concept - labeled storage containers](https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80)
+![Python datetime Module Date Time Operations](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.38.jpg)
 
-*Think of variables as labeled containers storing different types of data*
+*Datetime operations use arithmetic to calculate durations, differences, and time-based computations*
 
 </div>
 

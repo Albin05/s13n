@@ -4,6 +4,18 @@
 
 The `elif` (else-if) statement allows programs to check **multiple conditions in sequence** and execute different code for each case. This is essential for modeling real-world scenarios with more than two outcomes.
 
+---
+
+<div align="center">
+
+![Python elif Multiple Conditions Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.16.png)
+
+*elif chains check conditions sequentially — the first True condition executes, then the rest are skipped*
+
+</div>
+
+---
+
 ### Why Elif Exists
 
 Real decisions often have multiple outcomes:

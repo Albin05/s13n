@@ -1,5 +1,17 @@
 ## Using List Comprehensions
 
+---
+
+<div align="center">
+
+![Python List Comprehension Syntax Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.6.png)
+
+*Overview of data structure types including sequences and collections, showing how list comprehensions transform one collection into another*
+
+</div>
+
+---
+
 ## Introduction
 
 List comprehensions introduce **declarative programming** to Python - expressing **what** you want rather than **how** to get it. This represents a paradigm shift from imperative (step-by-step instructions) to declarative (describe the goal) programming.

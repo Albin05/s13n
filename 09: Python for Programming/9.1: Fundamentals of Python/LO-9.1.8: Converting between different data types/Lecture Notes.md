@@ -4,6 +4,18 @@
 
 Type conversion, also called **type casting**, is the process of transforming data from one type to another. This is essential in Python because different types can't always interact directly.
 
+---
+
+<div align="center">
+
+![Python Type Conversion int float str Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.8.png)
+
+*Type conversion functions (int(), float(), str(), bool()) transform data from one type to another*
+
+</div>
+
+---
+
 ### Why Type Conversion Matters
 
 Consider this common scenario:

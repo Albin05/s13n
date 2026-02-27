@@ -3,6 +3,16 @@
 
 ---
 
+<div align="center">
+
+![Python try-except-else-finally Block Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.1.png)
+
+*Try-except follows an if-then-else pattern: if an error occurs, branch to the except handler*
+
+</div>
+
+---
+
 ## Introduction
 
 Exception handling represents **structured error recovery** - one of the most important advances in programming language design! Before exceptions, programs used **error codes** (return values like -1 or NULL) which developers often forgot to check, leading to silent failures and cascading bugs. Exceptions implement **fail-fast principles**: errors are impossible to ignore, forcing explicit handling.

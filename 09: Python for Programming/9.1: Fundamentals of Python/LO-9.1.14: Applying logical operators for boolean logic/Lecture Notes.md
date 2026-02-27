@@ -4,6 +4,18 @@
 
 Logical operators are the **building blocks of complex decision-making**. They allow programs to combine multiple conditions and make sophisticated choices.
 
+---
+
+<div align="center">
+
+![Python Logical Operators Truth Table](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.14.png)
+
+*Truth tables for AND, OR, and NOT — Python's logical operators (and, or, not) follow these exact rules*
+
+</div>
+
+---
+
 ### The Foundation: Boolean Algebra
 
 These operators implement **Boolean algebra**, invented by George Boole in 1847. This mathematical system forms the foundation of:

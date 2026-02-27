@@ -9,9 +9,9 @@ Building complex objects from simpler ones
 
 <div align="center">
 
-![Tree structure showing inheritance](https://images.unsplash.com/photo-1502101872923-d48509bff386?w=800&q=80)
+![Python Composition has-a Object Relationship](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.27.jpg)
 
-*Inheritance allows classes to inherit properties from parent classes*
+*Composition builds complex objects by combining simpler objects, forming a tree of contained parts*
 
 </div>
 

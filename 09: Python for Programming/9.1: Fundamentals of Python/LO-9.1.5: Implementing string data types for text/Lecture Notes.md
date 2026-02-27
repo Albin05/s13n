@@ -5,6 +5,16 @@ Strings represent text data in Python. They're one of the most commonly used dat
 
 ---
 
+<div align="center">
+
+![Python String Character Indexing](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.5.png)
+
+*Strings are immutable sequences of characters — Python provides rich methods for slicing, searching, and transforming text*
+
+</div>
+
+---
+
 ## Understanding Strings
 
 ### Why "String"?

@@ -3,6 +3,16 @@
 
 ---
 
+<div align="center">
+
+![Python Write Text File open() write mode](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.8.png)
+
+*Writing files follows the Input-Process-Output pattern: prepare data, then write it to a file*
+
+</div>
+
+---
+
 ## Introduction
 
 File writing implements **persistent data storage** - saving data that survives program execution! This enables **data permanence** across sessions, the foundation of databases, logs, configuration files, and all modern applications. Writing is the complement to reading - together they form the **I/O contract**!

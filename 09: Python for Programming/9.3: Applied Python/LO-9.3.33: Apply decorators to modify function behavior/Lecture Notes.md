@@ -9,9 +9,9 @@ Decorators are a powerful feature in Python that allow you to modify or enhance 
 
 <div align="center">
 
-![Variables concept - labeled storage containers](https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80)
+![Python Decorator @ Syntax Explained](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.33.png)
 
-*Think of variables as labeled containers storing different types of data*
+*Decorators wrap functions like a machine that adds processing before and after the original function*
 
 </div>
 

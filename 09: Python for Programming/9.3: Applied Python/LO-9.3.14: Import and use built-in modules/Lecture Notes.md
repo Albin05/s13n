@@ -9,9 +9,9 @@ Using Python's standard library modules in your programs
 
 <div align="center">
 
-![Variables concept - labeled storage containers](https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80)
+![Python import Built-in Modules math sys os](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.14.png)
 
-*Think of variables as labeled containers storing different types of data*
+*Built-in modules provide pre-written functions that you can import and call in your program flow*
 
 </div>
 

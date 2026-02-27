@@ -1,5 +1,17 @@
 ## Iterating Through Lists Using Loops
 
+---
+
+<div align="center">
+
+![Python Iterating List with for Loop](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.5.png)
+
+*Flowchart illustrating how a loop iterates through elements, checking conditions and processing each item sequentially*
+
+</div>
+
+---
+
 ## Introduction
 
 List iteration represents the marriage of **data structures and control flow** - using loops to systematically process collections. This is where lists truly become powerful, enabling **batch processing** of data.

@@ -1,5 +1,17 @@
 ## Creating and Using Tuples
 
+---
+
+<div align="center">
+
+![Python Tuple Creation and Usage](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.7.jpg)
+
+*Python data processing architecture: tuples are fundamental data structures used throughout the Python interpreter for passing grouped values*
+
+</div>
+
+---
+
 ## Introduction
 
 Tuples introduce **immutability** to sequences - a fundamental concept in functional programming and safe software design. They represent the philosophy that **"data that shouldn't change, can't change."**

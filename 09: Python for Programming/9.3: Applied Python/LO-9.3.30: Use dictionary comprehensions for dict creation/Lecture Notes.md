@@ -9,9 +9,9 @@ Dictionary comprehensions provide a concise way to create dictionaries based on 
 
 <div align="center">
 
-![Dictionary with key-value pairs](https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=800&q=80)
+![Python Dictionary Comprehension Syntax](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.30.png)
 
-*Dictionaries store data as key-value pairs for fast lookup*
+*Dictionary comprehensions use a for-loop pattern to create key-value pairs in a single expression*
 
 </div>
 

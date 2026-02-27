@@ -7,6 +7,18 @@
 
 Multiple removal methods reflect **different use cases**: `del` for simple removal, `pop()` for removal + retrieval, `popitem()` for stack-like (LIFO) behavior. This represents **API granularity** - providing specific tools for specific patterns rather than one generic method.
 
+---
+
+<div align="center">
+
+![Python Dictionary pop() Remove Entry](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.21.png)
+
+*del removes by key, pop() removes and returns the value, popitem() removes the last inserted pair (LIFO)*
+
+</div>
+
+---
+
 ### Why Multiple Removal Methods?
 
 **del** = **Statement** (not a method): Low-level, like variable deletion

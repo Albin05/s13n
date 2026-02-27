@@ -7,6 +7,18 @@
 
 Dictionary merging implements **configuration layering** - a fundamental pattern in software engineering. Defaults → environment → user preferences → command-line arguments - each layer **overrides** the previous. This is how **all modern applications** handle configuration: Docker, Kubernetes, web frameworks, CLI tools!
 
+---
+
+<div align="center">
+
+![Python Merge Dictionaries update() Method](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.24.png)
+
+*update() merges two dictionaries — existing keys get overwritten by the new values, new keys are added*
+
+</div>
+
+---
+
 ### Why Merging is Fundamental
 
 **The configuration problem**: Apps need settings from multiple sources with precedence:

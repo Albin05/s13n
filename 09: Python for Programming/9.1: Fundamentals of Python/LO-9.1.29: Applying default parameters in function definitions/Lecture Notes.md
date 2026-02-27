@@ -43,6 +43,18 @@ Good defaults follow the **Principle of Least Surprise**:
 - Makes functions easier to use
 - Professional libraries use this extensively
 
+---
+
+<div align="center">
+
+![Python Default Parameter Types Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.29.png)
+
+*Default parameters provide preset values that are used automatically unless the caller explicitly overrides them*
+
+</div>
+
+---
+
 ## Apply Default Parameters
 
 Defining functions with default argument values

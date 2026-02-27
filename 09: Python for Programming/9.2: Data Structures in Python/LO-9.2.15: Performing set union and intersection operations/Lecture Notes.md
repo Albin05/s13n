@@ -7,6 +7,18 @@
 
 Union and intersection bring **200 years of mathematics** into programming - making **Venn diagrams executable**! This represents **declarative set theory**: describe relationships mathematically, let Python compute them.
 
+---
+
+<div align="center">
+
+![Python Set Union and Intersection Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.15.png)
+
+*Union (A | B) combines all elements from both sets; Intersection (A & B) keeps only the shared elements*
+
+</div>
+
+---
+
 ### Why These Operations Are Revolutionary
 
 **Before set operations** (traditional programming): Combining or comparing collections required nested loops:

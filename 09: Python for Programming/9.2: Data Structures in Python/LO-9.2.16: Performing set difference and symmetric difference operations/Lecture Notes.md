@@ -7,6 +7,18 @@
 
 Set difference and symmetric difference represent **asymmetric** and **XOR logic** from Boolean algebra - showing what's unique to one side or mutually exclusive between both. These operations solve the "what's missing?" and "what's different?" questions that appear everywhere in data analysis.
 
+---
+
+<div align="center">
+
+![Python Set Difference Symmetric Difference Venn](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.16.png)
+
+*Difference (A - B) keeps elements only in A; Symmetric difference (A ^ B) keeps elements in either but not both*
+
+</div>
+
+---
+
 ### Why These Operations Matter
 
 **Real-world problems** that need difference/symmetric difference:

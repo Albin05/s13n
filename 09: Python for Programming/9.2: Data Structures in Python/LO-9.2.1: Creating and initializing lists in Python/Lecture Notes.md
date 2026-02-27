@@ -1,5 +1,17 @@
 ## Creating and Initializing Lists in Python
 
+---
+
+<div align="center">
+
+![Python List Create Initialize Elements](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.1.svg)
+
+*A visual representation of array-based data structures showing how lists store elements in indexed positions*
+
+</div>
+
+---
+
 ## Introduction
 
 Lists introduce **ordered collections** - one of computing's most fundamental data structures. They represent the evolution from handling **individual variables** to managing **groups of related data** efficiently.

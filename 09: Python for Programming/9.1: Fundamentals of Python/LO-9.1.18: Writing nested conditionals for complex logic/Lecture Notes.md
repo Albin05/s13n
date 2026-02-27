@@ -4,6 +4,18 @@
 
 Nested conditionals create **decision trees** - multi-level logic where each branch can split further. This mirrors how humans make complex decisions with multiple factors.
 
+---
+
+<div align="center">
+
+![Python Nested if-else Conditional Control Flow](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.18.png)
+
+*Nested conditionals create multi-level decision trees — each branch can contain further if/else checks*
+
+</div>
+
+---
+
 ### Why Nesting is Powerful
 
 Real decisions are hierarchical:

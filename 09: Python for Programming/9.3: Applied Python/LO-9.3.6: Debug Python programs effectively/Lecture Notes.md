@@ -3,6 +3,16 @@
 
 ---
 
+<div align="center">
+
+![Python Debugging Techniques Overview](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.6.png)
+
+*Debugging traces program execution through function calls and control flow to identify errors*
+
+</div>
+
+---
+
 ## Introduction
 
 Debugging implements **systematic error detection** - the scientific method applied to code! Before modern debugging tools, programmers used **memory dumps** (print entire memory) and **desk checking** (manually trace code on paper). Modern debugging uses **interactive inspection**, **symbolic execution**, and **automated testing** - dramatically reducing bug-finding time!

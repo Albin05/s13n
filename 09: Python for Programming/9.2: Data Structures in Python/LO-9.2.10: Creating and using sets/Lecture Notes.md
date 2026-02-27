@@ -3,6 +3,16 @@
 
 ---
 
+<div align="center">
+
+![Python Set Curly Braces Unique Values](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.10.png)
+
+*Venn diagram of three sets illustrating core set operations: union, intersection, and difference*
+
+</div>
+
+---
+
 ## Introduction
 
 Sets introduce **mathematical set theory** to programming - one of the most powerful abstractions in computer science. They represent the principle that **uniqueness and membership are more important than order** for certain problems.

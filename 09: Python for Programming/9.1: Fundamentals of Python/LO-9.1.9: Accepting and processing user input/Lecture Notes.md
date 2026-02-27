@@ -4,6 +4,18 @@
 
 User input transforms programs from static scripts to **interactive applications**. The `input()` function is Python's way of creating a dialogue between your program and its users.
 
+---
+
+<div align="center">
+
+![Python input() Function Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.9.jpg)
+
+*input() reads user data as a string → your program processes it → print() displays the result*
+
+</div>
+
+---
+
 ### The Evolution of Human-Computer Interaction
 
 **1940s-1950s**: Batch processing

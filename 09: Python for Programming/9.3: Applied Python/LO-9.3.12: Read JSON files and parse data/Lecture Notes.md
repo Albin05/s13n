@@ -9,9 +9,9 @@ Loading JSON data from files into Python data structures
 
 <div align="center">
 
-![File folders and documents](https://images.unsplash.com/photo-1544396821-4dd40b938ad3?w=800&q=80)
+![Python JSON File Read json.load() Parse](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.12.jpg)
 
-*Python can read from and write to files on your system*
+*JSON data forms a nested tree structure similar to the DOM, with objects containing other objects*
 
 </div>
 

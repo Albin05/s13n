@@ -1,5 +1,17 @@
 ## Extracting List Portions Using Slicing
 
+---
+
+<div align="center">
+
+![Python List Slicing start stop step](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.3.png)
+
+*Python slicing index diagram showing how positive and negative indices map to list elements*
+
+</div>
+
+---
+
 ## Introduction
 
 Slicing introduces **range extraction** - the ability to grab portions of a list with elegant syntax. This represents Python's philosophy of **powerful operations through simple notation**.

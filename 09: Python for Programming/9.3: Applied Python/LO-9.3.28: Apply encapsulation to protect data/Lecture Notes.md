@@ -9,9 +9,9 @@ Hiding internal details and controlling access
 
 <div align="center">
 
-![Variables concept - labeled storage containers](https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80)
+![Python Encapsulation Data Hiding Private Attributes](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.28.jpg)
 
-*Think of variables as labeled containers storing different types of data*
+*Encapsulation protects internal data within Python's type system, controlling access through defined interfaces*
 
 </div>
 

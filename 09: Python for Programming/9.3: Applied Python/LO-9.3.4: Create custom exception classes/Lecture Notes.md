@@ -9,9 +9,9 @@ Defining your own exception classes
 
 <div align="center">
 
-![Error handling and debugging](https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800&q=80)
+![Python Exception Class Hierarchy Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.4.png)
 
-*Exception handling prevents your program from crashing on errors*
+*Custom exception classes create specialized branches in your error-handling flowchart*
 
 </div>
 

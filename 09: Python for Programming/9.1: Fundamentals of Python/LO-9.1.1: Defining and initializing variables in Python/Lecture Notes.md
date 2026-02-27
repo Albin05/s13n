@@ -5,6 +5,16 @@ Variables are the fundamental building blocks of programming. They allow program
 
 ---
 
+<div align="center">
+
+![Python Variables Memory Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.1.png)
+
+*Variables are named references to objects — Python's type hierarchy shows all the types a variable can hold*
+
+</div>
+
+---
+
 ## What are Variables?
 
 ### Definition

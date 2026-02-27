@@ -7,6 +7,18 @@
 
 The `[]` vs `.get()` choice revisits **fail-fast vs. fail-safe** design - same philosophy as `remove()` vs `discard()` for sets! This represents different **error handling strategies**: crash loudly to catch bugs, or continue gracefully for robustness.
 
+---
+
+<div align="center">
+
+![Python Dictionary get() Method Access](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.19.png)
+
+*dict[key] and dict.get(key) both look up values by hashing the key — the difference is how they handle missing keys*
+
+</div>
+
+---
+
 ### Why Two Access Methods? Design Philosophy
 
 **Why not just one?** Python provides both because **different contexts need different behaviors**:

@@ -1,5 +1,17 @@
 ## Understanding Tuple Immutability
 
+---
+
+<div align="center">
+
+![Python Tuple Immutable Fixed Elements](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.8.jpg)
+
+*Hash table data structure: immutability enables tuples to be used as hash keys, providing constant-time lookups*
+
+</div>
+
+---
+
 ## Introduction
 
 Immutability introduces **data protection** as a first-class concept in programming - the idea that some data should be **write-once, read-forever**. This represents a core principle from functional programming that prevents entire classes of bugs.

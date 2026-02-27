@@ -5,6 +5,16 @@ Integers (int) are one of Python's fundamental data types. They represent whole 
 
 ---
 
+<div align="center">
+
+![Python Data Types Overview](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.3.jpg)
+
+*Integers (int) are part of Python's numeric type hierarchy — whole numbers with unlimited precision*
+
+</div>
+
+---
+
 
 ## What are Integers?
 

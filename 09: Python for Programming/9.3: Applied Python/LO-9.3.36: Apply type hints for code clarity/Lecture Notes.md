@@ -9,9 +9,9 @@ Type hints (type annotations) document the expected types of variables, function
 
 <div align="center">
 
-![Different data types representation](https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80)
+![Python Type Hints Annotation Function Code](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.36.png)
 
-*Python supports multiple data types: integers, floats, strings, and booleans*
+*Type hints reference Python's type hierarchy to annotate expected types for code clarity*
 
 </div>
 

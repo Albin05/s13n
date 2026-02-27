@@ -9,9 +9,9 @@ An object is a specific instance of a class. You can create multiple objects fro
 
 <div align="center">
 
-![Class blueprint and objects](https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80)
+![Python Class Instantiation Object Creation](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.20.png)/userfiles/images/Python-Classes-Instances.png)
 
-*Classes are blueprints for creating objects*
+*Creating objects from classes works like a function machine: input parameters, output a new object*
 
 </div>
 

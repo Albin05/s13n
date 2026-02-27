@@ -9,9 +9,9 @@ Converting Python data structures to JSON and saving to files
 
 <div align="center">
 
-![File folders and documents](https://images.unsplash.com/photo-1544396821-4dd40b938ad3?w=800&q=80)
+![Python JSON File Write json.dump() Serialize](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.13.jpg)
 
-*Python can read from and write to files on your system*
+*Writing JSON serializes a nested tree structure of data into a formatted text file*
 
 </div>
 

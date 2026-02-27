@@ -9,9 +9,9 @@ List comprehensions provide a concise, readable way to create lists based on exi
 
 <div align="center">
 
-![Organized list representation](https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80)
+![Python List Comprehension Syntax Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.29.png)
 
-*Lists are ordered collections that can store multiple items*
+*List comprehensions condense a for-loop pattern into a single expression for concise list creation*
 
 </div>
 

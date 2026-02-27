@@ -4,6 +4,18 @@
 
 The `else` statement provides a **catch-all** for when all other conditions fail. It represents "everything else" or "the default case" - ensuring your program always has a response.
 
+---
+
+<div align="center">
+
+![Python if-else Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.17.png)
+
+*The else block executes when the condition is False — it's the default path that guarantees a response*
+
+</div>
+
+---
+
 ### Why Else is Essential
 
 Real decisions need a default:

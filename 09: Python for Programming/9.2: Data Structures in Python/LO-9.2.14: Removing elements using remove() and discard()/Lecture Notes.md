@@ -7,6 +7,18 @@
 
 The `remove()` vs `discard()` duality embodies **fail-fast vs. fail-safe** design - a fundamental philosophy in error handling. This represents the question: should operations crash loudly or continue silently when encountering unexpected states?
 
+---
+
+<div align="center">
+
+![Python Set remove() Method Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.14.png)
+
+*remove() and discard() both eliminate elements from a set — the difference is how they handle missing elements*
+
+</div>
+
+---
+
 ### Why Two Removal Methods? Deep Philosophy
 
 **Why not just one?** This design reflects **two worldviews** in software engineering:

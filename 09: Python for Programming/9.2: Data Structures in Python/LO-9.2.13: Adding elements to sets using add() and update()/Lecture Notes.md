@@ -7,6 +7,18 @@
 
 The `add()` and `update()` methods embody **incremental vs. batch** operations - a fundamental pattern in computer science. This represents the **granularity choice**: operate on single items for control, or bulk items for efficiency.
 
+---
+
+<div align="center">
+
+![Python Set add() update() Method Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.13.svg)
+
+*add() inserts a single element; update() merges an entire collection — both grow the set with unique values only*
+
+</div>
+
+---
+
 ### Why Two Addition Methods? Design Philosophy
 
 **Why not just one method?** Python could have unified them, but having both reflects **real usage patterns**:

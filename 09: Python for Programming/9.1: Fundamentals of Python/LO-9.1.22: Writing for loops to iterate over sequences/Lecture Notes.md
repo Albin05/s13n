@@ -20,6 +20,18 @@ For loops are like **"for each" instructions**:
 
 You process the entire collection, one item at a time, automatically.
 
+---
+
+<div align="center">
+
+![Python for Loop Flowchart Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.22.png)
+
+*Flowchart of a for loop: the loop checks the sequence for remaining items, executes the body for each item, and exits when the sequence is exhausted*
+
+</div>
+
+---
+
 ## For Loops
 
 A for loop iterates over a sequence (list, string, range, etc.).

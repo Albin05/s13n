@@ -3,6 +3,16 @@
 
 ---
 
+<div align="center">
+
+![Python Multiple except Clauses Handling](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.5.png)
+
+*Handling multiple exception types creates multiple conditional branches, each catching a specific error*
+
+</div>
+
+---
+
 ## Introduction
 
 Handling multiple exceptions implements **exception polymorphism** - different error types handled differently based on inheritance hierarchies. This solves the **error granularity problem**: catch specific errors for specific handling, or catch broad categories for generic handling. **Exception hierarchies** enable this flexibility!

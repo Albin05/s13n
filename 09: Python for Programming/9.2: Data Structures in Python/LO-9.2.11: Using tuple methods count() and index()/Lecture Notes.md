@@ -3,6 +3,16 @@
 
 ---
 
+<div align="center">
+
+![Python Tuple index() count() Methods](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.11.png)
+
+*Array indices diagram: the index() method works similarly by searching for an element and returning its position in the sequence*
+
+</div>
+
+---
+
 ## Introduction
 
 The fact that tuples have **only 2 methods** is not a limitation - it's a **design philosophy**. This represents **minimalist design**: immutable structures need only **read operations**, not write operations. It's simplicity as a feature!

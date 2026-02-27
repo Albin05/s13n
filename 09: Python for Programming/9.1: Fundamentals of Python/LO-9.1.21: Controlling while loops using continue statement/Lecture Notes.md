@@ -4,6 +4,18 @@
 
 The `continue` statement provides a way to **skip the rest of the current iteration** and jump to the next one. Unlike `break` which exits entirely, `continue` says "skip this one, move to the next."
 
+---
+
+<div align="center">
+
+![Python continue Statement Flow Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.21.png)
+
+*The continue statement skips the remaining loop body and jumps back to the condition check for the next iteration*
+
+</div>
+
+---
+
 ### Why Continue Exists
 
 Sometimes you want to process most items but skip certain ones:

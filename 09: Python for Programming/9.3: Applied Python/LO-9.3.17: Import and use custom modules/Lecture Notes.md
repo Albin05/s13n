@@ -9,9 +9,9 @@ Creating and importing your own Python modules
 
 <div align="center">
 
-![Variables concept - labeled storage containers](https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80)
+![Python Import Custom Module from file](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.17.png)
 
-*Think of variables as labeled containers storing different types of data*
+*Custom modules organize your own functions into reusable files that can be imported across projects*
 
 </div>
 

@@ -9,9 +9,9 @@ Generator functions use the `yield` keyword to return values lazily, one at a ti
 
 <div align="center">
 
-![Function machine concept - input to output](https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&q=80)
+![Python Generator Function yield Memory Efficient](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.31.webp)
 
-*Functions are reusable blocks of code that take inputs and return outputs*
+*Generators use a while-loop pattern to yield values one at a time for memory-efficient iteration*
 
 </div>
 

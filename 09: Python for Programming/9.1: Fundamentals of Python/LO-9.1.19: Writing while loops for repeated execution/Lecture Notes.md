@@ -4,6 +4,18 @@
 
 While loops introduce **iteration** - the ability to repeat code automatically. This is one of the most powerful concepts in programming, transforming static instructions into dynamic, adaptive behavior.
 
+---
+
+<div align="center">
+
+![Python while Loop Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.19.png)
+
+*A while loop checks its condition before each iteration — if True, the body executes; if False, the loop exits*
+
+</div>
+
+---
+
 ### The Power of Repetition
 
 **Without loops**: To print "Hello" 100 times, you'd write `print("Hello")` 100 times!

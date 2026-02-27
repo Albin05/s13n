@@ -7,6 +7,18 @@
 
 Dictionary modification demonstrates **mutable mapping** design - the same operation (`dict[key] = value`) can both add AND modify, making it **context-sensitive**. This represents **upsert semantics**: update if exists, insert if new - a fundamental database concept!
 
+---
+
+<div align="center">
+
+![Python Dictionary Add Update Key Value Pair](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.20.png)
+
+*dict[key] = value performs an upsert: if the key exists, its value is updated; if not, a new entry is inserted*
+
+</div>
+
+---
+
 ### Why Unified Add/Modify Syntax is Elegant
 
 **Traditional approach** (separate operations): Different syntax for add vs modify:

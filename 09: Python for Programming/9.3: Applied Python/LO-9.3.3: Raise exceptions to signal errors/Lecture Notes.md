@@ -3,6 +3,16 @@
 
 ---
 
+<div align="center">
+
+![Python raise Exception Example](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.3.png)
+
+*Raising exceptions redirects program flow to the error-handling branch, similar to an if-then-else decision*
+
+</div>
+
+---
+
 ## Introduction
 
 The `raise` statement implements **explicit error signaling** - making errors loud and impossible to ignore! Before exceptions, functions returned error codes (NULL, -1, false) which callers often forgot to check, causing **silent failures** where bugs propagate far from their source. Raising exceptions enforces **fail-fast**: errors crash immediately at the source!

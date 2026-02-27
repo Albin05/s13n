@@ -7,6 +7,18 @@
 
 Set membership testing demonstrates **data structure choice changes everything** - same operation (`in`), different performance (1000x speed difference!). This is the **hash table advantage** that makes modern computing possible.
 
+---
+
+<div align="center">
+
+![Python Set Membership Testing with in](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.17.png)
+
+*Sets use hash tables internally — the `in` operator computes a hash to find elements in O(1) constant time*
+
+</div>
+
+---
+
 ### Why This Is Critical
 
 **The membership problem** appears EVERYWHERE in programming:

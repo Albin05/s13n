@@ -4,6 +4,18 @@
 
 The `if` statement is the most fundamental **control flow** structure in programming. It allows programs to make decisions and respond differently to different situations - the essence of intelligence.
 
+---
+
+<div align="center">
+
+![Python if Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.15.png)
+
+*The if statement evaluates a condition: if True, execute one block; if False, skip it or execute an alternative*
+
+</div>
+
+---
+
 ### Why If Statements Are Revolutionary
 
 **Before if statements** (early computers, 1940s):

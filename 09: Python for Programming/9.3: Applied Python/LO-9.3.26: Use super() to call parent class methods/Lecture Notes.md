@@ -9,9 +9,9 @@ Calling parent class methods from child classes
 
 <div align="center">
 
-![Function machine concept - input to output](https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&q=80)
+![Python super() Call Parent Class Method](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.26.png)
 
-*Functions are reusable blocks of code that take inputs and return outputs*
+*super() navigates up the class hierarchy tree to call parent class methods from child classes*
 
 </div>
 

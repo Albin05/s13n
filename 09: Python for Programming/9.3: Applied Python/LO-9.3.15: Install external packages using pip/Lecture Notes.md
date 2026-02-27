@@ -9,9 +9,9 @@ Using pip to install third-party Python packages
 
 <div align="center">
 
-![Variables concept - labeled storage containers](https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80)
+![Python pip Install External Packages](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.15.png)
 
-*Think of variables as labeled containers storing different types of data*
+*External packages installed via pip extend your program with additional functions and capabilities*
 
 </div>
 
