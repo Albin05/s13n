@@ -1,4 +1,4 @@
-# LO-74: Understand Iterators
+# Understand Iterators
 
 ## Learning Objective
 Students will be able to use Working with Python's iterator protocol in Python programs.

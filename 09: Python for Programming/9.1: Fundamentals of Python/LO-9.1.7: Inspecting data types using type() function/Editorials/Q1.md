@@ -1,4 +1,4 @@
-# LO-7: Check Variable Types
+# Check Variable Types
 
 `type()` function identifies variable data types in Python.
 

@@ -1,15 +1,14 @@
-# Lecture Notes: Use the super() Function
+# Use the super() Function
 
 ## Use the super() Function
 
 Calling parent class methods from child classes
 
-
 ---
 
 <div align="center">
 
-![Python super() Call Parent Class Method](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.26.png)
+![Python super() Call Parent Class Method](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *super() navigates up the class hierarchy tree to call parent class methods from child classes*
 
@@ -309,62 +308,6 @@ checking.charge_monthly_fee()
 # Withdrew $10. New balance: $90
 ```
 
-#### Example 3: Shape Hierarchy with Validation
-
-```python
-class Shape:
-    def __init__(self, name, color):
-        self.name = name
-        self.color = color
-        self.validate()
-
-    def validate(self):
-        if not self.name:
-            raise ValueError("Shape must have a name")
-        print(f"Creating {self.color} {self.name}")
-
-    def area(self):
-        return 0
-
-    def display(self):
-        print(f"{self.color} {self.name} - Area: {self.area()}")
-
-class Rectangle(Shape):
-    def __init__(self, width, height, color):
-        self.width = width
-        self.height = height
-        super().__init__("Rectangle", color)  # Call Shape init
-
-    def validate(self):
-        super().validate()  # Call parent validation
-        if self.width <= 0 or self.height <= 0:
-            raise ValueError("Width and height must be positive")
-
-    def area(self):
-        return self.width * self.height
-
-class Square(Rectangle):
-    def __init__(self, side, color):
-        super().__init__(side, side, color)  # Rectangle with equal sides
-        self.name = "Square"
-
-    def display(self):
-        super().display()  # Call Rectangle display
-        print(f"Side length: {self.width}")
-
-class Circle(Shape):
-    def __init__(self, radius, color):
-        self.radius = radius
-        super().__init__("Circle", color)
-
-    def validate(self):
-        super().validate()
-        if self.radius <= 0:
-            raise ValueError("Radius must be positive")
-
-    def area(self):
-        return 3.14159 * self.radius ** 2
-
 # Usage
 rect = Rectangle(5, 10, "blue")
 # Creating blue Rectangle
@@ -385,96 +328,6 @@ circle = Circle(7, "green")
 circle.display()
 # green Circle - Area: 153.93791
 ```
-
-#### Example 4: Game Character System
-
-```python
-class Character:
-    def __init__(self, name, health):
-        self.name = name
-        self.health = health
-        self.max_health = health
-        self.level = 1
-        print(f"Character '{name}' created with {health} HP")
-
-    def take_damage(self, damage):
-        self.health -= damage
-        if self.health < 0:
-            self.health = 0
-        print(f"{self.name} took {damage} damage. HP: {self.health}/{self.max_health}")
-
-    def heal(self, amount):
-        self.health = min(self.health + amount, self.max_health)
-        print(f"{self.name} healed {amount}. HP: {self.health}/{self.max_health}")
-
-    def level_up(self):
-        self.level += 1
-        print(f"{self.name} leveled up to {self.level}!")
-
-class Warrior(Character):
-    def __init__(self, name, health, armor):
-        super().__init__(name, health)  # Initialize Character
-        self.armor = armor
-        self.rage = 0
-        print(f"Warrior armor: {armor}")
-
-    def take_damage(self, damage):
-        reduced_damage = max(damage - self.armor, 0)
-        super().take_damage(reduced_damage)  # Call parent with reduced damage
-        self.rage += 10
-        print(f"Rage: {self.rage}")
-
-    def level_up(self):
-        super().level_up()  # Call parent level up
-        self.max_health += 20
-        self.health = self.max_health
-        self.armor += 2
-        print(f"HP increased to {self.max_health}, Armor increased to {self.armor}")
-
-class Mage(Character):
-    def __init__(self, name, health, mana):
-        super().__init__(name, health)
-        self.mana = mana
-        self.max_mana = mana
-        self.spells_cast = 0
-        print(f"Mage mana: {mana}")
-
-    def cast_spell(self, mana_cost, damage):
-        if self.mana >= mana_cost:
-            self.mana -= mana_cost
-            self.spells_cast += 1
-            print(f"{self.name} cast spell! Mana: {self.mana}/{self.max_mana}")
-            return damage
-        print("Not enough mana!")
-        return 0
-
-    def heal(self, amount):
-        super().heal(amount)  # Call parent heal
-        mana_restore = amount // 2
-        self.mana = min(self.mana + mana_restore, self.max_mana)
-        print(f"Mana restored: {mana_restore}. Mana: {self.mana}/{self.max_mana}")
-
-    def level_up(self):
-        super().level_up()
-        self.max_mana += 30
-        self.mana = self.max_mana
-        print(f"Mana increased to {self.max_mana}")
-
-class Paladin(Warrior):
-    def __init__(self, name, health, armor, faith):
-        super().__init__(name, health, armor)  # Initialize Warrior
-        self.faith = faith
-        print(f"Paladin faith: {faith}")
-
-    def holy_heal(self):
-        heal_amount = self.faith * 5
-        print(f"{self.name} uses holy healing!")
-        super().heal(heal_amount)  # Call Character's heal via Warrior
-
-    def level_up(self):
-        super().level_up()  # Call Warrior level up
-        self.faith += 3
-        print(f"Faith increased to {self.faith}")
 
 # Usage
 warrior = Warrior("Conan", 150, 10)
@@ -516,78 +369,6 @@ paladin.level_up()
 # HP increased to 150, Armor increased to 14
 # Faith increased to 18
 ```
-
-#### Example 5: Product Inventory System
-
-```python
-class Product:
-    def __init__(self, product_id, name, price):
-        self.product_id = product_id
-        self.name = name
-        self.price = price
-        self.validate_price()
-
-    def validate_price(self):
-        if self.price < 0:
-            raise ValueError("Price cannot be negative")
-
-    def get_display_price(self):
-        return f"${self.price:.2f}"
-
-    def display_info(self):
-        print(f"Product: {self.name}")
-        print(f"ID: {self.product_id}")
-        print(f"Price: {self.get_display_price()}")
-
-class PhysicalProduct(Product):
-    def __init__(self, product_id, name, price, weight, stock):
-        super().__init__(product_id, name, price)
-        self.weight = weight
-        self.stock = stock
-
-    def calculate_shipping(self, distance):
-        base_cost = 5.0
-        weight_cost = self.weight * 0.5
-        distance_cost = distance * 0.1
-        return base_cost + weight_cost + distance_cost
-
-    def display_info(self):
-        super().display_info()  # Show basic product info
-        print(f"Weight: {self.weight} kg")
-        print(f"Stock: {self.stock} units")
-
-class DigitalProduct(Product):
-    def __init__(self, product_id, name, price, file_size, download_link):
-        super().__init__(product_id, name, price)
-        self.file_size = file_size
-        self.download_link = download_link
-        self.downloads = 0
-
-    def get_display_price(self):
-        base_price = super().get_display_price()  # Get formatted price
-        return f"{base_price} (Digital Download)"
-
-    def download(self):
-        self.downloads += 1
-        print(f"Downloading from: {self.download_link}")
-        print(f"Total downloads: {self.downloads}")
-
-    def display_info(self):
-        super().display_info()
-        print(f"File size: {self.file_size} MB")
-        print(f"Downloads: {self.downloads}")
-
-class SubscriptionProduct(DigitalProduct):
-    def __init__(self, product_id, name, monthly_price, file_size, download_link, billing_period):
-        super().__init__(product_id, name, monthly_price, file_size, download_link)
-        self.billing_period = billing_period
-
-    def get_display_price(self):
-        return f"${self.price:.2f}/{self.billing_period}"
-
-    def display_info(self):
-        super().display_info()  # Show digital product info
-        print(f"Billing: {self.billing_period}")
 
 # Usage
 physical = PhysicalProduct("P001", "Laptop", 999.99, 2.5, 10)

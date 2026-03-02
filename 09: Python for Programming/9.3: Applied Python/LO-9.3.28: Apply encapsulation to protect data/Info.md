@@ -1,4 +1,4 @@
-# LO-70: Apply Encapsulation
+# Apply Encapsulation
 
 ## Learning Objective
 Students will be able to use Hiding internal details and controlling access in Python programs.

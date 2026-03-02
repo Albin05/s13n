@@ -1,4 +1,4 @@
-# LO-73: Create Generator Functions
+# Create Generator Functions
 
 ## Learning Objective
 Students will be able to use Writing functions that yield values lazily in Python programs.

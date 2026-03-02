@@ -1,4 +1,4 @@
-# Lecture Script: LO-65 Define Instance Methods
+# Define Instance Methods
 
 
 ### CS Theory Bite

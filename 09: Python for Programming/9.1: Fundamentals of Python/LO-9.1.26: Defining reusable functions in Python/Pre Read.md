@@ -1,4 +1,4 @@
-# Pre-Read: Define Functions
+# Define Functions
 
 ## What are Functions?
 

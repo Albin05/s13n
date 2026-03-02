@@ -1,4 +1,4 @@
-### LO-21 Control Loops with Continue (25 minutes)
+### Control Loops with Continue (25 minutes)
 
 
 ### CS Theory Bite

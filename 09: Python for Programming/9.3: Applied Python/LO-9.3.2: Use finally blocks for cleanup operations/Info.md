@@ -1,4 +1,4 @@
-# LO-44: Use Finally Blocks
+# Use Finally Blocks
 
 ## Learning Objective
 Students will be able to use finally blocks and cleanup effectively in Python programming.

@@ -1,4 +1,4 @@
-# LO-49: Read Text Files
+# Read Text Files
 
 ## Learning Objective
 Students will be able to use file reading with open() effectively in Python programming.

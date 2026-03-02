@@ -1,4 +1,4 @@
-# LO-61: Define Classes
+# Define Classes
 
 ## Learning Objective
 Students will be able to use Creating classes with the class keyword in Python programs.

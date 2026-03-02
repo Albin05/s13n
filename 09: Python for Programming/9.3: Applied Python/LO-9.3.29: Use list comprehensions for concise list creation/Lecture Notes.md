@@ -1,15 +1,14 @@
-# Lecture Notes: Use List Comprehensions
+# Use List Comprehensions
 
 ## List Comprehensions
 
 List comprehensions provide a concise, readable way to create lists based on existing sequences.
 
-
 ---
 
 <div align="center">
 
-![Python List Comprehension Syntax Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.29.png)
+![Python List Comprehension Syntax Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *List comprehensions condense a for-loop pattern into a single expression for concise list creation*
 
@@ -222,16 +221,13 @@ print(vowel_counts)
 # [2, 1, 1, 1, 4, 2, 1, 2]
 ```
 
-### Example 3: Number Processing
-
-```python
 # Generate multiplication table for 5
 multiplication_table = [5 * i for i in range(1, 11)]
 print("5's multiplication table:")
 for i, result in enumerate(multiplication_table, 1):
     print(f"5 x {i} = {result}")
-# 5 x 1 = 5
-# 5 x 2 = 10
+# x 1 = 5
+# x 2 = 10
 # ... up to 5 x 10 = 50
 
 # Find perfect squares under 100
@@ -245,11 +241,11 @@ celsius_temps = [(f - 32) * 5/9 for f in fahrenheit_temps]
 print("Temperature conversions:")
 for f, c in zip(fahrenheit_temps, celsius_temps):
     print(f"{f}°F = {c:.1f}°C")
-# 32°F = 0.0°C
-# 68°F = 20.0°C
-# 86°F = 30.0°C
-# 104°F = 40.0°C
-# 122°F = 50.0°C
+# °F = 0.0°C
+# °F = 20.0°C
+# °F = 30.0°C
+# °F = 40.0°C
+# °F = 50.0°C
 
 # Find numbers divisible by both 3 and 5
 numbers = range(1, 101)
@@ -258,9 +254,6 @@ print(f"Numbers divisible by both 3 and 5: {fizzbuzz_numbers}")
 # Numbers divisible by both 3 and 5: [15, 30, 45, 60, 75, 90]
 ```
 
-### Example 4: File and Path Processing
-
-```python
 # Process file names
 files = ["document.txt", "image.png", "script.py", "data.csv", "photo.jpg"]
 
@@ -297,9 +290,6 @@ print(f"Image files: {image_files}")
 # Image files: ['image.png', 'photo.jpg']
 ```
 
-### Example 5: Nested List Comprehensions
-
-```python
 # Create a multiplication table (2D list)
 table = [[i * j for j in range(1, 6)] for i in range(1, 6)]
 print("Multiplication Table:")

@@ -1,4 +1,4 @@
-### LO-23 Use Range() Function (15 minutes)
+### Use Range() Function (15 minutes)
 
 
 ### CS Theory Bite
@@ -63,7 +63,7 @@ for i in range(5, 0, -1):
 for i in range(10):
     print("Hello!")  # Prints 10 times
 
-# 1 to n inclusive
+# to n inclusive
 n = 5
 for i in range(1, n+1):
     print(i)  # 1, 2, 3, 4, 5

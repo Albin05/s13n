@@ -1,4 +1,4 @@
-# Pre-Read: Use the super() Function
+# Use the super() Function
 
 ## What is super()?
 

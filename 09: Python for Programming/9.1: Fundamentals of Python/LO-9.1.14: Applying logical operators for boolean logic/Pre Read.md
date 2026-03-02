@@ -1,4 +1,4 @@
-# Pre-Read: Apply Logical Operators
+# Apply Logical Operators
 
 ## What You'll Learn
 In this lesson, you'll learn how to combine multiple conditions using logical operators.

@@ -1,4 +1,4 @@
-# Pre-Read: Use Comparison Operators
+# Use Comparison Operators
 
 ## What You'll Learn
 In this lesson, you'll learn how to compare values in Python using comparison operators.

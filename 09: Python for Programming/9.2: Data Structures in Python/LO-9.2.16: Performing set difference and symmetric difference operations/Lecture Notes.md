@@ -1,5 +1,4 @@
-## Lecture Notes: Performing Set Difference and Symmetric Difference Operations
-
+## Performing Set Difference and Symmetric Difference Operations
 
 ---
 

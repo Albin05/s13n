@@ -1,4 +1,4 @@
-# LO-77: Use Context Managers
+# Use Context Managers
 
 ## Learning Objective
 Students will be able to use Using the with statement for resource management in Python programs.

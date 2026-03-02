@@ -1,6 +1,6 @@
 ## Post-class Quiz: Creating and Using Tuples
 
-### Question 1
+### 
 Which of these correctly creates a single-element tuple?
 
 A) `single = (5)`
@@ -13,7 +13,7 @@ D) `single = tuple(5)`
 
 ---
 
-### Question 2
+### 
 What happens when you try to modify a tuple element: `t = (1, 2, 3); t[0] = 10`?
 
 A) The tuple becomes (10, 2, 3)
@@ -26,7 +26,7 @@ D) The first element is replaced silently
 
 ---
 
-### Question 3
+### 
 What does this code return: `def func(): return 1, 2, 3`?
 
 A) Three separate values
@@ -39,7 +39,7 @@ D) Error: can only return one value
 
 ---
 
-### Question 4
+### 
 How many methods do tuples have?
 
 A) Same as lists (11 methods)
@@ -52,7 +52,7 @@ D) 5: count(), index(), append(), remove(), pop()
 
 ---
 
-### Question 5
+### 
 Why can tuples be used as dictionary keys but lists cannot?
 
 A) Tuples are faster

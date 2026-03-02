@@ -1,4 +1,4 @@
-# Lecture Script: LO-66 Apply Inheritance
+# Apply Inheritance
 
 
 ### CS Theory Bite

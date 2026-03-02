@@ -1,4 +1,4 @@
-## Lecture Script: Understanding Tuple Immutability
+## Understanding Tuple Immutability
 
 
 ---

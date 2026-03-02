@@ -1,4 +1,4 @@
-# Pre-Read: Apply Variable Naming Conventions
+# Apply Variable Naming Conventions
 
 ## Why Naming Matters
 
@@ -44,18 +44,18 @@ Think of it like **driving on the right side of the road** - it's a convention t
 
 ## Naming Rules (MUST Follow)
 
-### 1. Start with letter or underscore
+### Start with letter or underscore
 ✅ `age`, `_private`, `user1`
 ❌ `1age`, `@user`
 
-### 2. Only letters, numbers, underscores
+### Only letters, numbers, underscores
 ✅ `student_name`, `score_2024`
 ❌ `student-name`, `score$`
 
-### 3. Case-sensitive
+### Case-sensitive
 `age`, `Age`, `AGE` are THREE different variables
 
-### 4. No reserved keywords
+### No reserved keywords
 ❌ `for`, `if`, `while`, `class`
 
 ## Naming Conventions (Best Practice)

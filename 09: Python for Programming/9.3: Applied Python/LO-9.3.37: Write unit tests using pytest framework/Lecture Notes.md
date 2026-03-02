@@ -1,15 +1,14 @@
-# Lecture Notes: Write Unit Tests with pytest
+# Write Unit Tests with pytest
 
 ## Unit Testing with pytest
 
 pytest is a popular testing framework that makes it easy to write and run tests in Python. Tests verify that code works correctly and help catch bugs early.
 
-
 ---
 
 <div align="center">
 
-![Python pytest Unit Test assert Pass Fail](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.37.png)
+![Python pytest Unit Test assert Pass Fail](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Unit tests follow an if-then-else pattern: if the assertion passes, the test succeeds; otherwise it fails*
 
@@ -250,9 +249,6 @@ def test_chunk_list():
     assert chunk_list([1, 2], 5) == [[1, 2]]
 ```
 
-### Example 3: Testing with pytest.raises
-
-```python
 # validators.py
 def validate_age(age):
     """Validate age is between 0 and 150"""
@@ -301,9 +297,6 @@ def test_divide_by_zero():
         divide(10, 0)
 ```
 
-### Example 4: Parameterized Tests
-
-```python
 # calculator.py
 def factorial(n):
     """Calculate factorial"""
@@ -333,9 +326,6 @@ def test_factorial_negative(input):
         factorial(input)
 ```
 
-### Example 5: Testing Classes
-
-```python
 # bank_account.py
 class BankAccount:
     def __init__(self, balance=0):

@@ -1,4 +1,4 @@
-## Pre-Read: Iterating Through Lists Using Loops
+## Iterating Through Lists Using Loops
 
 ## What is Iteration?
 
@@ -73,11 +73,11 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 for num in numbers:
     if num % 2 == 0:
         print(f"{num} is even")
-# 2 is even
-# 4 is even
-# 6 is even
-# 8 is even
-# 10 is even
+# is even
+# is even
+# is even
+# is even
+# is even
 ```
 
 ### Getting Index with enumerate()
@@ -89,16 +89,16 @@ fruits = ['apple', 'banana', 'orange']
 
 for index, fruit in enumerate(fruits):
     print(f"{index}: {fruit}")
-# 0: apple
-# 1: banana
-# 2: orange
+# apple
+# banana
+# orange
 
 # Start counting from 1
 for position, fruit in enumerate(fruits, start=1):
     print(f"{position}. {fruit}")
-# 1. apple
-# 2. banana
-# 3. orange
+# apple
+# banana
+# orange
 ```
 
 ### Parallel Lists with zip()

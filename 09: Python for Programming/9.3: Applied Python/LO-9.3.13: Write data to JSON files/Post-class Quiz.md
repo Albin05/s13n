@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What does `json.dump()` vs `json.dumps()` do?
 
 A) No difference
@@ -14,7 +14,7 @@ D) `dump` only works with dicts
 
 ---
 
-### Question 2
+### 
 What does `indent=2` do in `json.dump()`?
 
 A) Limits output to 2 lines
@@ -26,7 +26,7 @@ D) Nothing
 
 ---
 
-### Question 3
+### 
 What Python types can be serialized to JSON?
 
 A) Only dicts and lists
@@ -40,7 +40,7 @@ D) Only strings
 
 ---
 
-### Question 4
+### 
 What does `sort_keys=True` do?
 
 A) Sorts list values
@@ -52,7 +52,7 @@ D) Raises error if keys aren't sortable
 
 ---
 
-### Question 5
+### 
 How do you update an existing JSON file?
 
 A) Use append mode "a"

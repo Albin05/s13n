@@ -1,4 +1,4 @@
-# Lecture Notes: Implement Integer Data Types
+# Implement Integer Data Types
 
 ## Introduction
 Integers (int) are one of Python's fundamental data types. They represent whole numbers and are used for counting, indexing, and any quantity that doesn't require decimal precision.
@@ -7,14 +7,13 @@ Integers (int) are one of Python's fundamental data types. They represent whole 
 
 <div align="center">
 
-![Python Data Types Overview](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.3.jpg)
+![Python Data Types Overview](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.jpg)
 
 *Integers (int) are part of Python's numeric type hierarchy — whole numbers with unlimited precision*
 
 </div>
 
 ---
-
 
 ## What are Integers?
 
@@ -189,15 +188,6 @@ print(per_person)  # 33
 
 remainder = total_bill % num_people
 print(remainder)  # 1 (someone pays extra dollar)
-```
-
-### Example 3: Convert Hours to Minutes
-```python
-hours = 3
-minutes_per_hour = 60
-
-total_minutes = hours * minutes_per_hour
-print(total_minutes)  # 180
 ```
 
 ---

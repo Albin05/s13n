@@ -1,4 +1,4 @@
-# Lecture Notes: Convert Between Data Types
+# Convert Between Data Types
 
 ## Introduction
 
@@ -8,7 +8,7 @@ Type conversion, also called **type casting**, is the process of transforming da
 
 <div align="center">
 
-![Python Type Conversion int float str Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.8.png)
+![Python Type Conversion int float str Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *Type conversion functions (int(), float(), str(), bool()) transform data from one type to another*
 
@@ -77,7 +77,6 @@ int(True)       # 1
 int(False)      # 0
 # int("25.5")   # Error - can't convert decimal string
 ```
-
 
 ### float() - Convert to Float
 ```python

@@ -1,4 +1,4 @@
-### LO-1 Define Variables (20 minutes)
+### Define Variables (20 minutes)
 
 
 ### CS Theory Bite

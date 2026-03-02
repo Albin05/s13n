@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What does `json.load()` accept?
 
 A) A JSON string
@@ -16,7 +16,7 @@ D) A URL
 
 ---
 
-### Question 2
+### 
 What Python type does a JSON object become?
 
 A) list
@@ -30,7 +30,7 @@ D) set
 
 ---
 
-### Question 3
+### 
 What is the difference between `json.load()` and `json.loads()`?
 
 A) No difference
@@ -42,7 +42,7 @@ D) `loads` handles nested data
 
 ---
 
-### Question 4
+### 
 What exception does invalid JSON raise?
 
 A) ValueError
@@ -56,7 +56,7 @@ D) TypeError
 
 ---
 
-### Question 5
+### 
 What JSON value becomes Python `None`?
 
 A) `null`

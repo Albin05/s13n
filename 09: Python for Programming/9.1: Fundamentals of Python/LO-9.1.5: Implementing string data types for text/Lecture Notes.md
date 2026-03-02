@@ -1,4 +1,4 @@
-# Lecture Notes: Implement String Data Types
+# Implement String Data Types
 
 ## Introduction
 Strings represent text data in Python. They're one of the most commonly used data types.
@@ -7,7 +7,7 @@ Strings represent text data in Python. They're one of the most commonly used dat
 
 <div align="center">
 
-![Python String Character Indexing](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.5.png)
+![Python String Character Indexing](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *Strings are immutable sequences of characters — Python provides rich methods for slicing, searching, and transforming text*
 
@@ -180,14 +180,6 @@ username = "alice"
 domain = "example.com"
 email = username + "@" + domain
 print(email)  # "alice@example.com"
-```
-
-### Example 3: Formatting Output
-```python
-name = "Bob"
-age = 25
-message = "Name: " + name + ", Age: " + str(age)
-print(message)  # "Name: Bob, Age: 25"
 ```
 
 ---

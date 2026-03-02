@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What does mode `"w"` do if the file already exists?
 
 A) Appends to it
@@ -16,7 +16,7 @@ D) Does nothing
 
 ---
 
-### Question 2
+### 
 What is the difference between `write()` and `print(file=f)`?
 
 A) No difference
@@ -30,7 +30,7 @@ D) `write()` can handle any type; `print()` only strings
 
 ---
 
-### Question 3
+### 
 What does `writelines()` do?
 
 A) Writes each string on a new line
@@ -44,7 +44,7 @@ D) Reads lines from one file and writes to another
 
 ---
 
-### Question 4
+### 
 What mode prevents accidentally overwriting an existing file?
 
 A) `"w"`
@@ -58,7 +58,7 @@ D) `"r+"`
 
 ---
 
-### Question 5
+### 
 What is the output file content after this code?
 
 ```python

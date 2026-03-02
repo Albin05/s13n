@@ -1,4 +1,4 @@
-## LO-9.2.3: Extracting list portions using slicing
+## Extracting list portions using slicing
 
 ### Question Bank
 

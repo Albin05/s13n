@@ -1,4 +1,4 @@
-## Pre-Read: Creating and Initializing Sets for Unique Values
+## Creating and Initializing Sets for Unique Values
 
 **Duration:** 5 minutes
 

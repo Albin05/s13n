@@ -1,6 +1,6 @@
-# Post-Class Quiz: Implement String Data Types
+# Implement String Data Types
 
-## Q1: Valid string?
+## Valid string?
 A) name = "Alice"
 B) name = 'Alice'
 C) name = `Alice`
@@ -10,7 +10,7 @@ D) Both A and B
 D - Both single and double quotes work
 </details>
 
-## Q2: What prints?
+## What prints?
 ```python
 print("ha" * 3)
 ```
@@ -22,7 +22,7 @@ C) ha ha ha
 B - String repetition
 </details>
 
-## Q3: What's wrong?
+## What's wrong?
 ```python
 age = 25
 msg = "Age: " + age
@@ -35,7 +35,7 @@ C) Wrong quotes
 B - Need str(age) or use f-string
 </details>
 
-## Q4: What's len("Hello")?
+## What's len("Hello")?
 A) 4
 B) 5
 C) 6
@@ -44,7 +44,7 @@ C) 6
 B - 5 characters
 </details>
 
-## Q5: What prints?
+## What prints?
 ```python
 name = "alice"
 print(name.upper())

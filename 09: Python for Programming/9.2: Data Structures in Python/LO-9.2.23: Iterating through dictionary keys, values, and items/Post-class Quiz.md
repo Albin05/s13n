@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What does `for key in dict` iterate over?
 
 A) Values
@@ -16,7 +16,7 @@ D) Indices
 
 ---
 
-### Question 2
+### 
 How do you iterate over both keys and values?
 
 A) `for k, v in dict`
@@ -30,7 +30,7 @@ D) `for k, v in dict.keys()`
 
 ---
 
-### Question 3
+### 
 What is the output?
 
 ```python
@@ -50,7 +50,7 @@ D) Error
 
 ---
 
-### Question 4
+### 
 What does `max(d, key=d.get)` return for `d = {'a': 3, 'b': 1, 'c': 5}`?
 
 A) `5`
@@ -64,7 +64,7 @@ D) `'a'`
 
 ---
 
-### Question 5
+### 
 Why should you NOT modify a dict while iterating over it?
 
 A) It's slower

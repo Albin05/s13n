@@ -1,4 +1,4 @@
-# Pre-Read: Format Output with F-strings
+# Format Output with F-strings
 
 ## What are F-strings?
 

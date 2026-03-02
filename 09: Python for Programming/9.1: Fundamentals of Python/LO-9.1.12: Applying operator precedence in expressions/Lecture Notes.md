@@ -1,4 +1,4 @@
-# Lecture Notes: Apply Operator Precedence
+# Apply Operator Precedence
 
 ## Introduction
 
@@ -8,7 +8,7 @@ Operator precedence determines **which operations happen first** in complex expr
 
 <div align="center">
 
-![Python Operator Precedence Table](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.12.jpg)
+![Python Operator Precedence Table](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.jpg)
 
 *Python follows PEMDAS/BODMAS rules: Parentheses → Exponents → Multiplication/Division → Addition/Subtraction*
 
@@ -48,7 +48,6 @@ This order reflects mathematical convention developed over 400+ years to avoid a
 ## Operator Precedence
 
 Python follows standard mathematical order of operations (PEMDAS):
-
 
 1. **Parentheses** `()`
 2. **Exponentiation** `**`

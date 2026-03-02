@@ -1,4 +1,4 @@
-# Lecture Notes: Control While Loops with Continue
+# Control While Loops with Continue
 
 ## Introduction
 
@@ -8,7 +8,7 @@ The `continue` statement provides a way to **skip the rest of the current iterat
 
 <div align="center">
 
-![Python continue Statement Flow Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.21.png)
+![Python continue Statement Flow Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *The continue statement skips the remaining loop body and jumps back to the condition check for the next iteration*
 
@@ -37,7 +37,6 @@ It's selective skipping, not stopping.
 ## The Continue Statement
 
 `continue` skips the rest of the current iteration and goes to the next one.
-
 
 ### Basic Syntax
 
@@ -80,27 +79,6 @@ while attempts < 5:
     
     print(f"Valid age: {age}")
     break
-```
-
-### Example 3: Filter Data
-
-```python
-count = 0
-total = 0
-num_count = 0
-
-while count < 10:
-    num = int(input("Enter number (negative to skip): "))
-    count += 1
-    
-    if num < 0:
-        continue  # Skip negative numbers
-    
-    total += num
-    num_count += 1
-
-average = total / num_count if num_count > 0 else 0
-print(f"Average: {average}")
 ```
 
 ## Continue vs Break

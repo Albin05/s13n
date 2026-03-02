@@ -1,4 +1,4 @@
-# LO-46: Create Custom Exceptions
+# Create Custom Exceptions
 
 ## Learning Objective
 Students will be able to use custom exception classes effectively in Python programming.

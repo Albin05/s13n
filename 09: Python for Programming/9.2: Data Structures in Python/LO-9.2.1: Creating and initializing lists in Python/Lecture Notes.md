@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Python List Create Initialize Elements](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.1.svg)
+![Python List Create Initialize Elements](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.svg)
 
 *A visual representation of array-based data structures showing how lists store elements in indexed positions*
 
@@ -121,7 +121,7 @@ items = "x,y,z".split(',')  # ['x', 'y', 'z']
 ### Nested Lists
 
 ```python
-# 2D list (matrix)
+# D list (matrix)
 matrix = [
     [1, 2, 3],
     [4, 5, 6],

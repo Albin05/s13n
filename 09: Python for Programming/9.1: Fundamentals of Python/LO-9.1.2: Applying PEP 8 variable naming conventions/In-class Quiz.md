@@ -1,6 +1,6 @@
-# Post-Class Quiz: Apply Variable Naming Conventions
+# Apply Variable Naming Conventions
 
-## Q1: Which is invalid?
+## Which is invalid?
 A) `age`
 B) `_value`
 C) `2nd_place`  
@@ -10,7 +10,7 @@ D) `my_var`
 C - Starts with number
 </details>
 
-## Q2: What's Pythonic style?
+## What's Pythonic style?
 A) `studentName`
 B) `student_name`
 C) `StudentName`
@@ -20,7 +20,7 @@ D) `STUDENT_NAME`
 B - snake_case for variables
 </details>
 
-## Q3: Which is a reserved keyword?
+## Which is a reserved keyword?
 A) `name`
 B) `value`
 C) `for`
@@ -30,7 +30,7 @@ D) `count`
 C - `for` is reserved for loops
 </details>
 
-## Q4: Case sensitive means?
+## Case sensitive means?
 A) Must use lowercase
 B) `age` and `Age` are different
 C) Cannot use uppercase
@@ -40,7 +40,7 @@ D) Python ignores case
 B - Variables are case-sensitive
 </details>
 
-## Q5: Best name for a boolean?
+## Best name for a boolean?
 A) `active`
 B) `is_active`
 C) `check_active`

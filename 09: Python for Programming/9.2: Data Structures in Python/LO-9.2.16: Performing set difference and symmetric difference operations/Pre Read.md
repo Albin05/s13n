@@ -1,4 +1,4 @@
-## Pre-Read: Set Difference and Symmetric Difference
+## Set Difference and Symmetric Difference
 
 **Duration:** 5 minutes
 

@@ -1,4 +1,4 @@
-# LO-55: Write JSON Files
+# Write JSON Files
 
 ## Learning Objective
 Students will be able to work with Saving Python data as JSON in Python.

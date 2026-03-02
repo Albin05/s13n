@@ -1,6 +1,6 @@
-# Post-class Quiz: Controlling For Loops with Break and Continue
+# Controlling For Loops with Break and Continue
 
-## Question 1
+## 
 
 What will be the output of this code?
 
@@ -22,7 +22,7 @@ D) 1 2 3
 
 ---
 
-## Question 2
+## 
 
 What does the continue statement do in a for loop?
 
@@ -37,7 +37,7 @@ D) Restarts the loop from the beginning
 
 ---
 
-## Question 3
+## 
 
 What will this code print?
 
@@ -59,7 +59,7 @@ D) 1 2 3 4
 
 ---
 
-## Question 4
+## 
 
 What is the output of this code?
 
@@ -81,7 +81,7 @@ D) Error
 
 ---
 
-## Question 5
+## 
 
 When does the else clause of a for loop execute?
 
@@ -96,7 +96,7 @@ D) Never
 
 ---
 
-## Question 6
+## 
 
 What will be the output?
 
@@ -126,7 +126,7 @@ Result: 0 1 3
 
 ---
 
-## Question 7
+## 
 
 Which statement is TRUE about break in nested loops?
 
@@ -141,7 +141,7 @@ D) Break is not allowed in nested loops
 
 ---
 
-## Question 8
+## 
 
 What will this code output?
 
@@ -166,7 +166,7 @@ D) Error
 
 ---
 
-## Question 9
+## 
 
 What is the main difference between break and continue?
 
@@ -181,7 +181,7 @@ D) break can only be used in while loops
 
 ---
 
-## Question 10
+## 
 
 What will be printed?
 
@@ -204,7 +204,7 @@ D) 1,1
 
 ---
 
-## Question 11
+## 
 
 How many times will "Hello" be printed?
 
@@ -298,7 +298,7 @@ Total: 4 times (at i=1, 2, 4, 5)
 
 ---
 
-## Question 12
+## 
 
 What makes for-else useful?
 
@@ -313,7 +313,7 @@ D) It makes loops run faster
 
 ---
 
-## Question 13
+## 
 
 Can you use both break and continue in the same loop?
 
@@ -328,7 +328,7 @@ D) No, you must choose one or the other
 
 ---
 
-## Question 14
+## 
 
 What will this code output?
 
@@ -360,7 +360,7 @@ Result: "Pyth"
 
 ---
 
-## Question 15
+## 
 
 Which scenario is break MOST useful for?
 

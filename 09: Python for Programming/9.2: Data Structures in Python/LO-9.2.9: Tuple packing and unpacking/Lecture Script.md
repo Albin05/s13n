@@ -1,4 +1,4 @@
-## Lecture Script: Tuple Packing and Unpacking
+## Tuple Packing and Unpacking
 
 
 ---
@@ -439,9 +439,9 @@ for index, name in enumerate(names):
     print(f"{index}: {name}")
 
 # Output:
-# 0: Alice
-# 1: Bob
-# 2: Charlie
+# Alice
+# Bob
+# Charlie
 ```
 
 **With zip():**

@@ -1,4 +1,4 @@
-# LO-43: Handle Exceptions with Try-Except
+# Handle Exceptions with Try-Except
 
 ## Learning Objective
 Students will be able to use try-except blocks and error handling effectively in Python programming.

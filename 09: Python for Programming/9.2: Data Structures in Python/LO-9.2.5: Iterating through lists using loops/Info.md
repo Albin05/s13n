@@ -1,4 +1,4 @@
-## LO-9.2.5: Iterating through lists using loops
+## Iterating through lists using loops
 
 ### Question Bank
 

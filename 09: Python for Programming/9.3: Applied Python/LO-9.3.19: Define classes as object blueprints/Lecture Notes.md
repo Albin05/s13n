@@ -1,15 +1,14 @@
-# Lecture Notes: Define Classes
+# Define Classes
 
 ## Classes in Python
 
 A class is a blueprint for creating objects. It defines the structure and behavior of objects.
 
-
 ---
 
 <div align="center">
 
-![Python Class Blueprint OOP Concept](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.19.png)
+![Python Class Blueprint OOP Concept](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Classes serve as blueprints in Python's type hierarchy, defining the structure for creating objects*
 

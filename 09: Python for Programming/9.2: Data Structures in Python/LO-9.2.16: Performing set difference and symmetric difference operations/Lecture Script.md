@@ -1,4 +1,4 @@
-## Lecture Script: Set Difference and Symmetric Difference Operations
+## Set Difference and Symmetric Difference Operations
 
 
 ---
@@ -103,7 +103,7 @@ b = {3, 4, 5, 6}
 
 result = a ^ b
 print(result)  # {1, 2, 5, 6}
-# 3, 4 are in BOTH sets — excluded
+# , 4 are in BOTH sets — excluded
 ```
 
 **Think of it as:** everything that's NOT shared.

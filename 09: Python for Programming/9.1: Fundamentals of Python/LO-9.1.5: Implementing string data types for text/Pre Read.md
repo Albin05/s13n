@@ -1,4 +1,4 @@
-# Pre-Read: Implement String Data Types
+# Implement String Data Types
 
 ## What are Strings?
 

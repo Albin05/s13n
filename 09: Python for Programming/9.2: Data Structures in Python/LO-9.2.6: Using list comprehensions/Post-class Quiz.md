@@ -1,6 +1,6 @@
 ## Post-class Quiz: Using List Comprehensions
 
-### Question 1
+### 
 What is the output of `[x * 2 for x in range(3)]`?
 
 A) `[0, 2, 4]`
@@ -13,7 +13,7 @@ D) `[0, 1, 2]`
 
 ---
 
-### Question 2
+### 
 Which list comprehension correctly filters even numbers from `nums = [1, 2, 3, 4, 5, 6]`?
 
 A) `[x for x in nums where x % 2 == 0]`
@@ -26,7 +26,7 @@ D) `[x for x in nums and x % 2 == 0]`
 
 ---
 
-### Question 3
+### 
 What does `[x if x > 0 else 0 for x in [-2, 3, -1, 5]]` produce?
 
 A) `[3, 5]`
@@ -39,7 +39,7 @@ D) Error
 
 ---
 
-### Question 4
+### 
 What is the result of `[x for row in [[1,2], [3,4]] for x in row]`?
 
 A) `[[1, 2], [3, 4]]`
@@ -52,7 +52,7 @@ D) Error
 
 ---
 
-### Question 5
+### 
 When should you avoid using list comprehensions?
 
 A) When transforming simple data

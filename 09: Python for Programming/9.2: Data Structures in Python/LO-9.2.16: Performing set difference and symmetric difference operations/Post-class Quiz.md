@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What is the output of the following code?
 
 ```python
@@ -22,7 +22,7 @@ D) `{4, 5}`
 
 ---
 
-### Question 2
+### 
 What is the output?
 
 ```python
@@ -42,7 +42,7 @@ D) `{1}`
 
 ---
 
-### Question 3
+### 
 Which statement is TRUE about set difference?
 
 A) `a - b` always equals `b - a`
@@ -56,7 +56,7 @@ D) `a - b` modifies `a` in place
 
 ---
 
-### Question 4
+### 
 What is the output?
 
 ```python
@@ -77,7 +77,7 @@ D) `{10, 40}`
 
 ---
 
-### Question 5
+### 
 Which expression is equivalent to `a ^ b`?
 
 A) `a - b`

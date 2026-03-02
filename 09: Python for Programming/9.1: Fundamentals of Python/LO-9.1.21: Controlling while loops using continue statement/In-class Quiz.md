@@ -1,10 +1,10 @@
-# Post-class Quiz: Controlling While Loops Using Continue Statement
+# Controlling While Loops Using Continue Statement
 
 Test your understanding of the continue statement and how it differs from break.
 
 ---
 
-## Q1: What does the continue statement do?
+## What does the continue statement do?
 
 A) Exits the loop immediately
 B) Skips the rest of the current iteration and goes to the next
@@ -19,7 +19,7 @@ D) Restarts the loop from the beginning
 
 ---
 
-## Q2: What is the output?
+## What is the output?
 ```python
 for i in range(1, 6):
     if i == 3:
@@ -40,7 +40,7 @@ D) 3 4 5
 
 ---
 
-## Q3: What is the difference between break and continue?
+## What is the difference between break and continue?
 
 A) They do the same thing
 B) Break exits the loop, continue skips to next iteration
@@ -58,7 +58,7 @@ They work in both while and for loops.
 
 ---
 
-## Q4: What is the output?
+## What is the output?
 ```python
 count = 0
 while count < 5:
@@ -81,7 +81,7 @@ D) 1 3 4 5 6
 
 ---
 
-## Q5: What happens if you forget to increment before continue in a while loop?
+## What happens if you forget to increment before continue in a while loop?
 
 A) Syntax error
 B) Infinite loop
@@ -112,7 +112,7 @@ while count < 5:
 
 ---
 
-## Q6: How many times does the print execute?
+## How many times does the print execute?
 ```python
 for num in [1, 2, 3, 4, 5]:
     if num % 2 == 0:
@@ -133,7 +133,7 @@ D) 5 times
 
 ---
 
-## Q7: Can you use continue in a for loop?
+## Can you use continue in a for loop?
 
 A) No, only in while loops
 B) Yes, in both while and for loops
@@ -148,7 +148,7 @@ D) No, continue is not valid in Python
 
 ---
 
-## Q8: What is the output?
+## What is the output?
 ```python
 numbers = [5, -2, 8, -1, 3]
 total = 0
@@ -174,7 +174,7 @@ D) 11
 
 ---
 
-## Q9: What happens with nested loops and continue?
+## What happens with nested loops and continue?
 
 A) Continue affects all nested loops
 B) Continue only affects the innermost loop
@@ -189,7 +189,7 @@ D) Continue affects the outermost loop only
 
 ---
 
-## Q10: What is the output?
+## What is the output?
 ```python
 for i in range(5):
     if i == 0:
@@ -217,7 +217,7 @@ Never reaches i=4. Output: 1, 2.
 
 ---
 
-## Q11: Which pattern is cleaner for filtering?
+## Which pattern is cleaner for filtering?
 ```python
 # Option A
 for item in items:
@@ -244,7 +244,7 @@ D) Option A is faster
 
 ---
 
-## Q12: What is the output?
+## What is the output?
 ```python
 word = "hello"
 for char in word:
@@ -266,7 +266,7 @@ D) aeiou
 
 ---
 
-## Q13: Can a loop have multiple continue statements?
+## Can a loop have multiple continue statements?
 
 A) No, only one continue per loop
 B) Yes, any number of continues
@@ -290,7 +290,7 @@ for num in numbers:
 
 ---
 
-## Q14: What's the purpose of continue in data processing?
+## What's the purpose of continue in data processing?
 
 A) Speed up loops
 B) Filter out invalid/unwanted data
@@ -305,7 +305,7 @@ D) Count iterations
 
 ---
 
-## Q15: What is the output?
+## What is the output?
 ```python
 for i in range(3):
     for j in range(3):
@@ -335,22 +335,4 @@ Output (with newlines from print()):
 
 ---
 
-## Score Interpretation
 
-- **13-15 correct**: Excellent! You've mastered the continue statement.
-- **10-12 correct**: Good work! Review continue vs break and increment placement.
-- **7-9 correct**: Fair. Practice more with filtering patterns and nested loops.
-- **Below 7**: Review the lesson materials on continue statement usage.
-
-## Key Concepts to Remember
-
-1. **Skip iteration**: Continue skips rest of current iteration
-2. **Loop continues**: Unlike break, loop keeps running
-3. **Increment first**: In while loops, update before continue
-4. **Works in all loops**: while, for, nested
-5. **Innermost only**: Continue affects closest loop
-6. **Multiple continues**: Can have several filters
-7. **Data cleaning**: Perfect for skipping invalid data
-8. **Vs break**: Continue skips, break exits
-9. **No nesting**: Early continue avoids deep if nesting
-10. **Common pattern**: Check bad case, continue, main logic

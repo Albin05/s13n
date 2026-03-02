@@ -1,4 +1,4 @@
-## Lecture Script: Read JSON Files and Parse Data
+## Read JSON Files and Parse Data
 
 
 ---

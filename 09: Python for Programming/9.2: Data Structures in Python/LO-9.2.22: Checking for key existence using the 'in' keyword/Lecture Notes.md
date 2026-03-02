@@ -1,5 +1,4 @@
-## Lecture Notes: Checking for Key Existence Using the 'in' Keyword
-
+## Checking for Key Existence Using the 'in' Keyword
 
 ---
 

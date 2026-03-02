@@ -1,4 +1,4 @@
-## Lecture Script: Using Tuple Methods count() and index()
+## Using Tuple Methods count() and index()
 
 
 ---
@@ -371,10 +371,10 @@ def analyze_tuple(tup):
 
 scores = (85, 92, 78, 92, 85, 88)
 analyze_tuple(scores)
-# 85: appears 2 time(s), first at index 0
-# 92: appears 2 time(s), first at index 1
-# 78: appears 1 time(s), first at index 2
-# 88: appears 1 time(s), first at index 5
+# appears 2 time(s), first at index 0
+# appears 2 time(s), first at index 1
+# appears 1 time(s), first at index 2
+# appears 1 time(s), first at index 5
 ```
 
 ---

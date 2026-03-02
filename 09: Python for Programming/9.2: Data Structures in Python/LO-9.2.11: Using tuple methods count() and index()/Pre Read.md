@@ -1,4 +1,4 @@
-## Pre-Read: Using Tuple Methods count() and index()
+## Using Tuple Methods count() and index()
 
 **Duration:** 5 minutes
 
@@ -206,22 +206,22 @@ print(f"Alice's first vote at position {first_vote}")  # 0
 ### Try to Predict
 
 ```python
-# Question 1
+# 
 data = (5, 10, 15, 10, 20)
 result = data.count(10)
 # What is result?
 
-# Question 2
+# 
 colors = ('red', 'blue', 'green')
 pos = colors.index('blue')
 # What is pos?
 
-# Question 3
+# 
 numbers = (1, 2, 3)
 val = numbers.count(5)
 # What is val?
 
-# Question 4
+# 
 items = ('a', 'b', 'c')
 # items.index('d')
 # What happens?

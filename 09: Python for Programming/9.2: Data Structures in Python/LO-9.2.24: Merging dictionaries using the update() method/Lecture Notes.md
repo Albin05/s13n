@@ -1,5 +1,4 @@
-## Lecture Notes: Merging Dictionaries Using the update() Method
-
+## Merging Dictionaries Using the update() Method
 
 ---
 

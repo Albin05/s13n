@@ -1,4 +1,4 @@
-# Pre-Read: Writing Nested Conditionals
+# Writing Nested Conditionals
 
 ## What You'll Learn
 In this lesson, you'll learn how to write if statements inside other if statements (nested conditionals) to handle complex decision-making logic.

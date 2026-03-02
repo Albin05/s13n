@@ -1,4 +1,4 @@
-## Lecture Script: Debug Python Programs Effectively
+## Debug Python Programs Effectively
 
 
 ---

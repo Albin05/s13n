@@ -1,4 +1,4 @@
-## Lecture Script: Removing Dictionary Entries
+## Removing Dictionary Entries
 
 
 ---

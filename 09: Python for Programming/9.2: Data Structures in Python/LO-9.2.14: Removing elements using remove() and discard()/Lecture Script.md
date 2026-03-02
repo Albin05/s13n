@@ -1,4 +1,4 @@
-## Lecture Script: Removing Elements using remove() and discard()
+## Removing Elements using remove() and discard()
 
 
 ---

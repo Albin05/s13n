@@ -1,6 +1,6 @@
 ## Post-class Quiz: Iterating Through Lists Using Loops
 
-### Question 1
+### 
 What does `enumerate(['a', 'b', 'c'])` return when used in a for loop?
 
 A) Just the values: 'a', 'b', 'c'
@@ -13,7 +13,7 @@ D) A dictionary: {0:'a', 1:'b', 2:'c'}
 
 ---
 
-### Question 2
+### 
 Given `list1 = [1, 2, 3]` and `list2 = [4, 5]`, what happens with `for a, b in zip(list1, list2):`?
 
 A) Error because lists have different lengths
@@ -26,7 +26,7 @@ D) Loops 3 times, repeating last b value
 
 ---
 
-### Question 3
+### 
 What is wrong with this code?
 ```python
 numbers = [1, 2, 3, 4, 5]
@@ -45,7 +45,7 @@ D) The condition is wrong
 
 ---
 
-### Question 4
+### 
 How do you iterate through a list and get a 1-based position number?
 
 A) `for i in range(len(lst)):`
@@ -58,7 +58,7 @@ D) `for i in lst.index():`
 
 ---
 
-### Question 5
+### 
 What is the output?
 ```python
 lst = [1, 2, 3]

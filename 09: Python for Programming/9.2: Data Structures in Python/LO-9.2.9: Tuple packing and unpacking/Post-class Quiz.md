@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What is the output of the following code?
 
 ```python
@@ -22,7 +22,7 @@ D) 3 2 1
 
 ---
 
-### Question 2
+### 
 What will be the value of `rest` after executing this code?
 
 ```python
@@ -41,7 +41,7 @@ D) `20`
 
 ---
 
-### Question 3
+### 
 Which of the following statements about tuple packing is TRUE?
 
 A) Parentheses are required to create a tuple  
@@ -55,7 +55,7 @@ D) Tuple packing only works with exactly 2 values
 
 ---
 
-### Question 4
+### 
 What happens when you execute this code?
 
 ```python
@@ -74,7 +74,7 @@ D) a=(1, 2), b=3
 
 ---
 
-### Question 5
+### 
 What is the output of this code?
 
 ```python

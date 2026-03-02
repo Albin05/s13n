@@ -1,4 +1,4 @@
-## Lecture Script: Use The Requests Library For Http Operations
+## Use The Requests Library For Http Operations
 
 
 ---

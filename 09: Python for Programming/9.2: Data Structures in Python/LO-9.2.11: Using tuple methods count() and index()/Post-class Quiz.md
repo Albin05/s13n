@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What does `numbers.count(5)` return if `numbers = (1, 2, 3, 4)`?
 
 A) ValueError  
@@ -16,7 +16,7 @@ D) None
 
 ---
 
-### Question 2
+### 
 Given `data = (10, 20, 30, 20, 40)`, what does `data.index(20)` return?
 
 A) 1  
@@ -30,7 +30,7 @@ D) 2
 
 ---
 
-### Question 3
+### 
 What happens when you run `colors.index('purple')` if `colors = ('red', 'blue', 'green')`?
 
 A) Returns 0  
@@ -44,7 +44,7 @@ D) Returns None
 
 ---
 
-### Question 4
+### 
 How can you find the second occurrence of a value in a tuple?
 
 A) `tup.index(value, 2)`  
@@ -58,7 +58,7 @@ D) `tup.count(value, 2)`
 
 ---
 
-### Question 5
+### 
 Which method is safer to use without error handling?
 
 A) index()  

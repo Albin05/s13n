@@ -1,4 +1,4 @@
-# LO-80: Work with Datetime Module
+# Work with Datetime Module
 
 ## Learning Objective
 Students will be able to use Working with dates and times in Python programs.

@@ -1,45 +1,50 @@
-# Post-Class Quiz: Return Values from Functions
+# Return Values from Functions
 
-## Q1: Question about return statement and values
+## Question about return statement and values
 A) Option A
 B) Option B
 C) Option C
+D) The return statement prints the value to the console
 
 <details><summary>Answer</summary>
 B - Correct answer with explanation
 </details>
 
-## Q2: Syntax question
+## Syntax question
 A) Option A
 B) Option B
 C) Option C
+D) return must always be followed by parentheses
 
 <details><summary>Answer</summary>
 A - Answer explanation
 </details>
 
-## Q3: Practical application
+## Practical application
 A) Option A
 B) Option B
 C) Option C
+D) A function can only return string values
 
 <details><summary>Answer</summary>
 C - Detailed explanation
 </details>
 
-## Q4: Best practices
+## Best practices
 A) Option A
 B) Option B
 C) Option C
+D) Every function must have exactly one return statement
 
 <details><summary>Answer</summary>
 B - Why this is correct
 </details>
 
-## Q5: Common mistakes
+## Common mistakes
 A) Option A
 B) Option B
 C) Option C
+D) A function without return always raises an error
 
 <details><summary>Answer</summary>
 A - Explanation of the answer

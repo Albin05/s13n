@@ -1,4 +1,4 @@
-## Pre-Read: Accessing List Elements Using Indexing
+## Accessing List Elements Using Indexing
 
 ## What is Indexing?
 
@@ -26,7 +26,7 @@ Python starts counting at 0, not 1. **Why?**
 
 ```python
 fruits = ['apple', 'banana', 'orange']
-#           0        1         2
+# 1         2
 # apple is 0 steps from start!
 ```
 

@@ -1,4 +1,4 @@
-# Lecture Notes: Write If Statements
+# Write If Statements
 
 ## Introduction
 
@@ -8,7 +8,7 @@ The `if` statement is the most fundamental **control flow** structure in program
 
 <div align="center">
 
-![Python if Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.15.png)
+![Python if Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *The if statement evaluates a condition: if True, execute one block; if False, skip it or execute an alternative*
 
@@ -51,7 +51,6 @@ Programs use if statements the same way - constant decision-making based on cond
 
 An `if` statement allows your program to execute code **only when a condition is True**.
 
-
 ### Basic Syntax
 
 ```python
@@ -89,16 +88,6 @@ if age >= 18:
 
 # No output (condition is False, code doesn't run)
 ```
-
-### Example 3: Multiple Statements
-
-```python
-score = 95
-
-if score >= 90:
-    print("Excellent work!")
-    print("You got an A")
-    print("Keep it up!")
 
 # All three lines print because condition is True
 ```
@@ -242,64 +231,6 @@ if len(password) >= 12:
     print("Strong password!")
 ```
 
-### Example 3: Grade Checker
-
-```python
-score = int(input("Enter your score: "))
-
-if score >= 90:
-    print("Grade: A")
-    print("Excellent!")
-
-if score >= 80 and score < 90:
-    print("Grade: B")
-    print("Good job!")
-
-if score >= 70 and score < 80:
-    print("Grade: C")
-    print("Not bad!")
-
-if score < 60:
-    print("Grade: F")
-    print("Need improvement")
-```
-
-### Example 4: Login System
-
-```python
-username = input("Enter username: ")
-password = input("Enter password: ")
-
-correct_username = "admin"
-correct_password = "secret123"
-
-if username == correct_username and password == correct_password:
-    print("Login successful!")
-    print("Welcome, admin!")
-
-if username != correct_username:
-    print("Invalid username")
-
-if password != correct_password:
-    print("Invalid password")
-```
-
-### Example 5: Temperature Alert
-
-```python
-temperature = float(input("Enter temperature: "))
-
-if temperature >= 37.5:
-    print("You have a fever")
-    print("Please see a doctor")
-
-if temperature >= 39:
-    print("High fever - seek immediate medical attention!")
-
-if temperature < 35:
-    print("Low temperature - hypothermia risk")
-```
-
 ## Flow Control Visualization
 
 ```python
@@ -335,7 +266,7 @@ print("End")
 
 ## Common Mistakes
 
-### 1. Forgetting the Colon
+### Forgetting the Colon
 
 ```python
 # Wrong
@@ -347,7 +278,7 @@ if age >= 18:
     print("Adult")
 ```
 
-### 2. No Indentation
+### No Indentation
 
 ```python
 # Wrong
@@ -359,7 +290,7 @@ if age >= 18:
     print("Adult")
 ```
 
-### 3. Using `=` Instead of `==`
+### Using `=` Instead of `==`
 
 ```python
 # Wrong - This assigns 18 to age!
@@ -371,7 +302,7 @@ if age == 18:
     print("18 years old")
 ```
 
-### 4. Forgetting Indentation for Multiple Lines
+### Forgetting Indentation for Multiple Lines
 
 ```python
 # Wrong - Only first line is in if block
@@ -385,7 +316,7 @@ if age >= 18:
     print("You can vote")  # Both indented
 ```
 
-### 5. Empty If Block
+### Empty If Block
 
 ```python
 # Wrong - If block can't be empty

@@ -1,4 +1,4 @@
-# Pre-Read: Inspecting Data Types Using type()
+# Inspecting Data Types Using type()
 
 ## What is type()?
 

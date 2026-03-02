@@ -1,4 +1,4 @@
-### LO-3 Implement Integer Data Types (16 minutes)
+### Implement Integer Data Types (16 minutes)
 
 
 ### CS Theory Bite

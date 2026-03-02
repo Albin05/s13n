@@ -1,6 +1,6 @@
-# Post-Class Quiz: Override Methods
+# Override Methods
 
-## Q1: Question about Redefining parent methods in child classes
+## Question about Redefining parent methods in child classes
 A) Option A
 B) Option B
 C) Option C
@@ -9,7 +9,7 @@ C) Option C
 B - Explanation of OOP concept
 </details>
 
-## Q2: Syntax question
+## Syntax question
 A) Option A
 B) Option B
 C) Option C
@@ -18,7 +18,7 @@ C) Option C
 A - Explanation
 </details>
 
-## Q3: When to use Redefining parent methods in child classes?
+## When to use Redefining parent methods in child classes?
 A) Option A
 B) Option B
 C) Option C
@@ -27,7 +27,7 @@ C) Option C
 C - Practical explanation
 </details>
 
-## Q4: Best practice for Redefining parent methods in child classes
+## Best practice for Redefining parent methods in child classes
 A) Option A
 B) Option B
 C) Option C
@@ -36,7 +36,7 @@ C) Option C
 B - Best practice explanation
 </details>
 
-## Q5: Common mistake with Redefining parent methods in child classes
+## Common mistake with Redefining parent methods in child classes
 A) Option A
 B) Option B
 C) Option C

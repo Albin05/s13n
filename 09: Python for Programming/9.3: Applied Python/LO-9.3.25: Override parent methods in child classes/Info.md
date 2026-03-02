@@ -1,4 +1,4 @@
-# LO-67: Override Methods
+# Override Methods
 
 ## Learning Objective
 Students will be able to use Redefining parent methods in child classes in Python programs.

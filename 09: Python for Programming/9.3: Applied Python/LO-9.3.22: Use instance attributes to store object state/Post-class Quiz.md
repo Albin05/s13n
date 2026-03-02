@@ -1,6 +1,6 @@
-# Post-Class Quiz: Use Instance Attributes
+# Use Instance Attributes
 
-## Q1: Question about Defining and accessing object attributes
+## Question about Defining and accessing object attributes
 A) Option A
 B) Option B
 C) Option C
@@ -9,7 +9,7 @@ C) Option C
 B - Explanation of OOP concept
 </details>
 
-## Q2: Syntax question
+## Syntax question
 A) Option A
 B) Option B
 C) Option C
@@ -18,7 +18,7 @@ C) Option C
 A - Explanation
 </details>
 
-## Q3: When to use Defining and accessing object attributes?
+## When to use Defining and accessing object attributes?
 A) Option A
 B) Option B
 C) Option C
@@ -27,7 +27,7 @@ C) Option C
 C - Practical explanation
 </details>
 
-## Q4: Best practice for Defining and accessing object attributes
+## Best practice for Defining and accessing object attributes
 A) Option A
 B) Option B
 C) Option C
@@ -36,7 +36,7 @@ C) Option C
 B - Best practice explanation
 </details>
 
-## Q5: Common mistake with Defining and accessing object attributes
+## Common mistake with Defining and accessing object attributes
 A) Option A
 B) Option B
 C) Option C

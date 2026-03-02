@@ -1,4 +1,4 @@
-## Pre-Read: Handle Multiple Exception Types
+## Handle Multiple Exception Types
 
 
 ---

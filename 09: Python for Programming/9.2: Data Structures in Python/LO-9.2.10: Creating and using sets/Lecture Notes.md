@@ -1,5 +1,4 @@
-## Lecture Notes: Creating and Using Sets
-
+## Creating and Using Sets
 
 ---
 

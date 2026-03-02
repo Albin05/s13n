@@ -1,4 +1,4 @@
-# Pre-Read: Using Function Parameters to Accept Inputs
+# Using Function Parameters to Accept Inputs
 
 ## Why Parameters?
 

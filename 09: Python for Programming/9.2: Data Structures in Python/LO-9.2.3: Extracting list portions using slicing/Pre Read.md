@@ -1,4 +1,4 @@
-## Pre-Read: Extracting List Portions Using Slicing
+## Extracting List Portions Using Slicing
 
 ## What is Slicing?
 

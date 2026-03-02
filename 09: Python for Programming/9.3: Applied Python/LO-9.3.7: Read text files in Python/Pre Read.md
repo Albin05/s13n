@@ -1,4 +1,4 @@
-## Pre-Read: Read Text Files in Python
+## Read Text Files in Python
 
 
 ---

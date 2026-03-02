@@ -1,15 +1,14 @@
-# Lecture Notes: Work with CSV Files
+# Work with CSV Files
 
 ## CSV Files
 
 CSV (Comma-Separated Values) stores tabular data in plain text.
 
-
 ---
 
 <div align="center">
 
-![Python CSV File Reading with csv Module](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.11.png)
+![Python CSV File Reading with csv Module](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *CSV files organize data in structured rows and columns, similar to arrays in a flowchart*
 

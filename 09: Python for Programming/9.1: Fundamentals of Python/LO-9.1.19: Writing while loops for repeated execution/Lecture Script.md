@@ -1,4 +1,4 @@
-### LO-19 Write While Loops (25 minutes)
+### Write While Loops (25 minutes)
 
 
 ### CS Theory Bite

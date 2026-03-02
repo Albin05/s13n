@@ -1,4 +1,4 @@
-# LO-75: Apply Decorators
+# Apply Decorators
 
 ## Learning Objective
 Students will be able to use Using decorators to modify function behavior in Python programs.

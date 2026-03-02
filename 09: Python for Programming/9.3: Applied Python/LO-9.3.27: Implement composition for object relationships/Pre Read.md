@@ -1,4 +1,4 @@
-# Pre-Read: Implement Composition
+# Implement Composition
 
 ## What is Composition?
 

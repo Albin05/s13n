@@ -1,4 +1,4 @@
-# Lecture Script: LO-9.3.36 Apply Type Hints for Code Clarity
+# Apply Type Hints for Code Clarity
 
 
 ### CS Theory Bite

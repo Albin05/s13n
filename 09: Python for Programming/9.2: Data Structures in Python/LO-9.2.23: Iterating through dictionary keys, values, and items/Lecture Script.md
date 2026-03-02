@@ -1,4 +1,4 @@
-## Lecture Script: Iterating Through Dictionaries
+## Iterating Through Dictionaries
 
 
 ---

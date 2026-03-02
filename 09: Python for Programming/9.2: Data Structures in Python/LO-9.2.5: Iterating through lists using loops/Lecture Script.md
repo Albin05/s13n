@@ -1,4 +1,4 @@
-## Lecture Script: Iterating Through Lists Using Loops
+## Iterating Through Lists Using Loops
 
 
 ---
@@ -54,11 +54,11 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 for num in numbers:
     if num % 2 == 0:
         print(f"{num} is even")
-# 2 is even
-# 4 is even
-# 6 is even
-# 8 is even
-# 10 is even
+# is even
+# is even
+# is even
+# is even
+# is even
 ```
 
 **Accumulating Results:**
@@ -131,18 +131,18 @@ fruits = ['apple', 'banana', 'orange']
 
 for index, fruit in enumerate(fruits):
     print(f"{index}: {fruit}")
-# 0: apple
-# 1: banana
-# 2: orange
+# apple
+# banana
+# orange
 
 # Start counting from 1
 fruits = ['apple', 'banana', 'orange']
 
 for num, fruit in enumerate(fruits, start=1):
     print(f"{num}. {fruit}")
-# 1. apple
-# 2. banana
-# 3. orange
+# apple
+# banana
+# orange
 ```
 
 **Practical Applications:**
@@ -187,10 +187,10 @@ scores = [85, 92, 78, 88]
 
 for i, student in enumerate(students):
     print(f"{i+1}. {student}: {scores[i]}")
-# 1. Alice: 85
-# 2. Bob: 92
-# 3. Charlie: 78
-# 4. Diana: 88
+# Alice: 85
+# Bob: 92
+# Charlie: 78
+# Diana: 88
 ```
 
 ---
@@ -219,10 +219,10 @@ i = 0
 while i < len(numbers):
     print(numbers[i])
     i += 2  # Skip every other element
-# 1
-# 3
-# 5
-# 7
+# 
+# 
+# 
+# 
 ```
 
 **Conditional Termination:**
@@ -235,10 +235,10 @@ i = 0
 while i < len(numbers) and numbers[i] < 50:
     print(numbers[i])
     i += 1
-# 10
-# 20
-# 30
-# 40
+# 
+# 
+# 
+# 
 
 # Search with early exit
 items = ['apple', 'banana', 'orange', 'mango']
@@ -426,9 +426,9 @@ for row in matrix:
     for element in matrix:
         print(element, end=' ')
     print()  # New line after each row
-# 1 2 3
-# 4 5 6
-# 7 8 9
+# 2 3
+# 5 6
+# 8 9
 
 # With indices
 for i, row in enumerate(matrix):
@@ -474,7 +474,7 @@ for num in numbers:
     if num > 5:
         break
     print(num)
-# 1 2 3 4 5
+# 2 3 4 5
 
 # continue - skip to next iteration
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -483,7 +483,7 @@ for num in numbers:
     if num % 2 == 0:
         continue  # Skip even numbers
     print(num)
-# 1 3 5 7 9
+# 3 5 7 9
 
 # else clause - executes if loop completes normally
 numbers = [1, 2, 3, 4, 5]

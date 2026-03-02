@@ -1,4 +1,4 @@
-# LO-68: Use the super() Function
+# Use the super() Function
 
 ## Learning Objective
 Students will be able to use Calling parent class methods from child classes in Python programs.

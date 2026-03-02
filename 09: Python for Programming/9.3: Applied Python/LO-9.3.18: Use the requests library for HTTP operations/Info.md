@@ -1,4 +1,4 @@
-# LO-60: Use the requests Library
+# Use the requests Library
 
 ## Learning Objective
 Students will be able to work with Making HTTP requests in Python in Python.

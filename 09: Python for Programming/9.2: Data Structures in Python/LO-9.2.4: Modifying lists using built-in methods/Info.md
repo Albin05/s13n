@@ -1,4 +1,4 @@
-## LO-9.2.4: Modifying lists using built-in methods
+## Modifying lists using built-in methods
 
 ### Question Bank
 

@@ -1,4 +1,4 @@
-### LO-15 Write If Statements (20 minutes)
+### Write If Statements (20 minutes)
 
 
 ### CS Theory Bite

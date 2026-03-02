@@ -1,4 +1,4 @@
-# Pre-Read: Writing Nested Loops for Multi-Level Iteration
+# Writing Nested Loops for Multi-Level Iteration
 
 ## What are Nested Loops?
 
@@ -52,17 +52,17 @@ for i in range(1, 4):    # Outer loop: rows
     print()  # Blank line after each row
 
 # Output:
-# 1 x 1 = 1
-# 1 x 2 = 2
-# 1 x 3 = 3
+# x 1 = 1
+# x 2 = 2
+# x 3 = 3
 #
-# 2 x 1 = 2
-# 2 x 2 = 4
-# 2 x 3 = 6
+# x 1 = 2
+# x 2 = 4
+# x 3 = 6
 #
-# 3 x 1 = 3
-# 3 x 2 = 6
-# 3 x 3 = 9
+# x 1 = 3
+# x 2 = 6
+# x 3 = 9
 ```
 
 **How it works:**
@@ -118,9 +118,9 @@ for i in range(1, 4):
     print()
 
 # Output:
-# 11 12 13
-# 21 22 23
-# 31 32 33
+# 12 13
+# 22 23
+# 32 33
 ```
 
 ---

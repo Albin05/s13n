@@ -1,4 +1,4 @@
-## Pre-Read: Removing Dictionary Entries
+## Removing Dictionary Entries
 
 **Duration:** 5 minutes
 
@@ -9,16 +9,16 @@
 ```python
 d = {'a': 1, 'b': 2, 'c': 3}
 
-# 1. del — remove by key
+# del — remove by key
 del d['a']       # d = {'b': 2, 'c': 3}
 
-# 2. pop() — remove and return
+# pop() — remove and return
 val = d.pop('b') # val = 2, d = {'c': 3}
 
-# 3. popitem() — remove last pair
+# popitem() — remove last pair
 pair = d.popitem()  # pair = ('c', 3), d = {}
 
-# 4. clear() — remove everything
+# clear() — remove everything
 d = {'x': 1, 'y': 2}
 d.clear()  # d = {}
 ```

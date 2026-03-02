@@ -1,4 +1,4 @@
-## Pre-Read: Tuple Packing and Unpacking
+## Tuple Packing and Unpacking
 
 **Duration:** 5 minutes
 
@@ -246,17 +246,17 @@ name, age, city = csv_row.split(',')
 ### Try to Predict
 
 ```python
-# Question 1
+# 
 a, b = 10, 20
 a, b = b, a
 # What are a and b now?
 
-# Question 2
+# 
 data = (1, 2, 3, 4, 5)
 first, *middle, last = data
 # What is middle?
 
-# Question 3
+# 
 def mystery():
     return 5, 10, 15
 

@@ -1,4 +1,4 @@
-## Pre-Read: Creating and Using Tuples
+## Creating and Using Tuples
 
 ## What Are Tuples?
 

@@ -1,6 +1,6 @@
-# Post-Class Quiz: Implement the __init__ Constructor
+# Implement the __init__ Constructor
 
-## Q1: Question about Initializing objects with __init__ method
+## Question about Initializing objects with __init__ method
 A) Option A
 B) Option B
 C) Option C
@@ -9,7 +9,7 @@ C) Option C
 B - Explanation of OOP concept
 </details>
 
-## Q2: Syntax question
+## Syntax question
 A) Option A
 B) Option B
 C) Option C
@@ -18,7 +18,7 @@ C) Option C
 A - Explanation
 </details>
 
-## Q3: When to use Initializing objects with __init__ method?
+## When to use Initializing objects with __init__ method?
 A) Option A
 B) Option B
 C) Option C
@@ -27,7 +27,7 @@ C) Option C
 C - Practical explanation
 </details>
 
-## Q4: Best practice for Initializing objects with __init__ method
+## Best practice for Initializing objects with __init__ method
 A) Option A
 B) Option B
 C) Option C
@@ -36,7 +36,7 @@ C) Option C
 B - Best practice explanation
 </details>
 
-## Q5: Common mistake with Initializing objects with __init__ method
+## Common mistake with Initializing objects with __init__ method
 A) Option A
 B) Option B
 C) Option C

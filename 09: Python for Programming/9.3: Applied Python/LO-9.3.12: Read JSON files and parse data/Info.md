@@ -1,4 +1,4 @@
-# LO-54: Read JSON Files
+# Read JSON Files
 
 ## Learning Objective
 Students will be able to work with Loading JSON data from files in Python.

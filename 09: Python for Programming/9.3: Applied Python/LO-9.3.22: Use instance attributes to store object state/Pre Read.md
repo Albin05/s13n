@@ -1,4 +1,4 @@
-# Pre-Read: Use Instance Attributes
+# Use Instance Attributes
 
 ## Instance Attributes
 

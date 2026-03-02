@@ -1,4 +1,4 @@
-## Pre-Read: Performing Set Union and Intersection Operations
+## Performing Set Union and Intersection Operations
 
 **Duration:** 5 minutes
 
@@ -207,7 +207,7 @@ print(f"On both: {both_platforms}")
 # ALL unique users (union)
 all_users = web_users | mobile_users
 print(f"Total users: {len(all_users)}")
-# 6 unique users
+# unique users
 
 # Users ONLY on web (difference)
 web_only = web_users - mobile_users

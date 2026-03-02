@@ -1,4 +1,4 @@
-### LO-24 Control For Loops with Break and Continue (20 minutes)
+### Control For Loops with Break and Continue (20 minutes)
 
 
 ### CS Theory Bite

@@ -1,4 +1,4 @@
-## Pre-Read: Set Membership Testing for Efficiency
+## Set Membership Testing for Efficiency
 
 **Duration:** 5 minutes
 
@@ -30,7 +30,7 @@ Membership testing is asking **"Is this item in the collection?"** - and sets an
 ```python
 approved_list = [... 10,000 items ...]  # list
 # Each check: ~5,000 comparisons (average)
-# 1000 checks: 5,000,000 operations!
+# checks: 5,000,000 operations!
 # Time: Several seconds
 ```
 
@@ -38,7 +38,7 @@ approved_list = [... 10,000 items ...]  # list
 ```python
 approved_set = {... 10,000 items ...}  # set
 # Each check: 1 lookup
-# 1000 checks: 1,000 operations!
+# checks: 1,000 operations!
 # Time: Milliseconds!
 ```
 

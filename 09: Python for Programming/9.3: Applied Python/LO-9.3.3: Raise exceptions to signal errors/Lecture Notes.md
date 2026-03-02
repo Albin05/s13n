@@ -1,5 +1,4 @@
-## Lecture Notes: Raise Exceptions to Signal Errors
-
+## Raise Exceptions to Signal Errors
 
 ---
 

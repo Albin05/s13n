@@ -1,4 +1,4 @@
-# LO-51: Append to Files
+# Append to Files
 
 ## Learning Objective
 Students will be able to append data to existing files without overwriting them.

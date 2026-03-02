@@ -1,4 +1,4 @@
-# Lecture Notes: Write While Loops
+# Write While Loops
 
 ## Introduction
 
@@ -8,7 +8,7 @@ While loops introduce **iteration** - the ability to repeat code automatically. 
 
 <div align="center">
 
-![Python while Loop Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.19.png)
+![Python while Loop Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *A while loop checks its condition before each iteration — if True, the body executes; if False, the loop exits*
 
@@ -35,7 +35,6 @@ The action repeats until the condition changes. Programs work the same way!
 ## While Loops
 
 A while loop repeats code **as long as** a condition is True.
-
 
 ### Basic Syntax
 
@@ -68,25 +67,6 @@ while len(password) < 8:
     password = input("Enter password (min 8 chars): ")
 
 print("Password accepted!")
-```
-
-### Example 3: Menu System
-
-```python
-choice = ""
-
-while choice != "quit":
-    print("\n1. New Game")
-    print("2. Load Game")
-    print("3. Quit")
-    choice = input("Enter choice: ")
-    
-    if choice == "1":
-        print("Starting new game...")
-    elif choice == "2":
-        print("Loading game...")
-    elif choice == "quit":
-        print("Goodbye!")
 ```
 
 ## Infinite Loops

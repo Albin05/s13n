@@ -1,4 +1,4 @@
-# Pre-Read: Work with Regular Expressions
+# Work with Regular Expressions
 
 ## Regular Expressions
 

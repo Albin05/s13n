@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What does `'hello' in {'hello': 'world'}` return?
 
 A) True — 'hello' is a key
@@ -16,7 +16,7 @@ D) Error
 
 ---
 
-### Question 2
+### 
 How do you check if a VALUE exists in a dictionary?
 
 A) `value in dict`
@@ -30,7 +30,7 @@ D) `dict.has_value(value)`
 
 ---
 
-### Question 3
+### 
 What is the output?
 
 ```python
@@ -49,7 +49,7 @@ D) `False False`
 
 ---
 
-### Question 4
+### 
 Which is the correct way to safely access a possibly missing key?
 
 A) `if key in d: val = d[key]`
@@ -63,7 +63,7 @@ D) Neither is correct
 
 ---
 
-### Question 5
+### 
 What is the time complexity of `key in dict`?
 
 A) O(n)

@@ -1,4 +1,4 @@
-# Lecture Script: LO-67 Override Parent Methods
+# Override Parent Methods
 
 
 ### CS Theory Bite

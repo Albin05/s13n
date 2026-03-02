@@ -1,5 +1,4 @@
-## Lecture Notes: Removing Entries Using pop(), popitem(), and del
-
+## Removing Entries Using pop(), popitem(), and del
 
 ---
 
@@ -11,7 +10,7 @@ Multiple removal methods reflect **different use cases**: `del` for simple remov
 
 <div align="center">
 
-![Python Dictionary pop() Remove Entry](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.21.png)
+![Python Dictionary pop() Remove Entry](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
 
 *del removes by key, pop() removes and returns the value, popitem() removes the last inserted pair (LIFO)*
 
@@ -41,7 +40,7 @@ Multiple removal methods reflect **different use cases**: `del` for simple remov
 
 ---
 
-### 1. `del` Statement
+### `del` Statement
 
 Removes a specific key-value pair:
 
@@ -65,7 +64,7 @@ del student  # student no longer exists
 
 ---
 
-### 2. `pop()` Method
+### `pop()` Method
 
 Removes and **returns** the value:
 
@@ -90,7 +89,7 @@ print(result)  # 'not found' — no KeyError!
 
 ---
 
-### 3. `popitem()` Method
+### `popitem()` Method
 
 Removes and returns the **last** inserted key-value pair (as a tuple):
 
@@ -109,7 +108,7 @@ print(student)  # {'name': 'Alice', 'age': 22}
 
 ---
 
-### 4. `clear()` Method
+### `clear()` Method
 
 Removes **all** entries (keeps the dict object):
 

@@ -1,4 +1,4 @@
-# Pre-Read: Implement Float Data Types
+# Implement Float Data Types
 
 ## What are Floats?
 

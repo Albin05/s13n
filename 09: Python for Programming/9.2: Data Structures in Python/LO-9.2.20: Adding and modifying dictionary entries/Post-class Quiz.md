@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What is the output?
 
 ```python
@@ -23,7 +23,7 @@ D) Error
 
 ---
 
-### Question 2
+### 
 What does `setdefault()` do when the key already exists?
 
 A) Raises an error
@@ -37,7 +37,7 @@ D) Deletes the key
 
 ---
 
-### Question 3
+### 
 What is the output?
 
 ```python
@@ -57,7 +57,7 @@ D) Error — cannot update existing keys
 
 ---
 
-### Question 4
+### 
 What pattern correctly counts occurrences?
 
 A) `counts[item] = counts[item] + 1`
@@ -71,7 +71,7 @@ D) `counts.append(item)`
 
 ---
 
-### Question 5
+### 
 What is the output?
 
 ```python

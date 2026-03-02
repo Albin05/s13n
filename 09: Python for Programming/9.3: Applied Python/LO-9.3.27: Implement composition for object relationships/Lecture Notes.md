@@ -1,15 +1,14 @@
-# Lecture Notes: Implement Composition
+# Implement Composition
 
 ## Implement Composition
 
 Building complex objects from simpler ones
 
-
 ---
 
 <div align="center">
 
-![Python Composition has-a Object Relationship](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.27.jpg)
+![Python Composition has-a Object Relationship](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.jpg)
 
 *Composition builds complex objects by combining simpler objects, forming a tree of contained parts*
 
@@ -233,7 +232,7 @@ class Car:
 car = Car("Toyota", "Camry")
 car.start()
 # Starting Toyota Camry
-# 250HP Gasoline engine started
+# HP Gasoline engine started
 
 car.check_wheels()
 # Checking all wheels:
@@ -368,79 +367,6 @@ pc.system_info()
 # Monitor: 27" 2560x1440
 ```
 
-#### Example 3: University System
-
-```python
-class Address:
-    def __init__(self, street, city, state, zipcode):
-        self.street = street
-        self.city = city
-        self.state = state
-        self.zipcode = zipcode
-
-    def get_full_address(self):
-        return f"{self.street}, {self.city}, {self.state} {self.zipcode}"
-
-class Course:
-    def __init__(self, code, name, credits):
-        self.code = code
-        self.name = name
-        self.credits = credits
-
-    def __str__(self):
-        return f"{self.code}: {self.name} ({self.credits} credits)"
-
-class Grade:
-    def __init__(self, course, score):
-        self.course = course
-        self.score = score
-
-    def get_letter_grade(self):
-        if self.score >= 90:
-            return "A"
-        elif self.score >= 80:
-            return "B"
-        elif self.score >= 70:
-            return "C"
-        elif self.score >= 60:
-            return "D"
-        return "F"
-
-class Student:
-    def __init__(self, student_id, name, address):
-        self.student_id = student_id
-        self.name = name
-        self.address = address  # Composition
-        self.enrolled_courses = []  # Composition
-        self.grades = []  # Composition
-
-    def enroll(self, course):
-        self.enrolled_courses.append(course)
-        print(f"{self.name} enrolled in {course.name}")
-
-    def add_grade(self, course, score):
-        grade = Grade(course, score)
-        self.grades.append(grade)
-        print(f"Grade added: {course.name} - {score}% ({grade.get_letter_grade()})")
-
-    def get_gpa(self):
-        if not self.grades:
-            return 0.0
-
-        grade_points = {"A": 4.0, "B": 3.0, "C": 2.0, "D": 1.0, "F": 0.0}
-        total_points = sum(grade_points[g.get_letter_grade()] * g.course.credits
-                          for g in self.grades)
-        total_credits = sum(g.course.credits for g in self.grades)
-        return total_points / total_credits if total_credits > 0 else 0.0
-
-    def display_transcript(self):
-        print(f"\nTranscript for {self.name} (ID: {self.student_id})")
-        print(f"Address: {self.address.get_full_address()}")
-        print("\nGrades:")
-        for grade in self.grades:
-            print(f"  {grade.course} - {grade.score}% ({grade.get_letter_grade()})")
-        print(f"\nGPA: {self.get_gpa():.2f}")
-
 # Usage
 address = Address("123 College St", "Boston", "MA", "02101")
 student = Student("S12345", "Alice Johnson", address)
@@ -483,91 +409,6 @@ student.display_transcript()
 # GPA: 3.73
 ```
 
-#### Example 4: Restaurant Order System
-
-```python
-class MenuItem:
-    def __init__(self, name, price, category):
-        self.name = name
-        self.price = price
-        self.category = category
-
-    def __str__(self):
-        return f"{self.name} (${self.price:.2f})"
-
-class OrderItem:
-    def __init__(self, menu_item, quantity):
-        self.menu_item = menu_item
-        self.quantity = quantity
-
-    def get_subtotal(self):
-        return self.menu_item.price * self.quantity
-
-    def __str__(self):
-        return f"{self.quantity}x {self.menu_item.name} = ${self.get_subtotal():.2f}"
-
-class Table:
-    def __init__(self, table_number, capacity):
-        self.table_number = table_number
-        self.capacity = capacity
-        self.is_occupied = False
-
-    def occupy(self):
-        self.is_occupied = True
-        print(f"Table {self.table_number} is now occupied")
-
-    def free(self):
-        self.is_occupied = False
-        print(f"Table {self.table_number} is now free")
-
-class Order:
-    def __init__(self, order_id, table):
-        self.order_id = order_id
-        self.table = table  # Composition
-        self.items = []  # Composition
-        self.status = "pending"
-
-    def add_item(self, menu_item, quantity):
-        order_item = OrderItem(menu_item, quantity)
-        self.items.append(order_item)
-        print(f"Added to order: {order_item}")
-
-    def remove_item(self, menu_item_name):
-        self.items = [item for item in self.items
-                     if item.menu_item.name != menu_item_name]
-        print(f"Removed {menu_item_name} from order")
-
-    def get_total(self):
-        return sum(item.get_subtotal() for item in self.items)
-
-    def apply_tax(self, tax_rate=0.08):
-        return self.get_total() * tax_rate
-
-    def apply_tip(self, tip_percent=0.15):
-        return self.get_total() * tip_percent
-
-    def get_final_total(self):
-        subtotal = self.get_total()
-        tax = self.apply_tax()
-        tip = self.apply_tip()
-        return subtotal + tax + tip
-
-    def print_receipt(self):
-        print(f"\n{'='*40}")
-        print(f"Order #{self.order_id} - Table {self.table.table_number}")
-        print(f"{'='*40}")
-
-        for item in self.items:
-            print(f"  {item}")
-
-        print(f"{'-'*40}")
-        print(f"Subtotal:        ${self.get_total():>10.2f}")
-        print(f"Tax (8%):        ${self.apply_tax():>10.2f}")
-        print(f"Tip (15%):       ${self.apply_tip():>10.2f}")
-        print(f"{'='*40}")
-        print(f"TOTAL:           ${self.get_final_total():>10.2f}")
-        print(f"{'='*40}\n")
-
 # Usage
 # Create menu items
 burger = MenuItem("Classic Burger", 12.99, "Main")
@@ -601,10 +442,10 @@ order.print_receipt()
 # ========================================
 # Order #ORD-001 - Table 5
 # ========================================
-#   2x Classic Burger = $25.98
-#   2x French Fries = $9.98
-#   3x Soft Drink = $8.97
-#   1x Caesar Salad = $8.99
+# x Classic Burger = $25.98
+# x French Fries = $9.98
+# x Soft Drink = $8.97
+# x Caesar Salad = $8.99
 # ----------------------------------------
 # Subtotal:        $     53.92
 # Tax (8%):        $      4.31
@@ -613,127 +454,6 @@ order.print_receipt()
 # TOTAL:           $     66.32
 # ========================================
 ```
-
-#### Example 5: Library Management System
-
-```python
-class Author:
-    def __init__(self, name, birth_year):
-        self.name = name
-        self.birth_year = birth_year
-
-    def __str__(self):
-        return f"{self.name} (b. {self.birth_year})"
-
-class Book:
-    def __init__(self, isbn, title, author, year):
-        self.isbn = isbn
-        self.title = title
-        self.author = author  # Composition
-        self.year = year
-        self.is_available = True
-
-    def __str__(self):
-        return f"'{self.title}' by {self.author.name} ({self.year})"
-
-class Member:
-    def __init__(self, member_id, name):
-        self.member_id = member_id
-        self.name = name
-        self.borrowed_books = []
-
-    def __str__(self):
-        return f"{self.name} (ID: {self.member_id})"
-
-class Loan:
-    def __init__(self, book, member, due_days=14):
-        self.book = book
-        self.member = member
-        self.due_days = due_days
-        self.is_returned = False
-
-    def return_book(self):
-        self.is_returned = True
-        self.book.is_available = True
-
-    def __str__(self):
-        status = "Returned" if self.is_returned else f"Due in {self.due_days} days"
-        return f"{self.book.title} - {status}"
-
-class Library:
-    def __init__(self, name):
-        self.name = name
-        self.books = []  # Composition
-        self.members = []  # Composition
-        self.loans = []  # Composition
-
-    def add_book(self, book):
-        self.books.append(book)
-        print(f"Added book: {book}")
-
-    def register_member(self, member):
-        self.members.append(member)
-        print(f"Registered member: {member}")
-
-    def lend_book(self, isbn, member_id):
-        book = next((b for b in self.books if b.isbn == isbn), None)
-        member = next((m for m in self.members if m.member_id == member_id), None)
-
-        if not book:
-            print("Book not found")
-            return False
-
-        if not member:
-            print("Member not found")
-            return False
-
-        if not book.is_available:
-            print(f"{book.title} is not available")
-            return False
-
-        loan = Loan(book, member)
-        self.loans.append(loan)
-        book.is_available = False
-        member.borrowed_books.append(book)
-        print(f"Loaned {book.title} to {member.name}")
-        return True
-
-    def return_book(self, isbn, member_id):
-        loan = next((l for l in self.loans
-                    if l.book.isbn == isbn and
-                    l.member.member_id == member_id and
-                    not l.is_returned), None)
-
-        if loan:
-            loan.return_book()
-            loan.member.borrowed_books.remove(loan.book)
-            print(f"{loan.member.name} returned {loan.book.title}")
-            return True
-
-        print("Loan not found")
-        return False
-
-    def show_available_books(self):
-        print(f"\nAvailable Books at {self.name}:")
-        available = [b for b in self.books if b.is_available]
-        if available:
-            for book in available:
-                print(f"  [{book.isbn}] {book}")
-        else:
-            print("  No books available")
-
-    def show_member_loans(self, member_id):
-        member = next((m for m in self.members if m.member_id == member_id), None)
-        if not member:
-            print("Member not found")
-            return
-
-        print(f"\n{member.name}'s Borrowed Books:")
-        if member.borrowed_books:
-            for book in member.borrowed_books:
-                print(f"  {book}")
-        else:
-            print("  No borrowed books")
 
 # Usage
 library = Library("City Public Library")

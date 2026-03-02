@@ -1,5 +1,4 @@
-## Lecture Notes: Adding and Modifying Dictionary Entries
-
+## Adding and Modifying Dictionary Entries
 
 ---
 

@@ -1,4 +1,4 @@
-# LO-48: Debug Python Programs
+# Debug Python Programs
 
 ## Learning Objective
 Students will be able to use debugging techniques and print statements effectively in Python programming.

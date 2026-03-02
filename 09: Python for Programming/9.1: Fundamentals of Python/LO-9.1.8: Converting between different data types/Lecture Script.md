@@ -1,4 +1,4 @@
-### LO-8 Convert Between Data Types (16 minutes)
+### Convert Between Data Types (16 minutes)
 
 
 ### CS Theory Bite

@@ -1,4 +1,4 @@
-# Pre-Read: Implement Boolean Data Types
+# Implement Boolean Data Types
 
 ## What are Booleans?
 

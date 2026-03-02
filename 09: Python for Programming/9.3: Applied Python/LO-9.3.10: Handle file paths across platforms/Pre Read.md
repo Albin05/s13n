@@ -1,4 +1,4 @@
-## Pre-Read: Handle File Paths Across Platforms
+## Handle File Paths Across Platforms
 
 
 ---

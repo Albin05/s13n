@@ -1,15 +1,14 @@
-# Lecture Notes: Apply Encapsulation
+# Apply Encapsulation
 
 ## Apply Encapsulation
 
 Hiding internal details and controlling access
 
-
 ---
 
 <div align="center">
 
-![Python Encapsulation Data Hiding Private Attributes](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.28.jpg)
+![Python Encapsulation Data Hiding Private Attributes](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.jpg)
 
 *Encapsulation protects internal data within Python's type system, controlling access through defined interfaces*
 
@@ -317,92 +316,6 @@ user.logout()
 # print(user.__password_hash)  # AttributeError
 ```
 
-#### Example 3: Temperature Sensor with Validation
-
-```python
-class TemperatureSensor:
-    def __init__(self, sensor_id, location):
-        self.__sensor_id = sensor_id
-        self.__location = location
-        self.__temperature = 0.0
-        self.__min_temp = -50.0
-        self.__max_temp = 150.0
-        self.__readings = []
-        self.__is_active = True
-
-    def get_sensor_id(self):
-        return self.__sensor_id
-
-    def get_location(self):
-        return self.__location
-
-    def get_temperature(self):
-        return self.__temperature
-
-    def is_active(self):
-        return self.__is_active
-
-    def __validate_temperature(self, temp):
-        """Private validation method"""
-        if not isinstance(temp, (int, float)):
-            return False
-        if temp < self.__min_temp or temp > self.__max_temp:
-            return False
-        return True
-
-    def __record_reading(self, temp):
-        """Private method to record readings"""
-        self.__readings.append(temp)
-        if len(self.__readings) > 100:
-            self.__readings.pop(0)  # Keep only last 100 readings
-
-    def set_temperature(self, temp):
-        if not self.__is_active:
-            print("Sensor is inactive")
-            return False
-
-        if not self.__validate_temperature(temp):
-            print(f"Invalid temperature: {temp}")
-            self.__is_active = False
-            print("Sensor deactivated due to invalid reading")
-            return False
-
-        self.__temperature = temp
-        self.__record_reading(temp)
-        return True
-
-    def get_average_temperature(self):
-        if not self.__readings:
-            return 0.0
-        return sum(self.__readings) / len(self.__readings)
-
-    def get_min_recorded(self):
-        if not self.__readings:
-            return None
-        return min(self.__readings)
-
-    def get_max_recorded(self):
-        if not self.__readings:
-            return None
-        return max(self.__readings)
-
-    def reset_sensor(self):
-        self.__temperature = 0.0
-        self.__readings = []
-        self.__is_active = True
-        print(f"Sensor {self.__sensor_id} reset")
-
-    def display_status(self):
-        print(f"\nSensor ID: {self.__sensor_id}")
-        print(f"Location: {self.__location}")
-        print(f"Current Temperature: {self.__temperature}°C")
-        print(f"Status: {'Active' if self.__is_active else 'Inactive'}")
-        print(f"Readings Count: {len(self.__readings)}")
-        if self.__readings:
-            print(f"Average: {self.get_average_temperature():.2f}°C")
-            print(f"Min: {self.get_min_recorded()}°C")
-            print(f"Max: {self.get_max_recorded()}°C")
-
 # Usage
 sensor = TemperatureSensor("TEMP-001", "Server Room")
 
@@ -431,100 +344,6 @@ sensor.display_status()
 sensor.reset_sensor()
 # Sensor TEMP-001 reset
 ```
-
-#### Example 4: Student Grade System with Properties
-
-```python
-class Student:
-    def __init__(self, student_id, name):
-        self.__student_id = student_id
-        self.__name = name
-        self.__grades = {}
-        self.__attendance_rate = 100.0
-
-    # Using @property decorator (Pythonic way)
-    @property
-    def student_id(self):
-        return self.__student_id
-
-    @property
-    def name(self):
-        return self.__name
-
-    @name.setter
-    def name(self, new_name):
-        if not new_name or not isinstance(new_name, str):
-            raise ValueError("Name must be a non-empty string")
-        self.__name = new_name
-
-    @property
-    def attendance_rate(self):
-        return self.__attendance_rate
-
-    @attendance_rate.setter
-    def attendance_rate(self, rate):
-        if 0 <= rate <= 100:
-            self.__attendance_rate = rate
-        else:
-            raise ValueError("Attendance rate must be between 0 and 100")
-
-    def add_grade(self, subject, score):
-        if not isinstance(score, (int, float)):
-            print("Score must be a number")
-            return False
-
-        if not 0 <= score <= 100:
-            print("Score must be between 0 and 100")
-            return False
-
-        self.__grades[subject] = score
-        print(f"Added {subject}: {score}")
-        return True
-
-    def get_grade(self, subject):
-        return self.__grades.get(subject, None)
-
-    def get_all_grades(self):
-        return self.__grades.copy()
-
-    def __calculate_letter_grade(self, score):
-        """Private method to convert score to letter grade"""
-        if score >= 90:
-            return "A"
-        elif score >= 80:
-            return "B"
-        elif score >= 70:
-            return "C"
-        elif score >= 60:
-            return "D"
-        return "F"
-
-    def get_gpa(self):
-        if not self.__grades:
-            return 0.0
-
-        grade_points = {"A": 4.0, "B": 3.0, "C": 2.0, "D": 1.0, "F": 0.0}
-        total = sum(grade_points[self.__calculate_letter_grade(score)]
-                   for score in self.__grades.values())
-        return total / len(self.__grades)
-
-    def get_transcript(self):
-        print(f"\nTranscript for {self.__name} (ID: {self.__student_id})")
-        print(f"Attendance Rate: {self.__attendance_rate}%")
-        print("\nGrades:")
-
-        if not self.__grades:
-            print("  No grades recorded")
-        else:
-            for subject, score in self.__grades.items():
-                letter = self.__calculate_letter_grade(score)
-                print(f"  {subject}: {score} ({letter})")
-
-        print(f"\nGPA: {self.get_gpa():.2f}")
-
-    def is_eligible_for_honors(self):
-        """Private criteria for honors"""
-        return self.get_gpa() >= 3.5 and self.__attendance_rate >= 95
 
 # Usage
 student = Student("S12345", "Alice Johnson")
@@ -561,165 +380,6 @@ if student.is_eligible_for_honors():
 # Alice Smith is eligible for honors!
 ```
 
-#### Example 5: Shopping Cart with Price Protection
-
-```python
-class Product:
-    def __init__(self, product_id, name, price):
-        self.__product_id = product_id
-        self.__name = name
-        self.__price = self.__validate_price(price)
-
-    def __validate_price(self, price):
-        """Private validation method"""
-        if not isinstance(price, (int, float)):
-            raise ValueError("Price must be a number")
-        if price < 0:
-            raise ValueError("Price cannot be negative")
-        return round(price, 2)
-
-    @property
-    def product_id(self):
-        return self.__product_id
-
-    @property
-    def name(self):
-        return self.__name
-
-    @property
-    def price(self):
-        return self.__price
-
-    @price.setter
-    def price(self, new_price):
-        self.__price = self.__validate_price(new_price)
-
-    def __str__(self):
-        return f"{self.__name} (${self.__price})"
-
-class CartItem:
-    def __init__(self, product, quantity):
-        self.__product = product
-        self.__quantity = self.__validate_quantity(quantity)
-
-    def __validate_quantity(self, quantity):
-        """Private validation"""
-        if not isinstance(quantity, int):
-            raise ValueError("Quantity must be an integer")
-        if quantity <= 0:
-            raise ValueError("Quantity must be positive")
-        return quantity
-
-    @property
-    def product(self):
-        return self.__product
-
-    @property
-    def quantity(self):
-        return self.__quantity
-
-    @quantity.setter
-    def quantity(self, new_quantity):
-        self.__quantity = self.__validate_quantity(new_quantity)
-
-    def get_subtotal(self):
-        return self.__product.price * self.__quantity
-
-    def __str__(self):
-        return f"{self.__quantity}x {self.__product.name} = ${self.get_subtotal():.2f}"
-
-class ShoppingCart:
-    def __init__(self):
-        self.__items = []
-        self.__discount_rate = 0.0
-
-    def __find_item(self, product_id):
-        """Private helper method"""
-        for item in self.__items:
-            if item.product.product_id == product_id:
-                return item
-        return None
-
-    def add_item(self, product, quantity=1):
-        existing_item = self.__find_item(product.product_id)
-
-        if existing_item:
-            existing_item.quantity += quantity
-            print(f"Updated {product.name} quantity to {existing_item.quantity}")
-        else:
-            cart_item = CartItem(product, quantity)
-            self.__items.append(cart_item)
-            print(f"Added {cart_item}")
-
-    def remove_item(self, product_id):
-        item = self.__find_item(product_id)
-        if item:
-            self.__items.remove(item)
-            print(f"Removed {item.product.name}")
-            return True
-        print("Product not found in cart")
-        return False
-
-    def update_quantity(self, product_id, new_quantity):
-        item = self.__find_item(product_id)
-        if item:
-            try:
-                item.quantity = new_quantity
-                print(f"Updated {item.product.name} quantity to {new_quantity}")
-                return True
-            except ValueError as e:
-                print(f"Error: {e}")
-                return False
-        print("Product not found in cart")
-        return False
-
-    def apply_discount(self, discount_rate):
-        if 0 <= discount_rate <= 100:
-            self.__discount_rate = discount_rate
-            print(f"Applied {discount_rate}% discount")
-            return True
-        print("Discount must be between 0 and 100")
-        return False
-
-    def get_subtotal(self):
-        return sum(item.get_subtotal() for item in self.__items)
-
-    def get_discount_amount(self):
-        return self.get_subtotal() * (self.__discount_rate / 100)
-
-    def get_total(self):
-        return self.get_subtotal() - self.get_discount_amount()
-
-    def get_item_count(self):
-        return sum(item.quantity for item in self.__items)
-
-    def clear_cart(self):
-        self.__items = []
-        self.__discount_rate = 0.0
-        print("Cart cleared")
-
-    def display_cart(self):
-        print("\n" + "="*50)
-        print("SHOPPING CART")
-        print("="*50)
-
-        if not self.__items:
-            print("Cart is empty")
-        else:
-            for item in self.__items:
-                print(f"  {item}")
-
-            print("-"*50)
-            print(f"Subtotal:        ${self.get_subtotal():>10.2f}")
-
-            if self.__discount_rate > 0:
-                print(f"Discount ({self.__discount_rate}%): -${self.get_discount_amount():>10.2f}")
-
-            print("="*50)
-            print(f"TOTAL:           ${self.get_total():>10.2f}")
-            print(f"Items:           {self.get_item_count():>10}")
-        print("="*50 + "\n")
-
 # Usage
 laptop = Product("P001", "Laptop", 999.99)
 mouse = Product("P002", "Mouse", 29.99)
@@ -746,9 +406,9 @@ cart.display_cart()
 # ==================================================
 # SHOPPING CART
 # ==================================================
-#   1x Laptop = $999.99
-#   3x Mouse = $89.97
-#   1x Keyboard = $79.99
+# x Laptop = $999.99
+# x Mouse = $89.97
+# x Keyboard = $79.99
 # --------------------------------------------------
 # Subtotal:        $   1169.95
 # Discount (10%): -$    116.99

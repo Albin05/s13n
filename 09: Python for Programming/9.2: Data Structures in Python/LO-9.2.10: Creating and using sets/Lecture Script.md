@@ -1,4 +1,4 @@
-## Lecture Script: Creating and Using Sets
+## Creating and Using Sets
 
 
 ---
@@ -600,7 +600,7 @@ print(f"Only one survey: {only_one}")
 # Total unique respondents
 total = survey1_respondents | survey2_respondents
 print(f"Total unique: {len(total)}")
-# 7
+# 
 ```
 
 **Application 6: Finding Common Elements**

@@ -1,4 +1,4 @@
-# Lecture Script: LO-70 Apply Encapsulation
+# Apply Encapsulation
 
 
 ### CS Theory Bite

@@ -1,4 +1,4 @@
-# LO-56: Import Built-in Modules
+# Import Built-in Modules
 
 ## Learning Objective
 Students will be able to work with Using Python's standard library modules in Python.

@@ -1,4 +1,4 @@
-## Pre-Read: Adding and Modifying Dictionary Entries
+## Adding and Modifying Dictionary Entries
 
 **Duration:** 5 minutes
 

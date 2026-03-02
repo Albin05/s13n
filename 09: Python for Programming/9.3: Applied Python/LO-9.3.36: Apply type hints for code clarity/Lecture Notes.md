@@ -1,15 +1,14 @@
-# Lecture Notes: Apply Type Hints
+# Apply Type Hints
 
 ## Type Hints
 
 Type hints (type annotations) document the expected types of variables, function parameters, and return values. They improve code readability and enable better IDE support, but don't enforce types at runtime.
 
-
 ---
 
 <div align="center">
 
-![Python Type Hints Annotation Function Code](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.36.png)
+![Python Type Hints Annotation Function Code](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Type hints reference Python's type hierarchy to annotate expected types for code clarity*
 
@@ -256,73 +255,11 @@ totals: Dict[str, int] = aggregate_data(sales_data)
 print(f"Totals: {totals}")  # {'apples': 25, 'oranges': 8, 'bananas': 20}
 ```
 
-### Example 3: Configuration Management
-
-```python
-from typing import Dict, Any, Union
-
-ConfigValue = Union[str, int, bool, float]
-
-def load_config() -> Dict[str, ConfigValue]:
-    """Load configuration settings"""
-    return {
-        "host": "localhost",
-        "port": 8080,
-        "debug": True,
-        "timeout": 30.5
-    }
-
-def get_config_value(config: Dict[str, ConfigValue], key: str, default: ConfigValue = None) -> ConfigValue:
-    """Get configuration value with optional default"""
-    return config.get(key, default)
-
-config: Dict[str, ConfigValue] = load_config()
-host: ConfigValue = get_config_value(config, "host")
-port: ConfigValue = get_config_value(config, "port")
-debug: ConfigValue = get_config_value(config, "debug")
-
-print(f"Server: {host}:{port}, Debug: {debug}")
-```
-
-### Example 4: API Response Handling
-
-```python
-from typing import List, Dict, Optional, TypedDict
-
-class UserResponse(TypedDict):
-    id: int
-    name: str
-    email: str
-    active: bool
-
-def fetch_users() -> List[UserResponse]:
-    """Fetch users from API"""
-    return [
-        {"id": 1, "name": "Alice", "email": "alice@example.com", "active": True},
-        {"id": 2, "name": "Bob", "email": "bob@example.com", "active": False}
-    ]
-
-def get_active_users(users: List[UserResponse]) -> List[UserResponse]:
-    """Filter for active users only"""
-    return [user for user in users if user["active"]]
-
-def find_user_by_id(users: List[UserResponse], user_id: int) -> Optional[UserResponse]:
-    """Find user by ID"""
-    for user in users:
-        if user["id"] == user_id:
-            return user
-    return None
-
 # Usage
 all_users: List[UserResponse] = fetch_users()
 active_users: List[UserResponse] = get_active_users(all_users)
 user: Optional[UserResponse] = find_user_by_id(all_users, 1)
 ```
-
-### Example 5: Type Aliases
-
-```python
-from typing import List, Dict, Tuple
 
 # Define type aliases for complex types
 Coordinate = Tuple[float, float]

@@ -1,4 +1,4 @@
-# LO-65: Define Instance Methods
+# Define Instance Methods
 
 ## Learning Objective
 Students will be able to use Creating methods that operate on instances in Python programs.

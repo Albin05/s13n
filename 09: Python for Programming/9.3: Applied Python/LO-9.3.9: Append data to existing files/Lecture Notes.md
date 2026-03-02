@@ -1,15 +1,14 @@
-# Lecture Notes: Append to Files
+# Append to Files
 
 ## Append Mode
 
 Append mode ("a") adds content to the end of a file without deleting existing content.
 
-
 ---
 
 <div align="center">
 
-![Python Append File open() a Mode](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.9.png)
+![Python Append File open() a Mode](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Appending to files follows the Input-Process-Output pattern: read existing content, then add new data*
 
@@ -172,33 +171,10 @@ log_event("Data saved")
 # app.log contains all events with timestamps
 ```
 
-### Example 3: Attendance System
-
-```python
-def mark_attendance(name):
-    with open("attendance.txt", "a") as f:
-        f.write(f"{name} - Present\n")
-
-mark_attendance("Alice")
-mark_attendance("Bob")
-mark_attendance("Charlie")
-
 # attendance.txt:
 # Alice - Present
 # Bob - Present
 # Charlie - Present
-```
-
-### Example 4: Score Tracker
-
-```python
-def save_score(player, score):
-    with open("scores.txt", "a") as f:
-        f.write(f"{player}: {score}\n")
-
-save_score("Alice", 100)
-save_score("Bob", 95)
-save_score("Charlie", 110)
 ```
 
 ## File Creation
@@ -275,7 +251,7 @@ with open("data.txt", "r") as f:
 
 ## Common Mistakes
 
-### 1. Using "w" When You Want "a"
+### Using "w" When You Want "a"
 
 ```python
 # Wrong - erases file each time!
@@ -291,7 +267,7 @@ for i in range(5):
 # File contains: 0 1 2 3 4
 ```
 
-### 2. Forgetting Newline
+### Forgetting Newline
 
 ```python
 # Wrong - all on one line

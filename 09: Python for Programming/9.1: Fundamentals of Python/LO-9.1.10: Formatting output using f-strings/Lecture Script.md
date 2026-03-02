@@ -1,4 +1,4 @@
-### LO-10 Format Output with F-strings (16 minutes)
+### Format Output with F-strings (16 minutes)
 
 
 ### CS Theory Bite

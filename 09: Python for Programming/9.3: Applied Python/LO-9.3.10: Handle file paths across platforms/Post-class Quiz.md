@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What module provides cross-platform path handling?
 
 A) `os.system`
@@ -16,7 +16,7 @@ D) `filepath`
 
 ---
 
-### Question 2
+### 
 What does `Path("a") / "b" / "c.txt"` produce?
 
 A) `"a/b/c.txt"` or `"a\b\c.txt"` depending on OS
@@ -30,7 +30,7 @@ D) `"abc.txt"`
 
 ---
 
-### Question 3
+### 
 What does `Path("file.tar.gz").suffix` return?
 
 A) `".tar.gz"`
@@ -44,7 +44,7 @@ D) `"tar.gz"`
 
 ---
 
-### Question 4
+### 
 How do you find all `.py` files recursively in a directory?
 
 A) `Path("dir").glob("*.py")`
@@ -58,7 +58,7 @@ D) `Path("dir").search("*.py")`
 
 ---
 
-### Question 5
+### 
 What does `Path("data.txt").resolve()` do?
 
 A) Deletes the file

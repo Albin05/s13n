@@ -1,4 +1,4 @@
-## Pre-Read: Iterating Through Dictionaries
+## Iterating Through Dictionaries
 
 **Duration:** 5 minutes
 

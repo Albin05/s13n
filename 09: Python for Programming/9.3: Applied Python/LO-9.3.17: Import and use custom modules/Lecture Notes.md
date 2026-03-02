@@ -1,15 +1,14 @@
-# Lecture Notes: Import Custom Modules
+# Import Custom Modules
 
 ## Import Custom Modules
 
 Creating and importing your own Python modules
 
-
 ---
 
 <div align="center">
 
-![Python Import Custom Module from file](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.17.png)
+![Python Import Custom Module from file](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Custom modules organize your own functions into reusable files that can be imported across projects*
 
@@ -25,11 +24,11 @@ Custom modules implement **code organization** - splitting programs into reusabl
 
 **Before modules** (monolithic file): Everything in one file - unmaintainable:
 ```python
-# 5000-line file - nightmare!
+# -line file - nightmare!
 def user_login(): ...
 def database_query(): ...
 def send_email(): ...
-# 4997 more lines...
+# more lines...
 # Impossible to navigate!
 ```
 
@@ -226,17 +225,6 @@ for user in active:
 #   - User: charlie (Active)
 ```
 
-#### Example 3: Package Structure
-
-```
-my_package/
-├── __init__.py           # Makes it a package
-├── math_utils.py
-├── string_utils.py
-└── validators.py
-```
-
-```python
 # File: my_package/__init__.py
 """My custom package"""
 __version__ = "1.0.0"
@@ -290,9 +278,6 @@ if validators.is_valid_email(email):
     print(f"{email} is valid")
 ```
 
-#### Example 4: Module with Configuration
-
-```python
 # File: config.py
 """Application configuration"""
 
@@ -342,9 +327,6 @@ print(f"API timeout: {config.API['timeout']}s")
 # API timeout: 30s
 ```
 
-#### Example 5: Utility Module with __name__ == "__main__"
-
-```python
 # File: utils.py
 """Utility functions"""
 
@@ -400,9 +382,9 @@ print("Module search path:")
 for path in sys.path:
     print(f"  - {path}")
 
-# 1. Current directory
-# 2. PYTHONPATH environment variable
-# 3. Installation-dependent default paths
+# Current directory
+# PYTHONPATH environment variable
+# Installation-dependent default paths
 ```
 
 ### Best Practices

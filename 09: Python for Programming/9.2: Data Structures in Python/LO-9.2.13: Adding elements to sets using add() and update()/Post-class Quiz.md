@@ -4,7 +4,7 @@
 
 ---
 
-### Q1: Basic add() Syntax
+### Basic add() Syntax
 
 What will be the output of the following code?
 
@@ -25,7 +25,7 @@ print(len(fruits))
 
 ---
 
-### Q2: Handling Duplicates
+### Handling Duplicates
 
 What will be the output?
 
@@ -47,7 +47,7 @@ print(numbers)
 
 ---
 
-### Q3: update() Method Behavior
+### update() Method Behavior
 
 What will be the output?
 
@@ -68,7 +68,7 @@ print(len(tags))
 
 ---
 
-### Q4: Common Mistake
+### Common Mistake
 
 What happens when you run this code?
 
@@ -88,7 +88,7 @@ my_set.add([1, 2, 3])
 
 ---
 
-### Q5: Best Practice Selection
+### Best Practice Selection
 
 Which approach is MOST efficient for adding multiple elements to a set?
 

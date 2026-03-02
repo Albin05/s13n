@@ -1,4 +1,4 @@
-# Pre-Read: Using Range() Function for Numeric Iteration
+# Using Range() Function for Numeric Iteration
 
 ## What is range()?
 

@@ -1,4 +1,4 @@
-## Lecture Script: Raise Exceptions to Signal Errors
+## Raise Exceptions to Signal Errors
 
 
 ---

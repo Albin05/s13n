@@ -1,4 +1,4 @@
-## Lecture Script: Write Data to Text Files
+## Write Data to Text Files
 
 
 ---

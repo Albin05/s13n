@@ -1,4 +1,4 @@
-# Lecture Script: LO-51 Append to Files
+# Append to Files
 
 
 ### CS Theory Bite

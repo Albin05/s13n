@@ -1,4 +1,4 @@
-# LO-52: Handle File Paths
+# Handle File Paths
 
 ## Learning Objective
 Students will be able to work with Working with file paths using os.path in Python.

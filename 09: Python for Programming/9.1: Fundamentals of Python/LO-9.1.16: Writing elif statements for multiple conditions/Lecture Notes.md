@@ -1,4 +1,4 @@
-# Lecture Notes: Write Elif Statements
+# Write Elif Statements
 
 ## Introduction
 
@@ -8,7 +8,7 @@ The `elif` (else-if) statement allows programs to check **multiple conditions in
 
 <div align="center">
 
-![Python elif Multiple Conditions Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.16.png)
+![Python elif Multiple Conditions Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *elif chains check conditions sequentially — the first True condition executes, then the rest are skipped*
 
@@ -38,7 +38,6 @@ Once you press 2, the system doesn't check options 3, 4, 5... It found its match
 ## Elif Statements
 
 The `elif` (else if) statement allows you to check multiple conditions where **only one block of code will execute**.
-
 
 ### Basic Syntax
 

@@ -1,4 +1,4 @@
-# LO-69: Implement Composition
+# Implement Composition
 
 ## Learning Objective
 Students will be able to use Building complex objects from simpler ones in Python programs.

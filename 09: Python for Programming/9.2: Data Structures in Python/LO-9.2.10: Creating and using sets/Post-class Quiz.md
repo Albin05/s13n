@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What is the output of the following code?
 
 ```python
@@ -21,7 +21,7 @@ D) Error
 
 ---
 
-### Question 2
+### 
 Which of the following correctly creates an empty set?
 
 A) `empty = {}`  
@@ -35,7 +35,7 @@ D) `empty = ()`
 
 ---
 
-### Question 3
+### 
 What is the result of the following set operation?
 
 ```python
@@ -56,7 +56,7 @@ D) `{5, 6}`
 
 ---
 
-### Question 4
+### 
 Which statement about sets is FALSE?
 
 A) Sets can contain duplicate elements  
@@ -70,7 +70,7 @@ D) Set elements must be immutable (hashable)
 
 ---
 
-### Question 5
+### 
 What does the following code output?
 
 ```python

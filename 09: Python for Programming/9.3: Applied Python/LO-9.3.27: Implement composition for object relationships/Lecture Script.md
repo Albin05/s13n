@@ -1,4 +1,4 @@
-# Lecture Script: LO-69 Implement Composition
+# Implement Composition
 
 
 ### CS Theory Bite
@@ -215,7 +215,7 @@ class Car:
 car = Car("Toyota", "Camry")
 car.start()
 # Starting Toyota Camry
-# 250HP Gasoline engine started
+# HP Gasoline engine started
 
 car.drive_to("San Francisco")
 # Route set to San Francisco

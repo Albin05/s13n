@@ -1,4 +1,4 @@
-# LO-79: Write Unit Tests with pytest
+# Write Unit Tests with pytest
 
 ## Learning Objective
 Students will be able to use Writing automated tests in Python programs.

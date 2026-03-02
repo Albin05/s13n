@@ -1,4 +1,4 @@
-# Lecture Script: LO-9.3.35 Use Context Managers for Resource Management
+# Use Context Managers for Resource Management
 
 
 ### CS Theory Bite

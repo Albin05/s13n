@@ -1,4 +1,4 @@
-## Lecture Script: Checking for Key Existence
+## Checking for Key Existence
 
 
 ---

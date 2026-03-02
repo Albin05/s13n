@@ -1,15 +1,14 @@
-# Lecture Notes: Use Context Managers
+# Use Context Managers
 
 ## Context Managers
 
 Context managers provide a way to allocate and release resources precisely when needed. They use the `with` statement to ensure cleanup code is always executed.
 
-
 ---
 
 <div align="center">
 
-![Python Context Manager with Statement](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.35.png)
+![Python Context Manager with Statement](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Context managers follow an enter-then-exit pattern, ensuring resources are properly acquired and released*
 
@@ -254,29 +253,6 @@ with Timer() as timer:
 print(f"Operation took {timer.elapsed:.2f} seconds")
 ```
 
-### Example 3: Directory Changer
-
-```python
-import os
-
-class ChangeDirectory:
-    """Context manager to temporarily change directory"""
-
-    def __init__(self, new_path):
-        self.new_path = new_path
-        self.original_path = None
-
-    def __enter__(self):
-        self.original_path = os.getcwd()
-        print(f"Changing from {self.original_path} to {self.new_path}")
-        # In real code: os.chdir(self.new_path)
-        return self
-
-    def __exit__(self, exc_type, exc_value, traceback):
-        print(f"Returning to {self.original_path}")
-        # In real code: os.chdir(self.original_path)
-        return False
-
 # Using the directory changer
 current_dir = os.getcwd()
 print(f"Current directory: {current_dir}")
@@ -287,31 +263,6 @@ with ChangeDirectory("/tmp"):
 
 print("Back in original directory")
 ```
-
-### Example 4: Resource Lock Manager
-
-```python
-import time
-
-class ResourceLock:
-    """Context manager for acquiring and releasing a lock"""
-
-    def __init__(self, resource_name):
-        self.resource_name = resource_name
-        self.locked = False
-
-    def __enter__(self):
-        print(f"Acquiring lock on {self.resource_name}...")
-        time.sleep(0.1)  # Simulate lock acquisition
-        self.locked = True
-        print(f"Lock acquired on {self.resource_name}")
-        return self
-
-    def __exit__(self, exc_type, exc_value, traceback):
-        print(f"Releasing lock on {self.resource_name}...")
-        self.locked = False
-        print(f"Lock released on {self.resource_name}")
-        return False
 
 # Using the resource lock
 with ResourceLock("database"):
@@ -324,24 +275,6 @@ with ResourceLock("file1"), ResourceLock("file2"):
     print("Working with multiple resources")
 # Both locks released
 ```
-
-### Example 5: Temporary File Suppressor
-
-```python
-import sys
-from io import StringIO
-
-class SuppressOutput:
-    """Context manager to suppress stdout"""
-
-    def __enter__(self):
-        self.original_stdout = sys.stdout
-        sys.stdout = StringIO()  # Redirect to string buffer
-        return self
-
-    def __exit__(self, exc_type, exc_value, traceback):
-        sys.stdout = self.original_stdout  # Restore original stdout
-        return False
 
 # Using output suppression
 print("This will be printed")

@@ -1,4 +1,4 @@
-### LO-12 Apply Operator Precedence (16 minutes)
+### Apply Operator Precedence (16 minutes)
 
 
 ### CS Theory Bite

@@ -1,4 +1,4 @@
-## Pre-Read: Modifying Lists Using Built-in Methods
+## Modifying Lists Using Built-in Methods
 
 ## What Are List Methods?
 

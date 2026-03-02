@@ -1,4 +1,4 @@
-### LO-20 Control Loops with Break (25 minutes)
+### Control Loops with Break (25 minutes)
 
 
 ### CS Theory Bite

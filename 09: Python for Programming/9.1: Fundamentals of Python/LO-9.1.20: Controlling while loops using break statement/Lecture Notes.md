@@ -1,4 +1,4 @@
-# Lecture Notes: Control While Loops with Break
+# Control While Loops with Break
 
 ## Introduction
 
@@ -8,7 +8,7 @@ The `break` statement provides an **emergency exit** from loops - a way to stop 
 
 <div align="center">
 
-![Python break Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.20.png)
+![Python break Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *The break statement exits the loop immediately — jumping straight past the loop body to the next statement*
 
@@ -37,7 +37,6 @@ It's an immediate exit when something important happens.
 ## The Break Statement
 
 `break` immediately exits the current loop, regardless of the loop condition.
-
 
 ### Basic Syntax
 
@@ -75,23 +74,6 @@ while True:
     print(f"Executing: {command}")
 
 print("Program ended")
-```
-
-### Example 3: Limit Attempts
-
-```python
-attempts = 0
-max_attempts = 3
-
-while attempts < max_attempts:
-    password = input("Enter password: ")
-    if password == "secret":
-        print("Access granted!")
-        break
-    attempts += 1
-    print(f"Wrong! {max_attempts - attempts} attempts left")
-else:
-    print("Account locked")
 ```
 
 ## Break vs Condition

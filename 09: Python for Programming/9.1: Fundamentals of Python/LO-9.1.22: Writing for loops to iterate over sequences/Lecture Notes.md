@@ -1,4 +1,4 @@
-# Lecture Notes: Write For Loops
+# Write For Loops
 
 ## Introduction
 
@@ -24,7 +24,7 @@ You process the entire collection, one item at a time, automatically.
 
 <div align="center">
 
-![Python for Loop Flowchart Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.22.png)
+![Python for Loop Flowchart Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *Flowchart of a for loop: the loop checks the sequence for remaining items, executes the body for each item, and exits when the sequence is exhausted*
 
@@ -35,7 +35,6 @@ You process the entire collection, one item at a time, automatically.
 ## For Loops
 
 A for loop iterates over a sequence (list, string, range, etc.).
-
 
 ### Basic Syntax
 
@@ -71,25 +70,7 @@ for fruit in fruits:
 # cherry
 ```
 
-### Example 3: Count Using Range
-
-```python
-for i in range(5):
-    print(i)
-
 # Output: 0 1 2 3 4
-```
-
-### Example 4: Sum Numbers
-
-```python
-numbers = [10, 20, 30, 40]
-total = 0
-
-for num in numbers:
-    total += num
-
-print(f"Total: {total}")  # 100
 ```
 
 ## For Loop vs While Loop

@@ -1,5 +1,4 @@
-## Lecture Notes: Debug Python Programs Effectively
-
+## Debug Python Programs Effectively
 
 ---
 

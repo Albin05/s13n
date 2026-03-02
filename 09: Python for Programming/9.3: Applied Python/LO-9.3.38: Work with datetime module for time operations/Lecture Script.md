@@ -1,4 +1,4 @@
-# Lecture Script: LO-9.3.38 Work with Datetime Module for Time Operations
+# Work with Datetime Module for Time Operations
 
 
 ### CS Theory Bite
@@ -297,10 +297,10 @@ now = datetime.now()
 
 # Common format strings
 print(f"ISO format: {now.strftime('%Y-%m-%d %H:%M:%S')}")
-# 2024-12-01 15:30:45
+# -12-01 15:30:45
 
 print(f"US format: {now.strftime('%m/%d/%Y')}")
-# 12/01/2024
+# /01/2024
 
 print(f"Readable: {now.strftime('%B %d, %Y')}")
 # December 01, 2024
@@ -309,7 +309,7 @@ print(f"With day: {now.strftime('%A, %B %d, %Y')}")
 # Sunday, December 01, 2024
 
 print(f"12-hour: {now.strftime('%I:%M %p')}")
-# 03:30 PM
+# 30 PM
 
 # Parse string as datetime
 date_string = "2024-12-25"

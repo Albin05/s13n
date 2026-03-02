@@ -1,4 +1,4 @@
-# Lecture Script: LO-72 Use Dictionary Comprehensions
+# Use Dictionary Comprehensions
 
 
 ### CS Theory Bite

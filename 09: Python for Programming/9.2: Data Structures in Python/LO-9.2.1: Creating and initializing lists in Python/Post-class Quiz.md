@@ -1,6 +1,6 @@
 ## Post-class Quiz: Creating and Initializing Lists in Python
 
-### Question 1
+### 
 Which of the following creates an empty list?
 
 A) `list = {}`
@@ -13,7 +13,7 @@ D) `list = ""`
 
 ---
 
-### Question 2
+### 
 What is the output of `list(range(3, 8))`?
 
 A) [3, 4, 5, 6, 7, 8]
@@ -26,7 +26,7 @@ D) [3, 8]
 
 ---
 
-### Question 3
+### 
 What does `"hello world".split()` return?
 
 A) ['hello world']
@@ -39,7 +39,7 @@ D) ['h', 'w']
 
 ---
 
-### Question 4
+### 
 Given `matrix = [[1, 2], [3, 4], [5, 6]]`, what is `matrix[1][1]`?
 
 A) 1
@@ -52,7 +52,7 @@ D) 4
 
 ---
 
-### Question 5
+### 
 What is the output of `[1, 2] + [3, 4]`?
 
 A) [1, 2, 3, 4]

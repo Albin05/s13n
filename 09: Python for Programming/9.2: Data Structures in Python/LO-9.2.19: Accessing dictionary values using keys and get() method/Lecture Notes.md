@@ -1,5 +1,4 @@
-## Lecture Notes: Accessing Dictionary Values Using Keys and get() Method
-
+## Accessing Dictionary Values Using Keys and get() Method
 
 ---
 
@@ -11,7 +10,7 @@ The `[]` vs `.get()` choice revisits **fail-fast vs. fail-safe** design - same p
 
 <div align="center">
 
-![Python Dictionary get() Method Access](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.19.png)
+![Python Dictionary get() Method Access](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
 
 *dict[key] and dict.get(key) both look up values by hashing the key — the difference is how they handle missing keys*
 
@@ -100,7 +99,7 @@ for word in words:
         word_count[word] += 1
     else:
         word_count[word] = 1
-# 5 lines just to count!
+# lines just to count!
 ```
 
 **With `.get()`** (elegant):
@@ -108,7 +107,7 @@ for word in words:
 word_count = {}
 for word in words:
     word_count[word] = word_count.get(word, 0) + 1
-# 2 lines! .get(word, 0) returns 0 if new word
+# lines! .get(word, 0) returns 0 if new word
 ```
 
 **Even better** (Counter):

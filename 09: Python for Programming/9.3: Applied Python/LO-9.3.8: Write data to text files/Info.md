@@ -1,4 +1,4 @@
-# LO-50: Write Text Files
+# Write Text Files
 
 ## Learning Objective
 Students will be able to use file writing with open() effectively in Python programming.

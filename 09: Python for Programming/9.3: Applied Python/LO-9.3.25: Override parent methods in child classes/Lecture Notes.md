@@ -1,15 +1,14 @@
-# Lecture Notes: Override Methods
+# Override Methods
 
 ## Override Methods
 
 Redefining parent class methods in child classes
 
-
 ---
 
 <div align="center">
 
-![Python Method Override Polymorphism](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.25.png)
+![Python Method Override Polymorphism](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Method overriding replaces parent behavior at specific nodes in the class hierarchy tree*
 
@@ -289,70 +288,6 @@ for emp in employees:
 # Salary: $4500
 ```
 
-#### Example 3: Bank Account Types
-
-```python
-class BankAccount:
-    def __init__(self, account_number, balance):
-        self.account_number = account_number
-        self.balance = balance
-        self.transactions = []
-
-    def deposit(self, amount):
-        self.balance += amount
-        self.transactions.append(f"Deposit: +${amount}")
-        return self.balance
-
-    def withdraw(self, amount):
-        if amount <= self.balance:
-            self.balance -= amount
-            self.transactions.append(f"Withdrawal: -${amount}")
-            return True
-        return False
-
-    def get_interest(self):
-        return 0
-
-class SavingsAccount(BankAccount):
-    def __init__(self, account_number, balance, interest_rate):
-        super().__init__(account_number, balance)
-        self.interest_rate = interest_rate
-
-    def get_interest(self):  # Override
-        return self.balance * self.interest_rate
-
-    def withdraw(self, amount):  # Override with restriction
-        if self.balance - amount < 500:  # Minimum balance requirement
-            print("Cannot withdraw: Minimum balance of $500 required")
-            return False
-        return super().withdraw(amount)
-
-class CheckingAccount(BankAccount):
-    def __init__(self, account_number, balance, overdraft_limit):
-        super().__init__(account_number, balance)
-        self.overdraft_limit = overdraft_limit
-
-    def withdraw(self, amount):  # Override with overdraft
-        if amount <= self.balance + self.overdraft_limit:
-            self.balance -= amount
-            self.transactions.append(f"Withdrawal: -${amount}")
-            if self.balance < 0:
-                print(f"Warning: Overdraft used. Balance: ${self.balance}")
-            return True
-        print("Insufficient funds including overdraft")
-        return False
-
-class PremiumAccount(SavingsAccount):
-    def __init__(self, account_number, balance):
-        super().__init__(account_number, balance, 0.05)  # 5% interest
-        self.reward_points = 0
-
-    def deposit(self, amount):  # Override to add rewards
-        super().deposit(amount)
-        self.reward_points += int(amount / 100)  # 1 point per $100
-        print(f"Earned {int(amount / 100)} reward points!")
-        return self.balance
-
 # Usage
 savings = SavingsAccount("SA001", 1000, 0.03)
 checking = CheckingAccount("CA001", 500, 200)
@@ -368,75 +303,6 @@ print("Premium balance:", premium.balance)  # 6000
 print("Premium interest:", premium.get_interest())  # 300.0
 ```
 
-#### Example 4: Vehicle System
-
-```python
-class Vehicle:
-    def __init__(self, brand, model, year):
-        self.brand = brand
-        self.model = model
-        self.year = year
-        self.is_running = False
-
-    def start(self):
-        self.is_running = True
-        return "Vehicle started"
-
-    def stop(self):
-        self.is_running = False
-        return "Vehicle stopped"
-
-    def display_info(self):
-        print(f"{self.year} {self.brand} {self.model}")
-
-class Car(Vehicle):
-    def __init__(self, brand, model, year, num_doors):
-        super().__init__(brand, model, year)
-        self.num_doors = num_doors
-        self.trunk_open = False
-
-    def start(self):  # Override
-        if not self.trunk_open:
-            self.is_running = True
-            return "Car engine started"
-        return "Cannot start: Close trunk first"
-
-    def display_info(self):  # Override
-        super().display_info()
-        print(f"Doors: {self.num_doors}")
-
-class Motorcycle(Vehicle):
-    def __init__(self, brand, model, year, engine_cc):
-        super().__init__(brand, model, year)
-        self.engine_cc = engine_cc
-        self.kickstand_up = False
-
-    def start(self):  # Override
-        if self.kickstand_up:
-            self.is_running = True
-            return "Motorcycle started with a roar!"
-        return "Cannot start: Put kickstand up first"
-
-    def display_info(self):  # Override
-        super().display_info()
-        print(f"Engine: {self.engine_cc}cc")
-
-class ElectricCar(Car):
-    def __init__(self, brand, model, year, num_doors, battery_capacity):
-        super().__init__(brand, model, year, num_doors)
-        self.battery_capacity = battery_capacity
-        self.battery_level = 100
-
-    def start(self):  # Override
-        if self.battery_level > 0:
-            self.is_running = True
-            return "Electric car started silently"
-        return "Cannot start: Battery empty"
-
-    def display_info(self):  # Override
-        super().display_info()
-        print(f"Battery: {self.battery_capacity}kWh ({self.battery_level}% charged)")
-
 # Usage
 car = Car("Toyota", "Camry", 2023, 4)
 motorcycle = Motorcycle("Harley", "Sportster", 2023, 883)
@@ -444,82 +310,23 @@ electric = ElectricCar("Tesla", "Model 3", 2023, 4, 75)
 
 print(car.start())  # Car engine started
 car.display_info()
-# 2023 Toyota Camry
+# Toyota Camry
 # Doors: 4
 
 print()
 motorcycle.kickstand_up = True
 print(motorcycle.start())  # Motorcycle started with a roar!
 motorcycle.display_info()
-# 2023 Harley Sportster
+# Harley Sportster
 # Engine: 883cc
 
 print()
 print(electric.start())  # Electric car started silently
 electric.display_info()
-# 2023 Tesla Model 3
+# Tesla Model 3
 # Doors: 4
 # Battery: 75kWh (100% charged)
 ```
-
-#### Example 5: Document Processing
-
-```python
-class Document:
-    def __init__(self, title, content):
-        self.title = title
-        self.content = content
-
-    def format(self):
-        return f"Title: {self.title}\n{self.content}"
-
-    def word_count(self):
-        return len(self.content.split())
-
-class Report(Document):
-    def __init__(self, title, content, author, date):
-        super().__init__(title, content)
-        self.author = author
-        self.date = date
-
-    def format(self):  # Override
-        header = f"REPORT\n{'=' * 50}\n"
-        header += f"Title: {self.title}\n"
-        header += f"Author: {self.author}\n"
-        header += f"Date: {self.date}\n"
-        header += f"{'=' * 50}\n\n"
-        return header + self.content
-
-class Email(Document):
-    def __init__(self, title, content, sender, recipient):
-        super().__init__(title, content)
-        self.sender = sender
-        self.recipient = recipient
-
-    def format(self):  # Override
-        header = f"From: {self.sender}\n"
-        header += f"To: {self.recipient}\n"
-        header += f"Subject: {self.title}\n"
-        header += "-" * 50 + "\n\n"
-        return header + self.content
-
-class Article(Document):
-    def __init__(self, title, content, author, tags):
-        super().__init__(title, content)
-        self.author = author
-        self.tags = tags
-        self.views = 0
-
-    def format(self):  # Override
-        header = f"{self.title}\n"
-        header += f"By {self.author}\n"
-        header += f"Tags: {', '.join(self.tags)}\n"
-        header += f"Views: {self.views}\n"
-        header += "=" * 50 + "\n\n"
-        return header + self.content
-
-    def word_count(self):  # Override to exclude title
-        return len(self.content.split())
 
 # Usage
 report = Report(

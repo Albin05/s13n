@@ -1,4 +1,4 @@
-# Pre-Read: Use List Comprehensions
+# Use List Comprehensions
 
 ## List Comprehensions
 

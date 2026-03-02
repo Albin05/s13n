@@ -1,4 +1,4 @@
-### LO-9 Accept User Input (16 minutes)
+### Accept User Input (16 minutes)
 
 
 ### CS Theory Bite

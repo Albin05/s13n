@@ -1,4 +1,4 @@
-## Pre-Read: Creating and Using Sets
+## Creating and Using Sets
 
 **Duration:** 5 minutes
 
@@ -266,18 +266,18 @@ fruits.remove('banana')
 ### Try to Predict
 
 ```python
-# Question 1
+# 
 my_set = {1, 2, 3, 2, 1}
 print(len(my_set))
 # What's the length?
 
-# Question 2
+# 
 set1 = {1, 2, 3}
 set2 = {3, 4, 5}
 result = set1 & set2
 # What's in result?
 
-# Question 3
+# 
 empty = {}
 print(type(empty))
 # What's the type?

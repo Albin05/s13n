@@ -1,15 +1,14 @@
-# Lecture Notes: Create Objects
+# Create Objects
 
 ## Creating Objects (Instances)
 
 An object is a specific instance of a class. You can create multiple objects from the same class.
 
-
 ---
 
 <div align="center">
 
-![Python Class Instantiation Object Creation](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.20.png)/userfiles/images/Python-Classes-Instances.png)
+![Python Class Instantiation Object Creation](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)/userfiles/images/Python-Classes-Instances.png)
 
 *Creating objects from classes works like a function machine: input parameters, output a new object*
 
@@ -192,27 +191,6 @@ print(f"Alice's balance: ${alice_account.balance}")  # $1200
 print(f"Bob's balance: ${bob_account.balance}")      # $400
 ```
 
-### Example 3: Shopping Cart
-
-```python
-class ShoppingCart:
-    def __init__(self):
-        self.items = []
-    
-    def add_item(self, item, price):
-        self.items.append({"item": item, "price": price})
-        print(f"Added {item} for ${price}")
-    
-    def get_total(self):
-        total = sum(item["price"] for item in self.items)
-        return total
-    
-    def show_items(self):
-        print("Cart contents:")
-        for item in self.items:
-            print(f"  - {item['item']}: ${item['price']}")
-        print(f"Total: ${self.get_total()}")
-
 # Create separate carts for different customers
 alice_cart = ShoppingCart()
 bob_cart = ShoppingCart()
@@ -232,24 +210,6 @@ alice_cart.show_items()
 print("\nBob's cart:")
 bob_cart.show_items()
 ```
-
-### Example 4: Student Records
-
-```python
-class Student:
-    def __init__(self, name, grade):
-        self.name = name
-        self.grade = grade
-        self.courses = []
-    
-    def enroll(self, course):
-        self.courses.append(course)
-        print(f"{self.name} enrolled in {course}")
-    
-    def show_info(self):
-        print(f"Student: {self.name}")
-        print(f"Grade: {self.grade}")
-        print(f"Courses: {', '.join(self.courses)}")
 
 # Create student objects
 alice = Student("Alice", 10)

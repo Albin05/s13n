@@ -1,4 +1,4 @@
-# Lecture Script: LO-9.3.33 Apply Decorators to Modify Function Behavior
+# Apply Decorators to Modify Function Behavior
 
 
 ### CS Theory Bite
@@ -110,7 +110,7 @@ print(add(5, 3))
 #   Args: (5, 3)
 #   Kwargs: {}
 # add() returned: 8
-# 8
+# 
 
 # Test with keyword arguments
 print(greet("Alice", greeting="Hi"))
@@ -253,14 +253,14 @@ print(fibonacci(5))
 # Calculating result for (0,)
 # Returning cached result for (2,)
 # Returning cached result for (3,)
-# 5
+# 
 
 print("\nCalculating fibonacci(6):")
 print(fibonacci(6))
 # Calculating result for (6,)
 # Returning cached result for (5,)
 # Returning cached result for (4,)
-# 8
+# 
 ```
 
 **Say**: "Fibonacci without memoization is exponentially slow. With memoization, it's lightning fast!"

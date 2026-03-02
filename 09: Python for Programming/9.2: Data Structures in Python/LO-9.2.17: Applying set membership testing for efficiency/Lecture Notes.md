@@ -1,5 +1,4 @@
-## Lecture Notes: Applying Set Membership Testing for Efficiency
-
+## Applying Set Membership Testing for Efficiency
 
 ---
 
@@ -11,7 +10,7 @@ Set membership testing demonstrates **data structure choice changes everything**
 
 <div align="center">
 
-![Python Set Membership Testing with in](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.17.png)
+![Python Set Membership Testing with in](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
 
 *Sets use hash tables internally — the `in` operator computes a hash to find elements in O(1) constant time*
 
@@ -87,9 +86,9 @@ index = hash('apple') % table_size
 ```python
 # Check membership:
 'apple' in my_set
-# 1. hash('apple') → 5678901234
-# 2. 5678901234 % table_size → index 42
-# 3. Check position 42 → Found!
+# hash('apple') → 5678901234
+# 5678901234 % table_size → index 42
+# Check position 42 → Found!
 # Total: 3 operations (constant time!)
 ```
 

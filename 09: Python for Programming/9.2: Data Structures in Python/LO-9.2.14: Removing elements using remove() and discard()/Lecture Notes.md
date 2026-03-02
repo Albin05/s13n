@@ -1,5 +1,4 @@
-## Lecture Notes: Removing Elements using remove() and discard()
-
+## Removing Elements using remove() and discard()
 
 ---
 
@@ -11,7 +10,7 @@ The `remove()` vs `discard()` duality embodies **fail-fast vs. fail-safe** desig
 
 <div align="center">
 
-![Python Set remove() Method Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.14.png)
+![Python Set remove() Method Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
 
 *remove() and discard() both eliminate elements from a set — the difference is how they handle missing elements*
 
@@ -116,7 +115,7 @@ The choice between remove() and discard() is crucial for robust code.
 
 ---
 
-## 1. The remove() Method (3 minutes)
+## The remove() Method (3 minutes)
 
 ### Syntax
 ```python
@@ -179,7 +178,7 @@ def process_transaction(tx_id):
 
 ---
 
-## 2. The discard() Method (3 minutes)
+## The discard() Method (3 minutes)
 
 ### Syntax
 ```python
@@ -239,7 +238,7 @@ def remove_from_cart(item_id):
 
 ---
 
-## 3. remove() vs discard() (2 minutes)
+## remove() vs discard() (2 minutes)
 
 ### Comparison Table
 
@@ -283,7 +282,7 @@ active_users.discard('bob')  # No error handling needed!
 
 ---
 
-## 4. Additional Removal Methods (2 minutes)
+## Additional Removal Methods (2 minutes)
 
 ### pop() - Remove Arbitrary Element
 
@@ -348,7 +347,7 @@ class GameSession:
 
 ---
 
-## 5. Practical Patterns (2 minutes)
+## Practical Patterns (2 minutes)
 
 ### Pattern 1: Safe User-Driven Removal
 
@@ -416,7 +415,7 @@ def start_task(task_id):
 
 ## Common Pitfalls
 
-### 1. Using remove() for Uncertain Data
+### Using remove() for Uncertain Data
 ```python
 # Bad - might crash
 user_tags.remove('java')  # KeyError if not present
@@ -425,7 +424,7 @@ user_tags.remove('java')  # KeyError if not present
 user_tags.discard('java')  # Safe
 ```
 
-### 2. Assuming pop() Order
+### Assuming pop() Order
 ```python
 # Bad - assuming order
 numbers = {1, 2, 3, 4, 5}
@@ -435,7 +434,7 @@ first = numbers.pop()  # NOT guaranteed to be 1!
 any_number = numbers.pop()
 ```
 
-### 3. Modifying Set During Iteration
+### Modifying Set During Iteration
 ```python
 # Bad - RuntimeError possible
 for tag in tags:

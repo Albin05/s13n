@@ -1,4 +1,4 @@
-## Lecture Script: Accessing Dictionary Values
+## Accessing Dictionary Values
 
 
 ---

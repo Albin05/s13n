@@ -1,6 +1,6 @@
-# Post-class Quiz: Defining Reusable Functions in Python
+# Defining Reusable Functions in Python
 
-## Question 1
+## 
 
 What is the correct syntax to define a function named `greet` in Python?
 
@@ -15,7 +15,7 @@ D) `func greet():`
 
 ---
 
-## Question 2
+## 
 
 What happens when you define a function but never call it?
 
@@ -30,7 +30,7 @@ D) The function is deleted
 
 ---
 
-## Question 3
+## 
 
 What will this code output?
 
@@ -53,7 +53,7 @@ D) Error
 
 ---
 
-## Question 4
+## 
 
 Which of these is a valid function name in Python?
 
@@ -73,7 +73,7 @@ D) `def`
 
 ---
 
-## Question 5
+## 
 
 What is required after the function definition line?
 
@@ -88,7 +88,7 @@ D) Nothing
 
 ---
 
-## Question 6
+## 
 
 How do you call a function named `display_menu`?
 
@@ -103,7 +103,7 @@ D) `run display_menu`
 
 ---
 
-## Question 7
+## 
 
 What will happen with this code?
 
@@ -125,7 +125,7 @@ D) SyntaxError
 
 ---
 
-## Question 8
+## 
 
 What is the purpose of indentation in function definitions?
 
@@ -140,7 +140,7 @@ D) To separate functions
 
 ---
 
-## Question 9
+## 
 
 Which naming convention is preferred for Python functions?
 
@@ -155,7 +155,7 @@ D) `kebab-case` (e.g., `calculate-sum`)
 
 ---
 
-## Question 10
+## 
 
 What will this code print?
 
@@ -179,7 +179,7 @@ D) Error
 
 ---
 
-## Question 11
+## 
 
 What is one main benefit of using functions?
 
@@ -194,7 +194,7 @@ D) Uses more memory
 
 ---
 
-## Question 12
+## 
 
 What will this code output?
 
@@ -223,7 +223,7 @@ Each print statement outputs on a new line, so the result is three lines of outp
 
 ---
 
-## Question 13
+## 
 
 Can a function contain conditional statements (if/else)?
 
@@ -238,7 +238,7 @@ D) Only simple functions can
 
 ---
 
-## Question 14
+## 
 
 What happens if you have a syntax error inside a function definition?
 
@@ -253,7 +253,7 @@ D) Python auto-corrects it
 
 ---
 
-## Question 15
+## 
 
 Which is true about the `pass` statement in functions?
 

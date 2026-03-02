@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What is the difference between `import math` and `from math import sqrt`?
 
 A) import math gives full module; from math import sqrt gives one function
@@ -14,7 +14,7 @@ D) import math only imports math functions
 
 ---
 
-### Question 2
+### 
 Which module would you use to generate random numbers?
 
 A) math
@@ -26,7 +26,7 @@ D) randlib
 
 ---
 
-### Question 3-5
+### -5
 
 *(Additional quiz questions following the same format covering: dir() and help(), common module functions, import best practices)*
 

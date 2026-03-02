@@ -1,4 +1,4 @@
-## Lecture Script: Using List Comprehensions
+## Using List Comprehensions
 
 
 ---

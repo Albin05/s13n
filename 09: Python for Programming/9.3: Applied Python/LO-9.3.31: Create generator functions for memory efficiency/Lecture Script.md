@@ -1,4 +1,4 @@
-# Lecture Script: LO-9.3.31 Create Generator Functions
+# Create Generator Functions
 
 
 ### CS Theory Bite
@@ -27,7 +27,7 @@ def generate_numbers(n):
 # This works perfectly with huge numbers!
 for num in generate_numbers(10):
     print(num, end=" ")
-# 0 1 2 3 4 5 6 7 8 9
+# 1 2 3 4 5 6 7 8 9
 ```
 
 **Say**: "That's the power of generators! Let's master them."

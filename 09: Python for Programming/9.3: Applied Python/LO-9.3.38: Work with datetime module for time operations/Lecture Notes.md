@@ -1,15 +1,14 @@
-# Lecture Notes: Work with Datetime Module
+# Work with Datetime Module
 
 ## The datetime Module
 
 Python's datetime module provides classes for manipulating dates and times in both simple and complex ways.
 
-
 ---
 
 <div align="center" height="10px" width="10px">
 
-![Python datetime Module Date Time Operations](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.38.jpg)
+![Python datetime Module Date Time Operations](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.jpg)
 
 *Datetime operations use arithmetic to calculate durations, differences, and time-based computations*
 
@@ -299,24 +298,6 @@ christmas = EventCountdown("Christmas", datetime(2024, 12, 25, 0, 0, 0))
 print(f"Is Christmas today? {christmas.is_today()}")
 ```
 
-### Example 3: Working Hours Calculator
-
-```python
-from datetime import datetime, time, timedelta
-
-def calculate_work_hours(clock_in, clock_out, break_minutes=60):
-    """Calculate work hours with break deduction"""
-    # Calculate total time
-    total_time = clock_out - clock_in
-
-    # Deduct break
-    work_time = total_time - timedelta(minutes=break_minutes)
-
-    # Convert to hours
-    hours = work_time.total_seconds() / 3600
-
-    return hours
-
 # Usage
 clock_in = datetime(2024, 12, 1, 9, 0, 0)
 clock_out = datetime(2024, 12, 1, 17, 30, 0)
@@ -357,25 +338,18 @@ total = calculate_weekly_hours(week)
 print(f"\nTotal hours this week: {total:.2f}")
 ```
 
-### Example 4: Date Formatting
-
-```python
-from datetime import datetime
-
-now = datetime.now()
-
 # Common format strings
 print(f"Full: {now.strftime('%Y-%m-%d %H:%M:%S')}")
-# 2024-12-01 15:30:45
+# -12-01 15:30:45
 
 print(f"Date only: {now.strftime('%Y-%m-%d')}")
-# 2024-12-01
+# -12-01
 
 print(f"Time only: {now.strftime('%H:%M:%S')}")
-# 15:30:45
+# 30:45
 
 print(f"US format: {now.strftime('%m/%d/%Y')}")
-# 12/01/2024
+# /01/2024
 
 print(f"Readable: {now.strftime('%B %d, %Y')}")
 # December 01, 2024
@@ -384,7 +358,7 @@ print(f"With day: {now.strftime('%A, %B %d, %Y')}")
 # Sunday, December 01, 2024
 
 print(f"12-hour: {now.strftime('%I:%M %p')}")
-# 03:30 PM
+# 30 PM
 
 # Common format codes:
 # %Y - Year with century (2024)
@@ -400,11 +374,6 @@ print(f"12-hour: {now.strftime('%I:%M %p')}")
 # %B - Full month name (December)
 # %b - Short month name (Dec)
 ```
-
-### Example 5: Parsing Date Strings
-
-```python
-from datetime import datetime
 
 # Parse different date formats
 date_strings = [

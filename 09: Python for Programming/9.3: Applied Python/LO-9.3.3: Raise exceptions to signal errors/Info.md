@@ -1,4 +1,4 @@
-# LO-45: Raise Exceptions
+# Raise Exceptions
 
 ## Learning Objective
 Students will be able to use raising exceptions manually effectively in Python programming.

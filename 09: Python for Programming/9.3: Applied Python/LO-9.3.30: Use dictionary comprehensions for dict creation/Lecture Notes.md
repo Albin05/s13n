@@ -1,15 +1,14 @@
-# Lecture Notes: Use Dictionary Comprehensions
+# Use Dictionary Comprehensions
 
 ## Dictionary Comprehensions
 
 Dictionary comprehensions provide a concise way to create dictionaries based on existing sequences or other dictionaries.
 
-
 ---
 
 <div align="center">
 
-![Python Dictionary Comprehension Syntax](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.30.png)
+![Python Dictionary Comprehension Syntax](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Dictionary comprehensions use a for-loop pattern to create key-value pairs in a single expression*
 
@@ -252,9 +251,6 @@ print(f"\nWords grouped by length: {dict(words_by_length)}")
 # Words grouped by length: {5: ['brown', 'quick', 'jumps'], 4: ['lazy', 'over'], 3: ['fox', 'dog', 'the']}
 ```
 
-### Example 3: Product Inventory Management
-
-```python
 # Product inventory with prices
 inventory = {
     "laptop": {"price": 999, "stock": 5},
@@ -299,9 +295,6 @@ print(f"\nTotal inventory value: ${total_value}")
 # Total inventory value: $11220
 ```
 
-### Example 4: Data Transformation
-
-```python
 # Temperature readings in Fahrenheit
 temp_readings = {
     "Monday": 68,
@@ -338,9 +331,6 @@ print(f"\nAbbreviated: {abbrev_temps}")
 # Abbreviated: {'Mon': 68, 'Tue': 72, 'Wed': 65, 'Thu': 70, 'Fri': 75, 'Sat': 78, 'Sun': 73}
 ```
 
-### Example 5: User Data Processing
-
-```python
 # User data from a form
 users = [
     {"id": 1, "name": "Alice", "email": "alice@email.com", "age": 25, "active": True},
@@ -417,11 +407,11 @@ multiplication_table = {
 print("Multiplication Table:")
 for i, row in multiplication_table.items():
     print(f"{i}: {row}")
-# 1: {1: 1, 2: 2, 3: 3, 4: 4, 5: 5}
-# 2: {1: 2, 2: 4, 3: 6, 4: 8, 5: 10}
-# 3: {1: 3, 2: 6, 3: 9, 4: 12, 5: 15}
-# 4: {1: 4, 2: 8, 3: 12, 4: 16, 5: 20}
-# 5: {1: 5, 2: 10, 3: 15, 4: 20, 5: 25}
+# {1: 1, 2: 2, 3: 3, 4: 4, 5: 5}
+# {1: 2, 2: 4, 3: 6, 4: 8, 5: 10}
+# {1: 3, 2: 6, 3: 9, 4: 12, 5: 15}
+# {1: 4, 2: 8, 3: 12, 4: 16, 5: 20}
+# {1: 5, 2: 10, 3: 15, 4: 20, 5: 25}
 ```
 
 ## Key Takeaways

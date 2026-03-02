@@ -1,10 +1,10 @@
-# Post-class Quiz: Writing While Loops for Repeated Execution
+# Writing While Loops for Repeated Execution
 
 Test your understanding of while loops and their application in Python.
 
 ---
 
-## Q1: What is the output of this code?
+## What is the output of this code?
 ```python
 count = 1
 while count <= 3:
@@ -25,7 +25,7 @@ D) Infinite loop
 
 ---
 
-## Q2: What are the THREE essential parts of a while loop?
+## What are the THREE essential parts of a while loop?
 
 A) Start, Middle, End
 B) Initialization, Condition, Update
@@ -44,7 +44,7 @@ Missing any part can cause errors or infinite loops.
 
 ---
 
-## Q3: What causes an infinite loop?
+## What causes an infinite loop?
 
 A) Loop condition that's always True
 B) Forgetting to update loop variables
@@ -62,7 +62,7 @@ D) All of the above
 
 ---
 
-## Q4: What is the output?
+## What is the output?
 ```python
 x = 5
 while x > 0:
@@ -87,7 +87,7 @@ D) Infinite loop
 
 ---
 
-## Q5: What is a sentinel value?
+## What is a sentinel value?
 
 A) A guard that protects code
 B) A special value that signals loop termination
@@ -102,7 +102,7 @@ D) An error message
 
 ---
 
-## Q6: When should you use a while loop instead of a for loop?
+## When should you use a while loop instead of a for loop?
 
 A) Always use while, never for
 B) When you know exact number of iterations
@@ -117,7 +117,7 @@ D) Only for infinite loops
 
 ---
 
-## Q7: What is the output?
+## What is the output?
 ```python
 total = 0
 num = 1
@@ -147,7 +147,7 @@ D) 15
 
 ---
 
-## Q8: What is an accumulator in a loop?
+## What is an accumulator in a loop?
 
 A) A variable that accumulates speed
 B) A variable that builds up a result over iterations
@@ -166,7 +166,7 @@ Initialized before loop, updated inside loop.
 
 ---
 
-## Q9: What happens if the while condition is False from the start?
+## What happens if the while condition is False from the start?
 
 A) Error occurs
 B) Loop runs once anyway
@@ -181,7 +181,7 @@ D) Program crashes
 
 ---
 
-## Q10: What is the output?
+## What is the output?
 ```python
 i = 0
 while i < 3:
@@ -206,7 +206,7 @@ D) 0 2 4 6
 
 ---
 
-## Q11: What is a "priming read"?
+## What is a "priming read"?
 
 A) Reading input to prime a pump
 B) First input read before entering the loop
@@ -228,7 +228,7 @@ Ensures first value is available for condition check.
 
 ---
 
-## Q12: What is the output?
+## What is the output?
 ```python
 n = 10
 count = 0
@@ -257,7 +257,7 @@ D) 10
 
 ---
 
-## Q13: Which code pattern validates user input?
+## Which code pattern validates user input?
 
 A) `while input_valid: get_input()`
 B) `while input_invalid: get_input()`
@@ -278,7 +278,7 @@ Forces user to provide valid input before continuing.
 
 ---
 
-## Q14: What is the difference between `count += 1` and `count = count + 1`?
+## What is the difference between `count += 1` and `count = count + 1`?
 
 A) They're completely different
 B) They're equivalent (same result)
@@ -293,7 +293,7 @@ D) Second is more accurate
 
 ---
 
-## Q15: What is the output?
+## What is the output?
 ```python
 password = "secret"
 attempts = 0
@@ -323,22 +323,4 @@ D) Infinite loop
 
 ---
 
-## Score Interpretation
 
-- **13-15 correct**: Excellent! You've mastered while loops.
-- **10-12 correct**: Good work! Review loop conditions and update statements.
-- **7-9 correct**: Fair. Practice more with accumulators and sentinel values.
-- **Below 7**: Review the lesson materials on while loop structure and patterns.
-
-## Key Concepts to Remember
-
-1. **Three parts**: Initialize, Condition, Update
-2. **Condition checked first**: Before each iteration
-3. **Update is critical**: Without it, infinite loop
-4. **Accumulator pattern**: Build result over iterations
-5. **Sentinel value**: Special value that stops loop
-6. **While vs For**: While for unknown iterations
-7. **Priming read**: Get first value before loop
-8. **Validation pattern**: Loop while invalid
-9. **Zero iterations**: If condition False from start
-10. **Compound operators**: `+=`, `-=`, `*=`, `//=`

@@ -1,4 +1,4 @@
-## Pre-Read: Understanding Tuple Immutability
+## Understanding Tuple Immutability
 
 ## What Is Immutability?
 

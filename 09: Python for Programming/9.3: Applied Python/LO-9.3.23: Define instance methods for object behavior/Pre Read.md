@@ -1,4 +1,4 @@
-# Pre-Read: Define Instance Methods
+# Define Instance Methods
 
 ## Instance Methods
 

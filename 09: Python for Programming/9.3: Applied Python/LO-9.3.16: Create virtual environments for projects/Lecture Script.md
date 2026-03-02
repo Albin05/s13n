@@ -1,4 +1,4 @@
-## Lecture Script: Create Virtual Environments For Projects
+## Create Virtual Environments For Projects
 
 
 ---

@@ -1,4 +1,4 @@
-## Pre-Read: Creating and Initializing Lists in Python
+## Creating and Initializing Lists in Python
 
 ## What Are Lists?
 

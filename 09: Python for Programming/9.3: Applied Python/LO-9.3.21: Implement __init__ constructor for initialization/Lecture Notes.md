@@ -1,15 +1,14 @@
-# Lecture Notes: Implement the __init__ Constructor
+# Implement the __init__ Constructor
 
 ## The __init__ Method
 
 `__init__` is a special method (constructor) that automatically runs when you create an object.
 
-
 ---
 
 <div align="center">
 
-![Python __init__ Constructor Method Object](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.21.png)
+![Python __init__ Constructor Method Object](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *The __init__ constructor acts as a function machine, transforming input parameters into initialized object state*
 
@@ -209,22 +208,6 @@ print(book.current_page)  # 1
 print(book.is_open)       # False
 ```
 
-### Example 3: Student with Default Values
-
-```python
-class Student:
-    def __init__(self, name, grade, gpa=0.0):
-        self.name = name
-        self.grade = grade
-        self.gpa = gpa
-        self.courses = []
-    
-    def display(self):
-        print(f"Name: {self.name}")
-        print(f"Grade: {self.grade}")
-        print(f"GPA: {self.gpa}")
-        print(f"Courses: {len(self.courses)}")
-
 # With default GPA
 student1 = Student("Alice", 10)
 student1.display()
@@ -234,47 +217,9 @@ student2 = Student("Bob", 11, 3.8)
 student2.display()
 ```
 
-### Example 4: Rectangle
-
-```python
-class Rectangle:
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
-        self.area = width * height
-        self.perimeter = 2 * (width + height)
-    
-    def display(self):
-        print(f"Rectangle: {self.width}x{self.height}")
-        print(f"Area: {self.area}")
-        print(f"Perimeter: {self.perimeter}")
-
-rect = Rectangle(5, 3)
-rect.display()
 # Rectangle: 5x3
 # Area: 15
 # Perimeter: 16
-```
-
-### Example 5: Shopping Cart with Initial Items
-
-```python
-class ShoppingCart:
-    def __init__(self, customer_name):
-        self.customer = customer_name
-        self.items = []
-        self.total = 0
-        print(f"Shopping cart created for {customer_name}")
-    
-    def add_item(self, item, price):
-        self.items.append(item)
-        self.total += price
-        print(f"Added {item} (${price})")
-
-cart = ShoppingCart("Alice")
-cart.add_item("Book", 15)
-cart.add_item("Pen", 2)
-print(f"Total: ${cart.total}")
 ```
 
 ## Validation in __init__
@@ -343,7 +288,7 @@ print(counter.get_count())  # 2
 
 ## Common Mistakes
 
-### 1. Forgetting self
+### Forgetting self
 
 ```python
 # Wrong
@@ -363,7 +308,7 @@ dog = Dog("Buddy")
 print(dog.name)  # Buddy
 ```
 
-### 2. Forgetting self parameter
+### Forgetting self parameter
 
 ```python
 # Wrong
@@ -377,7 +322,7 @@ class Cat:
         self.name = name
 ```
 
-### 3. Wrong indentation
+### Wrong indentation
 
 ```python
 # Wrong

@@ -1,4 +1,4 @@
-# Pre-Read: Controlling For Loops with Break and Continue
+# Controlling For Loops with Break and Continue
 
 ## Why Control Flow in For Loops?
 
@@ -121,9 +121,9 @@ for num in numbers:
     print(num)
 
 # Output:
-# 5
-# 10
-# 15
+# 
+# 
+# 
 # Found large number: 20
 ```
 

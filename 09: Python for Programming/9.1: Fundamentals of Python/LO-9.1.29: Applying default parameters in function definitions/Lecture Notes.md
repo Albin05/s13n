@@ -1,4 +1,4 @@
-# Lecture Notes: Apply Default Parameters
+# Apply Default Parameters
 
 ## Introduction
 
@@ -47,7 +47,7 @@ Good defaults follow the **Principle of Least Surprise**:
 
 <div align="center">
 
-![Python Default Parameter Types Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.29.png)
+![Python Default Parameter Types Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *Default parameters provide preset values that are used automatically unless the caller explicitly overrides them*
 
@@ -58,7 +58,6 @@ Good defaults follow the **Principle of Least Surprise**:
 ## Apply Default Parameters
 
 Defining functions with default argument values
-
 
 ### Key Concepts
 
@@ -99,9 +98,6 @@ user2 = create_user("bob", "bob@example.com", role="admin")
 user3 = create_user("charlie", "charlie@example.com", active=False)
 ```
 
-#### Example 3: Mutable Default Gotcha
-
-```python
 # Bad - mutable default
 def add_item_bad(item, items=[]):
     items.append(item)

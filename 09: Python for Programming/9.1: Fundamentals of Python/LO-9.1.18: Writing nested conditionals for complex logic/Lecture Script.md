@@ -1,4 +1,4 @@
-### LO-18 Write Nested Conditionals (25 minutes)
+### Write Nested Conditionals (25 minutes)
 
 
 ### CS Theory Bite

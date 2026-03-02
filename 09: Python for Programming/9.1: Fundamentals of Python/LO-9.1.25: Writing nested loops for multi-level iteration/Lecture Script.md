@@ -1,4 +1,4 @@
-### LO-25 Write Nested Loops (20 minutes)
+### Write Nested Loops (20 minutes)
 
 
 ### CS Theory Bite
@@ -51,7 +51,7 @@ for outer in range(3):      # Runs 3 times
 
 **Rectangle pattern**:
 ```python
-# 4 rows, 6 columns
+# rows, 6 columns
 for row in range(4):
     for col in range(6):
         print('*', end=' ')
@@ -72,8 +72,8 @@ for i in range(1, 6):
     print()
 
 # Output:
-# 1×1= 1  1×2= 2  1×3= 3  1×4= 4  1×5= 5
-# 2×1= 2  2×2= 4  2×3= 6  2×4= 8  2×5=10
+# ×1= 1  1×2= 2  1×3= 3  1×4= 4  1×5= 5
+# ×1= 2  2×2= 4  2×3= 6  2×4= 8  2×5=10
 # ...
 ```
 
@@ -108,9 +108,9 @@ for row in grid:
     print()
 
 # Output:
-# 1 2 3
-# 4 5 6
-# 7 8 9
+# 2 3
+# 5 6
+# 8 9
 ```
 
 ### Advanced Patterns (2 minutes)

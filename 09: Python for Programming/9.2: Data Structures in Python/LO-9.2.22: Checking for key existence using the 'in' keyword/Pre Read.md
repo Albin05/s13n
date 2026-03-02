@@ -1,4 +1,4 @@
-## Pre-Read: Checking for Key Existence
+## Checking for Key Existence
 
 **Duration:** 5 minutes
 

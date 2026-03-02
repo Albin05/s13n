@@ -1,4 +1,4 @@
-## Pre-Read: Adding Elements to Sets using add() and update()
+## Adding Elements to Sets using add() and update()
 
 **Duration:** 5 minutes
 

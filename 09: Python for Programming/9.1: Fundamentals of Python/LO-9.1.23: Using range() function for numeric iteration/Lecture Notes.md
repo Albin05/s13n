@@ -1,4 +1,4 @@
-# Lecture Notes: Use Range Function
+# Use Range Function
 
 ## Introduction
 
@@ -36,7 +36,7 @@ Range saves memory by generating values **just in time**. This is called **lazy 
 
 <div align="center">
 
-![Python range() Function with for Loop](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.23.jpg)
+![Python range() Function with for Loop](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.jpg)
 
 *The range() function generates numbers on demand, enabling efficient numeric iteration without storing the entire sequence in memory*
 
@@ -47,7 +47,6 @@ Range saves memory by generating values **just in time**. This is called **lazy 
 ## The Range Function
 
 `range()` generates a sequence of numbers, commonly used with for loops.
-
 
 ### Three Forms
 
@@ -134,9 +133,9 @@ for i in range(len(fruits)):
     print(f"{i}: {fruits[i]}")
 
 # Output:
-# 0: apple
-# 1: banana
-# 2: cherry
+# apple
+# banana
+# cherry
 ```
 
 ## Key Takeaways

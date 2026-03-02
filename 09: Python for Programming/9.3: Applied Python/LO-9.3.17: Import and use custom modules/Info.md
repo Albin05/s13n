@@ -1,4 +1,4 @@
-# LO-59: Import Custom Modules
+# Import Custom Modules
 
 ## Learning Objective
 Students will be able to work with Creating and importing your own modules in Python.

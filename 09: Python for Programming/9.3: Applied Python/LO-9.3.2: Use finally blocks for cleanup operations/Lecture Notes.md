@@ -1,15 +1,14 @@
-# Lecture Notes: Use Finally Blocks
+# Use Finally Blocks
 
 ## Use Finally Blocks
 
 Executing cleanup code regardless of exceptions
 
-
 ---
 
 <div align="center">
 
-![Python try-finally Cleanup Block](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.2.png)
+![Python try-finally Cleanup Block](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *The finally block guarantees cleanup runs regardless of which branch executes, like a guaranteed exit path in a flowchart*
 
@@ -219,34 +218,6 @@ print(f"Result: {result}")
 # Result: Result for SELECT * FROM users
 ```
 
-#### Example 3: Try-Except-Else-Finally
-
-```python
-def divide_numbers(a, b):
-    """Demonstrate all exception handling blocks"""
-    print(f"Attempting to divide {a} by {b}")
-
-    try:
-        result = a / b
-        print("Division successful")
-
-    except ZeroDivisionError:
-        print("Error: Cannot divide by zero")
-        return None
-
-    except TypeError:
-        print("Error: Invalid types for division")
-        return None
-
-    else:
-        # Runs only if no exception occurred
-        print(f"Result calculated: {result}")
-        return result
-
-    finally:
-        # Always runs
-        print("Division operation complete\n")
-
 # Test cases
 divide_numbers(10, 2)
 # Attempting to divide 10 by 2
@@ -265,55 +236,6 @@ divide_numbers("10", 2)
 # Division operation complete
 ```
 
-#### Example 4: Resource Manager
-
-```python
-class ResourceManager:
-    """Manage resources with proper cleanup"""
-
-    def __init__(self, resource_name):
-        self.resource_name = resource_name
-        self.allocated = False
-
-    def allocate(self):
-        """Allocate resource"""
-        print(f"Allocating {self.resource_name}")
-        self.allocated = True
-
-    def use(self):
-        """Use the resource"""
-        if not self.allocated:
-            raise Exception("Resource not allocated")
-        print(f"Using {self.resource_name}")
-
-    def release(self):
-        """Release resource"""
-        if self.allocated:
-            print(f"Releasing {self.resource_name}")
-            self.allocated = False
-
-def perform_task(task_name, should_fail=False):
-    """Perform task with resource management"""
-    resource = ResourceManager(f"Resource-{task_name}")
-
-    try:
-        resource.allocate()
-        resource.use()
-
-        if should_fail:
-            raise ValueError("Task failed!")
-
-        print(f"Task {task_name} completed successfully")
-        return True
-
-    except ValueError as e:
-        print(f"Task {task_name} error: {e}")
-        return False
-
-    finally:
-        resource.release()
-        print(f"Task {task_name} cleanup done\n")
-
 # Usage
 perform_task("A", should_fail=False)
 # Allocating Resource-A
@@ -329,65 +251,6 @@ perform_task("B", should_fail=True)
 # Releasing Resource-B
 # Task B cleanup done
 ```
-
-#### Example 5: Transaction Management
-
-```python
-class Transaction:
-    """Simulated transaction with rollback"""
-
-    def __init__(self, transaction_id):
-        self.transaction_id = transaction_id
-        self.started = False
-        self.committed = False
-
-    def begin(self):
-        print(f"Transaction {self.transaction_id}: BEGIN")
-        self.started = True
-
-    def commit(self):
-        if self.started and not self.committed:
-            print(f"Transaction {self.transaction_id}: COMMIT")
-            self.committed = True
-
-    def rollback(self):
-        if self.started and not self.committed:
-            print(f"Transaction {self.transaction_id}: ROLLBACK")
-
-def process_payment(amount, should_fail=False):
-    """Process payment with transaction management"""
-    transaction = Transaction(f"PAY-{amount}")
-
-    try:
-        transaction.begin()
-
-        # Validation
-        if amount <= 0:
-            raise ValueError("Amount must be positive")
-
-        # Processing
-        print(f"Processing payment: ${amount}")
-
-        if should_fail:
-            raise Exception("Payment gateway error")
-
-        print(f"Payment ${amount} successful")
-        transaction.commit()
-        return True
-
-    except ValueError as e:
-        print(f"Validation error: {e}")
-        return False
-
-    except Exception as e:
-        print(f"Payment error: {e}")
-        return False
-
-    finally:
-        # Rollback if not committed
-        if transaction.started and not transaction.committed:
-            transaction.rollback()
-        print(f"Transaction cleanup complete\n")
 
 # Usage
 process_payment(100, should_fail=False)

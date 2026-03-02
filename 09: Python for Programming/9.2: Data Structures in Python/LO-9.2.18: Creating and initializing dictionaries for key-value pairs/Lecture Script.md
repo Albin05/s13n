@@ -1,4 +1,4 @@
-## Lecture Script: Creating and Initializing Dictionaries
+## Creating and Initializing Dictionaries
 
 
 ---

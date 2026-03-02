@@ -1,15 +1,14 @@
-# Lecture Notes: Handle File Paths
+# Handle File Paths
 
 ## File Paths
 
 A file path specifies the location of a file in the filesystem.
 
-
 ---
 
 <div align="center">
 
-![Python File Path pathlib os.path Tutorial](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.10.png)
+![Python File Path pathlib os.path Tutorial](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *File paths form a tree hierarchy similar to the DOM model, navigating from root to nested directories*
 
@@ -155,16 +154,6 @@ if os.path.exists(filename):
         print(f.read())
 else:
     print(f"{filename} not found!")
-```
-
-### Example 3: Find All .txt Files
-
-```python
-import os
-
-for file in os.listdir("."):
-    if os.path.isfile(file) and file.endswith(".txt"):
-        print(f"Found text file: {file}")
 ```
 
 ## Key Takeaways

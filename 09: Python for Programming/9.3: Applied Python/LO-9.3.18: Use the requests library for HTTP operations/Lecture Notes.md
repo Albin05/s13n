@@ -1,15 +1,14 @@
-# Lecture Notes: Use the requests Library
+# Use the requests Library
 
 ## Use the requests Library
 
 Making HTTP requests to interact with web APIs
 
-
 ---
 
 <div align="center">
 
-![Python requests Library GET POST Response](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.18.png)
+![Python requests Library GET POST Response](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *HTTP operations follow the Input-Process-Output pattern: send a request, server processes it, receive a response*
 
@@ -188,11 +187,6 @@ if response.status_code == 200:
 #   ...
 ```
 
-#### Example 3: POST Request with JSON
-
-```python
-import requests
-
 # API endpoint for testing POST requests
 url = 'https://httpbin.org/post'
 
@@ -225,65 +219,6 @@ print(f"  Age: {result['json']['age']}")
 #   Age: 28
 ```
 
-#### Example 4: Error Handling and Timeouts
-
-```python
-import requests
-from requests.exceptions import RequestException, Timeout, HTTPError
-
-class APIClient:
-    """Wrapper for making API requests with error handling"""
-
-    def __init__(self, base_url, timeout=10):
-        self.base_url = base_url
-        self.timeout = timeout
-
-    def get(self, endpoint, params=None):
-        """Make GET request with error handling"""
-        url = f"{self.base_url}/{endpoint}"
-
-        try:
-            response = requests.get(
-                url,
-                params=params,
-                timeout=self.timeout
-            )
-
-            # Raise exception for bad status codes (4xx, 5xx)
-            response.raise_for_status()
-
-            return response.json()
-
-        except Timeout:
-            print(f"Request timed out after {self.timeout}s")
-            return None
-
-        except HTTPError as e:
-            print(f"HTTP error occurred: {e}")
-            print(f"Status code: {response.status_code}")
-            return None
-
-        except RequestException as e:
-            print(f"Error making request: {e}")
-            return None
-
-    def post(self, endpoint, data):
-        """Make POST request with error handling"""
-        url = f"{self.base_url}/{endpoint}"
-
-        try:
-            response = requests.post(
-                url,
-                json=data,
-                timeout=self.timeout
-            )
-            response.raise_for_status()
-            return response.json()
-
-        except Exception as e:
-            print(f"Error: {e}")
-            return None
-
 # Usage
 client = APIClient('https://api.github.com')
 
@@ -299,57 +234,6 @@ if user:
 # Followers: 123,456
 # Public repos: 15
 ```
-
-#### Example 5: Working with Headers and Authentication
-
-```python
-import requests
-from requests.auth import HTTPBasicAuth
-
-class GitHubAPI:
-    """GitHub API client with authentication"""
-
-    def __init__(self, token=None):
-        self.base_url = 'https://api.github.com'
-        self.headers = {
-            'Accept': 'application/vnd.github.v3+json'
-        }
-
-        if token:
-            self.headers['Authorization'] = f'token {token}'
-
-    def get_user(self, username):
-        """Get user information"""
-        url = f"{self.base_url}/users/{username}"
-        response = requests.get(url, headers=self.headers)
-
-        if response.status_code == 200:
-            return response.json()
-        return None
-
-    def get_repo(self, owner, repo):
-        """Get repository information"""
-        url = f"{self.base_url}/repos/{owner}/{repo}"
-        response = requests.get(url, headers=self.headers)
-
-        if response.status_code == 200:
-            return response.json()
-        return None
-
-    def get_rate_limit(self):
-        """Check API rate limit"""
-        url = f"{self.base_url}/rate_limit"
-        response = requests.get(url, headers=self.headers)
-
-        if response.status_code == 200:
-            data = response.json()
-            core = data['rate']
-            return {
-                'limit': core['limit'],
-                'remaining': core['remaining'],
-                'reset_time': core['reset']
-            }
-        return None
 
 # Usage (without token for public data)
 api = GitHubAPI()

@@ -1,6 +1,6 @@
 ## Post-class Quiz: Accessing List Elements Using Indexing
 
-### Question 1
+### 
 Given `items = ['a', 'b', 'c', 'd', 'e']`, what is `items[-2]`?
 
 A) 'c'
@@ -13,7 +13,7 @@ D) Error
 
 ---
 
-### Question 2
+### 
 What happens when you try `lst[10]` on a list with only 5 elements?
 
 A) Returns None
@@ -26,7 +26,7 @@ D) Returns 0
 
 ---
 
-### Question 3
+### 
 Given `matrix = [[1,2], [3,4]]`, what is `matrix[0][1]`?
 
 A) 1
@@ -39,7 +39,7 @@ D) [1, 2]
 
 ---
 
-### Question 4
+### 
 How do you access the last element of a list without knowing its length?
 
 A) `lst[len(lst)]`
@@ -52,7 +52,7 @@ D) `lst[last]`
 
 ---
 
-### Question 5
+### 
 What does `lst.index(value)` return?
 
 A) The value at that index

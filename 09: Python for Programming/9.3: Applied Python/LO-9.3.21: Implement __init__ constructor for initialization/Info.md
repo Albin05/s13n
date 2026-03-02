@@ -1,4 +1,4 @@
-# LO-63: Implement the __init__ Constructor
+# Implement the __init__ Constructor
 
 ## Learning Objective
 Students will be able to use Initializing objects with __init__ method in Python programs.

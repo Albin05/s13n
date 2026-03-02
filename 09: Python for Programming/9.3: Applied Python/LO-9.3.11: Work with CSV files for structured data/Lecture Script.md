@@ -1,4 +1,4 @@
-# Lecture Script: LO-53 Work with CSV Files
+# Work with CSV Files
 
 
 ### CS Theory Bite

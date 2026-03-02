@@ -1,4 +1,4 @@
-## Pre-Read: Creating and Initializing Dictionaries
+## Creating and Initializing Dictionaries
 
 **Duration:** 5 minutes
 
@@ -28,7 +28,7 @@ Or like **locker system at gym**:
 ```python
 # You have to MEMORIZE what each position means!
 student = ['Alice', 22, 'A', 'alice@email.com']
-#           0       1    2     3
+# 1    2     3
 # What's index 2? Grade? Email? Have to remember!
 # Someone changes order → everything breaks!
 ```

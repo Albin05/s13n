@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Python Iterating List with for Loop](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.5.png)
+![Python Iterating List with for Loop](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
 
 *Flowchart illustrating how a loop iterates through elements, checking conditions and processing each item sequentially*
 
@@ -93,16 +93,16 @@ fruits = ['apple', 'banana', 'orange']
 
 for i, fruit in enumerate(fruits):
     print(f"{i}: {fruit}")
-# 0: apple
-# 1: banana
-# 2: orange
+# apple
+# banana
+# orange
 
 # Start from 1
 for num, fruit in enumerate(fruits, start=1):
     print(f"{num}. {fruit}")
-# 1. apple
-# 2. banana
-# 3. orange
+# apple
+# banana
+# orange
 ```
 
 **When to Use:**
@@ -139,7 +139,7 @@ i = 0
 while i < len(numbers) and numbers[i] < 40:
     print(numbers[i])
     i += 1
-# 10, 20, 30
+# , 20, 30
 ```
 
 **When to Use:**
@@ -232,7 +232,7 @@ for i in range(len(numbers)):
 ### Nested Lists
 
 ```python
-# 2D iteration
+# D iteration
 matrix = [
     [1, 2, 3],
     [4, 5, 6]
@@ -249,8 +249,8 @@ for row in matrix:
     for element in row:
         print(element, end=' ')
     print()
-# 1 2 3
-# 4 5 6
+# 2 3
+# 5 6
 
 # With indices
 for i, row in enumerate(matrix):
@@ -268,14 +268,14 @@ for num in [1, 2, 3, 4, 5]:
     if num > 3:
         break
     print(num)
-# 1 2 3
+# 2 3
 
 # continue - skip iteration
 for num in [1, 2, 3, 4, 5]:
     if num % 2 == 0:
         continue
     print(num)
-# 1 3 5
+# 3 5
 
 # else clause
 for num in [1, 2, 3]:

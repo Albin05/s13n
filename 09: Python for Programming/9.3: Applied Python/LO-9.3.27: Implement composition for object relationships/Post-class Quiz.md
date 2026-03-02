@@ -1,6 +1,6 @@
-# Post-Class Quiz: Implement Composition
+# Implement Composition
 
-## Q1: Question about Building complex objects from simpler ones
+## Question about Building complex objects from simpler ones
 A) Option A
 B) Option B
 C) Option C
@@ -9,7 +9,7 @@ C) Option C
 B - Explanation of OOP concept
 </details>
 
-## Q2: Syntax question
+## Syntax question
 A) Option A
 B) Option B
 C) Option C
@@ -18,7 +18,7 @@ C) Option C
 A - Explanation
 </details>
 
-## Q3: When to use Building complex objects from simpler ones?
+## When to use Building complex objects from simpler ones?
 A) Option A
 B) Option B
 C) Option C
@@ -27,7 +27,7 @@ C) Option C
 C - Practical explanation
 </details>
 
-## Q4: Best practice for Building complex objects from simpler ones
+## Best practice for Building complex objects from simpler ones
 A) Option A
 B) Option B
 C) Option C
@@ -36,7 +36,7 @@ C) Option C
 B - Best practice explanation
 </details>
 
-## Q5: Common mistake with Building complex objects from simpler ones
+## Common mistake with Building complex objects from simpler ones
 A) Option A
 B) Option B
 C) Option C

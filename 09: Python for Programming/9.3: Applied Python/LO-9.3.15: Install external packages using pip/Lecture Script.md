@@ -1,4 +1,4 @@
-## Lecture Script: Install External Packages Using Pip
+## Install External Packages Using Pip
 
 
 ---

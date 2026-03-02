@@ -1,4 +1,4 @@
-## Pre-Read: Merging Dictionaries
+## Merging Dictionaries
 
 **Duration:** 5 minutes
 

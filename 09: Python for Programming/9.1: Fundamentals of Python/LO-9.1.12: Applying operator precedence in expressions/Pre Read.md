@@ -1,4 +1,4 @@
-# Pre-Read: Apply Operator Precedence
+# Apply Operator Precedence
 
 ## Order of Operations (PEMDAS)
 

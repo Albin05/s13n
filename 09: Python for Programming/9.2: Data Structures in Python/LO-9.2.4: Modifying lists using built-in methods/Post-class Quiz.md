@@ -1,6 +1,6 @@
 ## Post-class Quiz: Modifying Lists Using Built-in Methods
 
-### Question 1
+### 
 What is the difference between `append()` and `extend()`?
 
 A) append adds to beginning, extend adds to end
@@ -13,7 +13,7 @@ D) No difference, they work the same way
 
 ---
 
-### Question 2
+### 
 Which method removes AND returns an element from a list?
 
 A) remove()
@@ -26,7 +26,7 @@ D) clear()
 
 ---
 
-### Question 3
+### 
 Given `numbers = [3, 1, 4, 1, 5]`, what does `numbers.sort()` return?
 
 A) [1, 1, 3, 4, 5]
@@ -39,7 +39,7 @@ D) True
 
 ---
 
-### Question 4
+### 
 What happens when you call `lst.remove(x)` and x is not in the list?
 
 A) Returns None
@@ -52,7 +52,7 @@ D) Does nothing
 
 ---
 
-### Question 5
+### 
 Given `fruits = ['apple', 'banana']`, what is `fruits` after `fruits.copy().append('orange')`?
 
 A) ['apple', 'banana', 'orange']

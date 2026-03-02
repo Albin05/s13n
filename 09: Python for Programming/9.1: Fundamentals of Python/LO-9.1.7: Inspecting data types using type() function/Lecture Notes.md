@@ -1,4 +1,4 @@
-# Lecture Notes: Inspecting Data Types Using type()
+# Inspecting Data Types Using type()
 
 ## Introduction
 
@@ -8,7 +8,7 @@ Python is **dynamically typed** - you don't declare types explicitly. The `type(
 
 <div align="center">
 
-![Python type() Function Dynamic Typing](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.7.jpg)
+![Python type() Function Dynamic Typing](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.jpg)
 
 *type() reveals where a value sits in Python's type hierarchy — int, float, str, bool, list, dict, and more*
 
@@ -106,12 +106,6 @@ result = 10 // 3
 print(result)        # 3
 print(type(result))  # <class 'int'> - floor division returns int
 ```
-
-### Example 3: Validating Input
-
-```python
-user_input = input("Enter your age: ")
-print(type(user_input))  # <class 'str'> - input() always returns string!
 
 # Must convert before arithmetic
 age = int(user_input)

@@ -1,4 +1,4 @@
-# Pre-Read: Understand Iterators
+# Understand Iterators
 
 ## Iterators
 

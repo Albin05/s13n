@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 Which of the following correctly creates a dictionary?
 
 A) `d = ['name': 'Alice']`
@@ -16,7 +16,7 @@ D) `d = {name: Alice}`
 
 ---
 
-### Question 2
+### 
 What is the output?
 
 ```python
@@ -35,7 +35,7 @@ D) Error — duplicate keys
 
 ---
 
-### Question 3
+### 
 Which CANNOT be used as a dictionary key?
 
 A) `'hello'` (string)
@@ -49,7 +49,7 @@ D) `42` (integer)
 
 ---
 
-### Question 4
+### 
 What does `dict.fromkeys(['x', 'y', 'z'], 0)` return?
 
 A) `{'x': 0, 'y': 0, 'z': 0}`
@@ -63,7 +63,7 @@ D) Error
 
 ---
 
-### Question 5
+### 
 What is the output?
 
 ```python

@@ -1,6 +1,6 @@
 ## Post-class Quiz: Understanding Tuple Immutability
 
-### Question 1
+### 
 What makes tuples immutable?
 
 A) You cannot access their elements
@@ -13,7 +13,7 @@ D) They can only contain numbers
 
 ---
 
-### Question 2
+### 
 Given `data = (1, 2, [3, 4])`, which operation will succeed?
 
 A) `data[0] = 10`
@@ -26,7 +26,7 @@ D) `data[2] = [5, 6]`
 
 ---
 
-### Question 3
+### 
 Why can tuples be used as dictionary keys but lists cannot?
 
 A) Tuples are smaller
@@ -39,7 +39,7 @@ D) Lists are too complex
 
 ---
 
-### Question 4
+### 
 What is "shallow immutability"?
 
 A) Tuples that are almost immutable
@@ -52,7 +52,7 @@ D) Immutability that doesn't work properly
 
 ---
 
-### Question 5
+### 
 Which tuple can be used as a dictionary key?
 
 A) `(1, 2, [3, 4])`

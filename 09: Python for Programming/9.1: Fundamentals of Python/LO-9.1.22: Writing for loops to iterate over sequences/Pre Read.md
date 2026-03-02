@@ -1,4 +1,4 @@
-# Pre-Read: Writing For Loops to Iterate Over Sequences
+# Writing For Loops to Iterate Over Sequences
 
 ## What is a For Loop?
 

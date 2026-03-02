@@ -1,4 +1,4 @@
-# LO-58: Create Virtual Environments
+# Create Virtual Environments
 
 ## Learning Objective
 Students will be able to work with Isolating project dependencies in Python.

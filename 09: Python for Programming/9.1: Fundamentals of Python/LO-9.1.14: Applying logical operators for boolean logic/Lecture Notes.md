@@ -1,4 +1,4 @@
-# Lecture Notes: Apply Logical Operators
+# Apply Logical Operators
 
 ## Introduction
 
@@ -8,7 +8,7 @@ Logical operators are the **building blocks of complex decision-making**. They a
 
 <div align="center">
 
-![Python Logical Operators Truth Table](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.14.png)
+![Python Logical Operators Truth Table](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *Truth tables for AND, OR, and NOT — Python's logical operators (and, or, not) follow these exact rules*
 
@@ -50,7 +50,6 @@ Or think of them like **filters stacked on each other**:
 ## Logical Operators
 
 Logical operators combine or modify boolean values. They're essential for creating complex conditions.
-
 
 ### The Three Logical Operators
 
@@ -214,27 +213,9 @@ has_special_access = is_admin or is_moderator or is_owner
 print(f"Has special access: {has_special_access}")  # True
 ```
 
-### Example 3: Complex Validation
-
-```python
-age = 17
-has_parent_consent = True
-has_id = True
-
 # Can register if (18+) OR (under 18 but has parent consent)
 can_register = (age >= 18) or (age < 18 and has_parent_consent and has_id)
 print(f"Can register: {can_register}")  # True
-```
-
-### Example 4: Nested Logic
-
-```python
-temperature = 28
-humidity = 70
-has_ac = False
-
-is_uncomfortable = (temperature > 25 and humidity > 60) and not has_ac
-print(f"Uncomfortable: {is_uncomfortable}")  # True
 ```
 
 ## Operator Precedence
@@ -349,7 +330,7 @@ print(display_name)  # "Alice"
 
 ## Common Mistakes
 
-### 1. Using `&` or `|` Instead of `and`/`or`
+### Using `&` or `|` Instead of `and`/`or`
 
 ```python
 # Wrong (these are bitwise operators)
@@ -359,7 +340,7 @@ result = True & False  # Works but not recommended for booleans
 result = True and False
 ```
 
-### 2. Forgetting Parentheses
+### Forgetting Parentheses
 
 ```python
 # Confusing
@@ -371,7 +352,7 @@ can_drive = age >= 18 and has_license or not has_license
 can_drive = (age >= 18 and has_license) or (not has_license)
 ```
 
-### 3. Redundant Comparisons
+### Redundant Comparisons
 
 ```python
 # Redundant

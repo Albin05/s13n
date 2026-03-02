@@ -1,15 +1,14 @@
-# Lecture Notes: Create Custom Exceptions
+# Create Custom Exceptions
 
 ## Create Custom Exceptions
 
 Defining your own exception classes
 
-
 ---
 
 <div align="center">
 
-![Python Exception Class Hierarchy Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.4.png)
+![Python Exception Class Hierarchy Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Custom exception classes create specialized branches in your error-handling flowchart*
 
@@ -156,43 +155,3 @@ try:
 except InsufficientFundsError as e:
     print(f"Cannot withdraw ${e.amount}, only ${e.balance} available")
 ```
-
-#### Example 3: Exception Hierarchy
-
-```python
-class DatabaseError(Exception):
-    pass
-
-class ConnectionError(DatabaseError):
-    pass
-
-class QueryError(DatabaseError):
-    pass
-
-try:
-    raise QueryError("Invalid SQL query")
-except DatabaseError as e:
-    print(f"Database problem: {e}")
-```
-
-### Best Practices
-
-1. Write clear, readable code
-2. Handle errors appropriately
-3. Follow Python conventions
-4. Document your code
-5. Test thoroughly
-
-### Common Mistakes
-
-1. Not handling edge cases
-2. Overcomplicating simple tasks
-3. Not following naming conventions
-
-### Key Takeaways
-
-1. Understanding the core concept is essential
-2. Practice with real examples
-3. Apply best practices
-4. Avoid common pitfalls
-5. Write clean, maintainable code

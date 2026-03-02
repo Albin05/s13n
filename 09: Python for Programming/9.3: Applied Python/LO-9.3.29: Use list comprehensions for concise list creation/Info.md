@@ -1,4 +1,4 @@
-# LO-71: Use List Comprehensions
+# Use List Comprehensions
 
 ## Learning Objective
 Students will be able to use Creating lists using concise comprehension syntax in Python programs.

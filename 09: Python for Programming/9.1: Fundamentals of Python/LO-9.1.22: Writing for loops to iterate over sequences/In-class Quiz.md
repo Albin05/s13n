@@ -1,10 +1,10 @@
-# Post-class Quiz: Writing For Loops to Iterate Over Sequences
+# Writing For Loops to Iterate Over Sequences
 
 Test your understanding of for loops and iteration in Python.
 
 ---
 
-## Q1: What is the output?
+## What is the output?
 ```python
 fruits = ["apple", "banana"]
 for fruit in fruits:
@@ -28,7 +28,7 @@ banana
 
 ---
 
-## Q2: What does the loop variable represent?
+## What does the loop variable represent?
 
 ```python
 for item in my_list:
@@ -48,7 +48,7 @@ D) The number of items
 
 ---
 
-## Q3: What is the output?
+## What is the output?
 ```python
 total = 0
 for num in [1, 2, 3, 4, 5]:
@@ -69,7 +69,7 @@ D) [1, 2, 3, 4, 5]
 
 ---
 
-## Q4: Can you iterate through a string with a for loop?
+## Can you iterate through a string with a for loop?
 
 A) No, only lists
 B) Yes, strings are sequences
@@ -89,7 +89,7 @@ for char in "hi":
 
 ---
 
-## Q5: What is the output?
+## What is the output?
 ```python
 word = "cat"
 for letter in word:
@@ -109,7 +109,7 @@ D) Error
 
 ---
 
-## Q6: What does enumerate() do?
+## What does enumerate() do?
 
 A) Counts the items
 B) Provides both index and value
@@ -129,7 +129,7 @@ for i, item in enumerate(["a", "b"]):
 
 ---
 
-## Q7: What is the output?
+## What is the output?
 ```python
 for i, color in enumerate(["red", "blue"]):
     print(f"{i}: {color}")
@@ -148,7 +148,7 @@ D) Error
 
 ---
 
-## Q8: What does zip() do?
+## What does zip() do?
 
 A) Compresses files
 B) Combines multiple sequences
@@ -168,7 +168,7 @@ for a, b in zip([1, 2], ["x", "y"]):
 
 ---
 
-## Q9: What is the output?
+## What is the output?
 ```python
 names = ["Alice", "Bob"]
 ages = [25, 30]
@@ -190,7 +190,7 @@ D) [Alice, 25] [Bob, 30]
 
 ---
 
-## Q10: How do you iterate over dictionary key-value pairs?
+## How do you iterate over dictionary key-value pairs?
 
 A) `for item in dict:`
 B) `for key, value in dict.items():`
@@ -210,7 +210,7 @@ for k, v in {"a": 1, "b": 2}.items():
 
 ---
 
-## Q11: What is the output?
+## What is the output?
 ```python
 student = {"name": "Alice", "age": 20}
 
@@ -231,7 +231,7 @@ D) Error
 
 ---
 
-## Q12: What happens with nested for loops?
+## What happens with nested for loops?
 
 ```python
 for i in [1, 2]:
@@ -252,7 +252,7 @@ D) Prints only outer loop
 
 ---
 
-## Q13: When should you use a for loop instead of while?
+## When should you use a for loop instead of while?
 
 A) Always use for
 B) When iterating known sequences
@@ -267,7 +267,7 @@ D) Only for numbers
 
 ---
 
-## Q14: What is the output?
+## What is the output?
 ```python
 numbers = [1, 2, 3]
 doubled = []
@@ -291,7 +291,7 @@ D) 6
 
 ---
 
-## Q15: Do break and continue work in for loops?
+## Do break and continue work in for loops?
 
 A) No, only in while loops
 B) Yes, same as while loops
@@ -306,22 +306,4 @@ D) Only continue works
 
 ---
 
-## Score Interpretation
 
-- **13-15 correct**: Excellent! You've mastered for loops.
-- **10-12 correct**: Good work! Review enumerate and zip.
-- **7-9 correct**: Fair. Practice more with iteration patterns.
-- **Below 7**: Review the lesson materials on for loops.
-
-## Key Concepts to Remember
-
-1. **Direct iteration**: `for item in sequence` - no index needed
-2. **Works on sequences**: Lists, strings, tuples, ranges
-3. **Enumerate**: Get both index and value
-4. **Zip**: Iterate multiple sequences together
-5. **Dictionary methods**: `.items()`, `.keys()`, `.values()`
-6. **Accumulator pattern**: Build results during iteration
-7. **Nested loops**: Loop inside loop for 2D data
-8. **Cleaner than while**: For known sequences
-9. **Break/continue**: Work same as while loops
-10. **No manual indexing**: Python handles automatically

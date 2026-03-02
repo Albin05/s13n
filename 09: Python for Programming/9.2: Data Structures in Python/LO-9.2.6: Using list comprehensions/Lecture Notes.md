@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Python List Comprehension Syntax Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.6.png)
+![Python List Comprehension Syntax Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
 
 *Overview of data structure types including sequences and collections, showing how list comprehensions transform one collection into another*
 
@@ -24,13 +24,13 @@ result = []
 for x in range(10):
     if x % 2 == 0:
         result.append(x ** 2)
-# 4 lines, focuses on HOW
+# lines, focuses on HOW
 ```
 
 **Declarative approach** (comprehension):
 ```python
 result = [x**2 for x in range(10) if x%2==0]
-# 1 line, focuses on WHAT
+# line, focuses on WHAT
 ```
 
 **Historical note**: List comprehensions came from functional programming languages (Haskell's list comprehensions, 1990). Python added them in version 2.0 (2000), making functional programming accessible to mainstream developers.
@@ -137,7 +137,7 @@ capped = [s if s <= 100 else 100 for s in scores]
 ### Nested Comprehensions
 
 ```python
-# 2D list creation
+# D list creation
 matrix = [[i*3 + j for j in range(3)] for i in range(3)]
 # [[0, 1, 2],
 #  [3, 4, 5],

@@ -1,4 +1,4 @@
-# Lecture Notes: Write Nested Loops
+# Write Nested Loops
 
 ## Introduction
 
@@ -27,7 +27,7 @@ Or like **a teacher taking attendance**:
 
 Nested loops let you explore **all possible combinations**:
 ```python
-# 3 outer × 4 inner = 12 total combinations
+# outer × 4 inner = 12 total combinations
 for i in [1, 2, 3]:
     for j in ['A', 'B', 'C', 'D']:
         print(f"{i}{j}")  # 1A, 1B, 1C, 1D, 2A, 2B...
@@ -39,7 +39,7 @@ This **Cartesian product** is fundamental in mathematics, databases (SQL joins),
 
 <div align="center">
 
-![Python Nested Loops Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.25.png)
+![Python Nested Loops Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *Nested loops place one loop inside another — the inner loop completes all iterations for each single iteration of the outer loop*
 
@@ -50,7 +50,6 @@ This **Cartesian product** is fundamental in mathematics, databases (SQL joins),
 ## Nested Loops
 
 A nested loop is a loop inside another loop.
-
 
 ### Basic Syntax
 
@@ -135,9 +134,9 @@ for row in matrix:
     print()
 
 # Output:
-# 1 2 3
-# 4 5 6
-# 7 8 9
+# 2 3
+# 5 6
+# 8 9
 ```
 
 ## Real-World: All Combinations

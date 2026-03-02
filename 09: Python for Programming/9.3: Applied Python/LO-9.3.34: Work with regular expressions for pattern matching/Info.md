@@ -1,4 +1,4 @@
-# LO-76: Work with Regular Expressions
+# Work with Regular Expressions
 
 ## Learning Objective
 Students will be able to use Pattern matching with the re module in Python programs.

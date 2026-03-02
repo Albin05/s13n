@@ -1,4 +1,4 @@
-# LO-64: Use Instance Attributes
+# Use Instance Attributes
 
 ## Learning Objective
 Students will be able to use Defining and accessing object attributes in Python programs.

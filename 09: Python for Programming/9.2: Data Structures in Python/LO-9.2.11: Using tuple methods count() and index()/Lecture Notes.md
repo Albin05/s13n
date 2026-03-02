@@ -1,5 +1,4 @@
-## Lecture Notes: Using Tuple Methods count() and index()
-
+## Using Tuple Methods count() and index()
 
 ---
 

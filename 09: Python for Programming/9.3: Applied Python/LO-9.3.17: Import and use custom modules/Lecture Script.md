@@ -1,4 +1,4 @@
-## Lecture Script: Import And Use Custom Modules
+## Import And Use Custom Modules
 
 
 ---

@@ -1,6 +1,6 @@
-# Post-Class Quiz: Define Variables
+# Define Variables
 
-## Question 1
+## 
 What does this code do?
 ```python
 score = 100
@@ -21,7 +21,7 @@ The `=` operator creates/updates a variable with a value.
 
 ---
 
-## Question 2
+## 
 What will be the final value of `x`?
 ```python
 x = 5
@@ -44,7 +44,7 @@ Variables can be reassigned. The final assignment wins.
 
 ---
 
-## Question 3
+## 
 What's wrong with this code?
 ```python
 print(temperature)
@@ -66,7 +66,7 @@ Variables must be created before they're used. Swap the lines!
 
 ---
 
-## Question 4
+## 
 What does `score = score + 10` mean?
 
 **A)** Checks if score equals score + 10
@@ -84,7 +84,7 @@ Python evaluates the right side first (gets current score, adds 10), then assign
 
 ---
 
-## Question 5
+## 
 After this code runs, what are the values?
 ```python
 a = 10

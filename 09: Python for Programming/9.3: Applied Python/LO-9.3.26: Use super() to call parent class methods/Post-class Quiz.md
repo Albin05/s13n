@@ -1,6 +1,6 @@
-# Post-Class Quiz: Use the super() Function
+# Use the super() Function
 
-## Q1: Question about Calling parent class methods from child classes
+## Question about Calling parent class methods from child classes
 A) Option A
 B) Option B
 C) Option C
@@ -9,7 +9,7 @@ C) Option C
 B - Explanation of OOP concept
 </details>
 
-## Q2: Syntax question
+## Syntax question
 A) Option A
 B) Option B
 C) Option C
@@ -18,7 +18,7 @@ C) Option C
 A - Explanation
 </details>
 
-## Q3: When to use Calling parent class methods from child classes?
+## When to use Calling parent class methods from child classes?
 A) Option A
 B) Option B
 C) Option C
@@ -27,7 +27,7 @@ C) Option C
 C - Practical explanation
 </details>
 
-## Q4: Best practice for Calling parent class methods from child classes
+## Best practice for Calling parent class methods from child classes
 A) Option A
 B) Option B
 C) Option C
@@ -36,7 +36,7 @@ C) Option C
 B - Best practice explanation
 </details>
 
-## Q5: Common mistake with Calling parent class methods from child classes
+## Common mistake with Calling parent class methods from child classes
 A) Option A
 B) Option B
 C) Option C

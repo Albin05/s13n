@@ -1,15 +1,14 @@
-# Lecture Notes: Apply Decorators
+# Apply Decorators
 
 ## Decorators
 
 Decorators are a powerful feature in Python that allow you to modify or enhance functions without changing their source code. They use the `@decorator_name` syntax.
 
-
 ---
 
 <div align="center">
 
-![Python Decorator @ Syntax Explained](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.33.png)
+![Python Decorator @ Syntax Explained](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Decorators wrap functions like a machine that adds processing before and after the original function*
 
@@ -270,36 +269,6 @@ print(view_profile())  # Error: You must be logged in to access this function
 print(view_public_page())  # Welcome to our public page
 ```
 
-### Example 3: Retry Decorator
-
-```python
-import random
-
-def retry(max_attempts=3):
-    """Decorator that retries a function if it fails"""
-    def decorator(func):
-        def wrapper(*args, **kwargs):
-            attempts = 0
-            while attempts < max_attempts:
-                try:
-                    result = func(*args, **kwargs)
-                    return result
-                except Exception as e:
-                    attempts += 1
-                    print(f"Attempt {attempts} failed: {e}")
-                    if attempts >= max_attempts:
-                        print(f"Failed after {max_attempts} attempts")
-                        raise
-        return wrapper
-    return decorator
-
-@retry(max_attempts=3)
-def unstable_operation():
-    """Simulates an operation that might fail"""
-    if random.random() < 0.7:  # 70% chance of failure
-        raise Exception("Random failure occurred")
-    return "Success!"
-
 # Try the unstable operation
 try:
     result = unstable_operation()
@@ -312,36 +281,6 @@ except Exception as e:
 # Attempt 2 failed: Random failure occurred
 # Success!
 ```
-
-### Example 4: Validation Decorator
-
-```python
-def validate_positive(func):
-    """Decorator to ensure all numeric arguments are positive"""
-    def wrapper(*args, **kwargs):
-        # Check positional arguments
-        for arg in args:
-            if isinstance(arg, (int, float)) and arg < 0:
-                raise ValueError(f"Argument must be positive, got {arg}")
-
-        # Check keyword arguments
-        for key, value in kwargs.items():
-            if isinstance(value, (int, float)) and value < 0:
-                raise ValueError(f"Argument '{key}' must be positive, got {value}")
-
-        return func(*args, **kwargs)
-    return wrapper
-
-@validate_positive
-def calculate_area(length, width):
-    """Calculate rectangle area"""
-    return length * width
-
-@validate_positive
-def calculate_discount(price, discount_percent):
-    """Calculate discounted price"""
-    discount = price * (discount_percent / 100)
-    return price - discount
 
 # Valid calls
 print(f"Area: {calculate_area(5, 10)}")  # Area: 50
@@ -359,41 +298,6 @@ except ValueError as e:
     print(f"Error: {e}")  # Error: Argument must be positive, got -10
 ```
 
-### Example 5: Caching Decorator (Memoization)
-
-```python
-def memoize(func):
-    """Decorator to cache function results"""
-    cache = {}
-
-    def wrapper(*args):
-        if args in cache:
-            print(f"Returning cached result for {args}")
-            return cache[args]
-        else:
-            print(f"Calculating result for {args}")
-            result = func(*args)
-            cache[args] = result
-            return result
-
-    return wrapper
-
-@memoize
-def fibonacci(n):
-    """Calculate nth Fibonacci number"""
-    if n < 2:
-        return n
-    return fibonacci(n - 1) + fibonacci(n - 2)
-
-@memoize
-def factorial(n):
-    """Calculate factorial"""
-    if n <= 1:
-        return 1
-    return n * factorial(n - 1)
-
-print("Calculating fibonacci(5):")
-print(fibonacci(5))
 # Output:
 # Calculating result for (5,)
 # Calculating result for (4,)
@@ -404,7 +308,7 @@ print(fibonacci(5))
 # Calculating result for (0,)
 # Returning cached result for (2,)
 # Returning cached result for (3,)
-# 5
+# 
 
 print("\nCalculating factorial(5):")
 print(factorial(5))
@@ -414,7 +318,7 @@ print(factorial(5))
 # Calculating result for (3,)
 # Calculating result for (2,)
 # Calculating result for (1,)
-# 120
+# 
 ```
 
 ## Multiple Decorators
@@ -441,8 +345,8 @@ print(greet("alice"))
 # Output: HELLO ALICE!!!
 
 # Decorators are applied bottom-up:
-# 1. uppercase_decorator is applied first
-# 2. exclamation_decorator is applied second
+# uppercase_decorator is applied first
+# exclamation_decorator is applied second
 ```
 
 ## Decorators with Parameters

@@ -1,4 +1,4 @@
-## Lecture Script: Modifying Lists Using Built-in Methods
+## Modifying Lists Using Built-in Methods
 
 
 ---

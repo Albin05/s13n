@@ -1,4 +1,4 @@
-## Lecture Script: Handle Exceptions Using try-except Blocks
+## Handle Exceptions Using try-except Blocks
 
 
 ---

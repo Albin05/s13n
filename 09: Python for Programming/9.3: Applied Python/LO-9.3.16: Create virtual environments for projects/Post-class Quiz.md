@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What is the main purpose of virtual environments?
 
 A) Make Python run faster
@@ -14,7 +14,7 @@ D) Run Python in a container
 
 ---
 
-### Question 2
+### 
 How do you create a virtual environment?
 
 A) python venv create
@@ -26,7 +26,7 @@ D) pip create-env name
 
 ---
 
-### Question 3-5
+### -5
 
 *(Additional quiz questions following the same format covering: activation commands, deactivation, .gitignore)*
 

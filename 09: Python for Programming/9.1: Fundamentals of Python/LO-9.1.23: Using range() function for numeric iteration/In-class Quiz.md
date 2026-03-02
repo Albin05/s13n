@@ -1,10 +1,10 @@
-# Post-class Quiz: Using Range() Function for Numeric Iteration
+# Using Range() Function for Numeric Iteration
 
 Test your understanding of the range() function in Python.
 
 ---
 
-## Q1: What is the output?
+## What is the output?
 ```python
 for i in range(5):
     print(i, end=" ")
@@ -23,7 +23,7 @@ D) 1 2 3 4
 
 ---
 
-## Q2: How do you generate numbers from 1 to 10 (inclusive)?
+## How do you generate numbers from 1 to 10 (inclusive)?
 
 A) `range(10)`
 B) `range(1, 10)`
@@ -38,7 +38,7 @@ D) `range(0, 10)`
 
 ---
 
-## Q3: What is the output?
+## What is the output?
 ```python
 for i in range(2, 10, 2):
     print(i, end=" ")
@@ -57,7 +57,7 @@ D) 2 3 4 5 6 7 8 9
 
 ---
 
-## Q4: What does the third argument in range() control?
+## What does the third argument in range() control?
 
 A) The starting value
 B) The stopping value
@@ -72,7 +72,7 @@ D) The number of iterations
 
 ---
 
-## Q5: What is the output?
+## What is the output?
 ```python
 for i in range(10, 0, -1):
     print(i, end=" ")
@@ -91,7 +91,7 @@ D) Error - range can't count backwards
 
 ---
 
-## Q6: What happens with `range(10, 1)`?
+## What happens with `range(10, 1)`?
 
 A) Generates 10, 9, 8, ..., 2
 B) Generates 1, 2, 3, ..., 10
@@ -106,7 +106,7 @@ D) Causes an error
 
 ---
 
-## Q7: What is the default start value if not specified?
+## What is the default start value if not specified?
 
 A) 1
 B) 0
@@ -121,7 +121,7 @@ D) 10
 
 ---
 
-## Q8: What is the default step value if not specified?
+## What is the default step value if not specified?
 
 A) 0
 B) 1
@@ -136,7 +136,7 @@ D) -1
 
 ---
 
-## Q9: How many numbers does `range(10)` generate?
+## How many numbers does `range(10)` generate?
 
 A) 9
 B) 10
@@ -151,7 +151,7 @@ D) 0
 
 ---
 
-## Q10: What is the output?
+## What is the output?
 ```python
 for i in range(1, 10, 3):
     print(i, end=" ")
@@ -170,7 +170,7 @@ D) 3 6 9
 
 ---
 
-## Q11: Can range() accept float (decimal) arguments?
+## Can range() accept float (decimal) arguments?
 
 A) Yes, any number type works
 B) No, only integers are allowed
@@ -185,7 +185,7 @@ D) Only the step can be a float
 
 ---
 
-## Q12: What is the difference between range() and a list?
+## What is the difference between range() and a list?
 
 A) No difference, they're the same
 B) range() is memory-efficient and generates on demand
@@ -200,7 +200,7 @@ D) range() stores all values in memory
 
 ---
 
-## Q13: What is the output?
+## What is the output?
 ```python
 print(list(range(3, 8)))
 ```
@@ -218,7 +218,7 @@ D) [3, 8]
 
 ---
 
-## Q14: Which generates odd numbers from 1 to 9?
+## Which generates odd numbers from 1 to 9?
 
 A) `range(1, 9, 2)`
 B) `range(1, 10, 2)`
@@ -233,7 +233,7 @@ D) `range(2, 10, 2)`
 
 ---
 
-## Q15: What is the output?
+## What is the output?
 ```python
 for i in range(5, 5):
     print(i)
@@ -254,25 +254,7 @@ D) Nothing
 
 ---
 
-## Score Interpretation
 
-- **13-15 correct**: Excellent! You've mastered the range() function.
-- **10-12 correct**: Good work! Review exclusive stop and step parameters.
-- **7-9 correct**: Fair. Practice more with different range forms.
-- **Below 7**: Review the lesson on range() function carefully.
-
-## Key Concepts to Remember
-
-1. **Three forms**: `range(stop)`, `range(start, stop)`, `range(start, stop, step)`
-2. **Exclusive stop**: Stop value is NEVER included (like < operator)
-3. **Default start**: 0 if not specified
-4. **Default step**: 1 if not specified
-5. **Negative step**: Counts backwards, requires start > stop
-6. **Integer only**: No float arguments allowed
-7. **Memory efficient**: Lazy generation, not stored as list
-8. **Empty ranges**: Valid when start >= stop (with positive step)
-9. **Common pattern**: `range(1, n+1)` for 1 to n inclusive
-10. **Iteration count**: `range(n)` gives exactly n iterations
 
 ## Common Mistakes to Avoid
 

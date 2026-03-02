@@ -1,15 +1,14 @@
-# Lecture Notes: Define Instance Methods
+# Define Instance Methods
 
 ## Instance Methods
 
 Instance methods are functions defined inside a class that operate on instance objects.
 
-
 ---
 
 <div align="center">
 
-![Python self Parameter Instance Method Behavior](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.23.png)
+![Python self Parameter Instance Method Behavior](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Instance methods act as function machines that operate on and transform an object's internal state*
 
@@ -294,170 +293,6 @@ alice.add_grade(92)
 alice.add_grade(78)
 alice.add_grade(95)
 alice.display_report()
-```
-
-### Example 3: Shopping Cart
-
-```python
-class ShoppingCart:
-    def __init__(self):
-        self.items = []
-    
-    def add_item(self, name, price, quantity=1):
-        item = {
-            "name": name,
-            "price": price,
-            "quantity": quantity,
-            "total": price * quantity
-        }
-        self.items.append(item)
-        print(f"Added {quantity}x {name} @ ${price} each")
-    
-    def remove_item(self, name):
-        for item in self.items:
-            if item["name"] == name:
-                self.items.remove(item)
-                print(f"Removed {name}")
-                return
-        print(f"{name} not found in cart!")
-    
-    def get_total(self):
-        total = sum(item["total"] for item in self.items)
-        return total
-    
-    def apply_discount(self, percentage):
-        discount_amount = self.get_total() * (percentage / 100)
-        print(f"Discount applied: ${discount_amount:.2f} ({percentage}%)")
-        return self.get_total() - discount_amount
-    
-    def show_cart(self):
-        print("\nShopping Cart:")
-        print("-" * 50)
-        for item in self.items:
-            print(f"{item['quantity']}x {item['name']} @ ${item['price']} = ${item['total']}")
-        print("-" * 50)
-        print(f"Total: ${self.get_total():.2f}")
-
-cart = ShoppingCart()
-cart.add_item("Laptop", 999, 1)
-cart.add_item("Mouse", 25, 2)
-cart.add_item("Keyboard", 75, 1)
-cart.show_cart()
-final_price = cart.apply_discount(10)
-print(f"Final Price: ${final_price:.2f}")
-```
-
-### Example 4: Temperature Converter
-
-```python
-class TemperatureConverter:
-    def __init__(self, temp, unit):
-        self.temperature = temp
-        self.unit = unit.upper()
-    
-    def to_celsius(self):
-        if self.unit == "C":
-            return self.temperature
-        elif self.unit == "F":
-            return (self.temperature - 32) * 5/9
-        elif self.unit == "K":
-            return self.temperature - 273.15
-    
-    def to_fahrenheit(self):
-        if self.unit == "F":
-            return self.temperature
-        elif self.unit == "C":
-            return (self.temperature * 9/5) + 32
-        elif self.unit == "K":
-            return (self.temperature - 273.15) * 9/5 + 32
-    
-    def to_kelvin(self):
-        if self.unit == "K":
-            return self.temperature
-        elif self.unit == "C":
-            return self.temperature + 273.15
-        elif self.unit == "F":
-            return (self.temperature - 32) * 5/9 + 273.15
-    
-    def convert_to(self, target_unit):
-        target = target_unit.upper()
-        if target == "C":
-            result = self.to_celsius()
-        elif target == "F":
-            result = self.to_fahrenheit()
-        elif target == "K":
-            result = self.to_kelvin()
-        else:
-            return "Invalid unit!"
-        
-        print(f"{self.temperature}°{self.unit} = {result:.2f}°{target}")
-        return result
-
-temp = TemperatureConverter(100, "C")
-temp.convert_to("F")  # 100°C = 212.00°F
-temp.convert_to("K")  # 100°C = 373.15°K
-
-temp2 = TemperatureConverter(32, "F")
-temp2.convert_to("C")  # 32°F = 0.00°C
-```
-
-### Example 5: Task Manager
-
-```python
-class TaskManager:
-    def __init__(self):
-        self.tasks = []
-        self.completed = []
-    
-    def add_task(self, task, priority="Normal"):
-        task_item = {
-            "task": task,
-            "priority": priority,
-            "completed": False
-        }
-        self.tasks.append(task_item)
-        print(f"Added task: {task} (Priority: {priority})")
-    
-    def complete_task(self, task_name):
-        for task in self.tasks:
-            if task["task"] == task_name:
-                task["completed"] = True
-                self.completed.append(task)
-                self.tasks.remove(task)
-                print(f"Completed: {task_name}")
-                return
-        print(f"Task '{task_name}' not found!")
-    
-    def list_tasks(self):
-        print("\nPending Tasks:")
-        if not self.tasks:
-            print("  No pending tasks!")
-        for i, task in enumerate(self.tasks, 1):
-            print(f"  {i}. {task['task']} [{task['priority']}]")
-    
-    def list_completed(self):
-        print("\nCompleted Tasks:")
-        if not self.completed:
-            print("  No completed tasks!")
-        for i, task in enumerate(self.completed, 1):
-            print(f"  {i}. {task['task']}")
-    
-    def get_summary(self):
-        total = len(self.tasks) + len(self.completed)
-        print(f"\nTask Summary:")
-        print(f"  Total: {total}")
-        print(f"  Pending: {len(self.tasks)}")
-        print(f"  Completed: {len(self.completed)}")
-
-manager = TaskManager()
-manager.add_task("Write report", "High")
-manager.add_task("Check emails", "Normal")
-manager.add_task("Call client", "High")
-manager.list_tasks()
-manager.complete_task("Check emails")
-manager.list_tasks()
-manager.list_completed()
-manager.get_summary()
 ```
 
 ## Methods Calling Other Methods

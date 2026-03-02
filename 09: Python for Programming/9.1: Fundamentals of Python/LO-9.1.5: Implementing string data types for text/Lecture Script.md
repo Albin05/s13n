@@ -1,4 +1,4 @@
-### LO-5 Implement String Data Types (21 minutes)
+### Implement String Data Types (21 minutes)
 
 
 ### CS Theory Bite

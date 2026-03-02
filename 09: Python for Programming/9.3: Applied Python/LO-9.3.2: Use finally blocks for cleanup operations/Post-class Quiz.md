@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 When does the `finally` block execute?
 
 A) Only when no exception occurs
@@ -16,7 +16,7 @@ D) Only when the except block runs
 
 ---
 
-### Question 2
+### 
 What is the output?
 
 ```python
@@ -40,7 +40,7 @@ D) A, C
 
 ---
 
-### Question 3
+### 
 What is the primary use case for `finally`?
 
 A) Catching exceptions
@@ -54,7 +54,7 @@ D) Retrying failed operations
 
 ---
 
-### Question 4
+### 
 Can you use `finally` without `except`?
 
 A) No, except is required
@@ -68,7 +68,7 @@ D) Only with a return statement
 
 ---
 
-### Question 5
+### 
 What is the output?
 
 ```python

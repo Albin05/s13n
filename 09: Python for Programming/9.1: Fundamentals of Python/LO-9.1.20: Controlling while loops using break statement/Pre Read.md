@@ -1,4 +1,4 @@
-# Pre-Read: Controlling While Loops Using Break Statement
+# Controlling While Loops Using Break Statement
 
 ## What You'll Learn
 In this lesson, you'll learn how to use the `break` statement to exit a loop early, before the loop condition becomes False. This gives you more control over when your loops stop.

@@ -1,4 +1,4 @@
-### LO-6 Implement Boolean Data Types (15 minutes)
+### Implement Boolean Data Types (15 minutes)
 
 
 ### CS Theory Bite

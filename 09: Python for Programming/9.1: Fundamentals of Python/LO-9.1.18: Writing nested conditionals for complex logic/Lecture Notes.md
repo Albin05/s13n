@@ -1,4 +1,4 @@
-# Lecture Notes: Write Nested Conditionals
+# Write Nested Conditionals
 
 ## Introduction
 
@@ -8,7 +8,7 @@ Nested conditionals create **decision trees** - multi-level logic where each bra
 
 <div align="center">
 
-![Python Nested if-else Conditional Control Flow](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.18.png)
+![Python Nested if-else Conditional Control Flow](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *Nested conditionals create multi-level decision trees — each branch can contain further if/else checks*
 
@@ -35,7 +35,6 @@ Or like **navigation instructions**:
 ## Nested Conditionals
 
 A nested conditional is an if statement inside another if statement.
-
 
 ### Basic Syntax
 
@@ -141,7 +140,7 @@ else:
 
 ## Common Mistakes
 
-### 1. Too Much Nesting
+### Too Much Nesting
 
 ```python
 # Avoid - too deep
@@ -157,7 +156,7 @@ if a and b and c and d and e:
     print("Something")
 ```
 
-### 2. Forgetting Indentation
+### Forgetting Indentation
 
 ```python
 # Wrong

@@ -1,11 +1,10 @@
-## Lecture Notes: Creating and Initializing Sets for Unique Values
-
+## Creating and Initializing Sets for Unique Values
 
 ---
 
 <div align="center">
 
-![Python Set Unique Elements No Duplicates](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.12.png)
+![Python Set Unique Elements No Duplicates](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
 
 *Hash table data structure: sets use hash tables internally to ensure element uniqueness and enable O(1) membership testing*
 
@@ -68,9 +67,9 @@ unique = {1, 2, 3}  # Clean, clear, fast!
 **What makes sets fast**: Built on **hash tables** (same as dictionaries):
 ```python
 # When you create {1, 2, 3}:
-# 1. Python computes hash(1), hash(2), hash(3)
-# 2. Stores in hash table (array with hash-based indexing)
-# 3. Lookups now O(1) instead of O(n)!
+# Python computes hash(1), hash(2), hash(3)
+# Stores in hash table (array with hash-based indexing)
+# Lookups now O(1) instead of O(n)!
 ```
 
 **Why immutable elements**: Hash must stay constant! If you could modify list after adding to set, hash would become invalid → data structure breaks!

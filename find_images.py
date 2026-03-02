@@ -46,6 +46,7 @@ for label, query in queries:
         "max_results": 5
     }).encode()
     req = urllib.request.Request(
+        
         "https://api.tavily.com/search",
         data=payload,
         headers={"Content-Type": "application/json"},

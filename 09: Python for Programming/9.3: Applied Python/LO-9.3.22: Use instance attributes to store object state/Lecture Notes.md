@@ -1,15 +1,14 @@
-# Lecture Notes: Use Instance Attributes
+# Use Instance Attributes
 
 ## Instance Attributes
 
 Instance attributes are variables that belong to a specific object. Each object has its own copy of instance attributes.
 
-
 ---
 
 <div align="center">
 
-![Python Instance Variables Object State](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.22.png)
+![Python Instance Variables Object State](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Instance attributes store unique data within each object, positioned within Python's type hierarchy*
 
@@ -258,118 +257,6 @@ laptop = Product("Laptop", 999, 50)
 laptop.sell(10)
 laptop.restock(20)
 laptop.display()
-```
-
-### Example 3: Student Record
-
-```python
-class Student:
-    def __init__(self, name, student_id, grade):
-        self.name = name
-        self.student_id = student_id
-        self.grade = grade
-        self.courses = []
-        self.gpa = 0.0
-    
-    def enroll(self, course):
-        self.courses.append(course)
-        print(f"{self.name} enrolled in {course}")
-    
-    def set_gpa(self, gpa):
-        self.gpa = gpa
-        print(f"GPA updated to {gpa}")
-    
-    def get_info(self):
-        return f"{self.name} (ID: {self.student_id}), Grade {self.grade}, GPA: {self.gpa}, Courses: {len(self.courses)}"
-
-alice = Student("Alice", "S001", 10)
-alice.enroll("Math")
-alice.enroll("Science")
-alice.set_gpa(3.8)
-print(alice.get_info())
-```
-
-### Example 4: Temperature Sensor
-
-```python
-class TemperatureSensor:
-    def __init__(self, location):
-        self.location = location
-        self.current_temp = 0
-        self.readings = []
-        self.alerts = []
-    
-    def record(self, temp):
-        self.current_temp = temp
-        self.readings.append(temp)
-        
-        if temp > 30:
-            alert = f"High temperature alert: {temp}°C"
-            self.alerts.append(alert)
-            print(alert)
-        elif temp < 0:
-            alert = f"Freezing alert: {temp}°C"
-            self.alerts.append(alert)
-            print(alert)
-    
-    def get_average(self):
-        if self.readings:
-            return sum(self.readings) / len(self.readings)
-        return 0
-    
-    def report(self):
-        print(f"Sensor Location: {self.location}")
-        print(f"Current: {self.current_temp}°C")
-        print(f"Average: {self.get_average():.1f}°C")
-        print(f"Total Readings: {len(self.readings)}")
-        print(f"Alerts: {len(self.alerts)}")
-
-sensor = TemperatureSensor("Living Room")
-sensor.record(22)
-sensor.record(25)
-sensor.record(35)
-sensor.record(-2)
-sensor.report()
-```
-
-### Example 5: Shopping List
-
-```python
-class ShoppingList:
-    def __init__(self, name):
-        self.name = name
-        self.items = []
-        self.completed_items = []
-        self.created_date = "2024-01-01"
-    
-    def add_item(self, item):
-        self.items.append(item)
-        print(f"Added: {item}")
-    
-    def complete_item(self, item):
-        if item in self.items:
-            self.items.remove(item)
-            self.completed_items.append(item)
-            print(f"Completed: {item}")
-        else:
-            print(f"{item} not in list!")
-    
-    def show_list(self):
-        print(f"\nShopping List: {self.name}")
-        print(f"Created: {self.created_date}")
-        print(f"\nTodo ({len(self.items)}):")
-        for item in self.items:
-            print(f"  - {item}")
-        print(f"\nCompleted ({len(self.completed_items)}):")
-        for item in self.completed_items:
-            print(f"  ✓ {item}")
-
-groceries = ShoppingList("Weekly Groceries")
-groceries.add_item("Milk")
-groceries.add_item("Bread")
-groceries.add_item("Eggs")
-groceries.complete_item("Milk")
-groceries.show_list()
 ```
 
 ## Accessing Attributes from Methods

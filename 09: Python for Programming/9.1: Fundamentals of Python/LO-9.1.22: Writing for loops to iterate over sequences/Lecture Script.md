@@ -1,4 +1,4 @@
-### LO-22 Write For Loops (20 minutes)
+### Write For Loops (20 minutes)
 
 
 ### CS Theory Bite
@@ -106,9 +106,9 @@ tasks = ["Buy milk", "Call mom", "Finish homework"]
 
 for i, task in enumerate(tasks, start=1):
     print(f"{i}. {task}")
-# 1. Buy milk
-# 2. Call mom
-# 3. Finish homework
+# Buy milk
+# Call mom
+# Finish homework
 ```
 
 ### Practice (3 minutes)

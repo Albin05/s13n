@@ -1,4 +1,4 @@
-# Pre-Read: Accept User Input
+# Accept User Input
 
 ## The input() Function
 

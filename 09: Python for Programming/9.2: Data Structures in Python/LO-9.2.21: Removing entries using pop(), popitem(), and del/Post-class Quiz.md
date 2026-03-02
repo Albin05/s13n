@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What is the output?
 
 ```python
@@ -22,7 +22,7 @@ D) `None {'a': 1, 'c': 3}`
 
 ---
 
-### Question 2
+### 
 What happens with `d.pop('x')` when 'x' is not in `d`?
 
 A) Returns None
@@ -36,7 +36,7 @@ D) Does nothing
 
 ---
 
-### Question 3
+### 
 What does `popitem()` remove?
 
 A) The first item added
@@ -50,7 +50,7 @@ D) The item with the smallest key
 
 ---
 
-### Question 4
+### 
 What is the difference between `del d` and `d.clear()`?
 
 A) No difference
@@ -64,7 +64,7 @@ D) Both delete the variable
 
 ---
 
-### Question 5
+### 
 What is the safe way to remove multiple keys?
 
 A) `for k in keys: del d[k]`

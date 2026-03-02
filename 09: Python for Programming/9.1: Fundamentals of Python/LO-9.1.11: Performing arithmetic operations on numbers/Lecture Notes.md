@@ -1,4 +1,4 @@
-# Lecture Notes: Perform Arithmetic Operations
+# Perform Arithmetic Operations
 
 ## Introduction
 Python provides comprehensive arithmetic operators for all types of calculations, from basic math to complex scientific formulas.
@@ -7,7 +7,7 @@ Python provides comprehensive arithmetic operators for all types of calculations
 
 <div align="center">
 
-![Python Arithmetic Operations Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.11.png)
+![Python Arithmetic Operations Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *Python's arithmetic operators (+, -, *, /, //, %, **) map directly to fundamental mathematical operations*
 
@@ -60,7 +60,6 @@ Think of arithmetic operators like **tools in a toolbox**:
 Each tool has its specific purpose, and you choose the right one for the job.
 
 ---
-
 
 ## Basic Arithmetic Operators
 
@@ -282,35 +281,6 @@ print(f"Power: {num1 ** 2}")           # 225
 celsius = 25
 fahrenheit = celsius * 9/5 + 32
 print(f"{celsius}°C = {fahrenheit}°F")  # 25°C = 77.0°F
-```
-
-### Example 3: Compound Interest
-```python
-principal = 1000
-rate = 0.05  # 5%
-years = 3
-
-amount = principal * (1 + rate) ** years
-interest = amount - principal
-
-print(f"Final amount: ${amount:.2f}")
-print(f"Interest earned: ${interest:.2f}")
-```
-
-### Example 4: Bill Splitter
-```python
-total_bill = 127.50
-num_people = 4
-tip_percent = 0.18
-
-tip = total_bill * tip_percent
-total_with_tip = total_bill + tip
-per_person = total_with_tip / num_people
-
-print(f"Bill: ${total_bill}")
-print(f"Tip (18%): ${tip:.2f}")
-print(f"Total: ${total_with_tip:.2f}")
-print(f"Per person: ${per_person:.2f}")
 ```
 
 ---

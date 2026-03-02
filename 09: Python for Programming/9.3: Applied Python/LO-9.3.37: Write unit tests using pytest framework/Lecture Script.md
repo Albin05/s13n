@@ -1,4 +1,4 @@
-# Lecture Script: LO-9.3.37 Write Unit Tests Using pytest Framework
+# Write Unit Tests Using pytest Framework
 
 
 ### CS Theory Bite

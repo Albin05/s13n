@@ -1,6 +1,6 @@
-# Post-Class Quiz: Use List Comprehensions
+# Use List Comprehensions
 
-## Q1: What is the output of this list comprehension?
+## What is the output of this list comprehension?
 ```python
 result = [x * 2 for x in range(5)]
 ```
@@ -14,7 +14,7 @@ B) [0, 2, 4, 6, 8]
 Explanation: The range(5) generates 0, 1, 2, 3, 4, and each is multiplied by 2, resulting in [0, 2, 4, 6, 8].
 </details>
 
-## Q2: Which list comprehension correctly filters only odd numbers from a list?
+## Which list comprehension correctly filters only odd numbers from a list?
 A) `odds = [n for n in numbers if n % 2 == 1]`
 B) `odds = [n if n % 2 == 1 for n in numbers]`
 C) `odds = [n for n in numbers where n % 2 == 1]`
@@ -25,7 +25,7 @@ A) `odds = [n for n in numbers if n % 2 == 1]`
 Explanation: The correct syntax uses `if` condition at the end to filter items. Option B has incorrect syntax, and option C uses `where` which is not valid Python syntax.
 </details>
 
-## Q3: What does this nested list comprehension create?
+## What does this nested list comprehension create?
 ```python
 matrix = [[i*j for j in range(1, 4)] for i in range(1, 4)]
 ```
@@ -39,7 +39,7 @@ A) A 3x3 multiplication table
 Explanation: This creates [[1, 2, 3], [2, 4, 6], [3, 6, 9]], which is a 3x3 multiplication table where each element is the product of its row and column indices.
 </details>
 
-## Q4: Which is the most Pythonic way to create a list of uppercase words?
+## Which is the most Pythonic way to create a list of uppercase words?
 A)
 ```python
 result = []
@@ -55,7 +55,7 @@ B) `result = [word.upper() for word in words]`
 Explanation: List comprehensions are considered more Pythonic than traditional loops for simple transformations. While option C works, list comprehensions are generally preferred for their readability.
 </details>
 
-## Q5: What's wrong with this list comprehension?
+## What's wrong with this list comprehension?
 ```python
 numbers = [1, 2, 3, 4, 5]
 result = [n * 2 if n > 3 for n in numbers]

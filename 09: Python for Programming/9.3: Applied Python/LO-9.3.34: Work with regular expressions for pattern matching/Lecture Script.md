@@ -1,4 +1,4 @@
-# Lecture Script: LO-9.3.34 Work with Regular Expressions for Pattern Matching
+# Work with Regular Expressions for Pattern Matching
 
 
 ### CS Theory Bite
@@ -225,9 +225,9 @@ print("Phone numbers found:")
 for phone in phones:
     print(f"  {phone}")
 # (555) 123-4567
-# 555-987-6543
-# 555.111.2222
-# 5559999999
+# -987-6543
+# 111.2222
+# 
 
 # Clean phone numbers to standard format
 def clean_phone(phone):

@@ -1,4 +1,4 @@
-### LO-14 Apply Logical Operators (20 minutes)
+### Apply Logical Operators (20 minutes)
 
 
 ### CS Theory Bite

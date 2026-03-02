@@ -1,4 +1,4 @@
-## Lecture Script: Creating and Initializing Sets for Unique Values
+## Creating and Initializing Sets for Unique Values
 
 
 ---

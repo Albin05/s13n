@@ -1,4 +1,4 @@
-# Lecture Notes: Define Variables
+# Define Variables
 
 ## Introduction
 Variables are the fundamental building blocks of programming. They allow programs to store, retrieve, and manipulate data. In this lesson, you'll learn how to create and use variables in Python.
@@ -7,7 +7,7 @@ Variables are the fundamental building blocks of programming. They allow program
 
 <div align="center">
 
-![Python Variables Memory Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.1.png)
+![Python Variables Memory Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *Variables are named references to objects — Python's type hierarchy shows all the types a variable can hold*
 
@@ -280,12 +280,6 @@ print("Subtotal:", subtotal)  # 59.98
 print("Tax:", tax)            # 4.7984
 print("Total:", total)        # 64.7784
 ```
-
-### Example 3: Game Score Tracker
-
-```python
-player_score = 0
-print("Starting score:", player_score)  # 0
 
 # Player completes level 1
 player_score = player_score + 100

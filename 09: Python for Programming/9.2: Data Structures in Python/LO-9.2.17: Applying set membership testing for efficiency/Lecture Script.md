@@ -1,4 +1,4 @@
-## Lecture Script: Applying Set Membership Testing for Efficiency
+## Applying Set Membership Testing for Efficiency
 
 
 ---
@@ -22,11 +22,11 @@ You have a list of 10 million usernames. You need to check if a username is take
 ```python
 # Approach 1: List
 usernames_list = list(range(10_000_000))
-# 9_999_999 in usernames_list → checks millions of elements!
+# _999_999 in usernames_list → checks millions of elements!
 
 # Approach 2: Set
 usernames_set = set(range(10_000_000))
-# 9_999_999 in usernames_set → instant!
+# _999_999 in usernames_set → instant!
 ```
 
 The list approach could take seconds. The set approach takes microseconds. Same data, vastly different performance.

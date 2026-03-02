@@ -1,4 +1,4 @@
-### LO-17 Write Else Statements (20 minutes)
+### Write Else Statements (20 minutes)
 
 
 ### CS Theory Bite

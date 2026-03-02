@@ -1,4 +1,4 @@
-# LO-62: Create Objects
+# Create Objects
 
 ## Learning Objective
 Students will be able to use Instantiating objects from classes in Python programs.

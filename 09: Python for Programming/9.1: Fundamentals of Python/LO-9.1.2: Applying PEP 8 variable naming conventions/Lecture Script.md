@@ -1,4 +1,4 @@
-### LO-2 Apply Variable Naming Conventions (15 minutes)
+### Apply Variable Naming Conventions (15 minutes)
 
 
 ### CS Theory Bite

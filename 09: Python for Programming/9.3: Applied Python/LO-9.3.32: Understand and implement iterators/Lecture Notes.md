@@ -1,15 +1,14 @@
-# Lecture Notes: Understand Iterators
+# Understand Iterators
 
 ## Iterators
 
 An iterator is an object that can be iterated upon, returning data one element at a time. It implements the iterator protocol consisting of `__iter__()` and `__next__()` methods.
 
-
 ---
 
 <div align="center">
 
-![Python Iterator __iter__ __next__ Protocol](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.32.png)
+![Python Iterator __iter__ __next__ Protocol](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Iterators advance through elements one at a time using a while-loop pattern until exhausted*
 
@@ -282,26 +281,6 @@ for line in SimulatedFileIterator():
 # - Last line of the file
 ```
 
-### Example 3: Reverse Iterator
-
-```python
-class ReverseIterator:
-    """Iterator that returns items in reverse order"""
-
-    def __init__(self, data):
-        self.data = data
-        self.index = len(data)
-
-    def __iter__(self):
-        return self
-
-    def __next__(self):
-        if self.index == 0:
-            raise StopIteration
-
-        self.index -= 1
-        return self.data[self.index]
-
 # Test reverse iterator
 numbers = [1, 2, 3, 4, 5]
 print("Numbers in reverse:")
@@ -318,29 +297,6 @@ for char in ReverseIterator(text):
 # Output: nohtyP
 print()
 ```
-
-### Example 4: Even Numbers Iterator
-
-```python
-class EvenNumbers:
-    """Iterator that yields only even numbers from a list"""
-
-    def __init__(self, numbers):
-        self.numbers = numbers
-        self.index = 0
-
-    def __iter__(self):
-        return self
-
-    def __next__(self):
-        while self.index < len(self.numbers):
-            current = self.numbers[self.index]
-            self.index += 1
-
-            if current % 2 == 0:
-                return current
-
-        raise StopIteration
 
 # Test even numbers iterator
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -359,37 +315,6 @@ for num in EvenNumbers(mixed_numbers):
 print()
 ```
 
-### Example 5: Cycling Iterator
-
-```python
-class CycleIterator:
-    """Iterator that cycles through items infinitely"""
-
-    def __init__(self, data, max_cycles=None):
-        self.data = data
-        self.max_cycles = max_cycles
-        self.index = 0
-        self.cycle_count = 0
-
-    def __iter__(self):
-        return self
-
-    def __next__(self):
-        if self.max_cycles is not None and self.cycle_count >= self.max_cycles:
-            raise StopIteration
-
-        if not self.data:
-            raise StopIteration
-
-        value = self.data[self.index]
-        self.index += 1
-
-        if self.index >= len(self.data):
-            self.index = 0
-            self.cycle_count += 1
-
-        return value
-
 # Test cycling iterator
 colors = ["red", "green", "blue"]
 print("Cycling through colors (2 complete cycles):")
@@ -397,12 +322,12 @@ cycle = CycleIterator(colors, max_cycles=2)
 for i, color in enumerate(cycle):
     print(f"{i+1}. {color}")
 # Output:
-# 1. red
-# 2. green
-# 3. blue
-# 4. red
-# 5. green
-# 6. blue
+# red
+# green
+# blue
+# red
+# green
+# blue
 
 print()
 

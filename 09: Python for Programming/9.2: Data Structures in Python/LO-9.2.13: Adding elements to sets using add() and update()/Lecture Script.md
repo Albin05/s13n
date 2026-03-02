@@ -1,4 +1,4 @@
-## Lecture Script: Adding Elements to Sets using add() and update()
+## Adding Elements to Sets using add() and update()
 
 
 ---

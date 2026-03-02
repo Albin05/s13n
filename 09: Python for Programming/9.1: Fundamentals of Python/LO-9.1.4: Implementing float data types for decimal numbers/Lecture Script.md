@@ -1,4 +1,4 @@
-### LO-4 Implement Float Data Types (15 minutes)
+### Implement Float Data Types (15 minutes)
 
 
 ### CS Theory Bite

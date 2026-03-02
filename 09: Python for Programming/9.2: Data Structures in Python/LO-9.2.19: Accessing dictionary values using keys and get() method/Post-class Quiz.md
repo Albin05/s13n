@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What happens when you access a non-existent key with `dict[key]`?
 
 A) Returns `None`
@@ -16,7 +16,7 @@ D) Returns an empty string
 
 ---
 
-### Question 2
+### 
 What is the output?
 
 ```python
@@ -35,7 +35,7 @@ D) `0`
 
 ---
 
-### Question 3
+### 
 What does `'hello' in {'hello': 'world'}` return?
 
 A) `True` — checks if 'hello' is a key
@@ -49,7 +49,7 @@ D) Error
 
 ---
 
-### Question 4
+### 
 What is the output?
 
 ```python
@@ -69,7 +69,7 @@ D) `KeyError`
 
 ---
 
-### Question 5
+### 
 What does `.get()` return when the key exists?
 
 A) Always returns the default value

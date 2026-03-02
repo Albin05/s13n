@@ -1,15 +1,14 @@
-# Lecture Notes: Import Built-in Modules
+# Import Built-in Modules
 
 ## Import Built-in Modules
 
 Using Python's standard library modules in your programs
 
-
 ---
 
 <div align="center">
 
-![Python import Built-in Modules math sys os](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.14.png)
+![Python import Built-in Modules math sys os](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Built-in modules provide pre-written functions that you can import and call in your program flow*
 
@@ -148,11 +147,6 @@ random.seed(42)
 print(f"Same random: {random.random()}")  # Same as above
 ```
 
-#### Example 3: Datetime Module
-
-```python
-from datetime import datetime, date, time, timedelta
-
 # Current date and time
 now = datetime.now()
 print(f"Current datetime: {now}")
@@ -186,11 +180,6 @@ print(f"Parsed date: {parsed_date.date()}")
 print(f"Full: {now.strftime('%A, %B %d, %Y at %I:%M %p')}")
 print(f"Short: {now.strftime('%m/%d/%y')}")
 ```
-
-#### Example 4: OS Module
-
-```python
-import os
 
 # Current working directory
 cwd = os.getcwd()
@@ -230,46 +219,6 @@ if not os.path.exists(new_dir):
     os.makedirs(new_dir)
     print(f"Created directory: {new_dir}")
 ```
-
-#### Example 5: Multiple Modules Together
-
-```python
-import os
-import sys
-from datetime import datetime
-import random
-
-class FileLogger:
-    """Simple file logger using built-in modules"""
-
-    def __init__(self, log_file='app.log'):
-        self.log_file = log_file
-
-        # Create logs directory if it doesn't exist
-        log_dir = os.path.dirname(log_file)
-        if log_dir and not os.path.exists(log_dir):
-            os.makedirs(log_dir)
-
-    def log(self, message, level='INFO'):
-        """Log a message with timestamp"""
-        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        log_entry = f"[{timestamp}] [{level}] {message}\n"
-
-        with open(self.log_file, 'a') as f:
-            f.write(log_entry)
-
-        print(log_entry.strip())
-
-    def get_stats(self):
-        """Get log file statistics"""
-        if not os.path.exists(self.log_file):
-            return "Log file doesn't exist"
-
-        size = os.path.getsize(self.log_file)
-        with open(self.log_file, 'r') as f:
-            lines = len(f.readlines())
-
-        return f"Log file: {size} bytes, {lines} entries"
 
 # Usage
 logger = FileLogger('logs/application.log')

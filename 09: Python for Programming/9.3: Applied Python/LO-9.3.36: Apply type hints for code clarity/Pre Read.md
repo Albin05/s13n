@@ -1,4 +1,4 @@
-# Pre-Read: Apply Type Hints
+# Apply Type Hints
 
 ## Type Hints
 

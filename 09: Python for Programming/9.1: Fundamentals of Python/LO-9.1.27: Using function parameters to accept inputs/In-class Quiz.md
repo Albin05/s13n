@@ -1,6 +1,6 @@
-# Post-class Quiz: Using Function Parameters to Accept Inputs
+# Using Function Parameters to Accept Inputs
 
-## Question 1
+## 
 
 What is the difference between a parameter and an argument?
 
@@ -22,7 +22,7 @@ The parameter `name` is defined in the function header, and the argument "Alice"
 
 ---
 
-## Question 2
+## 
 
 What will this code output?
 
@@ -44,7 +44,7 @@ D) Error
 
 ---
 
-## Question 3
+## 
 
 How many parameters does this function have?
 
@@ -65,7 +65,7 @@ D) 4
 
 ---
 
-## Question 4
+## 
 
 What happens if you call a function with fewer arguments than it has parameters?
 
@@ -87,7 +87,7 @@ You must provide all required arguments unless the function has default paramete
 
 ---
 
-## Question 5
+## 
 
 In this function call, what is the value of parameter `b`?
 
@@ -109,7 +109,7 @@ D) -7
 
 ---
 
-## Question 6
+## 
 
 What will this code print?
 
@@ -141,7 +141,7 @@ Each `print()` statement outputs on a new line by default, so the output is:
 
 ---
 
-## Question 7
+## 
 
 Which is the correct way to define a function with two parameters?
 
@@ -161,7 +161,7 @@ Option A is missing the comma, options B and D use wrong brackets. Only option C
 
 ---
 
-## Question 8
+## 
 
 What makes this function call incorrect?
 
@@ -188,7 +188,7 @@ You must provide values for all parameters unless they have default values.
 
 ---
 
-## Question 9
+## 
 
 Can parameters have the same name as variables outside the function?
 
@@ -213,7 +213,7 @@ The parameter `name` inside the function is separate from the `name` variable ou
 
 ---
 
-## Question 10
+## 
 
 What is true about parameter order?
 
@@ -236,7 +236,7 @@ Swapping argument order changes which parameter receives which value, potentiall
 
 ---
 
-## Question 11
+## 
 
 What will this code output?
 
@@ -258,7 +258,7 @@ D) Error
 
 ---
 
-## Question 12
+## 
 
 Which parameter name follows best practices?
 
@@ -279,7 +279,7 @@ D) `UserAge`
 
 ---
 
-## Question 13
+## 
 
 Can parameters be different data types in the same function?
 
@@ -302,7 +302,7 @@ Here, `name` is a string, `age` is an integer, and `is_student` is a boolean.
 
 ---
 
-## Question 14
+## 
 
 What happens when you pass more arguments than parameters?
 
@@ -324,7 +324,7 @@ The function expects exactly 2 arguments, but 3 were provided. Later, you'll lea
 
 ---
 
-## Question 15
+## 
 
 What makes a function with parameters reusable?
 

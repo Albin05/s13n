@@ -1,4 +1,4 @@
-# Lecture Notes: Define Functions
+# Define Functions
 
 ## Introduction
 
@@ -46,7 +46,7 @@ This is the foundation of professional software engineering.
 
 <div align="center">
 
-![Python Function Definition Syntax](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.26.jpg)
+![Python Function Definition Syntax](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.jpg)
 
 *A function acts as a reusable machine: it accepts input, processes it according to defined instructions, and produces output*
 
@@ -57,7 +57,6 @@ This is the foundation of professional software engineering.
 ## Functions
 
 A function is a reusable block of code that performs a specific task.
-
 
 ### Basic Syntax
 
@@ -91,15 +90,6 @@ def greet_user():
 greet_user()
 ```
 
-### Example 3: Reusability
-
-```python
-def print_line():
-    print("-" * 40)
-
-print_line()
-print("Header")
-print_line()
 # Output:
 # ----------------------------------------
 # Header

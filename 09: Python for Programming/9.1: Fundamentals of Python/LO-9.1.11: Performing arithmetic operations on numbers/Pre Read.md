@@ -1,4 +1,4 @@
-# Pre-Read: Perform Arithmetic Operations
+# Perform Arithmetic Operations
 
 ## Arithmetic Operators in Python
 

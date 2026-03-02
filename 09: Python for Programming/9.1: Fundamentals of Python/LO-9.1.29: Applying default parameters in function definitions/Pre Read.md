@@ -1,4 +1,4 @@
-# Pre-Read: Applying Default Parameters in Function Definitions
+# Applying Default Parameters in Function Definitions
 
 ## Why Default Parameters?
 

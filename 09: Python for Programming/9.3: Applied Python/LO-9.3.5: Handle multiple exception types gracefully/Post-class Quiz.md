@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What is the correct order for except blocks?
 
 A) General exceptions first, specific last
@@ -16,7 +16,7 @@ D) Only one except block is allowed
 
 ---
 
-### Question 2
+### 
 What does `except (ValueError, TypeError) as e:` do?
 
 A) Catches ValueError OR TypeError with the same handler
@@ -30,7 +30,7 @@ D) Catches ValueError, ignores TypeError
 
 ---
 
-### Question 3
+### 
 When does the `else` block run in try-except-else?
 
 A) Always
@@ -44,7 +44,7 @@ D) Before the try block
 
 ---
 
-### Question 4
+### 
 What is the output?
 
 ```python
@@ -69,7 +69,7 @@ D) Only C
 
 ---
 
-### Question 5
+### 
 Why is catching bare `Exception` as the LAST except block acceptable?
 
 A) It's never acceptable

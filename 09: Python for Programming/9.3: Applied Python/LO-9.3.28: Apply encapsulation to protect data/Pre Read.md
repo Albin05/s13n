@@ -1,4 +1,4 @@
-# Pre-Read: Apply Encapsulation
+# Apply Encapsulation
 
 ## What is Encapsulation?
 

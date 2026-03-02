@@ -1,4 +1,4 @@
-## Lecture Script: Define Classes as Object Blueprints
+## Define Classes as Object Blueprints
 
 
 ---

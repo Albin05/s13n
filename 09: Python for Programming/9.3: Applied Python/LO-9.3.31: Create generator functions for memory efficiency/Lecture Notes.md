@@ -1,15 +1,14 @@
-# Lecture Notes: Create Generator Functions
+# Create Generator Functions
 
 ## Generator Functions
 
 Generator functions use the `yield` keyword to return values lazily, one at a time, instead of creating and storing all values in memory at once.
 
-
 ---
 
 <div align="center">
 
-![Python Generator Function yield Memory Efficient](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.31.webp)
+![Python Generator Function yield Memory Efficient](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.webp)
 
 *Generators use a while-loop pattern to yield values one at a time for memory-efficient iteration*
 
@@ -28,7 +27,7 @@ Generators implement **lazy evaluation** - compute values on-demand, not upfront
 # MEMORY HOG - entire list in RAM!
 def get_million_squares():
     return [i**2 for i in range(1000000)]
-# 8MB+ memory - all values stored!
+# MB+ memory - all values stored!
 ```
 
 **Solution with generators**: One value at a time:
@@ -174,11 +173,11 @@ print(next(gen))  # Third yield, then returns 3
 # Output:
 # Generator created
 # First yield
-# 1
+# 
 # Second yield
-# 2
+# 
 # Third yield
-# 3
+# 
 ```
 
 ## Real-World Examples
@@ -224,7 +223,7 @@ def filter_logs(log_generator, level):
 warnings_and_errors = filter_logs(read_log_entries(), "WARNING")
 for log in warnings_and_errors:
     print(log)
-# 2024-01-01 10:05:00 WARNING: High memory usage
+# -01-01 10:05:00 WARNING: High memory usage
 ```
 
 ### Example 2: Infinite Sequences
@@ -281,48 +280,6 @@ print(f"First 10 primes: {first_10_primes}")
 # First 10 primes: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
 ```
 
-### Example 3: Data Processing Pipeline
-
-```python
-def load_data():
-    """Simulate loading data from a database"""
-    data = [
-        {"id": 1, "name": "Alice", "score": 85},
-        {"id": 2, "name": "Bob", "score": 92},
-        {"id": 3, "name": "Charlie", "score": 78},
-        {"id": 4, "name": "Diana", "score": 95},
-        {"id": 5, "name": "Eve", "score": 88}
-    ]
-    for record in data:
-        yield record
-
-def filter_passing(data_generator, passing_score=80):
-    """Filter records with score >= passing_score"""
-    for record in data_generator:
-        if record["score"] >= passing_score:
-            yield record
-
-def add_grade(data_generator):
-    """Add letter grade to each record"""
-    for record in data_generator:
-        score = record["score"]
-        if score >= 90:
-            grade = "A"
-        elif score >= 80:
-            grade = "B"
-        elif score >= 70:
-            grade = "C"
-        else:
-            grade = "F"
-
-        record["grade"] = grade
-        yield record
-
-def format_output(data_generator):
-    """Format records for display"""
-    for record in data_generator:
-        yield f"{record['name']}: {record['score']}% (Grade: {record['grade']})"
-
 # Chain generators together
 print("Students who passed:")
 pipeline = load_data()
@@ -338,25 +295,6 @@ for result in pipeline:
 # Diana: 95% (Grade: A)
 # Eve: 88% (Grade: B)
 ```
-
-### Example 4: Batch Processing
-
-```python
-def batch_generator(items, batch_size):
-    """
-    Yield items in batches of specified size
-    Useful for processing large datasets in chunks
-    """
-    batch = []
-    for item in items:
-        batch.append(item)
-        if len(batch) == batch_size:
-            yield batch
-            batch = []
-
-    # Yield remaining items if any
-    if batch:
-        yield batch
 
 # Process numbers in batches of 3
 numbers = range(1, 11)
@@ -389,26 +327,6 @@ for window in sliding_window(data, 3):
 # [4, 5, 6]
 ```
 
-### Example 5: Range Generators
-
-```python
-def custom_range(start, stop, step=1):
-    """
-    Custom implementation of range() using generator
-    """
-    current = start
-    if step > 0:
-        while current < stop:
-            yield current
-            current += step
-    elif step < 0:
-        while current > stop:
-            yield current
-            current += step
-
-print("Custom range 0 to 10, step 2:")
-for num in custom_range(0, 10, 2):
-    print(num, end=" ")
 # Output: 0 2 4 6 8
 print()
 
@@ -437,8 +355,8 @@ end = datetime(2024, 1, 7)
 print("\nDates in first week of 2024:")
 for date in date_range(start, end):
     print(date.strftime("%Y-%m-%d"))
-# 2024-01-01
-# 2024-01-02
+# -01-01
+# -01-02
 # ... through 2024-01-07
 
 def countdown_timer(seconds):

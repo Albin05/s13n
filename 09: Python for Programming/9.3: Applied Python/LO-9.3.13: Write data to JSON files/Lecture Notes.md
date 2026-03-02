@@ -1,15 +1,14 @@
-# Lecture Notes: Write JSON Files
+# Write JSON Files
 
 ## Write JSON Files
 
 Converting Python data structures to JSON and saving to files
 
-
 ---
 
 <div align="center">
 
-![Python JSON File Write json.dump() Serialize](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.13.jpg)
+![Python JSON File Write json.dump() Serialize](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.jpg)
 
 *Writing JSON serializes a nested tree structure of data into a formatted text file*
 
@@ -153,52 +152,6 @@ print(f"Debug mode: {debug_mode}")
 # Debug mode: False
 ```
 
-#### Example 3: Exporting Data Collection
-
-```python
-import json
-from datetime import datetime
-
-class DataExporter:
-    """Export collected data to JSON files"""
-
-    def __init__(self):
-        self.data = []
-
-    def add_record(self, record):
-        """Add a record with timestamp"""
-        record['timestamp'] = datetime.now().isoformat()
-        self.data.append(record)
-
-    def export_to_json(self, filename, pretty=True):
-        """Export all data to JSON file"""
-        try:
-            with open(filename, 'w') as file:
-                if pretty:
-                    json.dump(self.data, file, indent=4, ensure_ascii=False)
-                else:
-                    json.dump(self.data, file)
-
-            print(f"Exported {len(self.data)} records to {filename}")
-            return True
-        except Exception as e:
-            print(f"Error exporting data: {e}")
-            return False
-
-    def export_summary(self, filename):
-        """Export summary statistics"""
-        summary = {
-            "total_records": len(self.data),
-            "export_date": datetime.now().isoformat(),
-            "first_record": self.data[0] if self.data else None,
-            "last_record": self.data[-1] if self.data else None
-        }
-
-        with open(filename, 'w') as file:
-            json.dump(summary, file, indent=4)
-
-        print(f"Summary exported to {filename}")
-
 # Usage
 exporter = DataExporter()
 
@@ -215,41 +168,6 @@ exporter.export_to_json('user_activity.json')
 exporter.export_summary('activity_summary.json')
 # Summary exported to activity_summary.json
 ```
-
-#### Example 4: Custom JSON Encoder for Complex Objects
-
-```python
-import json
-from datetime import datetime, date
-
-class DateTimeEncoder(json.JSONEncoder):
-    """Custom JSON encoder for datetime objects"""
-
-    def default(self, obj):
-        if isinstance(obj, (datetime, date)):
-            return obj.isoformat()
-        return super().default(obj)
-
-class Student:
-    """Student class with custom JSON serialization"""
-
-    def __init__(self, name, student_id, enrollment_date):
-        self.name = name
-        self.student_id = student_id
-        self.enrollment_date = enrollment_date
-        self.grades = {}
-
-    def add_grade(self, subject, grade):
-        self.grades[subject] = grade
-
-    def to_dict(self):
-        """Convert student to dictionary"""
-        return {
-            "name": self.name,
-            "student_id": self.student_id,
-            "enrollment_date": self.enrollment_date,
-            "grades": self.grades
-        }
 
 # Create students
 students = [
@@ -285,76 +203,6 @@ for student in loaded_students:
 # Bob: Enrolled on 2023-09-01
 # Charlie: Enrolled on 2024-01-15
 ```
-
-#### Example 5: Backup and Versioning
-
-```python
-import json
-import os
-from datetime import datetime
-import shutil
-
-class JSONBackupManager:
-    """Manage JSON files with backup and versioning"""
-
-    def __init__(self, filename):
-        self.filename = filename
-        self.backup_dir = 'backups'
-
-        # Create backup directory if it doesn't exist
-        if not os.path.exists(self.backup_dir):
-            os.makedirs(self.backup_dir)
-
-    def create_backup(self):
-        """Create a backup of the current file"""
-        if not os.path.exists(self.filename):
-            return False
-
-        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        backup_name = f"{self.filename.replace('.json', '')}_{timestamp}.json"
-        backup_path = os.path.join(self.backup_dir, backup_name)
-
-        shutil.copy2(self.filename, backup_path)
-        print(f"Backup created: {backup_path}")
-        return backup_path
-
-    def save_data(self, data, create_backup=True):
-        """Save data with optional backup"""
-        # Create backup before overwriting
-        if create_backup and os.path.exists(self.filename):
-            self.create_backup()
-
-        # Save new data
-        with open(self.filename, 'w') as file:
-            json.dump(data, file, indent=4)
-
-        print(f"Data saved to {self.filename}")
-
-    def load_data(self):
-        """Load data from file"""
-        try:
-            with open(self.filename, 'r') as file:
-                return json.load(file)
-        except FileNotFoundError:
-            return None
-
-    def list_backups(self):
-        """List all backups"""
-        backups = [f for f in os.listdir(self.backup_dir)
-                  if f.endswith('.json')]
-        return sorted(backups, reverse=True)
-
-    def restore_backup(self, backup_name):
-        """Restore from a specific backup"""
-        backup_path = os.path.join(self.backup_dir, backup_name)
-
-        if not os.path.exists(backup_path):
-            print(f"Backup {backup_name} not found")
-            return False
-
-        shutil.copy2(backup_path, self.filename)
-        print(f"Restored from {backup_name}")
-        return True
 
 # Usage
 manager = JSONBackupManager('important_data.json')

@@ -1,4 +1,4 @@
-# LO-66: Apply Inheritance
+# Apply Inheritance
 
 ## Learning Objective
 Students will be able to use Creating subclasses that inherit from parent classes in Python programs.

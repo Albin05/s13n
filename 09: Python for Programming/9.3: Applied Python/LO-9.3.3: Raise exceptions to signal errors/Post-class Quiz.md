@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What does `raise ValueError("bad input")` do?
 
 A) Prints "bad input" and continues
@@ -16,7 +16,7 @@ D) Creates a ValueError but doesn't trigger it
 
 ---
 
-### Question 2
+### 
 When should you raise a `TypeError` vs a `ValueError`?
 
 A) TypeError for wrong values, ValueError for wrong types
@@ -30,7 +30,7 @@ D) TypeError for user input, ValueError for code errors
 
 ---
 
-### Question 3
+### 
 What does bare `raise` (without arguments) do?
 
 A) Raises a generic Exception
@@ -44,7 +44,7 @@ D) Syntax error
 
 ---
 
-### Question 4
+### 
 What is wrong with this code?
 
 ```python
@@ -65,7 +65,7 @@ D) It should return -1
 
 ---
 
-### Question 5
+### 
 Which is the BEST error message?
 
 A) `raise ValueError("Error")`

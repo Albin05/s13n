@@ -1,6 +1,6 @@
-# Post-Class Quiz: Define Instance Methods
+# Define Instance Methods
 
-## Q1: Question about Creating methods that operate on instances
+## Question about Creating methods that operate on instances
 A) Option A
 B) Option B
 C) Option C
@@ -9,7 +9,7 @@ C) Option C
 B - Explanation of OOP concept
 </details>
 
-## Q2: Syntax question
+## Syntax question
 A) Option A
 B) Option B
 C) Option C
@@ -18,7 +18,7 @@ C) Option C
 A - Explanation
 </details>
 
-## Q3: When to use Creating methods that operate on instances?
+## When to use Creating methods that operate on instances?
 A) Option A
 B) Option B
 C) Option C
@@ -27,7 +27,7 @@ C) Option C
 C - Practical explanation
 </details>
 
-## Q4: Best practice for Creating methods that operate on instances
+## Best practice for Creating methods that operate on instances
 A) Option A
 B) Option B
 C) Option C
@@ -36,7 +36,7 @@ C) Option C
 B - Best practice explanation
 </details>
 
-## Q5: Common mistake with Creating methods that operate on instances
+## Common mistake with Creating methods that operate on instances
 A) Option A
 B) Option B
 C) Option C

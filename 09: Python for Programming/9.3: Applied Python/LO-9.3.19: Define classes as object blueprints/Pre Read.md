@@ -1,4 +1,4 @@
-# Pre-Read: Define Classes
+# Define Classes
 
 ## What is a Class?
 

@@ -1,5 +1,4 @@
-## Lecture Notes: Tuple Packing and Unpacking
-
+## Tuple Packing and Unpacking
 
 ---
 

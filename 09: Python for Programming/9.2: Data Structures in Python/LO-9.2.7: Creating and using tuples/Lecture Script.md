@@ -1,4 +1,4 @@
-## Lecture Script: Creating and Using Tuples
+## Creating and Using Tuples
 
 
 ---
@@ -361,12 +361,12 @@ print(f"New coordinates: ({new_x}, {new_y})")  # (15, 17)
 **Use Tuples When:**
 
 ```python
-# 1. Data shouldn't change
+# Data shouldn't change
 DAYS_OF_WEEK = ('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
 RGB_RED = (255, 0, 0)
 ORIGIN = (0, 0)
 
-# 2. As dictionary keys (must be hashable)
+# As dictionary keys (must be hashable)
 locations = {}
 locations[(0, 0)] = "Origin"
 locations[(10, 20)] = "Point A"
@@ -377,13 +377,13 @@ print(locations[(10, 20)])  # Point A
 # Lists can't be dict keys!
 # locations[[1, 2]] = "Test"  # TypeError: unhashable type: 'list'
 
-# 3. Returning multiple values
+# Returning multiple values
 def get_dimensions():
     return 1920, 1080
 
 width, height = get_dimensions()
 
-# 4. Fixed structure data
+# Fixed structure data
 person = ('Alice', 25, 'Engineer')  # name, age, occupation
 coordinate = (40.7128, -74.0060)    # latitude, longitude
 rgb = (255, 128, 0)                 # red, green, blue
@@ -467,9 +467,9 @@ for name, score in students:
 fruits = ['apple', 'banana', 'orange']
 for index, fruit in enumerate(fruits):
     print(f"{index}: {fruit}")
-# 0: apple
-# 1: banana
-# 2: orange
+# apple
+# banana
+# orange
 ```
 
 ---

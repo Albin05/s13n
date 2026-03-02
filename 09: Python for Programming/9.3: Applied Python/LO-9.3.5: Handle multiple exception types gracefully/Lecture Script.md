@@ -1,4 +1,4 @@
-## Lecture Script: Handle Multiple Exception Types
+## Handle Multiple Exception Types
 
 
 ---

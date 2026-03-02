@@ -1,4 +1,4 @@
-## Pre-Read: Accessing Dictionary Values
+## Accessing Dictionary Values
 
 **Duration:** 5 minutes
 

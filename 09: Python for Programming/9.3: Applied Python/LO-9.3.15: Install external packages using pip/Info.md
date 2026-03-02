@@ -1,4 +1,4 @@
-# LO-57: Install External Packages
+# Install External Packages
 
 ## Learning Objective
 Students will be able to work with Using pip to install packages in Python.

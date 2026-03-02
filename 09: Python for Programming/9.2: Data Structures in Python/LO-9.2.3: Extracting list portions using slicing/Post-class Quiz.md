@@ -1,6 +1,6 @@
 ## Post-class Quiz: Extracting List Portions Using Slicing
 
-### Question 1
+### 
 Given `lst = [10, 20, 30, 40, 50]`, what is `lst[1:4]`?
 
 A) `[10, 20, 30]`
@@ -13,7 +13,7 @@ D) `[10, 20, 30, 40]`
 
 ---
 
-### Question 2
+### 
 What does `numbers[::-1]` do?
 
 A) Returns the first element
@@ -26,7 +26,7 @@ D) Returns every other element
 
 ---
 
-### Question 3
+### 
 Given `data = [1, 2, 3, 4, 5, 6, 7, 8]`, what is `data[::2]`?
 
 A) `[1, 2, 3, 4]`
@@ -39,7 +39,7 @@ D) `[1, 2]`
 
 ---
 
-### Question 4
+### 
 What happens when you do `lst[2:2] = [10, 20]`?
 
 A) Replaces elements at index 2
@@ -52,7 +52,7 @@ D) Causes an error
 
 ---
 
-### Question 5
+### 
 Given `lst = [0, 1, 2, 3, 4, 5]`, what is `lst[-3:-1]`?
 
 A) `[3, 4, 5]`

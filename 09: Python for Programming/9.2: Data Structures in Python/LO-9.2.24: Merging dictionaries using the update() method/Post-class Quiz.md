@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What is the output?
 
 ```python
@@ -23,7 +23,7 @@ D) `{'b': 3, 'c': 4}`
 
 ---
 
-### Question 2
+### 
 What is the difference between `d1.update(d2)` and `{**d1, **d2}`?
 
 A) No difference
@@ -37,7 +37,7 @@ D) `update()` keeps d1 values; `{**d1, **d2}` keeps d2 values
 
 ---
 
-### Question 3
+### 
 In `{**d1, **d2, **d3}`, which dict's values take priority for shared keys?
 
 A) d1 (first one)
@@ -51,7 +51,7 @@ D) It raises an error for duplicate keys
 
 ---
 
-### Question 4
+### 
 What is the output?
 
 ```python
@@ -72,7 +72,7 @@ D) Error
 
 ---
 
-### Question 5
+### 
 Which creates a merged dict WITHOUT modifying the originals?
 
 A) `d1.update(d2)`

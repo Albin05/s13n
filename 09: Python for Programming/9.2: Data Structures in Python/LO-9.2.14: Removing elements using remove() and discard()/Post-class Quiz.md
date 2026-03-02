@@ -4,7 +4,7 @@
 
 ---
 
-### Q1: Error Behavior
+### Error Behavior
 
 What happens when you run this code?
 
@@ -24,7 +24,7 @@ fruits.remove('orange')
 
 ---
 
-### Q2: Safe Removal
+### Safe Removal
 
 What will be the output?
 
@@ -46,7 +46,7 @@ print(len(tags))
 
 ---
 
-### Q3: Method Comparison
+### Method Comparison
 
 Which statement is TRUE about remove() and discard()?
 
@@ -61,7 +61,7 @@ Which statement is TRUE about remove() and discard()?
 
 ---
 
-### Q4: pop() Behavior
+### pop() Behavior
 
 What is TRUE about the pop() method for sets?
 
@@ -81,7 +81,7 @@ x = numbers.pop()
 
 ---
 
-### Q5: Best Practice
+### Best Practice
 
 You're building a feature where users can remove items from their wishlist. Which method should you use?
 

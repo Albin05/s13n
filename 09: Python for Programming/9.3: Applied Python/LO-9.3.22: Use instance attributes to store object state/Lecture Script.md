@@ -1,4 +1,4 @@
-## Lecture Script: Use Instance Attributes
+## Use Instance Attributes
 
 
 ---

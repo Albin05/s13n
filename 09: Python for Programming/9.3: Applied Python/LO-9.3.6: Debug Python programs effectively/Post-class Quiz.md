@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 How should you read a Python traceback?
 
 A) Top to bottom
@@ -16,7 +16,7 @@ D) Only the first line matters
 
 ---
 
-### Question 2
+### 
 What does `assert x > 0, "must be positive"` do?
 
 A) Always prints "must be positive"
@@ -30,7 +30,7 @@ D) Does nothing
 
 ---
 
-### Question 3
+### 
 What is the bug in this code?
 
 ```python
@@ -50,7 +50,7 @@ D) No bug
 
 ---
 
-### Question 4
+### 
 Which is the best debugging strategy for a long function?
 
 A) Rewrite the entire function
@@ -64,7 +64,7 @@ D) Delete the function and start over
 
 ---
 
-### Question 5
+### 
 What does `breakpoint()` do?
 
 A) Stops the program permanently

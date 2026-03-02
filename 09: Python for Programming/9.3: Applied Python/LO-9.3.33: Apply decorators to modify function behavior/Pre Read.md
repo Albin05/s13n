@@ -1,4 +1,4 @@
-# Pre-Read: Apply Decorators
+# Apply Decorators
 
 ## Decorators
 

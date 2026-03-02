@@ -1,10 +1,10 @@
-# Post-class Quiz: Controlling While Loops Using Break Statement
+# Controlling While Loops Using Break Statement
 
 Test your understanding of the break statement and its use in controlling loop flow.
 
 ---
 
-## Q1: What does the break statement do?
+## What does the break statement do?
 
 A) Pauses the loop temporarily
 B) Exits the loop immediately
@@ -19,7 +19,7 @@ D) Restarts the loop from the beginning
 
 ---
 
-## Q2: What is the output?
+## What is the output?
 ```python
 for i in range(5):
     if i == 3:
@@ -40,7 +40,7 @@ D) 3 4
 
 ---
 
-## Q3: Can you use break in a for loop?
+## Can you use break in a for loop?
 
 A) No, only in while loops
 B) Yes, in both while and for loops
@@ -55,7 +55,7 @@ D) No, break is not a Python keyword
 
 ---
 
-## Q4: What happens with nested loops and break?
+## What happens with nested loops and break?
 
 A) Break exits all nested loops
 B) Break only exits the innermost loop
@@ -70,7 +70,7 @@ D) Break exits the outermost loop only
 
 ---
 
-## Q5: What is the output?
+## What is the output?
 ```python
 count = 0
 while True:
@@ -93,7 +93,7 @@ D) 0 1 2
 
 ---
 
-## Q6: When does the else clause of a loop execute?
+## When does the else clause of a loop execute?
 
 A) Always after the loop
 B) Only if break was used
@@ -108,7 +108,7 @@ D) Never
 
 ---
 
-## Q7: What is the output?
+## What is the output?
 ```python
 for num in [1, 3, 5, 6, 7]:
     if num % 2 == 0:
@@ -131,7 +131,7 @@ D) Error
 
 ---
 
-## Q8: Is `while True:` with break a common pattern?
+## Is `while True:` with break a common pattern?
 
 A) No, it's bad practice
 B) Yes, common for menus and input
@@ -146,7 +146,7 @@ D) Only used for debugging
 
 ---
 
-## Q9: What is the output?
+## What is the output?
 ```python
 numbers = [1, 2, 3, 4, 5]
 for n in numbers:
@@ -168,7 +168,7 @@ D) 8 10
 
 ---
 
-## Q10: How do you break from BOTH loops in nested loops?
+## How do you break from BOTH loops in nested loops?
 
 A) Use break twice
 B) Use flag variable
@@ -193,7 +193,7 @@ for i in ...:
 
 ---
 
-## Q11: What is the output?
+## What is the output?
 ```python
 i = 0
 while i < 5:
@@ -216,7 +216,7 @@ D) 0
 
 ---
 
-## Q12: Can a loop have multiple break statements?
+## Can a loop have multiple break statements?
 
 A) No, only one break per loop
 B) Yes, any number of breaks
@@ -231,7 +231,7 @@ D) Breaks must be in else clause
 
 ---
 
-## Q13: What is the output?
+## What is the output?
 ```python
 for i in range(10):
     if i % 2 == 0:
@@ -254,7 +254,7 @@ D) 7 9
 
 ---
 
-## Q14: Where does execution continue after break?
+## Where does execution continue after break?
 
 A) At the beginning of the loop
 B) At the line after the loop
@@ -269,7 +269,7 @@ D) At the nearest else clause
 
 ---
 
-## Q15: What is the output?
+## What is the output?
 ```python
 for i in range(3):
     for j in range(3):
@@ -291,22 +291,4 @@ D) All combinations from 0,0 to 2,2
 
 ---
 
-## Score Interpretation
 
-- **13-15 correct**: Excellent! You've mastered the break statement.
-- **10-12 correct**: Good work! Review loop-else and nested breaks.
-- **7-9 correct**: Fair. Practice more with break patterns and while True.
-- **Below 7**: Review the lesson materials on break statement usage.
-
-## Key Concepts to Remember
-
-1. **Immediate exit**: Break stops loop right away
-2. **Works in all loops**: while, for, nested
-3. **Innermost only**: Break exits closest loop
-4. **while True pattern**: Common with break
-5. **Loop-else**: Skipped if break executes
-6. **Flag variables**: Break from nested loops
-7. **Multiple breaks**: First to execute wins
-8. **Efficiency**: Skip unnecessary iterations
-9. **Search patterns**: Stop when found
-10. **Validation**: Break when input valid

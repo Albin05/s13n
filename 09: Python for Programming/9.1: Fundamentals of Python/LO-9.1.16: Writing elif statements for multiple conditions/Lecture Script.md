@@ -1,4 +1,4 @@
-### LO-16 Write Elif Statements (20 minutes)
+### Write Elif Statements (20 minutes)
 
 
 ### CS Theory Bite

@@ -1,15 +1,14 @@
-# Lecture Notes: Install External Packages
+# Install External Packages
 
 ## Install External Packages
 
 Using pip to install third-party Python packages
 
-
 ---
 
 <div align="center">
 
-![Python pip Install External Packages](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.15.png)
+![Python pip Install External Packages](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *External packages installed via pip extend your program with additional functions and capabilities*
 
@@ -165,18 +164,15 @@ df = pd.DataFrame(data)
 print(df)
 # Output:
 #       Name  Age      City
-# 0    Alice   25  New York
-# 1      Bob   30    London
-# 2  Charlie   35     Paris
+# Alice   25  New York
+# Bob   30    London
+# Charlie   35     Paris
 
 # Save to CSV
 df.to_csv('people.csv', index=False)
 print("Data saved to people.csv")
 ```
 
-#### Example 3: Using Requirements File
-
-```bash
 # Create requirements.txt file
 cat > requirements.txt << EOL
 requests==2.31.0
@@ -208,9 +204,6 @@ print(f"API Key loaded: {bool(api_key)}")
 print(f"Debug mode: {debug_mode}")
 ```
 
-#### Example 4: Version Management
-
-```bash
 # Check pip version
 pip --version
 
@@ -248,9 +241,6 @@ for package in packages_list[:10]:  # Show first 10
     print(f"  {package}")
 ```
 
-#### Example 5: Project Setup Script
-
-```python
 # setup_project.py
 import subprocess
 import sys

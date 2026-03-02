@@ -1,4 +1,4 @@
-# Lecture Script: LO-68 Use the super() Function
+# Use the super() Function
 
 
 ### CS Theory Bite

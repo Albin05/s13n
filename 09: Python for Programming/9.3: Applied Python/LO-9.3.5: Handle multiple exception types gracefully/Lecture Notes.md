@@ -1,5 +1,4 @@
-## Lecture Notes: Handle Multiple Exception Types Gracefully
-
+## Handle Multiple Exception Types Gracefully
 
 ---
 

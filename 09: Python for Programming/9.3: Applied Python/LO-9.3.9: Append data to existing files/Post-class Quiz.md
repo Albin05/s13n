@@ -1,6 +1,6 @@
-# Post-Class Quiz: Append to Files
+# Append to Files
 
-## Q1: What does append mode do?
+## What does append mode do?
 A) Overwrites the entire file
 B) Adds content to the end of file
 C) Reads the file
@@ -9,7 +9,7 @@ C) Reads the file
 B - Adds content to the end without erasing existing data
 </details>
 
-## Q2: Which mode to append?
+## Which mode to append?
 A) "w"
 B) "r"
 C) "a"
@@ -18,7 +18,7 @@ C) "a"
 C - "a" is append mode
 </details>
 
-## Q3: What if file doesn't exist?
+## What if file doesn't exist?
 ```python
 with open("new.txt", "a") as f:
     f.write("Hello")
@@ -31,7 +31,7 @@ C) Nothing happens
 B - File is created if it doesn't exist
 </details>
 
-## Q4: What's the output?
+## What's the output?
 ```python
 with open("test.txt", "w") as f:
     f.write("A\n")
@@ -48,7 +48,7 @@ C) C B A
 B - A B C (write creates with A, then append adds B and C)
 </details>
 
-## Q5: Best use case for append?
+## Best use case for append?
 A) Creating a new file
 B) Log files
 C) Overwriting old data

@@ -1,6 +1,6 @@
-# Post-class Quiz: Writing Nested Loops for Multi-Level Iteration
+# Writing Nested Loops for Multi-Level Iteration
 
-## Question 1
+## 
 
 What will be the output of this code?
 
@@ -22,7 +22,7 @@ D) Error
 
 ---
 
-## Question 2
+## 
 
 How many total iterations occur in this nested loop?
 
@@ -43,7 +43,7 @@ D) 16
 
 ---
 
-## Question 3
+## 
 
 What pattern will this code create?
 
@@ -65,7 +65,7 @@ D) Diamond
 
 ---
 
-## Question 4
+## 
 
 What does this code print?
 
@@ -92,7 +92,7 @@ Output: First row "0 1", second row "1 2"
 
 ---
 
-## Question 5
+## 
 
 Which loop controls the number of rows in a nested loop pattern?
 
@@ -107,7 +107,7 @@ D) Neither loop
 
 ---
 
-## Question 6
+## 
 
 What will this create?
 
@@ -132,7 +132,7 @@ D) Checkerboard pattern
 
 ---
 
-## Question 7
+## 
 
 What is the time complexity of a simple nested loop with both loops running n times?
 
@@ -147,7 +147,7 @@ D) O(n log n)
 
 ---
 
-## Question 8
+## 
 
 How do you create an inverted triangle (5 rows, decreasing stars)?
 
@@ -165,7 +165,7 @@ Both produce the same inverted triangle pattern.
 
 ---
 
-## Question 9
+## 
 
 What is the purpose of `print()` after the inner loop in pattern printing?
 
@@ -180,7 +180,7 @@ D) Clear the screen
 
 ---
 
-## Question 10
+## 
 
 How do you access an element in a 2D list at row 2, column 3?
 
@@ -195,7 +195,7 @@ D) `matrix[2, 3]`
 
 ---
 
-## Question 11
+## 
 
 What creates a checkerboard pattern?
 
@@ -210,7 +210,7 @@ D) `if i < j:`
 
 ---
 
-## Question 12
+## 
 
 How many nested loops are needed to generate all 3-digit combinations (000-999)?
 
@@ -225,7 +225,7 @@ D) 4
 
 ---
 
-## Question 13
+## 
 
 What's the correct way to break out of both nested loops?
 
@@ -242,7 +242,7 @@ D) Both B and C
 
 ---
 
-## Question 14
+## 
 
 What does this nested loop create?
 
@@ -266,7 +266,7 @@ D) Error
 
 ---
 
-## Question 15
+## 
 
 Which is TRUE about nested loops?
 

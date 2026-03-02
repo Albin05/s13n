@@ -1,4 +1,4 @@
-# Pre-Read: Apply Inheritance
+# Apply Inheritance
 
 ## What is Inheritance?
 

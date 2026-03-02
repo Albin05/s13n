@@ -1,4 +1,4 @@
-## Lecture Script: Write Data to JSON Files
+## Write Data to JSON Files
 
 
 ---

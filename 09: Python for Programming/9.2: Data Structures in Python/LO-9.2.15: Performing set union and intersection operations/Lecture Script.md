@@ -1,4 +1,4 @@
-## Lecture Script: Performing Set Union and Intersection Operations
+## Performing Set Union and Intersection Operations
 
 
 ---

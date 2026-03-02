@@ -1,4 +1,4 @@
-## Pre-Read: Debug Python Programs Effectively
+## Debug Python Programs Effectively
 
 
 ---

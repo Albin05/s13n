@@ -1,4 +1,4 @@
-## Pre-Read: Using List Comprehensions
+## Using List Comprehensions
 
 ## What Are List Comprehensions?
 
@@ -35,13 +35,13 @@ Without comprehensions:
 squares = []
 for x in range(5):
     squares.append(x ** 2)
-# 4 lines, verbose
+# lines, verbose
 ```
 
 With comprehensions:
 ```python
 squares = [x ** 2 for x in range(5)]
-# 1 line, clear intent
+# line, clear intent
 ```
 
 ### Basic Syntax

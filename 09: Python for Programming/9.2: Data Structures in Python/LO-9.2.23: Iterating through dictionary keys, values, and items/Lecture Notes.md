@@ -1,5 +1,4 @@
-## Lecture Notes: Iterating Through Dictionary Keys, Values, and Items
-
+## Iterating Through Dictionary Keys, Values, and Items
 
 ---
 
@@ -11,7 +10,7 @@ Dictionary iteration offers **three views** - keys, values, or items (pairs) - r
 
 <div align="center">
 
-![Python Dictionary keys() values() items() Iteration](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.23.png)
+![Python Dictionary keys() values() items() Iteration](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
 
 *.keys() iterates over keys, .values() over values, .items() over (key, value) tuples — three views of the same data*
 
@@ -61,7 +60,7 @@ for key in student:
 for value in student.values():
     print(value)
 # Alice
-# 22
+# 
 # A
 ```
 

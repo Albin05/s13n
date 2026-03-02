@@ -1,4 +1,4 @@
-# Lecture Script: LO-9.3.32 Understand and Implement Iterators
+# Understand and Implement Iterators
 
 
 ### CS Theory Bite

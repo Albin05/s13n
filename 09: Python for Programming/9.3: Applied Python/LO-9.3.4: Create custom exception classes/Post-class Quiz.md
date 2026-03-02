@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What should a custom exception class inherit from?
 
 A) `object`
@@ -16,7 +16,7 @@ D) `BaseException`
 
 ---
 
-### Question 2
+### 
 What is the purpose of calling `super().__init__(message)` in a custom exception?
 
 A) To create the error message string
@@ -30,7 +30,7 @@ D) It's optional and not needed
 
 ---
 
-### Question 3
+### 
 What is the advantage of exception hierarchies?
 
 A) They run faster
@@ -44,7 +44,7 @@ D) Python requires them
 
 ---
 
-### Question 4
+### 
 Which is a valid custom exception?
 
 A) `class MyError: pass`
@@ -58,7 +58,7 @@ D) `def MyError(): raise Exception()`
 
 ---
 
-### Question 5
+### 
 When should you create custom exceptions?
 
 A) For every error in your code

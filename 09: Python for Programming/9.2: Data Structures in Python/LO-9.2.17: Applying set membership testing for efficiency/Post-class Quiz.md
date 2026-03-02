@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What is the time complexity of checking `x in my_set`?
 
 A) O(n)
@@ -16,7 +16,7 @@ D) O(n log n)
 
 ---
 
-### Question 2
+### 
 When should you convert a list to a set?
 
 A) When you need to preserve element order
@@ -30,7 +30,7 @@ D) When you need duplicate elements
 
 ---
 
-### Question 3
+### 
 What does `a.issubset(b)` return?
 
 A) True if `a` and `b` have the same elements
@@ -44,7 +44,7 @@ D) True if `a` has more elements than `b`
 
 ---
 
-### Question 4
+### 
 What is the output?
 
 ```python
@@ -64,7 +64,7 @@ D) Error
 
 ---
 
-### Question 5
+### 
 What does `len(data) != len(set(data))` check?
 
 A) If data is empty

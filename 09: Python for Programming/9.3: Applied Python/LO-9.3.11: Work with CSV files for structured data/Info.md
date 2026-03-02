@@ -1,4 +1,4 @@
-# LO-53: Work with CSV Files
+# Work with CSV Files
 
 ## Learning Objective
 Students will be able to work with Reading and writing CSV files in Python.

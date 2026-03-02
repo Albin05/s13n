@@ -1,4 +1,4 @@
-### LO-11 Perform Arithmetic Operations (21 minutes)
+### Perform Arithmetic Operations (21 minutes)
 
 
 ### CS Theory Bite

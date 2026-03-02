@@ -1,4 +1,4 @@
-# Lecture Notes: Format Output with F-strings
+# Format Output with F-strings
 
 ## Introduction
 F-strings (formatted string literals) provide a clean, readable way to embed expressions in strings.
@@ -7,7 +7,7 @@ F-strings (formatted string literals) provide a clean, readable way to embed exp
 
 <div align="center">
 
-![Python f-string Formatting](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.10.png)
+![Python f-string Formatting](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *F-strings embed expressions inside {curly braces} within strings — Python evaluates them at runtime for clean, readable output*
 
@@ -89,7 +89,6 @@ The `f` stands for **"formatted string"**. The `f` prefix tells Python:
 - Format them into the final string
 
 ---
-
 
 ## Basic F-string Syntax
 
@@ -200,11 +199,6 @@ print(f"English: {english_score}")
 print(f"Average: {average:.1f}")
 ```
 
-### Example 3: Temperature Conversion
-```python
-celsius = 25
-fahrenheit = celsius * 9/5 + 32
-print(f"{celsius}°C = {fahrenheit:.1f}°F")
 # Output: 25°C = 77.0°F
 ```
 

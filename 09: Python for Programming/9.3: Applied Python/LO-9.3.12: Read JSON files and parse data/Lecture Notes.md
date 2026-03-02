@@ -1,15 +1,14 @@
-# Lecture Notes: Read JSON Files
+# Read JSON Files
 
 ## Read JSON Files
 
 Loading JSON data from files into Python data structures
 
-
 ---
 
 <div align="center">
 
-![Python JSON File Read json.load() Parse](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.12.jpg)
+![Python JSON File Read json.load() Parse](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.jpg)
 
 *JSON data forms a nested tree structure similar to the DOM, with objects containing other objects*
 
@@ -171,11 +170,6 @@ if config:
 # Max connections: 100
 ```
 
-#### Example 3: Reading Array of Objects
-
-```python
-import json
-
 # Sample students.json file:
 # [
 #     {"id": 1, "name": "Alice", "grade": 85, "courses": ["Math", "Science"]},
@@ -231,11 +225,6 @@ print(f"Top student: {top_student['name']} with grade {top_student['grade']}")
 # Average grade: 85.00
 # Top student: Bob with grade 92
 ```
-
-#### Example 4: Reading Nested JSON Structure
-
-```python
-import json
 
 # Sample company.json file:
 # {
@@ -320,69 +309,6 @@ analyze_company_data('company.json')
 # Average salary: $82,500.00
 # Total project hours: 300
 ```
-
-#### Example 5: Reading JSON with Error Handling
-
-```python
-import json
-import os
-
-class JSONReader:
-    """Class to handle JSON file reading with comprehensive error handling"""
-
-    def __init__(self, filename):
-        self.filename = filename
-        self.data = None
-
-    def read(self):
-        """Read JSON file with error handling"""
-        # Check if file exists
-        if not os.path.exists(self.filename):
-            print(f"Error: File '{self.filename}' not found")
-            return False
-
-        # Check if file is empty
-        if os.path.getsize(self.filename) == 0:
-            print(f"Error: File '{self.filename}' is empty")
-            return False
-
-        try:
-            with open(self.filename, 'r', encoding='utf-8') as file:
-                self.data = json.load(file)
-            print(f"Successfully loaded {self.filename}")
-            return True
-
-        except json.JSONDecodeError as e:
-            print(f"Error: Invalid JSON format in '{self.filename}'")
-            print(f"Line {e.lineno}, Column {e.colno}: {e.msg}")
-            return False
-
-        except PermissionError:
-            print(f"Error: No permission to read '{self.filename}'")
-            return False
-
-        except Exception as e:
-            print(f"Unexpected error reading '{self.filename}': {e}")
-            return False
-
-    def get_value(self, key, default=None):
-        """Get value by key with default fallback"""
-        if self.data is None:
-            return default
-        return self.data.get(key, default)
-
-    def get_nested_value(self, *keys, default=None):
-        """Get nested value using multiple keys"""
-        if self.data is None:
-            return default
-
-        value = self.data
-        for key in keys:
-            if isinstance(value, dict) and key in value:
-                value = value[key]
-            else:
-                return default
-        return value
 
 # Usage example
 reader = JSONReader('settings.json')

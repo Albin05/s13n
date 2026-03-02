@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What is the advantage of using `with open()` over `open()`?
 
 A) It reads faster
@@ -16,7 +16,7 @@ D) It reads in binary mode
 
 ---
 
-### Question 2
+### 
 What does `file.readlines()` return?
 
 A) A single string
@@ -30,7 +30,7 @@ D) The number of lines
 
 ---
 
-### Question 3
+### 
 Why should you use `.strip()` when reading lines?
 
 A) To remove file metadata
@@ -44,7 +44,7 @@ D) To split the line into words
 
 ---
 
-### Question 4
+### 
 Which approach is most memory-efficient for reading large files?
 
 A) `content = f.read()`
@@ -58,7 +58,7 @@ D) All are the same
 
 ---
 
-### Question 5
+### 
 What exception should you handle for missing files?
 
 A) `IOError`

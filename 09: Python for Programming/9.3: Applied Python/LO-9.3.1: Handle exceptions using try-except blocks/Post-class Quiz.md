@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What happens when an exception occurs inside a `try` block?
 
 A) The program crashes immediately
@@ -16,7 +16,7 @@ D) The `try` block restarts
 
 ---
 
-### Question 2
+### 
 What is the output?
 
 ```python
@@ -39,7 +39,7 @@ D) Only `Done`
 
 ---
 
-### Question 3
+### 
 Which catches BOTH ValueError and TypeError?
 
 A) `except ValueError, TypeError:`
@@ -53,7 +53,7 @@ D) `except [ValueError, TypeError]:`
 
 ---
 
-### Question 4
+### 
 When does the `else` block execute?
 
 A) Always
@@ -67,7 +67,7 @@ D) Before the `try` block
 
 ---
 
-### Question 5
+### 
 Why should you avoid bare `except:` (without specifying an exception type)?
 
 A) It's a syntax error

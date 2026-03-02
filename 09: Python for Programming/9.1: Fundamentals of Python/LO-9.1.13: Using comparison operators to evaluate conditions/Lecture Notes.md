@@ -1,4 +1,4 @@
-# Lecture Notes: Use Comparison Operators
+# Use Comparison Operators
 
 ## Introduction
 
@@ -8,7 +8,7 @@ Comparison operators are the foundation of **decision-making** in programs. They
 
 <div align="center">
 
-![Python Comparison Operators Table](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.13.png)
+![Python Comparison Operators Table](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
 
 *Comparison operators evaluate to True or False, enabling programs to branch into different execution paths*
 
@@ -47,7 +47,6 @@ Or think of them like **bouncers at a club**:
 ## Comparison Operators
 
 Comparison operators compare two values and return a **boolean** result: `True` or `False`.
-
 
 ### The Six Comparison Operators
 
@@ -212,7 +211,7 @@ print(f"Has fever: {is_fever}")  # True
 
 ## Common Mistakes
 
-### 1. Using `=` Instead of `==`
+### Using `=` Instead of `==`
 
 ```python
 # Wrong
@@ -225,7 +224,7 @@ if x == 5:
     print("Five")
 ```
 
-### 2. Forgetting Type Matters
+### Forgetting Type Matters
 
 ```python
 user_input = input("Enter age: ")  # Returns string!
@@ -240,7 +239,7 @@ if age >= 18:
     print("Adult")
 ```
 
-### 3. Confusing `>` and `>=`
+### Confusing `>` and `>=`
 
 ```python
 score = 60

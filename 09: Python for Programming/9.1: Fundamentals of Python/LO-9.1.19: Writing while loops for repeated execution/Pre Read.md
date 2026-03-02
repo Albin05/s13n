@@ -1,4 +1,4 @@
-# Pre-Read: Writing While Loops
+# Writing While Loops
 
 ## What You'll Learn
 In this lesson, you'll learn how to use while loops to repeat code as long as a condition remains True. This is one of the most fundamental tools for making programs do repetitive tasks automatically.

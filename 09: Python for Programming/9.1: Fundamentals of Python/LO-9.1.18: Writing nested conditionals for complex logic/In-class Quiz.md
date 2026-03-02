@@ -1,10 +1,10 @@
-# Post-class Quiz: Writing Nested Conditionals for Complex Logic
+# Writing Nested Conditionals for Complex Logic
 
 Test your understanding of nested if statements and complex decision-making logic.
 
 ---
 
-## Q1: What is the output of this code?
+## What is the output of this code?
 ```python
 x = 10
 y = 5
@@ -31,7 +31,7 @@ D) No output
 
 ---
 
-## Q2: What is the key purpose of indentation in nested conditionals?
+## What is the key purpose of indentation in nested conditionals?
 
 A) To make code look pretty
 B) To define which code belongs to which condition
@@ -46,7 +46,7 @@ D) To satisfy Python syntax requirements only
 
 ---
 
-## Q3: What is the output?
+## What is the output?
 ```python
 age = 15
 has_permission = False
@@ -73,7 +73,7 @@ D) Error
 
 ---
 
-## Q4: Which code structure is generally MORE readable?
+## Which code structure is generally MORE readable?
 ```python
 # Option A
 if a:
@@ -99,7 +99,7 @@ D) Neither is readable
 
 ---
 
-## Q5: What happens if the outer condition is False in a nested if?
+## What happens if the outer condition is False in a nested if?
 
 A) Python checks the inner condition anyway
 B) Python skips the entire outer block including inner conditions
@@ -114,7 +114,7 @@ D) Python executes the outer else, then checks inner condition
 
 ---
 
-## Q6: What is the output?
+## What is the output?
 ```python
 score = 75
 
@@ -140,7 +140,7 @@ D) No output
 
 ---
 
-## Q7: How many possible execution paths are there in this code?
+## How many possible execution paths are there in this code?
 ```python
 if condition_A:
     if condition_B:
@@ -169,7 +169,7 @@ Total: 3 paths
 
 ---
 
-## Q8: What is the output?
+## What is the output?
 ```python
 temperature = 95
 humidity = 70
@@ -196,7 +196,7 @@ D) Error
 
 ---
 
-## Q9: Which is TRUE about nested conditionals?
+## Which is TRUE about nested conditionals?
 
 A) The inner condition is always checked first
 B) You can only nest 2 levels deep
@@ -211,7 +211,7 @@ D) else is required for every if in nested structures
 
 ---
 
-## Q10: What is the output?
+## What is the output?
 ```python
 username = "admin"
 password = "wrong"
@@ -238,7 +238,7 @@ D) No output
 
 ---
 
-## Q11: What does this code validate?
+## What does this code validate?
 ```python
 if age >= 0:
     if age < 18:
@@ -262,7 +262,7 @@ D) Age is exactly 18
 
 ---
 
-## Q12: What is the maximum recommended nesting depth?
+## What is the maximum recommended nesting depth?
 
 A) 1 level
 B) 2 levels
@@ -277,7 +277,7 @@ D) Unlimited
 
 ---
 
-## Q13: What is the output?
+## What is the output?
 ```python
 x = 5
 y = 10
@@ -306,7 +306,7 @@ D) 15
 
 ---
 
-## Q14: When should you use nested if instead of `and` operator?
+## When should you use nested if instead of `and` operator?
 
 A) Never - always use `and`
 B) When you need different actions at each condition level
@@ -321,7 +321,7 @@ D) Only when you have more than 5 conditions
 
 ---
 
-## Q15: What is the output?
+## What is the output?
 ```python
 score = 50
 bonus = True
@@ -348,22 +348,4 @@ D) No output
 
 ---
 
-## Score Interpretation
 
-- **13-15 correct**: Excellent! You've mastered nested conditionals.
-- **10-12 correct**: Good work! Review execution flow and when to use nesting vs `and`.
-- **7-9 correct**: Fair. Practice more with nested structures and decision trees.
-- **Below 7**: Review the lesson materials on nested if statements and indentation.
-
-## Key Concepts to Remember
-
-1. **Outer first**: Outer condition is checked before inner
-2. **Indentation matters**: Defines which code belongs to which block
-3. **Short-circuit**: If outer is False, inner never runs
-4. **Validation pattern**: Check inputs first, then process
-5. **Specific errors**: Use nesting for detailed error messages
-6. **Readability limit**: Keep to 3-4 levels maximum
-7. **Test all paths**: Every combination should be verified
-8. **And vs nesting**: Use `and` for simple all-true checks, nesting for different actions
-9. **else is optional**: Only use when needed
-10. **Structure defines logic**: Proper indentation creates correct flow

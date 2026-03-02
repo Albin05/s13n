@@ -1,4 +1,4 @@
-# Lecture Notes: Use Function Parameters
+# Use Function Parameters
 
 ## Introduction
 
@@ -48,7 +48,7 @@ Parameters are **inputs** to functions - the data they need to do their job:
 
 <div align="center">
 
-![Python Function Parameters and Arguments](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.27.jpg)
+![Python Function Parameters and Arguments](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.jpg)
 
 *Function parameters define named input slots that receive argument values when the function is called, enabling flexible and reusable code*
 
@@ -59,7 +59,6 @@ Parameters are **inputs** to functions - the data they need to do their job:
 ## Function Parameters
 
 Parameters allow functions to accept input values.
-
 
 ### Basic Syntax
 
@@ -89,17 +88,6 @@ def add_numbers(a, b):
 
 add_numbers(5, 3)   # 5 + 3 = 8
 add_numbers(10, 20) # 10 + 20 = 30
-```
-
-### Example 3: Calculate Area
-
-```python
-def rectangle_area(length, width):
-    area = length * width
-    print(f"Area: {area} square units")
-
-rectangle_area(5, 3)  # Area: 15 square units
-rectangle_area(10, 4) # Area: 40 square units
 ```
 
 ## Parameters vs Arguments

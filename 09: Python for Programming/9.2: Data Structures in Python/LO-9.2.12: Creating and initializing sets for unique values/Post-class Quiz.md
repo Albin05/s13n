@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What is the correct way to create an empty set in Python?
 
 A) `empty = {}`
@@ -16,7 +16,7 @@ D) `empty = {None}`
 
 ---
 
-### Question 2
+### 
 What is the output of the following code?
 
 ```python
@@ -35,7 +35,7 @@ D) Error
 
 ---
 
-### Question 3
+### 
 Which of the following CANNOT be an element in a set?
 
 A) `(1, 2, 3)` (a tuple)
@@ -49,7 +49,7 @@ D) `42` (an integer)
 
 ---
 
-### Question 4
+### 
 What is the output of `set("hello")`?
 
 A) `{'hello'}`
@@ -63,7 +63,7 @@ D) `{'h', 'e', 'l', 'o', ' '}`
 
 ---
 
-### Question 5
+### 
 What does the following code print?
 
 ```python

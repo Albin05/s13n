@@ -1,4 +1,4 @@
-# Pre-Read: Controlling While Loops Using Continue Statement
+# Controlling While Loops Using Continue Statement
 
 ## What is Continue?
 

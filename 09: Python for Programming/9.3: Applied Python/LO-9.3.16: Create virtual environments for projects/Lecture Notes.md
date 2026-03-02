@@ -1,15 +1,14 @@
-# Lecture Notes: Create Virtual Environments
+# Create Virtual Environments
 
 ## Create Virtual Environments
 
 Isolating project dependencies using virtual environments
 
-
 ---
 
 <div align="center">
 
-![Python Virtual Environment venv Folder Structure](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.16.png)
+![Python Virtual Environment venv Folder Structure](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
 
 *Virtual environments isolate project dependencies, keeping each project's modules separate*
 
@@ -173,9 +172,6 @@ cat requirements.txt
 # pip install -r requirements.txt
 ```
 
-#### Example 3: Multiple Environments for Different Projects
-
-```bash
 # Project 1: Data Science (needs pandas, numpy)
 mkdir data_analysis
 cd data_analysis
@@ -199,9 +195,6 @@ deactivate
 # No conflicts between different package versions
 ```
 
-#### Example 4: Automation Script for Environment Setup
-
-```python
 # setup_env.py
 import os
 import subprocess
@@ -292,9 +285,6 @@ if __name__ == "__main__":
     main()
 ```
 
-#### Example 5: Checking Active Environment
-
-```python
 # check_env.py
 import sys
 import os

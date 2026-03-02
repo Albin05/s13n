@@ -1,6 +1,6 @@
-# Post-Class Quiz: Define Classes
+# Define Classes
 
-## Q1: Question about Creating classes with the class keyword
+## Question about Creating classes with the class keyword
 A) Option A
 B) Option B
 C) Option C
@@ -9,7 +9,7 @@ C) Option C
 B - Explanation of OOP concept
 </details>
 
-## Q2: Syntax question
+## Syntax question
 A) Option A
 B) Option B
 C) Option C
@@ -18,7 +18,7 @@ C) Option C
 A - Explanation
 </details>
 
-## Q3: When to use Creating classes with the class keyword?
+## When to use Creating classes with the class keyword?
 A) Option A
 B) Option B
 C) Option C
@@ -27,7 +27,7 @@ C) Option C
 C - Practical explanation
 </details>
 
-## Q4: Best practice for Creating classes with the class keyword
+## Best practice for Creating classes with the class keyword
 A) Option A
 B) Option B
 C) Option C
@@ -36,7 +36,7 @@ C) Option C
 B - Best practice explanation
 </details>
 
-## Q5: Common mistake with Creating classes with the class keyword
+## Common mistake with Creating classes with the class keyword
 A) Option A
 B) Option B
 C) Option C

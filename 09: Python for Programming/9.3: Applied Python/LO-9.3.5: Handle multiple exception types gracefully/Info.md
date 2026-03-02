@@ -1,4 +1,4 @@
-# LO-47: Handle Multiple Exception Types
+# Handle Multiple Exception Types
 
 ## Learning Objective
 Students will be able to use multiple except blocks effectively in Python programming.

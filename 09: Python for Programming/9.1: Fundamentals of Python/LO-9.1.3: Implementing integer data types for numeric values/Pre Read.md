@@ -1,4 +1,4 @@
-# Pre-Read: Implement Integer Data Types
+# Implement Integer Data Types
 
 ## What are Integers?
 

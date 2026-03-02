@@ -1,4 +1,4 @@
-### LO-7 Inspect Data Types (10 minutes)
+### Inspect Data Types (10 minutes)
 
 
 ### CS Theory Bite

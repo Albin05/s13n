@@ -4,7 +4,7 @@
 
 ---
 
-### Q1: Union Result
+### Union Result
 
 What will be the output?
 
@@ -26,7 +26,7 @@ print(len(result))
 
 ---
 
-### Q2: Intersection Result
+### Intersection Result
 
 What will be the output?
 
@@ -48,7 +48,7 @@ print(both)
 
 ---
 
-### Q3: Empty Intersection
+### Empty Intersection
 
 What happens when two sets have no common elements?
 
@@ -69,7 +69,7 @@ result = A & B
 
 ---
 
-### Q4: Multiple Set Operations
+### Multiple Set Operations
 
 What will be the output?
 
@@ -92,7 +92,7 @@ print(result)
 
 ---
 
-### Q5: Original Sets Unchanged
+### Original Sets Unchanged
 
 After these operations, what are the values of A and B?
 

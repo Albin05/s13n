@@ -1,5 +1,4 @@
-## Lecture Notes: Adding Elements to Sets using add() and update()
-
+## Adding Elements to Sets using add() and update()
 
 ---
 
@@ -11,7 +10,7 @@ The `add()` and `update()` methods embody **incremental vs. batch** operations -
 
 <div align="center">
 
-![Python Set add() update() Method Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.13.svg)
+![Python Set add() update() Method Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.svg)
 
 *add() inserts a single element; update() merges an entire collection — both grow the set with unique values only*
 
@@ -78,7 +77,7 @@ The `add()` and `update()` methods embody **incremental vs. batch** operations -
 s = set()
 for i in range(1000):
     s.add(i)  # 1000 function calls!
-# 1000 × (function call overhead + hash + insert)
+# × (function call overhead + hash + insert)
 ```
 
 **Using update()**:
@@ -86,7 +85,7 @@ for i in range(1000):
 # Single call:
 s = set()
 s.update(range(1000))  # 1 function call!
-# 1 × function call + (1000 × hash+insert)
+# × function call + (1000 × hash+insert)
 ```
 
 **Speedup**: Can be 2-3x faster for large batches! **Batch operations minimize overhead** - core optimization principle!
@@ -118,7 +117,7 @@ Both methods modify the set in-place and automatically handle duplicates.
 
 ---
 
-## 1. The add() Method (4 minutes)
+## The add() Method (4 minutes)
 
 ### Syntax
 ```python
@@ -186,7 +185,7 @@ print(unique_items)  # [1, 2, 3, 4]
 
 ---
 
-## 2. The update() Method (4 minutes)
+## The update() Method (4 minutes)
 
 ### Syntax
 ```python
@@ -264,7 +263,7 @@ print(all_prefs)
 
 ---
 
-## 3. Comparison: add() vs update() (2 minutes)
+## Comparison: add() vs update() (2 minutes)
 
 ### When to Use Each
 
@@ -294,7 +293,7 @@ s2.update([1, 2, 3, 4, 5])
 
 ---
 
-## 4. Practical Applications (2 minutes)
+## Practical Applications (2 minutes)
 
 ### Application 1: Tag System
 
@@ -360,7 +359,7 @@ if 'delete' in permissions:
 
 ## Common Pitfalls
 
-### 1. Trying to add() a list
+### Trying to add() a list
 ```python
 # Wrong - causes TypeError
 # my_set.add([1, 2, 3])  # Error: unhashable type
@@ -370,7 +369,7 @@ my_set = set()
 my_set.update([1, 2, 3])
 ```
 
-### 2. update() with string
+### update() with string
 ```python
 # Unexpected behavior
 tags = set()
@@ -380,7 +379,7 @@ tags.update('python')  # Adds: {'p', 'y', 't', 'h', 'o', 'n'}
 tags.update(['python'])  # Adds: {'python'}
 ```
 
-### 3. Expecting return value
+### Expecting return value
 ```python
 # Wrong
 result = my_set.add(5)  # result is None!

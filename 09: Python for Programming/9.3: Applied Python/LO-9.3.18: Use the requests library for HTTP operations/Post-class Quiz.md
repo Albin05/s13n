@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What does `response.json()` do?
 
 A) Returns the raw text
@@ -14,7 +14,7 @@ D) Checks if response is JSON
 
 ---
 
-### Question 2
+### 
 Which method makes a POST request?
 
 A) requests.get()
@@ -26,7 +26,7 @@ D) requests.submit()
 
 ---
 
-### Question 3-5
+### -5
 
 *(Additional quiz questions following the same format covering: status codes, error handling, headers)*
 

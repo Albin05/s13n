@@ -1,4 +1,4 @@
-# Pre-Read: Create Generator Functions
+# Create Generator Functions
 
 ## Generator Functions
 

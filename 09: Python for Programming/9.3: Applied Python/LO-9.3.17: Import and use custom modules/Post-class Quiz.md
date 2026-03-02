@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What makes a Python file a module?
 
 A) It must contain a class
@@ -14,7 +14,7 @@ D) Files must be registered as modules
 
 ---
 
-### Question 2
+### 
 What does `if __name__ == "__main__":` do?
 
 A) Imports the module
@@ -26,7 +26,7 @@ D) Defines the main function
 
 ---
 
-### Question 3-5
+### -5
 
 *(Additional quiz questions following the same format covering: package structure, __init__.py, circular imports)*
 

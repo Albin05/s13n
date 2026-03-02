@@ -1,4 +1,4 @@
-## Pre-Read: Removing Elements using remove() and discard()
+## Removing Elements using remove() and discard()
 
 **Duration:** 5 minutes
 

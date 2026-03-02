@@ -1,4 +1,4 @@
-## Lecture Script: Implement __init__ Constructor
+## Implement __init__ Constructor
 
 
 ---

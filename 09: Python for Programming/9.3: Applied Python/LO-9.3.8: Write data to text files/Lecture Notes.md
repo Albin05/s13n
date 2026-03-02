@@ -1,5 +1,4 @@
-## Lecture Notes: Write Data to Text Files
-
+## Write Data to Text Files
 
 ---
 

@@ -1,4 +1,4 @@
-## Pre-Read: Use finally Blocks for Cleanup
+## Use finally Blocks for Cleanup
 
 
 ---

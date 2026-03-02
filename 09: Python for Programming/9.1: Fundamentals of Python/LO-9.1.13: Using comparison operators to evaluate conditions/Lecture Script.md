@@ -1,4 +1,4 @@
-### LO-13 Use Comparison Operators (20 minutes)
+### Use Comparison Operators (20 minutes)
 
 
 ### CS Theory Bite

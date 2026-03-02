@@ -1,5 +1,4 @@
-## Lecture Notes: Read Text Files in Python
-
+## Read Text Files in Python
 
 ---
 

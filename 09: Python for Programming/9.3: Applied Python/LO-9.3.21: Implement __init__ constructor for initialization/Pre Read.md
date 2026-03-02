@@ -1,4 +1,4 @@
-# Pre-Read: Implement the __init__ Constructor
+# Implement the __init__ Constructor
 
 ## What is __init__?
 

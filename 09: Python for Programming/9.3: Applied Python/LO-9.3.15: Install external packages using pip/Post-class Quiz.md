@@ -2,7 +2,7 @@
 
 ---
 
-### Question 1
+### 
 What does `pip freeze` do?
 
 A) Stops pip from running
@@ -14,7 +14,7 @@ D) Shows pip version
 
 ---
 
-### Question 2
+### 
 How do you install packages from requirements.txt?
 
 A) pip install requirements.txt
@@ -26,7 +26,7 @@ D) pip get requirements.txt
 
 ---
 
-### Question 3-5
+### -5
 
 *(Additional quiz questions following the same format covering: version pinning, pip uninstall, PyPI)*
 

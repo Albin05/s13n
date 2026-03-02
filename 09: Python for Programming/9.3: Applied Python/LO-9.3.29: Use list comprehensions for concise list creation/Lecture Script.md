@@ -1,4 +1,4 @@
-# Lecture Script: LO-71 Use List Comprehensions
+# Use List Comprehensions
 
 
 ### CS Theory Bite

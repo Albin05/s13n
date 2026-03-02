@@ -382,10 +382,10 @@ for i in range(len(cart_items)):
     price = cart_prices[i]
     print(f"{i+1}. {item}: ${price}")
 
-# 1. Laptop: $999.99
-# 2. Mouse: $29.99
-# 3. Keyboard: $79.99
-# 4. Monitor: $299.99
+# Laptop: $999.99
+# Mouse: $29.99
+# Keyboard: $79.99
+# Monitor: $299.99
 
 # Remove item by position (user sees 1-based, code uses 0-based)
 remove_position = 2  # User input

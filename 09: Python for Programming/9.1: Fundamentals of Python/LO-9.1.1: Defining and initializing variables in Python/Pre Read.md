@@ -1,4 +1,4 @@
-# Pre-Read: Define Variables
+# Define Variables
 
 ## What You'll Learn
 In this lesson, you'll learn what variables are and how to create them in Python. Variables are the foundation of all programming!

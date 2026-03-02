@@ -1,4 +1,4 @@
-# Pre-Read: Use Dictionary Comprehensions
+# Use Dictionary Comprehensions
 
 ## Dictionary Comprehensions
 

@@ -1,15 +1,14 @@
-# Lecture Notes: Work with Regular Expressions
+# Work with Regular Expressions
 
 ## Regular Expressions (Regex)
 
 Regular expressions are powerful patterns used for matching and manipulating text. Python's `re` module provides regex functionality.
 
-
 ---
 
 <div align="center">
 
-![Python Regex re.search Pattern Match](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.34.jpg)
+![Python Regex re.search Pattern Match](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.jpg)
 
 *Regular expressions process strings through pattern-matching operations to find and manipulate text*
 
@@ -87,7 +86,7 @@ for line in million_lines:
 phone_pattern = re.compile(r'\d{3}-\d{4}')
 for line in million_lines:
     phone_pattern.search(line)
-# 10-50x faster for repeated use!
+# -50x faster for repeated use!
 ```
 
 ---
@@ -256,31 +255,11 @@ for phone in phones:
 # Output:
 # Phone numbers found:
 #   (555) 123-4567
-#   555-987-6543
-#   555.111.2222
-#   5559999999
+# -987-6543
+# 111.2222
+# 
 ```
 
-### Example 3: URL Parsing
-
-```python
-import re
-
-def extract_urls(text):
-    """Extract URLs from text"""
-    pattern = r"https?://[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:/[^\s]*)?"
-    return re.findall(pattern, text)
-
-text = """
-Visit our website at https://www.example.com
-Check out http://blog.example.com/article/python-regex
-Download from https://files.example.org/downloads/file.pdf
-"""
-
-urls = extract_urls(text)
-print("URLs found:")
-for url in urls:
-    print(f"  {url}")
 # Output:
 # URLs found:
 #   https://www.example.com
@@ -307,32 +286,6 @@ print(f"\nURL components: {components}")
 # URL components: {'protocol': 'https', 'domain': 'www.example.com', 'path': '/path/to/page'}
 ```
 
-### Example 4: Data Cleaning
-
-```python
-import re
-
-def clean_text(text):
-    """Clean and normalize text"""
-    # Remove extra whitespace
-    text = re.sub(r"\s+", " ", text)
-
-    # Remove special characters except basic punctuation
-    text = re.sub(r"[^a-zA-Z0-9\s.,!?-]", "", text)
-
-    # Normalize whitespace around punctuation
-    text = re.sub(r"\s*([.,!?])\s*", r"\1 ", text)
-
-    return text.strip()
-
-messy_text = """
-Hello!!!   This    is    a    test...
-It  has   @#$%  weird   characters  and   spacing!!!
-"""
-
-cleaned = clean_text(messy_text)
-print(f"Original: {repr(messy_text)}")
-print(f"Cleaned: {cleaned}")
 # Output:
 # Cleaned: Hello! This is a test. It has weird characters and spacing!
 
@@ -347,37 +300,6 @@ print(f"\nHashtags: {tags}")
 # Output:
 # Hashtags: ['#Python', '#Programming', '#AI', '#MachineLearning']
 ```
-
-### Example 5: Password Validation
-
-```python
-import re
-
-def validate_password(password):
-    """
-    Validate password strength:
-    - At least 8 characters
-    - Contains uppercase letter
-    - Contains lowercase letter
-    - Contains digit
-    - Contains special character
-    """
-    if len(password) < 8:
-        return False, "Password must be at least 8 characters"
-
-    if not re.search(r"[A-Z]", password):
-        return False, "Password must contain an uppercase letter"
-
-    if not re.search(r"[a-z]", password):
-        return False, "Password must contain a lowercase letter"
-
-    if not re.search(r"\d", password):
-        return False, "Password must contain a digit"
-
-    if not re.search(r"[!@#$%^&*(),.?\":{}|<>]", password):
-        return False, "Password must contain a special character"
-
-    return True, "Password is valid"
 
 # Test passwords
 passwords = [

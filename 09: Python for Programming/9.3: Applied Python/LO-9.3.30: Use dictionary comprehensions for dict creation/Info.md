@@ -1,4 +1,4 @@
-# LO-72: Use Dictionary Comprehensions
+# Use Dictionary Comprehensions
 
 ## Learning Objective
 Students will be able to use Creating dictionaries using comprehension syntax in Python programs.

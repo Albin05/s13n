@@ -1,4 +1,4 @@
-# LO-78: Apply Type Hints
+# Apply Type Hints
 
 ## Learning Objective
 Students will be able to use Adding type annotations to Python code in Python programs.

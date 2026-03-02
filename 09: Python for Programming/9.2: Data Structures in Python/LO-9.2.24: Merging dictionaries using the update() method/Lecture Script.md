@@ -1,4 +1,4 @@
-## Lecture Script: Merging Dictionaries Using update()
+## Merging Dictionaries Using update()
 
 
 ---
