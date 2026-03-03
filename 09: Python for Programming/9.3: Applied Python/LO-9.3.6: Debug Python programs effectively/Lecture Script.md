@@ -17,12 +17,10 @@
 
 Every programmer spends significant time debugging. The difference between a junior and senior developer isn't that seniors write bug-free code — it's that they find bugs faster.
 
-```
 Traceback (most recent call last):
   File "app.py", line 42, in process
     result = data[key] / total
 ZeroDivisionError: division by zero
-```
 
 Can you fix this in 10 seconds? After today, yes.
 
@@ -30,7 +28,6 @@ Can you fix this in 10 seconds? After today, yes.
 
 ### Section 1: Reading Tracebacks (3 minutes)
 
-```
 Traceback (most recent call last):
   File "main.py", line 15, in <module>
     run()
@@ -39,7 +36,6 @@ Traceback (most recent call last):
   File "utils.py", line 5, in process
     return int(value)
 ValueError: invalid literal for int()
-```
 
 **Read bottom to top:**
 1. `ValueError` — the error

@@ -20,10 +20,8 @@ D) 0 1
 **B) apple<br>banana**
 
 **Explanation:** For loop iterates through list, printing each fruit on a new line. Output is:
-```
 apple
 banana
-```
 </details>
 
 ---

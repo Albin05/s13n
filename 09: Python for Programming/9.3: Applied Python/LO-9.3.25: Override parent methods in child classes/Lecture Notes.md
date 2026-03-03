@@ -8,7 +8,7 @@ Redefining parent class methods in child classes
 
 <div align="center">
 
-![Python Method Override Polymorphism](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python Method Override Polymorphism](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.25.png)
 
 *Method overriding replaces parent behavior at specific nodes in the class hierarchy tree*
 
@@ -301,7 +301,6 @@ checking.withdraw(600)  # Warning: Overdraft used. Balance: $-100
 premium.deposit(1000)  # Earned 10 reward points!
 print("Premium balance:", premium.balance)  # 6000
 print("Premium interest:", premium.get_interest())  # 300.0
-```
 
 # Usage
 car = Car("Toyota", "Camry", 2023, 4)
@@ -326,7 +325,6 @@ electric.display_info()
 # Tesla Model 3
 # Doors: 4
 # Battery: 75kWh (100% charged)
-```
 
 # Usage
 report = Report(
@@ -355,7 +353,6 @@ print("\n" + "=" * 50 + "\n")
 print(email.format())
 print("\n" + "=" * 50 + "\n")
 print(article.format())
-```
 
 ### Best Practices
 

@@ -54,11 +54,9 @@ for fruit in fruits:
 ```
 
 **Output:**
-```
 apple
 banana
 cherry
-```
 
 **What happens:**
 1. Take first item ("apple") and run the code
@@ -76,14 +74,12 @@ for letter in word:
 ```
 
 **Output:**
-```
 P
 y
 t
 h
 o
 n
-```
 
 ---
 

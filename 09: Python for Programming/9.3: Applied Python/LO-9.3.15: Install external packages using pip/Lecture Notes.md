@@ -8,7 +8,7 @@ Using pip to install third-party Python packages
 
 <div align="center">
 
-![Python pip Install External Packages](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python pip Install External Packages](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.15.png)
 
 *External packages installed via pip extend your program with additional functions and capabilities*
 
@@ -186,7 +186,6 @@ pip install -r requirements.txt
 
 # Check what's installed
 pip freeze
-```
 
 ```python
 # Example using python-dotenv
@@ -221,7 +220,6 @@ pip install 'requests>=2.28.0,<3.0.0'
 
 # Show package information
 pip show requests
-```
 
 ```python
 # Check package version in code
@@ -295,7 +293,6 @@ def setup_project():
 
 if __name__ == "__main__":
     setup_project()
-```
 
 ### Popular Packages to Know
 

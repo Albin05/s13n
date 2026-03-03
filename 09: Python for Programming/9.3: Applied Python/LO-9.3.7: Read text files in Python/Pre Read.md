@@ -10,11 +10,9 @@
 ### Why File Reading Matters
 
 **Problem without persistence**: Data lost after every run:
-```
 // Punch card era - re-enter data each time!
 INPUT: 1, 2, 3, 4, 5
 PROGRAM ENDS → ALL DATA LOST!
-```
 
 **Solution with files**: Data saved and reloaded:
 ```python

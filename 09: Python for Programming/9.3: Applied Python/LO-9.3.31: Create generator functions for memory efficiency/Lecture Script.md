@@ -111,7 +111,6 @@ print(next(gen))
 ```
 
 **Expected Output**:
-```
 Generator created
 
 Calling next():
@@ -128,7 +127,6 @@ Calling next() again:
 Resumed after yielding 2
 About to yield 1
 1
-```
 
 **Point out**: "The generator PAUSES at each yield, maintains its state, and resumes when next() is called!"
 

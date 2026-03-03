@@ -69,7 +69,6 @@ except Complication as error:
 ### The Exception Hierarchy
 
 **Python exceptions inherit from BaseException**:
-```
 BaseException
   ├── SystemExit (interpreter exit)
   ├── KeyboardInterrupt (Ctrl+C)
@@ -79,7 +78,6 @@ BaseException
       ├── ZeroDivisionError
       ├── KeyError
       └── ... (60+ built-in types)
-```
 
 **Why hierarchy?** Catch specific errors or broader categories! Flexibility through inheritance.
 

@@ -40,14 +40,12 @@ print("Done!")
 ```
 
 **Output:**
-```
 1
 2
 3
 4
 5
 Done!
-```
 
 **How it works:**
 1. Start: `count` is 1

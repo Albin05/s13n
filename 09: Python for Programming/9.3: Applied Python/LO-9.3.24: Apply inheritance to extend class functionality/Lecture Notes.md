@@ -8,7 +8,7 @@ Inheritance allows a class to inherit attributes and methods from another class.
 
 <div align="center">
 
-![Python Inheritance Parent Child Class Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.jpg)
+![Python Inheritance Parent Child Class Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.24.jpg)
 
 *Inheritance creates a tree hierarchy of classes, where child classes extend parent class functionality*
 

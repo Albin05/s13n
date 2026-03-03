@@ -7,7 +7,7 @@ Python provides comprehensive arithmetic operators for all types of calculations
 
 <div align="center">
 
-![Python Arithmetic Operations Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
+![Python Arithmetic Operations Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.11.png)
 
 *Python's arithmetic operators (+, -, *, /, //, %, **) map directly to fundamental mathematical operations*
 

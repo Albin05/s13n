@@ -48,7 +48,7 @@ Parameters are **inputs** to functions - the data they need to do their job:
 
 <div align="center">
 
-![Python Function Parameters and Arguments](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.jpg)
+![Python Function Parameters and Arguments](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.27.jpg)
 
 *Function parameters define named input slots that receive argument values when the function is called, enabling flexible and reusable code*
 

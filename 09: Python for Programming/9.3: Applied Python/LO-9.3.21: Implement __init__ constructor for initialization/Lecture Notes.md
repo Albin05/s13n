@@ -8,7 +8,7 @@
 
 <div align="center">
 
-![Python __init__ Constructor Method Object](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python __init__ Constructor Method Object](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.21.png)
 
 *The __init__ constructor acts as a function machine, transforming input parameters into initialized object state*
 
@@ -215,12 +215,10 @@ student1.display()
 # With custom GPA
 student2 = Student("Bob", 11, 3.8)
 student2.display()
-```
 
 # Rectangle: 5x3
 # Area: 15
 # Perimeter: 16
-```
 
 ## Validation in __init__
 

@@ -85,10 +85,8 @@ common = set1 & set2  # One line! O(n) complexity!
 **Set operations ARE math notation**:
 
 **Mathematics (1880s)**:
-```
 A ∪ B  (union - all elements)
 A ∩ B  (intersection - common elements)
-```
 
 **Python (2004)**:
 ```python

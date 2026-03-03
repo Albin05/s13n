@@ -8,7 +8,7 @@ CSV (Comma-Separated Values) stores tabular data in plain text.
 
 <div align="center">
 
-![Python CSV File Reading with csv Module](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python CSV File Reading with csv Module](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.11.png)
 
 *CSV files organize data in structured rows and columns, similar to arrays in a flowchart*
 
@@ -23,10 +23,8 @@ CSV implements **structured text storage** - tabular data in human-readable form
 ### Why CSV Matters
 
 **Before CSV** (binary formats): Data locked in proprietary formats:
-```
 // Binary spreadsheet - only one program can read!
 01101000 01100101 01101100 01101100 01101111
-```
 
 **With CSV** (text format): Universal, human-readable:
 ```csv
@@ -56,12 +54,10 @@ Bob,30,Chicago
 ---
 ### CSV Format
 
-```
 name,age,city
 Alice,25,New York
 Bob,30,San Francisco
 Charlie,35,Chicago
-```
 
 ## Reading CSV Files
 

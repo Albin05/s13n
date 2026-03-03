@@ -8,7 +8,7 @@ The `break` statement provides an **emergency exit** from loops - a way to stop 
 
 <div align="center">
 
-![Python break Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
+![Python break Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.20.png)
 
 *The break statement exits the loop immediately — jumping straight past the loop body to the next statement*
 

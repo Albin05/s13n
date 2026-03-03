@@ -8,7 +8,7 @@ Generator functions use the `yield` keyword to return values lazily, one at a ti
 
 <div align="center">
 
-![Python Generator Function yield Memory Efficient](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.webp)
+![Python Generator Function yield Memory Efficient](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.31.webp)
 
 *Generators use a while-loop pattern to yield values one at a time for memory-efficient iteration*
 
@@ -294,7 +294,6 @@ for result in pipeline:
 # Bob: 92% (Grade: A)
 # Diana: 95% (Grade: A)
 # Eve: 88% (Grade: B)
-```
 
 # Process numbers in batches of 3
 numbers = range(1, 11)
@@ -325,7 +324,6 @@ for window in sliding_window(data, 3):
 # [2, 3, 4]
 # [3, 4, 5]
 # [4, 5, 6]
-```
 
 # Output: 0 2 4 6 8
 print()
@@ -373,7 +371,6 @@ for time_left in countdown_timer(5):
     print(time_left, end=" ")
 # Output: 00:05 00:04 00:03 00:02 00:01 00:00
 print()
-```
 
 ## Generator Expressions
 

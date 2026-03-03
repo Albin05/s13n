@@ -46,7 +46,7 @@ This is the foundation of professional software engineering.
 
 <div align="center">
 
-![Python Function Definition Syntax](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.jpg)
+![Python Function Definition Syntax](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.26.jpg)
 
 *A function acts as a reusable machine: it accepts input, processes it according to defined instructions, and produces output*
 
@@ -94,7 +94,6 @@ greet_user()
 # ----------------------------------------
 # Header
 # ----------------------------------------
-```
 
 ## Why Use Functions?
 

@@ -8,7 +8,7 @@ A file path specifies the location of a file in the filesystem.
 
 <div align="center">
 
-![Python File Path pathlib os.path Tutorial](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python File Path pathlib os.path Tutorial](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.10.png)
 
 *File paths form a tree hierarchy similar to the DOM model, navigating from root to nested directories*
 

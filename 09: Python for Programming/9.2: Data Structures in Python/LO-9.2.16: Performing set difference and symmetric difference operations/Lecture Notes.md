@@ -65,13 +65,11 @@ Set difference and symmetric difference represent **asymmetric** and **XOR logic
 **Symmetric difference IS set XOR**:
 
 **Truth table**:
-```
 A  B  | A XOR B
 0  0  |    0
 0  1  |    1
 1  0  |    1
 1  1  |    0
-```
 
 **Set equivalent**:
 - Element in neither: NOT in symmetric diff

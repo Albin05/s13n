@@ -44,7 +44,7 @@ This is **algorithmic efficiency** - doing less work to achieve the same goal.
 
 <div align="center">
 
-![Python break vs continue Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
+![Python break vs continue Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.24.png)
 
 *The break statement immediately exits the loop when a condition is met, while continue skips the current iteration and proceeds to the next one*
 

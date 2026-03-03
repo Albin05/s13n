@@ -8,7 +8,7 @@ Regular expressions are powerful patterns used for matching and manipulating tex
 
 <div align="center">
 
-![Python Regex re.search Pattern Match](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.jpg)
+![Python Regex re.search Pattern Match](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.34.jpg)
 
 *Regular expressions process strings through pattern-matching operations to find and manipulate text*
 
@@ -284,7 +284,6 @@ components = parse_url(url)
 print(f"\nURL components: {components}")
 # Output:
 # URL components: {'protocol': 'https', 'domain': 'www.example.com', 'path': '/path/to/page'}
-```
 
 # Output:
 # Cleaned: Hello! This is a test. It has weird characters and spacing!
@@ -299,7 +298,6 @@ tags = extract_hashtags(tweet)
 print(f"\nHashtags: {tags}")
 # Output:
 # Hashtags: ['#Python', '#Programming', '#AI', '#MachineLearning']
-```
 
 # Test passwords
 passwords = [
@@ -319,7 +317,6 @@ for pwd in passwords:
 # noupperlower123!: Password must contain an uppercase letter
 # NoSpecial123: Password must contain a special character
 # Valid123!: Password is valid
-```
 
 ## Groups and Capturing
 

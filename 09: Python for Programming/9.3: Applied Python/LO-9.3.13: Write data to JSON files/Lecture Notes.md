@@ -8,7 +8,7 @@ Converting Python data structures to JSON and saving to files
 
 <div align="center">
 
-![Python JSON File Write json.dump() Serialize](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.jpg)
+![Python JSON File Write json.dump() Serialize](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.13.jpg)
 
 *Writing JSON serializes a nested tree structure of data into a formatted text file*
 
@@ -167,7 +167,6 @@ exporter.export_to_json('user_activity.json')
 
 exporter.export_summary('activity_summary.json')
 # Summary exported to activity_summary.json
-```
 
 # Create students
 students = [
@@ -202,7 +201,6 @@ for student in loaded_students:
 # Alice: Enrolled on 2023-09-01
 # Bob: Enrolled on 2023-09-01
 # Charlie: Enrolled on 2024-01-15
-```
 
 # Usage
 manager = JSONBackupManager('important_data.json')
@@ -225,7 +223,6 @@ print(f"Available backups: {backups}")
 # Restore if needed
 if backups:
     manager.restore_backup(backups[0])
-```
 
 ### Best Practices
 

@@ -7,7 +7,7 @@ Variables are the fundamental building blocks of programming. They allow program
 
 <div align="center">
 
-![Python Variables Memory Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
+![Python Variables Memory Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.1.png)
 
 *Variables are named references to objects — Python's type hierarchy shows all the types a variable can hold*
 
@@ -78,11 +78,9 @@ When you write `score = 100`:
 2. Stores the value `100` in that space
 3. Creates a label `score` pointing to that memory location
 
-```
 Memory:  [100]
 
 Label:   score
-```
 
 **Important Concept: Variables as References**
 
@@ -292,7 +290,6 @@ print("After level 2:", player_score)   # 250
 # Player loses points
 player_score = player_score - 50
 print("Final score:", player_score)     # 200
-```
 
 ---
 

@@ -10,7 +10,7 @@ Multiple removal methods reflect **different use cases**: `del` for simple remov
 
 <div align="center">
 
-![Python Dictionary pop() Remove Entry](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
+![Python Dictionary pop() Remove Entry](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.21.png)
 
 *del removes by key, pop() removes and returns the value, popitem() removes the last inserted pair (LIFO)*
 

@@ -8,7 +8,7 @@ Executing cleanup code regardless of exceptions
 
 <div align="center">
 
-![Python try-finally Cleanup Block](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python try-finally Cleanup Block](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.2.png)
 
 *The finally block guarantees cleanup runs regardless of which branch executes, like a guaranteed exit path in a flowchart*
 
@@ -234,7 +234,6 @@ divide_numbers("10", 2)
 # Attempting to divide 10 by 2
 # Error: Invalid types for division
 # Division operation complete
-```
 
 # Usage
 perform_task("A", should_fail=False)
@@ -250,7 +249,6 @@ perform_task("B", should_fail=True)
 # Task B error: Task failed!
 # Releasing Resource-B
 # Task B cleanup done
-```
 
 # Usage
 process_payment(100, should_fail=False)
@@ -272,7 +270,6 @@ process_payment(-50, should_fail=False)
 # Validation error: Amount must be positive
 # Transaction PAY--50: ROLLBACK
 # Transaction cleanup complete
-```
 
 ### Finally vs Context Managers
 

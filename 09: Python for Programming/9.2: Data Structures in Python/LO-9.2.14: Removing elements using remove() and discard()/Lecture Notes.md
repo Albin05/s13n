@@ -10,7 +10,7 @@ The `remove()` vs `discard()` duality embodies **fail-fast vs. fail-safe** desig
 
 <div align="center">
 
-![Python Set remove() Method Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
+![Python Set remove() Method Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.14.png)
 
 *remove() and discard() both eliminate elements from a set — the difference is how they handle missing elements*
 
@@ -253,14 +253,12 @@ def remove_from_cart(item_id):
 
 ### Decision Guide
 
-```
 Removing specific element?
 ├─ Do you KNOW it exists?
 │  ├─ Yes, and missing it is a BUG
 │  │  └─ Use remove()
 │  └─ Not sure, or it's normal if missing
 │     └─ Use discard()
-```
 
 ### Side-by-Side Example
 
@@ -471,14 +469,12 @@ s.clear()  # Empties set completely
 
 ### Decision Tree
 
-```
 What do you want to remove?
 ├─ ALL elements → clear()
 ├─ ANY arbitrary element → pop()
 └─ SPECIFIC element
    ├─ Must exist (validation) → remove()
    └─ Might not exist (safe) → discard()
-```
 
 ---
 

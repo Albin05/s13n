@@ -19,11 +19,9 @@ File reading implements **persistent storage access** - retrieving data that out
 ### Why File I/O is Fundamental
 
 **Before file systems** (punch cards, 1950s): Data manually re-entered each run:
-```
 // No persistence - enter data every time!
 ENTER 10 NUMBERS: 1, 2, 3...
 PROGRAM ENDS → DATA LOST!
-```
 
 **With file systems** (1960s onwards): Data saved and reloaded:
 ```python

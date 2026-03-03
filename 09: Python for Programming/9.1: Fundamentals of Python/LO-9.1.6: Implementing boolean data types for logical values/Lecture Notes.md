@@ -14,7 +14,7 @@ game_over = False
 
 <div align="center">
 
-![Python Boolean True False Values](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.jpg)
+![Python Boolean True False Values](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.6.jpg)
 
 *Booleans (True/False) are the foundation of logic — used in conditions, comparisons, and control flow*
 

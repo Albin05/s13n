@@ -35,12 +35,10 @@ pip install -r requirements.txt # Install from file
 ### Section 2: Key Concepts (3 minutes)
 
 **Version specifiers:**
-```
 requests==2.28.0   # Exact version
 requests>=2.28.0   # Minimum version
 requests~=2.28.0   # Compatible (2.28.x)
 requests!=2.27.0   # Exclude version
-```
 
 ---
 

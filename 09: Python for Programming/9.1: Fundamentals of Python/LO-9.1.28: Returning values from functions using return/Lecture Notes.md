@@ -54,7 +54,7 @@ This **functional composition** is fundamental to modern programming - building 
 
 <div align="center">
 
-![Python return Statement Function Return Value](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
+![Python return Statement Function Return Value](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.28.png)
 
 *The return statement sends a computed value back to the caller — like a function machine that takes input and produces output*
 
@@ -96,7 +96,6 @@ print(message)  # Hello, Alice!
 ```
 
 # Output: Can vote
-```
 
 ## Return vs Print
 

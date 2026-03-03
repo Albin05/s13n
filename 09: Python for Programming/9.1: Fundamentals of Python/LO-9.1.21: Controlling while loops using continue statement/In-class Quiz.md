@@ -326,11 +326,9 @@ D) 0,1 1,1 2,1
 **Explanation:** For each i (0, 1, 2), inner loop prints j=0 and j=2, skips j=1. Continue only affects inner loop, outer continues normally.
 
 Output (with newlines from print()):
-```
 0,0 0,2
 1,0 1,2
 2,0 2,2
-```
 </details>
 
 ---

@@ -214,7 +214,6 @@ print(tags)  # set()
 
 ## Decision Tree
 
-```
 Need to remove element?
 ├─ Remove ALL elements
 │  └─ Use clear()
@@ -225,7 +224,6 @@ Need to remove element?
    │  └─ Use remove()
    └─ Element MIGHT NOT exist (safe operation)
       └─ Use discard()
-```
 
 ---
 

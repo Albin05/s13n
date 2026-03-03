@@ -579,14 +579,12 @@ tags = {tag for tag in tags if not tag.startswith('j')}
 
 **Key Decision Tree:**
 
-```
 Need to remove element?
 ├─ Remove ALL elements → clear()
 ├─ Remove ANY element → pop()
 └─ Remove SPECIFIC element
    ├─ Must exist (validation) → remove()
    └─ Might not exist (safe) → discard()
-```
 
 **Common Patterns:**
 

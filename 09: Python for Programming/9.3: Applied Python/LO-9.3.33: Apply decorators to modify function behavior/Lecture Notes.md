@@ -8,7 +8,7 @@ Decorators are a powerful feature in Python that allow you to modify or enhance 
 
 <div align="center">
 
-![Python Decorator @ Syntax Explained](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python Decorator @ Syntax Explained](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.33.png)
 
 *Decorators wrap functions like a machine that adds processing before and after the original function*
 
@@ -280,7 +280,6 @@ except Exception as e:
 # Attempt 1 failed: Random failure occurred
 # Attempt 2 failed: Random failure occurred
 # Success!
-```
 
 # Valid calls
 print(f"Area: {calculate_area(5, 10)}")  # Area: 50
@@ -296,7 +295,6 @@ try:
     calculate_discount(100, -10)
 except ValueError as e:
     print(f"Error: {e}")  # Error: Argument must be positive, got -10
-```
 
 # Output:
 # Calculating result for (5,)
@@ -319,7 +317,6 @@ print(factorial(5))
 # Calculating result for (2,)
 # Calculating result for (1,)
 # 
-```
 
 ## Multiple Decorators
 

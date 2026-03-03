@@ -53,12 +53,10 @@ print(f"Output: {result}")
 
 ### Your Best Friend: The Traceback
 
-```
 Traceback (most recent call last):
   File "app.py", line 5, in calculate
     return x / y
 ZeroDivisionError: division by zero
-```
 
 Read **bottom to top**: error first, then trace how you got there.
 

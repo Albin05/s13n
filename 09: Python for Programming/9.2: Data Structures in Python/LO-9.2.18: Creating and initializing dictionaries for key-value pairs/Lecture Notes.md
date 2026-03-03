@@ -10,7 +10,7 @@ Dictionaries represent **associative arrays** - one of computer science's most p
 
 <div align="center">
 
-![Python Dictionary Key-Value Pairs](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
+![Python Dictionary Key-Value Pairs](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.18.png)
 
 *Dictionaries are hash tables — keys are hashed to array indices for O(1) access to their associated values*
 

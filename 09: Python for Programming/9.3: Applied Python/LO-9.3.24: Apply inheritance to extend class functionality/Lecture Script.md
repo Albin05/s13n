@@ -173,13 +173,11 @@ dog.bark()        # From Dog (itself)
 **Point out**: "Dog inherits from Mammal, which inherits from Animal. So Dog gets ALL methods from both!"
 
 **Draw on board/show**:
-```
 Animal
   ↓
 Mammal
   ↓
 Dog
-```
 
 ## [0:18-0:21] Practice Challenge (3 min)
 

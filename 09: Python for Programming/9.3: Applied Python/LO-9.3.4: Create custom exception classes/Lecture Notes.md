@@ -8,7 +8,7 @@ Defining your own exception classes
 
 <div align="center">
 
-![Python Exception Class Hierarchy Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python Exception Class Hierarchy Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.4.png)
 
 *Custom exception classes create specialized branches in your error-handling flowchart*
 

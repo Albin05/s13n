@@ -8,7 +8,7 @@ Dictionary comprehensions provide a concise way to create dictionaries based on 
 
 <div align="center">
 
-![Python Dictionary Comprehension Syntax](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python Dictionary Comprehension Syntax](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.30.png)
 
 *Dictionary comprehensions use a for-loop pattern to create key-value pairs in a single expression*
 
@@ -293,7 +293,6 @@ total_value = sum(details["price"] * details["stock"]
                   for details in inventory.values())
 print(f"\nTotal inventory value: ${total_value}")
 # Total inventory value: $11220
-```
 
 # Temperature readings in Fahrenheit
 temp_readings = {
@@ -329,7 +328,6 @@ print(f"\nWarm days (>70°F): {warm_days}")
 abbrev_temps = {day[:3]: temp for day, temp in temp_readings.items()}
 print(f"\nAbbreviated: {abbrev_temps}")
 # Abbreviated: {'Mon': 68, 'Tue': 72, 'Wed': 65, 'Thu': 70, 'Fri': 75, 'Sat': 78, 'Sun': 73}
-```
 
 # User data from a form
 users = [
@@ -366,7 +364,6 @@ print(f"\nAge groups: {age_groups}")
 active_ages = {user["name"]: user["age"] for user in users if user["active"]}
 print(f"\nActive users with ages: {active_ages}")
 # Active users with ages: {'Alice': 25, 'Bob': 30, 'Diana': 28}
-```
 
 ## Swapping Keys and Values
 

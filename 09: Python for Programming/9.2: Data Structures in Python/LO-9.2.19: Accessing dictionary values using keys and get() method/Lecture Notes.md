@@ -10,7 +10,7 @@ The `[]` vs `.get()` choice revisits **fail-fast vs. fail-safe** design - same p
 
 <div align="center">
 
-![Python Dictionary get() Method Access](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
+![Python Dictionary get() Method Access](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.19.png)
 
 *dict[key] and dict.get(key) both look up values by hashing the key — the difference is how they handle missing keys*
 

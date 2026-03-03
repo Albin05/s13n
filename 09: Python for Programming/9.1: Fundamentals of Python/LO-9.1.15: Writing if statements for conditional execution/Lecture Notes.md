@@ -8,7 +8,7 @@ The `if` statement is the most fundamental **control flow** structure in program
 
 <div align="center">
 
-![Python if Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
+![Python if Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.15.png)
 
 *The if statement evaluates a condition: if True, execute one block; if False, skip it or execute an alternative*
 
@@ -90,7 +90,6 @@ if age >= 18:
 ```
 
 # All three lines print because condition is True
-```
 
 ## Indentation Rules
 
@@ -347,11 +346,9 @@ print("D")
 <details>
 <summary>Answer</summary>
 
-```
 A
 B
 D
-```
 
 Explanation:
 - x > 5 is True (10 > 5), so "A" and "B" print

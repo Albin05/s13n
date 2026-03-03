@@ -39,7 +39,7 @@ This **Cartesian product** is fundamental in mathematics, databases (SQL joins),
 
 <div align="center">
 
-![Python Nested Loops Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
+![Python Nested Loops Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.25.png)
 
 *Nested loops place one loop inside another — the inner loop completes all iterations for each single iteration of the outer loop*
 

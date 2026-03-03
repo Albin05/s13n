@@ -8,7 +8,7 @@ The `else` statement provides a **catch-all** for when all other conditions fail
 
 <div align="center">
 
-![Python if-else Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
+![Python if-else Statement Flowchart](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.17.png)
 
 *The else block executes when the condition is False — it's the default path that guarantees a response*
 
@@ -99,7 +99,6 @@ print(f"Grade: {grade}")  # Grade: C
 ```
 
 # Output: Negative
-```
 
 ## When to Use Else
 

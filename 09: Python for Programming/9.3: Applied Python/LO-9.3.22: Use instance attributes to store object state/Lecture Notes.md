@@ -8,7 +8,7 @@ Instance attributes are variables that belong to a specific object. Each object 
 
 <div align="center">
 
-![Python Instance Variables Object State](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python Instance Variables Object State](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.22.png)
 
 *Instance attributes store unique data within each object, positioned within Python's type hierarchy*
 

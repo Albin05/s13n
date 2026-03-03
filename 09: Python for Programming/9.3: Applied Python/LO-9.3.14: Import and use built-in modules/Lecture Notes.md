@@ -8,7 +8,7 @@ Using Python's standard library modules in your programs
 
 <div align="center">
 
-![Python import Built-in Modules math sys os](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python import Built-in Modules math sys os](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.14.png)
 
 *Built-in modules provide pre-written functions that you can import and call in your program flow*
 
@@ -179,7 +179,6 @@ print(f"Parsed date: {parsed_date.date()}")
 # Different formats
 print(f"Full: {now.strftime('%A, %B %d, %Y at %I:%M %p')}")
 print(f"Short: {now.strftime('%m/%d/%y')}")
-```
 
 # Current working directory
 cwd = os.getcwd()
@@ -218,7 +217,6 @@ new_dir = 'temp_folder'
 if not os.path.exists(new_dir):
     os.makedirs(new_dir)
     print(f"Created directory: {new_dir}")
-```
 
 # Usage
 logger = FileLogger('logs/application.log')
@@ -234,7 +232,6 @@ print(logger.get_stats())
 print(f"\nPython version: {sys.version}")
 print(f"Platform: {sys.platform}")
 print(f"Arguments: {sys.argv}")
-```
 
 ### Commonly Used Built-in Modules
 

@@ -8,7 +8,7 @@ Append mode ("a") adds content to the end of a file without deleting existing co
 
 <div align="center">
 
-![Python Append File open() a Mode](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python Append File open() a Mode](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.9.png)
 
 *Appending to files follows the Input-Process-Output pattern: read existing content, then add new data*
 
@@ -175,7 +175,6 @@ log_event("Data saved")
 # Alice - Present
 # Bob - Present
 # Charlie - Present
-```
 
 ## File Creation
 

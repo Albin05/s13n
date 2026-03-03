@@ -10,7 +10,7 @@ Dictionary iteration offers **three views** - keys, values, or items (pairs) - r
 
 <div align="center">
 
-![Python Dictionary keys() values() items() Iteration](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
+![Python Dictionary keys() values() items() Iteration](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.23.png)
 
 *.keys() iterates over keys, .values() over values, .items() over (key, value) tuples — three views of the same data*
 
@@ -139,7 +139,6 @@ for student, subjects in grades.items():
 ```
 
 Output:
-```
 Alice:
   Math: 92
   Science: 88
@@ -147,7 +146,6 @@ Alice:
 Bob:
   Math: 78
   Science: 85
-```
 
 ---
 

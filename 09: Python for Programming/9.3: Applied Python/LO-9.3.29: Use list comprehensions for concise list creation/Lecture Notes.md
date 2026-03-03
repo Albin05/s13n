@@ -8,7 +8,7 @@ List comprehensions provide a concise, readable way to create lists based on exi
 
 <div align="center">
 
-![Python List Comprehension Syntax Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python List Comprehension Syntax Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.29.png)
 
 *List comprehensions condense a for-loop pattern into a single expression for concise list creation*
 
@@ -252,7 +252,6 @@ numbers = range(1, 101)
 fizzbuzz_numbers = [n for n in numbers if n % 3 == 0 and n % 5 == 0]
 print(f"Numbers divisible by both 3 and 5: {fizzbuzz_numbers}")
 # Numbers divisible by both 3 and 5: [15, 30, 45, 60, 75, 90]
-```
 
 # Process file names
 files = ["document.txt", "image.png", "script.py", "data.csv", "photo.jpg"]
@@ -288,7 +287,6 @@ image_extensions = [".png", ".jpg", ".jpeg", ".gif"]
 image_files = [f for f in files if any(f.endswith(ext) for ext in image_extensions)]
 print(f"Image files: {image_files}")
 # Image files: ['image.png', 'photo.jpg']
-```
 
 # Create a multiplication table (2D list)
 table = [[i * j for j in range(1, 6)] for i in range(1, 6)]
@@ -332,7 +330,6 @@ for coord in coordinates:
 chess_squares = [f"{letter}{number}" for letter in "abcdefgh" for number in range(1, 9)]
 print(f"First 10 chess squares: {chess_squares[:10]}")
 # First 10 chess squares: ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'b1', 'b2']
-```
 
 ## Conditional Expressions in List Comprehensions
 

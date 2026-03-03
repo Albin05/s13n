@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Python List Create Initialize Elements](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.svg)
+![Python List Create Initialize Elements](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.1.svg)
 
 *A visual representation of array-based data structures showing how lists store elements in indexed positions*
 

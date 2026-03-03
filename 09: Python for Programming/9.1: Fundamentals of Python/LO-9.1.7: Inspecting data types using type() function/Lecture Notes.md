@@ -8,7 +8,7 @@ Python is **dynamically typed** - you don't declare types explicitly. The `type(
 
 <div align="center">
 
-![Python type() Function Dynamic Typing](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.jpg)
+![Python type() Function Dynamic Typing](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.7.jpg)
 
 *type() reveals where a value sits in Python's type hierarchy — int, float, str, bool, list, dict, and more*
 
@@ -110,7 +110,6 @@ print(type(result))  # <class 'int'> - floor division returns int
 # Must convert before arithmetic
 age = int(user_input)
 print(type(age))  # <class 'int'> - now it's a number
-```
 
 ---
 

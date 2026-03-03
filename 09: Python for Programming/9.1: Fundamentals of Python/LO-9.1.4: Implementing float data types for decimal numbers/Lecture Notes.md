@@ -7,7 +7,7 @@ Floats represent numbers with decimal points, providing precision for measuremen
 
 <div align="center">
 
-![Python Float Object Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
+![Python Float Object Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.4.png)
 
 *Floats represent decimal numbers using IEEE 754 standard — essential for scientific calculations and measurements*
 

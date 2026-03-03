@@ -8,7 +8,7 @@ Type hints (type annotations) document the expected types of variables, function
 
 <div align="center">
 
-![Python Type Hints Annotation Function Code](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python Type Hints Annotation Function Code](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.36.png)
 
 *Type hints reference Python's type hierarchy to annotate expected types for code clarity*
 
@@ -259,7 +259,6 @@ print(f"Totals: {totals}")  # {'apples': 25, 'oranges': 8, 'bananas': 20}
 all_users: List[UserResponse] = fetch_users()
 active_users: List[UserResponse] = get_active_users(all_users)
 user: Optional[UserResponse] = find_user_by_id(all_users, 1)
-```
 
 # Define type aliases for complex types
 Coordinate = Tuple[float, float]
@@ -295,7 +294,6 @@ grades: StudentGrades = {
     "Bob": [78, 82, 80]
 }
 averages: Dict[str, float] = calculate_average_grade(grades)
-```
 
 ## Optional and Union Types
 

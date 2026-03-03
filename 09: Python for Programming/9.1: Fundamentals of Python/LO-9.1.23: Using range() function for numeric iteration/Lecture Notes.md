@@ -36,7 +36,7 @@ Range saves memory by generating values **just in time**. This is called **lazy 
 
 <div align="center">
 
-![Python range() Function with for Loop](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.jpg)
+![Python range() Function with for Loop](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.23.jpg)
 
 *The range() function generates numbers on demand, enabling efficient numeric iteration without storing the entire sequence in memory*
 

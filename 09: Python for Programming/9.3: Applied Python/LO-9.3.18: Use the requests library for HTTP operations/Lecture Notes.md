@@ -8,7 +8,7 @@ Making HTTP requests to interact with web APIs
 
 <div align="center">
 
-![Python requests Library GET POST Response](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python requests Library GET POST Response](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.18.png)
 
 *HTTP operations follow the Input-Process-Output pattern: send a request, server processes it, receive a response*
 
@@ -217,7 +217,6 @@ print(f"  Age: {result['json']['age']}")
 #   Username: alice
 #   Email: alice@example.com
 #   Age: 28
-```
 
 # Usage
 client = APIClient('https://api.github.com')
@@ -233,7 +232,6 @@ if user:
 # User: Linus Torvalds
 # Followers: 123,456
 # Public repos: 15
-```
 
 # Usage (without token for public data)
 api = GitHubAPI()
@@ -273,7 +271,6 @@ if limit:
 # API Rate Limit:
 #   Limit: 60 requests/hour
 #   Remaining: 58
-```
 
 ### Common HTTP Status Codes
 

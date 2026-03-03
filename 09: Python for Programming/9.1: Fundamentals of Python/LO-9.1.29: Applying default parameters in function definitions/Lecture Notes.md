@@ -47,7 +47,7 @@ Good defaults follow the **Principle of Least Surprise**:
 
 <div align="center">
 
-![Python Default Parameter Types Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
+![Python Default Parameter Types Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.29.png)
 
 *Default parameters provide preset values that are used automatically unless the caller explicitly overrides them*
 
@@ -115,7 +115,6 @@ def add_item_good(item, items=None):
 
 print(add_item_good(1))  # [1]
 print(add_item_good(2))  # [2] - Expected!
-```
 
 ### Best Practices
 

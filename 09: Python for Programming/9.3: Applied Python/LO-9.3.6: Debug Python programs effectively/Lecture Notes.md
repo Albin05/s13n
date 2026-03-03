@@ -117,7 +117,6 @@ def process(data):
 process([10, 0])
 ```
 
-```
 Traceback (most recent call last):
   File "app.py", line 7, in <module>
     process([10, 0])
@@ -126,7 +125,6 @@ Traceback (most recent call last):
   File "app.py", line 2, in calculate
     return x / y
 ZeroDivisionError: division by zero
-```
 
 **Read bottom to top:**
 1. Last line: the error type and message

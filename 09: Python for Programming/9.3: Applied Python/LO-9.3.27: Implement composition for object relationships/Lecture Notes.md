@@ -8,7 +8,7 @@ Building complex objects from simpler ones
 
 <div align="center">
 
-![Python Composition has-a Object Relationship](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.jpg)
+![Python Composition has-a Object Relationship](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.27.jpg)
 
 *Composition builds complex objects by combining simpler objects, forming a tree of contained parts*
 
@@ -407,7 +407,6 @@ student.display_transcript()
 #   PHYS101: Physics I (4 credits) - 92% (A)
 #
 # GPA: 3.73
-```
 
 # Usage
 # Create menu items
@@ -453,7 +452,6 @@ order.print_receipt()
 # ========================================
 # TOTAL:           $     66.32
 # ========================================
-```
 
 # Usage
 library = Library("City Public Library")
@@ -515,7 +513,6 @@ library.show_available_books()
 # Available Books at City Public Library:
 #   [ISBN001] 'Harry Potter' by J.K. Rowling (1997)
 #   [ISBN002] 'The Hobbit' by J.R.R. Tolkien (1937)
-```
 
 ### Composition vs Inheritance
 

@@ -130,7 +130,6 @@ else:
 ```
 
 **Decision tree:**
-```
 Is username correct?
 ├─ NO → "Username not found"
 └─ YES → "Username found"
@@ -138,7 +137,6 @@ Is username correct?
     Is password correct?
     ├─ NO → "Wrong password"
     └─ YES → "Login successful!"
-```
 
 ---
 

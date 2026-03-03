@@ -8,7 +8,7 @@ Creating and importing your own Python modules
 
 <div align="center">
 
-![Python Import Custom Module from file](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python Import Custom Module from file](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.17.png)
 
 *Custom modules organize your own functions into reusable files that can be imported across projects*
 
@@ -276,7 +276,6 @@ print(f"Capitalized: {text}")
 email = "test@example.com"
 if validators.is_valid_email(email):
     print(f"{email} is valid")
-```
 
 # File: config.py
 """Application configuration"""
@@ -325,7 +324,6 @@ print(f"API timeout: {config.API['timeout']}s")
 # Database URL: postgresql://admin@localhost:5432/myapp_db
 # Debug mode: True
 # API timeout: 30s
-```
 
 # File: utils.py
 """Utility functions"""
@@ -370,7 +368,6 @@ print(f"Total: {format_currency(total)}")
 # Price: $99.99
 # Tax: 8.0%
 # Total: $107.99
-```
 
 ### Module Search Path
 
@@ -406,7 +403,6 @@ for path in sys.path:
 
 ### Organizing Larger Projects
 
-```
 project/
 ├── main.py
 ├── config.py
@@ -422,7 +418,6 @@ project/
     ├── __init__.py
     ├── auth.py
     └── database.py
-```
 
 ### Key Takeaways
 

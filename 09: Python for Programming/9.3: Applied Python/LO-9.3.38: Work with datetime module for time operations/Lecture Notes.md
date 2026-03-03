@@ -8,7 +8,7 @@ Python's datetime module provides classes for manipulating dates and times in bo
 
 <div align="center" height="10px" width="10px">
 
-![Python datetime Module Date Time Operations](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.jpg)
+![Python datetime Module Date Time Operations](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.38.jpg)
 
 *Datetime operations use arithmetic to calculate durations, differences, and time-based computations*
 
@@ -336,7 +336,6 @@ week = {
 
 total = calculate_weekly_hours(week)
 print(f"\nTotal hours this week: {total:.2f}")
-```
 
 # Common format strings
 print(f"Full: {now.strftime('%Y-%m-%d %H:%M:%S')}")
@@ -373,7 +372,6 @@ print(f"12-hour: {now.strftime('%I:%M %p')}")
 # %a - Short weekday name (Mon)
 # %B - Full month name (December)
 # %b - Short month name (Dec)
-```
 
 # Parse different date formats
 date_strings = [
@@ -411,7 +409,6 @@ dates_to_parse = ["2024-12-01", "12/01/2024", "December 01, 2024"]
 for date_str in dates_to_parse:
     parsed = parse_flexible_date(date_str)
     print(f"Parsed '{date_str}' as {parsed}")
-```
 
 ## Comparing Dates
 

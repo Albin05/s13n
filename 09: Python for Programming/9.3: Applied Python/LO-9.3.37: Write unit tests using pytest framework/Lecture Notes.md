@@ -8,7 +8,7 @@ pytest is a popular testing framework that makes it easy to write and run tests 
 
 <div align="center">
 
-![Python pytest Unit Test assert Pass Fail](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python pytest Unit Test assert Pass Fail](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.37.png)
 
 *Unit tests follow an if-then-else pattern: if the assertion passes, the test succeeds; otherwise it fails*
 
@@ -295,7 +295,6 @@ def test_divide_normal():
 def test_divide_by_zero():
     with pytest.raises(ZeroDivisionError):
         divide(10, 0)
-```
 
 # calculator.py
 def factorial(n):
@@ -324,7 +323,6 @@ def test_factorial_valid(input, expected):
 def test_factorial_negative(input):
     with pytest.raises(ValueError):
         factorial(input)
-```
 
 # bank_account.py
 class BankAccount:
@@ -386,7 +384,6 @@ def test_withdraw_invalid():
         account.withdraw(0)
     with pytest.raises(ValueError):
         account.withdraw(-10)
-```
 
 ## Fixtures
 

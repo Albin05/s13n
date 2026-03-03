@@ -59,14 +59,12 @@ print("Program ended")
 ```
 
 **Output example:**
-```
 Enter command (or 'quit' to exit): hello
 You entered: hello
 Enter command (or 'quit' to exit): test
 You entered: test
 Enter command (or 'quit' to exit): quit
 Program ended
-```
 
 **Key point:** We used `while True` (infinite loop) but `break` stops it when needed.
 

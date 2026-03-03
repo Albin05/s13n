@@ -88,14 +88,12 @@ print(f"Valid indices: 0 to {len(fruits)-1}")  # 0 to 2
 
 **Visual Example:**
 
-```
 List: ['A', 'B', 'C', 'D', 'E']
 Index:  0    1    2    3    4
 
 fruits[0] → 'A'
 fruits[2] → 'C'
 fruits[4] → 'E'
-```
 
 ---
 

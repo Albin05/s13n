@@ -7,7 +7,7 @@ Strings represent text data in Python. They're one of the most commonly used dat
 
 <div align="center">
 
-![Python String Character Indexing](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
+![Python String Character Indexing](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.5.png)
 
 *Strings are immutable sequences of characters — Python provides rich methods for slicing, searching, and transforming text*
 
@@ -21,9 +21,7 @@ Strings represent text data in Python. They're one of the most commonly used dat
 
 The term "string" comes from "string of characters" - imagine beads on a string, where each bead is a character. A string is a **sequence** of characters strung together:
 
-```
 "Hello" = ['H', 'e', 'l', 'l', 'o']
-```
 
 ### From Numbers to Text
 

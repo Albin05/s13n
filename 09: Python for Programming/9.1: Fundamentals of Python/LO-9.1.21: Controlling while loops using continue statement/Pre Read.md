@@ -59,11 +59,9 @@ while number < 5:
 ```
 
 **Output:**
-```
 1
 3
 5
-```
 
 **What happens:**
 1. number = 1 → not even → print 1
@@ -114,12 +112,10 @@ while index < len(names):
 ```
 
 **Output:**
-```
 Hello, Alice!
 Hello, Bob!
 Hello, Charlie!
 Hello, David!
-```
 
 ---
 

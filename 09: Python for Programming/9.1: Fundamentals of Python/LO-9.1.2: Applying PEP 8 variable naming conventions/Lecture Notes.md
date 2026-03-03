@@ -35,7 +35,7 @@ PEP 8 embodies these principles.
 
 <div align="center">
 
-![Python PEP 8 Naming Convention snake_case camelCase](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
+![Python PEP 8 Naming Convention snake_case camelCase](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.2.png)
 
 *PEP 8 naming conventions (snake_case for variables, UPPER_CASE for constants) keep Python code consistent and readable*
 

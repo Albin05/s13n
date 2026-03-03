@@ -4,12 +4,10 @@
 
 CSV (Comma-Separated Values) files store tabular data:
 
-```
 name,age,city
 Alice,25,New York
 Bob,30,San Francisco
 Charlie,35,Chicago
-```
 
 ## Reading CSV Files
 

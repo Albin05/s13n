@@ -8,7 +8,7 @@ Instance methods are functions defined inside a class that operate on instance o
 
 <div align="center">
 
-![Python self Parameter Instance Method Behavior](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python self Parameter Instance Method Behavior](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.23.png)
 
 *Instance methods act as function machines that operate on and transform an object's internal state*
 

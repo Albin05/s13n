@@ -8,7 +8,7 @@ Context managers provide a way to allocate and release resources precisely when 
 
 <div align="center">
 
-![Python Context Manager with Statement](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python Context Manager with Statement](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.35.png)
 
 *Context managers follow an enter-then-exit pattern, ensuring resources are properly acquired and released*
 
@@ -262,7 +262,6 @@ with ChangeDirectory("/tmp"):
     # Do work in /tmp
 
 print("Back in original directory")
-```
 
 # Using the resource lock
 with ResourceLock("database"):
@@ -274,7 +273,6 @@ with ResourceLock("database"):
 with ResourceLock("file1"), ResourceLock("file2"):
     print("Working with multiple resources")
 # Both locks released
-```
 
 # Using output suppression
 print("This will be printed")
@@ -287,7 +285,6 @@ print("This will be printed again")
 # Output:
 # This will be printed
 # This will be printed again
-```
 
 ## Using contextlib Module
 

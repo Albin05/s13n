@@ -52,7 +52,6 @@ print(is_sunny)  # True
 form_submitted = False
 can_edit = not form_submitted
 print(f"Can edit: {can_edit}")  # True
-```
 
 ### Combining Operators (4 minutes)
 

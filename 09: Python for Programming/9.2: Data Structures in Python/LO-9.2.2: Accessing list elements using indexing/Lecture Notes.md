@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Python List Indexing Access Element](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
+![Python List Indexing Access Element](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.2.png)
 
 *An array data structure with metadata fields, illustrating how indexing enables direct element access by position*
 

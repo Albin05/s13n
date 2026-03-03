@@ -39,13 +39,11 @@ print(mymodule.PI)
 ### Section 2: Key Concepts (3 minutes)
 
 **Package structure:**
-```
 mypackage/
     __init__.py    # Makes it a package
     utils.py
     models.py
     helpers.py
-```
 
 ```python
 from mypackage import utils

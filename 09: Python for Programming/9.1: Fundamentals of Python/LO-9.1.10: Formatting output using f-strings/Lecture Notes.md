@@ -7,7 +7,7 @@ F-strings (formatted string literals) provide a clean, readable way to embed exp
 
 <div align="center">
 
-![Python f-string Formatting](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
+![Python f-string Formatting](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.10.png)
 
 *F-strings embed expressions inside {curly braces} within strings — Python evaluates them at runtime for clean, readable output*
 
@@ -179,12 +179,10 @@ print(f"Total: ${total:.2f}")
 ```
 
 Output:
-```
 Item: Coffee
 Price: $4.50
 Quantity: 2
 Total: $9.00
-```
 
 ### Example 2: Student Report
 ```python
@@ -200,7 +198,6 @@ print(f"Average: {average:.1f}")
 ```
 
 # Output: 25°C = 77.0°F
-```
 
 ---
 

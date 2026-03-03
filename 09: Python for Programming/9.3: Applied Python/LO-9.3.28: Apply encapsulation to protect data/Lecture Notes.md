@@ -8,7 +8,7 @@ Hiding internal details and controlling access
 
 <div align="center">
 
-![Python Encapsulation Data Hiding Private Attributes](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.jpg)
+![Python Encapsulation Data Hiding Private Attributes](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.28.jpg)
 
 *Encapsulation protects internal data within Python's type system, controlling access through defined interfaces*
 
@@ -343,7 +343,6 @@ sensor.display_status()
 
 sensor.reset_sensor()
 # Sensor TEMP-001 reset
-```
 
 # Usage
 student = Student("S12345", "Alice Johnson")
@@ -378,7 +377,6 @@ student.get_transcript()
 if student.is_eligible_for_honors():
     print(f"{student.name} is eligible for honors!")
 # Alice Smith is eligible for honors!
-```
 
 # Usage
 laptop = Product("P001", "Laptop", 999.99)
@@ -420,7 +418,6 @@ cart.display_cart()
 # Cannot access private attributes directly
 # print(cart.__items)  # AttributeError
 print(f"Item count: {cart.get_item_count()}")  # Controlled access
-```
 
 ### Best Practices
 

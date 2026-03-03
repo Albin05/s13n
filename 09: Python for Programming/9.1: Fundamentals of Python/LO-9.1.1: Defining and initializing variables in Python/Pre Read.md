@@ -123,12 +123,10 @@ print(my_score)  # What will this show?
 ```
 
 **Expected Output:**
-```
 YourNameHere
 20
 95
 100
-```
 
 ---
 

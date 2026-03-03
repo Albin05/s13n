@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Python Set Unique Elements No Duplicates](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
+![Python Set Unique Elements No Duplicates](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.12.png)
 
 *Hash table data structure: sets use hash tables internally to ensure element uniqueness and enable O(1) membership testing*
 

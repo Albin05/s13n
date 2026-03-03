@@ -14,11 +14,9 @@
 **Say**: "Imagine you have a spreadsheet with thousands of rows of data — sales records, student grades, weather data. How do you process it with Python? CSV files are the answer! They're the universal language of data exchange."
 
 **Demo**: Show a sample CSV file opened in a text editor:
-```
 name,age,city
 Alice,25,New York
 Bob,30,San Francisco
-```
 
 **Say**: "Just plain text with commas! But incredibly powerful."
 

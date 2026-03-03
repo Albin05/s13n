@@ -8,7 +8,7 @@ An iterator is an object that can be iterated upon, returning data one element a
 
 <div align="center">
 
-![Python Iterator __iter__ __next__ Protocol](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python Iterator __iter__ __next__ Protocol](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.32.png)
 
 *Iterators advance through elements one at a time using a while-loop pattern until exhausted*
 
@@ -296,7 +296,6 @@ for char in ReverseIterator(text):
     print(char, end="")
 # Output: nohtyP
 print()
-```
 
 # Test even numbers iterator
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -313,7 +312,6 @@ for num in EvenNumbers(mixed_numbers):
     print(num, end=" ")
 # Output: 22 48 62
 print()
-```
 
 # Test cycling iterator
 colors = ["red", "green", "blue"]
@@ -349,7 +347,6 @@ for person in people:
 # Charlie: Task C
 # Diana: Task A
 # Eve: Task B
-```
 
 ## Iterator Tools from itertools
 

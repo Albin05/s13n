@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Python List Comprehension Syntax Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
+![Python List Comprehension Syntax Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.6.png)
 
 *Overview of data structure types including sequences and collections, showing how list comprehensions transform one collection into another*
 

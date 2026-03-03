@@ -8,7 +8,7 @@ User input transforms programs from static scripts to **interactive applications
 
 <div align="center">
 
-![Python input() Function Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.jpg)
+![Python input() Function Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.9.jpg)
 
 *input() reads user data as a string → your program processes it → print() displays the result*
 
@@ -42,9 +42,7 @@ Programs have three components:
 2. **Processing**: Computation and logic
 3. **Output**: Results going out (screen, files, network)
 
-```
 [User types "Bob"] → Input → [Program processes] → Output → [Displays "Hello Bob!"]
-```
 
 Think of your program as a **function** in the mathematical sense:
 - Input: User provides data
@@ -81,10 +79,8 @@ print("Hello, " + name + "!")
 ```
 
 **When run:**
-```
 Enter your name: Alice
 Hello, Alice!
-```
 
 ## Input Always Returns String
 

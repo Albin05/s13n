@@ -74,12 +74,10 @@ unique = set(data)  # One line + O(n) complexity!
 **Why programmers love sets**: Math notation becomes Python code!
 
 **Mathematical set theory:**
-```
 A ∪ B  (union)
 A ∩ B  (intersection)
 A - B  (difference)
 A ⊆ B  (subset)
-```
 
 **Direct Python translation:**
 ```python

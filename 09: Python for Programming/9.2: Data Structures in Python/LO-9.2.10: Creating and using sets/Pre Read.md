@@ -356,11 +356,9 @@ print(f"Bonus skills: {extra}")
 ```
 
 Expected output:
-```
 You have: {'Python', 'Git'}
 You need to learn: {'SQL'}
 Bonus skills: {'JavaScript'}
-```
 
 ---
 

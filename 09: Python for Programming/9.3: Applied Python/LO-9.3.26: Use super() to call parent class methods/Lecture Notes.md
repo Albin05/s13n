@@ -8,7 +8,7 @@ Calling parent class methods from child classes
 
 <div align="center">
 
-![Python super() Call Parent Class Method](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python super() Call Parent Class Method](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.26.png)
 
 *super() navigates up the class hierarchy tree to call parent class methods from child classes*
 
@@ -327,7 +327,6 @@ circle = Circle(7, "green")
 
 circle.display()
 # green Circle - Area: 153.93791
-```
 
 # Usage
 warrior = Warrior("Conan", 150, 10)
@@ -368,7 +367,6 @@ paladin.level_up()
 # Arthas leveled up to 2!
 # HP increased to 150, Armor increased to 14
 # Faith increased to 18
-```
 
 # Usage
 physical = PhysicalProduct("P001", "Laptop", 999.99, 2.5, 10)
@@ -404,7 +402,6 @@ subscription.display_info()
 # File size: 0 MB
 # Downloads: 0
 # Billing: monthly
-```
 
 ### Best Practices
 

@@ -8,7 +8,7 @@ Isolating project dependencies using virtual environments
 
 <div align="center">
 
-![Python Virtual Environment venv Folder Structure](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python Virtual Environment venv Folder Structure](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.16.png)
 
 *Virtual environments isolate project dependencies, keeping each project's modules separate*
 
@@ -193,7 +193,6 @@ deactivate
 
 # Each project has isolated dependencies!
 # No conflicts between different package versions
-```
 
 # setup_env.py
 import os
@@ -283,7 +282,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
 
 # check_env.py
 import sys
@@ -312,7 +310,6 @@ def check_virtual_env():
 
 if __name__ == "__main__":
     check_virtual_env()
-```
 
 ### Best Practices
 
@@ -381,7 +378,6 @@ chown -R $USER:$USER venv
 
 ### Virtual Environment Structure
 
-```
 my_project/
 ├── venv/                  # Virtual environment (don't commit)
 │   ├── bin/              # Executables (Mac/Linux)
@@ -391,7 +387,6 @@ my_project/
 ├── requirements.txt       # Dependencies
 ├── .gitignore            # Ignore venv
 └── main.py               # Your code
-```
 
 ### Key Takeaways
 

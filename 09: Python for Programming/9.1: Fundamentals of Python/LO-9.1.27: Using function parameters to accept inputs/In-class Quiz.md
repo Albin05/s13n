@@ -134,10 +134,8 @@ D) Error
 - Second call: `multiply(2, 8)` → 2 × 8 = 16 (printed)
 
 Each `print()` statement outputs on a new line by default, so the output is:
-```
 20
 16
-```
 
 ---
 
@@ -181,9 +179,7 @@ D) Wrong data type
 **Answer: B) Missing required argument**
 
 **Explanation:** The function `calculate_area` expects two parameters (`length` and `width`), but the call only provides one argument (5). Python will raise a TypeError:
-```
 TypeError: calculate_area() missing 1 required positional argument: 'width'
-```
 You must provide values for all parameters unless they have default values.
 
 ---

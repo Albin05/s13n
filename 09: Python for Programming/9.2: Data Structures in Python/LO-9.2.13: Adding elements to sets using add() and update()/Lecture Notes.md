@@ -10,7 +10,7 @@ The `add()` and `update()` methods embody **incremental vs. batch** operations -
 
 <div align="center">
 
-![Python Set add() update() Method Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.svg)
+![Python Set add() update() Method Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.13.svg)
 
 *add() inserts a single element; update() merges an entire collection — both grow the set with unique values only*
 

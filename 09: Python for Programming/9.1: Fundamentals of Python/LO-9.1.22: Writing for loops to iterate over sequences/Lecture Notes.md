@@ -24,7 +24,7 @@ You process the entire collection, one item at a time, automatically.
 
 <div align="center">
 
-![Python for Loop Flowchart Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.png)
+![Python for Loop Flowchart Diagram](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.22.png)
 
 *Flowchart of a for loop: the loop checks the sequence for remaining items, executes the body for each item, and exits when the sequence is exhausted*
 
@@ -71,7 +71,6 @@ for fruit in fruits:
 ```
 
 # Output: 0 1 2 3 4
-```
 
 ## For Loop vs While Loop
 

@@ -8,7 +8,7 @@ A class is a blueprint for creating objects. It defines the structure and behavi
 
 <div align="center">
 
-![Python Class Blueprint OOP Concept](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)
+![Python Class Blueprint OOP Concept](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.19.png)
 
 *Classes serve as blueprints in Python's type hierarchy, defining the structure for creating objects*
 

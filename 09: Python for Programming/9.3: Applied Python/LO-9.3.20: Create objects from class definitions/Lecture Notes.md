@@ -8,7 +8,7 @@ An object is a specific instance of a class. You can create multiple objects fro
 
 <div align="center">
 
-![Python Class Instantiation Object Creation](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.png)/userfiles/images/Python-Classes-Instances.png)
+![Python Class Instantiation Object Creation](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.20.png)/userfiles/images/Python-Classes-Instances.png)
 
 *Creating objects from classes works like a function machine: input parameters, output a new object*
 
@@ -209,7 +209,6 @@ alice_cart.show_items()
 
 print("\nBob's cart:")
 bob_cart.show_items()
-```
 
 # Create student objects
 alice = Student("Alice", 10)
@@ -232,7 +231,6 @@ print()
 bob.show_info()
 print()
 charlie.show_info()
-```
 
 ## Creating Objects in a Loop
 

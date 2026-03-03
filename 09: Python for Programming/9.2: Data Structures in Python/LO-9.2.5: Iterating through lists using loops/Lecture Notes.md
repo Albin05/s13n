@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Python Iterating List with for Loop](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/.png)
+![Python Iterating List with for Loop](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.2/LO-9.2.5.png)
 
 *Flowchart illustrating how a loop iterates through elements, checking conditions and processing each item sequentially*
 

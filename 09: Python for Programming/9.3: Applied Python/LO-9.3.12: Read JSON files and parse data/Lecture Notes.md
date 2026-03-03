@@ -8,7 +8,7 @@ Loading JSON data from files into Python data structures
 
 <div align="center">
 
-![Python JSON File Read json.load() Parse](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/.jpg)
+![Python JSON File Read json.load() Parse](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.3/LO-9.3.12.jpg)
 
 *JSON data forms a nested tree structure similar to the DOM, with objects containing other objects*
 
@@ -224,7 +224,6 @@ print(f"Top student: {top_student['name']} with grade {top_student['grade']}")
 #
 # Average grade: 85.00
 # Top student: Bob with grade 92
-```
 
 # Sample company.json file:
 # {
@@ -308,7 +307,6 @@ analyze_company_data('company.json')
 #
 # Average salary: $82,500.00
 # Total project hours: 300
-```
 
 # Usage example
 reader = JSONReader('settings.json')
@@ -323,7 +321,6 @@ if reader.read():
 
     # Access full data
     print(f"\nFull data: {reader.data}")
-```
 
 ### Best Practices
 

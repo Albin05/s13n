@@ -8,7 +8,7 @@ Operator precedence determines **which operations happen first** in complex expr
 
 <div align="center">
 
-![Python Operator Precedence Table](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/.jpg)
+![Python Operator Precedence Table](https://s13n-curr-images-bucket.s3.ap-south-1.amazonaws.com/python-lectures/9.1/LO-9.1.12.jpg)
 
 *Python follows PEMDAS/BODMAS rules: Parentheses → Exponents → Multiplication/Division → Addition/Subtraction*
 
